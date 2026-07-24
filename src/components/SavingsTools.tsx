@@ -376,8 +376,8 @@ export function GroceryComparisons() {
       <div className="research-summary">
         <p>
           Checked July 23, 2026. Store-specific proof is required before a local
-          winner is named. “Needs local check” means the price is official but the
-          public page did not bind it to a 77386 store.
+          winner is named. “Not locally confirmed” means the price is official but
+          the public page did not bind it to a 77386 store.
         </p>
         <span><ShieldCheck size={14} /> Local proof</span>
         <span><AlertTriangle size={14} /> Recheck location</span>
