@@ -12,6 +12,10 @@ await cp(resolve(output, "index.html"), resolve(client, "index.html"));
 await cp(resolve(output, "assets"), resolve(client, "assets"), {
   recursive: true
 });
+await cp(resolve(output, "favicon.svg"), resolve(client, "favicon.svg"));
+await cp(resolve(output, "reports"), resolve(client, "reports"), {
+  recursive: true
+});
 
 const indexHtml = await readFile(resolve(output, "index.html"), "utf8");
 const assetMatch = indexHtml.match(/\/assets\/(index-[^"']+\.js)/);
