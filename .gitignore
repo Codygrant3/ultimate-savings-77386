@@ -1,0 +1,7 @@
+node_modules/
+dist/
+reports/
+.DS_Store
+*.local
+*.log
+.vite/

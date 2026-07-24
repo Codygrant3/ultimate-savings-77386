@@ -1,0 +1,233 @@
+import { createHash } from "node:crypto";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+interface DiscoverySource {
+  id: string;
+  name: string;
+  url: string;
+  category: string;
+  priority: number;
+  keywords: string[];
+}
+
+type DiscoveryStatus = "new" | "improved" | "changed" | "unchanged" | "failed";
+
+interface DiscoveryResult extends DiscoverySource {
+  canonicalUrl: string;
+  checkedAt: string;
+  status: DiscoveryStatus;
+  matchedKeywords: string[];
+  contentHash?: string;
+  title?: string;
+  error?: string;
+}
+
+interface DiscoveryReport {
+  generatedAt: string;
+  sourceCount: number;
+  successfulCount: number;
+  failedCount: number;
+  newOrImprovedCount: number;
+  results: DiscoveryResult[];
+  highValueMatches: DiscoveryResult[];
+  limitations: string[];
+}
+
+const scriptDirectory = dirname(fileURLToPath(import.meta.url));
+const projectRoot = resolve(scriptDirectory, "..");
+const sourcePath = resolve(projectRoot, "src", "data", "discovery-sources.json");
+const discoveryDirectory = resolve(projectRoot, "reports", "discovery");
+const publicDirectory = resolve(projectRoot, "public", "reports");
+const latestJsonPath = resolve(discoveryDirectory, "latest.json");
+
+function canonicalizeUrl(value: string): string {
+  const url = new URL(value);
+  url.hash = "";
+  url.search = "";
+  return url.toString().replace(/\/$/, "");
+}
+
+function normalizePage(html: string): string {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;|&#160;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function extractTitle(html: string): string | undefined {
+  const match = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+  return match?.[1].replace(/\s+/g, " ").trim();
+}
+
+async function readPriorReport(): Promise<DiscoveryReport | null> {
+  try {
+    return JSON.parse(await readFile(latestJsonPath, "utf8")) as DiscoveryReport;
+  } catch {
+    return null;
+  }
+}
+
+async function checkSource(
+  source: DiscoverySource,
+  previous: DiscoveryResult | undefined,
+  checkedAt: string
+): Promise<DiscoveryResult> {
+  const canonicalUrl = canonicalizeUrl(source.url);
+
+  try {
+    const response = await fetch(source.url, {
+      headers: {
+        "user-agent": "77386-Savings-Desk/0.1 public-source-monitor"
+      },
+      signal: AbortSignal.timeout(15_000)
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const html = await response.text();
+    const normalized = normalizePage(html);
+    const contentHash = createHash("sha256").update(normalized).digest("hex");
+    const matchedKeywords = source.keywords.filter((keyword) =>
+      normalized.includes(keyword.toLowerCase())
+    );
+    const previousHitCount = previous?.matchedKeywords.length ?? 0;
+    const status: DiscoveryStatus = !previous
+      ? "new"
+      : previous.contentHash === contentHash
+        ? "unchanged"
+        : matchedKeywords.length > previousHitCount
+          ? "improved"
+          : "changed";
+
+    return {
+      ...source,
+      canonicalUrl,
+      checkedAt,
+      status,
+      matchedKeywords,
+      contentHash,
+      title: extractTitle(html)
+    };
+  } catch (error) {
+    return {
+      ...source,
+      canonicalUrl,
+      checkedAt,
+      status: "failed",
+      matchedKeywords: [],
+      error: error instanceof Error ? error.message : String(error)
+    };
+  }
+}
+
+function buildMarkdown(report: DiscoveryReport): string {
+  const matches =
+    report.highValueMatches.length > 0
+      ? report.highValueMatches
+          .map(
+            (result) =>
+              `- **${result.name}** (${result.category}, ${result.status}) — matched: ${
+                result.matchedKeywords.join(", ") || "no configured terms"
+              } — [official source](${result.url})`
+          )
+          .join("\n")
+      : "- No new or improved high-priority public-source matches cleared the filter.";
+  const failures = report.results
+    .filter((result) => result.status === "failed")
+    .map((result) => `- ${result.name}: ${result.error}`)
+    .join("\n");
+
+  return `# 77386 Deal Discovery Refresh
+
+**Generated:** ${report.generatedAt}  
+**Sources checked:** ${report.sourceCount}  
+**Successful:** ${report.successfulCount}  
+**Failed:** ${report.failedCount}  
+**New or improved high-value matches:** ${report.newOrImprovedCount}
+
+## Review queue
+
+${matches}
+
+## Source failures
+
+${failures || "- None."}
+
+## Boundaries
+
+${report.limitations.map((limitation) => `- ${limitation}`).join("\n")}
+`;
+}
+
+async function main(): Promise<void> {
+  const sources = JSON.parse(await readFile(sourcePath, "utf8")) as DiscoverySource[];
+  const deduplicatedSources = Array.from(
+    new Map(sources.map((source) => [canonicalizeUrl(source.url), source])).values()
+  );
+  const prior = await readPriorReport();
+  const previousByUrl = new Map(
+    prior?.results.map((result) => [result.canonicalUrl, result]) ?? []
+  );
+  const checkedAt = new Date().toISOString();
+  const results = await Promise.all(
+    deduplicatedSources.map((source) =>
+      checkSource(source, previousByUrl.get(canonicalizeUrl(source.url)), checkedAt)
+    )
+  );
+  const highValueMatches = results.filter(
+    (result) =>
+      (result.status === "new" || result.status === "improved") &&
+      result.priority >= 8 &&
+      result.matchedKeywords.length > 0
+  );
+  const report: DiscoveryReport = {
+    generatedAt: checkedAt,
+    sourceCount: results.length,
+    successfulCount: results.filter((result) => result.status !== "failed").length,
+    failedCount: results.filter((result) => result.status === "failed").length,
+    newOrImprovedCount: highValueMatches.length,
+    results,
+    highValueMatches,
+    limitations: [
+      "This monitor checks configured public pages; it is not a general web search engine.",
+      "JavaScript-only, bot-protected, personalized, or app-only offers can be unavailable.",
+      "A changed page is a review lead, not a verified deal. Human review is required before adding value to the dashboard.",
+      "No account credentials, cookies, email addresses, or payment information are used or stored."
+    ]
+  };
+
+  await Promise.all([
+    mkdir(discoveryDirectory, { recursive: true }),
+    mkdir(publicDirectory, { recursive: true })
+  ]);
+  await Promise.all([
+    writeFile(latestJsonPath, `${JSON.stringify(report, null, 2)}\n`, "utf8"),
+    writeFile(
+      resolve(discoveryDirectory, "latest.md"),
+      buildMarkdown(report),
+      "utf8"
+    ),
+    writeFile(
+      resolve(publicDirectory, "discovery.json"),
+      `${JSON.stringify(report, null, 2)}\n`,
+      "utf8"
+    )
+  ]);
+
+  console.log(`Public sources checked: ${report.sourceCount}`);
+  console.log(`Successful: ${report.successfulCount}`);
+  console.log(`Failed: ${report.failedCount}`);
+  console.log(`New or improved high-value matches: ${report.newOrImprovedCount}`);
+  console.log(`Review queue: ${resolve(discoveryDirectory, "latest.md")}`);
+}
+
+await main();

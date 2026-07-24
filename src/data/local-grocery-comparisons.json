@@ -1,0 +1,199 @@
+{
+  "zipCode": "77386",
+  "checkedOn": "2026-07-23",
+  "adWindow": "Current listings checked July 23, 2026; only dated promotions show an end date.",
+  "comparisons": [
+    {
+      "id": "ground-beef-80-20",
+      "item": "Ground beef, 80% lean / 20% fat",
+      "category": "meat",
+      "comparisonNote": "Unit prices are comparable, but the official pages do not confirm all four prices at a 77386 store. Kroger and Aldi are tied at the listing level; no local winner is declared.",
+      "winner": null,
+      "prices": [
+        {
+          "retailer": "Kroger",
+          "product": "80% Lean Ground Beef",
+          "packageSize": "1 lb",
+          "price": 5.99,
+          "unitPrice": 5.99,
+          "unit": "lb",
+          "status": "official-needs-local-check",
+          "locationNote": "Official price page says prices may vary; 77386 pickup availability was not exposed without a store session.",
+          "dateLabel": "Current listing checked Jul 23; no ad end date shown",
+          "sourceUrl": "https://www.kroger.com/p/80-lean-ground-beef/0026165940000"
+        },
+        {
+          "retailer": "Walmart",
+          "product": "All Natural 80/20 Ground Beef Chuck",
+          "packageSize": "1 lb tray",
+          "price": 7.23,
+          "unitPrice": 7.23,
+          "unit": "lb",
+          "status": "official-needs-local-check",
+          "locationNote": "Walmart #3585 is in 77386, but this product listing was not bound to that store.",
+          "dateLabel": "Current listing checked Jul 23; no ad end date shown",
+          "sourceUrl": "https://www.walmart.com/browse/food/ground-beef/976759_9569500_5667623_3481824"
+        },
+        {
+          "retailer": "H-E-B",
+          "product": "H-E-B 100% Pure Ground Beef Chuck, 80% Lean",
+          "packageSize": "1 lb",
+          "price": 6.99,
+          "unitPrice": 6.99,
+          "unit": "lb",
+          "status": "official-needs-local-check",
+          "locationNote": "Official page was displaying Victoria H-E-B plus!, not the Spring/Rayford store.",
+          "dateLabel": "Current listing checked Jul 23; no ad end date shown",
+          "sourceUrl": "https://www.heb.com/product-detail/h-e-b-100-pure-ground-beef-chuck-80-lean/312956"
+        },
+        {
+          "retailer": "Aldi",
+          "product": "80% Lean Ground Beef",
+          "packageSize": "About 2 lb",
+          "price": 11.98,
+          "unitPrice": 5.99,
+          "unit": "lb",
+          "status": "official-needs-local-check",
+          "locationNote": "The official listing did not expose store context for the 2412 Rayford Rd Aldi.",
+          "dateLabel": "Current listing checked Jul 23; no ad end date shown",
+          "sourceUrl": "https://shop.aldi.us/store/aldi/products/17771077-ground-beef-80-20-1-per-lb"
+        }
+      ]
+    },
+    {
+      "id": "roma-tomatoes",
+      "item": "Roma tomatoes",
+      "category": "produce",
+      "comparisonNote": "Walmart is the only price verified on a store-specific 77386 page. Aldi's official listing is useful context but still requires a Rayford-store check.",
+      "winner": "Walmart #3585 at $0.97/lb (only locally verified price)",
+      "prices": [
+        {
+          "retailer": "Kroger",
+          "product": "Roma tomatoes",
+          "packageSize": "Variable weight",
+          "price": null,
+          "unitPrice": null,
+          "unit": "lb",
+          "status": "unavailable",
+          "locationNote": "A current official 77386 price was not exposed.",
+          "dateLabel": "Unavailable Jul 23",
+          "sourceUrl": "https://www.kroger.com/"
+        },
+        {
+          "retailer": "Walmart",
+          "product": "Fresh Roma Tomato",
+          "packageSize": "Each, final cost by weight",
+          "price": 0.22,
+          "unitPrice": 0.97,
+          "unit": "lb",
+          "status": "verified-local",
+          "locationNote": "Rollback at Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "dateLabel": "Store page checked Jul 23; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        },
+        {
+          "retailer": "H-E-B",
+          "product": "Roma tomatoes",
+          "packageSize": "Variable weight",
+          "price": null,
+          "unitPrice": null,
+          "unit": "lb",
+          "status": "unavailable",
+          "locationNote": "A current official Spring/Rayford price was not exposed.",
+          "dateLabel": "Unavailable Jul 23",
+          "sourceUrl": "https://www.heb.com/weekly-ad"
+        },
+        {
+          "retailer": "Aldi",
+          "product": "Roma Tomatoes",
+          "packageSize": "About 0.22 lb each",
+          "price": 0.25,
+          "unitPrice": 1.15,
+          "unit": "lb",
+          "status": "official-needs-local-check",
+          "locationNote": "Official listing price was not tied to the 2412 Rayford Rd store.",
+          "dateLabel": "Current listing checked Jul 23; no end date shown",
+          "sourceUrl": "https://www.aldi.us/store/aldi/products/17763870-tomatoes-roma-per-lb"
+        }
+      ]
+    },
+    {
+      "id": "whole-milk-gallon",
+      "item": "Store-brand whole milk",
+      "category": "staple",
+      "comparisonNote": "All packages are one gallon, but only product-level prices were available. None is confirmed at a 77386 store, so no local winner is declared.",
+      "winner": null,
+      "prices": [
+        {
+          "retailer": "Kroger",
+          "product": "Kroger Vitamin D Whole Milk",
+          "packageSize": "1 gal",
+          "price": null,
+          "unitPrice": null,
+          "unit": "gal",
+          "status": "unavailable",
+          "locationNote": "Official product page exposed the item but not a public price for the local store.",
+          "dateLabel": "Price unavailable Jul 23",
+          "sourceUrl": "https://www.kroger.com/p/kroger-vitamin-d-whole-milk-gallon/0001111040101"
+        },
+        {
+          "retailer": "Walmart",
+          "product": "Great Value Whole Vitamin D Milk",
+          "packageSize": "1 gal",
+          "price": 2.72,
+          "unitPrice": 2.72,
+          "unit": "gal",
+          "status": "official-needs-local-check",
+          "locationNote": "Official online price was not bound to Walmart #3585.",
+          "dateLabel": "Current listing checked Jul 23; no end date shown",
+          "sourceUrl": "https://business.walmart.com/ip/Great-Value-Vitamin-D-Milk-1-Gal/10450114"
+        },
+        {
+          "retailer": "H-E-B",
+          "product": "H-E-B Whole Milk",
+          "packageSize": "1 gal",
+          "price": 4.04,
+          "unitPrice": 4.04,
+          "unit": "gal",
+          "status": "official-needs-local-check",
+          "locationNote": "Official page was displaying Victoria H-E-B plus!, not Spring/Rayford.",
+          "dateLabel": "Current listing checked Jul 23; no end date shown",
+          "sourceUrl": "https://www.heb.com/product-detail/h-e-b-whole-milk/314130"
+        },
+        {
+          "retailer": "Aldi",
+          "product": "Friendly Farms Whole Milk",
+          "packageSize": "1 gal",
+          "price": 2.85,
+          "unitPrice": 2.85,
+          "unit": "gal",
+          "status": "official-needs-local-check",
+          "locationNote": "Official listing price was not tied to the 2412 Rayford Rd store.",
+          "dateLabel": "Current listing checked Jul 23; no end date shown",
+          "sourceUrl": "https://www.aldi.us/store/aldi/products/16902710-friendly-farms-vitamin-d-milk-1-gal"
+        }
+      ]
+    },
+    {
+      "id": "walmart-local-rollbacks",
+      "item": "Additional verified produce rollbacks",
+      "category": "produce",
+      "comparisonNote": "These are useful local deals, not four-store comparisons: green seedless grapes are $1.97/lb, Gala apples are $1.08/lb in a 3 lb bag, blueberries are $3.17/pint, and sweet corn is $0.25/ear.",
+      "winner": "Walmart #3585 local rollbacks",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Green seedless grapes",
+          "packageSize": "About 2.25 lb bag",
+          "price": 4.43,
+          "unitPrice": 1.97,
+          "unit": "lb",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "dateLabel": "Store page checked Jul 23; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        }
+      ]
+    }
+  ]
+}

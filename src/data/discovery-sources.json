@@ -1,0 +1,146 @@
+[
+  {
+    "id": "heb-digital-coupons",
+    "name": "H-E-B digital coupons",
+    "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
+    "category": "grocery",
+    "priority": 10,
+    "keywords": ["coupon", "free", "save", "off"]
+  },
+  {
+    "id": "target-grocery-weekly-ad",
+    "name": "Target grocery weekly ad",
+    "url": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
+    "category": "grocery",
+    "priority": 10,
+    "keywords": ["weekly ad", "off", "deal", "circle"]
+  },
+  {
+    "id": "kroger-digital-event",
+    "name": "Kroger digital coupon event",
+    "url": "https://www.kroger.com/pr/5x-digital-coupon-event",
+    "category": "grocery",
+    "priority": 10,
+    "keywords": ["digital coupon", "fuel points", "save", "5x"]
+  },
+  {
+    "id": "dutch-bros-rewards",
+    "name": "Dutch Bros rewards",
+    "url": "https://www.dutchbros.com/dutch-101/",
+    "category": "coffee",
+    "priority": 10,
+    "keywords": ["free drink", "special offers", "rewards", "points"]
+  },
+  {
+    "id": "dunkin-rayford",
+    "name": "Dunkin Rayford Road",
+    "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
+    "category": "coffee",
+    "priority": 10,
+    "keywords": ["deal", "rewards", "free", "offer"]
+  },
+  {
+    "id": "scooters-rewards",
+    "name": "Scooter's Coffee rewards",
+    "url": "https://www.scooterscoffee.com/mobileapp/faqs",
+    "category": "coffee",
+    "priority": 9,
+    "keywords": ["reward", "free drink", "smiles", "birthday"]
+  },
+  {
+    "id": "jovi-coffee",
+    "name": "JoVi Coffee",
+    "url": "https://joviroasters.com/",
+    "category": "coffee",
+    "priority": 8,
+    "keywords": ["offer", "sale", "free", "opening"]
+  },
+  {
+    "id": "shell-fuel-rewards",
+    "name": "Shell Fuel Rewards",
+    "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+    "category": "fuel",
+    "priority": 10,
+    "keywords": ["per gallon", "new member", "reward", "save"]
+  },
+  {
+    "id": "exxon-rewards",
+    "name": "Exxon Mobil Rewards+",
+    "url": "https://www.exxonmobilfuels.com/en/rewards",
+    "category": "fuel",
+    "priority": 10,
+    "keywords": ["per gallon", "points", "stack", "offer"]
+  },
+  {
+    "id": "seven-rewards",
+    "name": "7REWARDS",
+    "url": "https://www.7-eleven.com/7rewards",
+    "category": "convenience",
+    "priority": 10,
+    "keywords": ["free drink", "free snacks", "bonus points", "exclusive deals"]
+  },
+  {
+    "id": "take5-rayford",
+    "name": "Take 5 Rayford Road coupons",
+    "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
+    "category": "auto",
+    "priority": 10,
+    "keywords": ["coupon", "oil change", "off", "save"]
+  },
+  {
+    "id": "costa-oil-rayford",
+    "name": "Costa Oil Rayford specials",
+    "url": "https://spring-rayford.costaoils.com/specials",
+    "category": "auto",
+    "priority": 10,
+    "keywords": ["oil change", "off", "special", "coupon"]
+  },
+  {
+    "id": "rainbow-car-care",
+    "name": "Rainbow Car Care rewards",
+    "url": "https://rainbowcarcare.com/frequent-wash-program",
+    "category": "auto",
+    "priority": 9,
+    "keywords": ["free", "car wash", "birthday", "reward"]
+  },
+  {
+    "id": "amc-offers",
+    "name": "AMC offers and promotions",
+    "url": "https://www.amctheatres.com/offers",
+    "category": "movies",
+    "priority": 9,
+    "keywords": ["off tickets", "combo", "discount", "stubs"]
+  },
+  {
+    "id": "astros-promotions",
+    "name": "Houston Astros promotions",
+    "url": "https://www.mlb.com/astros/tickets/promotions/2026",
+    "category": "sports",
+    "priority": 8,
+    "keywords": ["promotion", "dollar dog", "giveaway", "ticket"]
+  },
+  {
+    "id": "dynamo-ticket-value",
+    "name": "Houston Dynamo ticket offers",
+    "url": "https://www.houstondynamofc.com/tickets/",
+    "category": "sports",
+    "priority": 8,
+    "keywords": ["ticket", "offer", "value", "promotion"]
+  },
+  {
+    "id": "texas-tax-holiday",
+    "name": "Texas sales tax holiday",
+    "url": "https://comptroller.texas.gov/taxes/publications/98-490/",
+    "category": "tax-free",
+    "priority": 10,
+    "keywords": ["sales tax holiday", "school supplies", "clothing", "backpacks"]
+  },
+  {
+    "id": "dunkin-news-openings",
+    "name": "Dunkin official news",
+    "url": "https://news.dunkindonuts.com/",
+    "category": "restaurants",
+    "priority": 8,
+    "keywords": ["grand opening", "free", "rewards", "offer"]
+  }
+]

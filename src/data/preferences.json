@@ -1,0 +1,42 @@
+{
+  "household": {
+    "profile": "adult household with a teen",
+    "hasBaby": false
+  },
+  "excludedKeywords": [
+    "baby",
+    "infant",
+    "newborn",
+    "toddler",
+    "diaper",
+    "pull-ups",
+    "training pants"
+  ],
+  "preferredKeywords": [
+    "teen",
+    "back to school",
+    "school supplies",
+    "backpack",
+    "clothing",
+    "shoes",
+    "groceries",
+    "free food",
+    "free drink",
+    "coffee",
+    "fuel",
+    "oil change",
+    "car wash",
+    "movie",
+    "sports ticket",
+    "tax-free"
+  ],
+  "preferredCoffeeBrands": [
+    "starbucks",
+    "dutch bros",
+    "dunkin",
+    "scooter",
+    "jovi",
+    "thirdgen",
+    "blue door"
+  ]
+}
