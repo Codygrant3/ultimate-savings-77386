@@ -3,6 +3,12 @@ function withSecurityHeaders(response) {
   headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   headers.set("X-Content-Type-Options", "nosniff");
   headers.set("X-Frame-Options", "SAMEORIGIN");
+  headers.set("X-Savings-Release", "grocery-comparisons-2026-07-23");
+
+  if ((headers.get("Content-Type") ?? "").includes("text/html")) {
+    headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
+  }
+
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,
