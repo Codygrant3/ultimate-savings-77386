@@ -1,7 +1,8 @@
 node_modules/
 dist/
-reports/
+/reports/
 .DS_Store
 *.local
+*.local.json
 *.log
 .vite/

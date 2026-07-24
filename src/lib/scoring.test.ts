@@ -80,12 +80,46 @@ describe("savings scoring", () => {
   it("excludes baby and infant offers from the household feed", () => {
     const babyOffer = {
       ...baseOpportunity,
-      id: "baby",
-      title: "Baby essentials coupon",
-      tags: ["infant"]
+      id: "heb-baby-essentials",
+      merchant: "H-E-B",
+      title: "$10 off baby essentials",
+      summary: "Stock up on infant supplies.",
+      tags: ["digital coupon"],
+      preferenceSignals: ["baby essentials"]
     };
 
     expect(isExcludedByPreferences(babyOffer)).toBe(true);
     expect(rankOpportunities([babyOffer], new Date("2026-07-23T12:00:00"))).toHaveLength(0);
+  });
+
+  it("prioritizes teen back-to-school needs over generic shopping offers", () => {
+    const today = new Date("2026-07-23T12:00:00");
+    const genericShopping = {
+      ...baseOpportunity,
+      id: "generic-shopping",
+      category: "shopping" as const,
+      title: "General merchandise offer",
+      estimatedSavings: 2,
+      minimumSpend: 20,
+      savingsRate: 10,
+      verification: "program" as const,
+      friction: "medium" as const,
+      expiresOn: undefined,
+      tags: ["shopping"]
+    };
+    const teenSchoolOffer = {
+      ...genericShopping,
+      id: "teen-school",
+      title: "Back-to-school savings for a 14-year-old",
+      tags: ["teen clothing", "school shoes", "student backpack"],
+      preferenceSignals: ["teen", "back-to-school", "school supplies"]
+    };
+
+    expect(scoreOpportunity(teenSchoolOffer, today).score).toBeGreaterThan(
+      scoreOpportunity(genericShopping, today).score
+    );
+    expect(rankOpportunities([genericShopping, teenSchoolOffer], today)[0].id).toBe(
+      "teen-school"
+    );
   });
 });

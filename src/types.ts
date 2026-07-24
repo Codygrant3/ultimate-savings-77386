@@ -101,6 +101,27 @@ export type LocalPriceStatus =
   | "official-needs-local-check"
   | "unavailable";
 
+export interface GroceryWatchItem {
+  id: string;
+  item: string;
+  comparisonId?: string;
+  targetPrice: number;
+  latestPrice: number | null;
+  unit: string;
+  retailer?: string;
+  sourceLabel: string;
+  sourceUrl?: string;
+  checkedOn?: string;
+  locationStatus: LocalPriceStatus | "manual";
+  custom?: boolean;
+}
+
+export interface GroceryWatchlistSnapshot {
+  generatedAt: string;
+  checkedOn: string;
+  items: GroceryWatchItem[];
+}
+
 export interface LocalGroceryPrice {
   retailer: "Kroger" | "Walmart" | "H-E-B" | "Aldi";
   product: string;

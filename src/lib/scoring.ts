@@ -3,7 +3,13 @@ import type { Category, Opportunity, ScoredOpportunity } from "../types";
 
 const DAY_IN_MS = 86_400_000;
 const householdPreferences = preferencesData as {
+  household: {
+    profile: string;
+    childLifeStages: string[];
+    hasBaby: boolean;
+  };
   excludedKeywords: string[];
+  highPriorityKeywords: string[];
   preferredKeywords: string[];
   preferredCoffeeBrands: string[];
 };
@@ -28,7 +34,8 @@ export function isExcludedByPreferences(opportunity: Opportunity): boolean {
     opportunity.merchant,
     opportunity.title,
     opportunity.summary,
-    ...opportunity.tags
+    ...opportunity.tags,
+    ...(opportunity.preferenceSignals ?? [])
   ]
     .join(" ")
     .toLowerCase();
@@ -113,6 +120,13 @@ export function scoreOpportunity(
     0,
     12
   );
+  const highPriorityHouseholdFitPoints = clamp(
+    householdPreferences.highPriorityKeywords.filter((keyword) =>
+      searchablePreferenceText.includes(keyword.toLowerCase())
+    ).length * 6,
+    0,
+    18
+  );
   const freshnessPoints =
     opportunity.freshness === "new"
       ? 8
@@ -144,6 +158,7 @@ export function scoreOpportunity(
     preferredCoffeeBrandPoints +
     freshnessPoints +
     householdFitPoints +
+    highPriorityHouseholdFitPoints +
     urgencyPoints -
     frictionPenalty -
     spendPenalty;

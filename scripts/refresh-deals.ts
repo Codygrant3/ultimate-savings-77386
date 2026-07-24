@@ -35,12 +35,61 @@ interface DiscoveryReport {
   limitations: string[];
 }
 
+interface GroceryPrice {
+  retailer: string;
+  unitPrice: number | null;
+  unit: string;
+  status: "verified-local" | "official-needs-local-check" | "unavailable";
+  sourceUrl: string;
+}
+
+interface GroceryComparison {
+  id: string;
+  item: string;
+  prices: GroceryPrice[];
+}
+
+interface GroceryComparisonCatalog {
+  checkedOn: string;
+  comparisons: GroceryComparison[];
+}
+
+interface GroceryWatchlistSnapshot {
+  generatedAt: string;
+  checkedOn: string;
+  items: Array<{
+    id: string;
+    item: string;
+    comparisonId: string;
+    targetPrice: number;
+    latestPrice: number;
+    unit: string;
+    retailer: string;
+    sourceLabel: string;
+    sourceUrl: string;
+    checkedOn: string;
+    locationStatus: GroceryPrice["status"];
+  }>;
+}
+
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
 const sourcePath = resolve(projectRoot, "src", "data", "discovery-sources.json");
+const groceryComparisonPath = resolve(
+  projectRoot,
+  "src",
+  "data",
+  "local-grocery-comparisons.json"
+);
 const discoveryDirectory = resolve(projectRoot, "reports", "discovery");
 const publicDirectory = resolve(projectRoot, "public", "reports");
 const latestJsonPath = resolve(discoveryDirectory, "latest.json");
+const groceryTargetPrices: Record<string, number> = {
+  "ground-beef-80-20": 5,
+  "roma-tomatoes": 1,
+  "whole-milk-gallon": 3,
+  "walmart-local-rollbacks": 1.75
+};
 
 function canonicalizeUrl(value: string): string {
   const url = new URL(value);
@@ -168,8 +217,59 @@ ${report.limitations.map((limitation) => `- ${limitation}`).join("\n")}
 `;
 }
 
+function buildGroceryWatchlistSnapshot(
+  catalog: GroceryComparisonCatalog,
+  generatedAt: string
+): GroceryWatchlistSnapshot {
+  const items = catalog.comparisons.flatMap((comparison) => {
+    const available = comparison.prices.filter(
+      (entry) => entry.unitPrice !== null && entry.status !== "unavailable"
+    );
+    const locallyVerified = available.filter(
+      (entry) => entry.status === "verified-local"
+    );
+    const eligible = locallyVerified.length > 0 ? locallyVerified : available;
+    const selected = [...eligible].sort(
+      (first, second) =>
+        (first.unitPrice ?? Number.POSITIVE_INFINITY) -
+        (second.unitPrice ?? Number.POSITIVE_INFINITY)
+    )[0];
+    if (!selected || selected.unitPrice === null) return [];
+
+    return [
+      {
+        id: `watch-${comparison.id}`,
+        item: comparison.item,
+        comparisonId: comparison.id,
+        targetPrice:
+          groceryTargetPrices[comparison.id] ?? selected.unitPrice,
+        latestPrice: selected.unitPrice,
+        unit: `per ${selected.unit}`,
+        retailer: selected.retailer,
+        sourceLabel: `${selected.retailer} official listing`,
+        sourceUrl: selected.sourceUrl,
+        checkedOn: catalog.checkedOn,
+        locationStatus: selected.status
+      }
+    ];
+  });
+
+  return {
+    generatedAt,
+    checkedOn: catalog.checkedOn,
+    items
+  };
+}
+
 async function main(): Promise<void> {
-  const sources = JSON.parse(await readFile(sourcePath, "utf8")) as DiscoverySource[];
+  const [sources, groceryCatalog] = await Promise.all([
+    readFile(sourcePath, "utf8").then(
+      (value) => JSON.parse(value) as DiscoverySource[]
+    ),
+    readFile(groceryComparisonPath, "utf8").then(
+      (value) => JSON.parse(value) as GroceryComparisonCatalog
+    )
+  ]);
   const deduplicatedSources = Array.from(
     new Map(sources.map((source) => [canonicalizeUrl(source.url), source])).values()
   );
@@ -204,6 +304,10 @@ async function main(): Promise<void> {
       "No account credentials, cookies, email addresses, or payment information are used or stored."
     ]
   };
+  const groceryWatchlist = buildGroceryWatchlistSnapshot(
+    groceryCatalog,
+    checkedAt
+  );
 
   await Promise.all([
     mkdir(discoveryDirectory, { recursive: true }),
@@ -220,6 +324,16 @@ async function main(): Promise<void> {
       resolve(publicDirectory, "discovery.json"),
       `${JSON.stringify(report, null, 2)}\n`,
       "utf8"
+    ),
+    writeFile(
+      resolve(discoveryDirectory, "grocery-watchlist.json"),
+      `${JSON.stringify(groceryWatchlist, null, 2)}\n`,
+      "utf8"
+    ),
+    writeFile(
+      resolve(publicDirectory, "grocery-watchlist.json"),
+      `${JSON.stringify(groceryWatchlist, null, 2)}\n`,
+      "utf8"
     )
   ]);
 
@@ -227,6 +341,7 @@ async function main(): Promise<void> {
   console.log(`Successful: ${report.successfulCount}`);
   console.log(`Failed: ${report.failedCount}`);
   console.log(`New or improved high-value matches: ${report.newOrImprovedCount}`);
+  console.log(`Staples watch prices normalized: ${groceryWatchlist.items.length}`);
   console.log(`Review queue: ${resolve(discoveryDirectory, "latest.md")}`);
 }
 

@@ -602,7 +602,7 @@
     "id": "texas-tax-free-weekend-2026",
     "merchant": "Texas Comptroller",
     "title": "Texas tax-free weekend: eligible items under $100",
-    "summary": "Most qualifying clothing, footwear, school supplies, and student backpacks can be purchased without sales tax.",
+    "summary": "Most qualifying clothing, footwear, school supplies, and student backpacks can be purchased without sales tax. Best household fit: teen clothing, everyday school shoes, a student backpack, and supplies already on the school list.",
     "category": "tax-free",
     "estimatedSavings": 8.25,
     "minimumSpend": 100,
@@ -626,6 +626,6 @@
     "dealType": "tax-holiday",
     "freshness": "new",
     "discoveredOn": "2026-07-23",
-    "preferenceSignals": ["back-to-school", "time-sensitive", "tax-holiday", "coupon-stack"]
+    "preferenceSignals": ["teen", "back-to-school", "school shoes", "student backpack", "time-sensitive", "tax-holiday", "coupon-stack"]
   }
 ]

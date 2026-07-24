@@ -1,6 +1,7 @@
 {
   "household": {
     "profile": "adult household with a teen",
+    "childLifeStages": ["teen"],
     "hasBaby": false
   },
   "excludedKeywords": [
@@ -9,12 +10,27 @@
     "newborn",
     "toddler",
     "diaper",
+    "baby formula",
+    "nursery",
+    "pacifier",
+    "stroller",
+    "crib",
     "pull-ups",
     "training pants"
+  ],
+  "highPriorityKeywords": [
+    "teen",
+    "back to school",
+    "back-to-school",
+    "school supplies",
+    "student backpack",
+    "school shoes",
+    "teen clothing"
   ],
   "preferredKeywords": [
     "teen",
     "back to school",
+    "back-to-school",
     "school supplies",
     "backpack",
     "clothing",

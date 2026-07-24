@@ -16,6 +16,8 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Includes a transparent sale + coupon + loyalty + cashback stacking calculator.
 - Stores opt-in expiration reminders locally without email, SMS, or push access.
 - Compares public grocery prices for Kroger, Walmart, H-E-B, and Aldi while distinguishing store-verified prices from location-gated listings.
+- Adds a customizable staples watchlist to the Grocery tab with normalized unit prices, local target-price settings, and clear target-met alerts.
+- Applies a privacy-safe adult-and-teen household profile. Baby and infant offers are excluded; teen and back-to-school matches receive an additional ranking boost.
 - Stores no email address, password, payment information, or rewards-account credentials.
 
 ## Run the dashboard
@@ -41,6 +43,12 @@ Open **Savings tools** in the top navigation.
   notifications.
 - The local grocery comparison is sourced from public retailer pages. A price is
   called a local winner only when the source is bound to a 77386 store.
+
+Open **Grocery** to use the staples watchlist. Built-in watched items receive
+their latest normalized unit price from the public comparison snapshot. You can
+change targets, enter a manual latest unit price, add custom staples, or remove
+items. These choices stay in this browser under
+`savings-desk:grocery-watchlist`; they are not published or sent to a retailer.
 
 ## Generate the weekly report
 
@@ -82,7 +90,15 @@ Outputs:
 
 - `reports/discovery/latest.json`
 - `reports/discovery/latest.md`
+- `reports/discovery/grocery-watchlist.json`
 - `public/reports/discovery.json`
+- `public/reports/grocery-watchlist.json`
+
+The grocery-watchlist snapshot normalizes the best available official listing
+for each configured comparison. It prefers a 77386-verified price when one is
+available and otherwise labels the result as not locally confirmed. The public
+deployment receives a new snapshot when the validated site is republished; the
+local scheduled refresh does not publish by itself.
 
 Register the daily 7:00 AM refresh:
 
@@ -100,6 +116,14 @@ Edit `src/data/opportunities.json`. Every record must include a source URL and a
 - `verified` for a currently supported offer.
 - `program` for an official ongoing rewards program without a guaranteed current deal.
 - `needs-check` for a lead that still requires confirmation.
+
+Household fit is configured in `src/data/preferences.json`. The exclusion filter
+checks merchant, title, summary, tags, and imported preference signals before
+ranking. High-priority teen and back-to-school keywords receive an additional
+score boost. Keep baby and infant exclusions in place unless the household
+profile changes. Exact household details belong only in the ignored
+`src/data/household-preferences.local.json` file and are never bundled or
+published.
 
 Then run:
 

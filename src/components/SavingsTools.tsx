@@ -11,15 +11,19 @@ import {
   Trash2,
   TrendingDown
 } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import comparisonData from "../data/local-grocery-comparisons.json";
 import {
+  readGroceryWatchlist,
   readPriceAlerts,
   readReminderIds,
   toggleStoredId,
+  writeGroceryWatchlist,
   writePriceAlerts
 } from "../lib/storage";
 import type {
+  GroceryWatchItem,
+  GroceryWatchlistSnapshot,
   LocalGroceryComparison,
   Opportunity,
   PriceAlert
@@ -65,7 +69,53 @@ const DEFAULT_ALERTS: PriceAlert[] = [
   }
 ];
 
-const comparisons = comparisonData.comparisons as LocalGroceryComparison[];
+const comparisonCatalog = comparisonData as {
+  checkedOn: string;
+  comparisons: LocalGroceryComparison[];
+};
+const comparisons = comparisonCatalog.comparisons;
+
+const WATCH_TARGETS: Record<string, number> = {
+  "ground-beef-80-20": 5,
+  "roma-tomatoes": 1,
+  "whole-milk-gallon": 3,
+  "walmart-local-rollbacks": 1.75
+};
+
+function selectWatchPrice(comparison: LocalGroceryComparison) {
+  const available = comparison.prices.filter(
+    (entry) => entry.unitPrice !== null && entry.status !== "unavailable"
+  );
+  const locallyVerified = available.filter(
+    (entry) => entry.status === "verified-local"
+  );
+  const eligible = locallyVerified.length > 0 ? locallyVerified : available;
+  return [...eligible].sort(
+    (first, second) => (first.unitPrice ?? Infinity) - (second.unitPrice ?? Infinity)
+  )[0];
+}
+
+const DEFAULT_GROCERY_WATCHLIST: GroceryWatchItem[] = comparisons.flatMap(
+  (comparison) => {
+    const selected = selectWatchPrice(comparison);
+    if (!selected) return [];
+    return [
+      {
+        id: `watch-${comparison.id}`,
+        item: comparison.item,
+        comparisonId: comparison.id,
+        targetPrice: WATCH_TARGETS[comparison.id] ?? selected.unitPrice ?? 0,
+        latestPrice: selected.unitPrice,
+        unit: `per ${selected.unit}`,
+        retailer: selected.retailer,
+        sourceLabel: `${selected.retailer} official listing`,
+        sourceUrl: selected.sourceUrl,
+        checkedOn: comparisonCatalog.checkedOn,
+        locationStatus: selected.status
+      }
+    ];
+  }
+);
 
 function money(value: number): string {
   return new Intl.NumberFormat("en-US", {
@@ -359,6 +409,265 @@ function ExpirationReminders({ opportunities }: { opportunities: Opportunity[] }
   );
 }
 
+function mergeWatchlistSnapshot(
+  current: GroceryWatchItem[],
+  snapshot: GroceryWatchlistSnapshot
+): GroceryWatchItem[] {
+  const refreshed = new Map(snapshot.items.map((item) => [item.id, item]));
+  return current.map((item) => {
+    const update = refreshed.get(item.id);
+    return update
+      ? {
+          ...item,
+          latestPrice: update.latestPrice,
+          retailer: update.retailer,
+          sourceLabel: update.sourceLabel,
+          sourceUrl: update.sourceUrl,
+          checkedOn: update.checkedOn,
+          locationStatus: update.locationStatus
+        }
+      : item;
+  });
+}
+
+function GroceryWatchlist() {
+  const [items, setItems] = useState<GroceryWatchItem[]>(() =>
+    readGroceryWatchlist(DEFAULT_GROCERY_WATCHLIST)
+  );
+  const [itemName, setItemName] = useState("");
+  const [target, setTarget] = useState("");
+  const [unit, setUnit] = useState("per lb");
+
+  useEffect(() => {
+    if (typeof window.fetch !== "function") return;
+    let active = true;
+
+    window
+      .fetch("/reports/grocery-watchlist.json", { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json() as Promise<GroceryWatchlistSnapshot>;
+      })
+      .then((snapshot) => {
+        if (!active) return;
+        setItems((current) =>
+          writeGroceryWatchlist(mergeWatchlistSnapshot(current, snapshot))
+        );
+      })
+      .catch(() => {
+        // The bundled official-source snapshot remains available offline.
+      });
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const matchedCount = items.filter(
+    (item) =>
+      item.latestPrice !== null && item.latestPrice <= item.targetPrice
+  ).length;
+
+  function updateItem(
+    id: string,
+    field: "targetPrice" | "latestPrice",
+    value: string
+  ) {
+    const parsed = value === "" ? null : Math.max(0, Number(value));
+    const next = items.map((item) =>
+      item.id === id
+        ? {
+            ...item,
+            [field]: field === "targetPrice" ? (parsed ?? 0) : parsed
+          }
+        : item
+    );
+    setItems(writeGroceryWatchlist(next));
+  }
+
+  function addItem() {
+    const cleanItem = itemName.trim();
+    const parsedTarget = Number(target);
+    if (!cleanItem || !Number.isFinite(parsedTarget) || parsedTarget <= 0) return;
+
+    const next = [
+      ...items,
+      {
+        id: `grocery-custom-${Date.now()}`,
+        item: cleanItem,
+        targetPrice: parsedTarget,
+        latestPrice: null,
+        unit,
+        sourceLabel: "Manual staple",
+        locationStatus: "manual" as const,
+        custom: true
+      }
+    ];
+    setItems(writeGroceryWatchlist(next));
+    setItemName("");
+    setTarget("");
+  }
+
+  function removeItem(id: string) {
+    setItems(writeGroceryWatchlist(items.filter((item) => item.id !== id)));
+  }
+
+  return (
+    <section
+      className="tool-card tool-card--wide grocery-watchlist"
+      aria-labelledby="grocery-watchlist-title"
+    >
+      <div className="tool-card__heading grocery-watchlist__heading">
+        <div className="tool-icon tool-icon--green">
+          <BellRing size={20} aria-hidden="true" />
+        </div>
+        <div>
+          <span className="eyebrow">Your weekly circular, upgraded</span>
+          <h2 id="grocery-watchlist-title">Staples watchlist</h2>
+        </div>
+        <div className="watchlist-summary" aria-label="Watchlist status">
+          <strong>{items.length}</strong>
+          <span>watched</span>
+          <strong>{matchedCount}</strong>
+          <span>at target</span>
+        </div>
+      </div>
+      <p className="tool-intro">
+        Set the unit price worth acting on. Official comparison prices refresh
+        from the public-source workflow; custom items and every target stay only
+        in this browser.
+      </p>
+
+      <div className="grocery-watch-grid">
+        {items.map((item) => {
+          const matched =
+            item.latestPrice !== null && item.latestPrice <= item.targetPrice;
+          const locallyVerified = item.locationStatus === "verified-local";
+          const state = matched
+            ? locallyVerified || item.locationStatus === "manual"
+              ? "Target met"
+              : "Meets target; confirm locally"
+            : "Watching";
+
+          return (
+            <article
+              className={`grocery-watch-item ${matched ? "grocery-watch-item--matched" : ""}`}
+              key={item.id}
+            >
+              <div className="grocery-watch-item__topline">
+                <span className={`watch-state ${matched ? "watch-state--matched" : ""}`}>
+                  {matched ? <BellRing size={14} /> : <Bell size={14} />}
+                  {state}
+                </span>
+                <button
+                  type="button"
+                  className="remove-button"
+                  aria-label={`Remove ${item.item} from staples watchlist`}
+                  onClick={() => removeItem(item.id)}
+                >
+                  <Trash2 size={15} aria-hidden="true" />
+                </button>
+              </div>
+              <strong className="grocery-watch-item__name">{item.item}</strong>
+              <div className="grocery-watch-item__prices">
+                <label>
+                  <span>Target unit price</span>
+                  <input
+                    aria-label={`${item.item} grocery target price`}
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    value={item.targetPrice}
+                    onChange={(event) =>
+                      updateItem(item.id, "targetPrice", event.target.value)
+                    }
+                  />
+                </label>
+                <label>
+                  <span>Latest unit price</span>
+                  <input
+                    aria-label={`${item.item} latest unit price`}
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    value={item.latestPrice ?? ""}
+                    placeholder="—"
+                    onChange={(event) =>
+                      updateItem(item.id, "latestPrice", event.target.value)
+                    }
+                  />
+                </label>
+                <span className="grocery-watch-item__unit">{item.unit}</span>
+              </div>
+              <div className="grocery-watch-item__source">
+                <span>
+                  {item.retailer ? `${item.retailer} · ` : ""}
+                  {item.locationStatus === "verified-local"
+                    ? "Verified 77386"
+                    : item.locationStatus === "official-needs-local-check"
+                      ? "Not locally confirmed"
+                      : item.locationStatus === "manual"
+                        ? "Manual price"
+                        : "Price unavailable"}
+                </span>
+                <small>
+                  {item.checkedOn ? `Checked ${item.checkedOn}` : "Awaiting a public price"}
+                </small>
+                {item.sourceUrl && (
+                  <a href={item.sourceUrl} target="_blank" rel="noreferrer">
+                    {item.sourceLabel} <ExternalLink size={12} />
+                  </a>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
+      <div className="grocery-watch-adder">
+        <label>
+          <span>Staple to watch</span>
+          <input
+            value={itemName}
+            onChange={(event) => setItemName(event.target.value)}
+            placeholder="Rice, chicken breast, cereal…"
+          />
+        </label>
+        <label>
+          <span>Target unit price</span>
+          <input
+            type="number"
+            min="0"
+            step="0.01"
+            value={target}
+            onChange={(event) => setTarget(event.target.value)}
+            placeholder="0.00"
+          />
+        </label>
+        <label>
+          <span>Compare as</span>
+          <select value={unit} onChange={(event) => setUnit(event.target.value)}>
+            <option value="per lb">per lb</option>
+            <option value="per oz">per oz</option>
+            <option value="per gal">per gal</option>
+            <option value="per item">per item</option>
+            <option value="per package">per package</option>
+          </select>
+        </label>
+        <button type="button" onClick={addItem}>
+          <Plus size={16} aria-hidden="true" /> Add staple
+        </button>
+      </div>
+
+      <div className="grocery-watchlist__privacy">
+        <ShieldCheck size={14} aria-hidden="true" />
+        Targets and custom staples stay in local browser storage. No retailer
+        login, payment data, or private account information is used.
+      </div>
+    </section>
+  );
+}
+
 export function GroceryComparisons() {
   const [openId, setOpenId] = useState(comparisons[0]?.id ?? "");
 
@@ -466,9 +775,9 @@ export function GroceryDashboard() {
         <span className="eyebrow">Current public retailer listings</span>
         <h1>Local grocery comparisons</h1>
         <p>
-          Compare staple, produce, and meat prices across Kroger, Walmart,
-          H-E-B, and Aldi. Every row shows package size, normalized unit price,
-          source freshness, and whether the price is confirmed at a 77386 store.
+          A weekly circular on steroids: watch your staples, set the unit price
+          worth buying, and compare Kroger, Walmart, H-E-B, and Aldi with source
+          freshness and 77386 verification shown on every result.
         </p>
       </section>
       <div className="grocery-verification-banner">
@@ -482,6 +791,7 @@ export function GroceryDashboard() {
         </div>
       </div>
       <div className="tools-grid">
+        <GroceryWatchlist />
         <GroceryComparisons />
       </div>
     </>

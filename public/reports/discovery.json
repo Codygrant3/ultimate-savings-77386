@@ -1,0 +1,424 @@
+{
+  "generatedAt": "2026-07-24T02:43:08.943Z",
+  "sourceCount": 18,
+  "successfulCount": 17,
+  "failedCount": 1,
+  "newOrImprovedCount": 0,
+  "results": [
+    {
+      "id": "heb-digital-coupons",
+      "name": "H-E-B digital coupons",
+      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
+      "category": "grocery",
+      "priority": 10,
+      "keywords": [
+        "coupon",
+        "free",
+        "save",
+        "off"
+      ],
+      "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "changed",
+      "matchedKeywords": [],
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "target-grocery-weekly-ad",
+      "name": "Target grocery weekly ad",
+      "url": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
+      "category": "grocery",
+      "priority": 10,
+      "keywords": [
+        "weekly ad",
+        "off",
+        "deal",
+        "circle"
+      ],
+      "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "weekly ad",
+        "deal",
+        "circle"
+      ],
+      "contentHash": "0314e491cdf3c8404dc6195aaae726fc5066b656c9826a7319f4d68e607c54c8"
+    },
+    {
+      "id": "kroger-digital-event",
+      "name": "Kroger digital coupon event",
+      "url": "https://www.kroger.com/pr/5x-digital-coupon-event",
+      "category": "grocery",
+      "priority": 10,
+      "keywords": [
+        "digital coupon",
+        "fuel points",
+        "save",
+        "5x"
+      ],
+      "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "digital coupon",
+        "save",
+        "5x"
+      ],
+      "contentHash": "80c7d9f0d5a3f7836de0dd8919218fec4fa5ae5eb7835ac0977deefa16b98d75",
+      "title": "5X Digital Coupon Event - Kroger"
+    },
+    {
+      "id": "dutch-bros-rewards",
+      "name": "Dutch Bros rewards",
+      "url": "https://www.dutchbros.com/dutch-101/",
+      "category": "coffee",
+      "priority": 10,
+      "keywords": [
+        "free drink",
+        "special offers",
+        "rewards",
+        "points"
+      ],
+      "canonicalUrl": "https://www.dutchbros.com/dutch-101",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "free drink",
+        "special offers",
+        "rewards",
+        "points"
+      ],
+      "contentHash": "07f3489815b88869099316b80e4b185714f96e365c2bf352def91c4c7ceb1ed2",
+      "title": "Dutch 101 | Dutch Bros Coffee"
+    },
+    {
+      "id": "dunkin-rayford",
+      "name": "Dunkin Rayford Road",
+      "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
+      "category": "coffee",
+      "priority": 10,
+      "keywords": [
+        "deal",
+        "rewards",
+        "free",
+        "offer"
+      ],
+      "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "deal",
+        "rewards",
+        "free",
+        "offer"
+      ],
+      "contentHash": "d40362f6b04b0a69ffdd5157b52b8f140e446be651f3094c80fe7f5e60fb1292",
+      "title": "Dunkin&#39; at 2222 Rayford Rd in Spring | Coffee &amp; Donuts Near You | Dunkin&#39;"
+    },
+    {
+      "id": "scooters-rewards",
+      "name": "Scooter's Coffee rewards",
+      "url": "https://www.scooterscoffee.com/mobileapp/faqs",
+      "category": "coffee",
+      "priority": 9,
+      "keywords": [
+        "reward",
+        "free drink",
+        "smiles",
+        "birthday"
+      ],
+      "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "reward",
+        "free drink",
+        "smiles",
+        "birthday"
+      ],
+      "contentHash": "ccbac0ae274ac33a4226ba9c9fe48641bc1b951bf3fec2b5ead8c33397fdb3c7",
+      "title": "FAQs"
+    },
+    {
+      "id": "jovi-coffee",
+      "name": "JoVi Coffee",
+      "url": "https://joviroasters.com/",
+      "category": "coffee",
+      "priority": 8,
+      "keywords": [
+        "offer",
+        "sale",
+        "free",
+        "opening"
+      ],
+      "canonicalUrl": "https://joviroasters.com",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "offer",
+        "sale",
+        "opening"
+      ],
+      "contentHash": "e33b0f223be492a392067fdfffec1517b29dddb35b7eacc976c38314a860de6c",
+      "title": "Specialty Coffee - JoVi Coffee Roaster - Spring, Tx"
+    },
+    {
+      "id": "shell-fuel-rewards",
+      "name": "Shell Fuel Rewards",
+      "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+      "category": "fuel",
+      "priority": 10,
+      "keywords": [
+        "per gallon",
+        "new member",
+        "reward",
+        "save"
+      ],
+      "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "reward",
+        "save"
+      ],
+      "contentHash": "de412dd8f9815d1b5931768b431197e828a895ff7f5adfc74d84102a3c8558a8",
+      "title": "Save on every fill with Shell® Fuel Rewards® | Shell USA, Inc."
+    },
+    {
+      "id": "exxon-rewards",
+      "name": "Exxon Mobil Rewards+",
+      "url": "https://www.exxonmobilfuels.com/en/rewards",
+      "category": "fuel",
+      "priority": 10,
+      "keywords": [
+        "per gallon",
+        "points",
+        "stack",
+        "offer"
+      ],
+      "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "per gallon",
+        "points",
+        "stack",
+        "offer"
+      ],
+      "contentHash": "7d0967d320adb2ef19d6adf508dcee394fc319ac88b4118a411a5b457a25ae1e",
+      "title": "Fuel Rewards | Exxon Mobil"
+    },
+    {
+      "id": "seven-rewards",
+      "name": "7REWARDS",
+      "url": "https://www.7-eleven.com/7rewards",
+      "category": "convenience",
+      "priority": 10,
+      "keywords": [
+        "free drink",
+        "free snacks",
+        "bonus points",
+        "exclusive deals"
+      ],
+      "canonicalUrl": "https://www.7-eleven.com/7rewards",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "free snacks",
+        "bonus points",
+        "exclusive deals"
+      ],
+      "contentHash": "43fbcd8c8f0334c9bbdab0524c32e190505f0770cce7e940b01bf4bcba13056b",
+      "title": "7REWARDS | 7-Eleven"
+    },
+    {
+      "id": "take5-rayford",
+      "name": "Take 5 Rayford Road coupons",
+      "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
+      "category": "auto",
+      "priority": 10,
+      "keywords": [
+        "coupon",
+        "oil change",
+        "off",
+        "save"
+      ],
+      "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "coupon",
+        "oil change",
+        "off",
+        "save"
+      ],
+      "contentHash": "ef602590764f1ee70d8c12ecdd638869ecc3f7926c699bc4c9a083b4cb485d4a",
+      "title": "Oil Change Near Me in Spring, TX 77386 - Take 5"
+    },
+    {
+      "id": "costa-oil-rayford",
+      "name": "Costa Oil Rayford specials",
+      "url": "https://spring-rayford.costaoils.com/specials",
+      "category": "auto",
+      "priority": 10,
+      "keywords": [
+        "oil change",
+        "off",
+        "special",
+        "coupon"
+      ],
+      "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "oil change",
+        "off",
+        "special",
+        "coupon"
+      ],
+      "contentHash": "44e2b07c01983e6e43c6c8f9c3fc183bc9cba34a952f2c42a901c0c22f1bde93",
+      "title": "Oil Change Coupons | Costa Oil"
+    },
+    {
+      "id": "rainbow-car-care",
+      "name": "Rainbow Car Care rewards",
+      "url": "https://rainbowcarcare.com/frequent-wash-program",
+      "category": "auto",
+      "priority": 9,
+      "keywords": [
+        "free",
+        "car wash",
+        "birthday",
+        "reward"
+      ],
+      "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "free",
+        "car wash",
+        "birthday"
+      ],
+      "contentHash": "3aaa6ebf3d428058b5330415a25c739ff9fddbc0e6c50c0f09efb0412ed86d99",
+      "title": "Frequent Wash Program - Rainbow Car Care"
+    },
+    {
+      "id": "amc-offers",
+      "name": "AMC offers and promotions",
+      "url": "https://www.amctheatres.com/offers",
+      "category": "movies",
+      "priority": 9,
+      "keywords": [
+        "off tickets",
+        "combo",
+        "discount",
+        "stubs"
+      ],
+      "canonicalUrl": "https://www.amctheatres.com/offers",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "failed",
+      "matchedKeywords": [],
+      "error": "HTTP 403"
+    },
+    {
+      "id": "astros-promotions",
+      "name": "Houston Astros promotions",
+      "url": "https://www.mlb.com/astros/tickets/promotions/2026",
+      "category": "sports",
+      "priority": 8,
+      "keywords": [
+        "promotion",
+        "dollar dog",
+        "giveaway",
+        "ticket"
+      ],
+      "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "promotion",
+        "dollar dog",
+        "giveaway",
+        "ticket"
+      ],
+      "contentHash": "d88e8586f9060fd41701b5a43d80e41b9bd2a04c87ea4013925c2a88752b29be",
+      "title": "2026 Promotions | Houston Astros"
+    },
+    {
+      "id": "dynamo-ticket-value",
+      "name": "Houston Dynamo ticket offers",
+      "url": "https://www.houstondynamofc.com/tickets/",
+      "category": "sports",
+      "priority": 8,
+      "keywords": [
+        "ticket",
+        "offer",
+        "value",
+        "promotion"
+      ],
+      "canonicalUrl": "https://www.houstondynamofc.com/tickets",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "ticket",
+        "value"
+      ],
+      "contentHash": "c5c67905a10e670530a132d420446bf4032874e1ae6143545c46cb2181f37604",
+      "title": "Tickets | Houston Dynamo FC"
+    },
+    {
+      "id": "texas-tax-holiday",
+      "name": "Texas sales tax holiday",
+      "url": "https://comptroller.texas.gov/taxes/publications/98-490/",
+      "category": "tax-free",
+      "priority": 10,
+      "keywords": [
+        "sales tax holiday",
+        "school supplies",
+        "clothing",
+        "backpacks"
+      ],
+      "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "sales tax holiday",
+        "school supplies",
+        "clothing",
+        "backpacks"
+      ],
+      "contentHash": "7fed9091ba6dd366cbe96a02582e7eee2e9b4c70280eb7054d697b2b1085b3b2",
+      "title": "Sales Tax Holiday"
+    },
+    {
+      "id": "dunkin-news-openings",
+      "name": "Dunkin official news",
+      "url": "https://news.dunkindonuts.com/",
+      "category": "restaurants",
+      "priority": 8,
+      "keywords": [
+        "grand opening",
+        "free",
+        "rewards",
+        "offer"
+      ],
+      "canonicalUrl": "https://news.dunkindonuts.com",
+      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "free",
+        "rewards"
+      ],
+      "contentHash": "eaa11a6a1779e5016228551d3f841361fd213d894166cb83699127d79a2c67ff",
+      "title": "Newsroom | Dunkin&#39;"
+    }
+  ],
+  "highValueMatches": [],
+  "limitations": [
+    "This monitor checks configured public pages; it is not a general web search engine.",
+    "JavaScript-only, bot-protected, personalized, or app-only offers can be unavailable.",
+    "A changed page is a review lead, not a verified deal. Human review is required before adding value to the dashboard.",
+    "No account credentials, cookies, email addresses, or payment information are used or stored."
+  ]
+}

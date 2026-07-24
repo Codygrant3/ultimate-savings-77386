@@ -41,6 +41,13 @@ describe("Savings Desk interactions", () => {
     render(<App />);
 
     expect(screen.getByText("Priority mode: household-fit, high-value savings")).toBeTruthy();
+    expect(screen.getByText(/Built for an adult-and-teen household/)).toBeTruthy();
+    expect(screen.queryByText(/\$10 off baby essentials/i)).toBeNull();
+
+    fireEvent.click(screen.getByRole("button", { name: "Browse this week" }));
+    expect(
+      screen.getByText(/Best household fit: teen clothing, everyday school shoes/)
+    ).toBeTruthy();
   });
 
   it("removes unwanted local activity offers", () => {
@@ -105,5 +112,33 @@ describe("Savings Desk interactions", () => {
 
     fireEvent.click(screen.getByRole("tab", { name: "Roma tomatoes" }));
     expect(screen.getByText("Walmart #3585 at $0.97/lb (only locally verified price)")).toBeTruthy();
+  });
+
+  it("keeps a customizable local staples watchlist with target alerts", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Grocery" }));
+
+    expect(screen.getByRole("heading", { name: "Staples watchlist" })).toBeTruthy();
+    expect(screen.getByText("4")).toBeTruthy();
+    expect(screen.getByText("Target met")).toBeTruthy();
+    expect(screen.getByText("Meets target; confirm locally")).toBeTruthy();
+    expect(screen.getAllByText("Latest unit price")).toHaveLength(4);
+
+    fireEvent.change(screen.getByPlaceholderText("Rice, chicken breast, cereal…"), {
+      target: { value: "Brown rice" }
+    });
+    fireEvent.change(screen.getByPlaceholderText("0.00"), {
+      target: { value: "1.25" }
+    });
+    fireEvent.change(screen.getByLabelText("Compare as"), {
+      target: { value: "per lb" }
+    });
+    fireEvent.click(screen.getByRole("button", { name: "Add staple" }));
+
+    expect(screen.getByText("Brown rice")).toBeTruthy();
+    expect(window.localStorage.getItem("savings-desk:grocery-watchlist")).toContain(
+      "Brown rice"
+    );
   });
 });

@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-07-24T02:43:08.943Z",
+  "checkedOn": "2026-07-23",
+  "items": [
+    {
+      "id": "watch-ground-beef-80-20",
+      "item": "Ground beef, 80% lean / 20% fat",
+      "comparisonId": "ground-beef-80-20",
+      "targetPrice": 5,
+      "latestPrice": 5.99,
+      "unit": "per lb",
+      "retailer": "Kroger",
+      "sourceLabel": "Kroger official listing",
+      "sourceUrl": "https://www.kroger.com/p/80-lean-ground-beef/0026165940000",
+      "checkedOn": "2026-07-23",
+      "locationStatus": "official-needs-local-check"
+    },
+    {
+      "id": "watch-roma-tomatoes",
+      "item": "Roma tomatoes",
+      "comparisonId": "roma-tomatoes",
+      "targetPrice": 1,
+      "latestPrice": 0.97,
+      "unit": "per lb",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
+      "checkedOn": "2026-07-23",
+      "locationStatus": "verified-local"
+    },
+    {
+      "id": "watch-whole-milk-gallon",
+      "item": "Store-brand whole milk",
+      "comparisonId": "whole-milk-gallon",
+      "targetPrice": 3,
+      "latestPrice": 2.72,
+      "unit": "per gal",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://business.walmart.com/ip/Great-Value-Vitamin-D-Milk-1-Gal/10450114",
+      "checkedOn": "2026-07-23",
+      "locationStatus": "official-needs-local-check"
+    },
+    {
+      "id": "watch-walmart-local-rollbacks",
+      "item": "Additional verified produce rollbacks",
+      "comparisonId": "walmart-local-rollbacks",
+      "targetPrice": 1.75,
+      "latestPrice": 1.97,
+      "unit": "per lb",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
+      "checkedOn": "2026-07-23",
+      "locationStatus": "verified-local"
+    }
+  ]
+}

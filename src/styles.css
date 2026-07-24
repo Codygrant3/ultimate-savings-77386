@@ -1654,6 +1654,213 @@ a {
   background: #e0eff6;
 }
 
+.grocery-watchlist {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(42, 112, 145, 0.08), transparent 34%),
+    rgba(255, 254, 250, 0.94);
+}
+
+.grocery-watchlist__heading {
+  align-items: center;
+}
+
+.watchlist-summary {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: baseline;
+  gap: 4px 7px;
+  margin-left: auto;
+  padding: 8px 11px;
+  color: #557069;
+  border: 1px solid #d8e5df;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.watchlist-summary strong {
+  color: var(--forest);
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.watchlist-summary span {
+  font-size: 7.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.grocery-watch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.grocery-watch-item {
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #e2e3dd;
+  border-radius: 13px;
+  background: rgba(250, 249, 245, 0.92);
+}
+
+.grocery-watch-item--matched {
+  border-color: #acd7c2;
+  background: #eff9f3;
+  box-shadow: inset 3px 0 0 #2b8769;
+}
+
+.grocery-watch-item__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.watch-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #71817c;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.watch-state--matched {
+  color: #177055;
+}
+
+.grocery-watch-item__name {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+}
+
+.grocery-watch-item__prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: end;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.grocery-watch-item__prices label,
+.grocery-watch-adder label {
+  display: grid;
+}
+
+.grocery-watch-item__prices label span,
+.grocery-watch-adder label span {
+  margin-bottom: 4px;
+  color: #6f7f7a;
+  font-size: 7.5px;
+  font-weight: 700;
+}
+
+.grocery-watch-item__prices input,
+.grocery-watch-adder input,
+.grocery-watch-adder select {
+  width: 100%;
+  min-width: 0;
+  height: 32px;
+  padding: 7px 8px;
+  color: var(--ink);
+  border: 1px solid #d8dcd8;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  font: inherit;
+  font-size: 9px;
+}
+
+.grocery-watch-item__prices input:focus,
+.grocery-watch-adder input:focus,
+.grocery-watch-adder select:focus {
+  border-color: #83ad9d;
+  box-shadow: 0 0 0 2px rgba(15, 76, 58, 0.08);
+}
+
+.grocery-watch-item__unit {
+  padding-bottom: 8px;
+  color: #75837f;
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.grocery-watch-item__source {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(23, 53, 44, 0.09);
+}
+
+.grocery-watch-item__source span,
+.grocery-watch-item__source small {
+  color: #6f7f7a;
+  font-size: 7.5px;
+}
+
+.grocery-watch-item__source span {
+  font-weight: 700;
+}
+
+.grocery-watch-item__source a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: auto;
+  color: var(--forest);
+  font-size: 7.5px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.grocery-watch-adder {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 140px 120px auto;
+  align-items: end;
+  gap: 8px;
+  margin-top: 13px;
+  padding-top: 13px;
+  border-top: 1px solid #e1e4df;
+}
+
+.grocery-watch-adder button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 32px;
+  padding: 0 13px;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  background: var(--forest);
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.grocery-watchlist__privacy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: #657a73;
+  font-size: 8px;
+}
+
+.grocery-watchlist__privacy svg {
+  flex: none;
+  color: var(--forest);
+}
+
 .tool-intro {
   margin: 12px 0 17px;
   color: var(--ink-soft);
@@ -2147,6 +2354,14 @@ a {
   .price-alert__unit {
     display: none;
   }
+
+  .grocery-watch-adder {
+    grid-template-columns: 1fr 120px 110px;
+  }
+
+  .grocery-watch-adder button {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 760px) {
@@ -2350,6 +2565,22 @@ a {
     grid-column: auto;
   }
 
+  .grocery-watch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grocery-watch-adder {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grocery-watch-adder label:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .grocery-watch-adder button {
+    grid-column: 1 / -1;
+  }
+
   .price-alert {
     grid-template-columns: minmax(0, 1fr) 74px 74px 31px;
   }
@@ -2412,6 +2643,34 @@ a {
 
   .tool-card {
     padding: 16px;
+  }
+
+  .grocery-watchlist__heading {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .watchlist-summary {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .grocery-watch-item__prices {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grocery-watch-item__unit {
+    grid-column: 1 / -1;
+    padding-bottom: 0;
+  }
+
+  .grocery-watch-item__source {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .grocery-watch-item__source a {
+    margin-left: 0;
   }
 
   .price-alert {

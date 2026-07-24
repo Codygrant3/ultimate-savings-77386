@@ -493,9 +493,10 @@ export default function App() {
                 <div>
                   <strong>Priority mode: household-fit, high-value savings</strong>
                   <span>
-                    Groceries, teen and back-to-school needs, coffee, fuel, auto
-                    care, movies, sports, and verified stacks lead. Baby and
-                    unrelated local-activity offers are excluded.
+                    Built for an adult-and-teen household: groceries, teen
+                    back-to-school needs, coffee, fuel, auto care, movies,
+                    sports, and verified stacks lead. Baby, infant, and unrelated
+                    local-activity offers are excluded.
                   </span>
                 </div>
               </section>
