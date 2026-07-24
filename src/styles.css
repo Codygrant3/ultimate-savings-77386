@@ -1552,6 +1552,38 @@ a {
   font-size: 10px;
 }
 
+.grocery-verification-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 13px 15px;
+  color: #315e50;
+  border: 1px solid #c5ddd3;
+  border-radius: 12px;
+  background: #eef7f2;
+}
+
+.grocery-verification-banner svg {
+  flex: none;
+}
+
+.grocery-verification-banner strong,
+.grocery-verification-banner span {
+  display: block;
+}
+
+.grocery-verification-banner strong {
+  font-size: 10px;
+}
+
+.grocery-verification-banner span {
+  margin-top: 2px;
+  color: #5c766d;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
 .privacy-banner svg {
   flex: none;
 }

@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import opportunitiesData from "./data/opportunities.json";
-import { SavingsTools } from "./components/SavingsTools";
+import { GroceryDashboard, SavingsTools } from "./components/SavingsTools";
 import { formatCurrency, rankOpportunities } from "./lib/scoring";
 import { readRedeemedIds, readSavedIds, toggleStoredId } from "./lib/storage";
 import type {
@@ -40,7 +40,7 @@ import type {
   VerificationStatus
 } from "./types";
 
-type View = "overview" | "deals" | "programs" | "weekly" | "tools";
+type View = "overview" | "deals" | "grocery" | "programs" | "weekly" | "tools";
 type CategoryFilter = "all" | Category;
 
 const opportunities = opportunitiesData as Opportunity[];
@@ -72,6 +72,7 @@ const CATEGORY_META: Record<
 const NAV_ITEMS: Array<{ id: View; label: string; icon: LucideIcon }> = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
   { id: "deals", label: "Deal feed", icon: Sparkles },
+  { id: "grocery", label: "Grocery", icon: ShoppingBasket },
   { id: "tools", label: "Savings tools", icon: BellRing },
   { id: "weekly", label: "Monday report", icon: CalendarDays },
   { id: "programs", label: "Rewards", icon: ShieldCheck }
@@ -771,6 +772,10 @@ export default function App() {
 
           {view === "tools" && (
             <SavingsTools opportunities={verifiedDeals} />
+          )}
+
+          {view === "grocery" && (
+            <GroceryDashboard />
           )}
         </div>
       </main>

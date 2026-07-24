@@ -359,7 +359,7 @@ function ExpirationReminders({ opportunities }: { opportunities: Opportunity[] }
   );
 }
 
-function GroceryComparisons() {
+export function GroceryComparisons() {
   const [openId, setOpenId] = useState(comparisons[0]?.id ?? "");
 
   return (
@@ -438,7 +438,7 @@ function GroceryComparisons() {
                             ? "Verified 77386"
                             : entry.status === "unavailable"
                               ? "Unavailable"
-                              : "Needs local check"}
+                              : "Not locally confirmed"}
                         </span>
                         <small>{entry.locationNote}</small>
                       </td>
@@ -456,6 +456,35 @@ function GroceryComparisons() {
           </div>
         ))}
     </section>
+  );
+}
+
+export function GroceryDashboard() {
+  return (
+    <>
+      <section className="page-heading tools-heading">
+        <span className="eyebrow">Current public retailer listings</span>
+        <h1>Local grocery comparisons</h1>
+        <p>
+          Compare staple, produce, and meat prices across Kroger, Walmart,
+          H-E-B, and Aldi. Every row shows package size, normalized unit price,
+          source freshness, and whether the price is confirmed at a 77386 store.
+        </p>
+      </section>
+      <div className="grocery-verification-banner">
+        <ShieldCheck size={18} aria-hidden="true" />
+        <div>
+          <strong>Checked July 23, 2026</strong>
+          <span>
+            Only store-bound evidence earns “Verified 77386.” Official prices
+            without local store context remain “Not locally confirmed.”
+          </span>
+        </div>
+      </div>
+      <div className="tools-grid">
+        <GroceryComparisons />
+      </div>
+    </>
   );
 }
 

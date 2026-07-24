@@ -92,13 +92,18 @@ describe("Savings Desk interactions", () => {
     expect(window.localStorage.getItem("savings-desk:reminders")).not.toBe("[]");
   });
 
-  it("labels grocery prices that still need a 77386 store check", () => {
+  it("shows grocery comparisons under the dedicated Grocery tab", () => {
     render(<App />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Savings tools" }));
+    fireEvent.click(screen.getByRole("button", { name: "Grocery" }));
 
+    expect(screen.getByRole("heading", { name: "Local grocery comparisons" })).toBeTruthy();
     expect(screen.getByRole("heading", { name: "77386 local grocery check" })).toBeTruthy();
     expect(screen.getByText("No verified local winner")).toBeTruthy();
-    expect(screen.getAllByText("Needs local check").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Not locally confirmed").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("80% Lean Ground Beef")).toHaveLength(2);
+
+    fireEvent.click(screen.getByRole("tab", { name: "Roma tomatoes" }));
+    expect(screen.getByText("Walmart #3585 at $0.97/lb (only locally verified price)")).toBeTruthy();
   });
 });
