@@ -1,4 +1,4 @@
-import { cp, mkdir } from "node:fs/promises";
+import { cp, mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const projectRoot = resolve(import.meta.dirname, "..");
@@ -12,7 +12,22 @@ await cp(resolve(output, "index.html"), resolve(client, "index.html"));
 await cp(resolve(output, "assets"), resolve(client, "assets"), {
   recursive: true
 });
-await cp(
+
+const indexHtml = await readFile(resolve(output, "index.html"), "utf8");
+const assetMatch = indexHtml.match(/\/assets\/(index-[^"']+\.js)/);
+if (!assetMatch) {
+  throw new Error("Unable to identify the production JavaScript asset.");
+}
+
+const workerTemplate = await readFile(
   resolve(projectRoot, "scripts", "sites-worker.mjs"),
-  resolve(server, "index.js")
+  "utf8"
+);
+if (!workerTemplate.includes("__ASSET_REVISION__")) {
+  throw new Error("Sites worker is missing the asset revision placeholder.");
+}
+
+await writeFile(
+  resolve(server, "index.js"),
+  workerTemplate.replaceAll("__ASSET_REVISION__", assetMatch[1])
 );

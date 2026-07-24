@@ -1,9 +1,11 @@
+const ASSET_REVISION = "__ASSET_REVISION__";
+
 function withSecurityHeaders(response) {
   const headers = new Headers(response.headers);
   headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   headers.set("X-Content-Type-Options", "nosniff");
   headers.set("X-Frame-Options", "SAMEORIGIN");
-  headers.set("X-Savings-Release", "grocery-comparisons-2026-07-23");
+  headers.set("X-Savings-Release", ASSET_REVISION);
 
   if ((headers.get("Content-Type") ?? "").includes("text/html")) {
     headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
