@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T15:54:41.676Z",
+  "generatedAt": "2026-07-25T15:56:25.709Z",
   "checkedOn": "2026-07-25",
   "openCount": 4,
   "settlements": [
@@ -10,8 +10,8 @@
       "summary": "A proposed $50 million partial settlement concerns qualifying YouTube TV and DirecTV streaming subscriptions during the stated class period.",
       "claimDeadline": "2026-09-08",
       "eligibilitySummary": "Potentially applies only if you purchased YouTube TV or DirecTV Stream, DirecTV Now, or AT&T TV Now between April 1, 2019 and March 31, 2026, subject to the official notice and applicable state-law class definitions.",
-      "proofRequirement": "purchase-or-subscription-records",
-      "proofSummary": "The official form requires truthful subscription details and a signed verification. Review the official notice for the states and records that apply to your claim.",
+      "proofRequirement": "notice-or-records",
+      "proofSummary": "Online filing starts with the Unique ID and PIN from the mailed or emailed notice; the administrator can assist if a notice was not received or was lost. The form must be completed truthfully and may be validated against provider data.",
       "estimatedBenefit": "Pro rata cash payment based on qualifying subscription length; no individual amount is stated.",
       "geography": "United States; state-law class definitions and exclusions apply",
       "sourceUrl": "https://www.onlinetvsettlement.com/",
