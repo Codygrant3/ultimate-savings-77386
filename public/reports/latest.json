@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T02:10:44.587Z",
+  "generatedAt": "2026-07-25T15:49:52.908Z",
   "weekOf": "2026-07-20",
   "zipCode": "77386",
   "totalPotentialSavings": 109.2,
@@ -203,7 +203,7 @@
       "id": "texas-tax-free-weekend-2026",
       "merchant": "Texas Comptroller",
       "title": "Texas tax-free weekend: eligible items under $100",
-      "summary": "Most qualifying clothing, footwear, school supplies, and student backpacks can be purchased without sales tax.",
+      "summary": "Most qualifying clothing, footwear, school supplies, and student backpacks can be purchased without sales tax. Best household fit: teen clothing, everyday school shoes, a student backpack, and supplies already on the school list.",
       "category": "tax-free",
       "estimatedSavings": 8.25,
       "minimumSpend": 100,
@@ -233,7 +233,10 @@
       "freshness": "new",
       "discoveredOn": "2026-07-23",
       "preferenceSignals": [
+        "teen",
         "back-to-school",
+        "school shoes",
+        "student backpack",
         "time-sensitive",
         "tax-holiday",
         "coupon-stack"
@@ -420,6 +423,33 @@
       "scoreLabel": "Excellent"
     },
     {
+      "id": "mcdonalds-new-user-snack-wrap-2026-07",
+      "merchant": "McDonald's",
+      "title": "Free Snack Wrap for eligible new app users",
+      "summary": "Official offer requires a first purchase of $1 or more and rewards opt-in. It can take up to 48 hours to appear.",
+      "category": "restaurants",
+      "estimatedSavings": 3.5,
+      "minimumSpend": 1,
+      "isFree": false,
+      "expiresOn": "2026-07-31",
+      "locationNote": "At participating restaurants; confirm in the app before driving.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "new member",
+        "app",
+        "food"
+      ],
+      "source": {
+        "label": "MyMcDonald's Rewards",
+        "url": "https://www.mcdonalds.com/us/en-us/mymcdonalds.html",
+        "checkedOn": "2026-07-23"
+      },
+      "actionLabel": "Check eligibility",
+      "score": 82,
+      "scoreLabel": "Strong"
+    },
+    {
       "id": "starbucks-rewards-ongoing-2026",
       "merchant": "Starbucks Rewards",
       "title": "Earn toward free food and drinks",
@@ -452,33 +482,6 @@
       "dealType": "loyalty-reward",
       "freshness": "current",
       "score": 81,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "mcdonalds-new-user-snack-wrap-2026-07",
-      "merchant": "McDonald's",
-      "title": "Free Snack Wrap for eligible new app users",
-      "summary": "Official offer requires a first purchase of $1 or more and rewards opt-in. It can take up to 48 hours to appear.",
-      "category": "restaurants",
-      "estimatedSavings": 3.5,
-      "minimumSpend": 1,
-      "isFree": false,
-      "expiresOn": "2026-07-31",
-      "locationNote": "At participating restaurants; confirm in the app before driving.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "new member",
-        "app",
-        "food"
-      ],
-      "source": {
-        "label": "MyMcDonald's Rewards",
-        "url": "https://www.mcdonalds.com/us/en-us/mymcdonalds.html",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "Check eligibility",
-      "score": 77,
       "scoreLabel": "Strong"
     },
     {

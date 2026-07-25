@@ -143,3 +143,47 @@ export interface LocalGroceryComparison {
   winner: string | null;
   prices: LocalGroceryPrice[];
 }
+
+export type SettlementProofRequirement =
+  | "none-stated"
+  | "notice-or-records"
+  | "purchase-or-subscription-records"
+  | "expense-documentation"
+  | "vehicle-records";
+
+export type SettlementVerification =
+  | "official-administrator"
+  | "court-authorized-notice";
+
+export interface ClassActionSettlement {
+  id: string;
+  caseName: string;
+  shortTitle: string;
+  summary: string;
+  claimDeadline: string;
+  eligibilitySummary: string;
+  proofRequirement: SettlementProofRequirement;
+  proofSummary: string;
+  estimatedBenefit: string;
+  geography: string;
+  sourceUrl: string;
+  claimFormUrl: string;
+  administrator: string;
+  court: string;
+  verification: SettlementVerification;
+  checkedOn: string;
+  freshness: "current" | "review-due";
+  relevanceScore: number;
+  relevanceReason: string;
+  feeRequired: false;
+  eligibilityStatus: "user-confirmation-required";
+}
+
+export interface SettlementSnapshot {
+  generatedAt: string;
+  checkedOn: string;
+  openCount: number;
+  settlements: ClassActionSettlement[];
+  excludedRules: string[];
+  limitations: string[];
+}

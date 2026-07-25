@@ -17,6 +17,7 @@ import {
   MapPin,
   Menu,
   RotateCcw,
+  Scale,
   Search,
   ShieldCheck,
   ShoppingBag,
@@ -31,20 +32,34 @@ import {
 import { useMemo, useState } from "react";
 import opportunitiesData from "./data/opportunities.json";
 import { GroceryDashboard, SavingsTools } from "./components/SavingsTools";
+import { SettlementsDashboard } from "./components/SettlementsDashboard";
+import settlementsData from "./data/settlements.json";
 import { formatCurrency, rankOpportunities } from "./lib/scoring";
+import { rankSettlements } from "./lib/settlements";
 import { readRedeemedIds, readSavedIds, toggleStoredId } from "./lib/storage";
 import type {
   Category,
+  ClassActionSettlement,
   Opportunity,
   ScoredOpportunity,
   VerificationStatus
 } from "./types";
 
-type View = "overview" | "deals" | "grocery" | "programs" | "weekly" | "tools";
+type View =
+  | "overview"
+  | "deals"
+  | "grocery"
+  | "settlements"
+  | "programs"
+  | "weekly"
+  | "tools";
 type CategoryFilter = "all" | Category;
 
 const opportunities = opportunitiesData as Opportunity[];
 const currentOpportunities = rankOpportunities(opportunities);
+const currentSettlements = rankSettlements(
+  settlementsData as ClassActionSettlement[]
+);
 const activeCategories = Array.from(
   new Set(currentOpportunities.map((opportunity) => opportunity.category))
 );
@@ -73,6 +88,7 @@ const NAV_ITEMS: Array<{ id: View; label: string; icon: LucideIcon }> = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
   { id: "deals", label: "Deal feed", icon: Sparkles },
   { id: "grocery", label: "Grocery", icon: ShoppingBasket },
+  { id: "settlements", label: "Settlements", icon: Scale },
   { id: "tools", label: "Savings tools", icon: BellRing },
   { id: "weekly", label: "Monday report", icon: CalendarDays },
   { id: "programs", label: "Rewards", icon: ShieldCheck }
@@ -427,8 +443,8 @@ export default function App() {
                   </h1>
                   <p>
                     A personalized look at food, coffee, fuel, auto care,
-                    entertainment, sports, and timely household savings—ranked
-                    by value, evidence, and effort.
+                    entertainment, sports, settlements, and timely household
+                    savings—ranked by value, evidence, and effort.
                   </p>
                   <div className="hero__actions">
                     <button type="button" className="hero-action" onClick={() => changeView("deals")}>
@@ -731,11 +747,43 @@ export default function App() {
                   <div className="weekly-section">
                     <div className="weekly-section__number">03</div>
                     <div>
+                      <span className="eyebrow">Settlement deadlines</span>
+                      <h2>Official opportunities requiring your confirmation</h2>
+                      {currentSettlements.slice(0, 3).map((settlement) => (
+                        <div className="brief-row" key={settlement.id}>
+                          <div className="brief-row__rank">{settlement.relevanceScore}</div>
+                          <div>
+                            <strong>{settlement.shortTitle}</strong>
+                            <span>
+                              Deadline {formatDate(settlement.claimDeadline)} ·
+                              eligibility not confirmed
+                            </span>
+                          </div>
+                          <a href={settlement.sourceUrl} target="_blank" rel="noreferrer">
+                            <ExternalLink size={16} aria-label="Open official settlement source" />
+                          </a>
+                        </div>
+                      ))}
+                      <button
+                        type="button"
+                        className="view-all"
+                        onClick={() => changeView("settlements")}
+                      >
+                        Review settlement checklist <ChevronRight size={16} aria-hidden="true" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="weekly-section">
+                    <div className="weekly-section__number">04</div>
+                    <div>
                       <span className="eyebrow">The filter</span>
                       <h2>What this report intentionally excluded</h2>
                       <p className="weekly-copy">
                         Expired offers, unsourced social posts, generic “up to” claims, and any
-                        deal that requires buying something you did not already need.
+                        deal that requires buying something you did not already need. Settlement
+                        leads that are expired, unverifiable, pay-to-file, lead-generation, or
+                        scam-like are also excluded.
                       </p>
                     </div>
                   </div>
@@ -777,6 +825,10 @@ export default function App() {
 
           {view === "grocery" && (
             <GroceryDashboard />
+          )}
+
+          {view === "settlements" && (
+            <SettlementsDashboard />
           )}
         </div>
       </main>

@@ -2,17 +2,31 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { formatCurrency, rankOpportunities, startOfWeek } from "../src/lib/scoring.ts";
-import type { Opportunity, WeeklyReport } from "../src/types.ts";
+import { rankSettlements } from "../src/lib/settlements.ts";
+import type {
+  ClassActionSettlement,
+  Opportunity,
+  WeeklyReport
+} from "../src/types.ts";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
 const dataPath = resolve(projectRoot, "src", "data", "opportunities.json");
+const settlementDataPath = resolve(
+  projectRoot,
+  "src",
+  "data",
+  "settlements.json"
+);
 
 function toIsoDate(date: Date): string {
   return date.toISOString().slice(0, 10);
 }
 
-function buildMarkdown(report: WeeklyReport): string {
+function buildMarkdown(
+  report: WeeklyReport,
+  settlements: ClassActionSettlement[]
+): string {
   const verifiedLines =
     report.opportunities.length > 0
       ? report.opportunities
@@ -54,6 +68,21 @@ function buildMarkdown(report: WeeklyReport): string {
           .join("\n")
       : "No program or research leads are on the watchlist.";
 
+  const settlementLines =
+    settlements.length > 0
+      ? settlements
+          .slice(0, 4)
+          .map(
+            (settlement, index) =>
+              `${index + 1}. **${settlement.shortTitle}** — claim deadline ${settlement.claimDeadline}; ${settlement.estimatedBenefit}\n` +
+              `   - Possible relevance: ${settlement.relevanceReason}\n` +
+              `   - Eligibility: **not confirmed**. ${settlement.eligibilitySummary}\n` +
+              `   - Proof signal: ${settlement.proofSummary}\n` +
+              `   - [Official source](${settlement.sourceUrl}) — checked ${settlement.checkedOn}.`
+          )
+          .join("\n\n")
+      : "No open, source-checked settlement examples cleared the safety filter.";
+
   return `# 77386 Weekly Savings Brief
 
 **Week of:** ${report.weekOf}  
@@ -73,23 +102,42 @@ These are official programs or research leads, not assumed current freebies.
 
 ${watchlistLines}
 
+## Class action settlement watch
+
+These are official, open examples ranked only for review. The report does not
+confirm household eligibility and cannot file a claim.
+
+${settlementLines}
+
+> Informational only, not legal advice. Read the official notice, confirm every
+> eligibility fact truthfully, and submit any form yourself. Never pay to file.
+
 ## Savings filter
 
 This report intentionally excludes expired offers, unsourced social posts, generic "up to" claims, and promotions that do not have enough evidence to support an action.
 
 ## Safe account practice
 
-The tracker stores no email address, password, payment information, or rewards-account credential. Use a password manager and a unique password for each program.
+The tracker stores no email address, password, payment information, rewards-account
+credential, Social Security number, bank detail, claim identifier, VIN, or exact
+household data. Settlement attestations and submissions are always manual.
 `;
 }
 
 async function main(): Promise<void> {
-  const rawData = await readFile(dataPath, "utf8");
+  const [rawData, rawSettlementData] = await Promise.all([
+    readFile(dataPath, "utf8"),
+    readFile(settlementDataPath, "utf8")
+  ]);
   const opportunities = JSON.parse(rawData) as Opportunity[];
+  const settlementCatalog = JSON.parse(
+    rawSettlementData
+  ) as ClassActionSettlement[];
   const now = new Date();
   const ranked = rankOpportunities(opportunities, now);
   const verified = ranked.filter((opportunity) => opportunity.verification === "verified");
   const watchlist = ranked.filter((opportunity) => opportunity.verification !== "verified");
+  const settlements = rankSettlements(settlementCatalog, now);
   const weekOf = toIsoDate(startOfWeek(now));
 
   const report: WeeklyReport = {
@@ -113,7 +161,7 @@ async function main(): Promise<void> {
     mkdir(publicDirectory, { recursive: true })
   ]);
 
-  const markdown = buildMarkdown(report);
+  const markdown = buildMarkdown(report, settlements);
   const datedMarkdownPath = resolve(weeklyDirectory, `${weekOf}.md`);
   const latestMarkdownPath = resolve(weeklyDirectory, "latest.md");
   const latestJsonPath = resolve(publicDirectory, "latest.json");
@@ -127,6 +175,7 @@ async function main(): Promise<void> {
   console.log(`Weekly report written for ${weekOf}.`);
   console.log(`Verified opportunities: ${report.verifiedCount}`);
   console.log(`Potential savings: ${formatCurrency(report.totalPotentialSavings)}`);
+  console.log(`Open settlement examples: ${settlements.length}`);
   console.log(`Markdown: ${datedMarkdownPath}`);
   console.log(`Dashboard data: ${latestJsonPath}`);
 }

@@ -17,8 +17,10 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Stores opt-in expiration reminders locally without email, SMS, or push access.
 - Compares public grocery prices for Kroger, Walmart, H-E-B, and Aldi while distinguishing store-verified prices from location-gated listings.
 - Adds a customizable staples watchlist to the Grocery tab with normalized unit prices, local target-price settings, and clear target-met alerts.
+- Adds a Class Action Settlements workspace using only official court notices or verified administrator sites, with relevance ranking, local saved items, deadline reminders, and a manual claim-review checklist.
 - Applies a privacy-safe adult-and-teen household profile. Baby and infant offers are excluded; teen and back-to-school matches receive an additional ranking boost.
 - Stores no email address, password, payment information, or rewards-account credentials.
+- Never files claims or stores legal attestations, Social Security numbers, bank details, claim identifiers, VINs, or exact household data.
 
 ## Run the dashboard
 
@@ -91,8 +93,10 @@ Outputs:
 - `reports/discovery/latest.json`
 - `reports/discovery/latest.md`
 - `reports/discovery/grocery-watchlist.json`
+- `reports/discovery/settlements.json`
 - `public/reports/discovery.json`
 - `public/reports/grocery-watchlist.json`
+- `public/reports/settlements.json`
 
 The grocery-watchlist snapshot normalizes the best available official listing
 for each configured comparison. It prefers a 77386-verified price when one is
@@ -108,6 +112,29 @@ Register the daily 7:00 AM refresh:
 ```
 
 The scheduled task uses no browser session or account credentials.
+
+## Review class action settlements
+
+Open **Settlements** in the dashboard. The feature:
+
+- keeps only open examples backed by an official court notice or a verified
+  settlement-administrator site;
+- shows the source, claim deadline, possible class definition, proof signal,
+  stated benefit, geography, and source-check date;
+- ranks possible relevance without asserting household eligibility;
+- stores only saved-item and reminder IDs in local browser storage; and
+- provides a checklist that opens the administrator's official form in a new
+  tab for manual review.
+
+The dashboard does not fill, submit, or sign a form. The user must read the
+official notice, confirm every fact truthfully, decide whether to release legal
+rights, and manually submit. Never pay a listing service to file a settlement
+claim. This feature is informational and is not legal advice.
+
+`npm run refresh:deals` checks configured official settlement pages for content
+changes and republishes a filtered `settlements.json` snapshot. A page change is
+only a review signal: it does not automatically rewrite eligibility, benefits,
+or deadlines in the curated catalog.
 
 ## Update opportunity data
 
@@ -139,6 +166,12 @@ cannot reliably read JavaScript-only, bot-protected, personalized, app-only, or
 login-required offers. A new or changed page enters a review queue and does not
 become a verified dashboard offer automatically. The system stores no account
 credentials, cookies, email addresses, or payment information.
+
+For settlements, the dashboard is not a complete registry of every U.S. case.
+Official sites can change, claim periods can be extended, and administrator
+forms may require sensitive data. Recheck the official notice immediately
+before any manual submission; do not copy sensitive claim-form data into this
+project.
 
 ## Next build phases
 

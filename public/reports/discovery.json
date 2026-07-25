@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-24T02:43:08.943Z",
-  "sourceCount": 18,
-  "successfulCount": 17,
-  "failedCount": 1,
-  "newOrImprovedCount": 0,
+  "generatedAt": "2026-07-25T15:49:50.944Z",
+  "sourceCount": 22,
+  "successfulCount": 20,
+  "failedCount": 2,
+  "newOrImprovedCount": 2,
   "results": [
     {
       "id": "heb-digital-coupons",
@@ -18,8 +18,8 @@
         "off"
       ],
       "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
-      "status": "changed",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
+      "status": "unchanged",
       "matchedKeywords": [],
       "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
@@ -36,7 +36,7 @@
         "circle"
       ],
       "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "weekly ad",
@@ -58,14 +58,14 @@
         "5x"
       ],
       "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "digital coupon",
         "save",
         "5x"
       ],
-      "contentHash": "80c7d9f0d5a3f7836de0dd8919218fec4fa5ae5eb7835ac0977deefa16b98d75",
+      "contentHash": "797fc1ee01bcb0d5be25166c6e6c4c6c0e5bbae64797e377cf4ff5b5d8439ea9",
       "title": "5X Digital Coupon Event - Kroger"
     },
     {
@@ -81,7 +81,7 @@
         "points"
       ],
       "canonicalUrl": "https://www.dutchbros.com/dutch-101",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free drink",
@@ -105,7 +105,7 @@
         "offer"
       ],
       "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "deal",
@@ -129,7 +129,7 @@
         "birthday"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -153,7 +153,7 @@
         "opening"
       ],
       "canonicalUrl": "https://joviroasters.com",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "offer",
@@ -176,7 +176,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -198,7 +198,7 @@
         "offer"
       ],
       "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "per gallon",
@@ -222,7 +222,7 @@
         "exclusive deals"
       ],
       "canonicalUrl": "https://www.7-eleven.com/7rewards",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free snacks",
@@ -245,7 +245,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "coupon",
@@ -253,7 +253,7 @@
         "off",
         "save"
       ],
-      "contentHash": "ef602590764f1ee70d8c12ecdd638869ecc3f7926c699bc4c9a083b4cb485d4a",
+      "contentHash": "aaa28fe63204352181498b8efcee9ac4c8e5642daa5cf2ef31cda2bf29330711",
       "title": "Oil Change Near Me in Spring, TX 77386 - Take 5"
     },
     {
@@ -269,7 +269,7 @@
         "coupon"
       ],
       "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "oil change",
@@ -293,7 +293,7 @@
         "reward"
       ],
       "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -316,7 +316,7 @@
         "stubs"
       ],
       "canonicalUrl": "https://www.amctheatres.com/offers",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -334,7 +334,7 @@
         "ticket"
       ],
       "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "promotion",
@@ -358,7 +358,7 @@
         "promotion"
       ],
       "canonicalUrl": "https://www.houstondynamofc.com/tickets",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "ticket",
@@ -380,7 +380,7 @@
         "backpacks"
       ],
       "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "sales tax holiday",
@@ -404,7 +404,7 @@
         "offer"
       ],
       "canonicalUrl": "https://news.dunkindonuts.com",
-      "checkedAt": "2026-07-24T02:43:08.943Z",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -412,9 +412,146 @@
       ],
       "contentHash": "eaa11a6a1779e5016228551d3f841361fd213d894166cb83699127d79a2c67ff",
       "title": "Newsroom | Dunkin&#39;"
+    },
+    {
+      "id": "settlement-online-tv",
+      "name": "Biddle v. Disney official settlement",
+      "url": "https://www.onlinetvsettlement.com/",
+      "category": "settlements",
+      "priority": 10,
+      "keywords": [
+        "claim form",
+        "settlement class",
+        "september 8, 2026",
+        "cash payment"
+      ],
+      "canonicalUrl": "https://www.onlinetvsettlement.com",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
+      "status": "failed",
+      "matchedKeywords": [],
+      "error": "HTTP 403"
+    },
+    {
+      "id": "settlement-lands-end",
+      "name": "Lands' End data incident official settlement",
+      "url": "https://landsenddatasettlement.com/faq",
+      "category": "settlements",
+      "priority": 10,
+      "keywords": [
+        "claim",
+        "october 22, 2026",
+        "alternate cash",
+        "settlement class"
+      ],
+      "canonicalUrl": "https://landsenddatasettlement.com/faq",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
+      "status": "new",
+      "matchedKeywords": [
+        "claim",
+        "october 22, 2026",
+        "alternate cash",
+        "settlement class"
+      ],
+      "contentHash": "e3251d0a4433be4c2d6ec7427ec81b9e25edf062792e472e71c9f10dc32cf6fd",
+      "title": "Jones, et al. v. Lands’ End, Inc. - FAQ"
+    },
+    {
+      "id": "settlement-toyota-airbag",
+      "name": "Toyota airbag control unit official settlement",
+      "url": "https://www.airbagcontrolunitsettlement.com/",
+      "category": "settlements",
+      "priority": 9,
+      "keywords": [
+        "submit a claim",
+        "december 11, 2028",
+        "subject vehicles",
+        "authorized by the court"
+      ],
+      "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
+      "status": "new",
+      "matchedKeywords": [
+        "submit a claim",
+        "december 11, 2028",
+        "subject vehicles",
+        "authorized by the court"
+      ],
+      "contentHash": "360f51378b83dec6105b4cc034e97e553d3fa37874b538c16db6fe33ddfb890c",
+      "title": "Toyota Airbag Control Unit Settlement"
+    },
+    {
+      "id": "settlement-clark-county-data",
+      "name": "Clark County data security official settlement",
+      "url": "https://www.clarkcountydatasettlement.com/",
+      "category": "settlements",
+      "priority": 6,
+      "keywords": [
+        "submit claim",
+        "september 24, 2026",
+        "official settlement website"
+      ],
+      "canonicalUrl": "https://www.clarkcountydatasettlement.com",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
+      "status": "new",
+      "matchedKeywords": [
+        "submit claim",
+        "september 24, 2026",
+        "official settlement website"
+      ],
+      "contentHash": "e1cebc8e4eeabb2dc160c20d80ec26436c408811a54fae86d4e0d3e90865bcd1",
+      "title": "Home - Clark County Data Security Litigation"
     }
   ],
-  "highValueMatches": [],
+  "highValueMatches": [
+    {
+      "id": "settlement-lands-end",
+      "name": "Lands' End data incident official settlement",
+      "url": "https://landsenddatasettlement.com/faq",
+      "category": "settlements",
+      "priority": 10,
+      "keywords": [
+        "claim",
+        "october 22, 2026",
+        "alternate cash",
+        "settlement class"
+      ],
+      "canonicalUrl": "https://landsenddatasettlement.com/faq",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
+      "status": "new",
+      "matchedKeywords": [
+        "claim",
+        "october 22, 2026",
+        "alternate cash",
+        "settlement class"
+      ],
+      "contentHash": "e3251d0a4433be4c2d6ec7427ec81b9e25edf062792e472e71c9f10dc32cf6fd",
+      "title": "Jones, et al. v. Lands’ End, Inc. - FAQ"
+    },
+    {
+      "id": "settlement-toyota-airbag",
+      "name": "Toyota airbag control unit official settlement",
+      "url": "https://www.airbagcontrolunitsettlement.com/",
+      "category": "settlements",
+      "priority": 9,
+      "keywords": [
+        "submit a claim",
+        "december 11, 2028",
+        "subject vehicles",
+        "authorized by the court"
+      ],
+      "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
+      "checkedAt": "2026-07-25T15:49:50.944Z",
+      "status": "new",
+      "matchedKeywords": [
+        "submit a claim",
+        "december 11, 2028",
+        "subject vehicles",
+        "authorized by the court"
+      ],
+      "contentHash": "360f51378b83dec6105b4cc034e97e553d3fa37874b538c16db6fe33ddfb890c",
+      "title": "Toyota Airbag Control Unit Settlement"
+    }
+  ],
   "limitations": [
     "This monitor checks configured public pages; it is not a general web search engine.",
     "JavaScript-only, bot-protected, personalized, or app-only offers can be unavailable.",

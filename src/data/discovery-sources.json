@@ -142,5 +142,37 @@
     "category": "restaurants",
     "priority": 8,
     "keywords": ["grand opening", "free", "rewards", "offer"]
+  },
+  {
+    "id": "settlement-online-tv",
+    "name": "Biddle v. Disney official settlement",
+    "url": "https://www.onlinetvsettlement.com/",
+    "category": "settlements",
+    "priority": 10,
+    "keywords": ["claim form", "settlement class", "september 8, 2026", "cash payment"]
+  },
+  {
+    "id": "settlement-lands-end",
+    "name": "Lands' End data incident official settlement",
+    "url": "https://landsenddatasettlement.com/faq",
+    "category": "settlements",
+    "priority": 10,
+    "keywords": ["claim", "october 22, 2026", "alternate cash", "settlement class"]
+  },
+  {
+    "id": "settlement-toyota-airbag",
+    "name": "Toyota airbag control unit official settlement",
+    "url": "https://www.airbagcontrolunitsettlement.com/",
+    "category": "settlements",
+    "priority": 9,
+    "keywords": ["submit a claim", "december 11, 2028", "subject vehicles", "authorized by the court"]
+  },
+  {
+    "id": "settlement-clark-county-data",
+    "name": "Clark County data security official settlement",
+    "url": "https://www.clarkcountydatasettlement.com/",
+    "category": "settlements",
+    "priority": 6,
+    "keywords": ["submit claim", "september 24, 2026", "official settlement website"]
   }
 ]

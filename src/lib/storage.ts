@@ -5,6 +5,8 @@ const REDEEMED_KEY = "savings-desk:redeemed";
 const REMINDERS_KEY = "savings-desk:reminders";
 const PRICE_ALERTS_KEY = "savings-desk:price-alerts";
 const GROCERY_WATCHLIST_KEY = "savings-desk:grocery-watchlist";
+const SETTLEMENT_SAVED_KEY = "savings-desk:settlement-saved";
+const SETTLEMENT_REMINDERS_KEY = "savings-desk:settlement-reminders";
 
 function readIds(key: string): string[] {
   try {
@@ -32,7 +34,12 @@ export function readReminderIds(): string[] {
 }
 
 export function toggleStoredId(
-  key: "saved" | "redeemed" | "reminder",
+  key:
+    | "saved"
+    | "redeemed"
+    | "reminder"
+    | "settlement-saved"
+    | "settlement-reminder",
   id: string
 ): string[] {
   const storageKey =
@@ -40,13 +47,25 @@ export function toggleStoredId(
       ? SAVED_KEY
       : key === "redeemed"
         ? REDEEMED_KEY
-        : REMINDERS_KEY;
+        : key === "reminder"
+          ? REMINDERS_KEY
+          : key === "settlement-saved"
+            ? SETTLEMENT_SAVED_KEY
+            : SETTLEMENT_REMINDERS_KEY;
   const current = readIds(storageKey);
   const next = current.includes(id)
     ? current.filter((currentId) => currentId !== id)
     : [...current, id];
   writeIds(storageKey, next);
   return next;
+}
+
+export function readSettlementSavedIds(): string[] {
+  return readIds(SETTLEMENT_SAVED_KEY);
+}
+
+export function readSettlementReminderIds(): string[] {
+  return readIds(SETTLEMENT_REMINDERS_KEY);
 }
 
 export function readPriceAlerts(defaults: PriceAlert[]): PriceAlert[] {

@@ -72,6 +72,25 @@ interface GroceryWatchlistSnapshot {
   }>;
 }
 
+interface SettlementRecord {
+  id: string;
+  claimDeadline: string;
+  verification: "official-administrator" | "court-authorized-notice";
+  checkedOn: string;
+  feeRequired: false;
+  eligibilityStatus: "user-confirmation-required";
+  [key: string]: unknown;
+}
+
+interface SettlementSnapshot {
+  generatedAt: string;
+  checkedOn: string;
+  openCount: number;
+  settlements: SettlementRecord[];
+  excludedRules: string[];
+  limitations: string[];
+}
+
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
 const sourcePath = resolve(projectRoot, "src", "data", "discovery-sources.json");
@@ -80,6 +99,12 @@ const groceryComparisonPath = resolve(
   "src",
   "data",
   "local-grocery-comparisons.json"
+);
+const settlementCatalogPath = resolve(
+  projectRoot,
+  "src",
+  "data",
+  "settlements.json"
 );
 const discoveryDirectory = resolve(projectRoot, "reports", "discovery");
 const publicDirectory = resolve(projectRoot, "public", "reports");
@@ -261,13 +286,58 @@ function buildGroceryWatchlistSnapshot(
   };
 }
 
+function buildSettlementSnapshot(
+  settlements: SettlementRecord[],
+  generatedAt: string
+): SettlementSnapshot {
+  const today = generatedAt.slice(0, 10);
+  const openSettlements = settlements
+    .filter(
+      (settlement) =>
+        settlement.claimDeadline >= today &&
+        settlement.feeRequired === false &&
+        settlement.eligibilityStatus === "user-confirmation-required" &&
+        ["official-administrator", "court-authorized-notice"].includes(
+          settlement.verification
+        )
+    )
+    .sort((first, second) =>
+      first.claimDeadline.localeCompare(second.claimDeadline)
+    );
+
+  return {
+    generatedAt,
+    checkedOn: openSettlements
+      .map((settlement) => settlement.checkedOn)
+      .sort()
+      .at(-1) ?? today,
+    openCount: openSettlements.length,
+    settlements: openSettlements,
+    excludedRules: [
+      "Expired claim deadline",
+      "No official court notice or verified settlement-administrator source",
+      "Payment requested to file",
+      "Lead-generation, unverifiable, or scam-like listing"
+    ],
+    limitations: [
+      "Dashboard ranking is a review aid and never confirms household eligibility.",
+      "Official deadlines and benefits can change; recheck the linked notice before acting.",
+      "Every claim form, eligibility statement, and legal attestation remains a manual user action.",
+      "No Social Security number, bank or payment detail, credential, claim identifier, VIN, or exact household data is stored."
+    ]
+  };
+}
+
 async function main(): Promise<void> {
-  const [sources, groceryCatalog] = await Promise.all([
+  const [sources, groceryCatalog, settlementCatalog] = await Promise.all([
     readFile(sourcePath, "utf8").then(
       (value) => JSON.parse(value) as DiscoverySource[]
     ),
     readFile(groceryComparisonPath, "utf8").then(
       (value) => JSON.parse(value) as GroceryComparisonCatalog
+    ),
+    readFile(settlementCatalogPath, "utf8").then(
+      (value) => JSON.parse(value) as SettlementRecord[]
     )
   ]);
   const deduplicatedSources = Array.from(
@@ -308,6 +378,10 @@ async function main(): Promise<void> {
     groceryCatalog,
     checkedAt
   );
+  const settlementSnapshot = buildSettlementSnapshot(
+    settlementCatalog,
+    checkedAt
+  );
 
   await Promise.all([
     mkdir(discoveryDirectory, { recursive: true }),
@@ -334,6 +408,16 @@ async function main(): Promise<void> {
       resolve(publicDirectory, "grocery-watchlist.json"),
       `${JSON.stringify(groceryWatchlist, null, 2)}\n`,
       "utf8"
+    ),
+    writeFile(
+      resolve(discoveryDirectory, "settlements.json"),
+      `${JSON.stringify(settlementSnapshot, null, 2)}\n`,
+      "utf8"
+    ),
+    writeFile(
+      resolve(publicDirectory, "settlements.json"),
+      `${JSON.stringify(settlementSnapshot, null, 2)}\n`,
+      "utf8"
     )
   ]);
 
@@ -342,6 +426,7 @@ async function main(): Promise<void> {
   console.log(`Failed: ${report.failedCount}`);
   console.log(`New or improved high-value matches: ${report.newOrImprovedCount}`);
   console.log(`Staples watch prices normalized: ${groceryWatchlist.items.length}`);
+  console.log(`Verified open settlements staged: ${settlementSnapshot.openCount}`);
   console.log(`Review queue: ${resolve(discoveryDirectory, "latest.md")}`);
 }
 
