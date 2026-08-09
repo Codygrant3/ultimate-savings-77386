@@ -97,9 +97,7 @@ export interface PriceAlert {
 }
 
 export type LocalPriceStatus =
-  | "verified-local"
-  | "official-needs-local-check"
-  | "unavailable";
+  "verified-local" | "official-needs-local-check" | "unavailable";
 
 export interface GroceryWatchItem {
   id: string;
@@ -131,6 +129,7 @@ export interface LocalGroceryPrice {
   unit: string;
   status: LocalPriceStatus;
   locationNote: string;
+  checkedOn?: string;
   dateLabel: string;
   sourceUrl: string;
 }
@@ -152,8 +151,7 @@ export type SettlementProofRequirement =
   | "vehicle-records";
 
 export type SettlementVerification =
-  | "official-administrator"
-  | "court-authorized-notice";
+  "official-administrator" | "court-authorized-notice";
 
 export interface ClassActionSettlement {
   id: string;

@@ -1,13 +1,13 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-07-23",
-  "adWindow": "Current listings checked July 23, 2026; only dated promotions show an end date.",
+  "checkedOn": "2026-08-09",
+  "adWindow": "Current public listings checked August 9, 2026; unchanged July prices retain their original check dates and are not treated as current.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
       "item": "Ground beef, 80% lean / 20% fat",
       "category": "meat",
-      "comparisonNote": "Unit prices are comparable, but the official pages do not confirm all four prices at a 77386 store. Kroger and Aldi are tied at the listing level; no local winner is declared.",
+      "comparisonNote": "H-E-B's current official weekly-ad listing is $4.99/lb, but the page was not set to a Spring-area store. The other retailer prices were last checked July 23 and are stale, so no current local winner is declared.",
       "winner": null,
       "prices": [
         {
@@ -36,15 +36,16 @@
         },
         {
           "retailer": "H-E-B",
-          "product": "H-E-B 100% Pure Ground Beef Chuck, 80% Lean",
-          "packageSize": "1 lb",
-          "price": 6.99,
-          "unitPrice": 6.99,
+          "product": "H-E-B 100% Pure Ground Beef Chuck, 80% Lean - Texas-Size Pack",
+          "packageSize": "Average 4.5 lb",
+          "price": 22.46,
+          "unitPrice": 4.99,
           "unit": "lb",
           "status": "official-needs-local-check",
           "locationNote": "Official page was displaying Victoria H-E-B plus!, not the Spring/Rayford store.",
-          "dateLabel": "Current listing checked Jul 23; no ad end date shown",
-          "sourceUrl": "https://www.heb.com/product-detail/h-e-b-100-pure-ground-beef-chuck-80-lean/312956"
+          "checkedOn": "2026-08-09",
+          "dateLabel": "Weekly ad checked Aug 9; expires Tuesday; not locally confirmed",
+          "sourceUrl": "https://www.heb.com/collections/weekly-ad"
         },
         {
           "retailer": "Aldi",
@@ -88,6 +89,7 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Rollback at Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-07-23",
           "dateLabel": "Store page checked Jul 23; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
@@ -145,6 +147,7 @@
           "unit": "gal",
           "status": "official-needs-local-check",
           "locationNote": "Official online price was not bound to Walmart #3585.",
+          "checkedOn": "2026-07-23",
           "dateLabel": "Current listing checked Jul 23; no end date shown",
           "sourceUrl": "https://business.walmart.com/ip/Great-Value-Vitamin-D-Milk-1-Gal/10450114"
         },
@@ -190,8 +193,31 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-07-23",
           "dateLabel": "Store page checked Jul 23; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        }
+      ]
+    },
+    {
+      "id": "family-size-cheerios",
+      "item": "Cheerios family-size cereal",
+      "category": "staple",
+      "comparisonNote": "This is a newly verified local Walmart rollback, not a four-store comparison. Other retailers did not expose a comparable current public price for a 77386 store.",
+      "winner": "Walmart #3585 at $4.47 ($0.248/oz)",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Cheerios Heart Healthy Gluten Free Breakfast Cereal, Family Size",
+          "packageSize": "18 oz",
+          "price": 4.47,
+          "unitPrice": 0.248,
+          "unit": "oz",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-09",
+          "dateLabel": "Store page checked Aug 9; rollback; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
         }
       ]
     }

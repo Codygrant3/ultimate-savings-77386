@@ -120,10 +120,10 @@ describe("Savings Desk interactions", () => {
     fireEvent.click(screen.getByRole("button", { name: "Grocery" }));
 
     expect(screen.getByRole("heading", { name: "Staples watchlist" })).toBeTruthy();
-    expect(screen.getByText("4")).toBeTruthy();
-    expect(screen.getByText("Target met")).toBeTruthy();
-    expect(screen.getByText("Meets target; confirm locally")).toBeTruthy();
-    expect(screen.getAllByText("Latest unit price")).toHaveLength(4);
+    expect(screen.getByText("5")).toBeTruthy();
+    expect(screen.getAllByText("Target met")).toHaveLength(2);
+    expect(screen.getAllByText("Meets target; confirm locally")).toHaveLength(2);
+    expect(screen.getAllByText("Latest unit price")).toHaveLength(5);
 
     fireEvent.change(screen.getByPlaceholderText("Rice, chicken breast, cereal…"), {
       target: { value: "Brown rice" }

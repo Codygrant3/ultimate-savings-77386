@@ -41,6 +41,7 @@ interface GroceryPrice {
   unit: string;
   status: "verified-local" | "official-needs-local-check" | "unavailable";
   sourceUrl: string;
+  checkedOn?: string;
 }
 
 interface GroceryComparison {
@@ -93,18 +94,23 @@ interface SettlementSnapshot {
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
-const sourcePath = resolve(projectRoot, "src", "data", "discovery-sources.json");
+const sourcePath = resolve(
+  projectRoot,
+  "src",
+  "data",
+  "discovery-sources.json",
+);
 const groceryComparisonPath = resolve(
   projectRoot,
   "src",
   "data",
-  "local-grocery-comparisons.json"
+  "local-grocery-comparisons.json",
 );
 const settlementCatalogPath = resolve(
   projectRoot,
   "src",
   "data",
-  "settlements.json"
+  "settlements.json",
 );
 const discoveryDirectory = resolve(projectRoot, "reports", "discovery");
 const publicDirectory = resolve(projectRoot, "public", "reports");
@@ -113,7 +119,8 @@ const groceryTargetPrices: Record<string, number> = {
   "ground-beef-80-20": 5,
   "roma-tomatoes": 1,
   "whole-milk-gallon": 3,
-  "walmart-local-rollbacks": 1.75
+  "walmart-local-rollbacks": 1.75,
+  "family-size-cheerios": 0.22,
 };
 
 function canonicalizeUrl(value: string): string {
@@ -142,7 +149,9 @@ function extractTitle(html: string): string | undefined {
 
 async function readPriorReport(): Promise<DiscoveryReport | null> {
   try {
-    return JSON.parse(await readFile(latestJsonPath, "utf8")) as DiscoveryReport;
+    return JSON.parse(
+      await readFile(latestJsonPath, "utf8"),
+    ) as DiscoveryReport;
   } catch {
     return null;
   }
@@ -151,16 +160,16 @@ async function readPriorReport(): Promise<DiscoveryReport | null> {
 async function checkSource(
   source: DiscoverySource,
   previous: DiscoveryResult | undefined,
-  checkedAt: string
+  checkedAt: string,
 ): Promise<DiscoveryResult> {
   const canonicalUrl = canonicalizeUrl(source.url);
 
   try {
     const response = await fetch(source.url, {
       headers: {
-        "user-agent": "77386-Savings-Desk/0.1 public-source-monitor"
+        "user-agent": "77386-Savings-Desk/0.1 public-source-monitor",
       },
-      signal: AbortSignal.timeout(15_000)
+      signal: AbortSignal.timeout(15_000),
     });
 
     if (!response.ok) {
@@ -171,7 +180,7 @@ async function checkSource(
     const normalized = normalizePage(html);
     const contentHash = createHash("sha256").update(normalized).digest("hex");
     const matchedKeywords = source.keywords.filter((keyword) =>
-      normalized.includes(keyword.toLowerCase())
+      normalized.includes(keyword.toLowerCase()),
     );
     const previousHitCount = previous?.matchedKeywords.length ?? 0;
     const status: DiscoveryStatus = !previous
@@ -189,7 +198,7 @@ async function checkSource(
       status,
       matchedKeywords,
       contentHash,
-      title: extractTitle(html)
+      title: extractTitle(html),
     };
   } catch (error) {
     return {
@@ -198,7 +207,7 @@ async function checkSource(
       checkedAt,
       status: "failed",
       matchedKeywords: [],
-      error: error instanceof Error ? error.message : String(error)
+      error: error instanceof Error ? error.message : String(error),
     };
   }
 }
@@ -211,7 +220,7 @@ function buildMarkdown(report: DiscoveryReport): string {
             (result) =>
               `- **${result.name}** (${result.category}, ${result.status}) — matched: ${
                 result.matchedKeywords.join(", ") || "no configured terms"
-              } — [official source](${result.url})`
+              } — [official source](${result.url})`,
           )
           .join("\n")
       : "- No new or improved high-priority public-source matches cleared the filter.";
@@ -244,20 +253,20 @@ ${report.limitations.map((limitation) => `- ${limitation}`).join("\n")}
 
 function buildGroceryWatchlistSnapshot(
   catalog: GroceryComparisonCatalog,
-  generatedAt: string
+  generatedAt: string,
 ): GroceryWatchlistSnapshot {
   const items = catalog.comparisons.flatMap((comparison) => {
     const available = comparison.prices.filter(
-      (entry) => entry.unitPrice !== null && entry.status !== "unavailable"
+      (entry) => entry.unitPrice !== null && entry.status !== "unavailable",
     );
     const locallyVerified = available.filter(
-      (entry) => entry.status === "verified-local"
+      (entry) => entry.status === "verified-local",
     );
     const eligible = locallyVerified.length > 0 ? locallyVerified : available;
     const selected = [...eligible].sort(
       (first, second) =>
         (first.unitPrice ?? Number.POSITIVE_INFINITY) -
-        (second.unitPrice ?? Number.POSITIVE_INFINITY)
+        (second.unitPrice ?? Number.POSITIVE_INFINITY),
     )[0];
     if (!selected || selected.unitPrice === null) return [];
 
@@ -266,29 +275,28 @@ function buildGroceryWatchlistSnapshot(
         id: `watch-${comparison.id}`,
         item: comparison.item,
         comparisonId: comparison.id,
-        targetPrice:
-          groceryTargetPrices[comparison.id] ?? selected.unitPrice,
+        targetPrice: groceryTargetPrices[comparison.id] ?? selected.unitPrice,
         latestPrice: selected.unitPrice,
         unit: `per ${selected.unit}`,
         retailer: selected.retailer,
         sourceLabel: `${selected.retailer} official listing`,
         sourceUrl: selected.sourceUrl,
-        checkedOn: catalog.checkedOn,
-        locationStatus: selected.status
-      }
+        checkedOn: selected.checkedOn ?? catalog.checkedOn,
+        locationStatus: selected.status,
+      },
     ];
   });
 
   return {
     generatedAt,
     checkedOn: catalog.checkedOn,
-    items
+    items,
   };
 }
 
 function buildSettlementSnapshot(
   settlements: SettlementRecord[],
-  generatedAt: string
+  generatedAt: string,
 ): SettlementSnapshot {
   const today = generatedAt.slice(0, 10);
   const openSettlements = settlements
@@ -298,71 +306,79 @@ function buildSettlementSnapshot(
         settlement.feeRequired === false &&
         settlement.eligibilityStatus === "user-confirmation-required" &&
         ["official-administrator", "court-authorized-notice"].includes(
-          settlement.verification
-        )
+          settlement.verification,
+        ),
     )
     .sort((first, second) =>
-      first.claimDeadline.localeCompare(second.claimDeadline)
+      first.claimDeadline.localeCompare(second.claimDeadline),
     );
 
   return {
     generatedAt,
-    checkedOn: openSettlements
-      .map((settlement) => settlement.checkedOn)
-      .sort()
-      .at(-1) ?? today,
+    checkedOn:
+      openSettlements
+        .map((settlement) => settlement.checkedOn)
+        .sort()
+        .at(-1) ?? today,
     openCount: openSettlements.length,
     settlements: openSettlements,
     excludedRules: [
       "Expired claim deadline",
       "No official court notice or verified settlement-administrator source",
       "Payment requested to file",
-      "Lead-generation, unverifiable, or scam-like listing"
+      "Lead-generation, unverifiable, or scam-like listing",
     ],
     limitations: [
       "Dashboard ranking is a review aid and never confirms household eligibility.",
       "Official deadlines and benefits can change; recheck the linked notice before acting.",
       "Every claim form, eligibility statement, and legal attestation remains a manual user action.",
-      "No Social Security number, bank or payment detail, credential, claim identifier, VIN, or exact household data is stored."
-    ]
+      "No Social Security number, bank or payment detail, credential, claim identifier, VIN, or exact household data is stored.",
+    ],
   };
 }
 
 async function main(): Promise<void> {
   const [sources, groceryCatalog, settlementCatalog] = await Promise.all([
     readFile(sourcePath, "utf8").then(
-      (value) => JSON.parse(value) as DiscoverySource[]
+      (value) => JSON.parse(value) as DiscoverySource[],
     ),
     readFile(groceryComparisonPath, "utf8").then(
-      (value) => JSON.parse(value) as GroceryComparisonCatalog
+      (value) => JSON.parse(value) as GroceryComparisonCatalog,
     ),
     readFile(settlementCatalogPath, "utf8").then(
-      (value) => JSON.parse(value) as SettlementRecord[]
-    )
+      (value) => JSON.parse(value) as SettlementRecord[],
+    ),
   ]);
   const deduplicatedSources = Array.from(
-    new Map(sources.map((source) => [canonicalizeUrl(source.url), source])).values()
+    new Map(
+      sources.map((source) => [canonicalizeUrl(source.url), source]),
+    ).values(),
   );
   const prior = await readPriorReport();
   const previousByUrl = new Map(
-    prior?.results.map((result) => [result.canonicalUrl, result]) ?? []
+    prior?.results.map((result) => [result.canonicalUrl, result]) ?? [],
   );
   const checkedAt = new Date().toISOString();
   const results = await Promise.all(
     deduplicatedSources.map((source) =>
-      checkSource(source, previousByUrl.get(canonicalizeUrl(source.url)), checkedAt)
-    )
+      checkSource(
+        source,
+        previousByUrl.get(canonicalizeUrl(source.url)),
+        checkedAt,
+      ),
+    ),
   );
   const highValueMatches = results.filter(
     (result) =>
       (result.status === "new" || result.status === "improved") &&
       result.priority >= 8 &&
-      result.matchedKeywords.length > 0
+      result.matchedKeywords.length > 0,
   );
   const report: DiscoveryReport = {
     generatedAt: checkedAt,
     sourceCount: results.length,
-    successfulCount: results.filter((result) => result.status !== "failed").length,
+    successfulCount: results.filter((result) => result.status !== "failed")
+      .length,
     failedCount: results.filter((result) => result.status === "failed").length,
     newOrImprovedCount: highValueMatches.length,
     results,
@@ -371,62 +387,68 @@ async function main(): Promise<void> {
       "This monitor checks configured public pages; it is not a general web search engine.",
       "JavaScript-only, bot-protected, personalized, or app-only offers can be unavailable.",
       "A changed page is a review lead, not a verified deal. Human review is required before adding value to the dashboard.",
-      "No account credentials, cookies, email addresses, or payment information are used or stored."
-    ]
+      "No account credentials, cookies, email addresses, or payment information are used or stored.",
+    ],
   };
   const groceryWatchlist = buildGroceryWatchlistSnapshot(
     groceryCatalog,
-    checkedAt
+    checkedAt,
   );
   const settlementSnapshot = buildSettlementSnapshot(
     settlementCatalog,
-    checkedAt
+    checkedAt,
   );
 
   await Promise.all([
     mkdir(discoveryDirectory, { recursive: true }),
-    mkdir(publicDirectory, { recursive: true })
+    mkdir(publicDirectory, { recursive: true }),
   ]);
   await Promise.all([
     writeFile(latestJsonPath, `${JSON.stringify(report, null, 2)}\n`, "utf8"),
     writeFile(
       resolve(discoveryDirectory, "latest.md"),
       buildMarkdown(report),
-      "utf8"
+      "utf8",
     ),
     writeFile(
       resolve(publicDirectory, "discovery.json"),
       `${JSON.stringify(report, null, 2)}\n`,
-      "utf8"
+      "utf8",
     ),
     writeFile(
       resolve(discoveryDirectory, "grocery-watchlist.json"),
       `${JSON.stringify(groceryWatchlist, null, 2)}\n`,
-      "utf8"
+      "utf8",
     ),
     writeFile(
       resolve(publicDirectory, "grocery-watchlist.json"),
       `${JSON.stringify(groceryWatchlist, null, 2)}\n`,
-      "utf8"
+      "utf8",
     ),
     writeFile(
       resolve(discoveryDirectory, "settlements.json"),
       `${JSON.stringify(settlementSnapshot, null, 2)}\n`,
-      "utf8"
+      "utf8",
     ),
     writeFile(
       resolve(publicDirectory, "settlements.json"),
       `${JSON.stringify(settlementSnapshot, null, 2)}\n`,
-      "utf8"
-    )
+      "utf8",
+    ),
   ]);
 
   console.log(`Public sources checked: ${report.sourceCount}`);
   console.log(`Successful: ${report.successfulCount}`);
   console.log(`Failed: ${report.failedCount}`);
-  console.log(`New or improved high-value matches: ${report.newOrImprovedCount}`);
-  console.log(`Staples watch prices normalized: ${groceryWatchlist.items.length}`);
-  console.log(`Verified open settlements staged: ${settlementSnapshot.openCount}`);
+  console.log(
+    `New or improved high-value matches: ${report.newOrImprovedCount}`,
+  );
+  console.log(
+    `Staples watch prices normalized: ${groceryWatchlist.items.length}`,
+  );
+  console.log(
+    `Verified open settlements staged: ${settlementSnapshot.openCount}`,
+  );
   console.log(`Review queue: ${resolve(discoveryDirectory, "latest.md")}`);
 }
 

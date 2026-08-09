@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-25T15:56:25.709Z",
-  "sourceCount": 22,
-  "successfulCount": 20,
-  "failedCount": 2,
+  "generatedAt": "2026-08-09T15:13:01.498Z",
+  "sourceCount": 28,
+  "successfulCount": 24,
+  "failedCount": 4,
   "newOrImprovedCount": 0,
   "results": [
     {
@@ -18,10 +18,10 @@
         "off"
       ],
       "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "changed",
       "matchedKeywords": [],
-      "contentHash": "9655ddcca33835d9bd11a8e5d727986e5d4c91691e26f56c0895d3a89ee82a70"
+      "contentHash": "f07b66f9900c1a17e957f3feb679c4a5bb6538849bb0bde2840019a36d224fdf"
     },
     {
       "id": "target-grocery-weekly-ad",
@@ -36,7 +36,7 @@
         "circle"
       ],
       "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "weekly ad",
@@ -58,15 +58,10 @@
         "5x"
       ],
       "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
-      "status": "changed",
-      "matchedKeywords": [
-        "digital coupon",
-        "save",
-        "5x"
-      ],
-      "contentHash": "797fc1ee01bcb0d5be25166c6e6c4c6c0e5bbae64797e377cf4ff5b5d8439ea9",
-      "title": "5X Digital Coupon Event - Kroger"
+      "checkedAt": "2026-08-09T15:13:01.498Z",
+      "status": "failed",
+      "matchedKeywords": [],
+      "error": "HTTP 403"
     },
     {
       "id": "dutch-bros-rewards",
@@ -81,7 +76,7 @@
         "points"
       ],
       "canonicalUrl": "https://www.dutchbros.com/dutch-101",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free drink",
@@ -105,7 +100,7 @@
         "offer"
       ],
       "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "deal",
@@ -129,7 +124,7 @@
         "birthday"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -153,14 +148,14 @@
         "opening"
       ],
       "canonicalUrl": "https://joviroasters.com",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "offer",
         "sale",
         "opening"
       ],
-      "contentHash": "e33b0f223be492a392067fdfffec1517b29dddb35b7eacc976c38314a860de6c",
+      "contentHash": "67220d81e8d2ac362e7b23b9b732de3aa141afcdcb64066b97eb2c31a7e21adf",
       "title": "Specialty Coffee - JoVi Coffee Roaster - Spring, Tx"
     },
     {
@@ -176,7 +171,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -198,7 +193,7 @@
         "offer"
       ],
       "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "per gallon",
@@ -222,7 +217,7 @@
         "exclusive deals"
       ],
       "canonicalUrl": "https://www.7-eleven.com/7rewards",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free snacks",
@@ -245,16 +240,15 @@
         "save"
       ],
       "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "coupon",
         "oil change",
-        "off",
-        "save"
+        "off"
       ],
-      "contentHash": "aaa28fe63204352181498b8efcee9ac4c8e5642daa5cf2ef31cda2bf29330711",
-      "title": "Oil Change Near Me in Spring, TX 77386 - Take 5"
+      "contentHash": "4f34a0084efe23d6f7f36f0104763029527efb5cb4d67495e1c1000821e037d4",
+      "title": "Oil Change Near Me in Spring Texas 77386 - Take 5 #83"
     },
     {
       "id": "costa-oil-rayford",
@@ -269,7 +263,7 @@
         "coupon"
       ],
       "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "oil change",
@@ -293,14 +287,14 @@
         "reward"
       ],
       "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
         "car wash",
         "birthday"
       ],
-      "contentHash": "3aaa6ebf3d428058b5330415a25c739ff9fddbc0e6c50c0f09efb0412ed86d99",
+      "contentHash": "c96fb326033c599164358356eaccad474ff2dc78d118ac8d9864e9d31a588ec2",
       "title": "Frequent Wash Program - Rainbow Car Care"
     },
     {
@@ -316,7 +310,7 @@
         "stubs"
       ],
       "canonicalUrl": "https://www.amctheatres.com/offers",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -334,7 +328,7 @@
         "ticket"
       ],
       "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "promotion",
@@ -342,7 +336,7 @@
         "giveaway",
         "ticket"
       ],
-      "contentHash": "d88e8586f9060fd41701b5a43d80e41b9bd2a04c87ea4013925c2a88752b29be",
+      "contentHash": "fe065973afdc6cb044293a0fa05dc458588922b5dedaf8a12e533417bae7c787",
       "title": "2026 Promotions | Houston Astros"
     },
     {
@@ -358,13 +352,13 @@
         "promotion"
       ],
       "canonicalUrl": "https://www.houstondynamofc.com/tickets",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "ticket",
         "value"
       ],
-      "contentHash": "c5c67905a10e670530a132d420446bf4032874e1ae6143545c46cb2181f37604",
+      "contentHash": "8d6da5460814e20bd718abd238ac5e3cd5b7cd6c220e2d7f30f99774629cca31",
       "title": "Tickets | Houston Dynamo FC"
     },
     {
@@ -380,7 +374,7 @@
         "backpacks"
       ],
       "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "sales tax holiday",
@@ -388,7 +382,7 @@
         "clothing",
         "backpacks"
       ],
-      "contentHash": "7fed9091ba6dd366cbe96a02582e7eee2e9b4c70280eb7054d697b2b1085b3b2",
+      "contentHash": "9b8058fb0ef3372e1bae0bcb05796684643e4ad0720d34b074120df280b61631",
       "title": "Sales Tax Holiday"
     },
     {
@@ -404,14 +398,143 @@
         "offer"
       ],
       "canonicalUrl": "https://news.dunkindonuts.com",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
         "rewards"
       ],
-      "contentHash": "eaa11a6a1779e5016228551d3f841361fd213d894166cb83699127d79a2c67ff",
+      "contentHash": "997c1e2fb95adaf88f3272d359ed0d3dfdc09e24baced3e98496100e845b2a3c",
       "title": "Newsroom | Dunkin&#39;"
+    },
+    {
+      "id": "wendys-offers",
+      "name": "Wendy's official offers",
+      "url": "https://www.wendys.com/offers-coupons",
+      "category": "restaurants",
+      "priority": 10,
+      "keywords": [
+        "free",
+        "$10 back",
+        "offer valid",
+        "rewards"
+      ],
+      "canonicalUrl": "https://www.wendys.com/offers-coupons",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "free",
+        "offer valid",
+        "rewards"
+      ],
+      "contentHash": "98ddb5fc6f7440014513df0ec2c34610535473d6eed06f2580e67ba568e7904d",
+      "title": "Wendy’s Offers &amp; Coupons | Breakfast, Lunch &amp; Dinner Deals"
+    },
+    {
+      "id": "sonic-rewards",
+      "name": "SONIC Rewards official announcement",
+      "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
+      "category": "restaurants",
+      "priority": 9,
+      "keywords": [
+        "welcome reward",
+        "free",
+        "weekly offers",
+        "birthday reward"
+      ],
+      "canonicalUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "welcome reward",
+        "free",
+        "weekly offers",
+        "birthday reward"
+      ],
+      "contentHash": "84664b312794ffb7d75695551065d636913cd00998fb0122b56036424c2e581e",
+      "title": "SONIC Introduces SONIC Rewards, a New Loyalty Program Where Every Visit Feels Like a Win"
+    },
+    {
+      "id": "whataburger-news",
+      "name": "Whataburger official newsroom",
+      "url": "https://stories.whataburger.com/",
+      "category": "restaurants",
+      "priority": 10,
+      "keywords": [
+        "free",
+        "rewards",
+        "one-day",
+        "offer"
+      ],
+      "canonicalUrl": "https://stories.whataburger.com",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "free",
+        "rewards",
+        "offer"
+      ],
+      "contentHash": "3b91c4271ad9c90eb23f907e623d75ac7aaaa9d05f51c78c20001a228f803825",
+      "title": "Stories & News | Whataburger"
+    },
+    {
+      "id": "starbucks-press",
+      "name": "Starbucks official press releases",
+      "url": "https://about.starbucks.com/press/",
+      "category": "coffee",
+      "priority": 9,
+      "keywords": [
+        "free",
+        "rewards",
+        "offer",
+        "limited-time"
+      ],
+      "canonicalUrl": "https://about.starbucks.com/press",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
+      "status": "failed",
+      "matchedKeywords": [],
+      "error": "HTTP 403"
+    },
+    {
+      "id": "mcdonalds-promotions-news",
+      "name": "McDonald's official promotions news",
+      "url": "https://corporate.mcdonalds.com/corpmcd/our-stories.html",
+      "category": "restaurants",
+      "priority": 8,
+      "keywords": [
+        "promotions and deals",
+        "free",
+        "rewards",
+        "offer"
+      ],
+      "canonicalUrl": "https://corporate.mcdonalds.com/corpmcd/our-stories.html",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
+      "status": "unchanged",
+      "matchedKeywords": [],
+      "contentHash": "59aecbeabc795b6fcdfc8122660627a5dde4499440d300b62eeb5ce25fb62e0e",
+      "title": "Our Stories"
+    },
+    {
+      "id": "taco-bell-newsroom",
+      "name": "Taco Bell official newsroom",
+      "url": "https://www.tacobell.com/newsroom",
+      "category": "restaurants",
+      "priority": 8,
+      "keywords": [
+        "free",
+        "rewards",
+        "offer",
+        "limited-time"
+      ],
+      "canonicalUrl": "https://www.tacobell.com/newsroom",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "rewards",
+        "offer"
+      ],
+      "contentHash": "7ab8b5b98f7bf642b48327f4edeea48f56ed7f055ad166b8a76083bdf10ca926",
+      "title": "Newsroom | Taco Bell®"
     },
     {
       "id": "settlement-online-tv",
@@ -426,7 +549,7 @@
         "cash payment"
       ],
       "canonicalUrl": "https://www.onlinetvsettlement.com",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -444,7 +567,7 @@
         "settlement class"
       ],
       "canonicalUrl": "https://landsenddatasettlement.com/faq",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "claim",
@@ -468,7 +591,7 @@
         "authorized by the court"
       ],
       "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "submit a claim",
@@ -476,7 +599,7 @@
         "subject vehicles",
         "authorized by the court"
       ],
-      "contentHash": "360f51378b83dec6105b4cc034e97e553d3fa37874b538c16db6fe33ddfb890c",
+      "contentHash": "90ad8756e677dc7103b86c668b223010c5ab31d943eca24859c109c573317373",
       "title": "Toyota Airbag Control Unit Settlement"
     },
     {
@@ -491,7 +614,7 @@
         "official settlement website"
       ],
       "canonicalUrl": "https://www.clarkcountydatasettlement.com",
-      "checkedAt": "2026-07-25T15:56:25.709Z",
+      "checkedAt": "2026-08-09T15:13:01.498Z",
       "status": "unchanged",
       "matchedKeywords": [
         "submit claim",

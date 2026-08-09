@@ -133,7 +133,12 @@
     "url": "https://comptroller.texas.gov/taxes/publications/98-490/",
     "category": "tax-free",
     "priority": 10,
-    "keywords": ["sales tax holiday", "school supplies", "clothing", "backpacks"]
+    "keywords": [
+      "sales tax holiday",
+      "school supplies",
+      "clothing",
+      "backpacks"
+    ]
   },
   {
     "id": "dunkin-news-openings",
@@ -144,12 +149,65 @@
     "keywords": ["grand opening", "free", "rewards", "offer"]
   },
   {
+    "id": "wendys-offers",
+    "name": "Wendy's official offers",
+    "url": "https://www.wendys.com/offers-coupons",
+    "category": "restaurants",
+    "priority": 10,
+    "keywords": ["free", "$10 back", "offer valid", "rewards"]
+  },
+  {
+    "id": "sonic-rewards",
+    "name": "SONIC Rewards official announcement",
+    "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
+    "category": "restaurants",
+    "priority": 9,
+    "keywords": ["welcome reward", "free", "weekly offers", "birthday reward"]
+  },
+  {
+    "id": "whataburger-news",
+    "name": "Whataburger official newsroom",
+    "url": "https://stories.whataburger.com/",
+    "category": "restaurants",
+    "priority": 10,
+    "keywords": ["free", "rewards", "one-day", "offer"]
+  },
+  {
+    "id": "starbucks-press",
+    "name": "Starbucks official press releases",
+    "url": "https://about.starbucks.com/press/",
+    "category": "coffee",
+    "priority": 9,
+    "keywords": ["free", "rewards", "offer", "limited-time"]
+  },
+  {
+    "id": "mcdonalds-promotions-news",
+    "name": "McDonald's official promotions news",
+    "url": "https://corporate.mcdonalds.com/corpmcd/our-stories.html",
+    "category": "restaurants",
+    "priority": 8,
+    "keywords": ["promotions and deals", "free", "rewards", "offer"]
+  },
+  {
+    "id": "taco-bell-newsroom",
+    "name": "Taco Bell official newsroom",
+    "url": "https://www.tacobell.com/newsroom",
+    "category": "restaurants",
+    "priority": 8,
+    "keywords": ["free", "rewards", "offer", "limited-time"]
+  },
+  {
     "id": "settlement-online-tv",
     "name": "Biddle v. Disney official settlement",
     "url": "https://www.onlinetvsettlement.com/",
     "category": "settlements",
     "priority": 10,
-    "keywords": ["claim form", "settlement class", "september 8, 2026", "cash payment"]
+    "keywords": [
+      "claim form",
+      "settlement class",
+      "september 8, 2026",
+      "cash payment"
+    ]
   },
   {
     "id": "settlement-lands-end",
@@ -157,7 +215,12 @@
     "url": "https://landsenddatasettlement.com/faq",
     "category": "settlements",
     "priority": 10,
-    "keywords": ["claim", "october 22, 2026", "alternate cash", "settlement class"]
+    "keywords": [
+      "claim",
+      "october 22, 2026",
+      "alternate cash",
+      "settlement class"
+    ]
   },
   {
     "id": "settlement-toyota-airbag",
@@ -165,7 +228,12 @@
     "url": "https://www.airbagcontrolunitsettlement.com/",
     "category": "settlements",
     "priority": 9,
-    "keywords": ["submit a claim", "december 11, 2028", "subject vehicles", "authorized by the court"]
+    "keywords": [
+      "submit a claim",
+      "december 11, 2028",
+      "subject vehicles",
+      "authorized by the court"
+    ]
   },
   {
     "id": "settlement-clark-county-data",
@@ -173,6 +241,10 @@
     "url": "https://www.clarkcountydatasettlement.com/",
     "category": "settlements",
     "priority": 6,
-    "keywords": ["submit claim", "september 24, 2026", "official settlement website"]
+    "keywords": [
+      "submit claim",
+      "september 24, 2026",
+      "official settlement website"
+    ]
   }
 ]

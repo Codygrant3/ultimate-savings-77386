@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-25T15:56:25.709Z",
-  "checkedOn": "2026-07-23",
+  "generatedAt": "2026-08-09T15:13:01.498Z",
+  "checkedOn": "2026-08-09",
   "items": [
     {
       "id": "watch-ground-beef-80-20",
       "item": "Ground beef, 80% lean / 20% fat",
       "comparisonId": "ground-beef-80-20",
       "targetPrice": 5,
-      "latestPrice": 5.99,
+      "latestPrice": 4.99,
       "unit": "per lb",
-      "retailer": "Kroger",
-      "sourceLabel": "Kroger official listing",
-      "sourceUrl": "https://www.kroger.com/p/80-lean-ground-beef/0026165940000",
-      "checkedOn": "2026-07-23",
+      "retailer": "H-E-B",
+      "sourceLabel": "H-E-B official listing",
+      "sourceUrl": "https://www.heb.com/collections/weekly-ad",
+      "checkedOn": "2026-08-09",
       "locationStatus": "official-needs-local-check"
     },
     {
@@ -52,6 +52,19 @@
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
       "checkedOn": "2026-07-23",
+      "locationStatus": "verified-local"
+    },
+    {
+      "id": "watch-family-size-cheerios",
+      "item": "Cheerios family-size cereal",
+      "comparisonId": "family-size-cheerios",
+      "targetPrice": 0.22,
+      "latestPrice": 0.248,
+      "unit": "per oz",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store",
+      "checkedOn": "2026-08-09",
       "locationStatus": "verified-local"
     }
   ]

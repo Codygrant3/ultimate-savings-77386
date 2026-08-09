@@ -1,11 +1,95 @@
 {
-  "generatedAt": "2026-07-25T15:56:27.816Z",
-  "weekOf": "2026-07-20",
+  "generatedAt": "2026-08-09T15:13:03.705Z",
+  "weekOf": "2026-08-03",
   "zipCode": "77386",
-  "totalPotentialSavings": 109.2,
-  "verifiedCount": 18,
-  "expiringCount": 7,
+  "totalPotentialSavings": 121.75,
+  "verifiedCount": 17,
+  "expiringCount": 4,
   "opportunities": [
+    {
+      "id": "sonic-rewards-welcome-reward-2026",
+      "merchant": "SONIC Rewards",
+      "title": "Free medium fries, tots, or drink for new members",
+      "summary": "The nationwide SONIC Rewards program includes a welcome reward with a choice of medium fries, tots, or a drink.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "Nationwide app offer; a convenient participating 77386-area location was not confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "free drink",
+        "new member",
+        "app"
+      ],
+      "source": {
+        "label": "SONIC official newsroom",
+        "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
+        "checkedOn": "2026-08-09"
+      },
+      "actionLabel": "Check welcome reward",
+      "tier": "A",
+      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
+      "finePrint": "The official newsroom does not state a purchase requirement for the welcome reward. App enrollment and participating-location availability apply; confirm the reward is loaded before making a trip. No dollar value is estimated because local menu pricing was not verified.",
+      "expirationLabel": "New members",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "free-food",
+        "free-drink",
+        "new-member",
+        "app-specific"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "heb-school-supplies-25-percent-2026-08",
+      "merchant": "H-E-B",
+      "title": "25% off select school-supply brands",
+      "summary": "Clip the public H-E-B coupon for 25% off qualifying Sharpie, Elmer's, Expo, or Paper Mate pens, pencils, markers, or glue sticks in listed 6-36 count packages.",
+      "category": "shopping",
+      "estimatedSavings": 5,
+      "minimumSpend": 0,
+      "savingsRate": 25,
+      "isFree": false,
+      "expiresOn": "2026-08-18",
+      "locationNote": "Digital coupon is public, but Spring Creek Market inventory and selected-store eligibility were not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "back to school",
+        "school supplies",
+        "digital coupon",
+        "teen"
+      ],
+      "source": {
+        "label": "H-E-B weekly coupons",
+        "url": "https://www.heb.com/weekly-ad/coupons",
+        "checkedOn": "2026-08-09"
+      },
+      "actionLabel": "Clip coupon",
+      "tier": "A",
+      "stackNote": "Use during tax-free weekend only when the exact item also qualifies for the state exemption and retailer terms allow both benefits.",
+      "finePrint": "The $5 estimate assumes a planned $20 qualifying basket; there is no stated $20 minimum. Coupon lists 6-36 count packages and unlimited use. Confirm selected-store stock and the exact eligible SKU before purchase.",
+      "expirationLabel": "Ends August 18",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "teen",
+        "back-to-school",
+        "school supplies",
+        "coupon-stack"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
     {
       "id": "starbucks-birthday-reward-2026",
       "merchant": "Starbucks Rewards",
@@ -27,14 +111,14 @@
       "source": {
         "label": "Starbucks Rewards terms",
         "url": "https://www.starbucks.com/rewards/terms/",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "Review eligibility",
       "tier": "B",
       "distanceMiles": 2.1,
       "stackNote": "No purchase is required when redeeming the earned birthday benefit.",
-      "finePrint": "Join at least seven days before your birthday, add your birthday, and make at least one Star-earning transaction beforehand.",
-      "expirationLabel": "Your birthday window",
+      "finePrint": "Join at least seven days before your birthday, add your birthday, and make at least one Star-earning transaction beforehand each year. Green members redeem on the birthday; Gold members have seven days and Reserve members have 30 days.",
+      "expirationLabel": "Account-specific birthday window",
       "availability": "available",
       "score": 100,
       "scoreLabel": "Excellent"
@@ -60,60 +144,21 @@
       "source": {
         "label": "Dutch Bros Dutch 101",
         "url": "https://www.dutchbros.com/dutch-101/",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "Review app offer",
       "tier": "A",
       "stackNote": "Keep the signup reward separate from paid purchases unless the app explicitly allows stacking.",
-      "finePrint": "New-user eligibility and app availability apply. Confirm the reward appears before making a special trip.",
-      "expirationLabel": "New app users",
+      "finePrint": "New app users only. The free-medium reward is issued on registration and expires after 180 days. Confirm the reward and participating shop before making a special trip.",
+      "expirationLabel": "180 days after registration",
       "availability": "available",
       "dealType": "free-food",
-      "freshness": "new",
+      "freshness": "current",
       "discoveredOn": "2026-07-23",
       "preferenceSignals": [
         "preferred-coffee",
         "free-drink",
         "official-source"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "take5-rayford-15-off-oil-change-2026",
-      "merchant": "Take 5 Oil Change",
-      "title": "$15 toward an eligible oil change",
-      "summary": "The Take 5 location in 77386 publishes a local $15 oil-change coupon.",
-      "category": "auto",
-      "estimatedSavings": 15,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "442 Rayford Road, Spring, TX 77386.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "oil change",
-        "vehicle maintenance",
-        "local coupon"
-      ],
-      "source": {
-        "label": "Take 5 Spring location coupons",
-        "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "Get coupon",
-      "tier": "A",
-      "distanceMiles": 2.4,
-      "stackNote": "Compare the final oil specification and price with other nearby official coupons before redeeming.",
-      "finePrint": "Coupon eligibility and service pricing vary by vehicle. Military and rideshare discounts have separate requirements.",
-      "expirationLabel": "Check current coupon",
-      "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "new",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "local-high-value"
       ],
       "score": 100,
       "scoreLabel": "Excellent"
@@ -139,7 +184,7 @@
       "source": {
         "label": "Rainbow Car Care frequent wash program",
         "url": "https://rainbowcarcare.com/frequent-wash-program",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "Review wash program",
       "tier": "A",
@@ -148,52 +193,11 @@
       "expirationLabel": "Your birthday",
       "availability": "available",
       "dealType": "vehicle-maintenance",
-      "freshness": "new",
+      "freshness": "current",
       "discoveredOn": "2026-07-23",
       "preferenceSignals": [
         "vehicle-maintenance",
         "free-service",
-        "loyalty-reward"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "amc-half-price-tuesday-wednesday-2026",
-      "merchant": "AMC Theatres",
-      "title": "50% off tickets on Tuesdays and Wednesdays",
-      "summary": "AMC Stubs members receive half off the adult evening base ticket price and can save 50% on an eligible small combo.",
-      "category": "movies",
-      "estimatedSavings": 8,
-      "minimumSpend": 8,
-      "savingsRate": 50,
-      "isFree": false,
-      "locationNote": "Participating AMC locations; compare travel distance and showtime pricing before booking.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "movies",
-        "discount tickets",
-        "concessions",
-        "loyalty"
-      ],
-      "source": {
-        "label": "AMC Stubs midweek discount",
-        "url": "https://www.amctheatres.com/50pct-off-tuesdays-and-wednesdays",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "View discount",
-      "tier": "A",
-      "stackNote": "Compare the ticket discount and concession combo separately; convenience and premium-format fees still apply.",
-      "finePrint": "AMC Stubs membership is required. Premium formats, special events, taxes, and convenience fees can be excluded.",
-      "expirationLabel": "Tuesdays + Wednesdays",
-      "availability": "program",
-      "dealType": "movie-discount",
-      "freshness": "new",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "movie-discount",
-        "concessions",
         "loyalty-reward"
       ],
       "score": 100,
@@ -222,7 +226,7 @@
       "source": {
         "label": "Texas Comptroller sales tax holiday",
         "url": "https://comptroller.texas.gov/taxes/publications/98-490/",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "Review qualifying items",
       "tier": "A",
@@ -230,7 +234,7 @@
       "finePrint": "Most eligible items must be priced below $100 each. Computers, many accessories, and specialized athletic gear do not qualify.",
       "availability": "available",
       "dealType": "tax-holiday",
-      "freshness": "new",
+      "freshness": "current",
       "discoveredOn": "2026-07-23",
       "preferenceSignals": [
         "teen",
@@ -245,36 +249,249 @@
       "scoreLabel": "Excellent"
     },
     {
-      "id": "target-select-food-20-percent-2026-07",
-      "merchant": "Target",
-      "title": "20% off select food items",
-      "summary": "A current weekly-ad discount on select food. The estimate assumes a $20 qualifying basket.",
-      "category": "grocery",
-      "estimatedSavings": 4,
-      "minimumSpend": 20,
-      "savingsRate": 20,
+      "id": "wendys-paze-ten-back-2026",
+      "merchant": "Wendy's + Paze",
+      "title": "$10 back on a $10+ Wendy's app order",
+      "summary": "Eligible Paze users can earn a $10 statement credit on a Wendy's app purchase of at least $10, up to ten times per eligible card.",
+      "category": "restaurants",
+      "estimatedSavings": 10,
+      "minimumSpend": 10,
+      "savingsRate": 100,
       "isFree": false,
-      "expiresOn": "2026-07-25",
-      "locationNote": "Target stores near 77386; confirm eligible items at your selected store.",
+      "expiresOn": "2026-09-10",
+      "locationNote": "App and payment-method specific. Spring-area Wendy's locations exist, but local Paze checkout eligibility must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "restaurant",
+        "cashback",
+        "statement credit",
+        "app",
+        "payment method"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-08-09"
+      },
+      "actionLabel": "Check Paze eligibility",
+      "tier": "A",
+      "stackNote": "Do not assume coupon stacking; the Paze offer details must appear for the selected card at checkout and at least $10 must be charged through Paze.",
+      "finePrint": "The $10 estimate is for one qualifying use. Requires Wendy's account registration, Paze activation, an eligible card from a participating financial institution, and an eligible transaction. Credits may take up to two billing cycles; maximum is ten credits per eligible card.",
+      "expirationLabel": "Ends September 10",
+      "availability": "available",
+      "dealType": "stacking-strategy",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "restaurant",
+        "high-value",
+        "account-specific",
+        "payment-method-specific"
+      ],
+      "score": 99,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "take5-rayford-15-off-oil-change-2026",
+      "merchant": "Take 5 Oil Change",
+      "title": "$15 toward an eligible oil change",
+      "summary": "The Take 5 location in 77386 publishes a local $15 oil-change coupon.",
+      "category": "auto",
+      "estimatedSavings": 15,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "442 Rayford Road, Spring, TX 77386.",
       "verification": "verified",
       "friction": "low",
       "tags": [
-        "weekly ad",
-        "food",
-        "Target"
+        "oil change",
+        "vehicle maintenance",
+        "local coupon"
       ],
       "source": {
-        "label": "Target grocery weekly ad",
-        "url": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-        "checkedOn": "2026-07-23"
+        "label": "Take 5 Spring location coupons",
+        "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
+        "checkedOn": "2026-08-09"
       },
-      "actionLabel": "View weekly ad",
+      "actionLabel": "Get coupon",
       "tier": "A",
-      "distanceMiles": 5.1,
-      "stackNote": "An eligible Target Circle Card benefit may add savings.",
-      "finePrint": "Only select food items qualify. Product and store availability vary.",
+      "distanceMiles": 2.4,
+      "stackNote": "Compare the final oil specification and price with other nearby official coupons before redeeming.",
+      "finePrint": "Coupon requires enrollment in Take 5 marketing email or text delivery. Vehicle eligibility and service pricing vary; military and rideshare discounts have separate requirements.",
+      "expirationLabel": "Check current coupon",
       "availability": "available",
-      "score": 93,
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "local-high-value"
+      ],
+      "score": 98,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "seven-rewards-fuel-welcome-2026",
+      "merchant": "7REWARDS Fuel",
+      "title": "11¢ off per gallon on the first seven fills",
+      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
+      "category": "fuel",
+      "estimatedSavings": 11.55,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "fuel",
+        "new member",
+        "seven fills",
+        "local station"
+      ],
+      "source": {
+        "label": "7REWARDS Fuel",
+        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
+        "checkedOn": "2026-08-09"
+      },
+      "actionLabel": "Review fuel offer",
+      "tier": "A",
+      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
+      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
+      "expirationLabel": "First 90 days or seven trips",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "local-high-value",
+        "stacking"
+      ],
+      "score": 97,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "amc-half-price-tuesday-wednesday-2026",
+      "merchant": "AMC Theatres",
+      "title": "50% off tickets on Tuesdays and Wednesdays",
+      "summary": "AMC Stubs members receive half off the adult evening base ticket price and can save 50% on an eligible small combo.",
+      "category": "movies",
+      "estimatedSavings": 8,
+      "minimumSpend": 8,
+      "savingsRate": 50,
+      "isFree": false,
+      "locationNote": "Participating AMC locations; compare travel distance and showtime pricing before booking.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "movies",
+        "discount tickets",
+        "concessions",
+        "loyalty"
+      ],
+      "source": {
+        "label": "AMC Stubs midweek discount",
+        "url": "https://www.amctheatres.com/50pct-off-tuesdays-and-wednesdays",
+        "checkedOn": "2026-08-09"
+      },
+      "actionLabel": "View discount",
+      "tier": "A",
+      "stackNote": "Compare the ticket discount and concession combo separately; convenience and premium-format fees still apply.",
+      "finePrint": "AMC Stubs membership is required. Premium formats, special events, taxes, and convenience fees can be excluded.",
+      "expirationLabel": "Tuesdays + Wednesdays",
+      "availability": "program",
+      "dealType": "movie-discount",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "movie-discount",
+        "concessions",
+        "loyalty-reward"
+      ],
+      "score": 95,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "$5 in points on each of the first two app fill-ups",
+      "summary": "New, fully enrolled Rewards+ members and new app users can earn $5 in points after each of their first two qualifying app fuel purchases.",
+      "category": "fuel",
+      "estimatedSavings": 10,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-09-30",
+      "locationNote": "Participating Exxon and Mobil stations; no 77386 station with full Rewards+ support was confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "new member",
+        "new app user",
+        "points"
+      ],
+      "source": {
+        "label": "Exxon Mobil Rewards+ official offer",
+        "url": "https://www.exxonmobilfuels.com/en/rewards",
+        "checkedOn": "2026-08-09"
+      },
+      "actionLabel": "Check app eligibility",
+      "tier": "A",
+      "stackNote": "Regular Rewards+ points are earned in addition to the newcomer bonuses.",
+      "finePrint": "Each qualifying app fuel transaction must be at least 8 gallons and both must be completed within 60 days of app download. Available once during the May 20-September 30 offer period; cannot be combined with other promotions.",
+      "expirationLabel": "Enroll by September 30; complete within 60 days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "new-app-user",
+        "high-value"
+      ],
+      "score": 89,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "shell-fuel-rewards-new-member-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "10¢, 20¢, then 30¢ off per gallon",
+      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
+      "category": "fuel",
+      "estimatedSavings": 9,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "new member",
+        "fuel",
+        "three fill-ups"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-08-09"
+      },
+      "actionLabel": "Review offer",
+      "tier": "A",
+      "distanceMiles": 2.4,
+      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
+      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
+      "expirationLabel": "Use within 60 days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "stacking"
+      ],
+      "score": 86,
       "scoreLabel": "Excellent"
     },
     {
@@ -298,7 +515,7 @@
       "source": {
         "label": "Dunkin Rayford Road location",
         "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "Review local offer",
       "tier": "A",
@@ -308,145 +525,14 @@
       "expirationLabel": "Limited time",
       "availability": "available",
       "dealType": "promotion-event",
-      "freshness": "new",
+      "freshness": "current",
       "discoveredOn": "2026-07-23",
       "preferenceSignals": [
         "preferred-coffee",
         "local-offer",
         "loyalty-stack"
       ],
-      "score": 91,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "target-good-gather-salad-kits-2026-07",
-      "merchant": "Target",
-      "title": "2 Good & Gather salad kits for $6",
-      "summary": "The current weekly ad prices two eligible salad kits at $6, versus an estimated $3.75 each.",
-      "category": "grocery",
-      "estimatedSavings": 1.5,
-      "minimumSpend": 6,
-      "savingsRate": 20,
-      "isFree": false,
-      "expiresOn": "2026-07-25",
-      "locationNote": "Target stores near 77386; confirm stock at your selected store.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "weekly ad",
-        "salad",
-        "Good & Gather"
-      ],
-      "source": {
-        "label": "Target grocery weekly ad",
-        "url": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "View weekly ad",
-      "tier": "B",
-      "distanceMiles": 5.1,
-      "stackNote": "An eligible Target Circle Card benefit may add savings.",
-      "finePrint": "The estimate uses a $3.75 reference price per kit. Brand, variety, and store availability may vary.",
-      "availability": "available",
-      "score": 90,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "shell-fuel-rewards-new-member-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "10¢, 20¢, then 30¢ off per gallon",
-      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
-      "category": "fuel",
-      "estimatedSavings": 9,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "new member",
-        "fuel",
-        "three fill-ups"
-      ],
-      "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "Review offer",
-      "tier": "A",
-      "distanceMiles": 2.4,
-      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
-      "finePrint": "New members only. Rewards must be used within 60 days of signup. Estimate assumes 15 gallons on each of the first three fills.",
-      "expirationLabel": "Use within 60 days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "stacking"
-      ],
-      "score": 86,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "kroger-5x-digital-coupon-event-2026-07",
-      "merchant": "Kroger",
-      "title": "5× digital coupon event",
-      "summary": "Clip participating digital coupons and use each one up to five times in a single transaction.",
-      "category": "grocery",
-      "estimatedSavings": 5,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-07-28",
-      "locationNote": "Participating items and store inventory vary.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "digital coupon",
-        "5x event",
-        "grocery"
-      ],
-      "source": {
-        "label": "Kroger 5× digital coupon event",
-        "url": "https://www.kroger.com/pr/5x-digital-coupon-event",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "Clip coupons",
-      "tier": "A",
-      "distanceMiles": 4.7,
-      "stackNote": "Qualifying purchases can also earn Kroger fuel points.",
-      "finePrint": "Coupons can be used up to five times per transaction and across unlimited transactions through the event end date.",
-      "availability": "available",
-      "score": 86,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "mcdonalds-new-user-snack-wrap-2026-07",
-      "merchant": "McDonald's",
-      "title": "Free Snack Wrap for eligible new app users",
-      "summary": "Official offer requires a first purchase of $1 or more and rewards opt-in. It can take up to 48 hours to appear.",
-      "category": "restaurants",
-      "estimatedSavings": 3.5,
-      "minimumSpend": 1,
-      "isFree": false,
-      "expiresOn": "2026-07-31",
-      "locationNote": "At participating restaurants; confirm in the app before driving.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "new member",
-        "app",
-        "food"
-      ],
-      "source": {
-        "label": "MyMcDonald's Rewards",
-        "url": "https://www.mcdonalds.com/us/en-us/mymcdonalds.html",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "Check eligibility",
-      "score": 82,
+      "score": 83,
       "scoreLabel": "Strong"
     },
     {
@@ -470,7 +556,7 @@
       "source": {
         "label": "Starbucks Rewards",
         "url": "https://www.starbucks.com/rewards",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "View rewards",
       "tier": "C",
@@ -482,34 +568,6 @@
       "dealType": "loyalty-reward",
       "freshness": "current",
       "score": 81,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "heb-pet-5-off-30-2026-07",
-      "merchant": "H-E-B",
-      "title": "$5 off $30 in the pet department",
-      "summary": "A useful basket offer if pet supplies are already on your list. Do not buy extra just to trigger it.",
-      "category": "shopping",
-      "estimatedSavings": 5,
-      "minimumSpend": 30,
-      "savingsRate": 16.7,
-      "isFree": false,
-      "expiresOn": "2026-07-28",
-      "locationNote": "Availability can vary by selected store.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "digital coupon",
-        "pet",
-        "basket offer"
-      ],
-      "source": {
-        "label": "H-E-B digital coupons",
-        "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "Review coupon",
-      "score": 74,
       "scoreLabel": "Strong"
     },
     {
@@ -532,7 +590,7 @@
       "source": {
         "label": "Exxon Mobil Rewards+",
         "url": "https://www.exxonmobilfuels.com/en/rewards",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "Review rewards",
       "tier": "B",
@@ -571,7 +629,7 @@
       "source": {
         "label": "7REWARDS",
         "url": "https://www.7-eleven.com/7rewards",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "View rewards",
       "tier": "B",
@@ -611,7 +669,7 @@
       "source": {
         "label": "Houston Astros 2026 promotions",
         "url": "https://www.mlb.com/astros/tickets/promotions/2026",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "Review promotions",
       "tier": "B",
@@ -620,42 +678,14 @@
       "expirationLabel": "Select 2026 home games",
       "availability": "available",
       "dealType": "sports-ticket",
-      "freshness": "new",
+      "freshness": "current",
       "discoveredOn": "2026-07-23",
       "preferenceSignals": [
         "sports-ticket",
         "local-team",
         "promotion-event"
       ],
-      "score": 67,
-      "scoreLabel": "Worth a look"
-    },
-    {
-      "id": "heb-laundry-5-off-25-2026-07",
-      "merchant": "H-E-B",
-      "title": "$5 off $25 in select laundry items",
-      "summary": "Best used when detergent or laundry supplies are already due for a restock.",
-      "category": "home",
-      "estimatedSavings": 5,
-      "minimumSpend": 25,
-      "savingsRate": 20,
-      "isFree": false,
-      "expiresOn": "2026-07-28",
-      "locationNote": "Availability can vary by selected store.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "digital coupon",
-        "household",
-        "basket offer"
-      ],
-      "source": {
-        "label": "H-E-B digital coupons",
-        "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-        "checkedOn": "2026-07-23"
-      },
-      "actionLabel": "Review coupon",
-      "score": 64,
+      "score": 59,
       "scoreLabel": "Worth a look"
     }
   ],
@@ -681,7 +711,7 @@
       "source": {
         "label": "Scooter's Coffee app FAQ",
         "url": "https://www.scooterscoffee.com/mobileapp/faqs",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "View rewards FAQ",
       "tier": "B",
@@ -690,13 +720,13 @@
       "expirationLabel": "Birthday reward",
       "availability": "program",
       "dealType": "loyalty-reward",
-      "freshness": "new",
+      "freshness": "current",
       "discoveredOn": "2026-07-23",
       "preferenceSignals": [
         "preferred-coffee",
         "loyalty-reward"
       ],
-      "score": 79,
+      "score": 71,
       "scoreLabel": "Strong"
     },
     {
@@ -719,7 +749,7 @@
       "source": {
         "label": "JoVi Coffee official site",
         "url": "https://joviroasters.com/",
-        "checkedOn": "2026-07-23"
+        "checkedOn": "2026-08-09"
       },
       "actionLabel": "Review local shop",
       "tier": "C",
