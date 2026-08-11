@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-09T15:13:01.498Z",
-  "checkedOn": "2026-08-09",
+  "generatedAt": "2026-08-11T15:12:25.214Z",
+  "checkedOn": "2026-08-11",
   "items": [
     {
       "id": "watch-ground-beef-80-20",
@@ -25,7 +25,7 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
-      "checkedOn": "2026-07-23",
+      "checkedOn": "2026-08-11",
       "locationStatus": "verified-local"
     },
     {
@@ -46,12 +46,12 @@
       "item": "Additional verified produce rollbacks",
       "comparisonId": "walmart-local-rollbacks",
       "targetPrice": 1.75,
-      "latestPrice": 1.97,
+      "latestPrice": 1.08,
       "unit": "per lb",
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
-      "checkedOn": "2026-07-23",
+      "checkedOn": "2026-08-11",
       "locationStatus": "verified-local"
     },
     {
@@ -64,7 +64,7 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store",
-      "checkedOn": "2026-08-09",
+      "checkedOn": "2026-08-11",
       "locationStatus": "verified-local"
     }
   ]

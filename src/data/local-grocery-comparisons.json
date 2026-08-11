@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-08-09",
-  "adWindow": "Current public listings checked August 9, 2026; unchanged July prices retain their original check dates and are not treated as current.",
+  "checkedOn": "2026-08-11",
+  "adWindow": "Current public listings checked August 11, 2026; unchanged July prices retain their original check dates and are not treated as current.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -89,8 +89,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Rollback at Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-07-23",
-          "dateLabel": "Store page checked Jul 23; no end date shown",
+          "checkedOn": "2026-08-11",
+          "dateLabel": "Store page checked Aug 11; rollback; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -181,8 +181,8 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "These are useful local deals, not four-store comparisons: green seedless grapes are $1.97/lb, Gala apples are $1.08/lb in a 3 lb bag, blueberries are $3.17/pint, and sweet corn is $0.25/ear.",
-      "winner": "Walmart #3585 local rollbacks",
+      "comparisonNote": "These are current store-specific rollbacks, not a four-store comparison: green seedless grapes are $1.97/lb and a 3 lb bag of Gala apples is $3.24 ($1.08/lb). Earlier blueberry and sweet-corn prices were not reconfirmed and are no longer surfaced.",
+      "winner": "Walmart #3585 Gala apples at $1.08/lb",
       "prices": [
         {
           "retailer": "Walmart",
@@ -193,8 +193,21 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-07-23",
-          "dateLabel": "Store page checked Jul 23; no end date shown",
+          "checkedOn": "2026-08-11",
+          "dateLabel": "Store page checked Aug 11; rollback from $5.33; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        },
+        {
+          "retailer": "Walmart",
+          "product": "Fresh Gala Apples",
+          "packageSize": "3 lb bag",
+          "price": 3.24,
+          "unitPrice": 1.08,
+          "unit": "lb",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-11",
+          "dateLabel": "Store page checked Aug 11; rollback from $3.78; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -215,8 +228,8 @@
           "unit": "oz",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-09",
-          "dateLabel": "Store page checked Aug 9; rollback; no end date shown",
+          "checkedOn": "2026-08-11",
+          "dateLabel": "Store page checked Aug 11; rollback from $4.97; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
         }
       ]

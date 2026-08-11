@@ -60,24 +60,123 @@
     "actionLabel": "View program"
   },
   {
-    "id": "whataburger-signup-research-lead",
+    "id": "whataburger-signup-free-burger-2026",
+    "merchant": "Whataburger Rewards",
+    "title": "Free Whataburger for new app members",
+    "summary": "Whataburger's official newsroom states that guests who download the app and create an account automatically receive a free Whataburger.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "locationNote": "App and account specific; confirm the reward is loaded and the selected Spring-area restaurant participates before visiting.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["free food", "new member", "app", "welcome reward"],
+    "source": {
+      "label": "Whataburger official newsroom",
+      "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
+      "checkedOn": "2026-08-11"
+    },
+    "actionLabel": "Check welcome reward",
+    "tier": "A",
+    "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
+    "finePrint": "A dollar value is not estimated because local menu pricing and the account-specific reward details were not publicly verified. App enrollment and participating-location availability apply.",
+    "expirationLabel": "New members",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "improved",
+    "discoveredOn": "2026-08-11",
+    "preferenceSignals": ["free-food", "new-member", "app-specific"]
+  },
+  {
+    "id": "whataburger-wednesday-whatafresher-2026-08-12",
     "merchant": "Whataburger",
-    "title": "Check MyWhataburger for a personal welcome offer",
-    "summary": "The earlier conversation claimed a free signup item, but that claim has not been confirmed. Treat this as a research lead only.",
+    "title": "76-cent 16-ounce Whatafresher on Wednesday",
+    "summary": "Whataburger Rewards members can get a 16-ounce Whatafresher for 76 cents on August 12 from 11 a.m. to 8 p.m. local time.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
     "isFree": false,
-    "locationNote": "Open the app and verify the exact offer before acting.",
-    "verification": "needs-check",
+    "expiresOn": "2026-08-12",
+    "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
+    "verification": "verified",
     "friction": "low",
-    "tags": ["research lead", "app", "unverified"],
+    "tags": ["one-day", "76-cent", "drink", "app", "rewards"],
     "source": {
-      "label": "MyWhataburger",
-      "url": "https://whataburger.com/rewards",
-      "checkedOn": "2026-07-23"
+      "label": "Whataburger official newsroom",
+      "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
+      "checkedOn": "2026-08-11"
     },
-    "actionLabel": "Verify in app"
+    "actionLabel": "Check Wednesday offer",
+    "tier": "A",
+    "stackNote": "Do not assume another coupon can be combined with this app offer.",
+    "finePrint": "Valid only through the Whataburger App, one redemption per account, at participating locations during the stated local-time window. No dollar savings estimate is shown because the regular local price was not verified.",
+    "expirationLabel": "August 12, 11 a.m.-8 p.m.",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-11",
+    "preferenceSignals": ["one-day", "app-specific", "time-sensitive"]
+  },
+  {
+    "id": "whataburger-wednesday-big-ranch-wrap-2026-08-19",
+    "merchant": "Whataburger",
+    "title": "76-cent Big Ranch Wrap on Wednesday",
+    "summary": "Whataburger Rewards members can get a Big Ranch Wrap entree for 76 cents on August 19 from 11 a.m. to 4 p.m. local time.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-08-19",
+    "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["one-day", "76-cent", "entree", "app", "rewards"],
+    "source": {
+      "label": "Whataburger official newsroom",
+      "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
+      "checkedOn": "2026-08-11"
+    },
+    "actionLabel": "Check August 19 offer",
+    "tier": "A",
+    "stackNote": "Do not assume another coupon can be combined with this app offer.",
+    "finePrint": "Valid only through the Whataburger App, one redemption per account, at participating locations during the stated local-time window. No dollar savings estimate is shown because the regular local price was not verified.",
+    "expirationLabel": "August 19, 11 a.m.-4 p.m.",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-11",
+    "preferenceSignals": ["one-day", "app-specific", "time-sensitive"]
+  },
+  {
+    "id": "whataburger-wednesday-chicken-sandwich-2026-08-26",
+    "merchant": "Whataburger",
+    "title": "76-cent Signature Chicken Sandwich on Wednesday",
+    "summary": "Whataburger Rewards members can get a Signature Chicken Sandwich entree for 76 cents on August 26 from 5 p.m. to 10 p.m. local time.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-08-26",
+    "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["one-day", "76-cent", "entree", "app", "rewards"],
+    "source": {
+      "label": "Whataburger official newsroom",
+      "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
+      "checkedOn": "2026-08-11"
+    },
+    "actionLabel": "Check August 26 offer",
+    "tier": "A",
+    "stackNote": "Do not assume another coupon can be combined with this app offer.",
+    "finePrint": "Valid only through the Whataburger App, one redemption per account, at participating locations during the stated local-time window. No dollar savings estimate is shown because the regular local price was not verified.",
+    "expirationLabel": "August 26, 5-10 p.m.",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-11",
+    "preferenceSignals": ["one-day", "app-specific", "time-sensitive"]
   },
   {
     "id": "shell-fuel-rewards-new-member-2026",
@@ -95,7 +194,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Review offer",
     "tier": "A",
@@ -132,7 +231,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -151,6 +250,96 @@
     ]
   },
   {
+    "id": "wendys-wednesday-free-nuggets-2026-08-12",
+    "merchant": "Wendy's",
+    "title": "Free 6-piece nuggets Wednesday with $5 purchase",
+    "summary": "Wendy's official offers page lists free 6-piece nuggets with a $5 qualifying purchase for Wendy's Wednesday.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 5,
+    "isFree": true,
+    "expiresOn": "2026-08-12",
+    "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["free food", "one-day", "app", "qualifying purchase"],
+    "source": {
+      "label": "Wendy's official offers page",
+      "url": "https://www.wendys.com/offers-coupons",
+      "checkedOn": "2026-08-11"
+    },
+    "actionLabel": "Claim Wednesday offer",
+    "tier": "A",
+    "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+    "finePrint": "Requires a $5 qualifying purchase. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local nugget price was not verified.",
+    "expirationLabel": "Wednesday, August 12",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-08-11",
+    "preferenceSignals": ["free-food", "one-day", "app-specific"]
+  },
+  {
+    "id": "wendys-fryday-free-fry-2026-08-14",
+    "merchant": "Wendy's",
+    "title": "Free any-size fry Friday with $5 purchase",
+    "summary": "Wendy's official offers page lists a free any-size fry with a $5 qualifying purchase for Fryday.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 5,
+    "isFree": true,
+    "expiresOn": "2026-08-14",
+    "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["free food", "one-day", "app", "qualifying purchase"],
+    "source": {
+      "label": "Wendy's official offers page",
+      "url": "https://www.wendys.com/offers-coupons",
+      "checkedOn": "2026-08-11"
+    },
+    "actionLabel": "Claim Friday offer",
+    "tier": "A",
+    "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+    "finePrint": "Requires a $5 qualifying purchase. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local fry price was not verified.",
+    "expirationLabel": "Friday, August 14",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-08-11",
+    "preferenceSignals": ["free-food", "one-day", "app-specific"]
+  },
+  {
+    "id": "dairy-queen-bogo-blizzard-99-cents-2026-08",
+    "merchant": "Dairy Queen Rewards",
+    "title": "Buy one Blizzard, get a second for 99 cents",
+    "summary": "DQ Rewards members can buy one Blizzard Treat and get a second of equal or lesser value for 99 cents, redeemable once per day through August 30.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-08-30",
+    "locationNote": "App and location gated; confirm the chosen Spring-area DQ supports Mobile Ordering & Rewards before making a trip.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["bogo", "99-cent", "dessert", "app", "rewards"],
+    "source": {
+      "label": "Dairy Queen official offer",
+      "url": "https://www.dairyqueen.com/en-us/bogo-blizzard/",
+      "checkedOn": "2026-08-11"
+    },
+    "actionLabel": "Check DQ app deal",
+    "tier": "A",
+    "stackNote": "The discount applies to the Blizzard of equal or lesser value; no other stacking is assumed.",
+    "finePrint": "Valid August 3-30 at participating U.S. locations for DQ Rewards members. The offer can be used once per day on two eligible Blizzards, excludes Royal Blizzards, and may take up to 24 hours to appear. No dollar estimate is shown because local menu pricing was not verified.",
+    "expirationLabel": "Ends August 30",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-08-11",
+    "preferenceSignals": ["bogo", "app-specific", "location-gated"]
+  },
+  {
     "id": "sonic-rewards-welcome-reward-2026",
     "merchant": "SONIC Rewards",
     "title": "Free medium fries, tots, or drink for new members",
@@ -166,7 +355,7 @@
     "source": {
       "label": "SONIC official newsroom",
       "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -200,7 +389,7 @@
     "source": {
       "label": "7REWARDS Fuel",
       "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Review fuel offer",
     "tier": "A",
@@ -219,6 +408,36 @@
     ]
   },
   {
+    "id": "seven-eleven-slurpee-happy-hour-2026",
+    "merchant": "7-Eleven",
+    "title": "$1 large Slurpee weekday Happy Hour",
+    "summary": "7Rewards and Speedy Rewards members can get a large Slurpee for $1 Monday through Friday from 3 p.m. to 6 p.m.",
+    "category": "convenience",
+    "estimatedSavings": 0,
+    "minimumSpend": 1,
+    "isFree": false,
+    "expiresOn": "2026-08-25",
+    "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["slurpee", "one-dollar", "weekday", "rewards", "local station"],
+    "source": {
+      "label": "7-Eleven official press release",
+      "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
+      "checkedOn": "2026-08-11"
+    },
+    "actionLabel": "Check Happy Hour",
+    "tier": "B",
+    "stackNote": "No additional coupon or points stacking is assumed.",
+    "finePrint": "Valid Monday-Friday from 3-6 p.m. through August 25 for registered 7Rewards or Speedy Rewards members at participating locations. No dollar savings estimate is shown because the regular local Slurpee price was not verified.",
+    "expirationLabel": "Weekdays through August 25",
+    "availability": "available",
+    "dealType": "convenience-reward",
+    "freshness": "new",
+    "discoveredOn": "2026-08-11",
+    "preferenceSignals": ["convenience-reward", "time-sensitive", "local-station"]
+  },
+  {
     "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
     "merchant": "Exxon Mobil Rewards+",
     "title": "$5 in points on each of the first two app fill-ups",
@@ -235,7 +454,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+ official offer",
       "url": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Check app eligibility",
     "tier": "A",
@@ -331,7 +550,7 @@
     "source": {
       "label": "7REWARDS",
       "url": "https://www.7-eleven.com/7rewards",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "View rewards",
     "tier": "B",
@@ -360,7 +579,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+",
       "url": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Review rewards",
     "tier": "B",
@@ -417,7 +636,7 @@
     "source": {
       "label": "Dutch Bros Dutch 101",
       "url": "https://www.dutchbros.com/dutch-101/",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Review app offer",
     "tier": "A",
@@ -446,7 +665,7 @@
     "source": {
       "label": "Dunkin Rayford Road location",
       "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Review local offer",
     "tier": "A",
@@ -476,7 +695,7 @@
     "source": {
       "label": "Scooter's Coffee app FAQ",
       "url": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "View rewards FAQ",
     "tier": "B",
@@ -505,7 +724,7 @@
     "source": {
       "label": "JoVi Coffee official site",
       "url": "https://joviroasters.com/",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Review local shop",
     "tier": "C",
@@ -532,7 +751,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -562,7 +781,7 @@
     "source": {
       "label": "Rainbow Car Care frequent wash program",
       "url": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Review wash program",
     "tier": "A",
@@ -625,7 +844,7 @@
     "source": {
       "label": "Houston Astros 2026 promotions",
       "url": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-11"
     },
     "actionLabel": "Review promotions",
     "tier": "B",

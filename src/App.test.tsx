@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 
-import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import App from "./App";
 
@@ -45,9 +45,8 @@ describe("Savings Desk interactions", () => {
     expect(screen.queryByText(/\$10 off baby essentials/i)).toBeNull();
 
     fireEvent.click(screen.getByRole("button", { name: "Browse this week" }));
-    expect(
-      screen.getByText(/Best household fit: teen clothing, everyday school shoes/)
-    ).toBeTruthy();
+    expect(screen.getByText("Free Whataburger for new app members")).toBeTruthy();
+    expect(screen.queryByText(/Best household fit: teen clothing/)).toBeNull();
   });
 
   it("removes unwanted local activity offers", () => {
@@ -120,8 +119,9 @@ describe("Savings Desk interactions", () => {
     fireEvent.click(screen.getByRole("button", { name: "Grocery" }));
 
     expect(screen.getByRole("heading", { name: "Staples watchlist" })).toBeTruthy();
-    expect(screen.getByText("5")).toBeTruthy();
-    expect(screen.getAllByText("Target met")).toHaveLength(2);
+    const watchlistStatus = within(screen.getByLabelText("Watchlist status"));
+    expect(watchlistStatus.getAllByText("5")).toHaveLength(2);
+    expect(screen.getAllByText("Target met")).toHaveLength(3);
     expect(screen.getAllByText("Meets target; confirm locally")).toHaveLength(2);
     expect(screen.getAllByText("Latest unit price")).toHaveLength(5);
 
