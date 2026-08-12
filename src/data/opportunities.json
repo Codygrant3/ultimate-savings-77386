@@ -310,6 +310,36 @@
     "preferenceSignals": ["free-food", "one-day", "app-specific"]
   },
   {
+    "id": "wendys-free-small-chili-2026-08",
+    "merchant": "Wendy's",
+    "title": "Free small chili with $5 purchase",
+    "summary": "Wendy's official offers page lists a free small chili with a $5 qualifying purchase through August 24.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 5,
+    "isFree": true,
+    "expiresOn": "2026-08-24",
+    "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["free food", "app", "qualifying purchase"],
+    "source": {
+      "label": "Wendy's official offers page",
+      "url": "https://www.wendys.com/offers-coupons",
+      "checkedOn": "2026-08-12"
+    },
+    "actionLabel": "Claim chili offer",
+    "tier": "A",
+    "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+    "finePrint": "Requires a $5 qualifying purchase and is listed through August 24. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local chili price was not verified.",
+    "expirationLabel": "Ends August 24",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-08-12",
+    "preferenceSignals": ["free-food", "app-specific"]
+  },
+  {
     "id": "dairy-queen-bogo-blizzard-99-cents-2026-08",
     "merchant": "Dairy Queen Rewards",
     "title": "Buy one Blizzard, get a second for 99 cents",

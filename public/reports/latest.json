@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-11T15:12:30.744Z",
+  "generatedAt": "2026-08-12T15:05:34.193Z",
   "weekOf": "2026-08-10",
   "zipCode": "77386",
   "totalPotentialSavings": 113.5,
-  "verifiedCount": 24,
-  "expiringCount": 10,
+  "verifiedCount": 25,
+  "expiringCount": 11,
   "opportunities": [
     {
       "id": "whataburger-signup-free-burger-2026",
@@ -123,6 +123,45 @@
       "preferenceSignals": [
         "free-food",
         "one-day",
+        "app-specific"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "wendys-free-small-chili-2026-08",
+      "merchant": "Wendy's",
+      "title": "Free small chili with $5 purchase",
+      "summary": "Wendy's official offers page lists a free small chili with a $5 qualifying purchase through August 24.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": true,
+      "expiresOn": "2026-08-24",
+      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "app",
+        "qualifying purchase"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-08-12"
+      },
+      "actionLabel": "Claim chili offer",
+      "tier": "A",
+      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+      "finePrint": "Requires a $5 qualifying purchase and is listed through August 24. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local chili price was not verified.",
+      "expirationLabel": "Ends August 24",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-08-12",
+      "preferenceSignals": [
+        "free-food",
         "app-specific"
       ],
       "score": 100,
@@ -732,6 +771,48 @@
       "scoreLabel": "Strong"
     },
     {
+      "id": "seven-eleven-slurpee-happy-hour-2026",
+      "merchant": "7-Eleven",
+      "title": "$1 large Slurpee weekday Happy Hour",
+      "summary": "7Rewards and Speedy Rewards members can get a large Slurpee for $1 Monday through Friday from 3 p.m. to 6 p.m.",
+      "category": "convenience",
+      "estimatedSavings": 0,
+      "minimumSpend": 1,
+      "isFree": false,
+      "expiresOn": "2026-08-25",
+      "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "slurpee",
+        "one-dollar",
+        "weekday",
+        "rewards",
+        "local station"
+      ],
+      "source": {
+        "label": "7-Eleven official press release",
+        "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
+        "checkedOn": "2026-08-11"
+      },
+      "actionLabel": "Check Happy Hour",
+      "tier": "B",
+      "stackNote": "No additional coupon or points stacking is assumed.",
+      "finePrint": "Valid Monday-Friday from 3-6 p.m. through August 25 for registered 7Rewards or Speedy Rewards members at participating locations. No dollar savings estimate is shown because the regular local Slurpee price was not verified.",
+      "expirationLabel": "Weekdays through August 25",
+      "availability": "available",
+      "dealType": "convenience-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-11",
+      "preferenceSignals": [
+        "convenience-reward",
+        "time-sensitive",
+        "local-station"
+      ],
+      "score": 79,
+      "scoreLabel": "Strong"
+    },
+    {
       "id": "whataburger-wednesday-chicken-sandwich-2026-08-26",
       "merchant": "Whataburger",
       "title": "76-cent Signature Chicken Sandwich on Wednesday",
@@ -813,48 +894,6 @@
         "location-gated"
       ],
       "score": 76,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "seven-eleven-slurpee-happy-hour-2026",
-      "merchant": "7-Eleven",
-      "title": "$1 large Slurpee weekday Happy Hour",
-      "summary": "7Rewards and Speedy Rewards members can get a large Slurpee for $1 Monday through Friday from 3 p.m. to 6 p.m.",
-      "category": "convenience",
-      "estimatedSavings": 0,
-      "minimumSpend": 1,
-      "isFree": false,
-      "expiresOn": "2026-08-25",
-      "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "slurpee",
-        "one-dollar",
-        "weekday",
-        "rewards",
-        "local station"
-      ],
-      "source": {
-        "label": "7-Eleven official press release",
-        "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
-        "checkedOn": "2026-08-11"
-      },
-      "actionLabel": "Check Happy Hour",
-      "tier": "B",
-      "stackNote": "No additional coupon or points stacking is assumed.",
-      "finePrint": "Valid Monday-Friday from 3-6 p.m. through August 25 for registered 7Rewards or Speedy Rewards members at participating locations. No dollar savings estimate is shown because the regular local Slurpee price was not verified.",
-      "expirationLabel": "Weekdays through August 25",
-      "availability": "available",
-      "dealType": "convenience-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "convenience-reward",
-        "time-sensitive",
-        "local-station"
-      ],
-      "score": 74,
       "scoreLabel": "Strong"
     },
     {
