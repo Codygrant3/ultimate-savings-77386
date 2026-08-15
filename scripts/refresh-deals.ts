@@ -121,6 +121,10 @@ const groceryTargetPrices: Record<string, number> = {
   "whole-milk-gallon": 3,
   "walmart-local-rollbacks": 1.75,
   "family-size-cheerios": 0.22,
+  "walmart-local-blueberries": 0.3,
+  "walmart-local-watermelon": 5,
+  "walmart-local-brown-eggs": 0.25,
+  "walmart-local-peanut-butter": 0.1,
 };
 
 function canonicalizeUrl(value: string): string {

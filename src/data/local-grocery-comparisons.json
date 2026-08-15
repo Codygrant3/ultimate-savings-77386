@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-08-11",
-  "adWindow": "Current public listings checked August 11, 2026; unchanged July prices retain their original check dates and are not treated as current.",
+  "checkedOn": "2026-08-15",
+  "adWindow": "Current public listings checked August 15, 2026; older prices retain their original check dates and are not treated as current.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -89,8 +89,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Rollback at Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-11",
-          "dateLabel": "Store page checked Aug 11; rollback; no end date shown",
+          "checkedOn": "2026-08-15",
+          "dateLabel": "Store page checked Aug 15; rollback; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -181,7 +181,7 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "These are current store-specific rollbacks, not a four-store comparison: green seedless grapes are $1.97/lb and a 3 lb bag of Gala apples is $3.24 ($1.08/lb). Earlier blueberry and sweet-corn prices were not reconfirmed and are no longer surfaced.",
+      "comparisonNote": "These are current store-specific rollbacks, not a four-store comparison: green seedless grapes are $1.97/lb and a 3 lb bag of Gala apples is $3.24 ($1.08/lb).",
       "winner": "Walmart #3585 Gala apples at $1.08/lb",
       "prices": [
         {
@@ -193,8 +193,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-11",
-          "dateLabel": "Store page checked Aug 11; rollback from $5.33; no end date shown",
+          "checkedOn": "2026-08-15",
+          "dateLabel": "Store page checked Aug 15; rollback from $5.33; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -206,8 +206,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-11",
-          "dateLabel": "Store page checked Aug 11; rollback from $3.78; no end date shown",
+          "checkedOn": "2026-08-15",
+          "dateLabel": "Store page checked Aug 15; rollback from $3.64; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -228,8 +228,96 @@
           "unit": "oz",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-11",
-          "dateLabel": "Store page checked Aug 11; rollback from $4.97; no end date shown",
+          "checkedOn": "2026-08-15",
+          "dateLabel": "Store page checked Aug 15; rollback from $4.97; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
+        }
+      ]
+    },
+    {
+      "id": "walmart-local-blueberries",
+      "item": "Fresh blueberries, 1 pint",
+      "category": "produce",
+      "comparisonNote": "This is a store-specific Walmart rollback. The listed $2.87 price is 26.1 cents per ounce and is not a four-store comparison.",
+      "winner": "Walmart #3585 at $2.87 (26.1¢/oz)",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Fresh Blueberries",
+          "packageSize": "1 pint container",
+          "price": 2.87,
+          "unitPrice": 0.261,
+          "unit": "oz",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-15",
+          "dateLabel": "Store page checked Aug 15; rollback from $5.68; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        }
+      ]
+    },
+    {
+      "id": "walmart-local-watermelon",
+      "item": "Fresh seedless watermelon",
+      "category": "produce",
+      "comparisonNote": "This is a store-specific Walmart rollback. The listed whole-watermelon price is not a four-store comparison.",
+      "winner": "Walmart #3585 at $4.67 each",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Fresh Seedless Watermelon",
+          "packageSize": "Each",
+          "price": 4.67,
+          "unitPrice": 4.67,
+          "unit": "each",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-15",
+          "dateLabel": "Store page checked Aug 15; rollback from $7.97; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        }
+      ]
+    },
+    {
+      "id": "walmart-local-brown-eggs",
+      "item": "Cage-free large brown eggs",
+      "category": "staple",
+      "comparisonNote": "This is a store-specific Walmart rollback. The 18-count package normalizes to 21.8 cents per egg.",
+      "winner": "Walmart #3585 at $3.93 (21.8¢/egg)",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Marketside Cage-Free Large Brown Eggs",
+          "packageSize": "18 count",
+          "price": 3.93,
+          "unitPrice": 0.218,
+          "unit": "egg",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-15",
+          "dateLabel": "Store page checked Aug 15; rollback from $4.37; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        }
+      ]
+    },
+    {
+      "id": "walmart-local-peanut-butter",
+      "item": "Creamy peanut butter",
+      "category": "staple",
+      "comparisonNote": "This is a store-specific Walmart rollback. The 40-ounce jar normalizes to 9.4 cents per ounce.",
+      "winner": "Walmart #3585 at $3.74 (9.4¢/oz)",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Great Value Creamy Peanut Butter",
+          "packageSize": "40 oz",
+          "price": 3.74,
+          "unitPrice": 0.094,
+          "unit": "oz",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-15",
+          "dateLabel": "Store page checked Aug 15; rollback from $4.28; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
         }
       ]

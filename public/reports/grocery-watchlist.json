@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-12T15:05:28.951Z",
-  "checkedOn": "2026-08-11",
+  "generatedAt": "2026-08-15T15:09:00.834Z",
+  "checkedOn": "2026-08-15",
   "items": [
     {
       "id": "watch-ground-beef-80-20",
@@ -25,7 +25,7 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
-      "checkedOn": "2026-08-11",
+      "checkedOn": "2026-08-15",
       "locationStatus": "verified-local"
     },
     {
@@ -51,7 +51,7 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
-      "checkedOn": "2026-08-11",
+      "checkedOn": "2026-08-15",
       "locationStatus": "verified-local"
     },
     {
@@ -64,7 +64,59 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store",
-      "checkedOn": "2026-08-11",
+      "checkedOn": "2026-08-15",
+      "locationStatus": "verified-local"
+    },
+    {
+      "id": "watch-walmart-local-blueberries",
+      "item": "Fresh blueberries, 1 pint",
+      "comparisonId": "walmart-local-blueberries",
+      "targetPrice": 0.3,
+      "latestPrice": 0.261,
+      "unit": "per oz",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
+      "checkedOn": "2026-08-15",
+      "locationStatus": "verified-local"
+    },
+    {
+      "id": "watch-walmart-local-watermelon",
+      "item": "Fresh seedless watermelon",
+      "comparisonId": "walmart-local-watermelon",
+      "targetPrice": 5,
+      "latestPrice": 4.67,
+      "unit": "per each",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
+      "checkedOn": "2026-08-15",
+      "locationStatus": "verified-local"
+    },
+    {
+      "id": "watch-walmart-local-brown-eggs",
+      "item": "Cage-free large brown eggs",
+      "comparisonId": "walmart-local-brown-eggs",
+      "targetPrice": 0.25,
+      "latestPrice": 0.218,
+      "unit": "per egg",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
+      "checkedOn": "2026-08-15",
+      "locationStatus": "verified-local"
+    },
+    {
+      "id": "watch-walmart-local-peanut-butter",
+      "item": "Creamy peanut butter",
+      "comparisonId": "walmart-local-peanut-butter",
+      "targetPrice": 0.1,
+      "latestPrice": 0.094,
+      "unit": "per oz",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store",
+      "checkedOn": "2026-08-15",
       "locationStatus": "verified-local"
     }
   ]
