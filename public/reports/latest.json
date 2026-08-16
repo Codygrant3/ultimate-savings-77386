@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-15T15:09:08.791Z",
+  "generatedAt": "2026-08-16T15:05:28.243Z",
   "weekOf": "2026-08-10",
   "zipCode": "77386",
-  "totalPotentialSavings": 128.05,
-  "verifiedCount": 26,
-  "expiringCount": 8,
+  "totalPotentialSavings": 133.05,
+  "verifiedCount": 27,
+  "expiringCount": 9,
   "opportunities": [
     {
       "id": "whataburger-signup-free-burger-2026",
@@ -27,7 +27,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Check welcome reward",
       "tier": "A",
@@ -67,7 +67,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Claim Wednesday offer",
       "tier": "A",
@@ -107,7 +107,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Claim Friday offer",
       "tier": "A",
@@ -147,7 +147,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Claim chili offer",
       "tier": "A",
@@ -186,7 +186,7 @@
       "source": {
         "label": "SONIC official newsroom",
         "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
-        "checkedOn": "2026-08-11"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Check welcome reward",
       "tier": "A",
@@ -230,7 +230,7 @@
       "source": {
         "label": "H-E-B weekly coupons",
         "url": "https://www.heb.com/weekly-ad/coupons",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Clip coupon",
       "tier": "A",
@@ -246,6 +246,51 @@
         "back-to-school",
         "school supplies",
         "coupon-stack"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "heb-bic-five-off-fifteen-2026-08",
+      "merchant": "H-E-B",
+      "title": "$5 off $15 in eligible BIC items",
+      "summary": "Clip the public H-E-B coupon for $5 off a qualifying $15 basket of BIC shaving, writing, or lighter items.",
+      "category": "shopping",
+      "estimatedSavings": 5,
+      "minimumSpend": 15,
+      "savingsRate": 33.3,
+      "isFree": false,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is not bound to a verified Spring-area store; local coupon availability and eligible inventory must be confirmed before purchase.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "back to school",
+        "writing supplies",
+        "digital coupon",
+        "teen",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B weekly coupons",
+        "url": "https://www.heb.com/weekly-ad/coupons",
+        "checkedOn": "2026-08-16"
+      },
+      "actionLabel": "Clip coupon",
+      "tier": "A",
+      "stackNote": "Use only for eligible BIC items already needed and combine with item-level discounts only when H-E-B's coupon terms allow it.",
+      "finePrint": "Requires $15 in participating BIC shaving, writing, or lighter items. The public page lists unlimited use and an August 25 expiration, but product eligibility and selected-store availability must be confirmed before purchase.",
+      "expirationLabel": "Ends August 25",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-16",
+      "preferenceSignals": [
+        "teen",
+        "back-to-school",
+        "school supplies",
+        "coupon-stack",
+        "location-gated"
       ],
       "score": 100,
       "scoreLabel": "Excellent"
@@ -271,7 +316,7 @@
       "source": {
         "label": "Starbucks Rewards terms",
         "url": "https://www.starbucks.com/rewards/terms/",
-        "checkedOn": "2026-08-09"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Review eligibility",
       "tier": "B",
@@ -387,7 +432,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Check Paze eligibility",
       "tier": "A",
@@ -427,7 +472,7 @@
       "source": {
         "label": "Take 5 Spring location coupons",
         "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Get coupon",
       "tier": "A",
@@ -633,7 +678,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Check August 19 offer",
       "tier": "A",
@@ -755,7 +800,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Check August 26 offer",
       "tier": "A",
@@ -795,7 +840,7 @@
       "source": {
         "label": "Starbucks Rewards",
         "url": "https://www.starbucks.com/rewards",
-        "checkedOn": "2026-08-09"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "View rewards",
       "tier": "C",
@@ -914,7 +959,7 @@
       "source": {
         "label": "Costa Oil Rayford specials",
         "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "Review eligibility",
       "tier": "A",
@@ -992,7 +1037,7 @@
       "source": {
         "label": "7REWARDS",
         "url": "https://www.7-eleven.com/7rewards",
-        "checkedOn": "2026-08-15"
+        "checkedOn": "2026-08-16"
       },
       "actionLabel": "View rewards",
       "tier": "B",
