@@ -75,7 +75,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -105,7 +105,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Check August 19 offer",
     "tier": "A",
@@ -135,7 +135,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Check August 26 offer",
     "tier": "A",
@@ -164,7 +164,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-15"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Review offer",
     "tier": "A",
@@ -193,7 +193,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-15"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Opt in for race days",
     "tier": "A",
@@ -230,7 +230,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -264,7 +264,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -293,7 +293,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -323,7 +323,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Claim chili offer",
     "tier": "A",
@@ -352,7 +352,7 @@
     "source": {
       "label": "SONIC official newsroom",
       "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -386,7 +386,7 @@
     "source": {
       "label": "7REWARDS Fuel",
       "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-      "checkedOn": "2026-08-15"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Review fuel offer",
     "tier": "A",
@@ -420,7 +420,7 @@
     "source": {
       "label": "7REWARDS Fuel",
       "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-      "checkedOn": "2026-08-15"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Review SMS fuel offer",
     "tier": "A",
@@ -466,30 +466,30 @@
   {
     "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
     "merchant": "Exxon Mobil Rewards+",
-    "title": "$5 in points on each of the first two app fill-ups",
-    "summary": "New, fully enrolled Rewards+ members and new app users can earn $5 in points after each of their first two qualifying app fuel purchases.",
+    "title": "Up to $15 in points across seven app fill-ups",
+    "summary": "First-time Exxon Mobil Rewards+ app fuel users can earn $5 after each of their first two qualifying fills, then $1 after each of the next five qualifying fills.",
     "category": "fuel",
-    "estimatedSavings": 10,
+    "estimatedSavings": 15,
     "minimumSpend": 0,
     "isFree": false,
     "expiresOn": "2026-09-30",
     "locationNote": "Participating Exxon and Mobil stations; no 77386 station with full Rewards+ support was confirmed in this public scan.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["fuel", "new member", "new app user", "points"],
+    "tags": ["fuel", "first-time app user", "points", "seven fill-ups"],
     "source": {
-      "label": "Exxon Mobil Rewards+ official offer",
-      "url": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedOn": "2026-08-15"
+      "label": "Exxon Mobil Rewards+ official FAQ",
+      "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Check app eligibility",
     "tier": "A",
-    "stackNote": "Regular Rewards+ points are earned in addition to the newcomer bonuses.",
-    "finePrint": "Each qualifying app fuel transaction must be at least 8 gallons and both must be completed within 60 days of app download. Available once during the May 20-September 30 offer period; cannot be combined with other promotions.",
-    "expirationLabel": "Enroll by September 30; complete within 60 days",
+    "stackNote": "Regular Rewards+ points are earned on the qualifying fills; do not assume another promotion combines.",
+    "finePrint": "Only members making their first app fuel purchase qualify. Each of seven app-paid fills must be at least 8 gallons. The first two fills earn $5 each; the next five earn $1 each and must be completed within the following 60 days. Offer period ends September 30.",
+    "expirationLabel": "Start by September 30; finish the last five within 60 days",
     "availability": "available",
     "dealType": "fuel-reward",
-    "freshness": "new",
+    "freshness": "improved",
     "discoveredOn": "2026-08-09",
     "preferenceSignals": [
       "fuel-reward",
@@ -516,7 +516,7 @@
     "source": {
       "label": "H-E-B weekly coupons",
       "url": "https://www.heb.com/weekly-ad/coupons",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Clip coupon",
     "tier": "A",
@@ -814,7 +814,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -908,7 +908,7 @@
     "source": {
       "label": "AMC Stubs midweek discount",
       "url": "https://www.amctheatres.com/50pct-off-tuesdays-and-wednesdays",
-      "checkedOn": "2026-08-09"
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "View discount",
     "tier": "A",
@@ -922,31 +922,120 @@
     "preferenceSignals": ["movie-discount", "concessions", "loyalty-reward"]
   },
   {
+    "id": "wendys-one-dollar-small-frosty-summer-2026",
+    "merchant": "Wendy's",
+    "title": "$1 small Classic Frosty for a limited time",
+    "summary": "Wendy's is advertising a small Classic Frosty for $1 with no app offer required.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 1,
+    "isFree": false,
+    "locationNote": "U.S. price and participation vary; confirm the selected Spring-area restaurant before making a trip.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": ["one-dollar", "dessert", "limited-time", "no app required"],
+    "source": {
+      "label": "Wendy's official home page",
+      "url": "https://www.wendys.com/",
+      "checkedOn": "2026-08-17"
+    },
+    "actionLabel": "Check local price",
+    "tier": "B",
+    "stackNote": "No coupon or reward is required; no additional stacking is assumed.",
+    "finePrint": "A la carte only, not valid for delivery, limit 10 per transaction, and participation varies. Wendy's does not publish an end date, so confirm the $1 price before ordering.",
+    "expirationLabel": "Limited time; no end date published",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-17",
+    "preferenceSignals": ["price-drop", "low-friction", "restaurant"]
+  },
+  {
+    "id": "shell-app-first-pay-save-25-cents-2026",
+    "merchant": "Shell Fuel Rewards",
+    "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
+    "summary": "The Shell App first-time offer awards 25 cents per gallon in savings after an initial Pay & Save transaction of at least 10 gallons.",
+    "category": "fuel",
+    "estimatedSavings": 3.75,
+    "minimumSpend": 0,
+    "isFree": false,
+    "locationNote": "Shell App and linked Fuel Rewards account required; confirm the selected station near 77386 participates.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": ["fuel", "app", "first-time offer", "25 cents per gallon"],
+    "source": {
+      "label": "Shell official app-offers support page",
+      "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
+      "checkedOn": "2026-08-17"
+    },
+    "actionLabel": "Review Shell App offer",
+    "tier": "B",
+    "stackNote": "Use only the savings the Shell App shows; do not assume it combines with the separate new-member or race-day rewards.",
+    "finePrint": "The initial Pay & Save transaction must include at least 10 gallons. The $3.75 estimate assumes the earned 25-cent reward is redeemed on 15 gallons. The official page does not publish an end date or full redemption window.",
+    "expirationLabel": "No end date published",
+    "availability": "available",
+    "dealType": "fuel-reward",
+    "freshness": "new",
+    "discoveredOn": "2026-08-17",
+    "preferenceSignals": ["fuel-reward", "app-specific", "first-time"]
+  },
+  {
+    "id": "houston-dash-ten-dollar-concession-voucher-2026-08-19",
+    "merchant": "Houston Dash",
+    "title": "$10 concession voucher with an August 19 match ticket",
+    "summary": "Every ticket for the August 19 Houston Dash match against Chicago includes a $10 concession voucher.",
+    "category": "sports",
+    "estimatedSavings": 10,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-08-19",
+    "locationNote": "Shell Energy Stadium in Houston; ticket price, travel, and parking were not included in the savings estimate.",
+    "verification": "verified",
+    "friction": "high",
+    "tags": ["sports ticket", "one-day", "concession voucher", "Houston Dash"],
+    "source": {
+      "label": "Houston Dash official single-match tickets",
+      "url": "https://www.houstondynamofc.com/houstondash/tickets/single-game",
+      "checkedOn": "2026-08-17"
+    },
+    "actionLabel": "Review August 19 tickets",
+    "tier": "B",
+    "stackNote": "Count the voucher only if the match was already planned and it will be fully used.",
+    "finePrint": "A paid match ticket is required. The official page states that every ticket includes a $10 concession voucher but does not publish the ticket price or separate voucher restrictions on the listing page.",
+    "expirationLabel": "August 19 match",
+    "availability": "available",
+    "dealType": "sports-ticket",
+    "freshness": "new",
+    "discoveredOn": "2026-08-17",
+    "preferenceSignals": ["sports-ticket", "one-day", "time-sensitive"]
+  },
+  {
     "id": "astros-2026-promotion-calendar",
     "merchant": "Houston Astros",
-    "title": "Dollar Dog Nights and ticket-holder promotions",
-    "summary": "The official 2026 calendar lists Dollar Dog Nights, giveaways, fireworks, and other promotional game dates.",
+    "title": "$1 Hot Dog Night on August 18",
+    "summary": "The Astros' official fan-value page states that every Tuesday home game is Dollar Dog Night; the next listed opportunity is August 18.",
     "category": "sports",
     "estimatedSavings": 4,
     "minimumSpend": 0,
     "isFree": false,
+    "expiresOn": "2026-08-18",
     "locationNote": "Daikin Park in Houston; count travel and parking before treating a promotion as savings.",
     "verification": "verified",
     "friction": "high",
     "tags": ["sports tickets", "Dollar Dog Night", "giveaway", "promotion"],
     "source": {
-      "label": "Houston Astros 2026 promotions",
-      "url": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedOn": "2026-08-15"
+      "label": "Houston Astros official $1 Hot Dog Night page",
+      "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
+      "checkedOn": "2026-08-17"
     },
     "actionLabel": "Review promotions",
     "tier": "B",
     "stackNote": "Pair a promotion with an already-planned game; never buy a ticket solely for a low-value giveaway.",
     "finePrint": "A valid game ticket is required. Giveaways are limited, may require early arrival, and can change.",
-    "expirationLabel": "Select 2026 home games",
+    "expirationLabel": "Next event August 18; Tuesday home games",
     "availability": "available",
     "dealType": "sports-ticket",
-    "freshness": "current",
+    "freshness": "improved",
     "discoveredOn": "2026-07-23",
     "preferenceSignals": ["sports-ticket", "local-team", "promotion-event"]
   }
