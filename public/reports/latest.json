@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T15:07:08.317Z",
+  "generatedAt": "2026-08-18T12:12:27.083Z",
   "weekOf": "2026-08-17",
   "zipCode": "77386",
   "totalPotentialSavings": 151.8,
@@ -27,7 +27,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-17"
+        "checkedOn": "2026-08-18"
       },
       "actionLabel": "Check welcome reward",
       "tier": "A",
@@ -67,7 +67,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-17"
+        "checkedOn": "2026-08-18"
       },
       "actionLabel": "Claim Wednesday offer",
       "tier": "A",
@@ -107,7 +107,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-17"
+        "checkedOn": "2026-08-18"
       },
       "actionLabel": "Claim Friday offer",
       "tier": "A",
@@ -147,7 +147,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-17"
+        "checkedOn": "2026-08-18"
       },
       "actionLabel": "Claim chili offer",
       "tier": "A",
@@ -432,7 +432,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-17"
+        "checkedOn": "2026-08-18"
       },
       "actionLabel": "Check Paze eligibility",
       "tier": "A",
@@ -678,7 +678,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-17"
+        "checkedOn": "2026-08-18"
       },
       "actionLabel": "Check August 19 offer",
       "tier": "A",
@@ -841,7 +841,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-17"
+        "checkedOn": "2026-08-18"
       },
       "actionLabel": "Check August 26 offer",
       "tier": "A",
@@ -1081,7 +1081,7 @@
       "source": {
         "label": "Houston Astros official $1 Hot Dog Night page",
         "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-        "checkedOn": "2026-08-17"
+        "checkedOn": "2026-08-18"
       },
       "actionLabel": "Review promotions",
       "tier": "B",
