@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-18T15:05:54.589Z",
+  "generatedAt": "2026-08-19T12:08:54.808Z",
   "weekOf": "2026-08-17",
   "zipCode": "77386",
-  "totalPotentialSavings": 143.24,
+  "totalPotentialSavings": 138.23999999999998,
   "verifiedCount": 31,
-  "expiringCount": 12,
+  "expiringCount": 11,
   "opportunities": [
     {
       "id": "whataburger-signup-free-burger-2026",
@@ -27,7 +27,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-18"
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Check welcome reward",
       "tier": "A",
@@ -67,7 +67,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-18"
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Claim Wednesday offer",
       "tier": "A",
@@ -107,7 +107,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-18"
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Claim Friday offer",
       "tier": "A",
@@ -147,7 +147,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-18"
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Claim chili offer",
       "tier": "A",
@@ -202,97 +202,6 @@
         "free-drink",
         "new-member",
         "app-specific"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "heb-school-office-supplies-five-off-2026-08",
-      "merchant": "H-E-B",
-      "title": "$5 off $25 in school or office supplies",
-      "summary": "Clip the public H-E-B coupon for $5 off a qualifying $25 school- or office-supply basket; backpacks are excluded.",
-      "category": "shopping",
-      "estimatedSavings": 5,
-      "minimumSpend": 25,
-      "savingsRate": 20,
-      "isFree": false,
-      "expiresOn": "2026-08-18",
-      "locationNote": "The public page was set to a Victoria H-E-B store; Spring-area coupon availability and inventory are not locally confirmed.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "back to school",
-        "school supplies",
-        "office supplies",
-        "digital coupon",
-        "teen"
-      ],
-      "source": {
-        "label": "H-E-B weekly coupons",
-        "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons",
-        "checkedOn": "2026-08-18"
-      },
-      "actionLabel": "Clip coupon",
-      "tier": "A",
-      "stackNote": "Use only on already-planned supplies and combine with item-level discounts only when H-E-B's coupon terms allow it.",
-      "finePrint": "Requires a $25 qualifying school- or office-supply basket and excludes backpacks. The public coupon page lists unlimited use and an August 18 expiration, but selected-store availability must be confirmed before purchase.",
-      "expirationLabel": "Ends August 18",
-      "availability": "available",
-      "dealType": "digital-coupon",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-15",
-      "preferenceSignals": [
-        "teen",
-        "back-to-school",
-        "school supplies",
-        "coupon-stack"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "heb-zebra-writing-supplies-bogo-2026-08-18",
-      "merchant": "H-E-B",
-      "title": "Buy one Zebra writing-supply item, get the second free",
-      "summary": "The public H-E-B coupon page lists a buy-one-get-one-free offer on Zebra pens, pencils, or markers for August 18.",
-      "category": "shopping",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "savingsRate": 50,
-      "isFree": true,
-      "expiresOn": "2026-08-18",
-      "locationNote": "The public page was set to a Victoria H-E-B store; Spring-area coupon availability, eligible items, and prices are not locally confirmed.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "back to school",
-        "writing supplies",
-        "free item",
-        "digital coupon",
-        "teen",
-        "location-gated"
-      ],
-      "source": {
-        "label": "H-E-B digital coupons",
-        "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons",
-        "checkedOn": "2026-08-18"
-      },
-      "actionLabel": "Clip coupon",
-      "tier": "A",
-      "stackNote": "Do not assume this combines with the separate $5 off $25 school-supply basket coupon; confirm both coupons at checkout.",
-      "finePrint": "The public listing says the second Zebra pens, pencils, or markers item is free and lists unlimited use through August 18. No dollar value is estimated because eligible Spring-area item pricing and availability were not verified.",
-      "expirationLabel": "Ends today, August 18",
-      "availability": "available",
-      "dealType": "digital-coupon",
-      "freshness": "new",
-      "discoveredOn": "2026-08-18",
-      "preferenceSignals": [
-        "teen",
-        "back-to-school",
-        "school supplies",
-        "free-item",
-        "coupon-stack",
-        "location-gated"
       ],
       "score": 100,
       "scoreLabel": "Excellent"
@@ -456,6 +365,88 @@
       "scoreLabel": "Excellent"
     },
     {
+      "id": "chipotle-school-spirit-bogo-2026-08-20",
+      "merchant": "Chipotle",
+      "title": "School Spirit BOGO entree on Thursday",
+      "summary": "On Thursday, August 20, guests wearing school apparel or accessories can buy an entree from 3 p.m. to close local time and receive a second entree free at participating U.S. Chipotle restaurants.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-08-20",
+      "locationNote": "In-restaurant only at participating U.S. Chipotles; a convenient 77386 location was not confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "one-day",
+        "BOGO",
+        "back to school",
+        "in restaurant"
+      ],
+      "source": {
+        "label": "Chipotle official investor newsroom",
+        "url": "https://ir.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Review Thursday BOGO",
+      "tier": "A",
+      "stackNote": "Do not combine with other coupons. Purchased items can still earn Chipotle Rewards points.",
+      "finePrint": "Valid only August 20, 2026 after 3:00 p.m. local. Wearer of school apparel or accessories only, as determined by the restaurant. Each free item requires purchase of an entree of equal or greater value. Limit five free entrees per check. In-restaurant only; not valid for catering, mobile, online, or delivery. No dollar value is estimated because local entree prices were not verified.",
+      "expirationLabel": "August 20, 3 p.m. to close",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-18",
+      "preferenceSignals": [
+        "one-day",
+        "back-to-school",
+        "time-sensitive"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "chipotle-sundays-free-entree-2026",
+      "merchant": "Chipotle",
+      "title": "Free entree with code SUNDAYS after 3 p.m.",
+      "summary": "On Sundays August 23, August 30, and September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-09-06",
+      "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "app",
+        "free food",
+        "Sunday",
+        "promo code"
+      ],
+      "source": {
+        "label": "Chipotle official investor newsroom",
+        "url": "https://ir.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Check Sundays code",
+      "tier": "A",
+      "stackNote": "Use code SUNDAYS on a same-day digital order after 3 p.m. Do not assume it combines with other coupons.",
+      "finePrint": "Valid 8/23/26, 8/30/26, and 9/6/26. One free entree with purchase of at least two other entrees. Chipotle.com and mobile app only. Redemption subject to availability. No dollar value is estimated because local entree prices were not verified.",
+      "expirationLabel": "Aug 23, Aug 30, and Sep 6 after 3 p.m.",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-18",
+      "preferenceSignals": [
+        "app-specific",
+        "time-sensitive",
+        "free-food"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
       "id": "wendys-paze-ten-back-2026",
       "merchant": "Wendy's + Paze",
       "title": "$10 back on a $10+ Wendy's app order",
@@ -479,7 +470,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-18"
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Check Paze eligibility",
       "tier": "A",
@@ -725,7 +716,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-18"
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Check August 19 offer",
       "tier": "A",
@@ -748,7 +739,7 @@
       "id": "houston-dash-ten-dollar-concession-voucher-2026-08-19",
       "merchant": "Houston Dash",
       "title": "$10 concession voucher with an August 19 match ticket",
-      "summary": "Every ticket for the August 19 Houston Dash match against Chicago includes a $10 concession voucher.",
+      "summary": "The official Dash schedule states that every ticket purchased for the August 19 match against Chicago Stars FC includes a $10 concession voucher.",
       "category": "sports",
       "estimatedSavings": 10,
       "minimumSpend": 0,
@@ -764,14 +755,14 @@
         "Houston Dash"
       ],
       "source": {
-        "label": "Houston Dash official single-match tickets",
-        "url": "https://www.houstondynamofc.com/houstondash/tickets/single-game",
-        "checkedOn": "2026-08-17"
+        "label": "Houston Dash official 2026 schedule",
+        "url": "https://www.houstondynamofc.com/houstondash/schedule/",
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Review August 19 tickets",
       "tier": "B",
       "stackNote": "Count the voucher only if the match was already planned and it will be fully used.",
-      "finePrint": "A paid match ticket is required. The official page states that every ticket includes a $10 concession voucher but does not publish the ticket price or separate voucher restrictions on the listing page.",
+      "finePrint": "A paid match ticket is required. Official schedule text: Every ticket purchased includes a $10 concession voucher. Ticket price, travel, and parking are not included in the savings estimate.",
       "expirationLabel": "August 19 match",
       "availability": "available",
       "dealType": "sports-ticket",
@@ -823,6 +814,48 @@
       ],
       "score": 86,
       "scoreLabel": "Excellent"
+    },
+    {
+      "id": "seven-eleven-slurpee-happy-hour-2026",
+      "merchant": "7-Eleven",
+      "title": "$1 large Slurpee weekday Happy Hour",
+      "summary": "7Rewards and Speedy Rewards members can get a large Slurpee for $1 Monday through Friday from 3 p.m. to 6 p.m.",
+      "category": "convenience",
+      "estimatedSavings": 0,
+      "minimumSpend": 1,
+      "isFree": false,
+      "expiresOn": "2026-08-25",
+      "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "slurpee",
+        "one-dollar",
+        "weekday",
+        "rewards",
+        "local station"
+      ],
+      "source": {
+        "label": "7-Eleven official press release",
+        "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
+        "checkedOn": "2026-08-15"
+      },
+      "actionLabel": "Check Happy Hour",
+      "tier": "B",
+      "stackNote": "No additional coupon or points stacking is assumed.",
+      "finePrint": "Valid Monday-Friday from 3-6 p.m. through August 25 for registered 7Rewards or Speedy Rewards members at participating locations. No dollar savings estimate is shown because the regular local Slurpee price was not verified.",
+      "expirationLabel": "Weekdays through August 25",
+      "availability": "available",
+      "dealType": "convenience-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-11",
+      "preferenceSignals": [
+        "convenience-reward",
+        "time-sensitive",
+        "local-station"
+      ],
+      "score": 84,
+      "scoreLabel": "Strong"
     },
     {
       "id": "dunkin-six-dollar-meal-deal-rayford-2026",
@@ -888,7 +921,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-18"
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Check August 26 offer",
       "tier": "A",
@@ -1023,48 +1056,6 @@
       "scoreLabel": "Strong"
     },
     {
-      "id": "seven-eleven-slurpee-happy-hour-2026",
-      "merchant": "7-Eleven",
-      "title": "$1 large Slurpee weekday Happy Hour",
-      "summary": "7Rewards and Speedy Rewards members can get a large Slurpee for $1 Monday through Friday from 3 p.m. to 6 p.m.",
-      "category": "convenience",
-      "estimatedSavings": 0,
-      "minimumSpend": 1,
-      "isFree": false,
-      "expiresOn": "2026-08-25",
-      "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "slurpee",
-        "one-dollar",
-        "weekday",
-        "rewards",
-        "local station"
-      ],
-      "source": {
-        "label": "7-Eleven official press release",
-        "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
-        "checkedOn": "2026-08-15"
-      },
-      "actionLabel": "Check Happy Hour",
-      "tier": "B",
-      "stackNote": "No additional coupon or points stacking is assumed.",
-      "finePrint": "Valid Monday-Friday from 3-6 p.m. through August 25 for registered 7Rewards or Speedy Rewards members at participating locations. No dollar savings estimate is shown because the regular local Slurpee price was not verified.",
-      "expirationLabel": "Weekdays through August 25",
-      "availability": "available",
-      "dealType": "convenience-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "convenience-reward",
-        "time-sensitive",
-        "local-station"
-      ],
-      "score": 79,
-      "scoreLabel": "Strong"
-    },
-    {
       "id": "costa-oil-rayford-service-30-percent-2026",
       "merchant": "Costa Oil Rayford",
       "title": "30% off any oil change for eligible service members",
@@ -1102,47 +1093,6 @@
         "vehicle-maintenance",
         "local-high-value",
         "eligibility-gated"
-      ],
-      "score": 79,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "astros-2026-promotion-calendar",
-      "merchant": "Houston Astros",
-      "title": "$1 Hot Dog Night on August 18",
-      "summary": "The Astros' official fan-value page states that every Tuesday home game is Dollar Dog Night; the next listed opportunity is August 18.",
-      "category": "sports",
-      "estimatedSavings": 4,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-08-18",
-      "locationNote": "Daikin Park in Houston; count travel and parking before treating a promotion as savings.",
-      "verification": "verified",
-      "friction": "high",
-      "tags": [
-        "sports tickets",
-        "Dollar Dog Night",
-        "giveaway",
-        "promotion"
-      ],
-      "source": {
-        "label": "Houston Astros official $1 Hot Dog Night page",
-        "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-        "checkedOn": "2026-08-18"
-      },
-      "actionLabel": "Review promotions",
-      "tier": "B",
-      "stackNote": "Pair a promotion with an already-planned game; never buy a ticket solely for a low-value giveaway.",
-      "finePrint": "A valid game ticket is required. Giveaways are limited, may require early arrival, and can change.",
-      "expirationLabel": "Next event August 18; Tuesday home games",
-      "availability": "available",
-      "dealType": "sports-ticket",
-      "freshness": "improved",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "sports-ticket",
-        "local-team",
-        "promotion-event"
       ],
       "score": 79,
       "scoreLabel": "Strong"
@@ -1264,6 +1214,46 @@
       ],
       "score": 71,
       "scoreLabel": "Strong"
+    },
+    {
+      "id": "astros-2026-promotion-calendar",
+      "merchant": "Houston Astros",
+      "title": "$1 Hot Dog Night on Tuesday home games",
+      "summary": "The Astros official fan-value page states that every Tuesday night at Daikin Park is Dollar Dog Night. The dated August 18 home game has passed; later Tuesday home games remain a program fact.",
+      "category": "sports",
+      "estimatedSavings": 4,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Daikin Park in Houston; count travel and parking before treating a promotion as savings.",
+      "verification": "verified",
+      "friction": "high",
+      "tags": [
+        "sports tickets",
+        "Dollar Dog Night",
+        "giveaway",
+        "promotion"
+      ],
+      "source": {
+        "label": "Houston Astros official $1 Hot Dog Night page",
+        "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Review promotions",
+      "tier": "B",
+      "stackNote": "Pair a promotion with an already-planned game; never buy a ticket solely for a low-value giveaway.",
+      "finePrint": "A valid game ticket is required. Giveaways are limited, may require early arrival, and can change. Do not buy a ticket solely for this promotion. The August 18 dated listing has expired.",
+      "expirationLabel": "Tuesday home games",
+      "availability": "program",
+      "dealType": "sports-ticket",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "sports-ticket",
+        "local-team",
+        "promotion-event"
+      ],
+      "score": 59,
+      "scoreLabel": "Worth a look"
     }
   ],
   "watchlist": [

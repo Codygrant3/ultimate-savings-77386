@@ -11,7 +11,11 @@
     "locationNote": "Program benefits vary by account and participating restaurant.",
     "verification": "program",
     "friction": "low",
-    "tags": ["rewards program", "app", "food"],
+    "tags": [
+      "rewards program",
+      "app",
+      "food"
+    ],
     "source": {
       "label": "Burger King Royal Perks",
       "url": "https://campaign.bk.com/royal-perks",
@@ -31,7 +35,11 @@
     "locationNote": "Local restaurant surprise rewards are discretionary, not guaranteed.",
     "verification": "program",
     "friction": "low",
-    "tags": ["rewards program", "birthday", "points"],
+    "tags": [
+      "rewards program",
+      "birthday",
+      "points"
+    ],
     "source": {
       "label": "Chick-fil-A One",
       "url": "https://www.chick-fil-a.com/one",
@@ -51,7 +59,11 @@
     "locationNote": "No current signup freebie is assumed in this tracker.",
     "verification": "program",
     "friction": "low",
-    "tags": ["rewards program", "app", "points"],
+    "tags": [
+      "rewards program",
+      "app",
+      "points"
+    ],
     "source": {
       "label": "Taco Bell Rewards FAQ",
       "url": "https://www.tacobell.com/faqs/ordering/rewards",
@@ -71,11 +83,16 @@
     "locationNote": "App and account specific; confirm the reward is loaded and the selected Spring-area restaurant participates before visiting.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["free food", "new member", "app", "welcome reward"],
+    "tags": [
+      "free food",
+      "new member",
+      "app",
+      "welcome reward"
+    ],
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -86,7 +103,11 @@
     "dealType": "free-food",
     "freshness": "improved",
     "discoveredOn": "2026-08-11",
-    "preferenceSignals": ["free-food", "new-member", "app-specific"]
+    "preferenceSignals": [
+      "free-food",
+      "new-member",
+      "app-specific"
+    ]
   },
   {
     "id": "whataburger-wednesday-big-ranch-wrap-2026-08-19",
@@ -101,11 +122,17 @@
     "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["one-day", "76-cent", "entree", "app", "rewards"],
+    "tags": [
+      "one-day",
+      "76-cent",
+      "entree",
+      "app",
+      "rewards"
+    ],
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Check August 19 offer",
     "tier": "A",
@@ -116,7 +143,11 @@
     "dealType": "promotion-event",
     "freshness": "new",
     "discoveredOn": "2026-08-11",
-    "preferenceSignals": ["one-day", "app-specific", "time-sensitive"]
+    "preferenceSignals": [
+      "one-day",
+      "app-specific",
+      "time-sensitive"
+    ]
   },
   {
     "id": "whataburger-wednesday-chicken-sandwich-2026-08-26",
@@ -131,11 +162,17 @@
     "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["one-day", "76-cent", "entree", "app", "rewards"],
+    "tags": [
+      "one-day",
+      "76-cent",
+      "entree",
+      "app",
+      "rewards"
+    ],
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Check August 26 offer",
     "tier": "A",
@@ -146,12 +183,16 @@
     "dealType": "promotion-event",
     "freshness": "new",
     "discoveredOn": "2026-08-11",
-    "preferenceSignals": ["one-day", "app-specific", "time-sensitive"]
+    "preferenceSignals": [
+      "one-day",
+      "app-specific",
+      "time-sensitive"
+    ]
   },
   {
     "id": "shell-fuel-rewards-new-member-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "10¢, 20¢, then 30¢ off per gallon",
+    "title": "10\u00a2, 20\u00a2, then 30\u00a2 off per gallon",
     "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
     "category": "fuel",
     "estimatedSavings": 9,
@@ -160,7 +201,11 @@
     "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["new member", "fuel", "three fill-ups"],
+    "tags": [
+      "new member",
+      "fuel",
+      "three fill-ups"
+    ],
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
@@ -175,12 +220,16 @@
     "availability": "available",
     "dealType": "fuel-reward",
     "freshness": "current",
-    "preferenceSignals": ["fuel-reward", "new-member", "stacking"]
+    "preferenceSignals": [
+      "fuel-reward",
+      "new-member",
+      "stacking"
+    ]
   },
   {
     "id": "shell-race-day-22-cents-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "22¢ off per gallon on eligible race days",
+    "title": "22\u00a2 off per gallon on eligible race days",
     "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
     "category": "fuel",
     "estimatedSavings": 3.3,
@@ -189,7 +238,12 @@
     "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["fuel", "race day", "app", "opt in"],
+    "tags": [
+      "fuel",
+      "race day",
+      "app",
+      "opt in"
+    ],
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
@@ -204,7 +258,11 @@
     "dealType": "fuel-reward",
     "freshness": "new",
     "discoveredOn": "2026-08-15",
-    "preferenceSignals": ["fuel-reward", "app-specific", "time-sensitive"]
+    "preferenceSignals": [
+      "fuel-reward",
+      "app-specific",
+      "time-sensitive"
+    ]
   },
   {
     "id": "wendys-paze-ten-back-2026",
@@ -230,7 +288,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -260,11 +318,16 @@
     "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["free food", "Wednesday", "app", "qualifying purchase"],
+    "tags": [
+      "free food",
+      "Wednesday",
+      "app",
+      "qualifying purchase"
+    ],
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -275,7 +338,11 @@
     "dealType": "free-food",
     "freshness": "improved",
     "discoveredOn": "2026-08-11",
-    "preferenceSignals": ["free-food", "weekday", "app-specific"]
+    "preferenceSignals": [
+      "free-food",
+      "weekday",
+      "app-specific"
+    ]
   },
   {
     "id": "wendys-fryday-free-fry-2026",
@@ -289,11 +356,16 @@
     "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["free food", "Friday", "app", "qualifying purchase"],
+    "tags": [
+      "free food",
+      "Friday",
+      "app",
+      "qualifying purchase"
+    ],
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -304,7 +376,11 @@
     "dealType": "free-food",
     "freshness": "improved",
     "discoveredOn": "2026-08-11",
-    "preferenceSignals": ["free-food", "weekday", "app-specific"]
+    "preferenceSignals": [
+      "free-food",
+      "weekday",
+      "app-specific"
+    ]
   },
   {
     "id": "wendys-free-small-chili-2026-08",
@@ -319,11 +395,15 @@
     "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["free food", "app", "qualifying purchase"],
+    "tags": [
+      "free food",
+      "app",
+      "qualifying purchase"
+    ],
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Claim chili offer",
     "tier": "A",
@@ -334,7 +414,10 @@
     "dealType": "free-food",
     "freshness": "new",
     "discoveredOn": "2026-08-12",
-    "preferenceSignals": ["free-food", "app-specific"]
+    "preferenceSignals": [
+      "free-food",
+      "app-specific"
+    ]
   },
   {
     "id": "sonic-rewards-welcome-reward-2026",
@@ -348,7 +431,12 @@
     "locationNote": "Nationwide app offer; a convenient participating 77386-area location was not confirmed in this public scan.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["free food", "free drink", "new member", "app"],
+    "tags": [
+      "free food",
+      "free drink",
+      "new member",
+      "app"
+    ],
     "source": {
       "label": "SONIC official newsroom",
       "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
@@ -373,7 +461,7 @@
   {
     "id": "seven-rewards-fuel-welcome-2026",
     "merchant": "7REWARDS Fuel",
-    "title": "11¢ off per gallon on the first seven fills",
+    "title": "11\u00a2 off per gallon on the first seven fills",
     "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
     "category": "fuel",
     "estimatedSavings": 11.55,
@@ -382,7 +470,12 @@
     "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["fuel", "new member", "seven fills", "local station"],
+    "tags": [
+      "fuel",
+      "new member",
+      "seven fills",
+      "local station"
+    ],
     "source": {
       "label": "7REWARDS Fuel",
       "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
@@ -407,7 +500,7 @@
   {
     "id": "seven-rewards-fuel-sms-25-cents-2026",
     "merchant": "7REWARDS Fuel",
-    "title": "25¢ off per gallon on the next three fills",
+    "title": "25\u00a2 off per gallon on the next three fills",
     "summary": "The official fuel-rewards page offers 25 cents off per gallon on the next three fills after texting SAVE to 711711.",
     "category": "fuel",
     "estimatedSavings": 11.25,
@@ -416,7 +509,12 @@
     "locationNote": "SMS enrollment, a registered phone number, and a participating fuel location are required; confirm the discount before fueling.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["fuel", "sms", "three fills", "account specific"],
+    "tags": [
+      "fuel",
+      "sms",
+      "three fills",
+      "account specific"
+    ],
     "source": {
       "label": "7REWARDS Fuel",
       "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
@@ -431,7 +529,11 @@
     "dealType": "fuel-reward",
     "freshness": "new",
     "discoveredOn": "2026-08-15",
-    "preferenceSignals": ["fuel-reward", "sms-specific", "high-value"]
+    "preferenceSignals": [
+      "fuel-reward",
+      "sms-specific",
+      "high-value"
+    ]
   },
   {
     "id": "seven-eleven-slurpee-happy-hour-2026",
@@ -446,7 +548,13 @@
     "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["slurpee", "one-dollar", "weekday", "rewards", "local station"],
+    "tags": [
+      "slurpee",
+      "one-dollar",
+      "weekday",
+      "rewards",
+      "local station"
+    ],
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
@@ -461,7 +569,11 @@
     "dealType": "convenience-reward",
     "freshness": "new",
     "discoveredOn": "2026-08-11",
-    "preferenceSignals": ["convenience-reward", "time-sensitive", "local-station"]
+    "preferenceSignals": [
+      "convenience-reward",
+      "time-sensitive",
+      "local-station"
+    ]
   },
   {
     "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
@@ -476,7 +588,12 @@
     "locationNote": "Participating Exxon and Mobil stations; no 77386 station with full Rewards+ support was confirmed in this public scan.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["fuel", "first-time app user", "points", "seven fill-ups"],
+    "tags": [
+      "fuel",
+      "first-time app user",
+      "points",
+      "seven fill-ups"
+    ],
     "source": {
       "label": "Exxon Mobil Rewards+ official FAQ",
       "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
@@ -499,80 +616,6 @@
     ]
   },
   {
-    "id": "heb-school-office-supplies-five-off-2026-08",
-    "merchant": "H-E-B",
-    "title": "$5 off $25 in school or office supplies",
-    "summary": "Clip the public H-E-B coupon for $5 off a qualifying $25 school- or office-supply basket; backpacks are excluded.",
-    "category": "shopping",
-    "estimatedSavings": 5,
-    "minimumSpend": 25,
-    "savingsRate": 20,
-    "isFree": false,
-    "expiresOn": "2026-08-18",
-    "locationNote": "The public page was set to a Victoria H-E-B store; Spring-area coupon availability and inventory are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": ["back to school", "school supplies", "office supplies", "digital coupon", "teen"],
-    "source": {
-      "label": "H-E-B weekly coupons",
-      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons",
-      "checkedOn": "2026-08-18"
-    },
-    "actionLabel": "Clip coupon",
-    "tier": "A",
-    "stackNote": "Use only on already-planned supplies and combine with item-level discounts only when H-E-B's coupon terms allow it.",
-    "finePrint": "Requires a $25 qualifying school- or office-supply basket and excludes backpacks. The public coupon page lists unlimited use and an August 18 expiration, but selected-store availability must be confirmed before purchase.",
-    "expirationLabel": "Ends August 18",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "improved",
-    "discoveredOn": "2026-08-15",
-    "preferenceSignals": [
-      "teen",
-      "back-to-school",
-      "school supplies",
-      "coupon-stack"
-    ]
-  },
-  {
-    "id": "heb-zebra-writing-supplies-bogo-2026-08-18",
-    "merchant": "H-E-B",
-    "title": "Buy one Zebra writing-supply item, get the second free",
-    "summary": "The public H-E-B coupon page lists a buy-one-get-one-free offer on Zebra pens, pencils, or markers for August 18.",
-    "category": "shopping",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "savingsRate": 50,
-    "isFree": true,
-    "expiresOn": "2026-08-18",
-    "locationNote": "The public page was set to a Victoria H-E-B store; Spring-area coupon availability, eligible items, and prices are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": ["back to school", "writing supplies", "free item", "digital coupon", "teen", "location-gated"],
-    "source": {
-      "label": "H-E-B digital coupons",
-      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons",
-      "checkedOn": "2026-08-18"
-    },
-    "actionLabel": "Clip coupon",
-    "tier": "A",
-    "stackNote": "Do not assume this combines with the separate $5 off $25 school-supply basket coupon; confirm both coupons at checkout.",
-    "finePrint": "The public listing says the second Zebra pens, pencils, or markers item is free and lists unlimited use through August 18. No dollar value is estimated because eligible Spring-area item pricing and availability were not verified.",
-    "expirationLabel": "Ends today, August 18",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-18",
-    "preferenceSignals": [
-      "teen",
-      "back-to-school",
-      "school supplies",
-      "free-item",
-      "coupon-stack",
-      "location-gated"
-    ]
-  },
-  {
     "id": "heb-post-cereal-free-peanut-butter-2026-08",
     "merchant": "H-E-B",
     "title": "Free peanut butter when you buy two Post family-size cereals",
@@ -585,7 +628,14 @@
     "locationNote": "The public page was set to a Victoria H-E-B store; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["grocery", "cereal", "peanut butter", "free item", "digital coupon", "location-gated"],
+    "tags": [
+      "grocery",
+      "cereal",
+      "peanut butter",
+      "free item",
+      "digital coupon",
+      "location-gated"
+    ],
     "source": {
       "label": "H-E-B digital coupons",
       "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons",
@@ -600,7 +650,13 @@
     "dealType": "digital-coupon",
     "freshness": "new",
     "discoveredOn": "2026-08-18",
-    "preferenceSignals": ["grocery", "staple", "free-item", "coupon-stack", "location-gated"]
+    "preferenceSignals": [
+      "grocery",
+      "staple",
+      "free-item",
+      "coupon-stack",
+      "location-gated"
+    ]
   },
   {
     "id": "starbucks-birthday-reward-2026",
@@ -614,7 +670,12 @@
     "locationNote": "Participating Starbucks locations; confirm reward redemption support.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["true freebie", "birthday", "coffee", "rewards"],
+    "tags": [
+      "true freebie",
+      "birthday",
+      "coffee",
+      "rewards"
+    ],
     "source": {
       "label": "Starbucks Rewards terms",
       "url": "https://www.starbucks.com/rewards/terms/",
@@ -640,7 +701,12 @@
     "locationNote": "Participating 7-Eleven locations; confirm app availability before visiting.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["rewards program", "points", "snacks", "drinks"],
+    "tags": [
+      "rewards program",
+      "points",
+      "snacks",
+      "drinks"
+    ],
     "source": {
       "label": "7REWARDS",
       "url": "https://www.7-eleven.com/7rewards",
@@ -655,12 +721,16 @@
     "availability": "program",
     "dealType": "convenience-reward",
     "freshness": "current",
-    "preferenceSignals": ["free-drinks", "surprise-rewards", "loyalty"]
+    "preferenceSignals": [
+      "free-drinks",
+      "surprise-rewards",
+      "loyalty"
+    ]
   },
   {
     "id": "exxon-mobil-rewards-base-points-2026",
     "merchant": "Exxon Mobil Rewards+",
-    "title": "Earn 3¢ per gallon or more in points",
+    "title": "Earn 3\u00a2 per gallon or more in points",
     "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
     "category": "fuel",
     "estimatedSavings": 0.45,
@@ -669,7 +739,11 @@
     "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["fuel", "points", "rewards program"],
+    "tags": [
+      "fuel",
+      "points",
+      "rewards program"
+    ],
     "source": {
       "label": "Exxon Mobil Rewards+",
       "url": "https://www.exxonmobilfuels.com/en/rewards",
@@ -684,7 +758,10 @@
     "availability": "program",
     "dealType": "fuel-reward",
     "freshness": "current",
-    "preferenceSignals": ["fuel-reward", "stacking"]
+    "preferenceSignals": [
+      "fuel-reward",
+      "stacking"
+    ]
   },
   {
     "id": "starbucks-rewards-ongoing-2026",
@@ -698,7 +775,12 @@
     "locationNote": "Participating Starbucks locations; confirm reward redemption support.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["rewards program", "stars", "coffee", "food"],
+    "tags": [
+      "rewards program",
+      "stars",
+      "coffee",
+      "food"
+    ],
     "source": {
       "label": "Starbucks Rewards",
       "url": "https://www.starbucks.com/rewards",
@@ -726,7 +808,12 @@
     "locationNote": "Confirm the reward and nearest participating Spring shop in the app before visiting.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["coffee", "free drink", "new app user", "preferred brand"],
+    "tags": [
+      "coffee",
+      "free drink",
+      "new app user",
+      "preferred brand"
+    ],
     "source": {
       "label": "Dutch Bros Dutch 101",
       "url": "https://www.dutchbros.com/dutch-101/",
@@ -741,7 +828,11 @@
     "dealType": "free-food",
     "freshness": "current",
     "discoveredOn": "2026-07-23",
-    "preferenceSignals": ["preferred-coffee", "free-drink", "official-source"]
+    "preferenceSignals": [
+      "preferred-coffee",
+      "free-drink",
+      "official-source"
+    ]
   },
   {
     "id": "dunkin-six-dollar-meal-deal-rayford-2026",
@@ -755,7 +846,12 @@
     "locationNote": "2222 Rayford Road, Spring, TX 77386.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["coffee", "breakfast", "meal deal", "preferred brand"],
+    "tags": [
+      "coffee",
+      "breakfast",
+      "meal deal",
+      "preferred brand"
+    ],
     "source": {
       "label": "Dunkin Rayford Road location",
       "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
@@ -771,7 +867,11 @@
     "dealType": "promotion-event",
     "freshness": "current",
     "discoveredOn": "2026-07-23",
-    "preferenceSignals": ["preferred-coffee", "local-offer", "loyalty-stack"]
+    "preferenceSignals": [
+      "preferred-coffee",
+      "local-offer",
+      "loyalty-stack"
+    ]
   },
   {
     "id": "scooters-birthday-smiles-reward-2026",
@@ -785,7 +885,12 @@
     "locationNote": "Use only at a convenient participating location; do not make a special trip without checking the app.",
     "verification": "program",
     "friction": "medium",
-    "tags": ["coffee", "birthday", "loyalty", "preferred brand"],
+    "tags": [
+      "coffee",
+      "birthday",
+      "loyalty",
+      "preferred brand"
+    ],
     "source": {
       "label": "Scooter's Coffee app FAQ",
       "url": "https://www.scooterscoffee.com/mobileapp/faqs",
@@ -800,7 +905,10 @@
     "dealType": "loyalty-reward",
     "freshness": "current",
     "discoveredOn": "2026-07-23",
-    "preferenceSignals": ["preferred-coffee", "loyalty-reward"]
+    "preferenceSignals": [
+      "preferred-coffee",
+      "loyalty-reward"
+    ]
   },
   {
     "id": "local-coffee-official-promo-watch-77386",
@@ -814,7 +922,11 @@
     "locationNote": "JoVi is at 602 Rayford Road in 77386; expand only with official merchant sources.",
     "verification": "needs-check",
     "friction": "low",
-    "tags": ["local coffee", "promo watch", "grand opening"],
+    "tags": [
+      "local coffee",
+      "promo watch",
+      "grand opening"
+    ],
     "source": {
       "label": "JoVi Coffee official site",
       "url": "https://joviroasters.com/",
@@ -827,7 +939,11 @@
     "availability": "program",
     "dealType": "grand-opening",
     "freshness": "monitoring",
-    "preferenceSignals": ["local-coffee", "official-only", "opening-watch"]
+    "preferenceSignals": [
+      "local-coffee",
+      "official-only",
+      "opening-watch"
+    ]
   },
   {
     "id": "take5-rayford-15-off-oil-change-2026",
@@ -841,7 +957,11 @@
     "locationNote": "442 Rayford Road, Spring, TX 77386.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["oil change", "vehicle maintenance", "local coupon"],
+    "tags": [
+      "oil change",
+      "vehicle maintenance",
+      "local coupon"
+    ],
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
@@ -857,7 +977,10 @@
     "dealType": "vehicle-maintenance",
     "freshness": "current",
     "discoveredOn": "2026-07-23",
-    "preferenceSignals": ["vehicle-maintenance", "local-high-value"]
+    "preferenceSignals": [
+      "vehicle-maintenance",
+      "local-high-value"
+    ]
   },
   {
     "id": "costa-oil-rayford-service-30-percent-2026",
@@ -872,7 +995,13 @@
     "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; eligibility proof is required.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["oil change", "veteran", "military", "first responder", "local coupon"],
+    "tags": [
+      "oil change",
+      "veteran",
+      "military",
+      "first responder",
+      "local coupon"
+    ],
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
@@ -887,7 +1016,11 @@
     "dealType": "vehicle-maintenance",
     "freshness": "new",
     "discoveredOn": "2026-08-15",
-    "preferenceSignals": ["vehicle-maintenance", "local-high-value", "eligibility-gated"]
+    "preferenceSignals": [
+      "vehicle-maintenance",
+      "local-high-value",
+      "eligibility-gated"
+    ]
   },
   {
     "id": "rainbow-car-care-birthday-wash-2026",
@@ -901,7 +1034,12 @@
     "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["car wash", "birthday", "free service", "loyalty"],
+    "tags": [
+      "car wash",
+      "birthday",
+      "free service",
+      "loyalty"
+    ],
     "source": {
       "label": "Rainbow Car Care frequent wash program",
       "url": "https://rainbowcarcare.com/frequent-wash-program",
@@ -935,7 +1073,12 @@
     "locationNote": "Participating AMC locations; compare travel distance and showtime pricing before booking.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["movies", "discount tickets", "concessions", "loyalty"],
+    "tags": [
+      "movies",
+      "discount tickets",
+      "concessions",
+      "loyalty"
+    ],
     "source": {
       "label": "AMC Stubs midweek discount",
       "url": "https://www.amctheatres.com/50pct-off-tuesdays-and-wednesdays",
@@ -950,7 +1093,11 @@
     "dealType": "movie-discount",
     "freshness": "improved",
     "discoveredOn": "2026-07-23",
-    "preferenceSignals": ["movie-discount", "concessions", "loyalty-reward"]
+    "preferenceSignals": [
+      "movie-discount",
+      "concessions",
+      "loyalty-reward"
+    ]
   },
   {
     "id": "wendys-one-dollar-small-frosty-summer-2026",
@@ -964,7 +1111,12 @@
     "locationNote": "U.S. price and participation vary; confirm the selected Spring-area restaurant before making a trip.",
     "verification": "verified",
     "friction": "low",
-    "tags": ["one-dollar", "dessert", "limited-time", "no app required"],
+    "tags": [
+      "one-dollar",
+      "dessert",
+      "limited-time",
+      "no app required"
+    ],
     "source": {
       "label": "Wendy's official home page",
       "url": "https://www.wendys.com/",
@@ -979,12 +1131,16 @@
     "dealType": "promotion-event",
     "freshness": "new",
     "discoveredOn": "2026-08-17",
-    "preferenceSignals": ["price-drop", "low-friction", "restaurant"]
+    "preferenceSignals": [
+      "price-drop",
+      "low-friction",
+      "restaurant"
+    ]
   },
   {
     "id": "shell-app-first-pay-save-25-cents-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
+    "title": "Earn 25\u00a2/gal after the first 10-gallon Pay & Save fill",
     "summary": "The Shell App first-time offer awards 25 cents per gallon in savings after an initial Pay & Save transaction of at least 10 gallons.",
     "category": "fuel",
     "estimatedSavings": 3.75,
@@ -993,7 +1149,12 @@
     "locationNote": "Shell App and linked Fuel Rewards account required; confirm the selected station near 77386 participates.",
     "verification": "verified",
     "friction": "medium",
-    "tags": ["fuel", "app", "first-time offer", "25 cents per gallon"],
+    "tags": [
+      "fuel",
+      "app",
+      "first-time offer",
+      "25 cents per gallon"
+    ],
     "source": {
       "label": "Shell official app-offers support page",
       "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
@@ -1008,13 +1169,17 @@
     "dealType": "fuel-reward",
     "freshness": "new",
     "discoveredOn": "2026-08-17",
-    "preferenceSignals": ["fuel-reward", "app-specific", "first-time"]
+    "preferenceSignals": [
+      "fuel-reward",
+      "app-specific",
+      "first-time"
+    ]
   },
   {
     "id": "houston-dash-ten-dollar-concession-voucher-2026-08-19",
     "merchant": "Houston Dash",
     "title": "$10 concession voucher with an August 19 match ticket",
-    "summary": "Every ticket for the August 19 Houston Dash match against Chicago includes a $10 concession voucher.",
+    "summary": "The official Dash schedule states that every ticket purchased for the August 19 match against Chicago Stars FC includes a $10 concession voucher.",
     "category": "sports",
     "estimatedSavings": 10,
     "minimumSpend": 0,
@@ -1023,51 +1188,146 @@
     "locationNote": "Shell Energy Stadium in Houston; ticket price, travel, and parking were not included in the savings estimate.",
     "verification": "verified",
     "friction": "high",
-    "tags": ["sports ticket", "one-day", "concession voucher", "Houston Dash"],
+    "tags": [
+      "sports ticket",
+      "one-day",
+      "concession voucher",
+      "Houston Dash"
+    ],
     "source": {
-      "label": "Houston Dash official single-match tickets",
-      "url": "https://www.houstondynamofc.com/houstondash/tickets/single-game",
-      "checkedOn": "2026-08-17"
+      "label": "Houston Dash official 2026 schedule",
+      "url": "https://www.houstondynamofc.com/houstondash/schedule/",
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Review August 19 tickets",
     "tier": "B",
     "stackNote": "Count the voucher only if the match was already planned and it will be fully used.",
-    "finePrint": "A paid match ticket is required. The official page states that every ticket includes a $10 concession voucher but does not publish the ticket price or separate voucher restrictions on the listing page.",
+    "finePrint": "A paid match ticket is required. Official schedule text: Every ticket purchased includes a $10 concession voucher. Ticket price, travel, and parking are not included in the savings estimate.",
     "expirationLabel": "August 19 match",
     "availability": "available",
     "dealType": "sports-ticket",
     "freshness": "new",
     "discoveredOn": "2026-08-17",
-    "preferenceSignals": ["sports-ticket", "one-day", "time-sensitive"]
+    "preferenceSignals": [
+      "sports-ticket",
+      "one-day",
+      "time-sensitive"
+    ]
   },
   {
     "id": "astros-2026-promotion-calendar",
     "merchant": "Houston Astros",
-    "title": "$1 Hot Dog Night on August 18",
-    "summary": "The Astros' official fan-value page states that every Tuesday home game is Dollar Dog Night; the next listed opportunity is August 18.",
+    "title": "$1 Hot Dog Night on Tuesday home games",
+    "summary": "The Astros official fan-value page states that every Tuesday night at Daikin Park is Dollar Dog Night. The dated August 18 home game has passed; later Tuesday home games remain a program fact.",
     "category": "sports",
     "estimatedSavings": 4,
     "minimumSpend": 0,
     "isFree": false,
-    "expiresOn": "2026-08-18",
     "locationNote": "Daikin Park in Houston; count travel and parking before treating a promotion as savings.",
     "verification": "verified",
     "friction": "high",
-    "tags": ["sports tickets", "Dollar Dog Night", "giveaway", "promotion"],
+    "tags": [
+      "sports tickets",
+      "Dollar Dog Night",
+      "giveaway",
+      "promotion"
+    ],
     "source": {
       "label": "Houston Astros official $1 Hot Dog Night page",
       "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-19"
     },
     "actionLabel": "Review promotions",
     "tier": "B",
     "stackNote": "Pair a promotion with an already-planned game; never buy a ticket solely for a low-value giveaway.",
-    "finePrint": "A valid game ticket is required. Giveaways are limited, may require early arrival, and can change.",
-    "expirationLabel": "Next event August 18; Tuesday home games",
-    "availability": "available",
+    "finePrint": "A valid game ticket is required. Giveaways are limited, may require early arrival, and can change. Do not buy a ticket solely for this promotion. The August 18 dated listing has expired.",
+    "expirationLabel": "Tuesday home games",
+    "availability": "program",
     "dealType": "sports-ticket",
-    "freshness": "improved",
+    "freshness": "current",
     "discoveredOn": "2026-07-23",
-    "preferenceSignals": ["sports-ticket", "local-team", "promotion-event"]
+    "preferenceSignals": [
+      "sports-ticket",
+      "local-team",
+      "promotion-event"
+    ]
+  },
+  {
+    "id": "chipotle-school-spirit-bogo-2026-08-20",
+    "merchant": "Chipotle",
+    "title": "School Spirit BOGO entree on Thursday",
+    "summary": "On Thursday, August 20, guests wearing school apparel or accessories can buy an entree from 3 p.m. to close local time and receive a second entree free at participating U.S. Chipotle restaurants.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-08-20",
+    "locationNote": "In-restaurant only at participating U.S. Chipotles; a convenient 77386 location was not confirmed in this public scan.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "one-day",
+      "BOGO",
+      "back to school",
+      "in restaurant"
+    ],
+    "source": {
+      "label": "Chipotle official investor newsroom",
+      "url": "https://ir.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
+      "checkedOn": "2026-08-19"
+    },
+    "actionLabel": "Review Thursday BOGO",
+    "tier": "A",
+    "stackNote": "Do not combine with other coupons. Purchased items can still earn Chipotle Rewards points.",
+    "finePrint": "Valid only August 20, 2026 after 3:00 p.m. local. Wearer of school apparel or accessories only, as determined by the restaurant. Each free item requires purchase of an entree of equal or greater value. Limit five free entrees per check. In-restaurant only; not valid for catering, mobile, online, or delivery. No dollar value is estimated because local entree prices were not verified.",
+    "expirationLabel": "August 20, 3 p.m. to close",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-18",
+    "preferenceSignals": [
+      "one-day",
+      "back-to-school",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "chipotle-sundays-free-entree-2026",
+    "merchant": "Chipotle",
+    "title": "Free entree with code SUNDAYS after 3 p.m.",
+    "summary": "On Sundays August 23, August 30, and September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-06",
+    "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "app",
+      "free food",
+      "Sunday",
+      "promo code"
+    ],
+    "source": {
+      "label": "Chipotle official investor newsroom",
+      "url": "https://ir.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
+      "checkedOn": "2026-08-19"
+    },
+    "actionLabel": "Check Sundays code",
+    "tier": "A",
+    "stackNote": "Use code SUNDAYS on a same-day digital order after 3 p.m. Do not assume it combines with other coupons.",
+    "finePrint": "Valid 8/23/26, 8/30/26, and 9/6/26. One free entree with purchase of at least two other entrees. Chipotle.com and mobile app only. Redemption subject to availability. No dollar value is estimated because local entree prices were not verified.",
+    "expirationLabel": "Aug 23, Aug 30, and Sep 6 after 3 p.m.",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-18",
+    "preferenceSignals": [
+      "app-specific",
+      "time-sensitive",
+      "free-food"
+    ]
   }
 ]
