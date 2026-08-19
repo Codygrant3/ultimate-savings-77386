@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-19T12:08:54.808Z",
+  "generatedAt": "2026-08-19T15:06:12.300Z",
   "weekOf": "2026-08-17",
   "zipCode": "77386",
-  "totalPotentialSavings": 138.23999999999998,
-  "verifiedCount": 31,
-  "expiringCount": 11,
+  "totalPotentialSavings": 143.24,
+  "verifiedCount": 37,
+  "expiringCount": 17,
   "opportunities": [
     {
       "id": "whataburger-signup-free-burger-2026",
@@ -207,43 +207,273 @@
       "scoreLabel": "Excellent"
     },
     {
-      "id": "heb-post-cereal-free-peanut-butter-2026-08",
+      "id": "heb-general-mills-free-snack-bags-2026-08",
       "merchant": "H-E-B",
-      "title": "Free peanut butter when you buy two Post family-size cereals",
-      "summary": "Buy two qualifying 16.5- to 19.5-ounce Post family-size cereals and get a 16.3-ounce Peter Pan peanut butter free.",
+      "title": "Free snack or sandwich bags with family-size cereal",
+      "summary": "Buy one qualifying 14- to 24-ounce General Mills family-size cereal and get a 50-count box of H-E-B Texas Tough snack or sandwich bags free.",
       "category": "grocery",
       "estimatedSavings": 0,
       "minimumSpend": 0,
       "isFree": true,
       "expiresOn": "2026-08-25",
-      "locationNote": "The public page was set to a Victoria H-E-B store; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
       "verification": "verified",
       "friction": "low",
       "tags": [
         "grocery",
         "cereal",
-        "peanut butter",
+        "sandwich bags",
+        "free item",
+        "digital coupon",
+        "back to school",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84044129",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "Several qualifying cereals show a price cut on the public page, but confirm both the price cut and coupon in the selected Spring-area store before checkout.",
+      "finePrint": "Requires one qualifying General Mills family-size cereal, 14 to 24 ounces. The official page lists one free 50-count H-E-B Texas Tough snack- or sandwich-bag box, unlimited use, and an August 25 expiration. No dollar value is estimated because the public page is bound to Victoria rather than a verified Spring store.",
+      "expirationLabel": "Ends August 25",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
+      "preferenceSignals": [
+        "grocery",
+        "staple",
+        "back-to-school",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "heb-starbucks-frappuccino-bogo-2026-08",
+      "merchant": "H-E-B",
+      "title": "Buy one Starbucks Frappuccino bottle, get one free",
+      "summary": "Buy one qualifying 13.7-ounce Starbucks Frappuccino bottled drink and get a second qualifying bottle free.",
+      "category": "coffee",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "savingsRate": 50,
+      "isFree": true,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "coffee",
+        "BOGO",
         "free item",
         "digital coupon",
         "location-gated"
       ],
       "source": {
-        "label": "H-E-B digital coupons",
-        "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons",
-        "checkedOn": "2026-08-18"
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84055257",
+        "checkedOn": "2026-08-19"
       },
-      "actionLabel": "Clip coupon",
+      "actionLabel": "Check and clip coupon",
       "tier": "A",
-      "stackNote": "Use only if two qualifying cereal boxes are already useful; do not assume another basket or item coupon combines.",
-      "finePrint": "Requires two qualifying Post family-size cereals, 16.5 to 19.5 ounces each. The public listing names a free 16.3-ounce Peter Pan peanut butter and lists unlimited use through August 25. No savings estimate is shown because local prices were not verified.",
+      "stackNote": "Treat this as 50% off only when two qualifying bottles were already useful; confirm the selected Spring store shows the coupon before shopping.",
+      "finePrint": "Qualifying 13.7-ounce Starbucks Frappuccino single-serve bottles only. The official page lists unlimited use through August 25. No dollar value is estimated because the displayed Victoria price does not establish Spring-area pricing or availability.",
       "expirationLabel": "Ends August 25",
       "availability": "available",
       "dealType": "digital-coupon",
       "freshness": "new",
-      "discoveredOn": "2026-08-18",
+      "discoveredOn": "2026-08-19",
+      "preferenceSignals": [
+        "coffee",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "heb-frozen-fruit-free-ice-cream-2026-08",
+      "merchant": "H-E-B",
+      "title": "Free ice cream pint with bulk frozen fruit",
+      "summary": "Buy one qualifying 48- or 80-ounce H-E-B frozen fruit item and get one qualifying pint of H-E-B Creamy Creations ice cream or sherbet free.",
+      "category": "grocery",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "frozen fruit",
+        "ice cream",
+        "free item",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84056038",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "Use only if the large frozen-fruit package is already a good unit-price fit; confirm the coupon in the selected Spring store.",
+      "finePrint": "Requires one qualifying H-E-B frozen-fruit package, 48 or 80 ounces, and provides one qualifying pint of H-E-B Creamy Creations ice cream or sherbet. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
+      "expirationLabel": "Ends August 25",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
       "preferenceSignals": [
         "grocery",
         "staple",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "heb-kodiak-five-off-twenty-2026-08",
+      "merchant": "H-E-B",
+      "title": "$5 off a $20 Kodiak basket",
+      "summary": "Clip the public H-E-B coupon for $5 off a qualifying $20 basket of Kodiak items.",
+      "category": "grocery",
+      "estimatedSavings": 5,
+      "minimumSpend": 20,
+      "savingsRate": 25,
+      "isFree": false,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "breakfast",
+        "protein",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84048909",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "The 25% rate is achieved only at exactly $20; compare unit prices and confirm any item-level price cuts can combine before checkout.",
+      "finePrint": "Requires a qualifying $20 Kodiak basket. The official page lists unlimited use and an August 25 expiration. The $5 coupon value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
+      "expirationLabel": "Ends August 25",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
+      "preferenceSignals": [
+        "grocery",
+        "staple",
+        "high-value",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "heb-frito-lay-free-gatorade-2026-08",
+      "merchant": "H-E-B",
+      "title": "Free Gatorade six-pack with 42-count snack variety pack",
+      "summary": "Buy one qualifying 42-count Frito-Lay snack variety pack and get one qualifying six-pack of 12-ounce Gatorade bottles free.",
+      "category": "grocery",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "snacks",
+        "sports drink",
+        "free item",
+        "back to school",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84048755",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "Use only if the 42-count snack pack is already planned; compare the effective per-item cost and confirm the selected Spring store carries the coupon.",
+      "finePrint": "Requires one qualifying 42-count Frito-Lay snack variety pack and provides one qualifying six-pack of 12-ounce Gatorade bottles. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
+      "expirationLabel": "Ends August 25",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
+      "preferenceSignals": [
+        "grocery",
+        "teen",
+        "back-to-school",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "heb-mac-cups-free-capri-sun-2026-08",
+      "merchant": "H-E-B",
+      "title": "Free Capri Sun ten-pack with mac-and-cheese cups",
+      "summary": "Buy one qualifying eight-count Kraft or Velveeta macaroni-and-cheese cups package and get one qualifying ten-pack of Capri Sun free.",
+      "category": "grocery",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "lunch",
+        "juice drink",
+        "free item",
+        "back to school",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84049522",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "Use only if both the mac-and-cheese cups and juice drinks fit the grocery plan; confirm the coupon in the selected Spring store.",
+      "finePrint": "Requires one qualifying eight-count Kraft or Velveeta macaroni-and-cheese cups package and provides one qualifying ten-pack of Capri Sun. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
+      "expirationLabel": "Ends August 25",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
+      "preferenceSignals": [
+        "grocery",
+        "teen",
+        "back-to-school",
         "free-item",
         "coupon-stack",
         "location-gated"
@@ -384,8 +614,8 @@
         "in restaurant"
       ],
       "source": {
-        "label": "Chipotle official investor newsroom",
-        "url": "https://ir.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
+        "label": "Chipotle official newsroom",
+        "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
         "checkedOn": "2026-08-19"
       },
       "actionLabel": "Review Thursday BOGO",
@@ -400,6 +630,50 @@
       "preferenceSignals": [
         "one-day",
         "back-to-school",
+        "time-sensitive"
+      ],
+      "score": 100,
+      "scoreLabel": "Excellent"
+    },
+    {
+      "id": "chipotle-iq-free-food-chance-2026-08",
+      "merchant": "Chipotle",
+      "title": "Hourly chance for a BOGO entree or free side",
+      "summary": "Chipotle Rewards members can play the Chipotle IQ trivia game once daily through August 20; each hour, the first 8,000 players scoring five out of five receive a BOGO entree, free Cilantro Lime Sauce, or free Queso Blanco offer.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-08-20",
+      "locationNote": "No purchase is required to play, but a Chipotle Rewards account is required and any food reward is subject to the official rules and participating-location redemption terms.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "flash deal",
+        "free food",
+        "BOGO",
+        "trivia",
+        "rewards account",
+        "limited quantity"
+      ],
+      "source": {
+        "label": "Chipotle official newsroom",
+        "url": "https://newsroom.chipotle.com/2026-08-11-CHIPOTLE-IQ-RETURNS-WITH-MORE-THAN-1-MILLION-IN-FREE-CHIPOTLE%2C-PLUS-NEW-DAILY-STREAKS%2C-SILVER-TICKETS-AND-A-COLLECTIBLE-CARD-GAME",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Play Chipotle IQ",
+      "tier": "A",
+      "stackNote": "This is a limited-quantity game reward, not a guaranteed coupon; play early in an hourly window and do not count savings unless a reward is actually awarded and used.",
+      "finePrint": "Runs from August 18 at 6:00 a.m. Pacific through August 20 at 5:59 p.m. Pacific. Rewards members may play once per day. Each hour, the first 8,000 players scoring five out of five receive one of 5,000 BOGO entree offers, 1,500 free Cilantro Lime Sauce offers, or 1,500 free Queso Blanco offers. No purchase necessary; eligibility and prize limits apply. No value is estimated because the result and prize are not guaranteed.",
+      "expirationLabel": "Ends August 20 at 7:59 p.m. CT",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
+      "preferenceSignals": [
+        "flash-deal",
+        "free-food",
+        "app-specific",
         "time-sensitive"
       ],
       "score": 100,
@@ -425,8 +699,8 @@
         "promo code"
       ],
       "source": {
-        "label": "Chipotle official investor newsroom",
-        "url": "https://ir.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
+        "label": "Chipotle official newsroom",
+        "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
         "checkedOn": "2026-08-19"
       },
       "actionLabel": "Check Sundays code",
@@ -509,8 +783,8 @@
       ],
       "source": {
         "label": "Take 5 Spring location coupons",
-        "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
-        "checkedOn": "2026-08-17"
+        "url": "https://www.take5.com/locations/texas/spring/30083/",
+        "checkedOn": "2026-08-19"
       },
       "actionLabel": "Get coupon",
       "tier": "A",
