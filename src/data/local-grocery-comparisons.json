@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-08-15",
-  "adWindow": "Current public listings checked August 15, 2026; older prices retain their original check dates and are not treated as current.",
+  "checkedOn": "2026-08-20",
+  "adWindow": "Live public listings checked August 20, 2026; only reverified prices use that date, and older prices retain their original check dates.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -181,8 +181,8 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "These are current store-specific rollbacks, not a four-store comparison: green seedless grapes are $1.97/lb and a 3 lb bag of Gala apples is $3.24 ($1.08/lb).",
-      "winner": "Walmart #3585 Gala apples at $1.08/lb",
+      "comparisonNote": "These are store-specific rollbacks, not a four-store comparison. Green seedless grapes were reverified at $1.97/lb on August 20; the Gala apple price retains its August 15 check date.",
+      "winner": "Walmart #3585 Gala apples at $1.08/lb (last checked August 15)",
       "prices": [
         {
           "retailer": "Walmart",
@@ -193,8 +193,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-15",
-          "dateLabel": "Store page checked Aug 15; rollback from $5.33; no end date shown",
+          "checkedOn": "2026-08-20",
+          "dateLabel": "Store page checked Aug 20; rollback from $5.33; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -228,8 +228,8 @@
           "unit": "oz",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-16",
-          "dateLabel": "Store page checked Aug 16; rollback from $4.97; no end date shown",
+          "checkedOn": "2026-08-20",
+          "dateLabel": "Store page checked Aug 20; rollback from $4.97; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
         }
       ]
@@ -272,8 +272,8 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-15",
-          "dateLabel": "Store page checked Aug 15; rollback from $7.97; no end date shown",
+          "checkedOn": "2026-08-20",
+          "dateLabel": "Store page checked Aug 20; rollback from $8.97; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -304,21 +304,43 @@
       "id": "walmart-local-peanut-butter",
       "item": "Creamy peanut butter",
       "category": "staple",
-      "comparisonNote": "This is a store-specific Walmart rollback. The 40-ounce jar normalizes to 9.4 cents per ounce.",
-      "winner": "Walmart #3585 at $3.74 (9.4¢/oz)",
+      "comparisonNote": "This is a store-specific Walmart rollback. The 40-ounce jar improved from $3.74 to $3.58 and normalizes to 9.0 cents per ounce.",
+      "winner": "Walmart #3585 at $3.58 (9.0¢/oz)",
       "prices": [
         {
           "retailer": "Walmart",
           "product": "Great Value Creamy Peanut Butter",
           "packageSize": "40 oz",
-          "price": 3.74,
-          "unitPrice": 0.094,
+          "price": 3.58,
+          "unitPrice": 0.09,
           "unit": "oz",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-16",
-          "dateLabel": "Store page checked Aug 16; rollback from $4.28; no end date shown",
+          "checkedOn": "2026-08-20",
+          "dateLabel": "Store page checked Aug 20; rollback from $3.98; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
+        }
+      ]
+    },
+    {
+      "id": "walmart-local-avocados",
+      "item": "Fresh Hass avocados",
+      "category": "produce",
+      "comparisonNote": "This is a store-specific Walmart rollback. The current price is 56 cents per avocado and is not a four-store comparison.",
+      "winner": "Walmart #3585 at $0.56 each",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Fresh Hass Avocados",
+          "packageSize": "Each",
+          "price": 0.56,
+          "unitPrice": 0.56,
+          "unit": "each",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-20",
+          "dateLabel": "Store page checked Aug 20; rollback; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
     }

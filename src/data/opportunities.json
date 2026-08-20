@@ -92,7 +92,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-20"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -107,46 +107,6 @@
       "free-food",
       "new-member",
       "app-specific"
-    ]
-  },
-  {
-    "id": "whataburger-wednesday-big-ranch-wrap-2026-08-19",
-    "merchant": "Whataburger",
-    "title": "76-cent Big Ranch Wrap on Wednesday",
-    "summary": "Whataburger Rewards members can get a Big Ranch Wrap entree for 76 cents on August 19 from 11 a.m. to 4 p.m. local time.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-08-19",
-    "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "one-day",
-      "76-cent",
-      "entree",
-      "app",
-      "rewards"
-    ],
-    "source": {
-      "label": "Whataburger official newsroom",
-      "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-19"
-    },
-    "actionLabel": "Check August 19 offer",
-    "tier": "A",
-    "stackNote": "Do not assume another coupon can be combined with this app offer.",
-    "finePrint": "Valid only through the Whataburger App, one redemption per account, at participating locations during the stated local-time window. No dollar savings estimate is shown because the regular local price was not verified.",
-    "expirationLabel": "August 19, 11 a.m.-4 p.m.",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-08-11",
-    "preferenceSignals": [
-      "one-day",
-      "app-specific",
-      "time-sensitive"
     ]
   },
   {
@@ -172,7 +132,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-20"
     },
     "actionLabel": "Check August 26 offer",
     "tier": "A",
@@ -597,7 +557,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+ official FAQ",
       "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-20"
     },
     "actionLabel": "Check app eligibility",
     "tier": "A",
@@ -612,6 +572,47 @@
       "fuel-reward",
       "new-member",
       "new-app-user",
+      "high-value"
+    ]
+  },
+  {
+    "id": "exxon-mobil-referral-five-fill-bonus-2026",
+    "merchant": "Exxon Mobil Rewards+",
+    "title": "Up to 30¢ per gallon on five referral-code fills",
+    "summary": "New Rewards+ members who enroll with an existing member's referral code can earn up to 15 cents per gallon on regular, mid-grade, or diesel fuel, or up to 30 cents per gallon on premium fuel, for their next five qualifying fills.",
+    "category": "fuel",
+    "estimatedSavings": 11.25,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-10-15",
+    "locationNote": "New-member and referral-code specific at participating Exxon and Mobil stations; local station support must be confirmed before fueling.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "fuel",
+      "new member",
+      "referral code",
+      "five fill-ups",
+      "premium fuel"
+    ],
+    "source": {
+      "label": "Exxon Mobil Rewards+ official terms",
+      "url": "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions",
+      "checkedOn": "2026-08-20"
+    },
+    "actionLabel": "Review referral offer",
+    "tier": "A",
+    "stackNote": "The separate new-app-user offer says it cannot be combined with other promotions, so do not count both bonuses unless the app expressly confirms both.",
+    "finePrint": "Registration with a valid member referral code must occur from August 15 through October 15, 2026 before fueling. Each of the next five qualifying fills must be at least 8 gallons and completed within 60 days of registration. The $11.25 estimate assumes the regular-fuel rate of 15 cents per gallon on five 15-gallon fills; premium fuel can earn up to 30 cents per gallon. Account, referral, station, fuel-grade, and transaction eligibility apply.",
+    "expirationLabel": "Enroll by October 15; complete five fills within 60 days",
+    "availability": "available",
+    "dealType": "fuel-reward",
+    "freshness": "new",
+    "discoveredOn": "2026-08-20",
+    "preferenceSignals": [
+      "fuel-reward",
+      "new-member",
+      "referral-code",
       "high-value"
     ]
   },
@@ -1396,45 +1397,6 @@
     ]
   },
   {
-    "id": "houston-dash-ten-dollar-concession-voucher-2026-08-19",
-    "merchant": "Houston Dash",
-    "title": "$10 concession voucher with an August 19 match ticket",
-    "summary": "The official Dash schedule states that every ticket purchased for the August 19 match against Chicago Stars FC includes a $10 concession voucher.",
-    "category": "sports",
-    "estimatedSavings": 10,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-08-19",
-    "locationNote": "Shell Energy Stadium in Houston; ticket price, travel, and parking were not included in the savings estimate.",
-    "verification": "verified",
-    "friction": "high",
-    "tags": [
-      "sports ticket",
-      "one-day",
-      "concession voucher",
-      "Houston Dash"
-    ],
-    "source": {
-      "label": "Houston Dash official 2026 schedule",
-      "url": "https://www.houstondynamofc.com/houstondash/schedule/",
-      "checkedOn": "2026-08-19"
-    },
-    "actionLabel": "Review August 19 tickets",
-    "tier": "B",
-    "stackNote": "Count the voucher only if the match was already planned and it will be fully used.",
-    "finePrint": "A paid match ticket is required. Official schedule text: Every ticket purchased includes a $10 concession voucher. Ticket price, travel, and parking are not included in the savings estimate.",
-    "expirationLabel": "August 19 match",
-    "availability": "available",
-    "dealType": "sports-ticket",
-    "freshness": "new",
-    "discoveredOn": "2026-08-17",
-    "preferenceSignals": [
-      "sports-ticket",
-      "one-day",
-      "time-sensitive"
-    ]
-  },
-  {
     "id": "astros-2026-promotion-calendar",
     "merchant": "Houston Astros",
     "title": "$1 Hot Dog Night on Tuesday home games",
@@ -1455,7 +1417,7 @@
     "source": {
       "label": "Houston Astros official $1 Hot Dog Night page",
       "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-20"
     },
     "actionLabel": "Review promotions",
     "tier": "B",
@@ -1494,7 +1456,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-20"
     },
     "actionLabel": "Review Thursday BOGO",
     "tier": "A",
@@ -1535,7 +1497,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-11-CHIPOTLE-IQ-RETURNS-WITH-MORE-THAN-1-MILLION-IN-FREE-CHIPOTLE%2C-PLUS-NEW-DAILY-STREAKS%2C-SILVER-TICKETS-AND-A-COLLECTIBLE-CARD-GAME",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-20"
     },
     "actionLabel": "Play Chipotle IQ",
     "tier": "A",
@@ -1575,7 +1537,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-20"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-19T15:05:32.585Z",
-  "checkedOn": "2026-08-15",
+  "generatedAt": "2026-08-20T15:25:08.651Z",
+  "checkedOn": "2026-08-20",
   "items": [
     {
       "id": "watch-ground-beef-80-20",
@@ -64,7 +64,7 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store",
-      "checkedOn": "2026-08-16",
+      "checkedOn": "2026-08-20",
       "locationStatus": "verified-local"
     },
     {
@@ -90,7 +90,7 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
-      "checkedOn": "2026-08-15",
+      "checkedOn": "2026-08-20",
       "locationStatus": "verified-local"
     },
     {
@@ -111,12 +111,25 @@
       "item": "Creamy peanut butter",
       "comparisonId": "walmart-local-peanut-butter",
       "targetPrice": 0.1,
-      "latestPrice": 0.094,
+      "latestPrice": 0.09,
       "unit": "per oz",
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store",
-      "checkedOn": "2026-08-16",
+      "checkedOn": "2026-08-20",
+      "locationStatus": "verified-local"
+    },
+    {
+      "id": "watch-walmart-local-avocados",
+      "item": "Fresh Hass avocados",
+      "comparisonId": "walmart-local-avocados",
+      "targetPrice": 0.75,
+      "latestPrice": 0.56,
+      "unit": "per each",
+      "retailer": "Walmart",
+      "sourceLabel": "Walmart official listing",
+      "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
+      "checkedOn": "2026-08-20",
       "locationStatus": "verified-local"
     }
   ]

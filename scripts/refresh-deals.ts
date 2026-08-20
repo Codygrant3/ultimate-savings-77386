@@ -125,6 +125,7 @@ const groceryTargetPrices: Record<string, number> = {
   "walmart-local-watermelon": 5,
   "walmart-local-brown-eggs": 0.25,
   "walmart-local-peanut-butter": 0.1,
+  "walmart-local-avocados": 0.75,
 };
 
 function canonicalizeUrl(value: string): string {
