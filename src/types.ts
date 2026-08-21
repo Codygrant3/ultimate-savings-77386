@@ -151,6 +151,24 @@ export interface ValueAlert {
   sourceUrl: string;
 }
 
+export interface OfferCandidate {
+  id: string;
+  sourceId: string;
+  merchant: string;
+  title: string;
+  detail?: string;
+  url: string;
+  amountText?: string;
+  minimumSpend?: number;
+  expirationText?: string;
+  candidateScore?: number;
+  candidateReasons?: string[];
+}
+
+export type CandidateReviewStatus = "keep" | "dismissed";
+
+export type CandidateReviews = Record<string, CandidateReviewStatus>;
+
 export interface WeeklyReport {
   generatedAt: string;
   weekOf: string;

@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseSourceOffers } from "../src/lib/source-parsers";
+import { parseSourceOffers, rankOfferCandidates } from "../src/lib/source-parsers";
 import type { DiscoverySource } from "../src/lib/source-parsers-types";
 import type { ParsedOfferCandidate } from "../src/lib/source-parsers";
 
@@ -239,7 +239,7 @@ function buildMarkdown(report: DiscoveryReport): string {
             (candidate) =>
               `- **${candidate.merchant}** — ${candidate.title}${
                 candidate.minimumSpend ? ` (minimum spend $${candidate.minimumSpend})` : ""
-              } — [official source](${candidate.url})`,
+              } — score ${candidate.candidateScore}/100 (${(candidate.candidateReasons ?? []).join("; ")}) — [official source](${candidate.url})`,
           )
           .join("\n")
       : "- No structured candidates were safely extractable.";
@@ -393,9 +393,16 @@ async function main(): Promise<void> {
       result.priority >= 8 &&
       result.matchedKeywords.length > 0,
   );
-  const parsedOfferCandidates = results
+  const sourcePriorities = Object.fromEntries(
+    deduplicatedSources.map((source) => [source.id, source.priority])
+  );
+  const parsedOfferCandidates = rankOfferCandidates(
+    results
     .flatMap((result) => result.parsedOffers ?? [])
-    .filter((candidate) => candidate.title.length > 3);
+      .filter((candidate) => candidate.title.length > 3),
+    sourcePriorities,
+    new Date(checkedAt)
+  );
   const report: DiscoveryReport = {
     generatedAt: checkedAt,
     sourceCount: results.length,

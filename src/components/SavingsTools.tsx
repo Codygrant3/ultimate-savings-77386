@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { SavingsHistory } from "./SavingsHistory";
+import { CandidateReviewQueue } from "./CandidateReviewQueue";
 import { ValueAlerts } from "./ValueAlerts";
 import comparisonData from "../data/local-grocery-comparisons.json";
 import {
@@ -847,6 +848,7 @@ export function SavingsTools({
           onAcknowledge={onAcknowledgeValueAlert}
           onUpdateSettings={onUpdateValueAlertSettings}
         />
+        <CandidateReviewQueue />
         <SavingsHistory
           opportunities={opportunities}
           receipts={receipts}

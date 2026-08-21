@@ -13,6 +13,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Maintains a checked local merchant inventory and uses great-circle distance calculations for nearby branches. A merchant-location distance is clearly marked as approximate and never claims that a specific promotion is confirmed at that branch.
 - Uses merchant-specific structured parsers for Wendy's and the local Take 5 page to stage official offer candidates with amounts, minimum spend, terms, or expiration signals. Every parsed candidate remains a human-review lead, never an automatic dashboard deal.
 - Uses semantic candidate keys to collapse repeated page variants while preserving the most complete spend, expiration, or terms evidence.
+- Ranks discovery candidates by captured value, spend efficiency, expiration timing, source priority, and title quality, then exposes them in a dashboard review queue. Keep/dismiss choices stay in the local browser and never convert a lead into a verified deal.
 - Generates a dated Markdown briefing and dashboard-ready JSON.
 - Includes a Windows Task Scheduler installer for Monday reports.
 - Checks a curated set of public sources for new or improved high-value matches.

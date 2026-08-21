@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { DiscoverySource } from "./source-parsers-types";
-import { parseSourceOffers } from "./source-parsers";
+import { parseSourceOffers, rankOfferCandidates } from "./source-parsers";
 
 const wendysSource: DiscoverySource = {
   id: "wendys-offers",
@@ -113,5 +113,39 @@ describe("merchant-specific offer parsers", () => {
     expect(welcome?.expirationText).toBe("180-day expiration");
     expect(welcome?.detail).toContain("new app users only");
     expect(points?.title).toContain("250 Points = Free Medium Drink");
+  });
+});
+
+describe("offer candidate ranking", () => {
+  it("ranks stronger value, spend, timing, and source evidence first", () => {
+    const ranked = rankOfferCandidates(
+      [
+        {
+          id: "weak",
+          sourceId: "low-source",
+          merchant: "Test",
+          title: "$1 off with $40 purchase",
+          url: "https://example.com/weak",
+          amountText: "$1 Off",
+          minimumSpend: 40
+        },
+        {
+          id: "strong",
+          sourceId: "strong-source",
+          merchant: "Test",
+          title: "$15 off any service",
+          url: "https://example.com/strong",
+          amountText: "$15 Off",
+          expirationText: "9/10/26"
+        }
+      ],
+      { "strong-source": 10, "low-source": 5 },
+      new Date("2026-08-21T12:00:00")
+    );
+
+    expect(ranked[0].id).toBe("strong");
+    expect(ranked[0].candidateScore).toBeGreaterThan(ranked[1].candidateScore!);
+    expect(ranked[0].candidateReasons).toContain("$15 Off value");
+    expect(ranked[0].candidateReasons).toContain("Expires 9/10/26");
   });
 });

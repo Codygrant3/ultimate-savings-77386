@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T18:45:46.002Z",
+  "generatedAt": "2026-08-21T19:09:06.819Z",
   "sourceCount": 28,
   "successfulCount": 23,
   "failedCount": 5,
@@ -18,10 +18,10 @@
         "off"
       ],
       "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "changed",
       "matchedKeywords": [],
-      "contentHash": "b0985679f48b934be31698d12a417efe8126e183d9b3a3f77cacbf2290415fae",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "parsedOffers": []
     },
     {
@@ -37,7 +37,7 @@
         "circle"
       ],
       "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "weekly ad",
@@ -60,7 +60,7 @@
         "5x"
       ],
       "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -78,7 +78,7 @@
         "points"
       ],
       "canonicalUrl": "https://www.dutchbros.com/dutch-101",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free drink",
@@ -121,7 +121,7 @@
         "offer"
       ],
       "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "deal",
@@ -146,7 +146,7 @@
         "birthday"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -171,7 +171,7 @@
         "opening"
       ],
       "canonicalUrl": "https://joviroasters.com",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "offer",
@@ -195,7 +195,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -218,7 +218,7 @@
         "offer"
       ],
       "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "per gallon",
@@ -243,14 +243,14 @@
         "exclusive deals"
       ],
       "canonicalUrl": "https://www.7-eleven.com/7rewards",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
-      "status": "unchanged",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "status": "changed",
       "matchedKeywords": [
         "free snacks",
         "bonus points",
         "exclusive deals"
       ],
-      "contentHash": "7a89c34262b058fb7a0c69d2e80e817f8dcd78a45f1bb7d3f963003af0c5c21c",
+      "contentHash": "4b8df2d805d2be8dbb41716f731db0635b96d8d4efab87d8220b590a5c5ec392",
       "title": "7REWARDS | 7-Eleven",
       "parsedOffers": []
     },
@@ -267,7 +267,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "coupon",
@@ -302,7 +302,7 @@
         "coupon"
       ],
       "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "oil change",
@@ -327,7 +327,7 @@
         "reward"
       ],
       "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -351,7 +351,7 @@
         "stubs"
       ],
       "canonicalUrl": "https://www.amctheatres.com/offers",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -369,7 +369,7 @@
         "ticket"
       ],
       "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "promotion",
@@ -394,7 +394,7 @@
         "promotion"
       ],
       "canonicalUrl": "https://www.houstondynamofc.com/tickets",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "ticket",
@@ -417,7 +417,7 @@
         "backpacks"
       ],
       "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "sales tax holiday",
@@ -442,7 +442,7 @@
         "offer"
       ],
       "canonicalUrl": "https://news.dunkindonuts.com",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -465,7 +465,7 @@
         "rewards"
       ],
       "canonicalUrl": "https://www.wendys.com/offers-coupons",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -555,7 +555,7 @@
         "birthday reward"
       ],
       "canonicalUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "welcome reward",
@@ -580,7 +580,7 @@
         "offer"
       ],
       "canonicalUrl": "https://stories.whataburger.com",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -604,7 +604,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://about.starbucks.com/press",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -622,7 +622,7 @@
         "offer"
       ],
       "canonicalUrl": "https://corporate.mcdonalds.com/corpmcd/our-stories.html",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [],
       "contentHash": "59aecbeabc795b6fcdfc8122660627a5dde4499440d300b62eeb5ce25fb62e0e",
@@ -642,7 +642,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://www.tacobell.com/newsroom",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "rewards",
@@ -665,7 +665,7 @@
         "cash payment"
       ],
       "canonicalUrl": "https://www.onlinetvsettlement.com",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -683,7 +683,7 @@
         "settlement class"
       ],
       "canonicalUrl": "https://landsenddatasettlement.com/faq",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "claim",
@@ -708,7 +708,7 @@
         "authorized by the court"
       ],
       "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -725,7 +725,7 @@
         "official settlement website"
       ],
       "canonicalUrl": "https://www.clarkcountydatasettlement.com",
-      "checkedAt": "2026-08-21T18:45:46.002Z",
+      "checkedAt": "2026-08-21T19:09:06.819Z",
       "status": "unchanged",
       "matchedKeywords": [
         "submit claim",
@@ -740,32 +740,6 @@
   "highValueMatches": [],
   "parsedOfferCandidates": [
     {
-      "id": "dutch-bros-rewards-welcome-when-you-download-the-app",
-      "sourceId": "dutch-bros-rewards",
-      "merchant": "Dutch Bros",
-      "title": "Free medium drink when you download the app and join Dutch Rewards",
-      "url": "https://www.dutchbros.com/dutch-101/",
-      "amountText": "Free"
-    },
-    {
-      "id": "dutch-bros-rewards-250-points-free-medium-drink",
-      "sourceId": "dutch-bros-rewards",
-      "merchant": "Dutch Bros",
-      "title": "250 Points = Free Medium Drink",
-      "url": "https://www.dutchbros.com/dutch-101/",
-      "amountText": "Free",
-      "detail": "Official Dutch Rewards redemption example; confirm current app terms."
-    },
-    {
-      "id": "take5-rayford-15-off-core-complete-or-ultimate-oil-change",
-      "sourceId": "take5-rayford",
-      "merchant": "Take 5 Oil Change",
-      "title": "$15 Off Core, Complete or Ultimate Oil Change",
-      "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
-      "amountText": "$15 Off",
-      "detail": "Coupons have no cash value. Coupons valid only if emailed or texted - requires enrollment in marketing emails or texts from Take 5. You can unsubscribe at any time by replying STOP to a text or following email UNSUBSCRIBE instructions."
-    },
-    {
       "id": "wendys-offers-paze-users-spend-10-in-the-wendy-s-app-to-earn-10-back",
       "sourceId": "wendys-offers",
       "merchant": "Wendy's",
@@ -774,51 +748,14 @@
       "amountText": "$10",
       "minimumSpend": 10,
       "expirationText": "9/10/26",
-      "detail": "*As a statement credit. Offer runs through 9/10/26. To learn more about this offer visit paze.com/offers. Terms apply. Wendy's account registration required to place orders in the Wendy's app."
-    },
-    {
-      "id": "wendys-offers-1-off-premium-combo",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "$1 off Premium Combo",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$1 off"
-    },
-    {
-      "id": "wendys-offers-3-off-20-purchase",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "$3 Off $20+ Purchase",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$3 Off",
-      "minimumSpend": 20
-    },
-    {
-      "id": "wendys-offers-wendy-s-wednesday-free-6pc-nuggs-w-5-purchase",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "Free",
-      "minimumSpend": 5
-    },
-    {
-      "id": "wendys-offers-fryday-free-any-size-fry-w-5-purchase",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Fryday - Free Any Size Fry w/ $5 Purchase",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "Free",
-      "minimumSpend": 5
-    },
-    {
-      "id": "wendys-offers-1-off-crispy-chicken-or-4-piece-nuggets-w-5-purchase",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "$1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$1 Off",
-      "minimumSpend": 5
+      "detail": "*As a statement credit. Offer runs through 9/10/26. To learn more about this offer visit paze.com/offers. Terms apply. Wendy's account registration required to place orders in the Wendy's app.",
+      "candidateScore": 63,
+      "candidateReasons": [
+        "$10 value",
+        "Requires 10 spend",
+        "Expires 9/10/26",
+        "Source priority 10"
+      ]
     },
     {
       "id": "wendys-offers-free-small-chili-w-5-purchase",
@@ -827,7 +764,140 @@
       "title": "Free Small Chili w/ $5 Purchase",
       "url": "https://www.wendys.com/offers-coupons",
       "amountText": "Free",
-      "minimumSpend": 5
+      "minimumSpend": 5,
+      "candidateScore": 58,
+      "candidateReasons": [
+        "Free reward",
+        "Requires 5 spend",
+        "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "wendys-offers-fryday-free-any-size-fry-w-5-purchase",
+      "sourceId": "wendys-offers",
+      "merchant": "Wendy's",
+      "title": "Fryday - Free Any Size Fry w/ $5 Purchase",
+      "url": "https://www.wendys.com/offers-coupons",
+      "amountText": "Free",
+      "minimumSpend": 5,
+      "candidateScore": 58,
+      "candidateReasons": [
+        "Free reward",
+        "Requires 5 spend",
+        "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "wendys-offers-wendy-s-wednesday-free-6pc-nuggs-w-5-purchase",
+      "sourceId": "wendys-offers",
+      "merchant": "Wendy's",
+      "title": "Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase",
+      "url": "https://www.wendys.com/offers-coupons",
+      "amountText": "Free",
+      "minimumSpend": 5,
+      "candidateScore": 58,
+      "candidateReasons": [
+        "Free reward",
+        "Requires 5 spend",
+        "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "take5-rayford-15-off-core-complete-or-ultimate-oil-change",
+      "sourceId": "take5-rayford",
+      "merchant": "Take 5 Oil Change",
+      "title": "$15 Off Core, Complete or Ultimate Oil Change",
+      "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
+      "amountText": "$15 Off",
+      "detail": "Coupons have no cash value. Coupons valid only if emailed or texted - requires enrollment in marketing emails or texts from Take 5. You can unsubscribe at any time by replying STOP to a text or following email UNSUBSCRIBE instructions.",
+      "candidateScore": 54,
+      "candidateReasons": [
+        "$15 Off value",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "dutch-bros-rewards-250-points-free-medium-drink",
+      "sourceId": "dutch-bros-rewards",
+      "merchant": "Dutch Bros",
+      "title": "250 Points = Free Medium Drink",
+      "url": "https://www.dutchbros.com/dutch-101/",
+      "amountText": "Free",
+      "detail": "Official Dutch Rewards redemption example; confirm current app terms.",
+      "candidateScore": 48,
+      "candidateReasons": [
+        "Free reward",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "dutch-bros-rewards-welcome-when-you-download-the-app",
+      "sourceId": "dutch-bros-rewards",
+      "merchant": "Dutch Bros",
+      "title": "Free medium drink when you download the app and join Dutch Rewards",
+      "url": "https://www.dutchbros.com/dutch-101/",
+      "amountText": "Free",
+      "candidateScore": 48,
+      "candidateReasons": [
+        "Free reward",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "wendys-offers-3-off-20-purchase",
+      "sourceId": "wendys-offers",
+      "merchant": "Wendy's",
+      "title": "$3 Off $20+ Purchase",
+      "url": "https://www.wendys.com/offers-coupons",
+      "amountText": "$3 Off",
+      "minimumSpend": 20,
+      "candidateScore": 38,
+      "candidateReasons": [
+        "$3 Off value",
+        "Requires 20 spend",
+        "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "wendys-offers-1-off-premium-combo",
+      "sourceId": "wendys-offers",
+      "merchant": "Wendy's",
+      "title": "$1 off Premium Combo",
+      "url": "https://www.wendys.com/offers-coupons",
+      "amountText": "$1 off",
+      "candidateScore": 37,
+      "candidateReasons": [
+        "$1 off value",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "wendys-offers-1-off-crispy-chicken-or-4-piece-nuggets-w-5-purchase",
+      "sourceId": "wendys-offers",
+      "merchant": "Wendy's",
+      "title": "$1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase",
+      "url": "https://www.wendys.com/offers-coupons",
+      "amountText": "$1 Off",
+      "minimumSpend": 5,
+      "candidateScore": 35,
+      "candidateReasons": [
+        "$1 Off value",
+        "Requires 5 spend",
+        "No expiration captured",
+        "Source priority 10"
+      ]
     }
   ],
   "limitations": [

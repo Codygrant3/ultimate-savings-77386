@@ -1979,6 +1979,154 @@ a {
   text-decoration: none;
 }
 
+.candidate-review {
+  display: grid;
+  gap: 14px;
+}
+
+.review-boundary {
+  margin: 0;
+  padding: 10px 12px;
+  color: #315e50;
+  border: 1px solid #c5ddd3;
+  border-radius: 9px;
+  background: #eef7f2;
+  font-size: 10px;
+}
+
+.review-controls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.review-filter {
+  padding: 7px 11px;
+  border: 1px solid #d8d7cf;
+  border-radius: 7px;
+  background: #fffefb;
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.review-filter--active {
+  border-color: var(--forest);
+  background: var(--forest);
+  color: #fffefb;
+}
+
+.review-generated {
+  margin-left: auto;
+  color: #66756e;
+  font-size: 9px;
+}
+
+.candidate-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.candidate-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba(23, 53, 44, 0.08);
+  border-radius: 9px;
+  background: rgba(255, 254, 250, 0.86);
+}
+
+.candidate-main,
+.candidate-heading,
+.candidate-main strong,
+.candidate-main span,
+.candidate-main small,
+.candidate-main em {
+  min-width: 0;
+}
+
+.candidate-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.candidate-heading strong {
+  font-size: 11px;
+}
+
+.candidate-heading output {
+  color: var(--forest);
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.candidate-main span {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+}
+
+.candidate-main small,
+.candidate-main em {
+  display: block;
+  margin-top: 3px;
+  color: #66756e;
+  font-size: 9px;
+}
+
+.candidate-actions {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  gap: 6px;
+}
+
+.candidate-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--forest);
+  font-size: 9px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.review-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border: 1px solid #d8d7cf;
+  border-radius: 7px;
+  background: #fffefb;
+  color: var(--ink);
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.review-action--keep {
+  border-color: #167258;
+  background: #dff1e8;
+  color: #0f5c46;
+}
+
+.review-action--dismiss {
+  border-color: #a56b24;
+  background: #f8eadb;
+  color: #7a4a18;
+}
+
 .grocery-watchlist {
   overflow: hidden;
   background:
@@ -3393,6 +3541,14 @@ a {
 
   .value-alert-list li {
     grid-template-columns: 1fr;
+  }
+
+  .candidate-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .review-generated {
+    margin-left: 0;
   }
 
   .value-alert-actions {

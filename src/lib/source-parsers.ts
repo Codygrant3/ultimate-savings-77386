@@ -10,6 +10,8 @@ export interface ParsedOfferCandidate {
   amountText?: string;
   minimumSpend?: number;
   expirationText?: string;
+  candidateScore?: number;
+  candidateReasons?: string[];
 }
 
 interface ParserContext {
@@ -294,6 +296,114 @@ const PARSERS: Record<string, (context: ParserContext, html: string) => ParsedOf
   "wendys-offers": parseWendys,
   "take5-rayford": parseTake5
 };
+
+function candidateAmountValue(candidate: ParsedOfferCandidate): number {
+  if (candidate.amountText?.toLowerCase() === "free") return 12;
+  const dollar = candidate.amountText?.match(/\$(\d+(?:\.\d{2})?)/i);
+  if (dollar) return Math.min(30, Number(dollar[1]) * 1.2);
+  const percentage = candidate.amountText?.match(/(\d+(?:\.\d+)?)%/i);
+  if (percentage) return Math.min(20, Number(percentage[1]) * 0.3);
+  return 0;
+}
+
+export function rankOfferCandidates(
+  candidates: ParsedOfferCandidate[],
+  sourcePriorities: Record<string, number> = {},
+  today = new Date()
+): ParsedOfferCandidate[] {
+  return candidates
+    .map((candidate) => {
+      const reasons: string[] = [];
+      const valuePoints = candidateAmountValue(candidate);
+      if (valuePoints > 0) {
+        reasons.push(
+          candidate.amountText?.toLowerCase() === "free"
+            ? "Free reward"
+            : `${candidate.amountText} value`
+        );
+      }
+
+      const spendRatio =
+        candidate.minimumSpend && valuePoints > 0
+          ? candidate.minimumSpend / Math.max(valuePoints / 1.2, 1)
+          : null;
+      const spendPoints =
+        spendRatio === null
+          ? 8
+          : spendRatio <= 1
+            ? 18
+            : spendRatio <= 3
+              ? 12
+              : spendRatio <= 8
+                ? 6
+                : 2;
+      if (candidate.minimumSpend) {
+        reasons.push(`Requires ${candidate.minimumSpend} spend`);
+      } else {
+        reasons.push("No minimum captured");
+      }
+
+      const daysLeft = candidate.expirationText?.match(/(\d+)\s*-?\s*day/i)?.[1];
+      let timingPoints = 8;
+      if (candidate.expirationText) {
+        if (daysLeft) {
+          const remaining = Number(daysLeft);
+          timingPoints = remaining <= 7 ? 18 : remaining <= 30 ? 13 : 8;
+          reasons.push(`${remaining}-day window`);
+        } else if (candidate.expirationText.includes("/")) {
+          const expiration = new Date(candidate.expirationText);
+          const remaining = Math.ceil(
+            (expiration.getTime() - today.getTime()) / 86_400_000
+          );
+          timingPoints =
+            remaining <= 7 ? 18 : remaining <= 30 ? 13 : remaining > 0 ? 8 : 0;
+          reasons.push(
+            remaining > 0 ? `Expires ${candidate.expirationText}` : "Expired date"
+          );
+        } else {
+          reasons.push("Expiration signal");
+        }
+      } else {
+        reasons.push("No expiration captured");
+      }
+
+      const sourcePriority = sourcePriorities[candidate.sourceId] ?? 5;
+      const sourcePoints = Math.min(14, sourcePriority * 1.4);
+      reasons.push(`Source priority ${sourcePriority}`);
+
+      const titleQuality =
+        candidate.title.length <= 90 ? 6 : candidate.title.length <= 160 ? 3 : 0;
+      if (titleQuality === 0) reasons.push("Long title needs cleanup");
+
+      const score = Math.round(
+        Math.max(
+          0,
+          Math.min(
+            100,
+            valuePoints +
+              spendPoints +
+              timingPoints +
+              sourcePoints +
+              titleQuality
+          )
+        )
+      );
+
+      return {
+        ...candidate,
+        candidateScore: score,
+        candidateReasons: reasons
+      };
+    })
+    .sort((first, second) => {
+      if (second.candidateScore !== first.candidateScore) {
+        return (second.candidateScore ?? 0) - (first.candidateScore ?? 0);
+      }
+      return `${first.merchant} ${first.title}`.localeCompare(
+        `${second.merchant} ${second.title}`
+      );
+    });
+}
 
 export function parseSourceOffers(
   source: DiscoverySource,

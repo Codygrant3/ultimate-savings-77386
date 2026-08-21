@@ -2,6 +2,7 @@ import type {
   GroceryWatchItem,
   PriceAlert,
   ReceiptEntry,
+  CandidateReviews,
   ValueAlertSettings
 } from "../types";
 
@@ -15,6 +16,7 @@ const SETTLEMENT_REMINDERS_KEY = "savings-desk:settlement-reminders";
 const RECEIPTS_KEY = "savings-desk:receipts";
 const VALUE_ALERT_SETTINGS_KEY = "savings-desk:value-alert-settings";
 const ACKNOWLEDGED_VALUE_ALERTS_KEY = "savings-desk:value-alerts-acknowledged";
+const CANDIDATE_REVIEWS_KEY = "savings-desk:candidate-reviews";
 
 function readIds(key: string): string[] {
   try {
@@ -186,4 +188,24 @@ export function writeValueAlertSettings(
 ): ValueAlertSettings {
   window.localStorage.setItem(VALUE_ALERT_SETTINGS_KEY, JSON.stringify(settings));
   return settings;
+}
+
+export function readCandidateReviews(): CandidateReviews {
+  try {
+    const value = window.localStorage.getItem(CANDIDATE_REVIEWS_KEY);
+    if (value === null) return {};
+    const parsed = JSON.parse(value) as CandidateReviews;
+    return Object.fromEntries(
+      Object.entries(parsed).filter(([, status]) =>
+        status === "keep" || status === "dismissed"
+      )
+    );
+  } catch {
+    return {};
+  }
+}
+
+export function writeCandidateReviews(reviews: CandidateReviews): CandidateReviews {
+  window.localStorage.setItem(CANDIDATE_REVIEWS_KEY, JSON.stringify(reviews));
+  return reviews;
 }

@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 
 import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import App from "./App";
 
 describe("Savings Desk interactions", () => {
@@ -161,6 +161,53 @@ describe("Savings Desk interactions", () => {
     expect(
       window.localStorage.getItem("savings-desk:value-alerts-acknowledged")
     ).not.toBe("[]");
+  });
+
+  it("surfaces ranked discovery candidates and stores local review decisions", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: string | URL | Request) => {
+        const url = input.toString();
+        if (url.includes("/reports/discovery.json")) {
+          return {
+            ok: true,
+            json: async () => ({
+              generatedAt: "2026-08-21T13:00:00.000Z",
+              parsedOfferCandidates: [
+                {
+                  id: "test-candidate",
+                  sourceId: "take5-rayford",
+                  merchant: "Take 5 Oil Change",
+                  title: "$15 off any oil change",
+                  url: "https://example.com/coupon",
+                  amountText: "$15 Off",
+                  candidateScore: 82,
+                  candidateReasons: ["$15 Off value"]
+                }
+              ]
+            })
+          };
+        }
+        return {
+          ok: true,
+          json: async () => ({ generatedAt: "", checkedOn: "", items: [] })
+        };
+      })
+    );
+
+    render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: "Savings tools" }));
+
+    expect(await screen.findByRole("heading", { name: "Discovery review queue" })).toBeTruthy();
+    expect(screen.getByText("$15 off any oil change")).toBeTruthy();
+    expect(screen.getByText("82/100")).toBeTruthy();
+
+    fireEvent.click(screen.getByRole("button", { name: "Keep $15 off any oil change" }));
+    expect(window.localStorage.getItem("savings-desk:candidate-reviews")).toContain(
+      "keep"
+    );
+
+    vi.unstubAllGlobals();
   });
 
   it("shows grocery comparisons under the dedicated Grocery tab", () => {
