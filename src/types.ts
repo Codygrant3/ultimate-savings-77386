@@ -71,6 +71,14 @@ export interface Opportunity {
 export interface ScoredOpportunity extends Opportunity {
   score: number;
   scoreLabel: "Excellent" | "Strong" | "Worth a look" | "Low priority";
+  scoreBreakdown: ScoreFactor[];
+}
+
+export interface ScoreFactor {
+  label: string;
+  points: number;
+  weight: number;
+  detail: string;
 }
 
 export interface WeeklyReport {

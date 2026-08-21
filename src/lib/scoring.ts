@@ -1,5 +1,10 @@
 import preferencesData from "../data/preferences.json";
-import type { Category, Opportunity, ScoredOpportunity } from "../types";
+import type {
+  Category,
+  Opportunity,
+  ScoreFactor,
+  ScoredOpportunity
+} from "../types";
 
 const DAY_IN_MS = 86_400_000;
 const householdPreferences = preferencesData as {
@@ -23,6 +28,13 @@ function daysUntil(date: string, today: Date): number {
   return Math.ceil((expiration.getTime() - today.getTime()) / DAY_IN_MS);
 }
 
+function money(value: number): string {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD"
+  }).format(value);
+}
+
 export function isExpired(opportunity: Opportunity, today = new Date()): boolean {
   if (!opportunity.expiresOn) return false;
   const expiration = new Date(`${opportunity.expiresOn}T23:59:59`);
@@ -44,68 +56,94 @@ export function isExcludedByPreferences(opportunity: Opportunity): boolean {
   );
 }
 
-export function scoreOpportunity(
+function sourceAgeDays(
   opportunity: Opportunity,
-  today = new Date()
-): ScoredOpportunity {
-  const verificationPoints = {
-    verified: 22,
-    program: 10,
-    "needs-check": 0
+  today: Date
+): number | null {
+  const checkedOn = new Date(`${opportunity.source.checkedOn}T12:00:00`);
+  if (Number.isNaN(checkedOn.getTime())) return null;
+  return Math.max(
+    0,
+    Math.floor((today.getTime() - checkedOn.getTime()) / DAY_IN_MS)
+  );
+}
+
+function evidenceLabel(opportunity: Opportunity): string {
+  if (opportunity.verification === "verified") return "Official source verified";
+  if (opportunity.verification === "program") return "Official ongoing program";
+  return "Unverified lead";
+}
+
+function evidenceQuality(
+  opportunity: Opportunity,
+  today: Date
+): { value: number; detail: string } {
+  const statusQuality = {
+    verified: 100,
+    program: 45,
+    "needs-check": 10
   }[opportunity.verification];
+  const age = sourceAgeDays(opportunity, today);
 
-  const frictionPenalty = {
-    low: 0,
-    medium: 6,
-    high: 14
-  }[opportunity.friction];
+  if (age === null) {
+    return {
+      value: Math.round(statusQuality * 0.7),
+      detail: `${evidenceLabel(opportunity)}; source-check date missing`
+    };
+  }
 
-  const valuePoints = clamp(opportunity.estimatedSavings * 1.4, 0, 24);
-  const ratePoints = clamp((opportunity.savingsRate ?? 0) * 0.45, 0, 14);
-  const freePoints = opportunity.isFree ? 22 : 0;
-  const categoryPreferencePoints: Record<Category, number> = {
-    grocery: 14,
-    restaurants: 12,
-    coffee: 14,
-    convenience: 10,
-    auto: 14,
-    movies: 10,
-    sports: 8,
-    "tax-free": 16,
-    financial: 0,
-    shopping: 6,
-    entertainment: 0,
-    home: -6,
-    fuel: 12,
-    local: -12
+  const ageQuality =
+    age <= 3 ? 100 : age <= 7 ? 85 : age <= 14 ? 65 : age <= 30 ? 40 : 15;
+  return {
+    value: Math.round(statusQuality * (ageQuality / 100)),
+    detail: `${evidenceLabel(opportunity)}; checked ${age} ${
+      age === 1 ? "day" : "days"
+    } ago`
   };
-  const freeFoodPoints =
-    opportunity.isFree &&
-    ["restaurants", "coffee", "convenience"].includes(opportunity.category)
-      ? 12
-      : 0;
-  const dealTypePoints = {
-    "digital-coupon": 6,
-    "loyalty-reward": 5,
-    "free-food": 12,
-    "fuel-reward": 8,
-    "convenience-reward": 7,
-    "stacking-strategy": 8,
-    "grand-opening": 10,
-    "promotion-event": 6,
-    "vehicle-maintenance": 10,
-    "movie-discount": 8,
-    "sports-ticket": 6,
-    "tax-holiday": 10
-  }[opportunity.dealType ?? "loyalty-reward"];
-  const preferredCoffeeBrandPoints =
-    opportunity.category === "coffee" &&
-    householdPreferences.preferredCoffeeBrands.some(
-      (merchant) => opportunity.merchant.toLowerCase().includes(merchant)
+}
+
+function valueQuality(opportunity: Opportunity): { value: number; detail: string } {
+  const dollarValue = Math.round(
+    clamp(
+      (Math.log1p(Math.max(0, opportunity.estimatedSavings)) /
+        Math.log1p(50)) *
+        100,
+      0,
+      100
     )
-      ? 8
-      : 0;
-  const searchablePreferenceText = [
+  );
+  const freeFloor = opportunity.isFree ? 55 : 0;
+  const basis = opportunity.isFree
+    ? `free reward${
+        opportunity.estimatedSavings > 0
+          ? ` plus ${money(opportunity.estimatedSavings)} estimate`
+          : ""
+      }`
+    : `${money(opportunity.estimatedSavings)} estimated value`;
+  return {
+    value: Math.max(dollarValue, freeFloor),
+    detail: basis
+  };
+}
+
+function householdFit(opportunity: Opportunity): { value: number; detail: string } {
+  const categoryFit: Record<Category, number> = {
+    grocery: 82,
+    restaurants: 72,
+    coffee: 84,
+    convenience: 64,
+    auto: 80,
+    movies: 62,
+    sports: 58,
+    "tax-free": 86,
+    financial: 24,
+    shopping: 42,
+    entertainment: 22,
+    home: 12,
+    fuel: 74,
+    local: 8
+  };
+  const searchable = [
     opportunity.title,
     opportunity.summary,
     ...opportunity.tags,
@@ -113,67 +151,217 @@ export function scoreOpportunity(
   ]
     .join(" ")
     .toLowerCase();
-  const householdFitPoints = clamp(
-    householdPreferences.preferredKeywords.filter((keyword) =>
-      searchablePreferenceText.includes(keyword.toLowerCase())
-    ).length * 3,
-    0,
-    12
-  );
-  const highPriorityHouseholdFitPoints = clamp(
-    householdPreferences.highPriorityKeywords.filter((keyword) =>
-      searchablePreferenceText.includes(keyword.toLowerCase())
-    ).length * 6,
-    0,
-    18
-  );
-  const freshnessPoints =
-    opportunity.freshness === "new"
-      ? 8
-      : opportunity.freshness === "improved"
-        ? 6
-        : 0;
-  const spendPenalty =
-    opportunity.minimumSpend > 0
-      ? clamp(opportunity.minimumSpend / Math.max(opportunity.estimatedSavings, 1), 0, 10)
-      : 0;
+  const preferredMatches = householdPreferences.preferredKeywords.filter(
+    (keyword) => searchable.includes(keyword.toLowerCase())
+  ).length;
+  const highPriorityMatches = householdPreferences.highPriorityKeywords.filter(
+    (keyword) => searchable.includes(keyword.toLowerCase())
+  ).length;
+  const matched = [
+    ...householdPreferences.highPriorityKeywords,
+    ...householdPreferences.preferredKeywords
+  ]
+    .filter((keyword) => searchable.includes(keyword.toLowerCase()))
+    .slice(0, 3);
 
-  let urgencyPoints = 0;
+  return {
+    value: Math.round(
+      clamp(
+        categoryFit[opportunity.category] +
+          preferredMatches * 4 +
+          highPriorityMatches * 7,
+        0,
+        100
+      )
+    ),
+    detail:
+      matched.length > 0
+        ? `Household match: ${matched.join(", ")}`
+        : "General household priority"
+  };
+}
+
+function localRelevance(opportunity: Opportunity): { value: number; detail: string } {
+  const distance = opportunity.distanceMiles;
+  if (distance === undefined) {
+    return { value: 55, detail: "Location not distance-confirmed" };
+  }
+  const value =
+    distance <= 1
+      ? 100
+      : distance <= 3
+        ? 92
+        : distance <= 5
+          ? 82
+          : distance <= 10
+            ? 68
+            : distance <= 20
+              ? 40
+              : 10;
+  return { value, detail: `${distance} miles from 77386` };
+}
+
+function timingQuality(
+  opportunity: Opportunity,
+  today: Date
+): { value: number; detail: string } {
+  let urgency = 35;
+  let urgencyDetail = "No stated end date";
   if (opportunity.expiresOn) {
-    const remainingDays = daysUntil(opportunity.expiresOn, today);
-    if (remainingDays >= 0 && remainingDays <= 3) urgencyPoints = 14;
-    else if (remainingDays <= 7) urgencyPoints = 10;
-    else if (remainingDays <= 14) urgencyPoints = 5;
+    const remaining = daysUntil(opportunity.expiresOn, today);
+    if (remaining < 0) {
+      urgency = 0;
+      urgencyDetail = "Expired";
+    } else if (remaining <= 3) {
+      urgency = 100;
+      urgencyDetail = `Ends in ${remaining} ${remaining === 1 ? "day" : "days"}`;
+    } else if (remaining <= 7) {
+      urgency = 78;
+      urgencyDetail = `Ends in ${remaining} days`;
+    } else if (remaining <= 14) {
+      urgency = 55;
+      urgencyDetail = `Ends in ${remaining} days`;
+    } else {
+      urgency = 30;
+      urgencyDetail = `Ends ${opportunity.expiresOn}`;
+    }
   }
 
-  const rawScore =
-    28 +
-    verificationPoints +
-    valuePoints +
-    ratePoints +
-    freePoints +
-    categoryPreferencePoints[opportunity.category] +
-    freeFoodPoints +
-    dealTypePoints +
-    preferredCoffeeBrandPoints +
-    freshnessPoints +
-    householdFitPoints +
-    highPriorityHouseholdFitPoints +
-    urgencyPoints -
-    frictionPenalty -
-    spendPenalty;
+  const freshness =
+    opportunity.freshness === "new"
+      ? 100
+      : opportunity.freshness === "improved"
+        ? 88
+        : opportunity.freshness === "current"
+          ? 70
+          : 45;
+  const freshnessDetail =
+    opportunity.freshness === "new"
+      ? "newly found"
+      : opportunity.freshness === "improved"
+        ? "recently improved"
+        : opportunity.freshness === "monitoring"
+          ? "monitoring only"
+          : "current";
 
-  const score = Math.round(clamp(rawScore, 0, 100));
+  return {
+    value: Math.round(urgency * 0.7 + freshness * 0.3),
+    detail: `${urgencyDetail}; ${freshnessDetail}`
+  };
+}
+
+function effortQuality(opportunity: Opportunity): { value: number; detail: string } {
+  return {
+    value: { low: 100, medium: 60, high: 20 }[opportunity.friction],
+    detail: `${opportunity.friction} redemption effort`
+  };
+}
+
+function spendEfficiency(opportunity: Opportunity): { value: number; detail: string } {
+  if (opportunity.minimumSpend <= 0) {
+    return { value: 100, detail: "No required spend" };
+  }
+  const ratio =
+    opportunity.minimumSpend / Math.max(opportunity.estimatedSavings, 0.01);
+  const value =
+    ratio <= 1
+      ? 95
+      : ratio <= 2
+        ? 80
+        : ratio <= 5
+          ? 55
+          : ratio <= 10
+            ? 30
+            : 10;
+  return {
+    value,
+    detail: `${money(opportunity.minimumSpend)} required per ${money(
+      opportunity.estimatedSavings
+    )} saved`
+  };
+}
+
+function stackability(opportunity: Opportunity): { value: number; detail: string } {
+  if (opportunity.stackNote) {
+    return { value: 100, detail: "Compatible stack documented" };
+  }
+
+  const dealTypeValue: Record<NonNullable<Opportunity["dealType"]>, number> = {
+    "stacking-strategy": 90,
+    "fuel-reward": 75,
+    "digital-coupon": 68,
+    "loyalty-reward": 60,
+    "convenience-reward": 58,
+    "free-food": 42,
+    "grand-opening": 38,
+    "promotion-event": 34,
+    "vehicle-maintenance": 32,
+    "movie-discount": 30,
+    "sports-ticket": 28,
+    "tax-holiday": 26
+  };
+  return {
+    value: opportunity.dealType ? dealTypeValue[opportunity.dealType] : 25,
+    detail: "No compatible stack documented"
+  };
+}
+
+export function scoreOpportunity(
+  opportunity: Opportunity,
+  today = new Date()
+): ScoredOpportunity {
+  const factors = [
+    evidenceQuality(opportunity, today),
+    valueQuality(opportunity),
+    {
+      value: clamp((opportunity.savingsRate ?? 0) * 2, 0, 100),
+      detail:
+        opportunity.savingsRate !== undefined
+          ? `${opportunity.savingsRate}% saved`
+          : "Savings rate not published"
+    },
+    householdFit(opportunity),
+    localRelevance(opportunity),
+    timingQuality(opportunity, today),
+    effortQuality(opportunity),
+    spendEfficiency(opportunity),
+    stackability(opportunity)
+  ];
+  const weights = [18, 24, 6, 10, 8, 10, 9, 8, 7];
+  const labels = [
+    "Evidence",
+    "Dollar value",
+    "Savings rate",
+    "Household fit",
+    "Local relevance",
+    "Timing",
+    "Effort",
+    "Required spend",
+    "Stackability"
+  ];
+  const scoreBreakdown: ScoreFactor[] = factors.map((factor, index) => ({
+    label: labels[index],
+    points: factor.value * (weights[index] / 100),
+    weight: weights[index],
+    detail: factor.detail
+  }));
+  const score = Math.round(
+    clamp(
+      scoreBreakdown.reduce((total, factor) => total + factor.points, 0),
+      0,
+      100
+    )
+  );
   const scoreLabel =
-    score >= 85
+    score >= 88
       ? "Excellent"
-      : score >= 70
+      : score >= 72
         ? "Strong"
         : score >= 50
           ? "Worth a look"
           : "Low priority";
 
-  return { ...opportunity, score, scoreLabel };
+  return { ...opportunity, score, scoreLabel, scoreBreakdown };
 }
 
 export function rankOpportunities(
@@ -186,7 +374,20 @@ export function rankOpportunities(
         !isExpired(opportunity, today) && !isExcludedByPreferences(opportunity)
     )
     .map((opportunity) => scoreOpportunity(opportunity, today))
-    .sort((first, second) => second.score - first.score);
+    .sort((first, second) => {
+      if (second.score !== first.score) return second.score - first.score;
+      if (second.estimatedSavings !== first.estimatedSavings) {
+        return second.estimatedSavings - first.estimatedSavings;
+      }
+      const firstDistance = first.distanceMiles ?? Number.POSITIVE_INFINITY;
+      const secondDistance = second.distanceMiles ?? Number.POSITIVE_INFINITY;
+      if (firstDistance !== secondDistance) {
+        return firstDistance - secondDistance;
+      }
+      return `${first.merchant} ${first.title}`.localeCompare(
+        `${second.merchant} ${second.title}`
+      );
+    });
 }
 
 export function startOfWeek(date = new Date()): Date {

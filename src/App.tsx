@@ -34,7 +34,7 @@ import opportunitiesData from "./data/opportunities.json";
 import { GroceryDashboard, SavingsTools } from "./components/SavingsTools";
 import { SettlementsDashboard } from "./components/SettlementsDashboard";
 import settlementsData from "./data/settlements.json";
-import { formatCurrency, rankOpportunities } from "./lib/scoring";
+import { formatCurrency, rankOpportunities, startOfWeek } from "./lib/scoring";
 import { rankSettlements } from "./lib/settlements";
 import { readRedeemedIds, readSavedIds, toggleStoredId } from "./lib/storage";
 import type {
@@ -63,6 +63,20 @@ const currentSettlements = rankSettlements(
 const activeCategories = Array.from(
   new Set(currentOpportunities.map((opportunity) => opportunity.category))
 );
+const todayLabel = new Intl.DateTimeFormat("en-US", {
+  weekday: "long",
+  month: "short",
+  day: "numeric"
+}).format(new Date());
+const latestSourceCheck = opportunities.reduce((latest, opportunity) => {
+  return opportunity.source.checkedOn > latest
+    ? opportunity.source.checkedOn
+    : latest;
+}, "0000-00-00");
+const currentWeekLabel = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric"
+}).format(startOfWeek());
 
 const CATEGORY_META: Record<
   Category,
@@ -200,6 +214,23 @@ function OpportunityCard({
         </div>
         <h3>{opportunity.title}</h3>
         <p>{opportunity.summary}</p>
+
+        <details className="score-breakdown">
+          <summary>Score factors</summary>
+          <ul>
+            {opportunity.scoreBreakdown.map((factor) => (
+              <li key={factor.label}>
+                <div>
+                  <strong>{factor.label}</strong>
+                  <span>{factor.detail}</span>
+                </div>
+                <output aria-label={`${factor.label} points`}>
+                  {factor.points.toFixed(1)}/{factor.weight}
+                </output>
+              </li>
+            ))}
+          </ul>
+        </details>
 
         {opportunity.estimatedSavings > 0 && (
           <div className="deal-math">
@@ -424,7 +455,7 @@ export default function App() {
             Spring / The Woodlands
           </div>
           <div className="topbar__meta">
-            <span>Thursday, July 23</span>
+            <span>{todayLabel}</span>
             <div className="avatar" aria-label="Personal workspace">
               CS
             </div>
@@ -484,7 +515,7 @@ export default function App() {
                         <span>Search radius</span>
                       </div>
                     </div>
-                    <small>Last source review · Jul 23, 2026</small>
+                    <small>Last source review · {formatDate(latestSourceCheck)}</small>
                   </div>
                 </div>
               </section>
@@ -618,7 +649,7 @@ export default function App() {
                 <h1>{view === "deals" ? "All opportunities" : "Rewards programs"}</h1>
                 <p>
                   {view === "deals"
-                    ? "Ranked by value, evidence quality, urgency, and effort."
+                    ? "Ranked by evidence, value, household fit, proximity, timing, effort, spend efficiency, and stackability."
                     : "Official programs and research leads. No passwords or account credentials are stored here."}
                 </p>
               </section>
@@ -686,7 +717,7 @@ export default function App() {
           {view === "weekly" && (
             <>
               <section className="page-heading">
-                <span className="eyebrow">Week of July 20</span>
+                <span className="eyebrow">Week of {currentWeekLabel}</span>
                 <h1>Your Monday briefing</h1>
                 <p>A calm, prioritized plan for the week ahead.</p>
               </section>
@@ -792,10 +823,10 @@ export default function App() {
                 <aside className="weekly-aside">
                   <div className="weekly-aside__card">
                     <span className="eyebrow">Report cadence</span>
-                    <h3>Every Monday at 8:00 AM</h3>
+                    <h3>Daily checks, weekly plan</h3>
                     <p>
-                    The local scheduled task is installed and set to refresh the report every
-                    Monday morning.
+                    Official public sources are checked daily. The Monday briefing turns those
+                    findings into this week's highest-value actions.
                     </p>
                   </div>
                   <div className="weekly-aside__card">
@@ -803,8 +834,9 @@ export default function App() {
                     <ul>
                       <li><ShieldCheck size={15} /> Official evidence</li>
                       <li><CircleDollarSign size={15} /> Real dollar value</li>
+                      <li><MapPin size={15} /> Household and local fit</li>
                       <li><CalendarDays size={15} /> Time sensitivity</li>
-                      <li><Sparkles size={15} /> Low effort to redeem</li>
+                      <li><Sparkles size={15} /> Effort, spend, and stacks</li>
                     </ul>
                   </div>
                   <div className="weekly-aside__card weekly-aside__card--warning">

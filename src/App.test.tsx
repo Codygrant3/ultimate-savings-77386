@@ -22,6 +22,17 @@ describe("Savings Desk interactions", () => {
     expect(screen.getByPlaceholderText("Search merchant or offer")).toBeTruthy();
   });
 
+  it("explains why each opportunity earned its score", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Browse this week" }));
+    fireEvent.click(screen.getAllByText("Score factors")[0]);
+
+    expect(screen.getAllByText("Evidence").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Local relevance").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Stackability").length).toBeGreaterThan(0);
+  });
+
   it("persists a saved opportunity locally", () => {
     render(<App />);
 

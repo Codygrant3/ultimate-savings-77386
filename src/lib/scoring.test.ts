@@ -122,4 +122,54 @@ describe("savings scoring", () => {
       "teen-school"
     );
   });
+
+  it("uses proximity as a ranking criterion", () => {
+    const today = new Date("2026-07-23T12:00:00");
+    const nearby = scoreOpportunity(
+      { ...baseOpportunity, id: "nearby", distanceMiles: 2 },
+      today
+    );
+    const distant = scoreOpportunity(
+      { ...baseOpportunity, id: "distant", distanceMiles: 25 },
+      today
+    );
+
+    expect(nearby.score).toBeGreaterThan(distant.score);
+    expect(nearby.scoreBreakdown.find(({ label }) => label === "Local relevance")?.detail).toBe(
+      "2 miles from 77386"
+    );
+  });
+
+  it("penalizes stale source evidence", () => {
+    const today = new Date("2026-07-23T12:00:00");
+    const fresh = scoreOpportunity(baseOpportunity, today);
+    const stale = scoreOpportunity(
+      {
+        ...baseOpportunity,
+        id: "stale",
+        source: { ...baseOpportunity.source, checkedOn: "2026-06-01" }
+      },
+      today
+    );
+
+    expect(stale.score).toBeLessThan(fresh.score);
+    expect(stale.scoreBreakdown[0].detail).toContain("checked 52 days ago");
+  });
+
+  it("rewards a documented compatible stack without saturating the total score", () => {
+    const today = new Date("2026-07-23T12:00:00");
+    const stacked = scoreOpportunity(
+      { ...baseOpportunity, id: "stacked", stackNote: "Digital coupon plus loyalty" },
+      today
+    );
+    const unstacked = scoreOpportunity(
+      { ...baseOpportunity, id: "unstacked" },
+      today
+    );
+
+    expect(stacked.score).toBeGreaterThan(unstacked.score);
+    expect(stacked.scoreBreakdown).toHaveLength(9);
+    expect(stacked.scoreBreakdown.reduce((total, factor) => total + factor.weight, 0)).toBe(100);
+    expect(stacked.score).toBeLessThan(100);
+  });
 });

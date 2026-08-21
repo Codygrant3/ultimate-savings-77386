@@ -1,258 +1,11 @@
 {
-  "generatedAt": "2026-08-21T15:05:26.512Z",
+  "generatedAt": "2026-08-21T15:55:37.263Z",
   "weekOf": "2026-08-17",
   "zipCode": "77386",
   "totalPotentialSavings": 159.49,
   "verifiedCount": 36,
   "expiringCount": 16,
   "opportunities": [
-    {
-      "id": "whataburger-signup-free-burger-2026",
-      "merchant": "Whataburger Rewards",
-      "title": "Free Whataburger for new app members",
-      "summary": "Whataburger's official newsroom states that guests who download the app and create an account automatically receive a free Whataburger.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "App and account specific; confirm the reward is loaded and the selected Spring-area restaurant participates before visiting.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "new member",
-        "app",
-        "welcome reward"
-      ],
-      "source": {
-        "label": "Whataburger official newsroom",
-        "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-20"
-      },
-      "actionLabel": "Check welcome reward",
-      "tier": "A",
-      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
-      "finePrint": "A dollar value is not estimated because local menu pricing and the account-specific reward details were not publicly verified. App enrollment and participating-location availability apply.",
-      "expirationLabel": "New members",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "free-food",
-        "new-member",
-        "app-specific"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "wendys-wednesday-free-nuggets-2026",
-      "merchant": "Wendy's",
-      "title": "Free 6-piece nuggets Wednesday with $5 purchase",
-      "summary": "Wendy's official offers page lists free 6-piece nuggets with a $5 qualifying purchase for Wendy's Wednesday.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 5,
-      "isFree": true,
-      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "Wednesday",
-        "app",
-        "qualifying purchase"
-      ],
-      "source": {
-        "label": "Wendy's official offers page",
-        "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-19"
-      },
-      "actionLabel": "Claim Wednesday offer",
-      "tier": "A",
-      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
-      "finePrint": "Requires a $5 qualifying purchase on Wednesday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local nugget price was not verified.",
-      "expirationLabel": "Wednesdays while listed",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "free-food",
-        "weekday",
-        "app-specific"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "wendys-fryday-free-fry-2026",
-      "merchant": "Wendy's",
-      "title": "Free any-size fry Friday with $5 purchase",
-      "summary": "Wendy's official offers page lists a free any-size fry with a $5 qualifying purchase for Fryday.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 5,
-      "isFree": true,
-      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "Friday",
-        "app",
-        "qualifying purchase"
-      ],
-      "source": {
-        "label": "Wendy's official offers page",
-        "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-19"
-      },
-      "actionLabel": "Claim Friday offer",
-      "tier": "A",
-      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
-      "finePrint": "Requires a $5 qualifying purchase on Friday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local fry price was not verified.",
-      "expirationLabel": "Fridays while listed",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "free-food",
-        "weekday",
-        "app-specific"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "wendys-free-small-chili-2026-08",
-      "merchant": "Wendy's",
-      "title": "Free small chili with $5 purchase",
-      "summary": "Wendy's official offers page lists a free small chili with a $5 qualifying purchase through August 24.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 5,
-      "isFree": true,
-      "expiresOn": "2026-08-24",
-      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "app",
-        "qualifying purchase"
-      ],
-      "source": {
-        "label": "Wendy's official offers page",
-        "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-19"
-      },
-      "actionLabel": "Claim chili offer",
-      "tier": "A",
-      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
-      "finePrint": "Requires a $5 qualifying purchase and is listed through August 24. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local chili price was not verified.",
-      "expirationLabel": "Ends August 24",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "new",
-      "discoveredOn": "2026-08-12",
-      "preferenceSignals": [
-        "free-food",
-        "app-specific"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "sonic-rewards-welcome-reward-2026",
-      "merchant": "SONIC Rewards",
-      "title": "Free medium fries, tots, or drink for new members",
-      "summary": "The nationwide SONIC Rewards program includes a welcome reward with a choice of medium fries, tots, or a drink.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "Nationwide app offer; a convenient participating 77386-area location was not confirmed in this public scan.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "free drink",
-        "new member",
-        "app"
-      ],
-      "source": {
-        "label": "SONIC official newsroom",
-        "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
-        "checkedOn": "2026-08-17"
-      },
-      "actionLabel": "Check welcome reward",
-      "tier": "A",
-      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
-      "finePrint": "The official newsroom does not state a purchase requirement for the welcome reward. App enrollment and participating-location availability apply; confirm the reward is loaded before making a trip. No dollar value is estimated because local menu pricing was not verified.",
-      "expirationLabel": "New members",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "new",
-      "discoveredOn": "2026-08-09",
-      "preferenceSignals": [
-        "free-food",
-        "free-drink",
-        "new-member",
-        "app-specific"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "heb-general-mills-free-snack-bags-2026-08",
-      "merchant": "H-E-B",
-      "title": "Free snack or sandwich bags with family-size cereal",
-      "summary": "Buy one qualifying 14- to 24-ounce General Mills family-size cereal and get a 50-count box of H-E-B Texas Tough snack or sandwich bags free.",
-      "category": "grocery",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "expiresOn": "2026-08-25",
-      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "grocery",
-        "cereal",
-        "sandwich bags",
-        "free item",
-        "digital coupon",
-        "back to school",
-        "location-gated"
-      ],
-      "source": {
-        "label": "H-E-B official coupon detail",
-        "url": "https://www.heb.com/digital-coupon/coupon-detail/84044129",
-        "checkedOn": "2026-08-19"
-      },
-      "actionLabel": "Check and clip coupon",
-      "tier": "A",
-      "stackNote": "Several qualifying cereals show a price cut on the public page, but confirm both the price cut and coupon in the selected Spring-area store before checkout.",
-      "finePrint": "Requires one qualifying General Mills family-size cereal, 14 to 24 ounces. The official page lists one free 50-count H-E-B Texas Tough snack- or sandwich-bag box, unlimited use, and an August 25 expiration. No dollar value is estimated because the public page is bound to Victoria rather than a verified Spring store.",
-      "expirationLabel": "Ends August 25",
-      "availability": "available",
-      "dealType": "digital-coupon",
-      "freshness": "new",
-      "discoveredOn": "2026-08-19",
-      "preferenceSignals": [
-        "grocery",
-        "staple",
-        "back-to-school",
-        "free-item",
-        "coupon-stack",
-        "location-gated"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
     {
       "id": "heb-starbucks-frappuccino-bogo-2026-08",
       "merchant": "H-E-B",
@@ -294,145 +47,159 @@
         "coupon-stack",
         "location-gated"
       ],
-      "score": 100,
-      "scoreLabel": "Excellent"
+      "score": 83,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 6,
+          "weight": 6,
+          "detail": "50% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.8,
+          "weight": 10,
+          "detail": "Household match: coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
-      "id": "heb-frozen-fruit-free-ice-cream-2026-08",
-      "merchant": "H-E-B",
-      "title": "Free ice cream pint with bulk frozen fruit",
-      "summary": "Buy one qualifying 48- or 80-ounce H-E-B frozen fruit item and get one qualifying pint of H-E-B Creamy Creations ice cream or sherbet free.",
-      "category": "grocery",
-      "estimatedSavings": 0,
+      "id": "take5-rayford-15-off-oil-change-2026",
+      "merchant": "Take 5 Oil Change",
+      "title": "$15 toward an eligible oil change",
+      "summary": "The Take 5 location in 77386 publishes a local $15 oil-change coupon.",
+      "category": "auto",
+      "estimatedSavings": 15,
       "minimumSpend": 0,
-      "isFree": true,
-      "expiresOn": "2026-08-25",
-      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "grocery",
-        "frozen fruit",
-        "ice cream",
-        "free item",
-        "digital coupon",
-        "location-gated"
-      ],
-      "source": {
-        "label": "H-E-B official coupon detail",
-        "url": "https://www.heb.com/digital-coupon/coupon-detail/84056038",
-        "checkedOn": "2026-08-19"
-      },
-      "actionLabel": "Check and clip coupon",
-      "tier": "A",
-      "stackNote": "Use only if the large frozen-fruit package is already a good unit-price fit; confirm the coupon in the selected Spring store.",
-      "finePrint": "Requires one qualifying H-E-B frozen-fruit package, 48 or 80 ounces, and provides one qualifying pint of H-E-B Creamy Creations ice cream or sherbet. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
-      "expirationLabel": "Ends August 25",
-      "availability": "available",
-      "dealType": "digital-coupon",
-      "freshness": "new",
-      "discoveredOn": "2026-08-19",
-      "preferenceSignals": [
-        "grocery",
-        "staple",
-        "free-item",
-        "coupon-stack",
-        "location-gated"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "heb-kodiak-five-off-twenty-2026-08",
-      "merchant": "H-E-B",
-      "title": "$5 off a $20 Kodiak basket",
-      "summary": "Clip the public H-E-B coupon for $5 off a qualifying $20 basket of Kodiak items.",
-      "category": "grocery",
-      "estimatedSavings": 5,
-      "minimumSpend": 20,
-      "savingsRate": 25,
       "isFree": false,
-      "expiresOn": "2026-08-25",
-      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
+      "locationNote": "442 Rayford Road, Spring, TX 77386.",
       "verification": "verified",
       "friction": "low",
       "tags": [
-        "grocery",
-        "breakfast",
-        "protein",
-        "digital coupon",
-        "location-gated"
+        "oil change",
+        "vehicle maintenance",
+        "local coupon"
       ],
       "source": {
-        "label": "H-E-B official coupon detail",
-        "url": "https://www.heb.com/digital-coupon/coupon-detail/84048909",
+        "label": "Take 5 Spring location coupons",
+        "url": "https://www.take5.com/locations/texas/spring/30083/",
         "checkedOn": "2026-08-19"
       },
-      "actionLabel": "Check and clip coupon",
+      "actionLabel": "Get coupon",
       "tier": "A",
-      "stackNote": "The 25% rate is achieved only at exactly $20; compare unit prices and confirm any item-level price cuts can combine before checkout.",
-      "finePrint": "Requires a qualifying $20 Kodiak basket. The official page lists unlimited use and an August 25 expiration. The $5 coupon value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
-      "expirationLabel": "Ends August 25",
+      "distanceMiles": 2.4,
+      "stackNote": "Compare the final oil specification and price with other nearby official coupons before redeeming.",
+      "finePrint": "Coupon requires enrollment in Take 5 marketing email or text delivery. Vehicle eligibility and service pricing vary; military and rideshare discounts have separate requirements.",
+      "expirationLabel": "Check current coupon",
       "availability": "available",
-      "dealType": "digital-coupon",
-      "freshness": "new",
-      "discoveredOn": "2026-08-19",
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
       "preferenceSignals": [
-        "grocery",
-        "staple",
-        "high-value",
-        "coupon-stack",
-        "location-gated"
+        "vehicle-maintenance",
+        "local-high-value"
       ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "heb-frito-lay-free-gatorade-2026-08",
-      "merchant": "H-E-B",
-      "title": "Free Gatorade six-pack with 42-count snack variety pack",
-      "summary": "Buy one qualifying 42-count Frito-Lay snack variety pack and get one qualifying six-pack of 12-ounce Gatorade bottles free.",
-      "category": "grocery",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "expiresOn": "2026-08-25",
-      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "grocery",
-        "snacks",
-        "sports drink",
-        "free item",
-        "back to school",
-        "digital coupon",
-        "location-gated"
-      ],
-      "source": {
-        "label": "H-E-B official coupon detail",
-        "url": "https://www.heb.com/digital-coupon/coupon-detail/84048755",
-        "checkedOn": "2026-08-19"
-      },
-      "actionLabel": "Check and clip coupon",
-      "tier": "A",
-      "stackNote": "Use only if the 42-count snack pack is already planned; compare the effective per-item cost and confirm the selected Spring store carries the coupon.",
-      "finePrint": "Requires one qualifying 42-count Frito-Lay snack variety pack and provides one qualifying six-pack of 12-ounce Gatorade bottles. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
-      "expirationLabel": "Ends August 25",
-      "availability": "available",
-      "dealType": "digital-coupon",
-      "freshness": "new",
-      "discoveredOn": "2026-08-19",
-      "preferenceSignals": [
-        "grocery",
-        "teen",
-        "back-to-school",
-        "free-item",
-        "coupon-stack",
-        "location-gated"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
+      "score": 79,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 17.04,
+          "weight": 24,
+          "detail": "$15.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.4 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "heb-mac-cups-free-capri-sun-2026-08",
@@ -478,121 +245,466 @@
         "coupon-stack",
         "location-gated"
       ],
-      "score": 100,
-      "scoreLabel": "Excellent"
+      "score": 78,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 10,
+          "weight": 10,
+          "detail": "Household match: teen, back to school, back-to-school"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
-      "id": "starbucks-birthday-reward-2026",
-      "merchant": "Starbucks Rewards",
-      "title": "Free birthday drink or food item",
-      "summary": "Eligible members receive a complimentary handcrafted drink, food item, or ready-to-drink bottled beverage.",
-      "category": "coffee",
-      "estimatedSavings": 6,
+      "id": "heb-frito-lay-free-gatorade-2026-08",
+      "merchant": "H-E-B",
+      "title": "Free Gatorade six-pack with 42-count snack variety pack",
+      "summary": "Buy one qualifying 42-count Frito-Lay snack variety pack and get one qualifying six-pack of 12-ounce Gatorade bottles free.",
+      "category": "grocery",
+      "estimatedSavings": 0,
       "minimumSpend": 0,
       "isFree": true,
-      "locationNote": "Participating Starbucks locations; confirm reward redemption support.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "true freebie",
-        "birthday",
-        "coffee",
-        "rewards"
-      ],
-      "source": {
-        "label": "Starbucks Rewards terms",
-        "url": "https://www.starbucks.com/rewards/terms/",
-        "checkedOn": "2026-08-16"
-      },
-      "actionLabel": "Review eligibility",
-      "tier": "B",
-      "distanceMiles": 2.1,
-      "stackNote": "No purchase is required when redeeming the earned birthday benefit.",
-      "finePrint": "Join at least seven days before your birthday, add your birthday, and make at least one Star-earning transaction beforehand each year. Green members redeem on the birthday; Gold members have seven days and Reserve members have 30 days.",
-      "expirationLabel": "Account-specific birthday window",
-      "availability": "available",
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "dutch-bros-free-medium-app-2026",
-      "merchant": "Dutch Bros",
-      "title": "Free medium drink for eligible new app users",
-      "summary": "Dutch Bros currently advertises a free medium drink when a new user downloads the app.",
-      "category": "coffee",
-      "estimatedSavings": 5.5,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "Confirm the reward and nearest participating Spring shop in the app before visiting.",
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
       "verification": "verified",
       "friction": "low",
       "tags": [
-        "coffee",
-        "free drink",
-        "new app user",
-        "preferred brand"
+        "grocery",
+        "snacks",
+        "sports drink",
+        "free item",
+        "back to school",
+        "digital coupon",
+        "location-gated"
       ],
       "source": {
-        "label": "Dutch Bros Dutch 101",
-        "url": "https://www.dutchbros.com/dutch-101/",
-        "checkedOn": "2026-08-11"
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84048755",
+        "checkedOn": "2026-08-19"
       },
-      "actionLabel": "Review app offer",
+      "actionLabel": "Check and clip coupon",
       "tier": "A",
-      "stackNote": "Keep the signup reward separate from paid purchases unless the app explicitly allows stacking.",
-      "finePrint": "New app users only. The free-medium reward is issued on registration and expires after 180 days. Confirm the reward and participating shop before making a special trip.",
-      "expirationLabel": "180 days after registration",
+      "stackNote": "Use only if the 42-count snack pack is already planned; compare the effective per-item cost and confirm the selected Spring store carries the coupon.",
+      "finePrint": "Requires one qualifying 42-count Frito-Lay snack variety pack and provides one qualifying six-pack of 12-ounce Gatorade bottles. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
+      "expirationLabel": "Ends August 25",
       "availability": "available",
-      "dealType": "free-food",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
       "preferenceSignals": [
-        "preferred-coffee",
-        "free-drink",
-        "official-source"
+        "grocery",
+        "teen",
+        "back-to-school",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
       ],
-      "score": 100,
-      "scoreLabel": "Excellent"
+      "score": 78,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 10,
+          "weight": 10,
+          "detail": "Household match: teen, back to school, back-to-school"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
-      "id": "rainbow-car-care-birthday-wash-2026",
-      "merchant": "Rainbow Car Care",
-      "title": "Free full-service car wash on your birthday",
-      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
-      "category": "auto",
-      "estimatedSavings": 20,
+      "id": "heb-general-mills-free-snack-bags-2026-08",
+      "merchant": "H-E-B",
+      "title": "Free snack or sandwich bags with family-size cereal",
+      "summary": "Buy one qualifying 14- to 24-ounce General Mills family-size cereal and get a 50-count box of H-E-B Texas Tough snack or sandwich bags free.",
+      "category": "grocery",
+      "estimatedSavings": 0,
       "minimumSpend": 0,
       "isFree": true,
-      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
       "verification": "verified",
-      "friction": "medium",
+      "friction": "low",
       "tags": [
-        "car wash",
-        "birthday",
-        "free service",
-        "loyalty"
+        "grocery",
+        "cereal",
+        "sandwich bags",
+        "free item",
+        "digital coupon",
+        "back to school",
+        "location-gated"
       ],
       "source": {
-        "label": "Rainbow Car Care frequent wash program",
-        "url": "https://rainbowcarcare.com/frequent-wash-program",
-        "checkedOn": "2026-08-15"
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84044129",
+        "checkedOn": "2026-08-19"
       },
-      "actionLabel": "Review wash program",
+      "actionLabel": "Check and clip coupon",
       "tier": "A",
-      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
-      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
-      "expirationLabel": "Your birthday",
+      "stackNote": "Several qualifying cereals show a price cut on the public page, but confirm both the price cut and coupon in the selected Spring-area store before checkout.",
+      "finePrint": "Requires one qualifying General Mills family-size cereal, 14 to 24 ounces. The official page lists one free 50-count H-E-B Texas Tough snack- or sandwich-bag box, unlimited use, and an August 25 expiration. No dollar value is estimated because the public page is bound to Victoria rather than a verified Spring store.",
+      "expirationLabel": "Ends August 25",
       "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
       "preferenceSignals": [
-        "vehicle-maintenance",
-        "free-service",
-        "loyalty-reward"
+        "grocery",
+        "staple",
+        "back-to-school",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
       ],
-      "score": 100,
-      "scoreLabel": "Excellent"
+      "score": 78,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 10,
+          "weight": 10,
+          "detail": "Household match: back to school, back-to-school, back to school"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "shell-fuel-rewards-new-member-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "10¢, 20¢, then 30¢ off per gallon",
+      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
+      "category": "fuel",
+      "estimatedSavings": 9,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "new member",
+        "fuel",
+        "three fill-ups"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-08-18"
+      },
+      "actionLabel": "Review offer",
+      "tier": "A",
+      "distanceMiles": 2.4,
+      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
+      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
+      "expirationLabel": "Use within 60 days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "stacking"
+      ],
+      "score": 76,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 2 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 14.16,
+          "weight": 24,
+          "detail": "$9.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.4 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "heb-frozen-fruit-free-ice-cream-2026-08",
+      "merchant": "H-E-B",
+      "title": "Free ice cream pint with bulk frozen fruit",
+      "summary": "Buy one qualifying 48- or 80-ounce H-E-B frozen fruit item and get one qualifying pint of H-E-B Creamy Creations ice cream or sherbet free.",
+      "category": "grocery",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "frozen fruit",
+        "ice cream",
+        "free item",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84056038",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "Use only if the large frozen-fruit package is already a good unit-price fit; confirm the coupon in the selected Spring store.",
+      "finePrint": "Requires one qualifying H-E-B frozen-fruit package, 48 or 80 ounces, and provides one qualifying pint of H-E-B Creamy Creations ice cream or sherbet. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
+      "expirationLabel": "Ends August 25",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-19",
+      "preferenceSignals": [
+        "grocery",
+        "staple",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "score": 76,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.200000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "heb-academy-gift-card-fifteen-off-2026-08",
@@ -637,49 +749,161 @@
         "high-value",
         "location-gated"
       ],
-      "score": 100,
-      "scoreLabel": "Excellent"
+      "score": 75,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 17.04,
+          "weight": 24,
+          "detail": "$15.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 2.4,
+          "weight": 6,
+          "detail": "20% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.9,
+          "weight": 10,
+          "detail": "Household match: teen, back to school, back-to-school"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$75.00 required per $15.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
-      "id": "chipotle-sundays-free-entree-2026",
-      "merchant": "Chipotle",
-      "title": "Free entree with code SUNDAYS after 3 p.m.",
-      "summary": "On Sundays August 23, August 30, and September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
+      "id": "seven-rewards-fuel-welcome-2026",
+      "merchant": "7REWARDS Fuel",
+      "title": "11¢ off per gallon on the first seven fills",
+      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
+      "category": "fuel",
+      "estimatedSavings": 11.55,
       "minimumSpend": 0,
-      "isFree": true,
-      "expiresOn": "2026-09-06",
-      "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
+      "isFree": false,
+      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
       "verification": "verified",
-      "friction": "medium",
+      "friction": "low",
       "tags": [
-        "app",
-        "free food",
-        "Sunday",
-        "promo code"
+        "fuel",
+        "new member",
+        "seven fills",
+        "local station"
       ],
       "source": {
-        "label": "Chipotle official newsroom",
-        "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-        "checkedOn": "2026-08-21"
+        "label": "7REWARDS Fuel",
+        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
+        "checkedOn": "2026-08-17"
       },
-      "actionLabel": "Check Sundays code",
+      "actionLabel": "Review fuel offer",
       "tier": "A",
-      "stackNote": "Use code SUNDAYS on a same-day digital order after 3 p.m. Do not assume it combines with other coupons.",
-      "finePrint": "Valid 8/23/26, 8/30/26, and 9/6/26. One free entree with purchase of at least two other entrees. Chipotle.com and mobile app only. Redemption subject to availability. No dollar value is estimated because local entree prices were not verified.",
-      "expirationLabel": "Aug 23, Aug 30, and Sep 6 after 3 p.m.",
+      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
+      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
+      "expirationLabel": "First 90 days or seven trips",
       "availability": "available",
-      "dealType": "promotion-event",
+      "dealType": "fuel-reward",
       "freshness": "new",
-      "discoveredOn": "2026-08-18",
+      "discoveredOn": "2026-08-09",
       "preferenceSignals": [
-        "app-specific",
-        "time-sensitive",
-        "free-food"
+        "fuel-reward",
+        "new-member",
+        "local-high-value",
+        "stacking"
       ],
-      "score": 100,
-      "scoreLabel": "Excellent"
+      "score": 75,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 3 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 15.36,
+          "weight": 24,
+          "detail": "$11.55 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "wendys-paze-ten-back-2026",
@@ -722,88 +946,165 @@
         "account-specific",
         "payment-method-specific"
       ],
-      "score": 99,
-      "scoreLabel": "Excellent"
+      "score": 75,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 14.639999999999999,
+          "weight": 24,
+          "detail": "$10.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 6,
+          "weight": 6,
+          "detail": "100% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-09-10; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 7.6000000000000005,
+          "weight": 8,
+          "detail": "$10.00 required per $10.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
-      "id": "take5-rayford-15-off-oil-change-2026",
-      "merchant": "Take 5 Oil Change",
-      "title": "$15 toward an eligible oil change",
-      "summary": "The Take 5 location in 77386 publishes a local $15 oil-change coupon.",
-      "category": "auto",
-      "estimatedSavings": 15,
-      "minimumSpend": 0,
+      "id": "heb-kodiak-five-off-twenty-2026-08",
+      "merchant": "H-E-B",
+      "title": "$5 off a $20 Kodiak basket",
+      "summary": "Clip the public H-E-B coupon for $5 off a qualifying $20 basket of Kodiak items.",
+      "category": "grocery",
+      "estimatedSavings": 5,
+      "minimumSpend": 20,
+      "savingsRate": 25,
       "isFree": false,
-      "locationNote": "442 Rayford Road, Spring, TX 77386.",
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
       "verification": "verified",
       "friction": "low",
       "tags": [
-        "oil change",
-        "vehicle maintenance",
-        "local coupon"
+        "grocery",
+        "breakfast",
+        "protein",
+        "digital coupon",
+        "location-gated"
       ],
       "source": {
-        "label": "Take 5 Spring location coupons",
-        "url": "https://www.take5.com/locations/texas/spring/30083/",
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84048909",
         "checkedOn": "2026-08-19"
       },
-      "actionLabel": "Get coupon",
+      "actionLabel": "Check and clip coupon",
       "tier": "A",
-      "distanceMiles": 2.4,
-      "stackNote": "Compare the final oil specification and price with other nearby official coupons before redeeming.",
-      "finePrint": "Coupon requires enrollment in Take 5 marketing email or text delivery. Vehicle eligibility and service pricing vary; military and rideshare discounts have separate requirements.",
-      "expirationLabel": "Check current coupon",
+      "stackNote": "The 25% rate is achieved only at exactly $20; compare unit prices and confirm any item-level price cuts can combine before checkout.",
+      "finePrint": "Requires a qualifying $20 Kodiak basket. The official page lists unlimited use and an August 25 expiration. The $5 coupon value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
+      "expirationLabel": "Ends August 25",
       "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "local-high-value"
-      ],
-      "score": 98,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "seven-rewards-fuel-welcome-2026",
-      "merchant": "7REWARDS Fuel",
-      "title": "11¢ off per gallon on the first seven fills",
-      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
-      "category": "fuel",
-      "estimatedSavings": 11.55,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "fuel",
-        "new member",
-        "seven fills",
-        "local station"
-      ],
-      "source": {
-        "label": "7REWARDS Fuel",
-        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-        "checkedOn": "2026-08-17"
-      },
-      "actionLabel": "Review fuel offer",
-      "tier": "A",
-      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
-      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
-      "expirationLabel": "First 90 days or seven trips",
-      "availability": "available",
-      "dealType": "fuel-reward",
+      "dealType": "digital-coupon",
       "freshness": "new",
-      "discoveredOn": "2026-08-09",
+      "discoveredOn": "2026-08-19",
       "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "local-high-value",
-        "stacking"
+        "grocery",
+        "staple",
+        "high-value",
+        "coupon-stack",
+        "location-gated"
       ],
-      "score": 97,
-      "scoreLabel": "Excellent"
+      "score": 74,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 11.04,
+          "weight": 24,
+          "detail": "$5.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 3,
+          "weight": 6,
+          "detail": "25% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.200000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$20.00 required per $5.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "amc-half-price-tuesday-wednesday-2026",
@@ -843,8 +1144,257 @@
         "concessions",
         "loyalty-reward"
       ],
-      "score": 95,
-      "scoreLabel": "Excellent"
+      "score": 73,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 2 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 10.32,
+          "weight": 24,
+          "detail": "$4.44 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 6,
+          "weight": 6,
+          "detail": "50% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 6.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: movie"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 6.4,
+          "weight": 8,
+          "detail": "$8.88 required per $4.44 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "sonic-rewards-welcome-reward-2026",
+      "merchant": "SONIC Rewards",
+      "title": "Free medium fries, tots, or drink for new members",
+      "summary": "The nationwide SONIC Rewards program includes a welcome reward with a choice of medium fries, tots, or a drink.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "Nationwide app offer; a convenient participating 77386-area location was not confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "free drink",
+        "new member",
+        "app"
+      ],
+      "source": {
+        "label": "SONIC official newsroom",
+        "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
+        "checkedOn": "2026-08-17"
+      },
+      "actionLabel": "Check welcome reward",
+      "tier": "A",
+      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
+      "finePrint": "The official newsroom does not state a purchase requirement for the welcome reward. App enrollment and participating-location availability apply; confirm the reward is loaded before making a trip. No dollar value is estimated because local menu pricing was not verified.",
+      "expirationLabel": "New members",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "free-food",
+        "free-drink",
+        "new-member",
+        "app-specific"
+      ],
+      "score": 73,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 3 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8,
+          "weight": 10,
+          "detail": "Household match: free food, free drink"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "rainbow-car-care-birthday-wash-2026",
+      "merchant": "Rainbow Car Care",
+      "title": "Free full-service car wash on your birthday",
+      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
+      "category": "auto",
+      "estimatedSavings": 20,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "car wash",
+        "birthday",
+        "free service",
+        "loyalty"
+      ],
+      "source": {
+        "label": "Rainbow Car Care frequent wash program",
+        "url": "https://rainbowcarcare.com/frequent-wash-program",
+        "checkedOn": "2026-08-15"
+      },
+      "actionLabel": "Review wash program",
+      "tier": "A",
+      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
+      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
+      "expirationLabel": "Your birthday",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "free-service",
+        "loyalty-reward"
+      ],
+      "score": 72,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 15.299999999999999,
+          "weight": 18,
+          "detail": "Official source verified; checked 5 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 18.48,
+          "weight": 24,
+          "detail": "free reward plus $20.00 estimate"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: car wash"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
@@ -885,8 +1435,160 @@
         "new-app-user",
         "high-value"
       ],
-      "score": 94,
-      "scoreLabel": "Excellent"
+      "score": 72,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 17.04,
+          "weight": 24,
+          "detail": "$15.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.7,
+          "weight": 10,
+          "detail": "Ends 2026-09-30; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "whataburger-signup-free-burger-2026",
+      "merchant": "Whataburger Rewards",
+      "title": "Free Whataburger for new app members",
+      "summary": "Whataburger's official newsroom states that guests who download the app and create an account automatically receive a free Whataburger.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "App and account specific; confirm the reward is loaded and the selected Spring-area restaurant participates before visiting.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "new member",
+        "app",
+        "welcome reward"
+      ],
+      "source": {
+        "label": "Whataburger official newsroom",
+        "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
+        "checkedOn": "2026-08-20"
+      },
+      "actionLabel": "Check welcome reward",
+      "tier": "A",
+      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
+      "finePrint": "A dollar value is not estimated because local menu pricing and the account-specific reward details were not publicly verified. App enrollment and participating-location availability apply.",
+      "expirationLabel": "New members",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-11",
+      "preferenceSignals": [
+        "free-food",
+        "new-member",
+        "app-specific"
+      ],
+      "score": 72,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "seven-rewards-fuel-sms-25-cents-2026",
@@ -925,8 +1627,64 @@
         "sms-specific",
         "high-value"
       ],
-      "score": 91,
-      "scoreLabel": "Excellent"
+      "score": 71,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 3 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 15.36,
+          "weight": 24,
+          "detail": "$11.25 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "exxon-mobil-referral-five-fill-bonus-2026",
@@ -968,8 +1726,1109 @@
         "referral-code",
         "high-value"
       ],
-      "score": 91,
-      "scoreLabel": "Excellent"
+      "score": 71,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 15.36,
+          "weight": 24,
+          "detail": "$11.25 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-10-15; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "starbucks-birthday-reward-2026",
+      "merchant": "Starbucks Rewards",
+      "title": "Free birthday drink or food item",
+      "summary": "Eligible members receive a complimentary handcrafted drink, food item, or ready-to-drink bottled beverage.",
+      "category": "coffee",
+      "estimatedSavings": 6,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "Participating Starbucks locations; confirm reward redemption support.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "true freebie",
+        "birthday",
+        "coffee",
+        "rewards"
+      ],
+      "source": {
+        "label": "Starbucks Rewards terms",
+        "url": "https://www.starbucks.com/rewards/terms/",
+        "checkedOn": "2026-08-16"
+      },
+      "actionLabel": "Review eligibility",
+      "tier": "B",
+      "distanceMiles": 2.1,
+      "stackNote": "No purchase is required when redeeming the earned birthday benefit.",
+      "finePrint": "Join at least seven days before your birthday, add your birthday, and make at least one Star-earning transaction beforehand each year. Green members redeem on the birthday; Gold members have seven days and Reserve members have 30 days.",
+      "expirationLabel": "Account-specific birthday window",
+      "availability": "available",
+      "score": 69,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 15.299999999999999,
+          "weight": 18,
+          "detail": "Official source verified; checked 4 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward plus $6.00 estimate"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.8,
+          "weight": 10,
+          "detail": "Household match: coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.1 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 3.8000000000000003,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "chipotle-sundays-free-entree-2026",
+      "merchant": "Chipotle",
+      "title": "Free entree with code SUNDAYS after 3 p.m.",
+      "summary": "On Sundays August 23, August 30, and September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-09-06",
+      "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "app",
+        "free food",
+        "Sunday",
+        "promo code"
+      ],
+      "source": {
+        "label": "Chipotle official newsroom",
+        "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
+        "checkedOn": "2026-08-21"
+      },
+      "actionLabel": "Check Sundays code",
+      "tier": "A",
+      "stackNote": "Use code SUNDAYS on a same-day digital order after 3 p.m. Do not assume it combines with other coupons.",
+      "finePrint": "Valid 8/23/26, 8/30/26, and 9/6/26. One free entree with purchase of at least two other entrees. Chipotle.com and mobile app only. Redemption subject to availability. No dollar value is estimated because local entree prices were not verified.",
+      "expirationLabel": "Aug 23, Aug 30, and Sep 6 after 3 p.m.",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-18",
+      "preferenceSignals": [
+        "app-specific",
+        "time-sensitive",
+        "free-food"
+      ],
+      "score": 69,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-09-06; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "wendys-free-small-chili-2026-08",
+      "merchant": "Wendy's",
+      "title": "Free small chili with $5 purchase",
+      "summary": "Wendy's official offers page lists a free small chili with a $5 qualifying purchase through August 24.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": true,
+      "expiresOn": "2026-08-24",
+      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "app",
+        "qualifying purchase"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Claim chili offer",
+      "tier": "A",
+      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+      "finePrint": "Requires a $5 qualifying purchase and is listed through August 24. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local chili price was not verified.",
+      "expirationLabel": "Ends August 24",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-08-12",
+      "preferenceSignals": [
+        "free-food",
+        "app-specific"
+      ],
+      "score": 69,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 4 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$5.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "dutch-bros-free-medium-app-2026",
+      "merchant": "Dutch Bros",
+      "title": "Free medium drink for eligible new app users",
+      "summary": "Dutch Bros currently advertises a free medium drink when a new user downloads the app.",
+      "category": "coffee",
+      "estimatedSavings": 5.5,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "Confirm the reward and nearest participating Spring shop in the app before visiting.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "coffee",
+        "free drink",
+        "new app user",
+        "preferred brand"
+      ],
+      "source": {
+        "label": "Dutch Bros Dutch 101",
+        "url": "https://www.dutchbros.com/dutch-101/",
+        "checkedOn": "2026-08-11"
+      },
+      "actionLabel": "Review app offer",
+      "tier": "A",
+      "stackNote": "Keep the signup reward separate from paid purchases unless the app explicitly allows stacking.",
+      "finePrint": "New app users only. The free-medium reward is issued on registration and expires after 180 days. Confirm the reward and participating shop before making a special trip.",
+      "expirationLabel": "180 days after registration",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "preferred-coffee",
+        "free-drink",
+        "official-source"
+      ],
+      "score": 67,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 11.7,
+          "weight": 18,
+          "detail": "Official source verified; checked 9 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward plus $5.50 estimate"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 9.200000000000001,
+          "weight": 10,
+          "detail": "Household match: free drink, coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "shell-app-first-pay-save-25-cents-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
+      "summary": "The Shell App first-time offer awards 25 cents per gallon in savings after an initial Pay & Save transaction of at least 10 gallons.",
+      "category": "fuel",
+      "estimatedSavings": 3.75,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Shell App and linked Fuel Rewards account required; confirm the selected station near 77386 participates.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "app",
+        "first-time offer",
+        "25 cents per gallon"
+      ],
+      "source": {
+        "label": "Shell official app-offers support page",
+        "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
+        "checkedOn": "2026-08-17"
+      },
+      "actionLabel": "Review Shell App offer",
+      "tier": "B",
+      "stackNote": "Use only the savings the Shell App shows; do not assume it combines with the separate new-member or race-day rewards.",
+      "finePrint": "The initial Pay & Save transaction must include at least 10 gallons. The $3.75 estimate assumes the earned 25-cent reward is redeemed on 15 gallons. The official page does not publish an end date or full redemption window.",
+      "expirationLabel": "No end date published",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-17",
+      "preferenceSignals": [
+        "fuel-reward",
+        "app-specific",
+        "first-time"
+      ],
+      "score": 66,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 3 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 9.6,
+          "weight": 24,
+          "detail": "$3.75 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "shell-race-day-22-cents-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "22¢ off per gallon on eligible race days",
+      "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
+      "category": "fuel",
+      "estimatedSavings": 3.3,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "race day",
+        "app",
+        "opt in"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-08-18"
+      },
+      "actionLabel": "Opt in for race days",
+      "tier": "A",
+      "stackNote": "Use only the savings shown in the Fuel Rewards app; do not assume another fuel promotion combines.",
+      "finePrint": "The $3.30 estimate assumes 15 gallons on one eligible race day. Opt in once in the Shell app, use a Fuel Rewards member ID, and confirm the selected station and race day are eligible before fueling.",
+      "expirationLabel": "Eligible 2026 race days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-15",
+      "preferenceSignals": [
+        "fuel-reward",
+        "app-specific",
+        "time-sensitive"
+      ],
+      "score": 65,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 2 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 8.879999999999999,
+          "weight": 24,
+          "detail": "$3.30 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "starbucks-rewards-ongoing-2026",
+      "merchant": "Starbucks Rewards",
+      "title": "Earn toward free food and drinks",
+      "summary": "Qualifying purchases earn Stars that can be redeemed for eligible food, drinks, and customizations.",
+      "category": "coffee",
+      "estimatedSavings": 3,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Starbucks locations; confirm reward redemption support.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "rewards program",
+        "stars",
+        "coffee",
+        "food"
+      ],
+      "source": {
+        "label": "Starbucks Rewards",
+        "url": "https://www.starbucks.com/rewards",
+        "checkedOn": "2026-08-16"
+      },
+      "actionLabel": "View rewards",
+      "tier": "C",
+      "distanceMiles": 2.1,
+      "stackNote": "Personalized challenges can accelerate earning when they fit planned purchases.",
+      "finePrint": "Qualifying spend is required. Reward value depends on what you redeem and Stars can expire under program rules.",
+      "expirationLabel": "Ongoing",
+      "availability": "program",
+      "dealType": "loyalty-reward",
+      "freshness": "current",
+      "score": 65,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 15.299999999999999,
+          "weight": 18,
+          "detail": "Official source verified; checked 4 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 8.4,
+          "weight": 24,
+          "detail": "$3.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 9.200000000000001,
+          "weight": 10,
+          "detail": "Household match: free food, coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.1 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "7rewards-points-program-2026",
+      "merchant": "7REWARDS",
+      "title": "Points toward free snacks and drinks",
+      "summary": "Members earn points on qualifying purchases and can redeem them for free snacks, drinks, and other rewards.",
+      "category": "convenience",
+      "estimatedSavings": 3,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating 7-Eleven locations; confirm app availability before visiting.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "rewards program",
+        "points",
+        "snacks",
+        "drinks"
+      ],
+      "source": {
+        "label": "7REWARDS",
+        "url": "https://www.7-eleven.com/7rewards",
+        "checkedOn": "2026-08-16"
+      },
+      "actionLabel": "View rewards",
+      "tier": "B",
+      "distanceMiles": 3.2,
+      "stackNote": "Member pricing and eligible reward redemptions can combine.",
+      "finePrint": "Enrollment and qualifying purchases are required. This is earned value, not an instant signup freebie.",
+      "expirationLabel": "Ongoing",
+      "availability": "program",
+      "dealType": "convenience-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "free-drinks",
+        "surprise-rewards",
+        "loyalty"
+      ],
+      "score": 65,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 15.299999999999999,
+          "weight": 18,
+          "detail": "Official source verified; checked 4 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 8.4,
+          "weight": 24,
+          "detail": "$3.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 6.4,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 6.5600000000000005,
+          "weight": 8,
+          "detail": "3.2 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "wendys-wednesday-free-nuggets-2026",
+      "merchant": "Wendy's",
+      "title": "Free 6-piece nuggets Wednesday with $5 purchase",
+      "summary": "Wendy's official offers page lists free 6-piece nuggets with a $5 qualifying purchase for Wendy's Wednesday.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": true,
+      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "Wednesday",
+        "app",
+        "qualifying purchase"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Claim Wednesday offer",
+      "tier": "A",
+      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+      "finePrint": "Requires a $5 qualifying purchase on Wednesday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local nugget price was not verified.",
+      "expirationLabel": "Wednesdays while listed",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-11",
+      "preferenceSignals": [
+        "free-food",
+        "weekday",
+        "app-specific"
+      ],
+      "score": 65,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$5.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "wendys-fryday-free-fry-2026",
+      "merchant": "Wendy's",
+      "title": "Free any-size fry Friday with $5 purchase",
+      "summary": "Wendy's official offers page lists a free any-size fry with a $5 qualifying purchase for Fryday.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": true,
+      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "Friday",
+        "app",
+        "qualifying purchase"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-08-19"
+      },
+      "actionLabel": "Claim Friday offer",
+      "tier": "A",
+      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+      "finePrint": "Requires a $5 qualifying purchase on Friday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local fry price was not verified.",
+      "expirationLabel": "Fridays while listed",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-11",
+      "preferenceSignals": [
+        "free-food",
+        "weekday",
+        "app-specific"
+      ],
+      "score": 65,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$5.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "dunkin-six-dollar-meal-deal-rayford-2026",
+      "merchant": "Dunkin",
+      "title": "$6 Meal Deal with coffee and two Wake-Up Wraps",
+      "summary": "The Rayford Road location advertises a medium hot or iced coffee with two Wake-Up Wraps for $6.",
+      "category": "coffee",
+      "estimatedSavings": 3,
+      "minimumSpend": 6,
+      "isFree": false,
+      "locationNote": "2222 Rayford Road, Spring, TX 77386.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "coffee",
+        "breakfast",
+        "meal deal",
+        "preferred brand"
+      ],
+      "source": {
+        "label": "Dunkin Rayford Road location",
+        "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
+        "checkedOn": "2026-08-11"
+      },
+      "actionLabel": "Review local offer",
+      "tier": "A",
+      "distanceMiles": 2.8,
+      "stackNote": "Scan Dunkin Rewards when permitted to earn points on the discounted meal.",
+      "finePrint": "Limited-time offer. Product substitutions, taxes, and participation can vary by location.",
+      "expirationLabel": "Limited time",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "preferred-coffee",
+        "local-offer",
+        "loyalty-stack"
+      ],
+      "score": 63,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 11.7,
+          "weight": 18,
+          "detail": "Official source verified; checked 9 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 8.4,
+          "weight": 24,
+          "detail": "$3.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.8,
+          "weight": 10,
+          "detail": "Household match: coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.8 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 6.4,
+          "weight": 8,
+          "detail": "$6.00 required per $3.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "whataburger-wednesday-chicken-sandwich-2026-08-26",
@@ -1010,165 +2869,158 @@
         "app-specific",
         "time-sensitive"
       ],
-      "score": 86,
-      "scoreLabel": "Excellent"
+      "score": 62,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 6 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
-      "id": "shell-fuel-rewards-new-member-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "10¢, 20¢, then 30¢ off per gallon",
-      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
+      "id": "exxon-mobil-rewards-base-points-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "Earn 3¢ per gallon or more in points",
+      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
       "category": "fuel",
-      "estimatedSavings": 9,
+      "estimatedSavings": 0.45,
       "minimumSpend": 0,
       "isFree": false,
-      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
+      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
       "verification": "verified",
       "friction": "low",
       "tags": [
-        "new member",
         "fuel",
-        "three fill-ups"
+        "points",
+        "rewards program"
       ],
       "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-08-18"
+        "label": "Exxon Mobil Rewards+",
+        "url": "https://www.exxonmobilfuels.com/en/rewards",
+        "checkedOn": "2026-08-15"
       },
-      "actionLabel": "Review offer",
-      "tier": "A",
-      "distanceMiles": 2.4,
-      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
-      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
-      "expirationLabel": "Use within 60 days",
-      "availability": "available",
+      "actionLabel": "Review rewards",
+      "tier": "B",
+      "distanceMiles": 1.8,
+      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
+      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
+      "expirationLabel": "Ongoing",
+      "availability": "program",
       "dealType": "fuel-reward",
       "freshness": "current",
       "preferenceSignals": [
         "fuel-reward",
-        "new-member",
         "stacking"
       ],
-      "score": 86,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "seven-eleven-slurpee-happy-hour-2026",
-      "merchant": "7-Eleven",
-      "title": "$1 large Slurpee weekday Happy Hour",
-      "summary": "7Rewards and Speedy Rewards members can get a large Slurpee for $1 Monday through Friday from 3 p.m. to 6 p.m.",
-      "category": "convenience",
-      "estimatedSavings": 0,
-      "minimumSpend": 1,
-      "isFree": false,
-      "expiresOn": "2026-08-25",
-      "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "slurpee",
-        "one-dollar",
-        "weekday",
-        "rewards",
-        "local station"
-      ],
-      "source": {
-        "label": "7-Eleven official press release",
-        "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
-        "checkedOn": "2026-08-15"
-      },
-      "actionLabel": "Check Happy Hour",
-      "tier": "B",
-      "stackNote": "No additional coupon or points stacking is assumed.",
-      "finePrint": "Valid Monday-Friday from 3-6 p.m. through August 25 for registered 7Rewards or Speedy Rewards members at participating locations. No dollar savings estimate is shown because the regular local Slurpee price was not verified.",
-      "expirationLabel": "Weekdays through August 25",
-      "availability": "available",
-      "dealType": "convenience-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "convenience-reward",
-        "time-sensitive",
-        "local-station"
-      ],
-      "score": 84,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "dunkin-six-dollar-meal-deal-rayford-2026",
-      "merchant": "Dunkin",
-      "title": "$6 Meal Deal with coffee and two Wake-Up Wraps",
-      "summary": "The Rayford Road location advertises a medium hot or iced coffee with two Wake-Up Wraps for $6.",
-      "category": "coffee",
-      "estimatedSavings": 3,
-      "minimumSpend": 6,
-      "isFree": false,
-      "locationNote": "2222 Rayford Road, Spring, TX 77386.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "coffee",
-        "breakfast",
-        "meal deal",
-        "preferred brand"
-      ],
-      "source": {
-        "label": "Dunkin Rayford Road location",
-        "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-        "checkedOn": "2026-08-11"
-      },
-      "actionLabel": "Review local offer",
-      "tier": "A",
-      "distanceMiles": 2.8,
-      "stackNote": "Scan Dunkin Rewards when permitted to earn points on the discounted meal.",
-      "finePrint": "Limited-time offer. Product substitutions, taxes, and participation can vary by location.",
-      "expirationLabel": "Limited time",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "preferred-coffee",
-        "local-offer",
-        "loyalty-stack"
-      ],
-      "score": 83,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "starbucks-rewards-ongoing-2026",
-      "merchant": "Starbucks Rewards",
-      "title": "Earn toward free food and drinks",
-      "summary": "Qualifying purchases earn Stars that can be redeemed for eligible food, drinks, and customizations.",
-      "category": "coffee",
-      "estimatedSavings": 3,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Starbucks locations; confirm reward redemption support.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "rewards program",
-        "stars",
-        "coffee",
-        "food"
-      ],
-      "source": {
-        "label": "Starbucks Rewards",
-        "url": "https://www.starbucks.com/rewards",
-        "checkedOn": "2026-08-16"
-      },
-      "actionLabel": "View rewards",
-      "tier": "C",
-      "distanceMiles": 2.1,
-      "stackNote": "Personalized challenges can accelerate earning when they fit planned purchases.",
-      "finePrint": "Qualifying spend is required. Reward value depends on what you redeem and Stars can expire under program rules.",
-      "expirationLabel": "Ongoing",
-      "availability": "program",
-      "dealType": "loyalty-reward",
-      "freshness": "current",
-      "score": 81,
-      "scoreLabel": "Strong"
+      "score": 61,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 15.299999999999999,
+          "weight": 18,
+          "detail": "Official source verified; checked 5 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 2.16,
+          "weight": 24,
+          "detail": "$0.45 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "1.8 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "dq-double-flip-blizzard-2026-08",
@@ -1210,88 +3062,160 @@
         "repeatable",
         "high-value"
       ],
-      "score": 81,
-      "scoreLabel": "Strong"
+      "score": 61,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 10 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
-      "id": "shell-race-day-22-cents-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "22¢ off per gallon on eligible race days",
-      "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
-      "category": "fuel",
-      "estimatedSavings": 3.3,
+      "id": "astros-2026-promotion-calendar",
+      "merchant": "Houston Astros",
+      "title": "$1 Hot Dog Night on Tuesday home games",
+      "summary": "The Astros official fan-value page states that every Tuesday night at Daikin Park is Dollar Dog Night. The dated August 18 home game has passed; later Tuesday home games remain a program fact.",
+      "category": "sports",
+      "estimatedSavings": 4,
       "minimumSpend": 0,
       "isFree": false,
-      "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
+      "locationNote": "Daikin Park in Houston; count travel and parking before treating a promotion as savings.",
       "verification": "verified",
-      "friction": "medium",
+      "friction": "high",
       "tags": [
-        "fuel",
-        "race day",
-        "app",
-        "opt in"
+        "sports tickets",
+        "Dollar Dog Night",
+        "giveaway",
+        "promotion"
       ],
       "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-08-18"
+        "label": "Houston Astros official $1 Hot Dog Night page",
+        "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
+        "checkedOn": "2026-08-20"
       },
-      "actionLabel": "Opt in for race days",
-      "tier": "A",
-      "stackNote": "Use only the savings shown in the Fuel Rewards app; do not assume another fuel promotion combines.",
-      "finePrint": "The $3.30 estimate assumes 15 gallons on one eligible race day. Opt in once in the Shell app, use a Fuel Rewards member ID, and confirm the selected station and race day are eligible before fueling.",
-      "expirationLabel": "Eligible 2026 race days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-15",
-      "preferenceSignals": [
-        "fuel-reward",
-        "app-specific",
-        "time-sensitive"
-      ],
-      "score": 80,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "shell-app-first-pay-save-25-cents-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
-      "summary": "The Shell App first-time offer awards 25 cents per gallon in savings after an initial Pay & Save transaction of at least 10 gallons.",
-      "category": "fuel",
-      "estimatedSavings": 3.75,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Shell App and linked Fuel Rewards account required; confirm the selected station near 77386 participates.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "app",
-        "first-time offer",
-        "25 cents per gallon"
-      ],
-      "source": {
-        "label": "Shell official app-offers support page",
-        "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
-        "checkedOn": "2026-08-17"
-      },
-      "actionLabel": "Review Shell App offer",
+      "actionLabel": "Review promotions",
       "tier": "B",
-      "stackNote": "Use only the savings the Shell App shows; do not assume it combines with the separate new-member or race-day rewards.",
-      "finePrint": "The initial Pay & Save transaction must include at least 10 gallons. The $3.75 estimate assumes the earned 25-cent reward is redeemed on 15 gallons. The official page does not publish an end date or full redemption window.",
-      "expirationLabel": "No end date published",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-17",
+      "stackNote": "Pair a promotion with an already-planned game; never buy a ticket solely for a low-value giveaway.",
+      "finePrint": "A valid game ticket is required. Giveaways are limited, may require early arrival, and can change. Do not buy a ticket solely for this promotion. The August 18 dated listing has expired.",
+      "expirationLabel": "Tuesday home games",
+      "availability": "program",
+      "dealType": "sports-ticket",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
       "preferenceSignals": [
-        "fuel-reward",
-        "app-specific",
-        "first-time"
+        "sports-ticket",
+        "local-team",
+        "promotion-event"
       ],
-      "score": 80,
-      "scoreLabel": "Strong"
+      "score": 60,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 9.84,
+          "weight": 24,
+          "detail": "$4.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 6.2,
+          "weight": 10,
+          "detail": "Household match: sports ticket"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 1.7999999999999998,
+          "weight": 9,
+          "detail": "high redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "costa-oil-rayford-service-30-percent-2026",
@@ -1332,8 +3256,64 @@
         "local-high-value",
         "eligibility-gated"
       ],
-      "score": 79,
-      "scoreLabel": "Strong"
+      "score": 54,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 15.299999999999999,
+          "weight": 18,
+          "detail": "Official source verified; checked 4 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-12-31; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "wendys-one-dollar-small-frosty-summer-2026",
@@ -1372,126 +3352,162 @@
         "low-friction",
         "restaurant"
       ],
-      "score": 75,
-      "scoreLabel": "Strong"
+      "score": 52,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 3 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$1.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
-      "id": "exxon-mobil-rewards-base-points-2026",
-      "merchant": "Exxon Mobil Rewards+",
-      "title": "Earn 3¢ per gallon or more in points",
-      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
-      "category": "fuel",
-      "estimatedSavings": 0.45,
-      "minimumSpend": 0,
+      "id": "seven-eleven-slurpee-happy-hour-2026",
+      "merchant": "7-Eleven",
+      "title": "$1 large Slurpee weekday Happy Hour",
+      "summary": "7Rewards and Speedy Rewards members can get a large Slurpee for $1 Monday through Friday from 3 p.m. to 6 p.m.",
+      "category": "convenience",
+      "estimatedSavings": 0,
+      "minimumSpend": 1,
       "isFree": false,
-      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
+      "expiresOn": "2026-08-25",
+      "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
       "verification": "verified",
       "friction": "low",
       "tags": [
-        "fuel",
-        "points",
-        "rewards program"
+        "slurpee",
+        "one-dollar",
+        "weekday",
+        "rewards",
+        "local station"
       ],
       "source": {
-        "label": "Exxon Mobil Rewards+",
-        "url": "https://www.exxonmobilfuels.com/en/rewards",
+        "label": "7-Eleven official press release",
+        "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
         "checkedOn": "2026-08-15"
       },
-      "actionLabel": "Review rewards",
+      "actionLabel": "Check Happy Hour",
       "tier": "B",
-      "distanceMiles": 1.8,
-      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
-      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
-      "expirationLabel": "Ongoing",
-      "availability": "program",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "preferenceSignals": [
-        "fuel-reward",
-        "stacking"
-      ],
-      "score": 74,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "7rewards-points-program-2026",
-      "merchant": "7REWARDS",
-      "title": "Points toward free snacks and drinks",
-      "summary": "Members earn points on qualifying purchases and can redeem them for free snacks, drinks, and other rewards.",
-      "category": "convenience",
-      "estimatedSavings": 3,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating 7-Eleven locations; confirm app availability before visiting.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "rewards program",
-        "points",
-        "snacks",
-        "drinks"
-      ],
-      "source": {
-        "label": "7REWARDS",
-        "url": "https://www.7-eleven.com/7rewards",
-        "checkedOn": "2026-08-16"
-      },
-      "actionLabel": "View rewards",
-      "tier": "B",
-      "distanceMiles": 3.2,
-      "stackNote": "Member pricing and eligible reward redemptions can combine.",
-      "finePrint": "Enrollment and qualifying purchases are required. This is earned value, not an instant signup freebie.",
-      "expirationLabel": "Ongoing",
-      "availability": "program",
+      "stackNote": "No additional coupon or points stacking is assumed.",
+      "finePrint": "Valid Monday-Friday from 3-6 p.m. through August 25 for registered 7Rewards or Speedy Rewards members at participating locations. No dollar savings estimate is shown because the regular local Slurpee price was not verified.",
+      "expirationLabel": "Weekdays through August 25",
+      "availability": "available",
       "dealType": "convenience-reward",
-      "freshness": "current",
+      "freshness": "new",
+      "discoveredOn": "2026-08-11",
       "preferenceSignals": [
-        "free-drinks",
-        "surprise-rewards",
-        "loyalty"
+        "convenience-reward",
+        "time-sensitive",
+        "local-station"
       ],
-      "score": 71,
-      "scoreLabel": "Strong"
-    },
-    {
-      "id": "astros-2026-promotion-calendar",
-      "merchant": "Houston Astros",
-      "title": "$1 Hot Dog Night on Tuesday home games",
-      "summary": "The Astros official fan-value page states that every Tuesday night at Daikin Park is Dollar Dog Night. The dated August 18 home game has passed; later Tuesday home games remain a program fact.",
-      "category": "sports",
-      "estimatedSavings": 4,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Daikin Park in Houston; count travel and parking before treating a promotion as savings.",
-      "verification": "verified",
-      "friction": "high",
-      "tags": [
-        "sports tickets",
-        "Dollar Dog Night",
-        "giveaway",
-        "promotion"
-      ],
-      "source": {
-        "label": "Houston Astros official $1 Hot Dog Night page",
-        "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-        "checkedOn": "2026-08-20"
-      },
-      "actionLabel": "Review promotions",
-      "tier": "B",
-      "stackNote": "Pair a promotion with an already-planned game; never buy a ticket solely for a low-value giveaway.",
-      "finePrint": "A valid game ticket is required. Giveaways are limited, may require early arrival, and can change. Do not buy a ticket solely for this promotion. The August 18 dated listing has expired.",
-      "expirationLabel": "Tuesday home games",
-      "availability": "program",
-      "dealType": "sports-ticket",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "sports-ticket",
-        "local-team",
-        "promotion-event"
-      ],
-      "score": 59,
-      "scoreLabel": "Worth a look"
+      "score": 51,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 15.299999999999999,
+          "weight": 18,
+          "detail": "Official source verified; checked 5 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 6.4,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$1.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     }
   ],
   "watchlist": [
@@ -1531,8 +3547,64 @@
         "preferred-coffee",
         "loyalty-reward"
       ],
-      "score": 71,
-      "scoreLabel": "Strong"
+      "score": 54,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 5.22,
+          "weight": 18,
+          "detail": "Official ongoing program; checked 9 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 9.84,
+          "weight": 24,
+          "detail": "$4.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 9.200000000000001,
+          "weight": 10,
+          "detail": "Household match: free drink, coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
     },
     {
       "id": "local-coffee-official-promo-watch-77386",
@@ -1568,8 +3640,64 @@
         "official-only",
         "opening-watch"
       ],
-      "score": 63,
-      "scoreLabel": "Worth a look"
+      "score": 38,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.26,
+          "weight": 18,
+          "detail": "Unverified lead; checked 9 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.8,
+          "weight": 10,
+          "detail": "Household match: coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 3.8000000000000003,
+          "weight": 10,
+          "detail": "No stated end date; monitoring only"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 2.66,
+          "weight": 7,
+          "detail": "No compatible stack documented"
+        }
+      ]
     },
     {
       "id": "burger-king-royal-perks-program",
@@ -1594,8 +3722,64 @@
         "checkedOn": "2026-07-23"
       },
       "actionLabel": "View program",
-      "score": 55,
-      "scoreLabel": "Worth a look"
+      "score": 37,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 3.2399999999999998,
+          "weight": 18,
+          "detail": "Official ongoing program; checked 28 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 3.8000000000000003,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 1.7500000000000002,
+          "weight": 7,
+          "detail": "No compatible stack documented"
+        }
+      ]
     },
     {
       "id": "chick-fil-a-one-program",
@@ -1620,8 +3804,64 @@
         "checkedOn": "2026-07-23"
       },
       "actionLabel": "View program",
-      "score": 55,
-      "scoreLabel": "Worth a look"
+      "score": 37,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 3.2399999999999998,
+          "weight": 18,
+          "detail": "Official ongoing program; checked 28 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 3.8000000000000003,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 1.7500000000000002,
+          "weight": 7,
+          "detail": "No compatible stack documented"
+        }
+      ]
     },
     {
       "id": "taco-bell-rewards-program",
@@ -1646,8 +3886,64 @@
         "checkedOn": "2026-07-23"
       },
       "actionLabel": "View program",
-      "score": 55,
-      "scoreLabel": "Worth a look"
+      "score": 37,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 3.2399999999999998,
+          "weight": 18,
+          "detail": "Official ongoing program; checked 28 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 3.8000000000000003,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 1.7500000000000002,
+          "weight": 7,
+          "detail": "No compatible stack documented"
+        }
+      ]
     }
   ]
 }

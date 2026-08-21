@@ -860,6 +860,59 @@ a {
   color: #98734e;
 }
 
+.score-breakdown {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border: 1px solid rgba(15, 76, 58, 0.14);
+  border-radius: 8px;
+  background: rgba(244, 242, 236, 0.72);
+}
+
+.score-breakdown summary {
+  color: #0f4c3a;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.score-breakdown ul {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.score-breakdown li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 14px;
+  align-items: start;
+}
+
+.score-breakdown li div {
+  min-width: 0;
+}
+
+.score-breakdown li strong {
+  display: block;
+  font-size: 13px;
+}
+
+.score-breakdown li span {
+  display: block;
+  color: #5d6b64;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.score-breakdown output {
+  color: #0f4c3a;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .deal-card__body {
   flex: 1;
   padding: 4px 16px 15px;
