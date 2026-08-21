@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T18:15:48.046Z",
+  "generatedAt": "2026-08-21T18:45:46.002Z",
   "sourceCount": 28,
   "successfulCount": 23,
   "failedCount": 5,
@@ -18,10 +18,10 @@
         "off"
       ],
       "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "changed",
       "matchedKeywords": [],
-      "contentHash": "bc0b0489a701ef839f1d9c1c9d55bd9ab1cff9ef76c8cb88507adfe82005ad69",
+      "contentHash": "b0985679f48b934be31698d12a417efe8126e183d9b3a3f77cacbf2290415fae",
       "parsedOffers": []
     },
     {
@@ -37,7 +37,7 @@
         "circle"
       ],
       "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "weekly ad",
@@ -60,7 +60,7 @@
         "5x"
       ],
       "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -78,7 +78,7 @@
         "points"
       ],
       "canonicalUrl": "https://www.dutchbros.com/dutch-101",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free drink",
@@ -88,7 +88,25 @@
       ],
       "contentHash": "07f3489815b88869099316b80e4b185714f96e365c2bf352def91c4c7ceb1ed2",
       "title": "Dutch 101 | Dutch Bros Coffee",
-      "parsedOffers": []
+      "parsedOffers": [
+        {
+          "id": "dutch-bros-rewards-welcome-when-you-download-the-app",
+          "sourceId": "dutch-bros-rewards",
+          "merchant": "Dutch Bros",
+          "title": "Free medium drink when you download the app and join Dutch Rewards",
+          "url": "https://www.dutchbros.com/dutch-101/",
+          "amountText": "Free"
+        },
+        {
+          "id": "dutch-bros-rewards-250-points-free-medium-drink",
+          "sourceId": "dutch-bros-rewards",
+          "merchant": "Dutch Bros",
+          "title": "250 Points = Free Medium Drink",
+          "url": "https://www.dutchbros.com/dutch-101/",
+          "amountText": "Free",
+          "detail": "Official Dutch Rewards redemption example; confirm current app terms."
+        }
+      ]
     },
     {
       "id": "dunkin-rayford",
@@ -103,7 +121,7 @@
         "offer"
       ],
       "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "deal",
@@ -128,7 +146,7 @@
         "birthday"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -153,7 +171,7 @@
         "opening"
       ],
       "canonicalUrl": "https://joviroasters.com",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "offer",
@@ -177,7 +195,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -200,7 +218,7 @@
         "offer"
       ],
       "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "per gallon",
@@ -225,14 +243,14 @@
         "exclusive deals"
       ],
       "canonicalUrl": "https://www.7-eleven.com/7rewards",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free snacks",
         "bonus points",
         "exclusive deals"
       ],
-      "contentHash": "4b8df2d805d2be8dbb41716f731db0635b96d8d4efab87d8220b590a5c5ec392",
+      "contentHash": "7a89c34262b058fb7a0c69d2e80e817f8dcd78a45f1bb7d3f963003af0c5c21c",
       "title": "7REWARDS | 7-Eleven",
       "parsedOffers": []
     },
@@ -249,7 +267,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "coupon",
@@ -284,7 +302,7 @@
         "coupon"
       ],
       "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "oil change",
@@ -309,7 +327,7 @@
         "reward"
       ],
       "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -333,7 +351,7 @@
         "stubs"
       ],
       "canonicalUrl": "https://www.amctheatres.com/offers",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -351,7 +369,7 @@
         "ticket"
       ],
       "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "promotion",
@@ -376,7 +394,7 @@
         "promotion"
       ],
       "canonicalUrl": "https://www.houstondynamofc.com/tickets",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "ticket",
@@ -399,7 +417,7 @@
         "backpacks"
       ],
       "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "sales tax holiday",
@@ -424,7 +442,7 @@
         "offer"
       ],
       "canonicalUrl": "https://news.dunkindonuts.com",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -447,7 +465,7 @@
         "rewards"
       ],
       "canonicalUrl": "https://www.wendys.com/offers-coupons",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -459,29 +477,10 @@
       "title": "Wendy’s Offers &amp; Coupons | Breakfast, Lunch &amp; Dinner Deals",
       "parsedOffers": [
         {
-          "id": "wendys-offers-wendy-s-and-paze-spend-10-at-wendy-s-earn-10-back",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "Wendy's and Paze spend $10 at Wendy's earn $10 back",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "$10"
-        },
-        {
           "id": "wendys-offers-paze-users-spend-10-in-the-wendy-s-app-to-earn-10-back",
           "sourceId": "wendys-offers",
           "merchant": "Wendy's",
           "title": "Paze® users, spend $10+ in the Wendy's app to earn $10 back*",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "$10",
-          "minimumSpend": 10,
-          "expirationText": "9/10/26",
-          "detail": "*As a statement credit. Offer runs through 9/10/26. To learn more about this offer visit paze.com/offers. Terms apply. Wendy's account registration required to place orders in the Wendy's app."
-        },
-        {
-          "id": "wendys-offers-paze-users-who-spend-10-in-the-wendy-s-app-will-earn-10-back-up-to-10-ti",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "Paze® users who spend $10+ in the Wendy's app will earn $10 back*, up to 10 times per card. That's money for future you to use on another order.",
           "url": "https://www.wendys.com/offers-coupons",
           "amountText": "$10",
           "minimumSpend": 10,
@@ -506,14 +505,6 @@
           "minimumSpend": 20
         },
         {
-          "id": "wendys-offers-wendy-s-wednesday-free-6pc-nuggs-w-purchase",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "Wendy's Wednesday - Free 6pc Nuggs w/ Purchase",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "Free"
-        },
-        {
           "id": "wendys-offers-wendy-s-wednesday-free-6pc-nuggs-w-5-purchase",
           "sourceId": "wendys-offers",
           "merchant": "Wendy's",
@@ -521,14 +512,6 @@
           "url": "https://www.wendys.com/offers-coupons",
           "amountText": "Free",
           "minimumSpend": 5
-        },
-        {
-          "id": "wendys-offers-friday-free-any-size-fry-w-purchase",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "Friday - Free Any Size Fry w/ Purchase",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "Free"
         },
         {
           "id": "wendys-offers-fryday-free-any-size-fry-w-5-purchase",
@@ -549,28 +532,10 @@
           "minimumSpend": 5
         },
         {
-          "id": "wendys-offers-1-off-crispy-chicken-sandwich-or-4-piece-nuggets-w-5-qualifying-purchase",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "$1 Off Crispy Chicken Sandwich or 4-piece Nuggets w/$5 Qualifying Purchase.",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "$1 Off",
-          "minimumSpend": 5
-        },
-        {
           "id": "wendys-offers-free-small-chili-w-5-purchase",
           "sourceId": "wendys-offers",
           "merchant": "Wendy's",
           "title": "Free Small Chili w/ $5 Purchase",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "Free",
-          "minimumSpend": 5
-        },
-        {
-          "id": "wendys-offers-free-small-chili-w-5-qualifying-purchase",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "Free Small Chili w/ $5 Qualifying Purchase.",
           "url": "https://www.wendys.com/offers-coupons",
           "amountText": "Free",
           "minimumSpend": 5
@@ -590,7 +555,7 @@
         "birthday reward"
       ],
       "canonicalUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "welcome reward",
@@ -615,7 +580,7 @@
         "offer"
       ],
       "canonicalUrl": "https://stories.whataburger.com",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -639,7 +604,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://about.starbucks.com/press",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -657,7 +622,7 @@
         "offer"
       ],
       "canonicalUrl": "https://corporate.mcdonalds.com/corpmcd/our-stories.html",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [],
       "contentHash": "59aecbeabc795b6fcdfc8122660627a5dde4499440d300b62eeb5ce25fb62e0e",
@@ -677,7 +642,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://www.tacobell.com/newsroom",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "rewards",
@@ -700,7 +665,7 @@
         "cash payment"
       ],
       "canonicalUrl": "https://www.onlinetvsettlement.com",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -718,7 +683,7 @@
         "settlement class"
       ],
       "canonicalUrl": "https://landsenddatasettlement.com/faq",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "claim",
@@ -743,7 +708,7 @@
         "authorized by the court"
       ],
       "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -760,7 +725,7 @@
         "official settlement website"
       ],
       "canonicalUrl": "https://www.clarkcountydatasettlement.com",
-      "checkedAt": "2026-08-21T18:15:48.046Z",
+      "checkedAt": "2026-08-21T18:45:46.002Z",
       "status": "unchanged",
       "matchedKeywords": [
         "submit claim",
@@ -775,6 +740,23 @@
   "highValueMatches": [],
   "parsedOfferCandidates": [
     {
+      "id": "dutch-bros-rewards-welcome-when-you-download-the-app",
+      "sourceId": "dutch-bros-rewards",
+      "merchant": "Dutch Bros",
+      "title": "Free medium drink when you download the app and join Dutch Rewards",
+      "url": "https://www.dutchbros.com/dutch-101/",
+      "amountText": "Free"
+    },
+    {
+      "id": "dutch-bros-rewards-250-points-free-medium-drink",
+      "sourceId": "dutch-bros-rewards",
+      "merchant": "Dutch Bros",
+      "title": "250 Points = Free Medium Drink",
+      "url": "https://www.dutchbros.com/dutch-101/",
+      "amountText": "Free",
+      "detail": "Official Dutch Rewards redemption example; confirm current app terms."
+    },
+    {
       "id": "take5-rayford-15-off-core-complete-or-ultimate-oil-change",
       "sourceId": "take5-rayford",
       "merchant": "Take 5 Oil Change",
@@ -784,29 +766,10 @@
       "detail": "Coupons have no cash value. Coupons valid only if emailed or texted - requires enrollment in marketing emails or texts from Take 5. You can unsubscribe at any time by replying STOP to a text or following email UNSUBSCRIBE instructions."
     },
     {
-      "id": "wendys-offers-wendy-s-and-paze-spend-10-at-wendy-s-earn-10-back",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Wendy's and Paze spend $10 at Wendy's earn $10 back",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$10"
-    },
-    {
       "id": "wendys-offers-paze-users-spend-10-in-the-wendy-s-app-to-earn-10-back",
       "sourceId": "wendys-offers",
       "merchant": "Wendy's",
       "title": "Paze® users, spend $10+ in the Wendy's app to earn $10 back*",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$10",
-      "minimumSpend": 10,
-      "expirationText": "9/10/26",
-      "detail": "*As a statement credit. Offer runs through 9/10/26. To learn more about this offer visit paze.com/offers. Terms apply. Wendy's account registration required to place orders in the Wendy's app."
-    },
-    {
-      "id": "wendys-offers-paze-users-who-spend-10-in-the-wendy-s-app-will-earn-10-back-up-to-10-ti",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Paze® users who spend $10+ in the Wendy's app will earn $10 back*, up to 10 times per card. That's money for future you to use on another order.",
       "url": "https://www.wendys.com/offers-coupons",
       "amountText": "$10",
       "minimumSpend": 10,
@@ -831,14 +794,6 @@
       "minimumSpend": 20
     },
     {
-      "id": "wendys-offers-wendy-s-wednesday-free-6pc-nuggs-w-purchase",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Wendy's Wednesday - Free 6pc Nuggs w/ Purchase",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "Free"
-    },
-    {
       "id": "wendys-offers-wendy-s-wednesday-free-6pc-nuggs-w-5-purchase",
       "sourceId": "wendys-offers",
       "merchant": "Wendy's",
@@ -846,14 +801,6 @@
       "url": "https://www.wendys.com/offers-coupons",
       "amountText": "Free",
       "minimumSpend": 5
-    },
-    {
-      "id": "wendys-offers-friday-free-any-size-fry-w-purchase",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Friday - Free Any Size Fry w/ Purchase",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "Free"
     },
     {
       "id": "wendys-offers-fryday-free-any-size-fry-w-5-purchase",
@@ -874,28 +821,10 @@
       "minimumSpend": 5
     },
     {
-      "id": "wendys-offers-1-off-crispy-chicken-sandwich-or-4-piece-nuggets-w-5-qualifying-purchase",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "$1 Off Crispy Chicken Sandwich or 4-piece Nuggets w/$5 Qualifying Purchase.",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$1 Off",
-      "minimumSpend": 5
-    },
-    {
       "id": "wendys-offers-free-small-chili-w-5-purchase",
       "sourceId": "wendys-offers",
       "merchant": "Wendy's",
       "title": "Free Small Chili w/ $5 Purchase",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "Free",
-      "minimumSpend": 5
-    },
-    {
-      "id": "wendys-offers-free-small-chili-w-5-qualifying-purchase",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Free Small Chili w/ $5 Qualifying Purchase.",
       "url": "https://www.wendys.com/offers-coupons",
       "amountText": "Free",
       "minimumSpend": 5

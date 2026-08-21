@@ -50,24 +50,116 @@ function amountFromTitle(title: string): string | undefined {
 
 function minimumSpendFromTitle(title: string): number | undefined {
   const match = title.match(
-    /\$\d+(?:\.\d{2})?\s*\+|\bw\/\s*\$(\d+(?:\.\d{2})?)\b|\bwith\s+\$(\d+(?:\.\d{2})?)\b/i
+    /\$\d+(?:\.\d{2})?\s*\+|spend\s+\$(\d+(?:\.\d{2})?)\+?|\bw\/\s*\$(\d+(?:\.\d{2})?)\b|\bwith\s+\$(\d+(?:\.\d{2})?)\b/i
   );
   if (!match) return undefined;
-  const value = match[1] ?? match[2] ?? match[0].replace(/[^0-9.]/g, "");
+  const value = match[1] ?? match[2] ?? match[3] ?? match[0].replace(/[^0-9.]/g, "");
   const parsed = Number(value);
   return Number.isFinite(parsed) && parsed > 0 ? parsed : undefined;
 }
 
 function expirationFromDetail(detail: string): string | undefined {
-  return detail.match(
-    /\d{1,2}\/\d{1,2}\/\d{2,4}/i
-  )?.[0];
+  return (
+    detail.match(/\d{1,2}\/\d{1,2}\/\d{2,4}/i)?.[0] ??
+    detail.match(/\d+\s*-?\s*day expiration/i)?.[0]
+  );
 }
 
 function dedupeCandidates(candidates: ParsedOfferCandidate[]): ParsedOfferCandidate[] {
-  return Array.from(
-    new Map(candidates.map((candidate) => [candidate.title.toLowerCase(), candidate])).values()
-  );
+  const bySemanticKey = new Map<string, ParsedOfferCandidate>();
+  for (const candidate of candidates) {
+    const key = semanticOfferKey(candidate);
+    const existing = bySemanticKey.get(key);
+    if (!existing) {
+      bySemanticKey.set(key, candidate);
+      continue;
+    }
+
+    const specificity = (candidate: ParsedOfferCandidate) =>
+      (candidate.minimumSpend !== undefined ? 2 : 0) +
+      (candidate.expirationText ? 2 : 0) +
+      (candidate.detail ? 1 : 0);
+    const candidateScore = specificity(candidate);
+    const existingScore = specificity(existing);
+    const preferred =
+      candidateScore > existingScore ||
+      (candidateScore === existingScore &&
+        candidate.title.length < existing.title.length)
+        ? candidate
+        : existing;
+    bySemanticKey.set(key, {
+      ...preferred,
+      minimumSpend: preferred.minimumSpend ?? existing.minimumSpend,
+      expirationText: preferred.expirationText ?? existing.expirationText,
+      detail: preferred.detail ?? existing.detail
+    });
+  }
+  return Array.from(bySemanticKey.values());
+}
+
+export function semanticOfferKey(candidate: ParsedOfferCandidate): string {
+  const stopWords = new Set([
+    "a",
+    "and",
+    "app",
+    "at",
+    "back",
+    "card",
+    "that",
+    "earn",
+    "for",
+    "future",
+    "in",
+    "money",
+    "on",
+    "order",
+    "another",
+    "paze",
+    "per",
+    "that's",
+    "the",
+    "times",
+    "to",
+    "up",
+    "use",
+    "users",
+    "who",
+    "wendy's",
+    "will",
+    "with",
+    "you"
+  ]);
+  const normalized = candidate.title
+    .toLowerCase()
+    .replace(/[®™]/g, "")
+    .replace(/[’]/g, "'")
+    .replace(/w\//g, " ")
+    .replace(/\$(\d+(?:\.\d{2})?)\+?/g, " dollars$1 ")
+    .replace(/wendy'?s wednesday/g, " ")
+    .replace(/\b(?:friday|fryday)\b/g, " ")
+    .replace(/\bqualifying\b/g, " ")
+    .replace(/crispy chicken sandwich or/g, "crispy chicken or")
+    .replace(/[^a-z0-9$+]+/g, " ")
+    .trim();
+  const tokens = normalized
+    .split(/\s+/)
+    .filter((token) => {
+      if (token.length <= 1 || stopWords.has(token)) return false;
+      if (/^dollars\d/.test(token)) return false;
+      const numbers = new Set([
+        candidate.minimumSpend?.toString(),
+        candidate.amountText?.match(/\d+(?:\.\d{2})?/)?.[0]
+      ]);
+      const tokenNumber = token.replace(/[^0-9.]/g, "");
+      return !((tokenNumber && numbers.has(tokenNumber)) || numbers.has(token));
+    })
+    .sort()
+    .filter((token, index, allTokens) => token !== allTokens[index - 1]);
+
+  return [
+    candidate.amountText?.toLowerCase() ?? "unknown-amount",
+    ...tokens
+  ].join("|");
 }
 
 function parseWendys({ source, pageUrl }: ParserContext, html: string): ParsedOfferCandidate[] {
@@ -103,6 +195,53 @@ function parseWendys({ source, pageUrl }: ParserContext, html: string): ParsedOf
       };
     })
   );
+}
+
+function parseDutchBros({ source, pageUrl }: ParserContext, html: string): ParsedOfferCandidate[] {
+  const text = decodeHtml(
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]+>/g, "\n")
+  );
+  const lines = text.split("\n").map((line) => line.trim()).filter(Boolean);
+  const candidates: ParsedOfferCandidate[] = [];
+
+  lines.forEach((line, index) => {
+    const pointsMatch = line.match(/^(\d+)\s*points\s*=\s*free\s+(?:medium\s+)?drink$/i);
+    if (pointsMatch) {
+      candidates.push({
+        id: stableId(source.id, line),
+        sourceId: source.id,
+        merchant: "Dutch Bros",
+        title: line,
+        url: pageUrl,
+        amountText: "Free",
+        detail: "Official Dutch Rewards redemption example; confirm current app terms."
+      });
+    }
+
+    if (!/^free medium drink$/i.test(line)) return;
+    const context = lines.slice(index + 1, index + 5);
+    const download = context.find((detail) => /download the app|join dutch rewards/i.test(detail));
+    if (!download) return;
+    const terms = lines
+      .slice(index + 1, index + 9)
+      .find((detail) => /offer valid|expiration|terms apply/i.test(detail));
+
+    candidates.push({
+      id: stableId(source.id, `welcome-${download}`),
+      sourceId: source.id,
+      merchant: "Dutch Bros",
+      title: "Free medium drink when you download the app and join Dutch Rewards",
+      url: pageUrl,
+      amountText: "Free",
+      expirationText: terms ? expirationFromDetail(terms) : undefined,
+      detail: terms
+    });
+  });
+
+  return dedupeCandidates(candidates);
 }
 
 function parseTake5({ source, pageUrl }: ParserContext, html: string): ParsedOfferCandidate[] {
@@ -151,6 +290,7 @@ function parseTake5({ source, pageUrl }: ParserContext, html: string): ParsedOff
 }
 
 const PARSERS: Record<string, (context: ParserContext, html: string) => ParsedOfferCandidate[]> = {
+  "dutch-bros-rewards": parseDutchBros,
   "wendys-offers": parseWendys,
   "take5-rayford": parseTake5
 };

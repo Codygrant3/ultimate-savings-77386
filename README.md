@@ -12,6 +12,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Delivers dashboard-only high-value alerts when an offer clears a user-defined dollar threshold, free-reward preference, and maximum redemption effort.
 - Maintains a checked local merchant inventory and uses great-circle distance calculations for nearby branches. A merchant-location distance is clearly marked as approximate and never claims that a specific promotion is confirmed at that branch.
 - Uses merchant-specific structured parsers for Wendy's and the local Take 5 page to stage official offer candidates with amounts, minimum spend, terms, or expiration signals. Every parsed candidate remains a human-review lead, never an automatic dashboard deal.
+- Uses semantic candidate keys to collapse repeated page variants while preserving the most complete spend, expiration, or terms evidence.
 - Generates a dated Markdown briefing and dashboard-ready JSON.
 - Includes a Windows Task Scheduler installer for Monday reports.
 - Checks a curated set of public sources for new or improved high-value matches.
@@ -188,6 +189,6 @@ project.
 
 ## Next build phases
 
-1. Expand merchant-specific structured parsers to more accessible high-value sources.
+1. Expand merchant-specific structured parsers beyond Dutch Bros, Take 5, and Wendy's to more accessible high-value sources.
 2. Expand the local merchant inventory with more official store-location sources and coordinates.
 3. Add alert delivery only when an opportunity clears a user-defined value threshold. (Complete as a dashboard-local alert queue; external delivery remains intentionally unavailable.)
