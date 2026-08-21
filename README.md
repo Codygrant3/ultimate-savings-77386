@@ -14,6 +14,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Uses merchant-specific structured parsers for Wendy's and the local Take 5 page to stage official offer candidates with amounts, minimum spend, terms, or expiration signals. Every parsed candidate remains a human-review lead, never an automatic dashboard deal.
 - Uses semantic candidate keys to collapse repeated page variants while preserving the most complete spend, expiration, or terms evidence.
 - Ranks discovery candidates by captured value, spend efficiency, expiration timing, source priority, and title quality, then exposes them in a dashboard review queue. Keep/dismiss choices stay in the local browser and never convert a lead into a verified deal.
+- Builds a constrained weekly action plan from verified offers using the local spend budget, merchant-trip limit, distance limit, deals-per-merchant limit, and unconfirmed-location preference. The planner is optimization math only: it does not confirm eligibility, local participation, or guaranteed savings, and personal app offers still require in-app confirmation.
 - Generates a dated Markdown briefing and dashboard-ready JSON.
 - Includes a Windows Task Scheduler installer for Monday reports.
 - Checks a curated set of public sources for new or improved high-value matches.
@@ -66,6 +67,11 @@ their latest normalized unit price from the public comparison snapshot. You can
 change targets, enter a manual latest unit price, add custom staples, or remove
 items. These choices stay in this browser under
 `savings-desk:grocery-watchlist`; they are not published or sent to a retailer.
+
+Open **Action plan** to turn verified offers into a bounded weekly trip plan.
+Planning limits are stored only in this browser under
+`savings-desk:weekly-plan-settings`. A selected offer still requires review of
+its official terms and confirmation at the merchant before purchase.
 
 ## Generate the weekly report
 

@@ -169,6 +169,47 @@ export type CandidateReviewStatus = "keep" | "dismissed";
 
 export type CandidateReviews = Record<string, CandidateReviewStatus>;
 
+export interface WeeklyPlanSettings {
+  weeklyBudget: number;
+  maxTrips: number;
+  maxDistanceMiles: number;
+  includeUnconfirmedLocations: boolean;
+  maxDealsPerTrip: number;
+}
+
+export interface PlannedDeal {
+  opportunity: ScoredOpportunity;
+  warnings: string[];
+}
+
+export interface PlannedTrip {
+  id: string;
+  merchant: string;
+  distanceMiles?: number;
+  distanceConfirmed: boolean;
+  requiredSpend: number;
+  estimatedSavings: number;
+  averageScore: number;
+  utility: number;
+  deals: PlannedDeal[];
+  warnings: string[];
+}
+
+export interface ExcludedOpportunity {
+  opportunity: ScoredOpportunity;
+  reason: string;
+}
+
+export interface WeeklyPlan {
+  trips: PlannedTrip[];
+  selectedDeals: PlannedDeal[];
+  excluded: ExcludedOpportunity[];
+  requiredSpend: number;
+  estimatedSavings: number;
+  savingsRate: number;
+  assumptions: string[];
+}
+
 export interface WeeklyReport {
   generatedAt: string;
   weekOf: string;

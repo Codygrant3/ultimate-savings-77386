@@ -225,6 +225,27 @@ describe("Savings Desk interactions", () => {
     expect(screen.getByText("Walmart #3585 at $0.97/lb (only locally verified price)")).toBeTruthy();
   });
 
+  it("renders the action plan and persists its local planning limits", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Action plan" }));
+
+    expect(screen.getByRole("heading", { name: "Weekly action plan" })).toBeTruthy();
+    expect(screen.getByLabelText("Weekly spend budget")).toHaveProperty("value", "100");
+
+    fireEvent.change(screen.getByLabelText("Weekly spend budget"), {
+      target: { value: "20" }
+    });
+
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"weeklyBudget":20');
+
+    fireEvent.click(screen.getByRole("button", { name: "Overview" }));
+    fireEvent.click(screen.getByRole("button", { name: "Action plan" }));
+    expect(screen.getByLabelText("Weekly spend budget")).toHaveProperty("value", "20");
+  });
+
   it("keeps a customizable local staples watchlist with target alerts", () => {
     render(<App />);
 

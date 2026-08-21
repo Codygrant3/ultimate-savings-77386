@@ -23,6 +23,7 @@ import {
   ShoppingBag,
   ShoppingBasket,
   Sparkles,
+  CalendarRange,
   Store,
   Ticket,
   Utensils,
@@ -42,6 +43,8 @@ import {
   rankOpportunities,
   startOfWeek
 } from "./lib/scoring";
+import { WeeklyPlanner } from "./components/WeeklyPlanner";
+import { DEFAULT_WEEKLY_PLAN_SETTINGS } from "./lib/plan";
 import { rankSettlements } from "./lib/settlements";
 import {
   DEFAULT_VALUE_ALERT_SETTINGS,
@@ -55,8 +58,10 @@ import {
   writeReceipts,
   readAcknowledgedValueAlertIds,
   readValueAlertSettings,
+  readWeeklyPlanSettings,
   writeAcknowledgedValueAlertIds,
-  writeValueAlertSettings
+  writeValueAlertSettings,
+  writeWeeklyPlanSettings
 } from "./lib/storage";
 import type {
   Category,
@@ -66,12 +71,14 @@ import type {
   ReceiptEntry,
   ScoredOpportunity,
   ValueAlertSettings,
+  WeeklyPlanSettings,
   VerificationStatus
 } from "./types";
 
 type View =
   | "overview"
   | "deals"
+  | "plan"
   | "grocery"
   | "settlements"
   | "programs"
@@ -126,6 +133,7 @@ const CATEGORY_META: Record<
 const NAV_ITEMS: Array<{ id: View; label: string; icon: LucideIcon }> = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
   { id: "deals", label: "Deal feed", icon: Sparkles },
+  { id: "plan", label: "Action plan", icon: CalendarRange },
   { id: "grocery", label: "Grocery", icon: ShoppingBasket },
   { id: "settlements", label: "Settlements", icon: Scale },
   { id: "tools", label: "Savings tools", icon: BellRing },
@@ -348,6 +356,10 @@ export default function App() {
     useState<ValueAlertSettings>(() =>
       readValueAlertSettings(DEFAULT_VALUE_ALERT_SETTINGS)
     );
+  const [weeklyPlanSettings, setWeeklyPlanSettings] =
+    useState<WeeklyPlanSettings>(() =>
+      readWeeklyPlanSettings(DEFAULT_WEEKLY_PLAN_SETTINGS)
+    );
   const [acknowledgedValueAlertIds, setAcknowledgedValueAlertIds] = useState<
     string[]
   >(readAcknowledgedValueAlertIds);
@@ -367,8 +379,12 @@ export default function App() {
     [analysisDate, learnedPreferences]
   );
 
-  const verifiedDeals = rankedOpportunities.filter(
-    (opportunity) => opportunity.verification === "verified"
+  const verifiedDeals = useMemo(
+    () =>
+      rankedOpportunities.filter(
+        (opportunity) => opportunity.verification === "verified"
+      ),
+    [rankedOpportunities]
   );
   const programs = rankedOpportunities.filter(
     (opportunity) => opportunity.verification !== "verified"
@@ -436,6 +452,10 @@ export default function App() {
 
   function updateValueAlertSettings(settings: ValueAlertSettings) {
     setValueAlertSettings(writeValueAlertSettings(settings));
+  }
+
+  function updateWeeklyPlanSettings(settings: WeeklyPlanSettings) {
+    setWeeklyPlanSettings(writeWeeklyPlanSettings(settings));
   }
 
   function acknowledgeValueAlert(id: string) {
@@ -929,6 +949,14 @@ export default function App() {
                 </aside>
               </section>
             </>
+          )}
+
+          {view === "plan" && (
+            <WeeklyPlanner
+              opportunities={verifiedDeals}
+              settings={weeklyPlanSettings}
+              onSettingsChange={updateWeeklyPlanSettings}
+            />
           )}
 
           {view === "tools" && (

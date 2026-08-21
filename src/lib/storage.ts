@@ -3,7 +3,8 @@ import type {
   PriceAlert,
   ReceiptEntry,
   CandidateReviews,
-  ValueAlertSettings
+  ValueAlertSettings,
+  WeeklyPlanSettings
 } from "../types";
 
 const SAVED_KEY = "savings-desk:saved";
@@ -17,6 +18,7 @@ const RECEIPTS_KEY = "savings-desk:receipts";
 const VALUE_ALERT_SETTINGS_KEY = "savings-desk:value-alert-settings";
 const ACKNOWLEDGED_VALUE_ALERTS_KEY = "savings-desk:value-alerts-acknowledged";
 const CANDIDATE_REVIEWS_KEY = "savings-desk:candidate-reviews";
+const WEEKLY_PLAN_SETTINGS_KEY = "savings-desk:weekly-plan-settings";
 
 function readIds(key: string): string[] {
   try {
@@ -208,4 +210,26 @@ export function readCandidateReviews(): CandidateReviews {
 export function writeCandidateReviews(reviews: CandidateReviews): CandidateReviews {
   window.localStorage.setItem(CANDIDATE_REVIEWS_KEY, JSON.stringify(reviews));
   return reviews;
+}
+
+export function readWeeklyPlanSettings(
+  defaults: WeeklyPlanSettings
+): WeeklyPlanSettings {
+  try {
+    const value = window.localStorage.getItem(WEEKLY_PLAN_SETTINGS_KEY);
+    if (value === null) return defaults;
+    return { ...defaults, ...(JSON.parse(value) as Partial<WeeklyPlanSettings>) };
+  } catch {
+    return defaults;
+  }
+}
+
+export function writeWeeklyPlanSettings(
+  settings: WeeklyPlanSettings
+): WeeklyPlanSettings {
+  window.localStorage.setItem(
+    WEEKLY_PLAN_SETTINGS_KEY,
+    JSON.stringify(settings)
+  );
+  return settings;
 }

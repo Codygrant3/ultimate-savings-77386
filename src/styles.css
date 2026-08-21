@@ -2127,6 +2127,321 @@ a {
   color: #7a4a18;
 }
 
+.planner {
+  display: grid;
+  gap: 16px;
+}
+
+.planner-heading {
+  padding-bottom: 6px;
+}
+
+.planner-controls,
+.plan-metrics {
+  border: 1px solid rgba(23, 53, 44, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 254, 250, 0.88);
+}
+
+.planner-controls {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+  align-items: end;
+  gap: 10px;
+  padding: 14px;
+}
+
+.planner-controls label {
+  min-width: 0;
+}
+
+.planner-controls label > span:first-child {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--ink-soft);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.planner-controls input:not([type="checkbox"]) {
+  width: 100%;
+  padding: 9px 10px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  outline: none;
+  background: var(--paper);
+  font-size: 11px;
+}
+
+.planner-toggle {
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.planner-toggle input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: var(--forest);
+}
+
+.planner-toggle span:last-child {
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.plan-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.plan-metrics article {
+  min-width: 0;
+  padding: 13px 14px;
+  border-right: 1px solid rgba(23, 53, 44, 0.07);
+}
+
+.plan-metrics article:last-child {
+  border-right: 0;
+}
+
+.plan-metrics svg {
+  color: var(--forest);
+}
+
+.plan-metrics span {
+  display: block;
+  margin-top: 7px;
+  color: var(--ink-soft);
+  font-size: 9px;
+}
+
+.plan-metrics strong {
+  display: block;
+  margin-top: 2px;
+  overflow-wrap: anywhere;
+  font-family: "Manrope", sans-serif;
+  font-size: 19px;
+}
+
+.plan-empty {
+  margin: 0;
+  padding: 24px;
+  color: #315e50;
+  border: 1px solid #c5ddd3;
+  border-radius: 10px;
+  background: #eef7f2;
+  font-size: 11px;
+}
+
+.trip-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trip-card {
+  padding: 13px;
+  border: 1px solid rgba(23, 53, 44, 0.1);
+  border-radius: 11px;
+  box-shadow: var(--shadow);
+  background: rgba(255, 254, 250, 0.94);
+}
+
+.trip-card header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.trip-card h2 {
+  margin: 3px 0 0;
+  overflow-wrap: anywhere;
+  font-size: 17px;
+}
+
+.trip-score {
+  flex: none;
+  max-width: 42%;
+  text-align: right;
+}
+
+.trip-score strong {
+  display: block;
+  color: var(--forest);
+  overflow-wrap: anywhere;
+  font-size: 17px;
+}
+
+.trip-score span {
+  color: var(--ink-soft);
+  font-size: 9px;
+}
+
+.trip-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  color: #66756e;
+  font-size: 9px;
+}
+
+.trip-meta span {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 5px;
+}
+
+.trip-deals {
+  display: grid;
+  gap: 8px;
+  margin: 11px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trip-deals li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #ecebe4;
+}
+
+.trip-deals li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.trip-deals strong,
+.trip-deals span,
+.trip-deals em {
+  display: block;
+  min-width: 0;
+}
+
+.trip-deals strong {
+  overflow-wrap: anywhere;
+  font-size: 11px;
+}
+
+.trip-deals span {
+  margin-top: 2px;
+  color: var(--ink-soft);
+  font-size: 9px;
+}
+
+.trip-deals em {
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+  color: #a56b24;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.trip-deals a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--forest);
+  font-size: 9px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.plan-assumptions,
+.plan-exclusions {
+  padding: 14px;
+  border: 1px solid rgba(23, 53, 44, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 254, 250, 0.86);
+}
+
+.plan-assumptions h2,
+.plan-exclusions button {
+  margin: 0;
+}
+
+.plan-assumptions h2 {
+  font-size: 14px;
+}
+
+.plan-assumptions ul,
+.plan-exclusions ul {
+  margin: 9px 0 0;
+  padding-left: 18px;
+  color: #66756e;
+  font-size: 10px;
+}
+
+.plan-assumptions li + li,
+.plan-exclusions li + li {
+  margin-top: 4px;
+}
+
+.plan-exclusions ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.plan-exclusions button {
+  padding: 0;
+  color: var(--forest);
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  font-size: 10px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.plan-exclusions li {
+  padding-top: 8px;
+  border-top: 1px solid #ecebe4;
+}
+
+.plan-exclusions li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.plan-exclusions strong,
+.plan-exclusions span,
+.plan-exclusions em {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.plan-exclusions strong {
+  font-size: 11px;
+}
+
+.plan-exclusions span {
+  margin-top: 2px;
+  font-size: 10px;
+}
+
+.plan-exclusions em {
+  margin-top: 2px;
+  color: #a56b24;
+  font-size: 9px;
+  font-style: normal;
+}
+
 .grocery-watchlist {
   overflow: hidden;
   background:
@@ -3211,6 +3526,18 @@ a {
   .grocery-watch-adder button {
     grid-column: 1 / -1;
   }
+
+  .plan-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .plan-metrics article:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .plan-metrics article:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(23, 53, 44, 0.07);
+  }
 }
 
 @media (max-width: 760px) {
@@ -3460,6 +3787,29 @@ a {
     align-items: flex-start;
     flex-wrap: wrap;
   }
+
+  .planner-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .planner-toggle {
+    align-items: center;
+    justify-content: flex-start;
+    white-space: normal;
+  }
+
+  .trip-meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .trip-deals li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .trip-deals a {
+    width: fit-content;
+  }
 }
 
 @media (max-width: 480px) {
@@ -3598,6 +3948,34 @@ a {
     width: 100%;
     justify-content: center;
     margin-left: 0;
+  }
+
+  .planner-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-metrics article {
+    padding: 12px;
+  }
+
+  .plan-metrics strong {
+    font-size: 17px;
+  }
+
+  .trip-card {
+    padding: 12px;
+  }
+
+  .trip-card header,
+  .trip-score {
+    max-width: none;
+    text-align: left;
+  }
+
+  .trip-card header {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 6px;
   }
 }
 
