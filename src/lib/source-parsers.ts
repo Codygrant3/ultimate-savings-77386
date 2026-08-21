@@ -291,8 +291,85 @@ function parseTake5({ source, pageUrl }: ParserContext, html: string): ParsedOff
   return dedupeCandidates(candidates);
 }
 
+function parseCostaOil({ source, pageUrl }: ParserContext, html: string): ParsedOfferCandidate[] {
+  const text = decodeHtml(
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]+>/g, "\n")
+  );
+  const lines = text.split("\n").map((line) => line.trim()).filter(Boolean);
+  const candidates: ParsedOfferCandidate[] = [];
+
+  const percentIndex = lines.findIndex(
+    (line) => /^30%(\s+off)?$/i.test(line)
+  );
+  if (percentIndex >= 0) {
+    const context = lines.slice(Math.max(0, percentIndex - 5), percentIndex + 12);
+    if (context.some((detail) => /any oil change/i.test(detail))) {
+      const expirationText = context
+        .map((line) => expirationFromDetail(line))
+        .find((value): value is string => value !== undefined);
+      const eligibility = context.find((line) =>
+        /proof of service|military id/i.test(line)
+      );
+      const stackLimit = context.find((line) =>
+        /cannot be combined/i.test(line)
+      );
+      const location = context.find((line) => /rayford/i.test(line));
+
+      candidates.push({
+        id: stableId(source.id, "30-percent-any-oil-change"),
+        sourceId: source.id,
+        merchant: "Costa Oil Spring Rayford",
+        title:
+          "30% off any oil change for veterans, military, and first responders",
+        url: pageUrl,
+        amountText: "30% off",
+        expirationText,
+        detail: [eligibility, stackLimit, location].filter(Boolean).join(" ")
+      });
+    }
+  }
+
+  lines.forEach((line, index) => {
+    const amountMatch = line.match(/^\$(\d+)\s+off$/i);
+    if (!amountMatch) return;
+
+    const context = lines.slice(index + 1, index + 13);
+    const isDiesel = context.some((detail) => /^diesel$/i.test(detail));
+    const isFullSynthetic = context.some((detail) =>
+      /full synthetic/i.test(detail)
+    );
+    if (!isFullSynthetic) return;
+
+    const service = isDiesel ? "diesel full synthetic" : "full synthetic";
+    const expirationText = context
+      .map((detail) => expirationFromDetail(detail))
+      .find((value): value is string => value !== undefined);
+    const location = context.find((detail) => /rayford/i.test(detail));
+    const stackLimit = context.find((detail) =>
+      /cannot be combined/i.test(detail)
+    );
+
+    candidates.push({
+      id: stableId(source.id, `${amountMatch[1]}-off-${service}`),
+      sourceId: source.id,
+      merchant: "Costa Oil Spring Rayford",
+      title: `$${amountMatch[1]} off any ${service} oil change`,
+      url: pageUrl,
+      amountText: amountMatch[0],
+      expirationText,
+      detail: [location, stackLimit].filter(Boolean).join(" ")
+    });
+  });
+
+  return dedupeCandidates(candidates);
+}
+
 const PARSERS: Record<string, (context: ParserContext, html: string) => ParsedOfferCandidate[]> = {
   "dutch-bros-rewards": parseDutchBros,
+  "costa-oil-rayford": parseCostaOil,
   "wendys-offers": parseWendys,
   "take5-rayford": parseTake5
 };

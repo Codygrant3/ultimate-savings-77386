@@ -29,6 +29,15 @@ const dutchBrosSource: DiscoverySource = {
   keywords: ["free drink", "rewards"]
 };
 
+const costaOilSource: DiscoverySource = {
+  id: "costa-oil-rayford",
+  name: "Costa Oil Rayford specials",
+  url: "https://spring-rayford.costaoils.com/specials",
+  category: "auto",
+  priority: 10,
+  keywords: ["oil change", "off"]
+};
+
 describe("merchant-specific offer parsers", () => {
   it("parses Wendy's offers and collapses semantic duplicates", () => {
     const html = `
@@ -90,6 +99,58 @@ describe("merchant-specific offer parsers", () => {
     );
 
     expect(candidates).toEqual([]);
+  });
+
+  it("parses Costa Oil local dollar and percentage specials with eligibility caveats", () => {
+    const html = `
+      <main>
+        <h1>Current Oil Change Specials</h1>
+        <section>
+          <div>Thank you for your service!</div>
+          <div>Coupon</div>
+          <div>Veterans, Military, &amp; First Responders</div>
+          <div>30%</div>
+          <div>OFF</div>
+          <div>ANY OIL CHANGE</div>
+          <div>Must show proof of service or military ID.</div>
+          <div>Cannot be combined with any other offers</div>
+          <div>12/31/2026</div>
+        </section>
+        <section>
+          <div>DIESEL SEPCIAL</div>
+          <div>Coupon</div>
+          <div>$10 OFF</div>
+          <div>Any</div>
+          <div>DIESEL</div>
+          <div>Full Synthetic</div>
+          <div>Oil Change</div>
+          <div>Valid at the Rayford Rd Location:</div>
+          <div>Cannot be combined with any other offers.</div>
+          <div>12/31/2026</div>
+        </section>
+      </main>
+    `;
+    const candidates = parseSourceOffers(
+      costaOilSource,
+      costaOilSource.url,
+      html
+    );
+
+    expect(candidates).toHaveLength(2);
+    const percentage = candidates.find(({ title }) =>
+      title.includes("30% off")
+    );
+    const diesel = candidates.find(({ title }) => title.includes("diesel"));
+
+    expect(percentage?.merchant).toBe("Costa Oil Spring Rayford");
+    expect(percentage?.amountText).toBe("30% off");
+    expect(percentage?.expirationText).toBe("12/31/2026");
+    expect(percentage?.detail).toContain("proof of service");
+    expect(percentage?.detail).toContain("Cannot be combined");
+    expect(diesel?.title).toBe("$10 off any diesel full synthetic oil change");
+    expect(diesel?.amountText).toBe("$10 OFF");
+    expect(diesel?.expirationText).toBe("12/31/2026");
+    expect(diesel?.detail).toContain("Rayford Rd Location");
   });
 
   it("parses Dutch Bros welcome and points rewards without treating them as verified deals", () => {

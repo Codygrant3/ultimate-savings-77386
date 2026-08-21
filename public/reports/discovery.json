@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T19:09:06.819Z",
+  "generatedAt": "2026-08-21T20:54:04.315Z",
   "sourceCount": 28,
   "successfulCount": 23,
   "failedCount": 5,
@@ -18,8 +18,8 @@
         "off"
       ],
       "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
-      "status": "changed",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
+      "status": "unchanged",
       "matchedKeywords": [],
       "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "parsedOffers": []
@@ -37,7 +37,7 @@
         "circle"
       ],
       "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "weekly ad",
@@ -60,7 +60,7 @@
         "5x"
       ],
       "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -78,7 +78,7 @@
         "points"
       ],
       "canonicalUrl": "https://www.dutchbros.com/dutch-101",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free drink",
@@ -121,7 +121,7 @@
         "offer"
       ],
       "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "deal",
@@ -146,7 +146,7 @@
         "birthday"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -171,14 +171,14 @@
         "opening"
       ],
       "canonicalUrl": "https://joviroasters.com",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
-      "status": "unchanged",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
+      "status": "changed",
       "matchedKeywords": [
         "offer",
         "sale",
         "opening"
       ],
-      "contentHash": "c6ccdc88a63f52b570160b52a56bd1481b0dace02c72c0d2a87e381921014651",
+      "contentHash": "ea3871d9a408651d87bf7a55a26fb0cc3919ee0443366c77a4f0e2beaa68cd2f",
       "title": "Specialty Coffee - JoVi Coffee Roaster - Spring, Tx",
       "parsedOffers": []
     },
@@ -195,7 +195,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -218,7 +218,7 @@
         "offer"
       ],
       "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "per gallon",
@@ -243,8 +243,8 @@
         "exclusive deals"
       ],
       "canonicalUrl": "https://www.7-eleven.com/7rewards",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
-      "status": "changed",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
+      "status": "unchanged",
       "matchedKeywords": [
         "free snacks",
         "bonus points",
@@ -267,7 +267,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "coupon",
@@ -302,7 +302,7 @@
         "coupon"
       ],
       "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "oil change",
@@ -312,7 +312,38 @@
       ],
       "contentHash": "44e2b07c01983e6e43c6c8f9c3fc183bc9cba34a952f2c42a901c0c22f1bde93",
       "title": "Oil Change Coupons | Costa Oil",
-      "parsedOffers": []
+      "parsedOffers": [
+        {
+          "id": "costa-oil-rayford-30-percent-any-oil-change",
+          "sourceId": "costa-oil-rayford",
+          "merchant": "Costa Oil Spring Rayford",
+          "title": "30% off any oil change for veterans, military, and first responders",
+          "url": "https://spring-rayford.costaoils.com/specials",
+          "amountText": "30% off",
+          "expirationText": "12/31/2026",
+          "detail": "Must show proof of service or military ID. Cannot be combined with any other offers"
+        },
+        {
+          "id": "costa-oil-rayford-10-off-diesel-full-synthetic",
+          "sourceId": "costa-oil-rayford",
+          "merchant": "Costa Oil Spring Rayford",
+          "title": "$10 off any diesel full synthetic oil change",
+          "url": "https://spring-rayford.costaoils.com/specials",
+          "amountText": "$10 OFF",
+          "expirationText": "12/31/2026",
+          "detail": "Rayford Rd Cannot be combined with any other offers."
+        },
+        {
+          "id": "costa-oil-rayford-10-off-full-synthetic",
+          "sourceId": "costa-oil-rayford",
+          "merchant": "Costa Oil Spring Rayford",
+          "title": "$10 off any full synthetic oil change",
+          "url": "https://spring-rayford.costaoils.com/specials",
+          "amountText": "$10 OFF",
+          "expirationText": "07/31/2026",
+          "detail": "Rayford Rd Cannot be combined with any other offers."
+        }
+      ]
     },
     {
       "id": "rainbow-car-care",
@@ -327,7 +358,7 @@
         "reward"
       ],
       "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -351,7 +382,7 @@
         "stubs"
       ],
       "canonicalUrl": "https://www.amctheatres.com/offers",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -369,7 +400,7 @@
         "ticket"
       ],
       "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "promotion",
@@ -394,7 +425,7 @@
         "promotion"
       ],
       "canonicalUrl": "https://www.houstondynamofc.com/tickets",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "ticket",
@@ -417,7 +448,7 @@
         "backpacks"
       ],
       "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "sales tax holiday",
@@ -442,7 +473,7 @@
         "offer"
       ],
       "canonicalUrl": "https://news.dunkindonuts.com",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -465,7 +496,7 @@
         "rewards"
       ],
       "canonicalUrl": "https://www.wendys.com/offers-coupons",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -555,7 +586,7 @@
         "birthday reward"
       ],
       "canonicalUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "welcome reward",
@@ -580,7 +611,7 @@
         "offer"
       ],
       "canonicalUrl": "https://stories.whataburger.com",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -604,7 +635,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://about.starbucks.com/press",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -622,7 +653,7 @@
         "offer"
       ],
       "canonicalUrl": "https://corporate.mcdonalds.com/corpmcd/our-stories.html",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [],
       "contentHash": "59aecbeabc795b6fcdfc8122660627a5dde4499440d300b62eeb5ce25fb62e0e",
@@ -642,7 +673,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://www.tacobell.com/newsroom",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "rewards",
@@ -665,7 +696,7 @@
         "cash payment"
       ],
       "canonicalUrl": "https://www.onlinetvsettlement.com",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -683,7 +714,7 @@
         "settlement class"
       ],
       "canonicalUrl": "https://landsenddatasettlement.com/faq",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "claim",
@@ -708,7 +739,7 @@
         "authorized by the court"
       ],
       "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -725,7 +756,7 @@
         "official settlement website"
       ],
       "canonicalUrl": "https://www.clarkcountydatasettlement.com",
-      "checkedAt": "2026-08-21T19:09:06.819Z",
+      "checkedAt": "2026-08-21T20:54:04.315Z",
       "status": "unchanged",
       "matchedKeywords": [
         "submit claim",
@@ -754,6 +785,23 @@
         "$10 value",
         "Requires 10 spend",
         "Expires 9/10/26",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "costa-oil-rayford-10-off-full-synthetic",
+      "sourceId": "costa-oil-rayford",
+      "merchant": "Costa Oil Spring Rayford",
+      "title": "$10 off any full synthetic oil change",
+      "url": "https://spring-rayford.costaoils.com/specials",
+      "amountText": "$10 OFF",
+      "expirationText": "07/31/2026",
+      "detail": "Rayford Rd Cannot be combined with any other offers.",
+      "candidateScore": 58,
+      "candidateReasons": [
+        "$10 OFF value",
+        "No minimum captured",
+        "Expired date",
         "Source priority 10"
       ]
     },
@@ -822,6 +870,23 @@
       ]
     },
     {
+      "id": "costa-oil-rayford-10-off-diesel-full-synthetic",
+      "sourceId": "costa-oil-rayford",
+      "merchant": "Costa Oil Spring Rayford",
+      "title": "$10 off any diesel full synthetic oil change",
+      "url": "https://spring-rayford.costaoils.com/specials",
+      "amountText": "$10 OFF",
+      "expirationText": "12/31/2026",
+      "detail": "Rayford Rd Cannot be combined with any other offers.",
+      "candidateScore": 48,
+      "candidateReasons": [
+        "$10 OFF value",
+        "No minimum captured",
+        "Expires 12/31/2026",
+        "Source priority 10"
+      ]
+    },
+    {
       "id": "dutch-bros-rewards-250-points-free-medium-drink",
       "sourceId": "dutch-bros-rewards",
       "merchant": "Dutch Bros",
@@ -849,6 +914,23 @@
         "Free reward",
         "No minimum captured",
         "No expiration captured",
+        "Source priority 10"
+      ]
+    },
+    {
+      "id": "costa-oil-rayford-30-percent-any-oil-change",
+      "sourceId": "costa-oil-rayford",
+      "merchant": "Costa Oil Spring Rayford",
+      "title": "30% off any oil change for veterans, military, and first responders",
+      "url": "https://spring-rayford.costaoils.com/specials",
+      "amountText": "30% off",
+      "expirationText": "12/31/2026",
+      "detail": "Must show proof of service or military ID. Cannot be combined with any other offers",
+      "candidateScore": 45,
+      "candidateReasons": [
+        "30% off value",
+        "No minimum captured",
+        "Expires 12/31/2026",
         "Source priority 10"
       ]
     },
