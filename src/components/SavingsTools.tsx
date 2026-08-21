@@ -79,7 +79,8 @@ const WATCH_TARGETS: Record<string, number> = {
   "ground-beef-80-20": 5,
   "roma-tomatoes": 1,
   "whole-milk-gallon": 3,
-  "walmart-local-rollbacks": 1.75
+  "walmart-local-rollbacks": 1.75,
+  "walmart-local-fresh-sausage": 3
 };
 
 function selectWatchPrice(comparison: LocalGroceryComparison) {

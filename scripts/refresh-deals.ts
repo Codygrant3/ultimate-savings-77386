@@ -120,6 +120,7 @@ const groceryTargetPrices: Record<string, number> = {
   "roma-tomatoes": 1,
   "whole-milk-gallon": 3,
   "walmart-local-rollbacks": 1.75,
+  "walmart-local-fresh-sausage": 3,
   "family-size-cheerios": 0.22,
   "walmart-local-blueberries": 0.3,
   "walmart-local-watermelon": 5,

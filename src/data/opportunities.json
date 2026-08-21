@@ -1435,6 +1435,91 @@
     ]
   },
   {
+    "id": "dq-double-flip-blizzard-2026-08",
+    "merchant": "Dairy Queen",
+    "title": "Second Blizzard Treat for 99 cents",
+    "summary": "DQ Rewards members can buy one Blizzard Treat and get a second for 99 cents once per day through August 30.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-08-30",
+    "locationNote": "DQ app and Rewards account required at participating U.S. locations; Spring-area participation and menu prices are not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "dessert",
+      "app",
+      "rewards",
+      "buy one get one",
+      "daily"
+    ],
+    "source": {
+      "label": "Dairy Queen official newsroom",
+      "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Kicking-Off-Fall-Flavor-Season-with-the-NEW-Caramel-Apple-Cheesecake-BLIZZARD-Treat-and-More-Seasonal-Treats-Coming-Soon-/default.aspx",
+      "checkedOn": "2026-08-21"
+    },
+    "actionLabel": "Check Double Flip offer",
+    "tier": "A",
+    "stackNote": "Use the loaded DQ app deal by itself unless checkout expressly permits another reward.",
+    "finePrint": "Available August 3-30 at participating U.S. locations. A DQ Rewards account is required, and the deal may take up to 24 hours to appear. Redeemable once per day. No dollar estimate is shown because regular local Blizzard prices and participating Spring locations were not publicly verified.",
+    "expirationLabel": "Ends August 30",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-21",
+    "preferenceSignals": [
+      "restaurant",
+      "app-specific",
+      "repeatable",
+      "high-value"
+    ]
+  },
+  {
+    "id": "heb-academy-gift-card-fifteen-off-2026-08",
+    "merchant": "H-E-B",
+    "title": "$15 off $75 in Academy gift cards",
+    "summary": "H-E-B's official coupon page lists $15 off a basket containing $75 or more in Academy gift cards.",
+    "category": "shopping",
+    "estimatedSavings": 15,
+    "minimumSpend": 75,
+    "savingsRate": 20,
+    "isFree": false,
+    "expiresOn": "2026-08-25",
+    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability and in-store gift-card inventory are not locally confirmed.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "back to school",
+      "sports",
+      "clothing",
+      "gift card",
+      "digital coupon",
+      "location-gated"
+    ],
+    "source": {
+      "label": "H-E-B official coupon page",
+      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
+      "checkedOn": "2026-08-21"
+    },
+    "actionLabel": "Check and clip coupon",
+    "tier": "A",
+    "stackNote": "Use only for an already-planned Academy purchase. Do not assume this coupon combines with another gift-card promotion.",
+    "finePrint": "Requires at least $75 in Academy gift cards and is listed as redeemable in store with a limit of one per customer. The official page says it expires Tuesday, August 25. The $15 value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
+    "expirationLabel": "Ends August 25",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-08-21",
+    "preferenceSignals": [
+      "teen",
+      "back-to-school",
+      "shopping",
+      "high-value",
+      "location-gated"
+    ]
+  },
+  {
     "id": "chipotle-school-spirit-bogo-2026-08-20",
     "merchant": "Chipotle",
     "title": "School Spirit BOGO entree on Thursday",
@@ -1537,7 +1622,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-20"
+      "checkedOn": "2026-08-21"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-20T15:25:15.093Z",
+  "generatedAt": "2026-08-21T15:05:26.512Z",
   "weekOf": "2026-08-17",
   "zipCode": "77386",
-  "totalPotentialSavings": 144.49,
+  "totalPotentialSavings": 159.49,
   "verifiedCount": 36,
   "expiringCount": 16,
   "opportunities": [
@@ -595,86 +595,47 @@
       "scoreLabel": "Excellent"
     },
     {
-      "id": "chipotle-school-spirit-bogo-2026-08-20",
-      "merchant": "Chipotle",
-      "title": "School Spirit BOGO entree on Thursday",
-      "summary": "On Thursday, August 20, guests wearing school apparel or accessories can buy an entree from 3 p.m. to close local time and receive a second entree free at participating U.S. Chipotle restaurants.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "expiresOn": "2026-08-20",
-      "locationNote": "In-restaurant only at participating U.S. Chipotles; a convenient 77386 location was not confirmed in this public scan.",
+      "id": "heb-academy-gift-card-fifteen-off-2026-08",
+      "merchant": "H-E-B",
+      "title": "$15 off $75 in Academy gift cards",
+      "summary": "H-E-B's official coupon page lists $15 off a basket containing $75 or more in Academy gift cards.",
+      "category": "shopping",
+      "estimatedSavings": 15,
+      "minimumSpend": 75,
+      "savingsRate": 20,
+      "isFree": false,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability and in-store gift-card inventory are not locally confirmed.",
       "verification": "verified",
       "friction": "medium",
       "tags": [
-        "one-day",
-        "BOGO",
         "back to school",
-        "in restaurant"
+        "sports",
+        "clothing",
+        "gift card",
+        "digital coupon",
+        "location-gated"
       ],
       "source": {
-        "label": "Chipotle official newsroom",
-        "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-        "checkedOn": "2026-08-20"
+        "label": "H-E-B official coupon page",
+        "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
+        "checkedOn": "2026-08-21"
       },
-      "actionLabel": "Review Thursday BOGO",
+      "actionLabel": "Check and clip coupon",
       "tier": "A",
-      "stackNote": "Do not combine with other coupons. Purchased items can still earn Chipotle Rewards points.",
-      "finePrint": "Valid only August 20, 2026 after 3:00 p.m. local. Wearer of school apparel or accessories only, as determined by the restaurant. Each free item requires purchase of an entree of equal or greater value. Limit five free entrees per check. In-restaurant only; not valid for catering, mobile, online, or delivery. No dollar value is estimated because local entree prices were not verified.",
-      "expirationLabel": "August 20, 3 p.m. to close",
+      "stackNote": "Use only for an already-planned Academy purchase. Do not assume this coupon combines with another gift-card promotion.",
+      "finePrint": "Requires at least $75 in Academy gift cards and is listed as redeemable in store with a limit of one per customer. The official page says it expires Tuesday, August 25. The $15 value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
+      "expirationLabel": "Ends August 25",
       "availability": "available",
-      "dealType": "promotion-event",
+      "dealType": "digital-coupon",
       "freshness": "new",
-      "discoveredOn": "2026-08-18",
+      "discoveredOn": "2026-08-21",
       "preferenceSignals": [
-        "one-day",
+        "teen",
         "back-to-school",
-        "time-sensitive"
-      ],
-      "score": 100,
-      "scoreLabel": "Excellent"
-    },
-    {
-      "id": "chipotle-iq-free-food-chance-2026-08",
-      "merchant": "Chipotle",
-      "title": "Hourly chance for a BOGO entree or free side",
-      "summary": "Chipotle Rewards members can play the Chipotle IQ trivia game once daily through August 20; each hour, the first 8,000 players scoring five out of five receive a BOGO entree, free Cilantro Lime Sauce, or free Queso Blanco offer.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "expiresOn": "2026-08-20",
-      "locationNote": "No purchase is required to play, but a Chipotle Rewards account is required and any food reward is subject to the official rules and participating-location redemption terms.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "flash deal",
-        "free food",
-        "BOGO",
-        "trivia",
-        "rewards account",
-        "limited quantity"
-      ],
-      "source": {
-        "label": "Chipotle official newsroom",
-        "url": "https://newsroom.chipotle.com/2026-08-11-CHIPOTLE-IQ-RETURNS-WITH-MORE-THAN-1-MILLION-IN-FREE-CHIPOTLE%2C-PLUS-NEW-DAILY-STREAKS%2C-SILVER-TICKETS-AND-A-COLLECTIBLE-CARD-GAME",
-        "checkedOn": "2026-08-20"
-      },
-      "actionLabel": "Play Chipotle IQ",
-      "tier": "A",
-      "stackNote": "This is a limited-quantity game reward, not a guaranteed coupon; play early in an hourly window and do not count savings unless a reward is actually awarded and used.",
-      "finePrint": "Runs from August 18 at 6:00 a.m. Pacific through August 20 at 5:59 p.m. Pacific. Rewards members may play once per day. Each hour, the first 8,000 players scoring five out of five receive one of 5,000 BOGO entree offers, 1,500 free Cilantro Lime Sauce offers, or 1,500 free Queso Blanco offers. No purchase necessary; eligibility and prize limits apply. No value is estimated because the result and prize are not guaranteed.",
-      "expirationLabel": "Ends August 20 at 7:59 p.m. CT",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-08-19",
-      "preferenceSignals": [
-        "flash-deal",
-        "free-food",
-        "app-specific",
-        "time-sensitive"
+        "shopping",
+        "high-value",
+        "location-gated"
       ],
       "score": 100,
       "scoreLabel": "Excellent"
@@ -701,7 +662,7 @@
       "source": {
         "label": "Chipotle official newsroom",
         "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-        "checkedOn": "2026-08-20"
+        "checkedOn": "2026-08-21"
       },
       "actionLabel": "Check Sundays code",
       "tier": "A",
@@ -1206,6 +1167,49 @@
       "availability": "program",
       "dealType": "loyalty-reward",
       "freshness": "current",
+      "score": 81,
+      "scoreLabel": "Strong"
+    },
+    {
+      "id": "dq-double-flip-blizzard-2026-08",
+      "merchant": "Dairy Queen",
+      "title": "Second Blizzard Treat for 99 cents",
+      "summary": "DQ Rewards members can buy one Blizzard Treat and get a second for 99 cents once per day through August 30.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-08-30",
+      "locationNote": "DQ app and Rewards account required at participating U.S. locations; Spring-area participation and menu prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "dessert",
+        "app",
+        "rewards",
+        "buy one get one",
+        "daily"
+      ],
+      "source": {
+        "label": "Dairy Queen official newsroom",
+        "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Kicking-Off-Fall-Flavor-Season-with-the-NEW-Caramel-Apple-Cheesecake-BLIZZARD-Treat-and-More-Seasonal-Treats-Coming-Soon-/default.aspx",
+        "checkedOn": "2026-08-21"
+      },
+      "actionLabel": "Check Double Flip offer",
+      "tier": "A",
+      "stackNote": "Use the loaded DQ app deal by itself unless checkout expressly permits another reward.",
+      "finePrint": "Available August 3-30 at participating U.S. locations. A DQ Rewards account is required, and the deal may take up to 24 hours to appear. Redeemable once per day. No dollar estimate is shown because regular local Blizzard prices and participating Spring locations were not publicly verified.",
+      "expirationLabel": "Ends August 30",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-21",
+      "preferenceSignals": [
+        "restaurant",
+        "app-specific",
+        "repeatable",
+        "high-value"
+      ],
       "score": 81,
       "scoreLabel": "Strong"
     },

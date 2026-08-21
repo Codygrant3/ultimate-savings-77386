@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-08-20",
-  "adWindow": "Live public listings checked August 20, 2026; only reverified prices use that date, and older prices retain their original check dates.",
+  "checkedOn": "2026-08-21",
+  "adWindow": "Live public listings checked August 21, 2026; only reverified prices use that date, and older prices retain their original check dates.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -89,8 +89,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Rollback at Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-15",
-          "dateLabel": "Store page checked Aug 15; rollback; no end date shown",
+          "checkedOn": "2026-08-21",
+          "dateLabel": "Store page checked Aug 21; rollback from $0.45 each; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -181,7 +181,7 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "These are store-specific rollbacks, not a four-store comparison. Green seedless grapes were reverified at $1.97/lb on August 20; the Gala apple price retains its August 15 check date.",
+      "comparisonNote": "These are store-specific rollbacks, not a four-store comparison. Green seedless grapes were reverified at $1.97/lb on August 21; the Gala apple price retains its August 15 check date.",
       "winner": "Walmart #3585 Gala apples at $1.08/lb (last checked August 15)",
       "prices": [
         {
@@ -193,8 +193,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-20",
-          "dateLabel": "Store page checked Aug 20; rollback from $5.33; no end date shown",
+          "checkedOn": "2026-08-21",
+          "dateLabel": "Store page checked Aug 21; rollback from $5.33; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -208,6 +208,41 @@
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
           "checkedOn": "2026-08-15",
           "dateLabel": "Store page checked Aug 15; rollback from $3.64; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        }
+      ]
+    },
+    {
+      "id": "walmart-local-fresh-sausage",
+      "item": "Fresh sausage and bratwurst",
+      "category": "meat",
+      "comparisonNote": "These are store-specific Walmart rollbacks. Both 1-pound 3-ounce packages normalize to $2.50 per pound.",
+      "winner": "Walmart #3585 at $2.50/lb",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Marketside Mild Italian Sausage, 5 Links",
+          "packageSize": "1 lb 3 oz",
+          "price": 2.97,
+          "unitPrice": 2.5,
+          "unit": "lb",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-21",
+          "dateLabel": "Store page checked Aug 21; rollback from $4.92; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        },
+        {
+          "retailer": "Walmart",
+          "product": "Marketside Cheddar Bratwurst, 5 Links",
+          "packageSize": "1 lb 3 oz",
+          "price": 2.97,
+          "unitPrice": 2.5,
+          "unit": "lb",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-21",
+          "dateLabel": "Store page checked Aug 21; rollback from $4.92; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -272,8 +307,8 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-20",
-          "dateLabel": "Store page checked Aug 20; rollback from $8.97; no end date shown",
+          "checkedOn": "2026-08-21",
+          "dateLabel": "Store page checked Aug 21; rollback from $6.97; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
