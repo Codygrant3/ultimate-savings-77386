@@ -538,10 +538,10 @@
   {
     "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
     "merchant": "Exxon Mobil Rewards+",
-    "title": "Up to $15 in points across seven app fill-ups",
-    "summary": "First-time Exxon Mobil Rewards+ app fuel users can earn $5 after each of their first two qualifying fills, then $1 after each of the next five qualifying fills.",
+    "title": "$5 in points on each of the first two app fill-ups",
+    "summary": "New Exxon Mobil Rewards+ app users can earn $5 in points after each of their first two qualifying app fuel purchases.",
     "category": "fuel",
-    "estimatedSavings": 15,
+    "estimatedSavings": 10,
     "minimumSpend": 0,
     "isFree": false,
     "expiresOn": "2026-09-30",
@@ -552,18 +552,18 @@
       "fuel",
       "first-time app user",
       "points",
-      "seven fill-ups"
+      "two fill-ups"
     ],
     "source": {
-      "label": "Exxon Mobil Rewards+ official FAQ",
-      "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-      "checkedOn": "2026-08-20"
+      "label": "Exxon Mobil Rewards+ official offer page",
+      "url": "https://www.exxonmobilfuels.com/en/rewards",
+      "checkedOn": "2026-08-21"
     },
     "actionLabel": "Check app eligibility",
     "tier": "A",
-    "stackNote": "Regular Rewards+ points are earned on the qualifying fills; do not assume another promotion combines.",
-    "finePrint": "Only members making their first app fuel purchase qualify. Each of seven app-paid fills must be at least 8 gallons. The first two fills earn $5 each; the next five earn $1 each and must be completed within the following 60 days. Offer period ends September 30.",
-    "expirationLabel": "Start by September 30; finish the last five within 60 days",
+    "stackNote": "Regular Rewards+ points are also earned on the qualifying fills; confirm current app terms before assuming another promotion combines.",
+    "finePrint": "New-app-user offer. The linked official rewards page states $5 in points after each of the first two app fill-ups. Confirm the app for the qualifying-transaction window, gallon minimum, and promotion exclusions before making a special trip.",
+    "expirationLabel": "Offer period through September 30; confirm app deadline",
     "availability": "available",
     "dealType": "fuel-reward",
     "freshness": "improved",
