@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import opportunitiesData from "./data/opportunities.json";
+import localMerchantInventoryData from "./data/local-merchant-inventory.json";
 import { GroceryDashboard, SavingsTools } from "./components/SavingsTools";
 import { SettlementsDashboard } from "./components/SettlementsDashboard";
 import settlementsData from "./data/settlements.json";
@@ -60,6 +61,7 @@ import {
 import type {
   Category,
   ClassActionSettlement,
+  LocalMerchantInventory,
   Opportunity,
   ReceiptEntry,
   ScoredOpportunity,
@@ -78,6 +80,7 @@ type View =
 type CategoryFilter = "all" | Category;
 
 const opportunities = opportunitiesData as Opportunity[];
+const merchantInventory = localMerchantInventoryData as LocalMerchantInventory;
 const currentOpportunities = rankOpportunities(opportunities);
 const currentSettlements = rankSettlements(
   settlementsData as ClassActionSettlement[]
@@ -354,7 +357,13 @@ export default function App() {
     [analysisDate, receipts]
   );
   const rankedOpportunities = useMemo(
-    () => rankOpportunities(opportunities, analysisDate, learnedPreferences),
+    () =>
+      rankOpportunities(
+        opportunities,
+        analysisDate,
+        learnedPreferences,
+        merchantInventory
+      ),
     [analysisDate, learnedPreferences]
   );
 

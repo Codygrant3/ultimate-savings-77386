@@ -1,0 +1,61 @@
+{
+  "zipCode": "77386",
+  "origin": {
+    "label": "77386 centroid",
+    "latitude": 30.1622,
+    "longitude": -95.4018
+  },
+  "checkedOn": "2026-08-21",
+  "merchants": [
+    {
+      "id": "dunkin-rayford",
+      "merchantAliases": ["Dunkin", "Dunkin'"],
+      "locationName": "Dunkin' Rayford Road",
+      "address": "2222 Rayford Road, Spring, TX 77386",
+      "distanceMiles": 2.8,
+      "sourceLabel": "Dunkin Rayford Road location page",
+      "sourceUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
+      "checkedOn": "2026-08-11"
+    },
+    {
+      "id": "take5-rayford",
+      "merchantAliases": ["Take 5 Oil Change", "Take 5"],
+      "locationName": "Take 5 Oil Change Rayford Road",
+      "address": "442 Rayford Road, Spring, TX 77386",
+      "distanceMiles": 2.4,
+      "sourceLabel": "Take 5 Spring location coupons",
+      "sourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
+      "checkedOn": "2026-08-19"
+    },
+    {
+      "id": "costa-oil-rayford",
+      "merchantAliases": ["Costa Oil Rayford", "Costa Oil"],
+      "locationName": "Costa Oil Rayford Road",
+      "address": "401-1/2 Rayford Road, Spring, TX 77386",
+      "distanceMiles": 2.6,
+      "sourceLabel": "Costa Oil Rayford specials",
+      "sourceUrl": "https://spring-rayford.costaoils.com/specials",
+      "checkedOn": "2026-08-16"
+    },
+    {
+      "id": "rainbow-car-care-sawdust",
+      "merchantAliases": ["Rainbow Car Care"],
+      "locationName": "Rainbow Car Care Sawdust Road",
+      "address": "318 Sawdust Road, The Woodlands, TX 77380",
+      "distanceMiles": 4.7,
+      "sourceLabel": "Rainbow Car Care frequent wash program",
+      "sourceUrl": "https://rainbowcarcare.com/frequent-wash-program",
+      "checkedOn": "2026-08-15"
+    },
+    {
+      "id": "jovi-rayford",
+      "merchantAliases": ["JoVi + local coffee shops", "JoVi Coffee", "JoVi"],
+      "locationName": "JoVi Coffee Rayford Road",
+      "address": "602 Rayford Road, Spring, TX 77386",
+      "distanceMiles": 2.2,
+      "sourceLabel": "JoVI Coffee official site",
+      "sourceUrl": "https://joviroasters.com/",
+      "checkedOn": "2026-08-11"
+    }
+  ]
+}

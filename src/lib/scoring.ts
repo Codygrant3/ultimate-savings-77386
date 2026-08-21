@@ -1,6 +1,8 @@
 import preferencesData from "../data/preferences.json";
+import { resolveOpportunityDistance } from "./distance";
 import type {
   Category,
+  LocalMerchantInventory,
   Opportunity,
   LearnedPreferences,
   PreferenceEvidence,
@@ -204,11 +206,20 @@ function householdFit(
   };
 }
 
-function localRelevance(opportunity: Opportunity): { value: number; detail: string } {
-  const distance = opportunity.distanceMiles;
+function localRelevance(
+  opportunity: Opportunity,
+  inventory?: LocalMerchantInventory
+): { value: number; detail: string } {
+  const resolved =
+    opportunity.distanceMiles !== undefined
+      ? null
+      : resolveOpportunityDistance(opportunity, inventory);
+  const distance = opportunity.distanceMiles ?? resolved?.distanceMiles;
+
   if (distance === undefined) {
     return { value: 55, detail: "Location not distance-confirmed" };
   }
+
   const value =
     distance <= 1
       ? 100
@@ -221,6 +232,14 @@ function localRelevance(opportunity: Opportunity): { value: number; detail: stri
             : distance <= 20
               ? 40
               : 10;
+
+  if (resolved) {
+    return {
+      value: Math.round(value * 0.75),
+      detail: `~${distance} miles to ${resolved.locationName}; offer participation unconfirmed`
+    };
+  }
+
   return { value, detail: `${distance} miles from 77386` };
 }
 
@@ -332,7 +351,8 @@ function stackability(opportunity: Opportunity): { value: number; detail: string
 export function scoreOpportunity(
   opportunity: Opportunity,
   today = new Date(),
-  learned?: LearnedPreferences
+  learned?: LearnedPreferences,
+  inventory?: LocalMerchantInventory
 ): ScoredOpportunity {
   const factors = [
     evidenceQuality(opportunity, today),
@@ -345,7 +365,7 @@ export function scoreOpportunity(
           : "Savings rate not published"
     },
     householdFit(opportunity, learned),
-    localRelevance(opportunity),
+    localRelevance(opportunity, inventory),
     timingQuality(opportunity, today),
     effortQuality(opportunity),
     spendEfficiency(opportunity),
@@ -391,14 +411,17 @@ export function scoreOpportunity(
 export function rankOpportunities(
   opportunities: Opportunity[],
   today = new Date(),
-  learned?: LearnedPreferences
+  learned?: LearnedPreferences,
+  inventory?: LocalMerchantInventory
 ): ScoredOpportunity[] {
   return opportunities
     .filter(
       (opportunity) =>
         !isExpired(opportunity, today) && !isExcludedByPreferences(opportunity)
     )
-    .map((opportunity) => scoreOpportunity(opportunity, today, learned))
+    .map((opportunity) =>
+      scoreOpportunity(opportunity, today, learned, inventory)
+    )
     .sort((first, second) => {
       if (second.score !== first.score) return second.score - first.score;
       if (second.estimatedSavings !== first.estimatedSavings) {

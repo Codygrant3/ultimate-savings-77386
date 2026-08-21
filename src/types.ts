@@ -68,6 +68,37 @@ export interface Opportunity {
   preferenceSignals?: string[];
 }
 
+export interface LocalMerchantLocation {
+  id: string;
+  merchantAliases: string[];
+  locationName: string;
+  address: string;
+  distanceMiles: number;
+  sourceLabel: string;
+  sourceUrl: string;
+  checkedOn: string;
+}
+
+export interface LocalMerchantInventory {
+  zipCode: string;
+  origin: {
+    label: string;
+    latitude: number;
+    longitude: number;
+  };
+  checkedOn: string;
+  merchants: LocalMerchantLocation[];
+}
+
+export interface ResolvedDistance {
+  distanceMiles: number;
+  basis: "offer" | "merchant-location";
+  sourceLabel: string;
+  sourceUrl: string;
+  checkedOn: string;
+  locationName: string;
+}
+
 export interface ScoredOpportunity extends Opportunity {
   score: number;
   scoreLabel: "Excellent" | "Strong" | "Worth a look" | "Low priority";

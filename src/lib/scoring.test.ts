@@ -209,4 +209,43 @@ describe("savings scoring", () => {
       );
     expect(fitFactor?.detail).toContain("Learned history:");
   });
+
+  it("uses a checked merchant location with a conservative distance score", () => {
+    const today = new Date("2026-08-21T12:00:00");
+    const opportunity = {
+      ...baseOpportunity,
+      id: "merchant-location",
+      merchant: "Take 5 Oil Change",
+      locationNote: "Participating locations; confirm locally."
+    };
+    const inventory = {
+      zipCode: "77386",
+      origin: { label: "77386 centroid", latitude: 30.1622, longitude: -95.4018 },
+      checkedOn: "2026-08-21",
+      merchants: [
+        {
+          id: "take5",
+          merchantAliases: ["Take 5 Oil Change"],
+          locationName: "Take 5 Rayford Road",
+          address: "442 Rayford Road, Spring, TX 77386",
+          distanceMiles: 2.4,
+          sourceLabel: "Official location page",
+          sourceUrl: "https://example.com/location",
+          checkedOn: "2026-08-19"
+        }
+      ]
+    };
+    const scored = scoreOpportunity(
+      opportunity,
+      today,
+      undefined,
+      inventory as never
+    );
+    const factor = scored.scoreBreakdown.find(
+      ({ label }) => label === "Local relevance"
+    );
+
+    expect(factor?.detail).toContain("~2.4 miles to Take 5 Rayford Road");
+    expect(factor?.detail).toContain("offer participation unconfirmed");
+  });
 });
