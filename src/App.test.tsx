@@ -109,6 +109,31 @@ describe("Savings Desk interactions", () => {
     expect(window.localStorage.getItem("savings-desk:reminders")).not.toBe("[]");
   });
 
+  it("logs confirmed savings locally and feeds preference learning", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Savings tools" }));
+    fireEvent.change(screen.getByLabelText("Merchant"), {
+      target: { value: "H-E-B" }
+    });
+    fireEvent.change(screen.getByLabelText("Actual savings"), {
+      target: { value: "8.5" }
+    });
+    fireEvent.click(screen.getByRole("button", { name: "Log savings" }));
+
+    expect(screen.getAllByText("$8.50").length).toBeGreaterThan(0);
+    expect(
+      window.localStorage.getItem("savings-desk:receipts")
+    ).toContain("H-E-B");
+
+    fireEvent.click(screen.getByRole("button", { name: "Overview" }));
+    expect(screen.getByText("Confirmed savings")).toBeTruthy();
+    expect(screen.getAllByText("$8.50").length).toBeGreaterThan(0);
+    expect(
+      window.localStorage.getItem("savings-desk:receipts")
+    ).toContain('"merchant":"H-E-B"');
+  });
+
   it("shows grocery comparisons under the dedicated Grocery tab", () => {
     render(<App />);
 

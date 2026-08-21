@@ -1707,6 +1707,136 @@ a {
   background: #e0eff6;
 }
 
+.savings-history {
+  display: grid;
+  gap: 15px;
+}
+
+.history-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.history-summary div {
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid rgba(23, 53, 44, 0.08);
+  border-radius: 10px;
+  background: #f6f4ee;
+}
+
+.history-summary span,
+.history-summary strong {
+  display: block;
+}
+
+.history-summary span {
+  color: #66756e;
+  font-size: 8px;
+}
+
+.history-summary strong {
+  margin-top: 3px;
+  color: var(--forest);
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+
+.history-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.history-form label,
+.history-form label span,
+.history-form input,
+.history-form select {
+  min-width: 0;
+}
+
+.history-form label span {
+  display: block;
+  margin-bottom: 4px;
+  color: #5d6b64;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.history-form input,
+.history-form select {
+  width: 100%;
+  padding: 8px 9px;
+  border: 1px solid #d8d7cf;
+  border-radius: 8px;
+  background: #fffefb;
+  color: var(--ink);
+  font: inherit;
+  font-size: 11px;
+}
+
+.history-form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: end;
+  gap: 6px;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--forest);
+  color: #fffefb;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.history-form button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.history-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.history-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 9px 10px;
+  border: 1px solid rgba(23, 53, 44, 0.08);
+  border-radius: 9px;
+  background: rgba(255, 254, 250, 0.86);
+}
+
+.history-list strong,
+.history-list span {
+  display: block;
+}
+
+.history-list strong {
+  font-size: 11px;
+}
+
+.history-list span {
+  margin-top: 2px;
+  color: #66756e;
+  font-size: 9px;
+}
+
+.history-empty {
+  margin: 0;
+  color: #66756e;
+  font-size: 10px;
+}
+
 .grocery-watchlist {
   overflow: hidden;
   background:

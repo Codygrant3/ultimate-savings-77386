@@ -12,6 +12,7 @@ import {
   TrendingDown
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { SavingsHistory } from "./SavingsHistory";
 import comparisonData from "../data/local-grocery-comparisons.json";
 import {
   readGroceryWatchlist,
@@ -26,7 +27,8 @@ import type {
   GroceryWatchlistSnapshot,
   LocalGroceryComparison,
   Opportunity,
-  PriceAlert
+  PriceAlert,
+  ReceiptEntry
 } from "../types";
 
 const DEFAULT_ALERTS: PriceAlert[] = [
@@ -799,7 +801,17 @@ export function GroceryDashboard() {
   );
 }
 
-export function SavingsTools({ opportunities }: { opportunities: Opportunity[] }) {
+export function SavingsTools({
+  opportunities,
+  receipts,
+  onAddReceipt,
+  onDeleteReceipt
+}: {
+  opportunities: Opportunity[];
+  receipts: ReceiptEntry[];
+  onAddReceipt: (entry: ReceiptEntry) => void;
+  onDeleteReceipt: (id: string) => void;
+}) {
   return (
     <>
       <section className="page-heading tools-heading">
@@ -818,6 +830,12 @@ export function SavingsTools({ opportunities }: { opportunities: Opportunity[] }
         </span>
       </div>
       <div className="tools-grid">
+        <SavingsHistory
+          opportunities={opportunities}
+          receipts={receipts}
+          onAdd={onAddReceipt}
+          onDelete={onDeleteReceipt}
+        />
         <PriceAlerts />
         <StackingCalculator />
         <ExpirationReminders opportunities={opportunities} />

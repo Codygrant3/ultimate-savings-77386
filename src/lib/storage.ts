@@ -1,4 +1,4 @@
-import type { GroceryWatchItem, PriceAlert } from "../types";
+import type { GroceryWatchItem, PriceAlert, ReceiptEntry } from "../types";
 
 const SAVED_KEY = "savings-desk:saved";
 const REDEEMED_KEY = "savings-desk:redeemed";
@@ -7,6 +7,7 @@ const PRICE_ALERTS_KEY = "savings-desk:price-alerts";
 const GROCERY_WATCHLIST_KEY = "savings-desk:grocery-watchlist";
 const SETTLEMENT_SAVED_KEY = "savings-desk:settlement-saved";
 const SETTLEMENT_REMINDERS_KEY = "savings-desk:settlement-reminders";
+const RECEIPTS_KEY = "savings-desk:receipts";
 
 function readIds(key: string): string[] {
   try {
@@ -122,4 +123,32 @@ export function writeGroceryWatchlist(
 ): GroceryWatchItem[] {
   window.localStorage.setItem(GROCERY_WATCHLIST_KEY, JSON.stringify(items));
   return items;
+}
+
+export function readReceipts(): ReceiptEntry[] {
+  try {
+    const value = window.localStorage.getItem(RECEIPTS_KEY);
+    if (value === null) return [];
+    const parsed = JSON.parse(value) as unknown;
+    if (!Array.isArray(parsed)) return [];
+
+    return parsed.filter(
+      (entry): entry is ReceiptEntry =>
+        typeof entry === "object" &&
+        entry !== null &&
+        typeof (entry as ReceiptEntry).id === "string" &&
+        typeof (entry as ReceiptEntry).merchant === "string" &&
+        typeof (entry as ReceiptEntry).category === "string" &&
+        typeof (entry as ReceiptEntry).occurredOn === "string" &&
+        Number.isFinite((entry as ReceiptEntry).amountSpent) &&
+        Number.isFinite((entry as ReceiptEntry).actualSavings)
+    );
+  } catch {
+    return [];
+  }
+}
+
+export function writeReceipts(entries: ReceiptEntry[]): ReceiptEntry[] {
+  window.localStorage.setItem(RECEIPTS_KEY, JSON.stringify(entries));
+  return entries;
 }

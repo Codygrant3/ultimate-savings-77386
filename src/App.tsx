@@ -34,13 +34,21 @@ import opportunitiesData from "./data/opportunities.json";
 import { GroceryDashboard, SavingsTools } from "./components/SavingsTools";
 import { SettlementsDashboard } from "./components/SettlementsDashboard";
 import settlementsData from "./data/settlements.json";
+import { buildLearnedPreferences } from "./lib/preferences";
 import { formatCurrency, rankOpportunities, startOfWeek } from "./lib/scoring";
 import { rankSettlements } from "./lib/settlements";
-import { readRedeemedIds, readSavedIds, toggleStoredId } from "./lib/storage";
+import {
+  readReceipts,
+  readRedeemedIds,
+  readSavedIds,
+  toggleStoredId,
+  writeReceipts
+} from "./lib/storage";
 import type {
   Category,
   ClassActionSettlement,
   Opportunity,
+  ReceiptEntry,
   ScoredOpportunity,
   VerificationStatus
 } from "./types";
@@ -326,11 +334,21 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [savedIds, setSavedIds] = useState<string[]>(readSavedIds);
   const [redeemedIds, setRedeemedIds] = useState<string[]>(readRedeemedIds);
+  const [receipts, setReceipts] = useState<ReceiptEntry[]>(readReceipts);
+  const analysisDate = useMemo(() => new Date(), []);
+  const learnedPreferences = useMemo(
+    () => buildLearnedPreferences(receipts, analysisDate),
+    [analysisDate, receipts]
+  );
+  const rankedOpportunities = useMemo(
+    () => rankOpportunities(opportunities, analysisDate, learnedPreferences),
+    [analysisDate, learnedPreferences]
+  );
 
-  const verifiedDeals = currentOpportunities.filter(
+  const verifiedDeals = rankedOpportunities.filter(
     (opportunity) => opportunity.verification === "verified"
   );
-  const programs = currentOpportunities.filter(
+  const programs = rankedOpportunities.filter(
     (opportunity) => opportunity.verification !== "verified"
   );
   const expiringDeals = verifiedDeals.filter((opportunity) => opportunity.expiresOn);
@@ -344,13 +362,13 @@ export default function App() {
     (total, opportunity) => total + opportunity.estimatedSavings,
     0
   );
-  const realizedSavings = currentOpportunities
+  const realizedSavings = rankedOpportunities
     .filter((opportunity) => redeemedIds.includes(opportunity.id))
     .reduce((total, opportunity) => total + opportunity.estimatedSavings, 0);
 
   const filteredDeals = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
-    return currentOpportunities.filter((opportunity) => {
+    return rankedOpportunities.filter((opportunity) => {
       const categoryMatches = category === "all" || opportunity.category === category;
       const queryMatches =
         normalizedQuery.length === 0 ||
@@ -359,7 +377,7 @@ export default function App() {
           .includes(normalizedQuery);
       return categoryMatches && queryMatches;
     });
-  }, [category, query]);
+  }, [category, query, rankedOpportunities]);
 
   const displayedDeals =
     view === "programs"
@@ -382,6 +400,21 @@ export default function App() {
   function toggleRedeemed(id: string) {
     setRedeemedIds(toggleStoredId("redeemed", id));
   }
+
+  function addReceipt(entry: ReceiptEntry) {
+    setReceipts(writeReceipts([entry, ...receipts]));
+  }
+
+  function deleteReceipt(id: string) {
+    setReceipts(
+      writeReceipts(receipts.filter((receipt) => receipt.id !== id))
+    );
+  }
+
+  const confirmedSavings = receipts.reduce(
+    (total, receipt) => total + Math.max(0, receipt.actualSavings),
+    0
+  );
 
   return (
     <div className="app-shell">
@@ -579,9 +612,11 @@ export default function App() {
                   <div className="metric-card__icon metric-card__icon--blue">
                     <Check size={20} aria-hidden="true" />
                   </div>
-                  <span>Realized savings</span>
-                  <strong>{formatCurrency(realizedSavings)}</strong>
-                  <small>Based on offers marked used</small>
+                  <span>Confirmed savings</span>
+                  <strong>{formatCurrency(confirmedSavings)}</strong>
+                  <small>
+                    Receipt ledger · {formatCurrency(realizedSavings)} estimated
+                  </small>
                 </article>
               </section>
 
@@ -852,7 +887,12 @@ export default function App() {
           )}
 
           {view === "tools" && (
-            <SavingsTools opportunities={verifiedDeals} />
+            <SavingsTools
+              opportunities={verifiedDeals}
+              receipts={receipts}
+              onAddReceipt={addReceipt}
+              onDeleteReceipt={deleteReceipt}
+            />
           )}
 
           {view === "grocery" && (

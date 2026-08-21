@@ -2,6 +2,8 @@ import preferencesData from "../data/preferences.json";
 import type {
   Category,
   Opportunity,
+  LearnedPreferences,
+  PreferenceEvidence,
   ScoreFactor,
   ScoredOpportunity
 } from "../types";
@@ -33,6 +35,16 @@ function money(value: number): string {
     style: "currency",
     currency: "USD"
   }).format(value);
+}
+
+function learnedHistoryDetail(
+  evidence: PreferenceEvidence | undefined
+): string {
+  if (!evidence || evidence.count <= 0) return "";
+  const count = Math.round(evidence.count);
+  return `Learned history: ${count} result${count === 1 ? "" : "s"}, ${money(
+    evidence.confirmedSavings
+  )} confirmed`;
 }
 
 export function isExpired(opportunity: Opportunity, today = new Date()): boolean {
@@ -126,7 +138,10 @@ function valueQuality(opportunity: Opportunity): { value: number; detail: string
   };
 }
 
-function householdFit(opportunity: Opportunity): { value: number; detail: string } {
+function householdFit(
+  opportunity: Opportunity,
+  learned?: LearnedPreferences
+): { value: number; detail: string } {
   const categoryFit: Record<Category, number> = {
     grocery: 82,
     restaurants: 72,
@@ -164,12 +179,20 @@ function householdFit(opportunity: Opportunity): { value: number; detail: string
     .filter((keyword) => searchable.includes(keyword.toLowerCase()))
     .slice(0, 3);
 
+  const categoryAffinity = learned?.categoryAffinity[opportunity.category] ?? 0;
+  const merchantAffinity =
+    learned?.merchantAffinity[opportunity.merchant.trim().toLowerCase()] ?? 0;
+  const categoryEvidence = learned?.categoryEvidence[opportunity.category];
+  const learnedDetail = learnedHistoryDetail(categoryEvidence);
+
   return {
     value: Math.round(
       clamp(
         categoryFit[opportunity.category] +
           preferredMatches * 4 +
-          highPriorityMatches * 7,
+          highPriorityMatches * 7 +
+          categoryAffinity * 30 +
+          merchantAffinity * 20,
         0,
         100
       )
@@ -177,7 +200,7 @@ function householdFit(opportunity: Opportunity): { value: number; detail: string
     detail:
       matched.length > 0
         ? `Household match: ${matched.join(", ")}`
-        : "General household priority"
+        : "General household priority" + (learnedDetail ? `; ${learnedDetail}` : "")
   };
 }
 
@@ -308,7 +331,8 @@ function stackability(opportunity: Opportunity): { value: number; detail: string
 
 export function scoreOpportunity(
   opportunity: Opportunity,
-  today = new Date()
+  today = new Date(),
+  learned?: LearnedPreferences
 ): ScoredOpportunity {
   const factors = [
     evidenceQuality(opportunity, today),
@@ -320,7 +344,7 @@ export function scoreOpportunity(
           ? `${opportunity.savingsRate}% saved`
           : "Savings rate not published"
     },
-    householdFit(opportunity),
+    householdFit(opportunity, learned),
     localRelevance(opportunity),
     timingQuality(opportunity, today),
     effortQuality(opportunity),
@@ -366,14 +390,15 @@ export function scoreOpportunity(
 
 export function rankOpportunities(
   opportunities: Opportunity[],
-  today = new Date()
+  today = new Date(),
+  learned?: LearnedPreferences
 ): ScoredOpportunity[] {
   return opportunities
     .filter(
       (opportunity) =>
         !isExpired(opportunity, today) && !isExcludedByPreferences(opportunity)
     )
-    .map((opportunity) => scoreOpportunity(opportunity, today))
+    .map((opportunity) => scoreOpportunity(opportunity, today, learned))
     .sort((first, second) => {
       if (second.score !== first.score) return second.score - first.score;
       if (second.estimatedSavings !== first.estimatedSavings) {

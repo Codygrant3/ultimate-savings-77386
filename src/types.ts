@@ -81,6 +81,29 @@ export interface ScoreFactor {
   detail: string;
 }
 
+export interface ReceiptEntry {
+  id: string;
+  opportunityId?: string;
+  merchant: string;
+  category: Category;
+  occurredOn: string;
+  amountSpent: number;
+  actualSavings: number;
+  listedValue?: number;
+}
+
+export interface PreferenceEvidence {
+  count: number;
+  confirmedSavings: number;
+}
+
+export interface LearnedPreferences {
+  categoryAffinity: Record<Category, number>;
+  merchantAffinity: Record<string, number>;
+  categoryEvidence: Record<Category, PreferenceEvidence>;
+  merchantEvidence: Record<string, PreferenceEvidence>;
+}
+
 export interface WeeklyReport {
   generatedAt: string;
   weekOf: string;

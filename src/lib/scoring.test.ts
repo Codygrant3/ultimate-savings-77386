@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Opportunity } from "../types";
+import { buildLearnedPreferences } from "./preferences";
 import {
   isExcludedByPreferences,
   isExpired,
@@ -171,5 +172,41 @@ describe("savings scoring", () => {
     expect(stacked.scoreBreakdown).toHaveLength(9);
     expect(stacked.scoreBreakdown.reduce((total, factor) => total + factor.weight, 0)).toBe(100);
     expect(stacked.score).toBeLessThan(100);
+  });
+
+  it("uses confirmed receipt history to adjust household fit", () => {
+    const today = new Date("2026-08-21T12:00:00");
+    const learned = buildLearnedPreferences(
+      [
+        {
+          id: "receipt-one",
+          merchant: "Test",
+          category: "grocery",
+          occurredOn: "2026-08-20",
+          amountSpent: 10,
+          actualSavings: 10
+        },
+        {
+          id: "receipt-two",
+          merchant: "Test",
+          category: "grocery",
+          occurredOn: "2026-08-19",
+          amountSpent: 10,
+          actualSavings: 8
+        }
+      ],
+      today
+    );
+    const learnedScore = scoreOpportunity(baseOpportunity, today, learned);
+    const baseline = scoreOpportunity(baseOpportunity, today);
+    const fitFactor = learnedScore.scoreBreakdown.find(
+      ({ label }) => label === "Household fit"
+    );
+
+    expect(learnedScore.scoreBreakdown.find(({ label }) => label === "Household fit")?.points)
+      .toBeGreaterThan(
+        baseline.scoreBreakdown.find(({ label }) => label === "Household fit")?.points ?? 0
+      );
+    expect(fitFactor?.detail).toContain("Learned history:");
   });
 });

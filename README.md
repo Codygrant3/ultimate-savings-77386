@@ -8,6 +8,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Separates verified offers from official rewards programs and unverified research leads.
 - Filters and searches the opportunity list.
 - Saves opportunities and tracks estimated realized savings in browser storage.
+- Logs confirmed receipt results locally and uses recency-weighted category and merchant outcomes to adjust household-fit ranking.
 - Generates a dated Markdown briefing and dashboard-ready JSON.
 - Includes a Windows Task Scheduler installer for Monday reports.
 - Checks a curated set of public sources for new or improved high-value matches.
@@ -20,6 +21,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Adds a Class Action Settlements workspace using only official court notices or verified administrator sites, with relevance ranking, local saved items, deadline reminders, and a manual claim-review checklist.
 - Applies a privacy-safe adult-and-teen household profile. Baby and infant offers are excluded; teen and back-to-school matches receive an additional ranking boost.
 - Stores no email address, password, payment information, or rewards-account credentials.
+- Stores no receipt images, bank data, card numbers, account numbers, or itemized personal purchase records. The local history contains only date, merchant, category, amount spent, confirmed savings, and an optional dashboard-offer link.
 - Never files claims or stores legal attestations, Social Security numbers, bank details, claim identifiers, VINs, or exact household data.
 
 ## Run the dashboard
@@ -34,6 +36,11 @@ Open `http://127.0.0.1:4173`.
 ## Use the savings tools
 
 Open **Savings tools** in the top navigation.
+
+- Savings history is a private, manual confirmation ledger. Enter only the
+  summary facts you want this browser to remember. Positive and zero-value
+  outcomes adjust future household-fit scores; official evidence and household
+  exclusions still take precedence.
 
 - Price-drop alerts store the item, target, and latest public price only in this
   browser. Update the latest price after a public-source refresh.
@@ -177,5 +184,4 @@ project.
 
 1. Add merchant-specific structured parsers for the highest-value public sources.
 2. Add a local merchant inventory and distance calculations.
-3. Add receipt-based savings history and preference learning.
-4. Add alert delivery only when an opportunity clears a user-defined value threshold.
+3. Add alert delivery only when an opportunity clears a user-defined value threshold.
