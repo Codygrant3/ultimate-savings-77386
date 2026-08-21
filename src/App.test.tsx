@@ -134,6 +134,35 @@ describe("Savings Desk interactions", () => {
     ).toContain('"merchant":"H-E-B"');
   });
 
+  it("delivers threshold alerts locally and persists dismissal", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Savings tools" }));
+    expect(screen.getByRole("heading", { name: "High-value alerts" })).toBeTruthy();
+    expect(screen.getByText(/\$20 clears the \$10 threshold/)).toBeTruthy();
+
+    fireEvent.change(screen.getByLabelText("Minimum dollar savings"), {
+      target: { value: "100" }
+    });
+    fireEvent.click(screen.getByLabelText("Include free rewards"));
+    expect(
+      screen.getByText("No opportunities clear this threshold.")
+    ).toBeTruthy();
+
+    fireEvent.click(screen.getByLabelText("Include free rewards"));
+    fireEvent.change(screen.getByLabelText("Minimum dollar savings"), {
+      target: { value: "10" }
+    });
+    fireEvent.click(screen.getAllByRole("button", { name: /^Dismiss / })[0]);
+
+    expect(
+      window.localStorage.getItem("savings-desk:value-alert-settings")
+    ).toContain("10");
+    expect(
+      window.localStorage.getItem("savings-desk:value-alerts-acknowledged")
+    ).not.toBe("[]");
+  });
+
   it("shows grocery comparisons under the dedicated Grocery tab", () => {
     render(<App />);
 

@@ -1,4 +1,9 @@
-import type { GroceryWatchItem, PriceAlert, ReceiptEntry } from "../types";
+import type {
+  GroceryWatchItem,
+  PriceAlert,
+  ReceiptEntry,
+  ValueAlertSettings
+} from "../types";
 
 const SAVED_KEY = "savings-desk:saved";
 const REDEEMED_KEY = "savings-desk:redeemed";
@@ -8,6 +13,8 @@ const GROCERY_WATCHLIST_KEY = "savings-desk:grocery-watchlist";
 const SETTLEMENT_SAVED_KEY = "savings-desk:settlement-saved";
 const SETTLEMENT_REMINDERS_KEY = "savings-desk:settlement-reminders";
 const RECEIPTS_KEY = "savings-desk:receipts";
+const VALUE_ALERT_SETTINGS_KEY = "savings-desk:value-alert-settings";
+const ACKNOWLEDGED_VALUE_ALERTS_KEY = "savings-desk:value-alerts-acknowledged";
 
 function readIds(key: string): string[] {
   try {
@@ -151,4 +158,32 @@ export function readReceipts(): ReceiptEntry[] {
 export function writeReceipts(entries: ReceiptEntry[]): ReceiptEntry[] {
   window.localStorage.setItem(RECEIPTS_KEY, JSON.stringify(entries));
   return entries;
+}
+
+export function readAcknowledgedValueAlertIds(): string[] {
+  return readIds(ACKNOWLEDGED_VALUE_ALERTS_KEY);
+}
+
+export function writeAcknowledgedValueAlertIds(ids: string[]): string[] {
+  writeIds(ACKNOWLEDGED_VALUE_ALERTS_KEY, ids);
+  return ids;
+}
+
+export function readValueAlertSettings(
+  defaults: ValueAlertSettings
+): ValueAlertSettings {
+  try {
+    const value = window.localStorage.getItem(VALUE_ALERT_SETTINGS_KEY);
+    if (value === null) return defaults;
+    return JSON.parse(value) as ValueAlertSettings;
+  } catch {
+    return defaults;
+  }
+}
+
+export function writeValueAlertSettings(
+  settings: ValueAlertSettings
+): ValueAlertSettings {
+  window.localStorage.setItem(VALUE_ALERT_SETTINGS_KEY, JSON.stringify(settings));
+  return settings;
 }

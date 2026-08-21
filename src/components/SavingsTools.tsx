@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { SavingsHistory } from "./SavingsHistory";
+import { ValueAlerts } from "./ValueAlerts";
 import comparisonData from "../data/local-grocery-comparisons.json";
 import {
   readGroceryWatchlist,
@@ -28,7 +29,9 @@ import type {
   LocalGroceryComparison,
   Opportunity,
   PriceAlert,
-  ReceiptEntry
+  ReceiptEntry,
+  ValueAlert,
+  ValueAlertSettings
 } from "../types";
 
 const DEFAULT_ALERTS: PriceAlert[] = [
@@ -804,13 +807,21 @@ export function GroceryDashboard() {
 export function SavingsTools({
   opportunities,
   receipts,
+  valueAlerts,
+  valueAlertSettings,
   onAddReceipt,
-  onDeleteReceipt
+  onDeleteReceipt,
+  onAcknowledgeValueAlert,
+  onUpdateValueAlertSettings
 }: {
   opportunities: Opportunity[];
   receipts: ReceiptEntry[];
+  valueAlerts: ValueAlert[];
+  valueAlertSettings: ValueAlertSettings;
   onAddReceipt: (entry: ReceiptEntry) => void;
   onDeleteReceipt: (id: string) => void;
+  onAcknowledgeValueAlert: (id: string) => void;
+  onUpdateValueAlertSettings: (settings: ValueAlertSettings) => void;
 }) {
   return (
     <>
@@ -830,6 +841,12 @@ export function SavingsTools({
         </span>
       </div>
       <div className="tools-grid">
+        <ValueAlerts
+          alerts={valueAlerts}
+          settings={valueAlertSettings}
+          onAcknowledge={onAcknowledgeValueAlert}
+          onUpdateSettings={onUpdateValueAlertSettings}
+        />
         <SavingsHistory
           opportunities={opportunities}
           receipts={receipts}

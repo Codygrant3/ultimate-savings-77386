@@ -104,6 +104,22 @@ export interface LearnedPreferences {
   merchantEvidence: Record<string, PreferenceEvidence>;
 }
 
+export interface ValueAlertSettings {
+  minimumValue: number;
+  includeFreeRewards: boolean;
+  maximumFriction: "low" | "medium" | "any";
+}
+
+export interface ValueAlert {
+  id: string;
+  merchant: string;
+  title: string;
+  reason: string;
+  estimatedSavings: number;
+  expiresOn?: string;
+  sourceUrl: string;
+}
+
 export interface WeeklyReport {
   generatedAt: string;
   weekOf: string;

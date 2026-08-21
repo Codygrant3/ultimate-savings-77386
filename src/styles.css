@@ -1837,6 +1837,148 @@ a {
   font-size: 10px;
 }
 
+.value-alerts {
+  display: grid;
+  gap: 15px;
+}
+
+.value-alert-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.value-alert-summary div {
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid rgba(23, 53, 44, 0.08);
+  border-radius: 10px;
+  background: #f8f1ea;
+}
+
+.value-alert-summary span,
+.value-alert-summary strong {
+  display: block;
+}
+
+.value-alert-summary span {
+  color: #66756e;
+  font-size: 8px;
+}
+
+.value-alert-summary strong {
+  margin-top: 3px;
+  color: var(--forest);
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+
+.value-alert-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.value-alert-controls label,
+.value-alert-controls input,
+.value-alert-controls select {
+  min-width: 0;
+}
+
+.value-alert-controls label span {
+  display: block;
+  margin-bottom: 4px;
+  color: #5d6b64;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.value-alert-controls input[type="checkbox"] {
+  width: auto;
+  accent-color: var(--forest);
+}
+
+.value-alert-toggle {
+  align-items: center;
+  gap: 6px;
+}
+
+.value-alert-controls input:not([type="checkbox"]),
+.value-alert-controls select {
+  width: 100%;
+  padding: 8px 9px;
+  border: 1px solid #d8d7cf;
+  border-radius: 8px;
+  background: #fffefb;
+  color: var(--ink);
+  font: inherit;
+  font-size: 11px;
+}
+
+.value-alert-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.value-alert-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba(23, 53, 44, 0.08);
+  border-radius: 9px;
+  background: rgba(255, 254, 250, 0.86);
+}
+
+.value-alert-list strong,
+.value-alert-list span,
+.value-alert-list small,
+.value-alert-list em {
+  display: block;
+}
+
+.value-alert-list strong {
+  font-size: 11px;
+}
+
+.value-alert-list span {
+  margin-top: 2px;
+  color: var(--ink);
+  font-size: 10px;
+}
+
+.value-alert-list small {
+  margin-top: 3px;
+  color: #66756e;
+  font-size: 9px;
+}
+
+.value-alert-actions {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+
+.value-alert-actions em {
+  color: #a56b24;
+  font-size: 8px;
+  font-style: normal;
+}
+
+.value-alert-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--forest);
+  font-size: 9px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .grocery-watchlist {
   overflow: hidden;
   background:
@@ -3243,6 +3385,18 @@ a {
 
   .price-alert {
     grid-template-columns: 1fr 70px 31px;
+  }
+
+  .value-alert-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .value-alert-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .value-alert-actions {
+    justify-items: start;
   }
 
   .price-alert label:nth-of-type(2) {

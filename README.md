@@ -9,6 +9,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Filters and searches the opportunity list.
 - Saves opportunities and tracks estimated realized savings in browser storage.
 - Logs confirmed receipt results locally and uses recency-weighted category and merchant outcomes to adjust household-fit ranking.
+- Delivers dashboard-only high-value alerts when an offer clears a user-defined dollar threshold, free-reward preference, and maximum redemption effort.
 - Generates a dated Markdown briefing and dashboard-ready JSON.
 - Includes a Windows Task Scheduler installer for Monday reports.
 - Checks a curated set of public sources for new or improved high-value matches.
@@ -37,6 +38,9 @@ Open `http://127.0.0.1:4173`.
 
 Open **Savings tools** in the top navigation.
 
+- High-value alerts appear only inside this dashboard. There is no email, SMS,
+  or push delivery. Dismissal is local, so each browser controls its own alert
+  queue.
 - Savings history is a private, manual confirmation ledger. Enter only the
   summary facts you want this browser to remember. Positive and zero-value
   outcomes adjust future household-fit scores; official evidence and household
@@ -184,4 +188,4 @@ project.
 
 1. Add merchant-specific structured parsers for the highest-value public sources.
 2. Add a local merchant inventory and distance calculations.
-3. Add alert delivery only when an opportunity clears a user-defined value threshold.
+3. Add alert delivery only when an opportunity clears a user-defined value threshold. (Complete as a dashboard-local alert queue; external delivery remains intentionally unavailable.)

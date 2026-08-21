@@ -431,3 +431,11 @@ export function formatCurrency(value: number): string {
     maximumFractionDigits: value % 1 === 0 ? 0 : 2
   }).format(value);
 }
+
+export function formatDate(date?: string): string {
+  if (!date) return "Ongoing";
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric"
+  }).format(new Date(`${date}T12:00:00`));
+}

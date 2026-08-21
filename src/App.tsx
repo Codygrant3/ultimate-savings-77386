@@ -35,14 +35,27 @@ import { GroceryDashboard, SavingsTools } from "./components/SavingsTools";
 import { SettlementsDashboard } from "./components/SettlementsDashboard";
 import settlementsData from "./data/settlements.json";
 import { buildLearnedPreferences } from "./lib/preferences";
-import { formatCurrency, rankOpportunities, startOfWeek } from "./lib/scoring";
+import {
+  formatCurrency,
+  formatDate,
+  rankOpportunities,
+  startOfWeek
+} from "./lib/scoring";
 import { rankSettlements } from "./lib/settlements";
+import {
+  DEFAULT_VALUE_ALERT_SETTINGS,
+  buildValueAlerts
+} from "./lib/value-alerts";
 import {
   readReceipts,
   readRedeemedIds,
   readSavedIds,
   toggleStoredId,
-  writeReceipts
+  writeReceipts,
+  readAcknowledgedValueAlertIds,
+  readValueAlertSettings,
+  writeAcknowledgedValueAlertIds,
+  writeValueAlertSettings
 } from "./lib/storage";
 import type {
   Category,
@@ -50,6 +63,7 @@ import type {
   Opportunity,
   ReceiptEntry,
   ScoredOpportunity,
+  ValueAlertSettings,
   VerificationStatus
 } from "./types";
 
@@ -115,14 +129,6 @@ const NAV_ITEMS: Array<{ id: View; label: string; icon: LucideIcon }> = [
   { id: "weekly", label: "Monday report", icon: CalendarDays },
   { id: "programs", label: "Rewards", icon: ShieldCheck }
 ];
-
-function formatDate(date?: string): string {
-  if (!date) return "Ongoing";
-  return new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "numeric"
-  }).format(new Date(`${date}T12:00:00`));
-}
 
 function verificationLabel(status: VerificationStatus): string {
   if (status === "verified") return "Source checked";
@@ -335,6 +341,13 @@ export default function App() {
   const [savedIds, setSavedIds] = useState<string[]>(readSavedIds);
   const [redeemedIds, setRedeemedIds] = useState<string[]>(readRedeemedIds);
   const [receipts, setReceipts] = useState<ReceiptEntry[]>(readReceipts);
+  const [valueAlertSettings, setValueAlertSettings] =
+    useState<ValueAlertSettings>(() =>
+      readValueAlertSettings(DEFAULT_VALUE_ALERT_SETTINGS)
+    );
+  const [acknowledgedValueAlertIds, setAcknowledgedValueAlertIds] = useState<
+    string[]
+  >(readAcknowledgedValueAlertIds);
   const analysisDate = useMemo(() => new Date(), []);
   const learnedPreferences = useMemo(
     () => buildLearnedPreferences(receipts, analysisDate),
@@ -405,11 +418,34 @@ export default function App() {
     setReceipts(writeReceipts([entry, ...receipts]));
   }
 
+
   function deleteReceipt(id: string) {
     setReceipts(
       writeReceipts(receipts.filter((receipt) => receipt.id !== id))
     );
   }
+
+  function updateValueAlertSettings(settings: ValueAlertSettings) {
+    setValueAlertSettings(writeValueAlertSettings(settings));
+  }
+
+  function acknowledgeValueAlert(id: string) {
+    setAcknowledgedValueAlertIds(
+      writeAcknowledgedValueAlertIds([...acknowledgedValueAlertIds, id])
+    );
+  }
+
+  const valueAlerts = useMemo(
+    () =>
+      buildValueAlerts(
+        rankedOpportunities.filter(
+          (opportunity) => opportunity.verification === "verified"
+        ),
+        valueAlertSettings,
+        acknowledgedValueAlertIds
+      ),
+    [acknowledgedValueAlertIds, rankedOpportunities, valueAlertSettings]
+  );
 
   const confirmedSavings = receipts.reduce(
     (total, receipt) => total + Math.max(0, receipt.actualSavings),
@@ -890,8 +926,12 @@ export default function App() {
             <SavingsTools
               opportunities={verifiedDeals}
               receipts={receipts}
+              valueAlerts={valueAlerts}
+              valueAlertSettings={valueAlertSettings}
               onAddReceipt={addReceipt}
               onDeleteReceipt={deleteReceipt}
+              onAcknowledgeValueAlert={acknowledgeValueAlert}
+              onUpdateValueAlertSettings={updateValueAlertSettings}
             />
           )}
 
