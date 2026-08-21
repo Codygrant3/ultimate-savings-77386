@@ -2,15 +2,9 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-
-interface DiscoverySource {
-  id: string;
-  name: string;
-  url: string;
-  category: string;
-  priority: number;
-  keywords: string[];
-}
+import { parseSourceOffers } from "../src/lib/source-parsers";
+import type { DiscoverySource } from "../src/lib/source-parsers-types";
+import type { ParsedOfferCandidate } from "../src/lib/source-parsers";
 
 type DiscoveryStatus = "new" | "improved" | "changed" | "unchanged" | "failed";
 
@@ -21,6 +15,7 @@ interface DiscoveryResult extends DiscoverySource {
   matchedKeywords: string[];
   contentHash?: string;
   title?: string;
+  parsedOffers?: ParsedOfferCandidate[];
   error?: string;
 }
 
@@ -32,6 +27,7 @@ interface DiscoveryReport {
   newOrImprovedCount: number;
   results: DiscoveryResult[];
   highValueMatches: DiscoveryResult[];
+  parsedOfferCandidates: ParsedOfferCandidate[];
   limitations: string[];
 }
 
@@ -205,6 +201,7 @@ async function checkSource(
       matchedKeywords,
       contentHash,
       title: extractTitle(html),
+      parsedOffers: parseSourceOffers(source, source.url, html),
     };
   } catch (error) {
     return {
@@ -234,6 +231,18 @@ function buildMarkdown(report: DiscoveryReport): string {
     .filter((result) => result.status === "failed")
     .map((result) => `- ${result.name}: ${result.error}`)
     .join("\n");
+  const parsedOffers =
+    report.parsedOfferCandidates.length > 0
+      ? report.parsedOfferCandidates
+          .slice(0, 25)
+          .map(
+            (candidate) =>
+              `- **${candidate.merchant}** — ${candidate.title}${
+                candidate.minimumSpend ? ` (minimum spend $${candidate.minimumSpend})` : ""
+              } — [official source](${candidate.url})`,
+          )
+          .join("\n")
+      : "- No structured candidates were safely extractable.";
 
   return `# 77386 Deal Discovery Refresh
 
@@ -246,6 +255,10 @@ function buildMarkdown(report: DiscoveryReport): string {
 ## Review queue
 
 ${matches}
+
+## Structured offer candidates (human review required)
+
+${parsedOffers}
 
 ## Source failures
 
@@ -380,6 +393,9 @@ async function main(): Promise<void> {
       result.priority >= 8 &&
       result.matchedKeywords.length > 0,
   );
+  const parsedOfferCandidates = results
+    .flatMap((result) => result.parsedOffers ?? [])
+    .filter((candidate) => candidate.title.length > 3);
   const report: DiscoveryReport = {
     generatedAt: checkedAt,
     sourceCount: results.length,
@@ -389,10 +405,12 @@ async function main(): Promise<void> {
     newOrImprovedCount: highValueMatches.length,
     results,
     highValueMatches,
+    parsedOfferCandidates,
     limitations: [
       "This monitor checks configured public pages; it is not a general web search engine.",
       "JavaScript-only, bot-protected, personalized, or app-only offers can be unavailable.",
       "A changed page is a review lead, not a verified deal. Human review is required before adding value to the dashboard.",
+      "Structured offer candidates are review leads only. Their amounts, terms, participation, and expiration require official-source confirmation before dashboard use.",
       "No account credentials, cookies, email addresses, or payment information are used or stored.",
     ],
   };
@@ -454,6 +472,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `Verified open settlements staged: ${settlementSnapshot.openCount}`,
+  );
+  console.log(
+    `Structured offer candidates staged: ${report.parsedOfferCandidates.length}`,
   );
   console.log(`Review queue: ${resolve(discoveryDirectory, "latest.md")}`);
 }
