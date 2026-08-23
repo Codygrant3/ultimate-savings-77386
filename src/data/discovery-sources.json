@@ -182,11 +182,11 @@
   },
   {
     "id": "mcdonalds-promotions-news",
-    "name": "McDonald's official promotions news",
-    "url": "https://corporate.mcdonalds.com/corpmcd/our-stories.html",
+    "name": "McDonald's official deals",
+    "url": "https://www.mcdonalds.com/us/en-us/deals.html",
     "category": "restaurants",
-    "priority": 8,
-    "keywords": ["promotions and deals", "free", "rewards", "offer"]
+    "priority": 10,
+    "keywords": ["free", "minimum purchase", "rewards", "valid"]
   },
   {
     "id": "taco-bell-newsroom",

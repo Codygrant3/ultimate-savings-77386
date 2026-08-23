@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-08-21",
-  "adWindow": "Live public listings checked August 21, 2026; only reverified prices use that date, and older prices retain their original check dates.",
+  "checkedOn": "2026-08-23",
+  "adWindow": "Live public listings checked August 23, 2026; only reverified prices use that date, and older prices retain their original check dates.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -89,8 +89,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Rollback at Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-21",
-          "dateLabel": "Store page checked Aug 21; rollback from $0.45 each; no end date shown",
+          "checkedOn": "2026-08-22",
+          "dateLabel": "Store page checked Aug 22; rollback from $0.45 each; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -181,7 +181,7 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "These are store-specific rollbacks, not a four-store comparison. Green seedless grapes were reverified at $1.97/lb on August 21; the Gala apple price retains its August 15 check date.",
+      "comparisonNote": "These are store-specific rollbacks, not a four-store comparison. Green seedless grapes were reverified at $1.97/lb on August 23; the Gala apple price retains its August 15 check date.",
       "winner": "Walmart #3585 Gala apples at $1.08/lb (last checked August 15)",
       "prices": [
         {
@@ -193,8 +193,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-21",
-          "dateLabel": "Store page checked Aug 21; rollback from $5.33; no end date shown",
+          "checkedOn": "2026-08-23",
+          "dateLabel": "Store page checked Aug 23; rollback from $5.33; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -228,8 +228,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-21",
-          "dateLabel": "Store page checked Aug 21; rollback from $4.92; no end date shown",
+          "checkedOn": "2026-08-23",
+          "dateLabel": "Store page checked Aug 23; rollback from $4.92; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -241,8 +241,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-21",
-          "dateLabel": "Store page checked Aug 21; rollback from $4.92; no end date shown",
+          "checkedOn": "2026-08-23",
+          "dateLabel": "Store page checked Aug 23; rollback from $4.92; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -263,8 +263,8 @@
           "unit": "oz",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-20",
-          "dateLabel": "Store page checked Aug 20; rollback from $4.97; no end date shown",
+          "checkedOn": "2026-08-23",
+          "dateLabel": "Store page checked Aug 23; rollback from $4.97; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
         }
       ]
@@ -307,8 +307,30 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-21",
-          "dateLabel": "Store page checked Aug 21; rollback from $6.97; no end date shown",
+          "checkedOn": "2026-08-23",
+          "dateLabel": "Store page checked Aug 23; rollback from $6.97; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        }
+      ]
+    },
+    {
+      "id": "walmart-local-pineapple",
+      "item": "Fresh pineapple",
+      "category": "produce",
+      "comparisonNote": "This is a store-specific Walmart rollback. The listed whole-pineapple price is not a four-store comparison.",
+      "winner": "Walmart #3585 at $1.98 each",
+      "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Fresh Pineapple",
+          "packageSize": "Each",
+          "price": 1.98,
+          "unitPrice": 1.98,
+          "unit": "each",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-08-23",
+          "dateLabel": "Store page checked Aug 23; rollback from $2.34; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -329,8 +351,8 @@
           "unit": "egg",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-15",
-          "dateLabel": "Store page checked Aug 15; rollback from $4.37; no end date shown",
+          "checkedOn": "2026-08-23",
+          "dateLabel": "Store page checked Aug 23; rollback from $4.37; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -339,20 +361,20 @@
       "id": "walmart-local-peanut-butter",
       "item": "Creamy peanut butter",
       "category": "staple",
-      "comparisonNote": "This is a store-specific Walmart rollback. The 40-ounce jar improved from $3.74 to $3.58 and normalizes to 9.0 cents per ounce.",
-      "winner": "Walmart #3585 at $3.58 (9.0¢/oz)",
+      "comparisonNote": "This is a store-specific Walmart rollback. The 40-ounce jar is $3.74 and normalizes to 9.4 cents per ounce.",
+      "winner": "Walmart #3585 at $3.74 (9.4¢/oz)",
       "prices": [
         {
           "retailer": "Walmart",
           "product": "Great Value Creamy Peanut Butter",
           "packageSize": "40 oz",
-          "price": 3.58,
-          "unitPrice": 0.09,
+          "price": 3.74,
+          "unitPrice": 0.094,
           "unit": "oz",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-20",
-          "dateLabel": "Store page checked Aug 20; rollback from $3.98; no end date shown",
+          "checkedOn": "2026-08-23",
+          "dateLabel": "Store page checked Aug 23; rollback from $4.28; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
         }
       ]

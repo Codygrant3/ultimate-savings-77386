@@ -120,6 +120,7 @@ const groceryTargetPrices: Record<string, number> = {
   "family-size-cheerios": 0.22,
   "walmart-local-blueberries": 0.3,
   "walmart-local-watermelon": 5,
+  "walmart-local-pineapple": 1.98,
   "walmart-local-brown-eggs": 0.25,
   "walmart-local-peanut-butter": 0.1,
   "walmart-local-avocados": 0.75,

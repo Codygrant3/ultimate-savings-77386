@@ -86,7 +86,8 @@ const WATCH_TARGETS: Record<string, number> = {
   "roma-tomatoes": 1,
   "whole-milk-gallon": 3,
   "walmart-local-rollbacks": 1.75,
-  "walmart-local-fresh-sausage": 3
+  "walmart-local-fresh-sausage": 3,
+  "walmart-local-pineapple": 1.98
 };
 
 function selectWatchPrice(comparison: LocalGroceryComparison) {
@@ -848,7 +849,7 @@ export function SavingsTools({
           onAcknowledge={onAcknowledgeValueAlert}
           onUpdateSettings={onUpdateValueAlertSettings}
         />
-        <CandidateReviewQueue />
+        <CandidateReviewQueue opportunities={opportunities} />
         <SavingsHistory
           opportunities={opportunities}
           receipts={receipts}

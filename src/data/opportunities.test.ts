@@ -16,15 +16,15 @@ describe("verified opportunity catalog", () => {
     }
   });
 
-  it("uses the current two-fill Exxon newcomer evidence rather than an older seven-fill claim", () => {
+  it("uses the current seven-fill Exxon newcomer evidence", () => {
     const exxon = catalog.find(
       ({ id }) => id === "exxon-mobil-new-app-user-ten-dollar-bonus-2026"
     );
 
-    expect(exxon?.title).toBe("$5 in points on each of the first two app fill-ups");
-    expect(exxon?.estimatedSavings).toBe(10);
-    expect(exxon?.source.url).toBe("https://www.exxonmobilfuels.com/en/rewards");
-    expect(exxon?.source.checkedOn).toBe("2026-08-21");
-    expect(exxon?.finePrint).toContain("$5 in points after each");
+    expect(exxon?.title).toBe("Up to $15 in points across seven qualifying app fill-ups");
+    expect(exxon?.estimatedSavings).toBe(15);
+    expect(exxon?.source.url).toBe("https://www.exxonmobilfuels.com/en/rewards/faqs");
+    expect(exxon?.source.checkedOn).toBe("2026-08-23");
+    expect(exxon?.finePrint).toContain("next five qualifying app fills");
   });
 });

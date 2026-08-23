@@ -4,10 +4,13 @@ import {
   readCandidateReviews,
   writeCandidateReviews
 } from "../lib/storage";
+import { buildCandidateReviewContext } from "../lib/candidate-review";
+import { formatCurrency, formatDate } from "../lib/scoring";
 import type {
   CandidateReviewStatus,
   CandidateReviews,
-  OfferCandidate
+  OfferCandidate,
+  Opportunity
 } from "../types";
 
 interface DiscoverySnapshot {
@@ -15,7 +18,11 @@ interface DiscoverySnapshot {
   parsedOfferCandidates: OfferCandidate[];
 }
 
-export function CandidateReviewQueue() {
+export function CandidateReviewQueue({
+  opportunities
+}: {
+  opportunities: Opportunity[];
+}) {
   const [candidates, setCandidates] = useState<OfferCandidate[]>([]);
   const [generatedAt, setGeneratedAt] = useState<string>();
   const [loadError, setLoadError] = useState(false);
@@ -50,6 +57,37 @@ export function CandidateReviewQueue() {
       return status === filter;
     });
   }, [candidates, filter, reviews]);
+
+  const reviewContexts = useMemo(() => {
+    return new Map(
+      candidates.map((candidate) => [
+        candidate.id,
+        buildCandidateReviewContext(candidate, opportunities)
+      ])
+    );
+  }, [candidates, opportunities]);
+
+  const trackedCount = Array.from(reviewContexts.values()).filter(
+    (context) => context.status === "existing"
+  ).length;
+
+  function evidenceWarnings(
+    context: ReturnType<typeof buildCandidateReviewContext> | undefined
+  ) {
+    if (!context || context.status !== "existing") return [];
+    const { match } = context;
+    const warnings: string[] = [];
+    if (!match.amountMatches) {
+      warnings.push("Candidate value differs from the current dashboard value");
+    }
+    if (!match.minimumSpendMatches) {
+      warnings.push("Candidate minimum spend differs from the current record");
+    }
+    if (!match.expirationMatches) {
+      warnings.push("Candidate expiration differs from the current end date");
+    }
+    return warnings;
+  }
 
   function reviewCandidate(id: string, status: CandidateReviewStatus) {
     const current = reviews[id];
@@ -93,6 +131,9 @@ export function CandidateReviewQueue() {
             {option === "pending" ? "Pending" : option === "keep" ? "Keep" : "Dismissed"}
           </button>
         ))}
+        <span className="review-counts">
+          {candidates.length - trackedCount} new · {trackedCount} already tracked
+        </span>
         {generatedAt && <span className="review-generated">Checked {generatedAt.slice(0, 10)}</span>}
       </div>
 
@@ -104,6 +145,10 @@ export function CandidateReviewQueue() {
         <ul className="candidate-list">
           {visibleCandidates.map((candidate) => {
             const status = reviews[candidate.id];
+            const context = reviewContexts.get(candidate.id);
+            const isTracked = context?.status === "existing";
+            const currentOffer = isTracked ? context.match.opportunity : null;
+            const warnings = evidenceWarnings(context);
             return (
               <li key={candidate.id}>
                 <div className="candidate-main">
@@ -128,6 +173,26 @@ export function CandidateReviewQueue() {
                   {candidate.candidateReasons && (
                     <em>{candidate.candidateReasons.join(" · ")}</em>
                   )}
+                  <div
+                    className={`candidate-overlap ${
+                      isTracked ? "candidate-overlap--tracked" : "candidate-overlap--new"
+                    }`}
+                  >
+                    <strong>{isTracked ? "Already tracked" : "New lead"}</strong>
+                    {currentOffer && (
+                      <span>
+                        Current: {formatCurrency(currentOffer.estimatedSavings)}
+                        {currentOffer.minimumSpend > 0
+                          ? ` after ${formatCurrency(currentOffer.minimumSpend)} spend`
+                          : " · no minimum captured"}
+                        {" · ends "}
+                        {formatDate(currentOffer.expiresOn)}
+                      </span>
+                    )}
+                    {warnings.length > 0 && (
+                      <small>{warnings.join(" · ")}</small>
+                    )}
+                  </div>
                 </div>
                 <div className="candidate-actions">
                   <a href={candidate.url} target="_blank" rel="noreferrer">

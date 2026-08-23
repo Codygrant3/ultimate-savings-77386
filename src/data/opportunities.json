@@ -50,26 +50,119 @@
   {
     "id": "taco-bell-rewards-program",
     "merchant": "Taco Bell",
-    "title": "Taco Bell Rewards",
-    "summary": "The official rewards program supports app-based earning and redemption. Current personalized offers must be checked in the app.",
+    "title": "Free signup reward for new Rewards members",
+    "summary": "New Taco Bell Rewards members can choose a free welcome reward in the app after joining.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
-    "isFree": false,
-    "locationNote": "No current signup freebie is assumed in this tracker.",
-    "verification": "program",
+    "isFree": true,
+    "locationNote": "App-only welcome reward at participating U.S. Taco Bell locations; confirm the reward is loaded before visiting.",
+    "verification": "verified",
     "friction": "low",
     "tags": [
-      "rewards program",
+      "free food",
+      "welcome reward",
+      "new member",
       "app",
-      "points"
+      "rewards program"
     ],
     "source": {
-      "label": "Taco Bell Rewards FAQ",
-      "url": "https://www.tacobell.com/faqs/ordering/rewards",
-      "checkedOn": "2026-07-23"
+      "label": "Taco Bell official offers and deals",
+      "url": "https://www.tacobell.com/offers-and-deals",
+      "checkedOn": "2026-08-23"
     },
-    "actionLabel": "View program"
+    "actionLabel": "Check welcome reward",
+    "tier": "A",
+    "stackNote": "Use the welcome reward by itself; the official terms say it cannot be combined with another offer.",
+    "finePrint": "Free signup reward is valid for 14 days after issuance, once per registered user, through the Taco Bell mobile app for in-store or drive-thru pickup at participating U.S. locations. Web pay-ahead and delivery orders are excluded. No dollar value is estimated because the selected reward and local menu price were not verified.",
+    "expirationLabel": "Valid 14 days after issuance",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "improved",
+    "discoveredOn": "2026-08-22",
+    "preferenceSignals": [
+      "free-food",
+      "new-member",
+      "app-specific"
+    ]
+  },
+  {
+    "id": "mcdonalds-free-big-mac-new-app-user-2026",
+    "merchant": "McDonald's",
+    "title": "Free Big Mac with $1+ first app purchase",
+    "summary": "First-time McDonald's app users can get a free Big Mac with a purchase of at least $1 through the end of the month.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 1,
+    "isFree": true,
+    "expiresOn": "2026-08-31",
+    "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free food",
+      "new member",
+      "app",
+      "$1 purchase"
+    ],
+    "source": {
+      "label": "McDonald's official deals",
+      "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+      "checkedOn": "2026-08-23"
+    },
+    "actionLabel": "Check first-order offer",
+    "tier": "A",
+    "stackNote": "Use this offer by itself unless the app checkout expressly permits another deal.",
+    "finePrint": "For first-time app users on a first order through the McDonald's app at participating U.S. restaurants. Requires a minimum $1 purchase and Rewards enrollment. The offer may take up to 48 hours to appear and excludes delivery. One redemption through August 31, 2026. No dollar value is estimated because the local Big Mac price was not verified.",
+    "expirationLabel": "Ends August 31",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-08-23",
+    "preferenceSignals": [
+      "free-food",
+      "new-member",
+      "app-specific"
+    ]
+  },
+  {
+    "id": "mcdonalds-weekly-free-medium-fries-2026",
+    "merchant": "McDonald's",
+    "title": "Free medium fries weekly with $1+ purchase",
+    "summary": "McDonald's Rewards members can get free medium fries with a purchase of at least $1 once per week through October 4.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 1,
+    "isFree": true,
+    "expiresOn": "2026-10-04",
+    "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free food",
+      "weekly",
+      "app",
+      "$1 purchase"
+    ],
+    "source": {
+      "label": "McDonald's official deals",
+      "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+      "checkedOn": "2026-08-23"
+    },
+    "actionLabel": "Check weekly fries offer",
+    "tier": "A",
+    "stackNote": "Use this offer by itself unless the app checkout expressly permits another deal.",
+    "finePrint": "Requires a minimum $1 purchase through the McDonald's app and Rewards enrollment at participating U.S. restaurants. Redeemable once per week through October 4, 2026, and not available with McDelivery. No dollar value is estimated because the local fries price was not verified.",
+    "expirationLabel": "Weekly through October 4",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-08-23",
+    "preferenceSignals": [
+      "free-food",
+      "repeatable",
+      "app-specific"
+    ]
   },
   {
     "id": "whataburger-signup-free-burger-2026",
@@ -92,7 +185,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-20"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -132,7 +225,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-20"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check August 26 offer",
     "tier": "A",
@@ -169,7 +262,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Review offer",
     "tier": "A",
@@ -207,7 +300,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Opt in for race days",
     "tier": "A",
@@ -248,7 +341,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -287,7 +380,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -325,7 +418,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -363,7 +456,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Claim chili offer",
     "tier": "A",
@@ -538,10 +631,10 @@
   {
     "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
     "merchant": "Exxon Mobil Rewards+",
-    "title": "$5 in points on each of the first two app fill-ups",
-    "summary": "New Exxon Mobil Rewards+ app users can earn $5 in points after each of their first two qualifying app fuel purchases.",
+    "title": "Up to $15 in points across seven qualifying app fill-ups",
+    "summary": "First-time Exxon Mobil Rewards+ app fuel purchasers can earn $5 in points on each of their first two qualifying fills, then $1 on each of five additional qualifying fills completed within 60 days.",
     "category": "fuel",
-    "estimatedSavings": 10,
+    "estimatedSavings": 15,
     "minimumSpend": 0,
     "isFree": false,
     "expiresOn": "2026-09-30",
@@ -552,18 +645,18 @@
       "fuel",
       "first-time app user",
       "points",
-      "two fill-ups"
+      "seven fill-ups"
     ],
     "source": {
-      "label": "Exxon Mobil Rewards+ official offer page",
-      "url": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedOn": "2026-08-21"
+      "label": "Exxon Mobil Rewards+ official offer FAQ",
+      "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check app eligibility",
     "tier": "A",
     "stackNote": "Regular Rewards+ points are also earned on the qualifying fills; confirm current app terms before assuming another promotion combines.",
-    "finePrint": "New-app-user offer. The linked official rewards page states $5 in points after each of the first two app fill-ups. Confirm the app for the qualifying-transaction window, gallon minimum, and promotion exclusions before making a special trip.",
-    "expirationLabel": "Offer period through September 30; confirm app deadline",
+    "finePrint": "Available to members making their first app-paid fuel purchase during the May 20-September 30 offer period. Each purchase must be paid through the app, include at least eight gallons, and occur at a participating Exxon or Mobil station. The first two qualifying fills earn $5 each; after those, the next five qualifying app fills within 60 days earn $1 each. Do not assume this combines with the separate referral-code promotion.",
+    "expirationLabel": "Start by September 30; finish the five follow-up fills within 60 days",
     "availability": "available",
     "dealType": "fuel-reward",
     "freshness": "improved",
@@ -598,7 +691,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+ official terms",
       "url": "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions",
-      "checkedOn": "2026-08-20"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Review referral offer",
     "tier": "A",
@@ -641,7 +734,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84044129",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -685,7 +778,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84055257",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -727,7 +820,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84056038",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -770,7 +863,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84048909",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -814,7 +907,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84048755",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -859,7 +952,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84049522",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -1186,7 +1279,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/texas/spring/30083/",
-      "checkedOn": "2026-08-19"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -1226,7 +1319,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-08-16"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Review eligibility",
     "tier": "A",
@@ -1241,6 +1334,45 @@
       "vehicle-maintenance",
       "local-high-value",
       "eligibility-gated"
+    ]
+  },
+  {
+    "id": "costa-oil-rayford-diesel-ten-off-2026",
+    "merchant": "Costa Oil Rayford",
+    "title": "$10 off a diesel full-synthetic oil change",
+    "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
+    "category": "auto",
+    "estimatedSavings": 10,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-12-31",
+    "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "oil change",
+      "diesel",
+      "full synthetic",
+      "local coupon"
+    ],
+    "source": {
+      "label": "Costa Oil Rayford specials",
+      "url": "https://spring-rayford.costaoils.com/specials",
+      "checkedOn": "2026-08-23"
+    },
+    "actionLabel": "Review diesel coupon",
+    "tier": "A",
+    "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
+    "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
+    "expirationLabel": "Ends December 31",
+    "availability": "available",
+    "dealType": "vehicle-maintenance",
+    "freshness": "new",
+    "discoveredOn": "2026-08-22",
+    "preferenceSignals": [
+      "vehicle-maintenance",
+      "local-high-value",
+      "fixed-dollar-coupon"
     ]
   },
   {
@@ -1303,7 +1435,7 @@
     "source": {
       "label": "AMC Stubs midweek discount",
       "url": "https://www.amctheatres.com/50pct-off-tuesdays-and-wednesdays",
-      "checkedOn": "2026-08-18"
+      "checkedOn": "2026-08-22"
     },
     "actionLabel": "View discount",
     "tier": "A",
@@ -1379,7 +1511,7 @@
     "source": {
       "label": "Shell official app-offers support page",
       "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
-      "checkedOn": "2026-08-17"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Review Shell App offer",
     "tier": "B",
@@ -1417,7 +1549,7 @@
     "source": {
       "label": "Houston Astros official $1 Hot Dog Night page",
       "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-      "checkedOn": "2026-08-20"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Review promotions",
     "tier": "B",
@@ -1432,6 +1564,45 @@
       "sports-ticket",
       "local-team",
       "promotion-event"
+    ]
+  },
+  {
+    "id": "houston-dynamo-dash-first-time-fan-free-tickets-2026",
+    "merchant": "Houston Dynamo FC + Houston Dash",
+    "title": "Complimentary tickets for eligible first-time Houston fans",
+    "summary": "The City of Houston and the Dynamo and Dash are distributing 10,000 complimentary tickets to eligible first-time attendees for selected remaining 2026 matches.",
+    "category": "sports",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "locationNote": "Houston-area program; included matches and ticket locations vary by availability and distribution partner.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "free tickets",
+      "sports",
+      "first-time attendee",
+      "Houston"
+    ],
+    "source": {
+      "label": "Houston Dynamo and Dash official announcement",
+      "url": "https://www.houstondynamofc.com/houstondash/news/houston-dynamo-and-dash-partner-with-mayor-john-whitmire-to-provide-10-000-free-tickets-to-2026-matches-for-houstonians",
+      "checkedOn": "2026-08-23"
+    },
+    "actionLabel": "Review free-ticket program",
+    "tier": "A",
+    "stackNote": "Claim only if the first-time-attendee terms fit; tickets cannot be resold and availability is not guaranteed.",
+    "finePrint": "Tickets are intended for Houstonians who have never attended a Dynamo or Dash match and are distributed through community organizations, nonprofit partners, and youth programs. Included matches and seat locations vary based on availability. No dollar value is estimated because the assigned match and seat are not known.",
+    "expirationLabel": "Remaining 2026 regular-season matches, while available",
+    "availability": "available",
+    "dealType": "sports-ticket",
+    "freshness": "new",
+    "discoveredOn": "2026-08-22",
+    "preferenceSignals": [
+      "sports-ticket",
+      "free-ticket",
+      "local-team",
+      "eligibility-gated"
     ]
   },
   {
@@ -1457,7 +1628,7 @@
     "source": {
       "label": "Dairy Queen official newsroom",
       "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Kicking-Off-Fall-Flavor-Season-with-the-NEW-Caramel-Apple-Cheesecake-BLIZZARD-Treat-and-More-Seasonal-Treats-Coming-Soon-/default.aspx",
-      "checkedOn": "2026-08-21"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check Double Flip offer",
     "tier": "A",
@@ -1500,7 +1671,7 @@
     "source": {
       "label": "H-E-B official coupon page",
       "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
-      "checkedOn": "2026-08-21"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -1520,84 +1691,46 @@
     ]
   },
   {
-    "id": "chipotle-school-spirit-bogo-2026-08-20",
-    "merchant": "Chipotle",
-    "title": "School Spirit BOGO entree on Thursday",
-    "summary": "On Thursday, August 20, guests wearing school apparel or accessories can buy an entree from 3 p.m. to close local time and receive a second entree free at participating U.S. Chipotle restaurants.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-08-20",
-    "locationNote": "In-restaurant only at participating U.S. Chipotles; a convenient 77386 location was not confirmed in this public scan.",
+    "id": "heb-select-clothing-gift-cards-fifteen-off-2026-08",
+    "merchant": "H-E-B",
+    "title": "$15 off $75 in select clothing gift cards",
+    "summary": "H-E-B's official coupon page lists $15 off $75 or more in select clothing gift cards, including Nike, Adidas, Gap, H&M, and American Eagle.",
+    "category": "shopping",
+    "estimatedSavings": 15,
+    "minimumSpend": 75,
+    "savingsRate": 20,
+    "isFree": false,
+    "expiresOn": "2026-08-25",
+    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability and in-store gift-card inventory are not locally confirmed.",
     "verification": "verified",
     "friction": "medium",
     "tags": [
-      "one-day",
-      "BOGO",
       "back to school",
-      "in restaurant"
+      "teen clothing",
+      "gift card",
+      "digital coupon",
+      "location-gated"
     ],
     "source": {
-      "label": "Chipotle official newsroom",
-      "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-20"
+      "label": "H-E-B official coupon page",
+      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
+      "checkedOn": "2026-08-23"
     },
-    "actionLabel": "Review Thursday BOGO",
+    "actionLabel": "Check and clip coupon",
     "tier": "A",
-    "stackNote": "Do not combine with other coupons. Purchased items can still earn Chipotle Rewards points.",
-    "finePrint": "Valid only August 20, 2026 after 3:00 p.m. local. Wearer of school apparel or accessories only, as determined by the restaurant. Each free item requires purchase of an entree of equal or greater value. Limit five free entrees per check. In-restaurant only; not valid for catering, mobile, online, or delivery. No dollar value is estimated because local entree prices were not verified.",
-    "expirationLabel": "August 20, 3 p.m. to close",
+    "stackNote": "Use only for an already-planned purchase. Do not assume this coupon combines with another gift-card promotion.",
+    "finePrint": "Requires at least $75 in one eligible clothing-brand gift card category and is listed as redeemable in store with a limit of one per customer. The official page says it expires Tuesday, August 25. The $15 value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
+    "expirationLabel": "Ends August 25",
     "availability": "available",
-    "dealType": "promotion-event",
+    "dealType": "digital-coupon",
     "freshness": "new",
-    "discoveredOn": "2026-08-18",
+    "discoveredOn": "2026-08-23",
     "preferenceSignals": [
-      "one-day",
+      "teen",
       "back-to-school",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "chipotle-iq-free-food-chance-2026-08",
-    "merchant": "Chipotle",
-    "title": "Hourly chance for a BOGO entree or free side",
-    "summary": "Chipotle Rewards members can play the Chipotle IQ trivia game once daily through August 20; each hour, the first 8,000 players scoring five out of five receive a BOGO entree, free Cilantro Lime Sauce, or free Queso Blanco offer.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-08-20",
-    "locationNote": "No purchase is required to play, but a Chipotle Rewards account is required and any food reward is subject to the official rules and participating-location redemption terms.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "flash deal",
-      "free food",
-      "BOGO",
-      "trivia",
-      "rewards account",
-      "limited quantity"
-    ],
-    "source": {
-      "label": "Chipotle official newsroom",
-      "url": "https://newsroom.chipotle.com/2026-08-11-CHIPOTLE-IQ-RETURNS-WITH-MORE-THAN-1-MILLION-IN-FREE-CHIPOTLE%2C-PLUS-NEW-DAILY-STREAKS%2C-SILVER-TICKETS-AND-A-COLLECTIBLE-CARD-GAME",
-      "checkedOn": "2026-08-20"
-    },
-    "actionLabel": "Play Chipotle IQ",
-    "tier": "A",
-    "stackNote": "This is a limited-quantity game reward, not a guaranteed coupon; play early in an hourly window and do not count savings unless a reward is actually awarded and used.",
-    "finePrint": "Runs from August 18 at 6:00 a.m. Pacific through August 20 at 5:59 p.m. Pacific. Rewards members may play once per day. Each hour, the first 8,000 players scoring five out of five receive one of 5,000 BOGO entree offers, 1,500 free Cilantro Lime Sauce offers, or 1,500 free Queso Blanco offers. No purchase necessary; eligibility and prize limits apply. No value is estimated because the result and prize are not guaranteed.",
-    "expirationLabel": "Ends August 20 at 7:59 p.m. CT",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-08-19",
-    "preferenceSignals": [
-      "flash-deal",
-      "free-food",
-      "app-specific",
-      "time-sensitive"
+      "shopping",
+      "high-value",
+      "location-gated"
     ]
   },
   {
@@ -1622,7 +1755,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-21"
+      "checkedOn": "2026-08-23"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",

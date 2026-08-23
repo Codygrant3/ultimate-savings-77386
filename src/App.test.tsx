@@ -253,10 +253,10 @@ describe("Savings Desk interactions", () => {
 
     expect(screen.getByRole("heading", { name: "Staples watchlist" })).toBeTruthy();
     const watchlistStatus = within(screen.getByLabelText("Watchlist status"));
-    expect(watchlistStatus.getAllByText("11")).toHaveLength(2);
-    expect(screen.getAllByText("Target met")).toHaveLength(9);
+    expect(watchlistStatus.getAllByText("12")).toHaveLength(2);
+    expect(screen.getAllByText("Target met")).toHaveLength(10);
     expect(screen.getAllByText("Meets target; confirm locally")).toHaveLength(2);
-    expect(screen.getAllByText("Latest unit price")).toHaveLength(11);
+    expect(screen.getAllByText("Latest unit price")).toHaveLength(12);
 
     fireEvent.change(screen.getByPlaceholderText("Rice, chicken breast, cereal…"), {
       target: { value: "Brown rice" }
