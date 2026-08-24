@@ -88,6 +88,36 @@
       "checkedOn": "2026-08-24"
     },
     {
+      "id": "shell-rayford",
+      "merchantAliases": ["Shell Fuel Rewards", "Shell"],
+      "locationName": "Shell Rayford Road",
+      "address": "2909 Rayford Road, Spring, TX 77386",
+      "distanceMiles": 2.87,
+      "sourceLabel": "Shell official Rayford Road station page",
+      "sourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
+      "checkedOn": "2026-08-24"
+    },
+    {
+      "id": "exxon-express-mart-robinson",
+      "merchantAliases": ["Exxon Mobil Rewards+", "Exxon Mobil", "Exxon"],
+      "locationName": "Exxon Express Mart # 5",
+      "address": "27725 Robinson Road, Oak Ridge North, TX 77385",
+      "distanceMiles": 1.9,
+      "sourceLabel": "Exxon Mobil official station locator result",
+      "sourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
+      "checkedOn": "2026-08-24"
+    },
+    {
+      "id": "seven-eleven-birnham-woods",
+      "merchantAliases": ["7-Eleven", "7REWARDS", "7REWARDS Fuel"],
+      "locationName": "7-Eleven Birnham Woods Drive",
+      "address": "28760 Birnham Woods Drive, Spring, TX 77386",
+      "distanceMiles": 3.35,
+      "sourceLabel": "7-Eleven official Birnham Woods store page",
+      "sourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
+      "checkedOn": "2026-08-24"
+    },
+    {
       "id": "jovi-rayford",
       "merchantAliases": ["JoVi + local coffee shops", "JoVi Coffee", "JoVi"],
       "locationName": "JoVi Coffee Rayford Road",

@@ -14,6 +14,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Uses linked local receipt outcomes to adjust weekly planning value and explain when past confirmed results differ from the listed estimate, without changing official offer evidence or promised terms.
 - Delivers dashboard-only high-value alerts when an offer clears a user-defined dollar threshold, free-reward preference, and maximum redemption effort.
 - Maintains a checked local merchant inventory and uses great-circle distance calculations for nearby branches. A merchant-location distance is clearly marked as approximate and never claims that a specific promotion is confirmed at that branch.
+- Includes officially sourced Shell, Exxon Mobil Rewards+, and 7-Eleven locations near 77386 so fuel rewards can be compared and planned by nearby branch instead of remaining location-blind.
 - Carries checked merchant-location distances into both explainable ranking and the constrained weekly planner, so nearby stores affect trip selection without implying that every promotion runs at that branch.
 - Uses merchant-specific structured parsers for Wendy's, Dutch Bros, the local Take 5 and Costa Oil pages, and the local Rainbow Car Care rewards page to stage official offer candidates with amounts, minimum spend, eligibility caveats, or expiration signals. Every parsed candidate remains a human-review lead, never an automatic dashboard deal.
 - Uses semantic candidate keys to collapse repeated page variants while preserving the most complete spend, expiration, or terms evidence.
