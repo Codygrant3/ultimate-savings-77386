@@ -5,9 +5,12 @@ import { formatCurrency, rankOpportunities, startOfWeek } from "../src/lib/scori
 import { rankSettlements } from "../src/lib/settlements.ts";
 import type {
   ClassActionSettlement,
+  LocalMerchantInventory,
   Opportunity,
   WeeklyReport
 } from "../src/types.ts";
+
+import localMerchantInventoryData from "../src/data/local-merchant-inventory.json";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
@@ -18,6 +21,7 @@ const settlementDataPath = resolve(
   "data",
   "settlements.json"
 );
+const merchantInventory = localMerchantInventoryData as LocalMerchantInventory;
 
 function toIsoDate(date: Date): string {
   return date.toISOString().slice(0, 10);
@@ -40,7 +44,7 @@ function buildMarkdown(
                 : "";
             const distance =
               opportunity.distanceMiles !== undefined
-                ? ` ${opportunity.distanceMiles} miles from 77386.`
+                ? ` Reference distance: ${opportunity.distanceMiles} miles; promotion participation is not confirmed.`
                 : "";
             const availability =
               opportunity.availability === "waitlist"
@@ -134,7 +138,12 @@ async function main(): Promise<void> {
     rawSettlementData
   ) as ClassActionSettlement[];
   const now = new Date();
-  const ranked = rankOpportunities(opportunities, now);
+  const ranked = rankOpportunities(
+    opportunities,
+    now,
+    undefined,
+    merchantInventory
+  );
   const verified = ranked.filter((opportunity) => opportunity.verification === "verified");
   const watchlist = ranked.filter((opportunity) => opportunity.verification !== "verified");
   const settlements = rankSettlements(settlementCatalog, now);

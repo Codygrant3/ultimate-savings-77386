@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T13:59:17.359Z",
+  "generatedAt": "2026-08-24T14:06:56.838Z",
   "weekOf": "2026-08-24",
   "zipCode": "77386",
   "totalPotentialSavings": 184.49,
@@ -47,7 +47,8 @@
         "coupon-stack",
         "location-gated"
       ],
-      "score": 84,
+      "distanceMiles": 3.9,
+      "score": 85,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
         {
@@ -76,9 +77,9 @@
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 4.96,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -150,6 +151,7 @@
         "coupon-stack",
         "location-gated"
       ],
+      "distanceMiles": 3.9,
       "score": 80,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -179,9 +181,9 @@
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 4.96,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -253,6 +255,7 @@
         "coupon-stack",
         "location-gated"
       ],
+      "distanceMiles": 3.9,
       "score": 80,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -282,9 +285,9 @@
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 4.96,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -356,6 +359,7 @@
         "coupon-stack",
         "location-gated"
       ],
+      "distanceMiles": 3.9,
       "score": 80,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -385,9 +389,9 @@
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 4.96,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -511,6 +515,108 @@
       ]
     },
     {
+      "id": "heb-select-clothing-gift-cards-fifteen-off-2026-08",
+      "merchant": "H-E-B",
+      "title": "$15 off $75 in select clothing gift cards",
+      "summary": "H-E-B's official coupon page lists $15 off $75 or more in select clothing gift cards, including Nike, Adidas, Gap, H&M, and American Eagle.",
+      "category": "shopping",
+      "estimatedSavings": 15,
+      "minimumSpend": 75,
+      "savingsRate": 20,
+      "isFree": false,
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability and in-store gift-card inventory are not locally confirmed.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "back to school",
+        "teen clothing",
+        "gift card",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon page",
+        "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
+        "checkedOn": "2026-08-23"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "Use only for an already-planned purchase. Do not assume this coupon combines with another gift-card promotion.",
+      "finePrint": "Requires at least $75 in one eligible clothing-brand gift card category and is listed as redeemable in store with a limit of one per customer. The official page says it expires Tuesday, August 25. The $15 value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
+      "expirationLabel": "Ends August 25",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-23",
+      "preferenceSignals": [
+        "teen",
+        "back-to-school",
+        "shopping",
+        "high-value",
+        "location-gated"
+      ],
+      "distanceMiles": 3.9,
+      "score": 78,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 17.04,
+          "weight": 24,
+          "detail": "$15.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 2.4,
+          "weight": 6,
+          "detail": "20% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.6,
+          "weight": 10,
+          "detail": "Household match: teen, back to school, back-to-school"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 10,
+          "weight": 10,
+          "detail": "Ends in 2 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$75.00 required per $15.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
       "id": "heb-frozen-fruit-free-ice-cream-2026-08",
       "merchant": "H-E-B",
       "title": "Free ice cream pint with bulk frozen fruit",
@@ -552,6 +658,7 @@
         "coupon-stack",
         "location-gated"
       ],
+      "distanceMiles": 3.9,
       "score": 78,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -581,9 +688,9 @@
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 4.96,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -654,6 +761,7 @@
         "high-value",
         "location-gated"
       ],
+      "distanceMiles": 3.9,
       "score": 77,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -683,9 +791,9 @@
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 4.96,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -714,48 +822,45 @@
       ]
     },
     {
-      "id": "heb-select-clothing-gift-cards-fifteen-off-2026-08",
-      "merchant": "H-E-B",
-      "title": "$15 off $75 in select clothing gift cards",
-      "summary": "H-E-B's official coupon page lists $15 off $75 or more in select clothing gift cards, including Nike, Adidas, Gap, H&M, and American Eagle.",
-      "category": "shopping",
-      "estimatedSavings": 15,
-      "minimumSpend": 75,
-      "savingsRate": 20,
+      "id": "costa-oil-rayford-diesel-ten-off-2026",
+      "merchant": "Costa Oil Rayford",
+      "title": "$10 off a diesel full-synthetic oil change",
+      "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
+      "category": "auto",
+      "estimatedSavings": 10,
+      "minimumSpend": 0,
       "isFree": false,
-      "expiresOn": "2026-08-25",
-      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability and in-store gift-card inventory are not locally confirmed.",
+      "expiresOn": "2026-12-31",
+      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
       "verification": "verified",
-      "friction": "medium",
+      "friction": "low",
       "tags": [
-        "back to school",
-        "teen clothing",
-        "gift card",
-        "digital coupon",
-        "location-gated"
+        "oil change",
+        "diesel",
+        "full synthetic",
+        "local coupon"
       ],
       "source": {
-        "label": "H-E-B official coupon page",
-        "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
+        "label": "Costa Oil Rayford specials",
+        "url": "https://spring-rayford.costaoils.com/specials",
         "checkedOn": "2026-08-23"
       },
-      "actionLabel": "Check and clip coupon",
+      "actionLabel": "Review diesel coupon",
       "tier": "A",
-      "stackNote": "Use only for an already-planned purchase. Do not assume this coupon combines with another gift-card promotion.",
-      "finePrint": "Requires at least $75 in one eligible clothing-brand gift card category and is listed as redeemable in store with a limit of one per customer. The official page says it expires Tuesday, August 25. The $15 value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
-      "expirationLabel": "Ends August 25",
+      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
+      "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
+      "expirationLabel": "Ends December 31",
       "availability": "available",
-      "dealType": "digital-coupon",
+      "dealType": "vehicle-maintenance",
       "freshness": "new",
-      "discoveredOn": "2026-08-23",
+      "discoveredOn": "2026-08-22",
       "preferenceSignals": [
-        "teen",
-        "back-to-school",
-        "shopping",
-        "high-value",
-        "location-gated"
+        "vehicle-maintenance",
+        "local-high-value",
+        "fixed-dollar-coupon"
       ],
-      "score": 77,
+      "distanceMiles": 2.6,
+      "score": 76,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
         {
@@ -766,45 +871,45 @@
         },
         {
           "label": "Dollar value",
-          "points": 17.04,
+          "points": 14.639999999999999,
           "weight": 24,
-          "detail": "$15.00 estimated value"
+          "detail": "$10.00 estimated value"
         },
         {
           "label": "Savings rate",
-          "points": 2.4,
+          "points": 0,
           "weight": 6,
-          "detail": "20% saved"
+          "detail": "Savings rate not published"
         },
         {
           "label": "Household fit",
-          "points": 8.6,
+          "points": 8.4,
           "weight": 10,
-          "detail": "Household match: teen, back to school, back-to-school"
+          "detail": "Household match: oil change"
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 5.5200000000000005,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~2.6 miles to Costa Oil Rayford Road; offer participation unconfirmed"
         },
         {
           "label": "Timing",
-          "points": 10,
+          "points": 5.1000000000000005,
           "weight": 10,
-          "detail": "Ends in 2 days; newly found"
+          "detail": "Ends 2026-12-31; newly found"
         },
         {
           "label": "Effort",
-          "points": 5.3999999999999995,
+          "points": 9,
           "weight": 9,
-          "detail": "medium redemption effort"
+          "detail": "low redemption effort"
         },
         {
           "label": "Required spend",
-          "points": 4.4,
+          "points": 8,
           "weight": 8,
-          "detail": "$75.00 required per $15.00 saved"
+          "detail": "No required spend"
         },
         {
           "label": "Stackability",
@@ -910,44 +1015,49 @@
       ]
     },
     {
-      "id": "costa-oil-rayford-diesel-ten-off-2026",
-      "merchant": "Costa Oil Rayford",
-      "title": "$10 off a diesel full-synthetic oil change",
-      "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
-      "category": "auto",
-      "estimatedSavings": 10,
-      "minimumSpend": 0,
+      "id": "heb-kodiak-five-off-twenty-2026-08",
+      "merchant": "H-E-B",
+      "title": "$5 off a $20 Kodiak basket",
+      "summary": "Clip the public H-E-B coupon for $5 off a qualifying $20 basket of Kodiak items.",
+      "category": "grocery",
+      "estimatedSavings": 5,
+      "minimumSpend": 20,
+      "savingsRate": 25,
       "isFree": false,
-      "expiresOn": "2026-12-31",
-      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
+      "expiresOn": "2026-08-25",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
       "verification": "verified",
       "friction": "low",
       "tags": [
-        "oil change",
-        "diesel",
-        "full synthetic",
-        "local coupon"
+        "grocery",
+        "breakfast",
+        "protein",
+        "digital coupon",
+        "location-gated"
       ],
       "source": {
-        "label": "Costa Oil Rayford specials",
-        "url": "https://spring-rayford.costaoils.com/specials",
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84048909",
         "checkedOn": "2026-08-23"
       },
-      "actionLabel": "Review diesel coupon",
+      "actionLabel": "Check and clip coupon",
       "tier": "A",
-      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
-      "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
-      "expirationLabel": "Ends December 31",
+      "stackNote": "The 25% rate is achieved only at exactly $20; compare unit prices and confirm any item-level price cuts can combine before checkout.",
+      "finePrint": "Requires a qualifying $20 Kodiak basket. The official page lists unlimited use and an August 25 expiration. The $5 coupon value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
+      "expirationLabel": "Ends August 25",
       "availability": "available",
-      "dealType": "vehicle-maintenance",
+      "dealType": "digital-coupon",
       "freshness": "new",
-      "discoveredOn": "2026-08-22",
+      "discoveredOn": "2026-08-19",
       "preferenceSignals": [
-        "vehicle-maintenance",
-        "local-high-value",
-        "fixed-dollar-coupon"
+        "grocery",
+        "staple",
+        "high-value",
+        "coupon-stack",
+        "location-gated"
       ],
-      "score": 75,
+      "distanceMiles": 3.9,
+      "score": 76,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
         {
@@ -958,33 +1068,33 @@
         },
         {
           "label": "Dollar value",
-          "points": 14.639999999999999,
+          "points": 11.04,
           "weight": 24,
-          "detail": "$10.00 estimated value"
+          "detail": "$5.00 estimated value"
         },
         {
           "label": "Savings rate",
-          "points": 0,
+          "points": 3,
           "weight": 6,
-          "detail": "Savings rate not published"
+          "detail": "25% saved"
         },
         {
           "label": "Household fit",
-          "points": 8.4,
+          "points": 8.200000000000001,
           "weight": 10,
-          "detail": "Household match: oil change"
+          "detail": "General household priority"
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 4.96,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; offer participation unconfirmed"
         },
         {
           "label": "Timing",
-          "points": 5.1000000000000005,
+          "points": 10,
           "weight": 10,
-          "detail": "Ends 2026-12-31; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -994,9 +1104,9 @@
         },
         {
           "label": "Required spend",
-          "points": 8,
+          "points": 4.4,
           "weight": 8,
-          "detail": "No required spend"
+          "detail": "$20.00 required per $5.00 saved"
         },
         {
           "label": "Stackability",
@@ -1097,107 +1207,6 @@
           "points": 7.6000000000000005,
           "weight": 8,
           "detail": "$10.00 required per $10.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "heb-kodiak-five-off-twenty-2026-08",
-      "merchant": "H-E-B",
-      "title": "$5 off a $20 Kodiak basket",
-      "summary": "Clip the public H-E-B coupon for $5 off a qualifying $20 basket of Kodiak items.",
-      "category": "grocery",
-      "estimatedSavings": 5,
-      "minimumSpend": 20,
-      "savingsRate": 25,
-      "isFree": false,
-      "expiresOn": "2026-08-25",
-      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "grocery",
-        "breakfast",
-        "protein",
-        "digital coupon",
-        "location-gated"
-      ],
-      "source": {
-        "label": "H-E-B official coupon detail",
-        "url": "https://www.heb.com/digital-coupon/coupon-detail/84048909",
-        "checkedOn": "2026-08-23"
-      },
-      "actionLabel": "Check and clip coupon",
-      "tier": "A",
-      "stackNote": "The 25% rate is achieved only at exactly $20; compare unit prices and confirm any item-level price cuts can combine before checkout.",
-      "finePrint": "Requires a qualifying $20 Kodiak basket. The official page lists unlimited use and an August 25 expiration. The $5 coupon value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
-      "expirationLabel": "Ends August 25",
-      "availability": "available",
-      "dealType": "digital-coupon",
-      "freshness": "new",
-      "discoveredOn": "2026-08-19",
-      "preferenceSignals": [
-        "grocery",
-        "staple",
-        "high-value",
-        "coupon-stack",
-        "location-gated"
-      ],
-      "score": 75,
-      "scoreLabel": "Strong",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 11.04,
-          "weight": 24,
-          "detail": "$5.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 3,
-          "weight": 6,
-          "detail": "25% saved"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.200000000000001,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 10,
-          "weight": 10,
-          "detail": "Ends in 2 days; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "$20.00 required per $5.00 saved"
         },
         {
           "label": "Stackability",
@@ -2081,6 +2090,103 @@
       ]
     },
     {
+      "id": "rainbow-car-care-birthday-wash-2026",
+      "merchant": "Rainbow Car Care",
+      "title": "Free full-service car wash on your birthday",
+      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
+      "category": "auto",
+      "estimatedSavings": 20,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "car wash",
+        "birthday",
+        "free service",
+        "loyalty"
+      ],
+      "source": {
+        "label": "Rainbow Car Care frequent wash program",
+        "url": "https://rainbowcarcare.com/frequent-wash-program",
+        "checkedOn": "2026-08-15"
+      },
+      "actionLabel": "Review wash program",
+      "tier": "A",
+      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
+      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
+      "expirationLabel": "Your birthday",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "free-service",
+        "loyalty-reward"
+      ],
+      "distanceMiles": 4.7,
+      "score": 69,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 11.7,
+          "weight": 18,
+          "detail": "Official source verified; checked 8 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 18.48,
+          "weight": 24,
+          "detail": "free reward plus $20.00 estimate"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: car wash"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
       "id": "seven-rewards-fuel-sms-25-cents-2026",
       "merchant": "7REWARDS Fuel",
       "title": "25¢ off per gallon on the next three fills",
@@ -2242,102 +2348,6 @@
         {
           "label": "Timing",
           "points": 3.8000000000000003,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "rainbow-car-care-birthday-wash-2026",
-      "merchant": "Rainbow Car Care",
-      "title": "Free full-service car wash on your birthday",
-      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
-      "category": "auto",
-      "estimatedSavings": 20,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "car wash",
-        "birthday",
-        "free service",
-        "loyalty"
-      ],
-      "source": {
-        "label": "Rainbow Car Care frequent wash program",
-        "url": "https://rainbowcarcare.com/frequent-wash-program",
-        "checkedOn": "2026-08-15"
-      },
-      "actionLabel": "Review wash program",
-      "tier": "A",
-      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
-      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
-      "expirationLabel": "Your birthday",
-      "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "free-service",
-        "loyalty-reward"
-      ],
-      "score": 68,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 8 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 18.48,
-          "weight": 24,
-          "detail": "free reward plus $20.00 estimate"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.4,
-          "weight": 10,
-          "detail": "Household match: car wash"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
           "weight": 10,
           "detail": "No stated end date; current"
         },
@@ -3842,7 +3852,8 @@
         "local-high-value",
         "eligibility-gated"
       ],
-      "score": 56,
+      "distanceMiles": 2.6,
+      "score": 57,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
@@ -3871,9 +3882,9 @@
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 5.5200000000000005,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~2.6 miles to Costa Oil Rayford Road; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4226,7 +4237,8 @@
         "official-only",
         "opening-watch"
       ],
-      "score": 38,
+      "distanceMiles": 2.2,
+      "score": 39,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
         {
@@ -4255,9 +4267,9 @@
         },
         {
           "label": "Local relevance",
-          "points": 4.4,
+          "points": 5.5200000000000005,
           "weight": 8,
-          "detail": "Location not distance-confirmed"
+          "detail": "~2.2 miles to JoVi Coffee Rayford Road; offer participation unconfirmed"
         },
         {
           "label": "Timing",
