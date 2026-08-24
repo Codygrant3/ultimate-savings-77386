@@ -201,7 +201,10 @@ export interface WeeklyPlanSettings {
   includeUnconfirmedLocations: boolean;
   allowConditionalStacking: boolean;
   maxDealsPerTrip: number;
+  tripOrder: TripOrder;
 }
+
+export type TripOrder = "utility" | "distance";
 
 export interface PlannedDeal {
   opportunity: ScoredOpportunity;

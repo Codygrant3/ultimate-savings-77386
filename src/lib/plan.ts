@@ -17,7 +17,8 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   maximumFriction: "medium",
   includeUnconfirmedLocations: true,
   allowConditionalStacking: false,
-  maxDealsPerTrip: 3
+  maxDealsPerTrip: 3,
+  tripOrder: "utility"
 };
 
 interface DealCandidate {
@@ -102,7 +103,8 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
         1,
         5
       )
-    )
+    ),
+    tripOrder: settings.tripOrder === "distance" ? "distance" : "utility"
   };
 }
 
@@ -507,6 +509,12 @@ export function buildWeeklyPlan(
   }
 
   const selectedBundles = [...best.bundles].sort((first, second) => {
+    if (settings.tripOrder === "distance") {
+      const firstDistance = first.distanceMiles ?? Number.POSITIVE_INFINITY;
+      const secondDistance = second.distanceMiles ?? Number.POSITIVE_INFINITY;
+      if (firstDistance !== secondDistance) return firstDistance - secondDistance;
+    }
+
     if (second.utility !== first.utility) return second.utility - first.utility;
     if (first.merchantKey !== second.merchantKey) {
       return first.merchantKey.localeCompare(second.merchantKey);
@@ -646,7 +654,11 @@ export function buildWeeklyPlan(
       outcomeAdjustments && Object.keys(outcomeAdjustments).length > 0
         ? "Linked confirmed results locally adjust planning value when evidence exists."
         : "Planning value uses listed estimates until linked confirmed results exist."
-    ]
+    ].concat(
+      settings.tripOrder === "distance"
+        ? ["Trips are displayed nearest first using approximate location distances."]
+        : ["Trips are displayed strongest planning value first."]
+    )
   };
 }
 

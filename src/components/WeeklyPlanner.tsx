@@ -180,6 +180,22 @@ export function WeeklyPlanner({
             }
           />
         </label>
+        <label>
+          <span>Trip order</span>
+          <select
+            aria-label="Trip order"
+            value={settings.tripOrder}
+            onChange={(event) =>
+              updateSetting(
+                "tripOrder",
+                event.target.value as WeeklyPlanSettings["tripOrder"]
+              )
+            }
+          >
+            <option value="utility">Strongest value first</option>
+            <option value="distance">Nearest trip first</option>
+          </select>
+        </label>
         <label className="planner-toggle">
           <input
             type="checkbox"

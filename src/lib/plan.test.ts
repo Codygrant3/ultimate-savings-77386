@@ -115,6 +115,60 @@ describe("weekly action plan optimizer", () => {
     expect(plan.excluded[0].reason).toBe("Location distance not confirmed");
   });
 
+  it("can reorder the same optimized trips nearest first", () => {
+    const offers = [
+      makeOffer({
+        id: "far-high-value",
+        merchant: "Far Market",
+        distanceMiles: 8,
+        estimatedSavings: 20,
+        minimumSpend: 20,
+        score: 90
+      }),
+      makeOffer({
+        id: "mid-medium-value",
+        merchant: "Mid Market",
+        distanceMiles: 4,
+        estimatedSavings: 10,
+        minimumSpend: 10,
+        score: 70
+      }),
+      makeOffer({
+        id: "near-lower-value",
+        merchant: "Near Market",
+        distanceMiles: 1,
+        estimatedSavings: 5,
+        minimumSpend: 5,
+        score: 60
+      })
+    ];
+
+    const byUtility = buildWeeklyPlan(
+      offers,
+      { weeklyBudget: 50, maxTrips: 3 },
+      today
+    );
+    const byDistance = buildWeeklyPlan(
+      offers,
+      { weeklyBudget: 50, maxTrips: 3, tripOrder: "distance" },
+      today
+    );
+
+    expect(byUtility.trips.map(({ merchant }) => merchant)).toEqual([
+      "Far Market",
+      "Mid Market",
+      "Near Market"
+    ]);
+    expect(byDistance.trips.map(({ merchant }) => merchant)).toEqual([
+      "Near Market",
+      "Mid Market",
+      "Far Market"
+    ]);
+    expect(byDistance.assumptions).toContain(
+      "Trips are displayed nearest first using approximate location distances."
+    );
+  });
+
   it("does not combine multiple new-customer rewards at one merchant", () => {
     const stronger = makeOffer({
       id: "new-member-stronger",
