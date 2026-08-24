@@ -59,6 +59,7 @@ export interface Opportunity {
   tier?: OpportunityTier;
   distanceMiles?: number;
   stackNote?: string;
+  stackGroup?: string;
   finePrint?: string;
   expirationLabel?: string;
   availability?: AvailabilityStatus;

@@ -140,6 +140,66 @@ describe("weekly action plan optimizer", () => {
     expect(plan.trips[0].deals[0].opportunity.id).toBe("new-member-stronger");
   });
 
+  it("counts only one offer from an official exclusion group per merchant trip", () => {
+    const stronger = makeOffer({
+      id: "exclusive-stronger",
+      merchant: "Exclusive Market",
+      estimatedSavings: 10,
+      minimumSpend: 10,
+      stackGroup: "market-app-offer"
+    });
+    const weaker = makeOffer({
+      id: "exclusive-weaker",
+      merchant: "Exclusive Market",
+      estimatedSavings: 8,
+      minimumSpend: 5,
+      stackGroup: "market-app-offer"
+    });
+
+    const plan = buildWeeklyPlan(
+      [stronger, weaker],
+      { weeklyBudget: 50, maxDealsPerTrip: 2 },
+      today
+    );
+
+    expect(plan.trips[0].deals).toHaveLength(1);
+    expect(plan.trips[0].deals[0].opportunity.id).toBe("exclusive-stronger");
+    expect(plan.estimatedSavings).toBe(10);
+    expect(plan.requiredSpend).toBe(10);
+    expect(plan.assumptions).toContain(
+      "Offers sharing an official exclusion group are counted at most once per merchant trip."
+    );
+  });
+
+  it("still combines offers from distinct exclusion groups", () => {
+    const coupon = makeOffer({
+      id: "coupon",
+      merchant: "Stackable Market",
+      estimatedSavings: 10,
+      minimumSpend: 20,
+      stackGroup: "coupon"
+    });
+    const reward = makeOffer({
+      id: "reward",
+      merchant: "Stackable Market",
+      estimatedSavings: 9,
+      minimumSpend: 5,
+      stackGroup: "loyalty-reward"
+    });
+
+    const plan = buildWeeklyPlan(
+      [coupon, reward],
+      { weeklyBudget: 50, maxDealsPerTrip: 2 },
+      today
+    );
+
+    expect(plan.trips[0].deals.map(({ opportunity }) => opportunity.id)).toEqual([
+      "coupon",
+      "reward"
+    ]);
+    expect(plan.estimatedSavings).toBe(19);
+  });
+
   it("counts payment-program labels as one underlying merchant trip", () => {
     const direct = makeOffer({
       id: "wendys-direct",

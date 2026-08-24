@@ -21,6 +21,7 @@ interface DealCandidate {
   warnings: string[];
   planningMerchant: string;
   newCustomerOffer: boolean;
+  stackGroup?: string;
 }
 
 interface TripBundle {
@@ -135,6 +136,18 @@ function effortLimitLabel(
     medium: "medium-effort",
     any: "any-effort"
   }[maximumFriction];
+}
+
+function hasExclusiveStackConflict(deals: DealCandidate[]): boolean {
+  const seenGroups = new Set<string>();
+
+  for (const deal of deals) {
+    if (!deal.stackGroup) continue;
+    if (seenGroups.has(deal.stackGroup)) return true;
+    seenGroups.add(deal.stackGroup);
+  }
+
+  return false;
 }
 
 export function daysUntilExpiration(
@@ -314,7 +327,8 @@ export function buildWeeklyPlan(
       opportunity,
       warnings,
       planningMerchant: planningMerchant(opportunity),
-      newCustomerOffer: isNewCustomerOffer(opportunity)
+      newCustomerOffer: isNewCustomerOffer(opportunity),
+      stackGroup: opportunity.stackGroup
     });
   }
 
@@ -350,6 +364,7 @@ export function buildWeeklyPlan(
       ) {
         continue;
       }
+      if (hasExclusiveStackConflict(combination)) continue;
       bundles.push(makeBundle(combination));
     }
 
@@ -485,6 +500,7 @@ export function buildWeeklyPlan(
       settings.includeUnconfirmedLocations
         ? "Unconfirmed locations are labeled and receive a planning penalty."
         : `Distances beyond ${settings.maxDistanceMiles} miles or unconfirmed are excluded.`,
+      "Offers sharing an official exclusion group are counted at most once per merchant trip.",
       settings.minimumDaysRemaining > 0
         ? `Offers must remain valid for at least ${settings.minimumDaysRemaining} more day${settings.minimumDaysRemaining === 1 ? "" : "s"}; this is planning math, not an eligibility guarantee.`
         : "Offers expiring today remain eligible for planning; confirm their terms before acting.",
