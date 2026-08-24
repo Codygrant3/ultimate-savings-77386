@@ -164,6 +164,10 @@ describe("weekly action plan optimizer", () => {
 
     expect(plan.trips[0].deals).toHaveLength(1);
     expect(plan.trips[0].deals[0].opportunity.id).toBe("exclusive-stronger");
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "exclusive-weaker")
+        ?.reason
+    ).toBe("Another offer from its exclusion group was selected.");
     expect(plan.estimatedSavings).toBe(10);
     expect(plan.requiredSpend).toBe(10);
     expect(plan.assumptions).toContain(
@@ -230,6 +234,10 @@ describe("weekly action plan optimizer", () => {
     expect(plan.trips[0].deals[0].warnings).toContain(
       "Official terms require this offer to be redeemed by itself."
     );
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "compatible")
+        ?.reason
+    ).toBe("Not combinable with the selected exclusive offer.");
     expect(plan.estimatedSavings).toBe(10);
     expect(plan.assumptions).toContain(
       "Only one offer with conditional or undocumented stacking is counted per merchant trip; exclusive offers are planned alone."
@@ -271,6 +279,11 @@ describe("weekly action plan optimizer", () => {
     expect(conservative.trips[0].deals[0].warnings).toContain(
       "Stacking requires confirmation."
     );
+    expect(
+      conservative.excluded.find(
+        ({ opportunity }) => opportunity.id === "conditional-two"
+      )?.reason
+    ).toBe("Excluded by the conditional-stacking guard.");
     expect(confirmed.trips[0].deals.map(({ opportunity }) => opportunity.id)).toEqual([
       "conditional-one",
       "conditional-two"

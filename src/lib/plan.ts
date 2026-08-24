@@ -500,10 +500,45 @@ export function buildWeeklyPlan(
 
   for (const deal of eligible) {
     if (!selectedIds.has(deal.opportunity.id)) {
-      excluded.push({
-        opportunity: deal.opportunity,
-        reason: "Outside the strongest plan under current limits"
-      });
+      const selectedBundle = selectedBundles.find(
+        (bundle) => bundle.merchantKey === merchantKey(deal.planningMerchant)
+      );
+      let reason = "Outside the strongest plan under current limits";
+
+      if (selectedBundle) {
+        const dealCompatibility =
+          effectiveStackCompatibility(deal.opportunity) ?? "conditional";
+        const sameGroupDeal = selectedBundle.deals.find(
+          (selected) =>
+            deal.stackGroup &&
+            selected.stackGroup === deal.stackGroup
+        );
+        const selectedHasExclusive = selectedBundle.deals.some(
+          (selected) =>
+            (effectiveStackCompatibility(selected.opportunity) ?? "conditional") ===
+            "exclusive"
+        );
+
+        if (sameGroupDeal) {
+          reason = "Another offer from its exclusion group was selected.";
+        } else if (
+          dealCompatibility === "conditional" &&
+          selectedBundle.deals.filter((selected) =>
+            (effectiveStackCompatibility(selected.opportunity) ??
+              "conditional") === "conditional"
+          ).length > 0 &&
+          !settings.allowConditionalStacking
+        ) {
+          reason = "Excluded by the conditional-stacking guard.";
+        } else if (
+          dealCompatibility === "exclusive" ||
+          selectedHasExclusive
+        ) {
+          reason = "Not combinable with the selected exclusive offer.";
+        }
+      }
+
+      excluded.push({ opportunity: deal.opportunity, reason });
     }
   }
 
