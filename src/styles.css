@@ -2402,6 +2402,24 @@ a {
   white-space: nowrap;
 }
 
+.trip-deal-side {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+
+.trip-deal-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.plan-note {
+  margin: -8px 0 0;
+  color: #66756e;
+  font-size: 9px;
+}
+
 .plan-assumptions,
 .plan-exclusions {
   padding: 14px;
@@ -3846,6 +3864,11 @@ a {
 
   .trip-deals li {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .trip-deal-side,
+  .trip-deal-actions {
+    justify-items: start;
   }
 
   .trip-deals a {

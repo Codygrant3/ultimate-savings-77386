@@ -956,6 +956,10 @@ export default function App() {
               opportunities={verifiedDeals}
               settings={weeklyPlanSettings}
               onSettingsChange={updateWeeklyPlanSettings}
+              savedIds={savedIds}
+              redeemedIds={redeemedIds}
+              onSave={toggleSaved}
+              onRedeem={toggleRedeemed}
             />
           )}
 

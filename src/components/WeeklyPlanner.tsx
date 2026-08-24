@@ -1,9 +1,12 @@
 import {
   AlertTriangle,
+  Bookmark,
   CalendarRange,
   CircleDollarSign,
+  Check,
   ExternalLink,
   MapPin,
+  RotateCcw,
   ShoppingBasket
 } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -14,17 +17,29 @@ import type { ScoredOpportunity, WeeklyPlanSettings } from "../types";
 export function WeeklyPlanner({
   opportunities,
   settings,
-  onSettingsChange
+  onSettingsChange,
+  savedIds,
+  redeemedIds,
+  onSave,
+  onRedeem
 }: {
   opportunities: ScoredOpportunity[];
   settings: WeeklyPlanSettings;
   onSettingsChange: (settings: WeeklyPlanSettings) => void;
+  savedIds: string[];
+  redeemedIds: string[];
+  onSave: (id: string) => void;
+  onRedeem: (id: string) => void;
 }) {
   const [showExcluded, setShowExcluded] = useState(false);
   const today = useMemo(() => new Date(), []);
+  const actionableOpportunities = useMemo(
+    () => opportunities.filter((opportunity) => !redeemedIds.includes(opportunity.id)),
+    [opportunities, redeemedIds]
+  );
   const plan = useMemo(
-    () => buildWeeklyPlan(opportunities, settings, today),
-    [opportunities, settings, today]
+    () => buildWeeklyPlan(actionableOpportunities, settings, today),
+    [actionableOpportunities, settings, today]
   );
 
   function updateSetting<K extends keyof WeeklyPlanSettings>(
@@ -117,6 +132,11 @@ export function WeeklyPlanner({
         </label>
       </section>
 
+      <p className="plan-note">
+        Offers marked used are removed from this plan; saving an offer keeps it
+        available for a later trip.
+      </p>
+
       <section className="plan-metrics" aria-label="Weekly plan summary">
         <article>
           <CircleDollarSign size={19} aria-hidden="true" />
@@ -193,13 +213,67 @@ export function WeeklyPlanner({
                           </em>
                         ))}
                       </div>
-                      <a
-                        href={opportunity.source.url}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Source <ExternalLink size={13} aria-hidden="true" />
-                      </a>
+                      <div className="trip-deal-side">
+                        <a
+                          href={opportunity.source.url}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Source <ExternalLink size={13} aria-hidden="true" />
+                        </a>
+                        <div className="trip-deal-actions">
+                          <button
+                            type="button"
+                            className={
+                              savedIds.includes(opportunity.id)
+                                ? "icon-button icon-button--active"
+                                : "icon-button"
+                            }
+                            onClick={() => onSave(opportunity.id)}
+                            aria-label={
+                              savedIds.includes(opportunity.id)
+                                ? `Remove ${opportunity.title} from saved`
+                                : `Save ${opportunity.title}`
+                            }
+                            title={
+                              savedIds.includes(opportunity.id)
+                                ? "Remove from saved"
+                                : "Save for later"
+                            }
+                          >
+                            <Bookmark
+                              size={15}
+                              fill={savedIds.includes(opportunity.id) ? "currentColor" : "none"}
+                              aria-hidden="true"
+                            />
+                          </button>
+                          <button
+                            type="button"
+                            className={
+                              redeemedIds.includes(opportunity.id)
+                                ? "icon-button icon-button--success"
+                                : "icon-button"
+                            }
+                            onClick={() => onRedeem(opportunity.id)}
+                            aria-label={
+                              redeemedIds.includes(opportunity.id)
+                                ? `Mark ${opportunity.title} as not used`
+                                : `Mark ${opportunity.title} as used`
+                            }
+                            title={
+                              redeemedIds.includes(opportunity.id)
+                                ? "Mark as not used"
+                                : "Mark as used"
+                            }
+                          >
+                            {redeemedIds.includes(opportunity.id) ? (
+                              <RotateCcw size={15} aria-hidden="true" />
+                            ) : (
+                              <Check size={15} aria-hidden="true" />
+                            )}
+                          </button>
+                        </div>
+                      </div>
                     </li>
                   ))}
                 </ul>
