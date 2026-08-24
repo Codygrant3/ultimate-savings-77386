@@ -2024,6 +2024,16 @@ a {
   font-size: 9px;
 }
 
+.review-counts {
+  margin-left: auto;
+  color: #66756e;
+  font-size: 9px;
+}
+
+.review-generated {
+  margin-left: 0;
+}
+
 .candidate-list {
   margin: 0;
   padding: 0;
@@ -2082,6 +2092,37 @@ a {
   margin-top: 3px;
   color: #66756e;
   font-size: 9px;
+}
+
+.candidate-overlap {
+  display: grid;
+  gap: 3px;
+  margin-top: 5px;
+  padding: 6px 7px;
+  border-radius: 7px;
+}
+
+.candidate-overlap--new {
+  color: #315e50;
+  border: 1px solid #c5ddd3;
+  background: #eef7f2;
+}
+
+.candidate-overlap--tracked {
+  color: #31536d;
+  border: 1px solid #c8dbe8;
+  background: #edf5fb;
+}
+
+.candidate-overlap strong {
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.candidate-overlap span,
+.candidate-overlap small {
+  font-size: 8.5px;
+  line-height: 1.35;
 }
 
 .candidate-actions {
@@ -3897,6 +3938,16 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .review-generated {
+    margin-left: 0;
+  }
+
+  .review-controls {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .review-counts,
   .review-generated {
     margin-left: 0;
   }

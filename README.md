@@ -14,6 +14,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Uses merchant-specific structured parsers for Wendy's, Dutch Bros, the local Take 5 page, and the local Costa Oil specials page to stage official offer candidates with amounts, minimum spend, eligibility caveats, or expiration signals. Every parsed candidate remains a human-review lead, never an automatic dashboard deal.
 - Uses semantic candidate keys to collapse repeated page variants while preserving the most complete spend, expiration, or terms evidence.
 - Ranks discovery candidates by captured value, spend efficiency, expiration timing, source priority, and title quality, then exposes them in a dashboard review queue. Keep/dismiss choices stay in the local browser and never convert a lead into a verified deal.
+- Compares parsed candidates with tracked offers by normalized merchant and offer language, then flags differences in captured value, minimum spend, or expiration so review time focuses on evidence changes rather than duplicates.
 - Builds a constrained weekly action plan from verified offers using the local spend budget, merchant-trip limit, distance limit, deals-per-merchant limit, and unconfirmed-location preference. The planner is optimization math only: it does not confirm eligibility, local participation, or guaranteed savings, and personal app offers still require in-app confirmation.
 - Generates a dated Markdown briefing and dashboard-ready JSON.
 - Includes a Windows Task Scheduler installer for Monday reports.

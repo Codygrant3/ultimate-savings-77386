@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-23T15:12:24.991Z",
-  "weekOf": "2026-08-17",
+  "generatedAt": "2026-08-24T12:41:19.892Z",
+  "weekOf": "2026-08-24",
   "zipCode": "77386",
   "totalPotentialSavings": 184.49,
   "verifiedCount": 42,
@@ -84,7 +84,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -187,7 +187,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -290,7 +290,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -393,7 +393,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -589,7 +589,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -691,7 +691,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -792,7 +792,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -1185,7 +1185,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -1252,7 +1252,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
+          "detail": "Official source verified; checked 1 day ago"
         },
         {
           "label": "Dollar value",
@@ -1295,102 +1295,6 @@
           "points": 6.4,
           "weight": 8,
           "detail": "$8.88 required per $4.44 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "rainbow-car-care-birthday-wash-2026",
-      "merchant": "Rainbow Car Care",
-      "title": "Free full-service car wash on your birthday",
-      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
-      "category": "auto",
-      "estimatedSavings": 20,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "car wash",
-        "birthday",
-        "free service",
-        "loyalty"
-      ],
-      "source": {
-        "label": "Rainbow Car Care frequent wash program",
-        "url": "https://rainbowcarcare.com/frequent-wash-program",
-        "checkedOn": "2026-08-15"
-      },
-      "actionLabel": "Review wash program",
-      "tier": "A",
-      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
-      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
-      "expirationLabel": "Your birthday",
-      "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "free-service",
-        "loyalty-reward"
-      ],
-      "score": 72,
-      "scoreLabel": "Strong",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 18.48,
-          "weight": 24,
-          "detail": "free reward plus $20.00 estimate"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.4,
-          "weight": 10,
-          "detail": "Household match: car wash"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
         },
         {
           "label": "Stackability",
@@ -1543,7 +1447,7 @@
           "label": "Evidence",
           "points": 15.299999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 5 days ago"
+          "detail": "Official source verified; checked 6 days ago"
         },
         {
           "label": "Dollar value",
@@ -1888,6 +1792,103 @@
       ]
     },
     {
+      "id": "chipotle-sundays-free-entree-2026",
+      "merchant": "Chipotle",
+      "title": "Free entree with code SUNDAYS after 3 p.m.",
+      "summary": "On Sundays August 23, August 30, and September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-09-06",
+      "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "app",
+        "free food",
+        "Sunday",
+        "promo code"
+      ],
+      "source": {
+        "label": "Chipotle official newsroom",
+        "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
+        "checkedOn": "2026-08-23"
+      },
+      "actionLabel": "Check Sundays code",
+      "tier": "A",
+      "stackNote": "Use code SUNDAYS on a same-day digital order after 3 p.m. Do not assume it combines with other coupons.",
+      "finePrint": "Valid 8/23/26, 8/30/26, and 9/6/26. One free entree with purchase of at least two other entrees. Chipotle.com and mobile app only. Redemption subject to availability. No dollar value is estimated because local entree prices were not verified.",
+      "expirationLabel": "Aug 23, Aug 30, and Sep 6 after 3 p.m.",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-18",
+      "preferenceSignals": [
+        "app-specific",
+        "time-sensitive",
+        "free-food"
+      ],
+      "score": 71,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 14 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
       "id": "sonic-rewards-welcome-reward-2026",
       "merchant": "SONIC Rewards",
       "title": "Free medium fries, tots, or drink for new members",
@@ -1932,7 +1933,7 @@
           "label": "Evidence",
           "points": 15.299999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 5 days ago"
+          "detail": "Official source verified; checked 6 days ago"
         },
         {
           "label": "Dollar value",
@@ -2057,7 +2058,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 2 days; newly found"
+          "detail": "Ends in 1 day; newly found"
         },
         {
           "label": "Effort",
@@ -2123,7 +2124,7 @@
           "label": "Evidence",
           "points": 15.299999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 5 days ago"
+          "detail": "Official source verified; checked 6 days ago"
         },
         {
           "label": "Dollar value",
@@ -2212,7 +2213,7 @@
           "label": "Evidence",
           "points": 15.299999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 6 days ago"
+          "detail": "Official source verified; checked 7 days ago"
         },
         {
           "label": "Dollar value",
@@ -2265,57 +2266,56 @@
       ]
     },
     {
-      "id": "chipotle-sundays-free-entree-2026",
-      "merchant": "Chipotle",
-      "title": "Free entree with code SUNDAYS after 3 p.m.",
-      "summary": "On Sundays August 23, August 30, and September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
+      "id": "rainbow-car-care-birthday-wash-2026",
+      "merchant": "Rainbow Car Care",
+      "title": "Free full-service car wash on your birthday",
+      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
+      "category": "auto",
+      "estimatedSavings": 20,
       "minimumSpend": 0,
       "isFree": true,
-      "expiresOn": "2026-09-06",
-      "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
+      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
       "verification": "verified",
       "friction": "medium",
       "tags": [
-        "app",
-        "free food",
-        "Sunday",
-        "promo code"
+        "car wash",
+        "birthday",
+        "free service",
+        "loyalty"
       ],
       "source": {
-        "label": "Chipotle official newsroom",
-        "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-        "checkedOn": "2026-08-23"
+        "label": "Rainbow Car Care frequent wash program",
+        "url": "https://rainbowcarcare.com/frequent-wash-program",
+        "checkedOn": "2026-08-15"
       },
-      "actionLabel": "Check Sundays code",
+      "actionLabel": "Review wash program",
       "tier": "A",
-      "stackNote": "Use code SUNDAYS on a same-day digital order after 3 p.m. Do not assume it combines with other coupons.",
-      "finePrint": "Valid 8/23/26, 8/30/26, and 9/6/26. One free entree with purchase of at least two other entrees. Chipotle.com and mobile app only. Redemption subject to availability. No dollar value is estimated because local entree prices were not verified.",
-      "expirationLabel": "Aug 23, Aug 30, and Sep 6 after 3 p.m.",
+      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
+      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
+      "expirationLabel": "Your birthday",
       "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-08-18",
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
       "preferenceSignals": [
-        "app-specific",
-        "time-sensitive",
-        "free-food"
+        "vehicle-maintenance",
+        "free-service",
+        "loyalty-reward"
       ],
-      "score": 69,
+      "score": 68,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 18,
+          "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
+          "detail": "Official source verified; checked 8 days ago"
         },
         {
           "label": "Dollar value",
-          "points": 13.2,
+          "points": 18.48,
           "weight": 24,
-          "detail": "free reward"
+          "detail": "free reward plus $20.00 estimate"
         },
         {
           "label": "Savings rate",
@@ -2325,9 +2325,9 @@
         },
         {
           "label": "Household fit",
-          "points": 7.6000000000000005,
+          "points": 8.4,
           "weight": 10,
-          "detail": "Household match: free food"
+          "detail": "Household match: car wash"
         },
         {
           "label": "Local relevance",
@@ -2337,9 +2337,9 @@
         },
         {
           "label": "Timing",
-          "points": 5.1000000000000005,
+          "points": 4.6000000000000005,
           "weight": 10,
-          "detail": "Ends 2026-09-06; newly found"
+          "detail": "No stated end date; current"
         },
         {
           "label": "Effort",
@@ -2405,7 +2405,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 11 days ago"
+          "detail": "Official source verified; checked 12 days ago"
         },
         {
           "label": "Dollar value",
@@ -2629,7 +2629,7 @@
           "label": "Timing",
           "points": 6.9,
           "weight": 10,
-          "detail": "Ends in 9 days; newly found"
+          "detail": "Ends in 8 days; newly found"
         },
         {
           "label": "Effort",
@@ -2882,7 +2882,7 @@
           "label": "Evidence",
           "points": 15.299999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 6 days ago"
+          "detail": "Official source verified; checked 7 days ago"
         },
         {
           "label": "Dollar value",
@@ -2978,7 +2978,7 @@
           "label": "Evidence",
           "points": 15.299999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 6 days ago"
+          "detail": "Official source verified; checked 7 days ago"
         },
         {
           "label": "Dollar value",
@@ -3320,6 +3320,104 @@
       ]
     },
     {
+      "id": "whataburger-wednesday-chicken-sandwich-2026-08-26",
+      "merchant": "Whataburger",
+      "title": "76-cent Signature Chicken Sandwich on Wednesday",
+      "summary": "Whataburger Rewards members can get a Signature Chicken Sandwich entree for 76 cents on August 26 from 5 p.m. to 10 p.m. local time.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-08-26",
+      "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "one-day",
+        "76-cent",
+        "entree",
+        "app",
+        "rewards"
+      ],
+      "source": {
+        "label": "Whataburger official newsroom",
+        "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
+        "checkedOn": "2026-08-23"
+      },
+      "actionLabel": "Check August 26 offer",
+      "tier": "A",
+      "stackNote": "Do not assume another coupon can be combined with this app offer.",
+      "finePrint": "Valid only through the Whataburger App, one redemption per account, at participating locations during the stated local-time window. No dollar savings estimate is shown because the regular local price was not verified.",
+      "expirationLabel": "August 26, 5-10 p.m.",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-11",
+      "preferenceSignals": [
+        "one-day",
+        "app-specific",
+        "time-sensitive"
+      ],
+      "score": 64,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 10,
+          "weight": 10,
+          "detail": "Ends in 3 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
       "id": "dunkin-six-dollar-meal-deal-rayford-2026",
       "merchant": "Dunkin",
       "title": "$6 Meal Deal with coffee and two Wake-Up Wraps",
@@ -3364,7 +3462,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 11 days ago"
+          "detail": "Official source verified; checked 12 days ago"
         },
         {
           "label": "Dollar value",
@@ -3417,198 +3515,6 @@
       ]
     },
     {
-      "id": "whataburger-wednesday-chicken-sandwich-2026-08-26",
-      "merchant": "Whataburger",
-      "title": "76-cent Signature Chicken Sandwich on Wednesday",
-      "summary": "Whataburger Rewards members can get a Signature Chicken Sandwich entree for 76 cents on August 26 from 5 p.m. to 10 p.m. local time.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-08-26",
-      "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "one-day",
-        "76-cent",
-        "entree",
-        "app",
-        "rewards"
-      ],
-      "source": {
-        "label": "Whataburger official newsroom",
-        "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-23"
-      },
-      "actionLabel": "Check August 26 offer",
-      "tier": "A",
-      "stackNote": "Do not assume another coupon can be combined with this app offer.",
-      "finePrint": "Valid only through the Whataburger App, one redemption per account, at participating locations during the stated local-time window. No dollar savings estimate is shown because the regular local price was not verified.",
-      "expirationLabel": "August 26, 5-10 p.m.",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "one-day",
-        "app-specific",
-        "time-sensitive"
-      ],
-      "score": 62,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.2,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 8.5,
-          "weight": 10,
-          "detail": "Ends in 4 days; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "exxon-mobil-rewards-base-points-2026",
-      "merchant": "Exxon Mobil Rewards+",
-      "title": "Earn 3¢ per gallon or more in points",
-      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
-      "category": "fuel",
-      "estimatedSavings": 0.45,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "fuel",
-        "points",
-        "rewards program"
-      ],
-      "source": {
-        "label": "Exxon Mobil Rewards+",
-        "url": "https://www.exxonmobilfuels.com/en/rewards",
-        "checkedOn": "2026-08-15"
-      },
-      "actionLabel": "Review rewards",
-      "tier": "B",
-      "distanceMiles": 1.8,
-      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
-      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
-      "expirationLabel": "Ongoing",
-      "availability": "program",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "preferenceSignals": [
-        "fuel-reward",
-        "stacking"
-      ],
-      "score": 61,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 2.16,
-          "weight": 24,
-          "detail": "$0.45 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "1.8 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
       "id": "dq-double-flip-blizzard-2026-08",
       "merchant": "Dairy Queen",
       "title": "Second Blizzard Treat for 99 cents",
@@ -3648,7 +3554,7 @@
         "repeatable",
         "high-value"
       ],
-      "score": 61,
+      "score": 62,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
@@ -3683,9 +3589,9 @@
         },
         {
           "label": "Timing",
-          "points": 6.9,
+          "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 8 days; newly found"
+          "detail": "Ends in 7 days; newly found"
         },
         {
           "label": "Effort",
@@ -3788,6 +3694,100 @@
           "points": 1.7999999999999998,
           "weight": 9,
           "detail": "high redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "exxon-mobil-rewards-base-points-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "Earn 3¢ per gallon or more in points",
+      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
+      "category": "fuel",
+      "estimatedSavings": 0.45,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "fuel",
+        "points",
+        "rewards program"
+      ],
+      "source": {
+        "label": "Exxon Mobil Rewards+",
+        "url": "https://www.exxonmobilfuels.com/en/rewards",
+        "checkedOn": "2026-08-15"
+      },
+      "actionLabel": "Review rewards",
+      "tier": "B",
+      "distanceMiles": 1.8,
+      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
+      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
+      "expirationLabel": "Ongoing",
+      "availability": "program",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "stacking"
+      ],
+      "score": 58,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 11.7,
+          "weight": 18,
+          "detail": "Official source verified; checked 8 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 2.16,
+          "weight": 24,
+          "detail": "$0.45 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "1.8 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
         },
         {
           "label": "Required spend",
@@ -3940,14 +3940,14 @@
         "time-sensitive",
         "local-station"
       ],
-      "score": 53,
-      "scoreLabel": "Worth a look",
+      "score": 49,
+      "scoreLabel": "Low priority",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 15.299999999999999,
+          "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
+          "detail": "Official source verified; checked 8 days ago"
         },
         {
           "label": "Dollar value",
@@ -3977,7 +3977,7 @@
           "label": "Timing",
           "points": 10,
           "weight": 10,
-          "detail": "Ends in 3 days; newly found"
+          "detail": "Ends in 2 days; newly found"
         },
         {
           "label": "Effort",
@@ -4043,7 +4043,7 @@
           "label": "Evidence",
           "points": 15.299999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 5 days ago"
+          "detail": "Official source verified; checked 6 days ago"
         },
         {
           "label": "Dollar value",
@@ -4140,7 +4140,7 @@
           "label": "Evidence",
           "points": 5.22,
           "weight": 18,
-          "detail": "Official ongoing program; checked 11 days ago"
+          "detail": "Official ongoing program; checked 12 days ago"
         },
         {
           "label": "Dollar value",
@@ -4233,7 +4233,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Unverified lead; checked 11 days ago"
+          "detail": "Unverified lead; checked 12 days ago"
         },
         {
           "label": "Dollar value",
@@ -4308,14 +4308,14 @@
         "checkedOn": "2026-07-23"
       },
       "actionLabel": "View program",
-      "score": 37,
+      "score": 35,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 3.2399999999999998,
+          "points": 1.26,
           "weight": 18,
-          "detail": "Official ongoing program; checked 30 days ago"
+          "detail": "Official ongoing program; checked 31 days ago"
         },
         {
           "label": "Dollar value",
@@ -4390,14 +4390,14 @@
         "checkedOn": "2026-07-23"
       },
       "actionLabel": "View program",
-      "score": 37,
+      "score": 35,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 3.2399999999999998,
+          "points": 1.26,
           "weight": 18,
-          "detail": "Official ongoing program; checked 30 days ago"
+          "detail": "Official ongoing program; checked 31 days ago"
         },
         {
           "label": "Dollar value",
