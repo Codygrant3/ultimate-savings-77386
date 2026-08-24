@@ -2464,7 +2464,7 @@ a {
 
 .planner-controls {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr)) auto;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) auto;
   align-items: end;
   gap: 10px;
   padding: 14px;
@@ -2482,7 +2482,8 @@ a {
   font-weight: 700;
 }
 
-.planner-controls input:not([type="checkbox"]) {
+.planner-controls input:not([type="checkbox"]),
+.planner-controls select {
   width: 100%;
   padding: 9px 10px;
   color: var(--ink);

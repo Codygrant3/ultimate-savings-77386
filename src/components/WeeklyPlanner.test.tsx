@@ -113,7 +113,7 @@ describe("WeeklyPlanner execution controls", () => {
     expect(screen.getByText("Kept offer")).toBeTruthy();
   });
 
-  it("shows remaining validity on a planned deal and emits validity changes", () => {
+  it("shows planning context and emits validity and effort changes", () => {
     const onSettingsChange = vi.fn();
     render(
       <WeeklyPlanner
@@ -134,6 +134,14 @@ describe("WeeklyPlanner execution controls", () => {
     expect(onSettingsChange).toHaveBeenCalledWith({
       ...DEFAULT_WEEKLY_PLAN_SETTINGS,
       minimumDaysRemaining: 7
+    });
+
+    fireEvent.change(screen.getByLabelText("Maximum effort"), {
+      target: { value: "any" }
+    });
+    expect(onSettingsChange).toHaveBeenCalledWith({
+      ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+      maximumFriction: "any"
     });
   });
 });

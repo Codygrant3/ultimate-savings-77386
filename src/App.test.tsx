@@ -322,6 +322,10 @@ describe("Savings Desk interactions", () => {
       "value",
       "0"
     );
+    expect(screen.getByLabelText("Maximum effort")).toHaveProperty(
+      "value",
+      "medium"
+    );
 
     fireEvent.change(screen.getByLabelText("Weekly spend budget"), {
       target: { value: "20" }
@@ -337,6 +341,13 @@ describe("Savings Desk interactions", () => {
     expect(
       window.localStorage.getItem("savings-desk:weekly-plan-settings")
     ).toContain('"minimumDaysRemaining":7');
+
+    fireEvent.change(screen.getByLabelText("Maximum effort"), {
+      target: { value: "any" }
+    });
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"maximumFriction":"any"');
 
     fireEvent.click(screen.getByRole("button", { name: "Overview" }));
     fireEvent.click(screen.getByRole("button", { name: "Action plan" }));

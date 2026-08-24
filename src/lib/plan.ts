@@ -11,6 +11,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   maxTrips: 3,
   maxDistanceMiles: 10,
   minimumDaysRemaining: 0,
+  maximumFriction: "medium",
   includeUnconfirmedLocations: true,
   maxDealsPerTrip: 3
 };
@@ -66,6 +67,11 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
         30
       )
     ),
+    maximumFriction: ["low", "medium", "any"].includes(
+      settings.maximumFriction as string
+    )
+      ? (settings.maximumFriction as WeeklyPlanSettings["maximumFriction"])
+      : DEFAULT_WEEKLY_PLAN_SETTINGS.maximumFriction,
     includeUnconfirmedLocations:
       typeof settings.includeUnconfirmedLocations === "boolean"
         ? settings.includeUnconfirmedLocations
@@ -109,6 +115,26 @@ function isNewCustomerOffer(opportunity: ScoredOpportunity): boolean {
     /\b(?:new|first)\b[^.]*\b(?:app|account|member|user)s?\b/.test(searchable) ||
     /\bnew app users?\b/.test(searchable)
   );
+}
+
+function exceedsEffortLimit(
+  friction: ScoredOpportunity["friction"],
+  maximumFriction: WeeklyPlanSettings["maximumFriction"]
+): boolean {
+  const effortRank = { low: 1, medium: 2, high: 3 };
+  const limitRank = { low: 1, medium: 2, any: 3 };
+
+  return effortRank[friction] > limitRank[maximumFriction];
+}
+
+function effortLimitLabel(
+  maximumFriction: WeeklyPlanSettings["maximumFriction"]
+): string {
+  return {
+    low: "low-effort",
+    medium: "medium-effort",
+    any: "any-effort"
+  }[maximumFriction];
 }
 
 export function daysUntilExpiration(
@@ -249,8 +275,11 @@ export function buildWeeklyPlan(
       continue;
     }
 
-    if (opportunity.friction === "high") {
-      excluded.push({ opportunity, reason: "High redemption effort" });
+    if (exceedsEffortLimit(opportunity.friction, settings.maximumFriction)) {
+      excluded.push({
+        opportunity,
+        reason: `Above ${effortLimitLabel(settings.maximumFriction)} limit`
+      });
       continue;
     }
 
@@ -459,6 +488,11 @@ export function buildWeeklyPlan(
       settings.minimumDaysRemaining > 0
         ? `Offers must remain valid for at least ${settings.minimumDaysRemaining} more day${settings.minimumDaysRemaining === 1 ? "" : "s"}; this is planning math, not an eligibility guarantee.`
         : "Offers expiring today remain eligible for planning; confirm their terms before acting.",
+      {
+        low: "Only low-effort offers are eligible.",
+        medium: "Low and medium effort offers are eligible; high effort is excluded.",
+        any: "All verified effort levels are eligible."
+      }[settings.maximumFriction],
       "Estimated values are planning aids; confirm app/store terms and buy only planned household items."
     ]
   };

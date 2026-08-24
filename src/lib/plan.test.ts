@@ -185,9 +185,60 @@ describe("weekly action plan optimizer", () => {
     expect(reasons.lead).toBe("Not source-verified");
     expect(reasons.expired).toBe("Expired");
     expect(reasons["no-value"]).toBe("No captured dollar value");
-    expect(reasons["high-effort"]).toBe("High redemption effort");
+    expect(reasons["high-effort"]).toBe("Above medium-effort limit");
     expect(reasons["too-far"]).toBe("Beyond 10-mile limit");
     expect(reasons["bad-date"]).toBe("Invalid expiration evidence");
+  });
+
+  it("honors the selected maximum redemption effort", () => {
+    const lowEffort = makeOffer({
+      id: "low-effort",
+      merchant: "Low Effort Market",
+      friction: "low"
+    });
+    const mediumEffort = makeOffer({
+      id: "medium-effort",
+      merchant: "Medium Effort Market",
+      friction: "medium"
+    });
+    const highEffort = makeOffer({
+      id: "high-effort",
+      merchant: "High Effort Market",
+      estimatedSavings: 20,
+      friction: "high"
+    });
+
+    const strict = buildWeeklyPlan(
+      [lowEffort, mediumEffort, highEffort],
+      { ...DEFAULT_WEEKLY_PLAN_SETTINGS, maximumFriction: "low", weeklyBudget: 100 },
+      today
+    );
+    const standard = buildWeeklyPlan(
+      [lowEffort, mediumEffort, highEffort],
+      {
+        ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+        maximumFriction: "medium",
+        weeklyBudget: 100
+      },
+      today
+    );
+    const permissive = buildWeeklyPlan(
+      [lowEffort, mediumEffort, highEffort],
+      { ...DEFAULT_WEEKLY_PLAN_SETTINGS, maximumFriction: "any", weeklyBudget: 100 },
+      today
+    );
+
+    expect(strict.trips.map(({ merchant }) => merchant)).toEqual([
+      "Low Effort Market"
+    ]);
+    expect(strict.assumptions).toContain("Only low-effort offers are eligible.");
+    expect(standard.trips).toHaveLength(2);
+    expect(permissive.trips).toHaveLength(3);
+    expect(
+      permissive.assumptions.find((assumption) =>
+        assumption.includes("All verified effort levels")
+      )
+    ).toBeTruthy();
   });
 
   it("excludes offers below the requested minimum validity window", () => {

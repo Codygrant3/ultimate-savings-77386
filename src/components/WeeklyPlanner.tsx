@@ -121,6 +121,23 @@ export function WeeklyPlanner({
           />
         </label>
         <label>
+          <span>Maximum effort</span>
+          <select
+            aria-label="Maximum effort"
+            value={settings.maximumFriction}
+            onChange={(event) =>
+              updateSetting(
+                "maximumFriction",
+                event.target.value as WeeklyPlanSettings["maximumFriction"]
+              )
+            }
+          >
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="any">Any</option>
+          </select>
+        </label>
+        <label>
           <span>Deals per merchant</span>
           <input
             aria-label="Deals per merchant"

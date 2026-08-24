@@ -193,6 +193,7 @@ export interface WeeklyPlanSettings {
   maxTrips: number;
   maxDistanceMiles: number;
   minimumDaysRemaining: number;
+  maximumFriction: "low" | "medium" | "any";
   includeUnconfirmedLocations: boolean;
   maxDealsPerTrip: number;
 }
