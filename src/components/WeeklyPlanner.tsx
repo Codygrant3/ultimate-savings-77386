@@ -4,6 +4,7 @@ import {
   CalendarRange,
   CircleDollarSign,
   Check,
+  Car,
   ExternalLink,
   MapPin,
   RotateCcw,
@@ -113,6 +114,23 @@ export function WeeklyPlanner({
             value={settings.maxDistanceMiles}
             onChange={(event) =>
               updateSetting("maxDistanceMiles", Number(event.target.value || 1))
+            }
+          />
+        </label>
+        <label>
+          <span>Cost per mile</span>
+          <input
+            aria-label="Estimated cost per mile"
+            type="number"
+            min="0"
+            max="5"
+            step="0.05"
+            value={settings.travelCostPerMile}
+            onChange={(event) =>
+              updateSetting(
+                "travelCostPerMile",
+                Number(event.target.value || 0)
+              )
             }
           />
         </label>
@@ -278,6 +296,20 @@ export function WeeklyPlanner({
           <span>Estimated net cost</span>
           <strong>{formatCurrency(plan.estimatedNetCost)}</strong>
         </article>
+        {plan.totalTravelCost > 0 && (
+          <>
+            <article>
+              <Car size={19} aria-hidden="true" />
+              <span>Estimated travel cost</span>
+              <strong>{formatCurrency(plan.totalTravelCost)}</strong>
+            </article>
+            <article>
+              <CircleDollarSign size={19} aria-hidden="true" />
+              <span>Net benefit after travel</span>
+              <strong>{formatCurrency(plan.netBenefitAfterTravel)}</strong>
+            </article>
+          </>
+        )}
       </section>
 
       {plan.trips.length === 0 ? (
@@ -325,6 +357,13 @@ export function WeeklyPlanner({
                     Spend {formatCurrency(trip.requiredSpend)} · score{" "}
                     {Math.round(trip.averageScore)}
                   </span>
+                  {trip.netBenefitAfterTravel != null && (
+                    <span>
+                      Estimated value {formatCurrency(trip.estimatedSavings)} ·
+                      travel {formatCurrency(trip.estimatedTravelCost ?? 0)} ·
+                      benefit {formatCurrency(trip.netBenefitAfterTravel)}
+                    </span>
+                  )}
                 </div>
                 <ul className="trip-deals">
                   {trip.deals.map(({ opportunity, warnings }) => (

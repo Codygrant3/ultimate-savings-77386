@@ -203,6 +203,50 @@ describe("weekly action plan optimizer", () => {
     );
   });
 
+  it("uses the user travel-cost estimate to prefer better net household results", () => {
+    const offers = [
+      makeOffer({
+        id: "near",
+        merchant: "Near Market",
+        distanceMiles: 2,
+        estimatedSavings: 10,
+        minimumSpend: 20,
+        score: 80
+      }),
+      makeOffer({
+        id: "far",
+        merchant: "Far Market",
+        distanceMiles: 8,
+        estimatedSavings: 11,
+        minimumSpend: 20,
+        score: 82
+      })
+    ];
+
+    const withoutCost = buildWeeklyPlan(
+      offers,
+      { weeklyBudget: 40, maxTrips: 2 },
+      today
+    );
+    const withCost = buildWeeklyPlan(
+      offers,
+      { weeklyBudget: 40, maxTrips: 1, travelCostPerMile: 0.7 },
+      today
+    );
+
+    expect(withoutCost.trips).toHaveLength(2);
+    expect(withCost.trips.map(({ merchant }) => merchant)).toEqual([
+      "Near Market"
+    ]);
+    expect(withCost.totalTravelCost).toBeCloseTo(1.4);
+    expect(withCost.netBenefitAfterTravel).toBeCloseTo(8.6);
+    expect(
+      withCost.assumptions.some((assumption) =>
+        assumption.includes("$0.70-per-mile travel estimate")
+      )
+    ).toBe(true);
+  });
+
   it("does not treat a checked distance as proof of local promotion participation", () => {
     const plan = buildWeeklyPlan([makeOffer({ id: "catalog-local" })], {}, today);
 

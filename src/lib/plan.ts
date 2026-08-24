@@ -12,6 +12,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   weeklyBudget: 100,
   maxTrips: 3,
   maxDistanceMiles: 10,
+  travelCostPerMile: 0,
   maximumSourceAgeDays: 14,
   minimumDaysRemaining: 0,
   maximumFriction: "medium",
@@ -40,6 +41,8 @@ interface TripBundle {
   hasUnconfirmedParticipationDeal: boolean;
   requiredSpend: number;
   estimatedSavings: number;
+  estimatedTravelCost?: number;
+  netBenefitAfterTravel?: number | null;
   utility: number;
   deals: DealCandidate[];
   warnings: string[];
@@ -68,6 +71,12 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
       DEFAULT_WEEKLY_PLAN_SETTINGS.maxDistanceMiles,
       1,
       50
+    ),
+    travelCostPerMile: bounded(
+      settings.travelCostPerMile,
+      DEFAULT_WEEKLY_PLAN_SETTINGS.travelCostPerMile,
+      0,
+      5
     ),
     maximumSourceAgeDays: Math.round(
       bounded(
@@ -258,7 +267,10 @@ function combinations<T>(items: T[], maxSize: number): T[][] {
   return results;
 }
 
-function makeBundle(group: DealCandidate[]): TripBundle {
+function makeBundle(
+  group: DealCandidate[],
+  travelCostPerMile = 0
+): TripBundle {
   const requiredSpend = group.reduce(
     (total, deal) => total + deal.opportunity.minimumSpend,
     0
@@ -283,6 +295,16 @@ function makeBundle(group: DealCandidate[]): TripBundle {
   const distancePenalty = distanceConfirmed
     ? (distanceMiles ?? 0) * 3
     : 12;
+  const estimatedTravelCost = travelCostPerMile > 0 &&
+    distanceConfirmed &&
+    distanceMiles !== undefined
+    ? distanceMiles * travelCostPerMile
+    : 0;
+  const grossBenefit = group.reduce(
+    (total, deal) =>
+      total + deal.opportunity.estimatedSavings * deal.outcomeAdjustment,
+    0
+  );
   const utility =
     group.reduce(
       (total, deal) =>
@@ -291,7 +313,7 @@ function makeBundle(group: DealCandidate[]): TripBundle {
         deal.opportunity.estimatedSavings * deal.outcomeAdjustment * 2 -
         deal.opportunity.minimumSpend * 0.15,
       0
-    ) - distancePenalty;
+    ) - distancePenalty - estimatedTravelCost * 2;
   const warnings = Array.from(
     new Set(group.flatMap((deal) => deal.warnings))
   );
@@ -305,6 +327,15 @@ function makeBundle(group: DealCandidate[]): TripBundle {
     hasUnconfirmedParticipationDeal,
     requiredSpend,
     estimatedSavings,
+    ...(travelCostPerMile > 0
+      ? {
+          estimatedTravelCost,
+          netBenefitAfterTravel:
+            distanceConfirmed && distanceMiles !== undefined
+              ? Math.max(0, grossBenefit - estimatedTravelCost)
+              : null
+        }
+      : {}),
     utility,
     deals: group,
     warnings
@@ -528,7 +559,9 @@ export function buildWeeklyPlan(
       ) {
         continue;
       }
-      bundles.push(makeBundle(combination));
+      bundles.push(
+        makeBundle(combination, settings.travelCostPerMile)
+      );
     }
 
     const merchantBundles = bundles
@@ -602,6 +635,12 @@ export function buildWeeklyPlan(
     hasUnconfirmedParticipationDeal: bundle.hasUnconfirmedParticipationDeal,
     requiredSpend: bundle.requiredSpend,
     estimatedSavings: bundle.estimatedSavings,
+    ...(bundle.estimatedTravelCost !== undefined
+      ? { estimatedTravelCost: bundle.estimatedTravelCost }
+      : {}),
+    ...(bundle.netBenefitAfterTravel !== undefined
+      ? { netBenefitAfterTravel: bundle.netBenefitAfterTravel }
+      : {}),
     averageScore:
       bundle.deals.reduce((total, deal) => total + deal.opportunity.score, 0) /
       bundle.deals.length,
@@ -622,6 +661,10 @@ export function buildWeeklyPlan(
   );
   const estimatedSavings = selectedDeals.reduce(
     (total, deal) => total + deal.opportunity.estimatedSavings,
+    0
+  );
+  const totalTravelCost = trips.reduce(
+    (total, trip) => total + (trip.estimatedTravelCost ?? 0),
     0
   );
 
@@ -698,14 +741,19 @@ export function buildWeeklyPlan(
     ),
     requiredSpend,
     estimatedSavings,
+    totalTravelCost,
     valueEfficiency:
       requiredSpend > 0 ? estimatedSavings / requiredSpend : null,
     estimatedNetCost: Math.max(0, requiredSpend - estimatedSavings),
+    netBenefitAfterTravel: Math.max(0, estimatedSavings - totalTravelCost),
     savingsRate:
       requiredSpend > 0 ? (estimatedSavings / requiredSpend) * 100 : 100,
     assumptions: [
       `Verified offers only; planned spend capped at $${settings.weeklyBudget.toFixed(2)}.`,
       `At most ${settings.maxTrips} merchants and ${settings.maxDealsPerTrip} deals per merchant.`,
+      settings.travelCostPerMile > 0
+        ? `Planning utility subtracts your $${settings.travelCostPerMile.toFixed(2)}-per-mile travel estimate; this is a household assumption, not official pricing.`
+        : "Travel is constrained by miles but not assigned a dollar cost.",
       settings.includeUnconfirmedLocations
         ? "Unconfirmed locations are labeled and receive a planning penalty."
         : `Distances beyond ${settings.maxDistanceMiles} miles or unconfirmed are excluded.`,

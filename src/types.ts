@@ -200,6 +200,7 @@ export interface WeeklyPlanSettings {
   weeklyBudget: number;
   maxTrips: number;
   maxDistanceMiles: number;
+  travelCostPerMile: number;
   maximumSourceAgeDays: number;
   minimumDaysRemaining: number;
   maximumFriction: "low" | "medium" | "any";
@@ -226,6 +227,8 @@ export interface PlannedTrip {
   hasUnconfirmedParticipationDeal: boolean;
   requiredSpend: number;
   estimatedSavings: number;
+  estimatedTravelCost?: number;
+  netBenefitAfterTravel?: number | null;
   averageScore: number;
   utility: number;
   deals: PlannedDeal[];
@@ -245,8 +248,10 @@ export interface WeeklyPlan {
   excluded: ExcludedOpportunity[];
   requiredSpend: number;
   estimatedSavings: number;
+  totalTravelCost: number;
   valueEfficiency: number | null;
   estimatedNetCost: number;
+  netBenefitAfterTravel: number;
   savingsRate: number;
   assumptions: string[];
 }

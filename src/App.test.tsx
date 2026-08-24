@@ -417,6 +417,13 @@ describe("Savings Desk interactions", () => {
       window.localStorage.getItem("savings-desk:weekly-plan-settings")
     ).toContain('"weeklyBudget":20');
 
+    fireEvent.change(screen.getByLabelText("Estimated cost per mile"), {
+      target: { value: "0.65" }
+    });
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"travelCostPerMile":0.65');
+
     fireEvent.change(screen.getByLabelText("Minimum days valid"), {
       target: { value: "7" }
     });

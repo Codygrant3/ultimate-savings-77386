@@ -158,5 +158,13 @@ describe("WeeklyPlanner execution controls", () => {
       ...DEFAULT_WEEKLY_PLAN_SETTINGS,
       allowConditionalStacking: true
     });
+
+    fireEvent.change(screen.getByLabelText("Estimated cost per mile"), {
+      target: { value: "0.70" }
+    });
+    expect(onSettingsChange).toHaveBeenLastCalledWith({
+      ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+      travelCostPerMile: 0.7
+    });
   });
 });
