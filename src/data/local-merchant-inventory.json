@@ -118,6 +118,26 @@
       "checkedOn": "2026-08-24"
     },
     {
+      "id": "taco-bell-rayford",
+      "merchantAliases": ["Taco Bell", "Taco Bell Rewards"],
+      "locationName": "Taco Bell Rayford Road",
+      "address": "2681 Rayford Road, Spring, TX 77386",
+      "distanceMiles": 2.8,
+      "sourceLabel": "Taco Bell official Rayford Road location page",
+      "sourceUrl": "https://locations.tacobell.com/tx/spring/2681-rayford-rd.html",
+      "checkedOn": "2026-08-24"
+    },
+    {
+      "id": "taco-bell-birnham-woods",
+      "merchantAliases": ["Taco Bell", "Taco Bell Rewards"],
+      "locationName": "Taco Bell Birnham Woods Drive",
+      "address": "28785 Birnham Woods Drive, Spring, TX 77386",
+      "distanceMiles": 3.3,
+      "sourceLabel": "Taco Bell official Birnham Woods location page",
+      "sourceUrl": "https://locations.tacobell.com/tx/spring/28785-birnham-woods-dr-.html",
+      "checkedOn": "2026-08-24"
+    },
+    {
       "id": "jovi-rayford",
       "merchantAliases": ["JoVi + local coffee shops", "JoVi Coffee", "JoVi"],
       "locationName": "JoVi Coffee Rayford Road",

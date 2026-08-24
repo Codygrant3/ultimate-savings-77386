@@ -43,6 +43,10 @@ describe("verified opportunity catalog", () => {
       {
         merchant: "7REWARDS Fuel",
         locationName: "7-Eleven Birnham Woods Drive"
+      },
+      {
+        merchant: "Taco Bell",
+        locationName: "Taco Bell Rayford Road"
       }
     ] as const;
 
