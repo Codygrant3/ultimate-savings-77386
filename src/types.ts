@@ -232,6 +232,7 @@ export interface PlannedTrip {
   hasUnconfirmedParticipationDeal: boolean;
   requiredSpend: number;
   estimatedSavings: number;
+  calibratedSavings: number;
   estimatedTravelCost?: number;
   netBenefitAfterTravel?: number | null;
   averageScore: number;
@@ -253,6 +254,8 @@ export interface WeeklyPlan {
   excluded: ExcludedOpportunity[];
   requiredSpend: number;
   estimatedSavings: number;
+  calibratedSavings: number;
+  calibrationDelta: number;
   totalTravelCost: number;
   valueEfficiency: number | null;
   estimatedNetCost: number;

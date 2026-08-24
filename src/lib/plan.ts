@@ -47,6 +47,7 @@ interface TripBundle {
   hasUnconfirmedParticipationDeal: boolean;
   requiredSpend: number;
   estimatedSavings: number;
+  calibratedSavings: number;
   estimatedTravelCost?: number;
   netBenefitAfterTravel?: number | null;
   utility: number;
@@ -378,6 +379,7 @@ function makeBundle(
     hasUnconfirmedParticipationDeal,
     requiredSpend,
     estimatedSavings,
+    calibratedSavings: grossBenefit,
     ...(settings.travelCostPerMile > 0
       ? {
           estimatedTravelCost,
@@ -696,6 +698,7 @@ export function buildWeeklyPlan(
     hasUnconfirmedParticipationDeal: bundle.hasUnconfirmedParticipationDeal,
     requiredSpend: bundle.requiredSpend,
     estimatedSavings: bundle.estimatedSavings,
+    calibratedSavings: bundle.calibratedSavings,
     ...(bundle.estimatedTravelCost !== undefined
       ? { estimatedTravelCost: bundle.estimatedTravelCost }
       : {}),
@@ -722,6 +725,13 @@ export function buildWeeklyPlan(
   );
   const estimatedSavings = selectedDeals.reduce(
     (total, deal) => total + deal.opportunity.estimatedSavings,
+    0
+  );
+  const calibratedSavings = selectedDeals.reduce(
+    (total, deal) =>
+      total +
+      deal.opportunity.estimatedSavings *
+        (outcomeAdjustments[deal.opportunity.id]?.adjustment ?? 1),
     0
   );
   const totalTravelCost = trips.reduce(
@@ -802,11 +812,13 @@ export function buildWeeklyPlan(
     ),
     requiredSpend,
     estimatedSavings,
+    calibratedSavings,
+    calibrationDelta: calibratedSavings - estimatedSavings,
     totalTravelCost,
     valueEfficiency:
       requiredSpend > 0 ? estimatedSavings / requiredSpend : null,
     estimatedNetCost: Math.max(0, requiredSpend - estimatedSavings),
-    netBenefitAfterTravel: Math.max(0, estimatedSavings - totalTravelCost),
+    netBenefitAfterTravel: Math.max(0, calibratedSavings - totalTravelCost),
     savingsRate:
       requiredSpend > 0 ? (estimatedSavings / requiredSpend) * 100 : 100,
     assumptions: [

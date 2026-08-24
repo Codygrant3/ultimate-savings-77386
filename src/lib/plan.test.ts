@@ -582,6 +582,10 @@ describe("weekly action plan optimizer", () => {
     expect(plan.trips[0].deals).toHaveLength(1);
     expect(plan.trips[0].deals[0].opportunity.id).toBe("outperformer");
     expect(plan.trips[0].estimatedSavings).toBe(10);
+    expect(plan.trips[0].calibratedSavings).toBeCloseTo(12.5);
+    expect(plan.estimatedSavings).toBe(10);
+    expect(plan.calibratedSavings).toBeCloseTo(12.5);
+    expect(plan.calibrationDelta).toBeCloseTo(2.5);
     expect(
       plan.excluded.find(({ opportunity }) => opportunity.id === "underperformer")
         ?.reason
@@ -592,17 +596,25 @@ describe("weekly action plan optimizer", () => {
   });
 
   it("warns when linked local results differ materially from listed estimates", () => {
-    const plan = buildWeeklyPlan([makeOffer({ id: "offer-a" })], {}, today, {
-      "offer-a": {
-        ratio: 0.5,
-        samples: 1,
-        adjustment: 0.75
+    const plan = buildWeeklyPlan(
+      [makeOffer({ id: "offer-a" })],
+      { weeklyBudget: 20, travelCostPerMile: 0.5 },
+      today,
+      {
+        "offer-a": {
+          ratio: 0.5,
+          samples: 1,
+          adjustment: 0.75
+        }
       }
-    });
+    );
 
     expect(plan.trips[0].deals[0].warnings).toContain(
       "Linked local results are below the listed estimate."
     );
+    expect(plan.trips[0].calibratedSavings).toBeCloseTo(7.5);
+    expect(plan.totalTravelCost).toBeCloseTo(1);
+    expect(plan.netBenefitAfterTravel).toBeCloseTo(6.5);
   });
 
   it("lets the user allow conditional stacking for a merchant trip", () => {

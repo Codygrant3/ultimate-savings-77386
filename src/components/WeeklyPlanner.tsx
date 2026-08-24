@@ -310,6 +310,16 @@ export function WeeklyPlanner({
           <span>Estimated savings</span>
           <strong>{formatCurrency(plan.estimatedSavings)}</strong>
         </article>
+        {plan.calibrationDelta !== 0 && (
+          <article>
+            <Scale size={19} aria-hidden="true" />
+            <span>Household-calibrated savings</span>
+            <strong>
+              {formatCurrency(plan.calibratedSavings)}
+              {plan.calibrationDelta > 0 ? " (above estimate)" : " (below estimate)"}
+            </strong>
+          </article>
+        )}
         <article>
           <ShoppingBasket size={19} aria-hidden="true" />
           <span>Planned spend</span>
@@ -372,7 +382,7 @@ export function WeeklyPlanner({
                   </div>
                   <div className="trip-score">
                     <strong>{formatCurrency(trip.estimatedSavings)}</strong>
-                    <span>estimated value</span>
+                    <span>official estimate</span>
                   </div>
                 </header>
                 <div className="trip-meta">
@@ -402,7 +412,9 @@ export function WeeklyPlanner({
                   </span>
                   {trip.netBenefitAfterTravel != null && (
                     <span>
-                      Estimated value {formatCurrency(trip.estimatedSavings)} ·
+                      Official estimate{" "}
+                      {formatCurrency(trip.estimatedSavings)} · household
+                      estimate {formatCurrency(trip.calibratedSavings)} ·
                       travel {formatCurrency(trip.estimatedTravelCost ?? 0)} ·
                       benefit {formatCurrency(trip.netBenefitAfterTravel)}
                     </span>
