@@ -47,6 +47,26 @@ const tracked: Opportunity[] = [
       checkedOn: "2026-08-23"
     },
     actionLabel: "Review"
+  },
+  {
+    id: "rainbow-birthday",
+    merchant: "Rainbow Car Care",
+    title: "Free full-service car wash on your birthday",
+    summary: "Birthday reward.",
+    category: "auto",
+    estimatedSavings: 20,
+    minimumSpend: 0,
+    isFree: true,
+    locationNote: "The Woodlands",
+    verification: "verified",
+    friction: "medium",
+    tags: ["car wash", "birthday"],
+    source: {
+      label: "Official source",
+      url: "https://example.com/rainbow",
+      checkedOn: "2026-08-24"
+    },
+    actionLabel: "Review"
   }
 ];
 
@@ -111,5 +131,22 @@ describe("candidate review matching", () => {
     expect(match?.amountMatches).toBe(false);
     expect(match?.minimumSpendMatches).toBe(false);
     expect(match?.expirationMatches).toBe(false);
+  });
+
+  it("links a parsed local loyalty lead to its tracked birthday offer", () => {
+    const match = findCandidateMatch(
+      candidate({
+        id: "rainbow-birthday-candidate",
+        merchant: "Rainbow Car Care",
+        title: "Free full-service car wash on your birthday",
+        amountText: "Free",
+        detail: "Some restrictions apply."
+      }),
+      tracked
+    );
+
+    expect(match?.opportunity.id).toBe("rainbow-birthday");
+    expect(match?.amountMatches).toBe(true);
+    expect(match?.minimumSpendMatches).toBe(true);
   });
 });

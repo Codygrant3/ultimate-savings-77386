@@ -11,7 +11,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Logs confirmed receipt results locally and uses recency-weighted category and merchant outcomes to adjust household-fit ranking.
 - Delivers dashboard-only high-value alerts when an offer clears a user-defined dollar threshold, free-reward preference, and maximum redemption effort.
 - Maintains a checked local merchant inventory and uses great-circle distance calculations for nearby branches. A merchant-location distance is clearly marked as approximate and never claims that a specific promotion is confirmed at that branch.
-- Uses merchant-specific structured parsers for Wendy's, Dutch Bros, the local Take 5 page, and the local Costa Oil specials page to stage official offer candidates with amounts, minimum spend, eligibility caveats, or expiration signals. Every parsed candidate remains a human-review lead, never an automatic dashboard deal.
+- Uses merchant-specific structured parsers for Wendy's, Dutch Bros, the local Take 5 and Costa Oil pages, and the local Rainbow Car Care rewards page to stage official offer candidates with amounts, minimum spend, eligibility caveats, or expiration signals. Every parsed candidate remains a human-review lead, never an automatic dashboard deal.
 - Uses semantic candidate keys to collapse repeated page variants while preserving the most complete spend, expiration, or terms evidence.
 - Ranks discovery candidates by captured value, spend efficiency, expiration timing, source priority, and title quality, then exposes them in a dashboard review queue. Keep/dismiss choices stay in the local browser and never convert a lead into a verified deal.
 - Compares parsed candidates with tracked offers by normalized merchant and offer language, then flags differences in captured value, minimum spend, or expiration so review time focuses on evidence changes rather than duplicates.
@@ -197,6 +197,6 @@ project.
 
 ## Next build phases
 
-1. Expand merchant-specific structured parsers beyond Costa Oil, Dutch Bros, Take 5, and Wendy's to more accessible high-value sources.
+1. Expand merchant-specific structured parsers beyond Costa Oil, Dutch Bros, Rainbow Car Care, Take 5, and Wendy's to more accessible high-value sources.
 2. Expand the local merchant inventory with more official store-location sources and coordinates.
 3. Add alert delivery only when an opportunity clears a user-defined value threshold. (Complete as a dashboard-local alert queue; external delivery remains intentionally unavailable.)

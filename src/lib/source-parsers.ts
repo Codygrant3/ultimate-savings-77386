@@ -367,9 +367,55 @@ function parseCostaOil({ source, pageUrl }: ParserContext, html: string): Parsed
   return dedupeCandidates(candidates);
 }
 
+function parseRainbowCarCare({ source, pageUrl }: ParserContext, html: string): ParsedOfferCandidate[] {
+  const text = decodeHtml(
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]+>/g, "\n")
+  );
+  const lines = text.split("\n").map((line) => line.trim()).filter(Boolean);
+  const location = lines.find((line) => /318 sawdust rd/i.test(line));
+  const phone = lines.find((line) => /\(281\)\s*363-0021/.test(line));
+  const restrictions = lines.find((line) =>
+    /some restrictions apply/i.test(line)
+  );
+  const candidates: ParsedOfferCandidate[] = [];
+
+  if (lines.some((line) => /^free full service car wash on your birthday!?$/i.test(line))) {
+    candidates.push({
+      id: stableId(source.id, "birthday-full-service-wash"),
+      sourceId: source.id,
+      merchant: "Rainbow Car Care",
+      title: "Free full-service car wash on your birthday",
+      url: pageUrl,
+      amountText: "Free",
+      detail: [restrictions, location, phone].filter(Boolean).join(" ")
+    });
+  }
+
+  lines.forEach((line) => {
+    const loyaltyMatch = line.match(/^Every 11th (.+?) is FREE(?:\s*\*)?$/i);
+    if (!loyaltyMatch) return;
+
+    candidates.push({
+      id: stableId(source.id, `every-eleventh-${loyaltyMatch[1]}`),
+      sourceId: source.id,
+      merchant: "Rainbow Car Care",
+      title: `Every 11th ${loyaltyMatch[1]} is free`,
+      url: pageUrl,
+      amountText: "Free",
+      detail: [restrictions, location, phone].filter(Boolean).join(" ")
+    });
+  });
+
+  return dedupeCandidates(candidates);
+}
+
 const PARSERS: Record<string, (context: ParserContext, html: string) => ParsedOfferCandidate[]> = {
   "dutch-bros-rewards": parseDutchBros,
   "costa-oil-rayford": parseCostaOil,
+  "rainbow-car-care": parseRainbowCarCare,
   "wendys-offers": parseWendys,
   "take5-rayford": parseTake5
 };

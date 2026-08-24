@@ -38,6 +38,15 @@ const costaOilSource: DiscoverySource = {
   keywords: ["oil change", "off"]
 };
 
+const rainbowCarCareSource: DiscoverySource = {
+  id: "rainbow-car-care",
+  name: "Rainbow Car Care rewards",
+  url: "https://rainbowcarcare.com/frequent-wash-program",
+  category: "auto",
+  priority: 9,
+  keywords: ["free", "car wash", "birthday", "reward"]
+};
+
 describe("merchant-specific offer parsers", () => {
   it("parses Wendy's offers and collapses semantic duplicates", () => {
     const html = `
@@ -151,6 +160,42 @@ describe("merchant-specific offer parsers", () => {
     expect(diesel?.amountText).toBe("$10 OFF");
     expect(diesel?.expirationText).toBe("12/31/2026");
     expect(diesel?.detail).toContain("Rayford Rd Location");
+  });
+
+  it("parses Rainbow Car Care birthday and loyalty rewards with local terms", () => {
+    const html = `
+      <main>
+        <p>Every 11th Full Service Car Wash is FREE</p>
+        <p>Every 11th Woodlands Special Package is FREE</p>
+        <p>Every 11th Express Service or Detail is FREE *</p>
+        <small>*(some restrictions apply &ndash; please call or see store for details)</small>
+        <h2>FREE Full Service Car Wash on your Birthday!</h2>
+        <a href="tel:+12813630021">(281) 363-0021</a>
+        <address>318 Sawdust Rd, The Woodlands, TX 77380</address>
+      </main>
+    `;
+    const candidates = parseSourceOffers(
+      rainbowCarCareSource,
+      rainbowCarCareSource.url,
+      html
+    );
+
+    expect(candidates).toHaveLength(4);
+    const birthday = candidates.find(({ title }) =>
+      title.includes("birthday")
+    );
+    const loyalty = candidates.find(({ title }) =>
+      title.includes("Woodlands Special Package")
+    );
+
+    expect(birthday?.merchant).toBe("Rainbow Car Care");
+    expect(birthday?.amountText).toBe("Free");
+    expect(birthday?.detail).toContain("restrictions apply");
+    expect(birthday?.detail).toContain("318 Sawdust Rd");
+    expect(loyalty?.title).toBe(
+      "Every 11th Woodlands Special Package is free"
+    );
+    expect(loyalty?.amountText).toBe("Free");
   });
 
   it("parses Dutch Bros welcome and points rewards without treating them as verified deals", () => {
