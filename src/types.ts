@@ -108,6 +108,9 @@ export interface ScoredOpportunity extends Opportunity {
   scoreLabel: "Excellent" | "Strong" | "Worth a look" | "Low priority";
   scoreBreakdown: ScoreFactor[];
   distanceBasis?: "offer" | "merchant-location" | "unknown";
+  distanceCheckedOn?: string;
+  distanceSourceLabel?: string;
+  distanceSourceUrl?: string;
 }
 
 export interface ScoreFactor {

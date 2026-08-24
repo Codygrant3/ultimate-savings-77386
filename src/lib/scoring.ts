@@ -333,6 +333,9 @@ function localRelevance(
   detail: string;
   distanceMiles?: number;
   distanceBasis: "offer" | "merchant-location" | "unknown";
+  distanceCheckedOn?: string;
+  distanceSourceLabel?: string;
+  distanceSourceUrl?: string;
 } {
   const resolved =
     opportunity.distanceMiles !== undefined
@@ -366,7 +369,10 @@ function localRelevance(
       value: Math.round(value * 0.75),
       detail: `~${distance} miles to ${resolved.locationName}; offer participation unconfirmed`,
       distanceMiles: distance,
-      distanceBasis: "merchant-location"
+      distanceBasis: "merchant-location",
+      distanceCheckedOn: resolved.checkedOn,
+      distanceSourceLabel: resolved.sourceLabel,
+      distanceSourceUrl: resolved.sourceUrl
     };
   }
 
@@ -374,7 +380,10 @@ function localRelevance(
     value,
     detail: `${distance} miles from 77386`,
     distanceMiles: distance,
-    distanceBasis: "offer"
+    distanceBasis: "offer",
+    distanceCheckedOn: opportunity.source.checkedOn,
+    distanceSourceLabel: opportunity.source.label,
+    distanceSourceUrl: opportunity.source.url
   };
 }
 
@@ -604,6 +613,9 @@ export function scoreOpportunity(
       ? { distanceMiles: proximity.distanceMiles }
       : {}),
     distanceBasis: proximity.distanceBasis,
+    ...(proximity.distanceCheckedOn ? { distanceCheckedOn: proximity.distanceCheckedOn } : {}),
+    ...(proximity.distanceSourceLabel ? { distanceSourceLabel: proximity.distanceSourceLabel } : {}),
+    ...(proximity.distanceSourceUrl ? { distanceSourceUrl: proximity.distanceSourceUrl } : {}),
     score,
     scoreLabel,
     scoreBreakdown

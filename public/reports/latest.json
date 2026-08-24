@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T21:16:38.907Z",
+  "generatedAt": "2026-08-24T22:30:46.468Z",
   "weekOf": "2026-08-24",
   "zipCode": "77386",
   "totalPotentialSavings": 184.49,
@@ -48,6 +48,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 82,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -152,6 +156,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 77,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -256,6 +264,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 77,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -360,6 +372,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 77,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -455,6 +471,10 @@
         "vehicle-maintenance",
         "local-high-value"
       ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-23",
+      "distanceSourceLabel": "Take 5 Spring location coupons",
+      "distanceSourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
       "score": 76,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -557,6 +577,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 76,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -660,6 +684,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 75,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -762,6 +790,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 75,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -866,6 +898,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 74,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -965,6 +1001,10 @@
         "stacking"
       ],
       "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 73,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -1067,6 +1107,10 @@
         "payment-method-specific"
       ],
       "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 73,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -1163,6 +1207,10 @@
         "new-member",
         "stacking"
       ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-23",
+      "distanceSourceLabel": "Shell Fuel Rewards",
+      "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
       "score": 73,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
@@ -1263,6 +1311,10 @@
         "high-value"
       ],
       "distanceMiles": 1.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Exxon Mobil official station locator result",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
       "score": 70,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -1362,6 +1414,10 @@
         "fixed-dollar-coupon"
       ],
       "distanceMiles": 2.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceSourceLabel": "Costa Oil Rayford specials",
+      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
       "score": 70,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -1459,6 +1515,7 @@
         "concessions",
         "loyalty-reward"
       ],
+      "distanceBasis": "unknown",
       "score": 70,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -1557,6 +1614,10 @@
         "app-specific"
       ],
       "distanceMiles": 2.8,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Taco Bell official Rayford Road location page",
+      "distanceSourceUrl": "https://locations.tacobell.com/tx/spring/2681-rayford-rd.html",
       "score": 67,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -1655,6 +1716,10 @@
         "app-specific"
       ],
       "distanceMiles": 3.5,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Whataburger official Rayford Road location page",
+      "distanceSourceUrl": "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       "score": 67,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -1752,6 +1817,7 @@
         "time-sensitive",
         "free-food"
       ],
+      "distanceBasis": "unknown",
       "score": 67,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -1853,6 +1919,10 @@
         "high-value"
       ],
       "distanceMiles": 1.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Exxon Mobil official station locator result",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
       "score": 66,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -1951,6 +2021,10 @@
         "high-value"
       ],
       "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 66,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2048,6 +2122,10 @@
         "loyalty-reward"
       ],
       "distanceMiles": 4.7,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-15",
+      "distanceSourceLabel": "Rainbow Car Care frequent wash program",
+      "distanceSourceUrl": "https://rainbowcarcare.com/frequent-wash-program",
       "score": 65,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2146,6 +2224,10 @@
         "first-time"
       ],
       "distanceMiles": 2.87,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Shell official Rayford Road station page",
+      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
       "score": 64,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2243,6 +2325,10 @@
         "app-specific"
       ],
       "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 64,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2340,6 +2426,7 @@
         "local-team",
         "eligibility-gated"
       ],
+      "distanceBasis": "unknown",
       "score": 64,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2437,6 +2524,7 @@
         "new-member",
         "app-specific"
       ],
+      "distanceBasis": "unknown",
       "score": 64,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2535,6 +2623,10 @@
         "time-sensitive"
       ],
       "distanceMiles": 2.87,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Shell official Rayford Road station page",
+      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
       "score": 63,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2624,6 +2716,10 @@
       "finePrint": "Join at least seven days before your birthday, add your birthday, and make at least one Star-earning transaction beforehand each year. Green members redeem on the birthday; Gold members have seven days and Reserve members have 30 days.",
       "expirationLabel": "Account-specific birthday window",
       "availability": "available",
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceSourceLabel": "Starbucks Rewards terms",
+      "distanceSourceUrl": "https://www.starbucks.com/rewards/terms/",
       "score": 62,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2720,6 +2816,10 @@
         "surprise-rewards",
         "loyalty"
       ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceSourceLabel": "7REWARDS",
+      "distanceSourceUrl": "https://www.7-eleven.com/7rewards",
       "score": 62,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2819,6 +2919,10 @@
         "app-specific"
       ],
       "distanceMiles": 2.8,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
       "score": 62,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -2915,6 +3019,7 @@
         "free-drink",
         "official-source"
       ],
+      "distanceBasis": "unknown",
       "score": 61,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3015,6 +3120,10 @@
         "time-sensitive"
       ],
       "distanceMiles": 3.5,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Whataburger official Rayford Road location page",
+      "distanceSourceUrl": "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       "score": 61,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3112,6 +3221,10 @@
         "local-offer",
         "loyalty-stack"
       ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-11",
+      "distanceSourceLabel": "Dunkin Rayford Road location",
+      "distanceSourceUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
       "score": 60,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3211,6 +3324,10 @@
         "app-specific"
       ],
       "distanceMiles": 2.8,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
       "score": 60,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3309,6 +3426,10 @@
         "app-specific"
       ],
       "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 60,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3407,6 +3528,10 @@
         "app-specific"
       ],
       "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 60,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3498,6 +3623,10 @@
       "availability": "program",
       "dealType": "loyalty-reward",
       "freshness": "current",
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceSourceLabel": "Starbucks Rewards",
+      "distanceSourceUrl": "https://www.starbucks.com/rewards",
       "score": 59,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3592,6 +3721,10 @@
         "fuel-reward",
         "stacking"
       ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-15",
+      "distanceSourceLabel": "Exxon Mobil Rewards+",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
       "score": 58,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3688,6 +3821,7 @@
         "local-team",
         "promotion-event"
       ],
+      "distanceBasis": "unknown",
       "score": 57,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3787,6 +3921,7 @@
         "repeatable",
         "high-value"
       ],
+      "distanceBasis": "unknown",
       "score": 56,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3887,6 +4022,10 @@
         "eligibility-gated"
       ],
       "distanceMiles": 2.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceSourceLabel": "Costa Oil Rayford specials",
+      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
       "score": 51,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -3984,6 +4123,10 @@
         "location-gated"
       ],
       "distanceMiles": 3.5,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Whataburger official Rayford Road location page",
+      "distanceSourceUrl": "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       "score": 49,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
@@ -4083,6 +4226,10 @@
         "local-station"
       ],
       "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 47,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
@@ -4180,6 +4327,10 @@
         "restaurant"
       ],
       "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 44,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
@@ -4277,6 +4428,7 @@
         "preferred-coffee",
         "loyalty-reward"
       ],
+      "distanceBasis": "unknown",
       "score": 51,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -4371,6 +4523,10 @@
         "opening-watch"
       ],
       "distanceMiles": 2.2,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-11",
+      "distanceSourceLabel": "JoVI Coffee official site",
+      "distanceSourceUrl": "https://joviroasters.com/",
       "score": 39,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
@@ -4453,6 +4609,7 @@
         "checkedOn": "2026-07-23"
       },
       "actionLabel": "View program",
+      "distanceBasis": "unknown",
       "score": 35,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
@@ -4535,6 +4692,7 @@
         "checkedOn": "2026-07-23"
       },
       "actionLabel": "View program",
+      "distanceBasis": "unknown",
       "score": 35,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [

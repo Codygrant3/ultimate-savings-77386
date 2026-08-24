@@ -30,6 +30,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Keeps store-distance evidence separate from promotion-participation evidence in weekly trips, adding an explicit confirmation warning when a checked nearby branch does not prove that a specific offer runs there.
 - Offers an opt-in weekly-plan gate that admits only locally captured offers with user-confirmed distances and participation.
 - Enforces a user-defined maximum source-check age in the weekly action plan, with a 14-day default, so stale evidence cannot silently become an action recommendation.
+- Applies that same freshness gate to checked nearby-location evidence as well as official offer sources, so old store checks cannot masquerade as current proximity.
 - Explains stacking-related omissions separately from ordinary lower-priority results, including exclusion-group limits, exclusive-offer conflicts, and the conservative conditional-stacking guard.
 - Connects the weekly action plan to local execution tracking: save planned offers for later or mark them used. Marking an offer used removes it from the next optimized plan and feeds the existing recency-weighted preference history.
 - Generates a dated Markdown briefing and dashboard-ready JSON.

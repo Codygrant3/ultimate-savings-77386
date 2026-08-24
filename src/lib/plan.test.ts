@@ -183,7 +183,8 @@ describe("weekly action plan optimizer", () => {
       [
         makeOffer({
           id: "merchant-location-only",
-          distanceBasis: "merchant-location"
+          distanceBasis: "merchant-location",
+          distanceCheckedOn: "2026-08-20"
         })
       ],
       {},
@@ -629,8 +630,47 @@ describe("weekly action plan optimizer", () => {
       "Official-source check is 15 days old, beyond the 14-day freshness limit"
     );
     expect(plan.assumptions).toContain(
-      "Only offers whose official source was checked within the last 14 days are eligible."
+      "Official offers and nearby-location checks must have evidence from the last 14 days."
     );
+  });
+
+  it("excludes merchant-location proximity when its own evidence is stale", () => {
+    const staleLocation = makeOffer({
+      id: "stale-location",
+      distanceBasis: "merchant-location",
+      distanceCheckedOn: "2026-08-06"
+    });
+
+    const plan = buildWeeklyPlan(
+      [staleLocation],
+      { ...DEFAULT_WEEKLY_PLAN_SETTINGS, maximumSourceAgeDays: 14 },
+      today
+    );
+
+    expect(plan.trips).toHaveLength(0);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "stale-location")
+        ?.reason
+    ).toBe(
+      "Nearby-location check is 15 days old, beyond the 14-day freshness limit"
+    );
+  });
+
+  it("keeps merchant-location proximity with fresh location evidence", () => {
+    const freshLocation = makeOffer({
+      id: "fresh-location",
+      distanceBasis: "merchant-location",
+      distanceCheckedOn: "2026-08-20"
+    });
+
+    const plan = buildWeeklyPlan(
+      [freshLocation],
+      { ...DEFAULT_WEEKLY_PLAN_SETTINGS, maximumSourceAgeDays: 14 },
+      today
+    );
+
+    expect(plan.trips).toHaveLength(1);
+    expect(plan.trips[0].deals[0].opportunity.id).toBe("fresh-location");
   });
 
   it("requires a source-check date before action planning", () => {
@@ -656,7 +696,7 @@ describe("weekly action plan optimizer", () => {
         ?.reason
     ).toBe("Source-check date is missing");
     expect(plan.assumptions).toContain(
-      "Only offers whose official source was checked within the last 14 days are eligible."
+      "Official offers and nearby-location checks must have evidence from the last 14 days."
     );
   });
 

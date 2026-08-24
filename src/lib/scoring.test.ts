@@ -188,6 +188,8 @@ describe("savings scoring", () => {
     );
 
     expect(scored.distanceMiles).toBe(3.9);
+    expect(scored.distanceCheckedOn).toBe("2026-08-24");
+    expect(scored.distanceSourceUrl).toBe("https://example.com/heb-profile");
     expect(
       scored.scoreBreakdown.find(({ label }) => label === "Local relevance")?.detail
     ).toContain("~3.9 miles to H-E-B Spring Creek Market");

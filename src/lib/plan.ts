@@ -177,6 +177,20 @@ function sourceAgeInDays(
   );
 }
 
+function evidenceAgeInDays(
+  checkedOn: string | undefined,
+  today: Date
+): number | null {
+  if (!checkedOn) return null;
+  const checked = new Date(`${checkedOn}T12:00:00`);
+  if (!Number.isFinite(checked.getTime())) return null;
+
+  return Math.max(
+    0,
+    Math.floor((today.getTime() - checked.getTime()) / (24 * 60 * 60 * 1000))
+  );
+}
+
 function hasExclusiveStackConflict(deals: DealCandidate[]): boolean {
   const seenGroups = new Set<string>();
 
@@ -371,6 +385,23 @@ export function buildWeeklyPlan(
             : `Official-source check is ${sourceAge} days old, beyond the ${settings.maximumSourceAgeDays}-day freshness limit`
       });
       continue;
+    }
+
+    if (opportunity.distanceBasis === "merchant-location") {
+      const locationAge = evidenceAgeInDays(opportunity.distanceCheckedOn, today);
+      if (
+        locationAge === null ||
+        locationAge > settings.maximumSourceAgeDays
+      ) {
+        excluded.push({
+          opportunity,
+          reason:
+            locationAge === null
+              ? "Nearby-location check date is missing"
+              : `Nearby-location check is ${locationAge} days old, beyond the ${settings.maximumSourceAgeDays}-day freshness limit`
+        });
+        continue;
+      }
     }
 
     if (exceedsEffortLimit(opportunity.friction, settings.maximumFriction)) {
@@ -678,7 +709,7 @@ export function buildWeeklyPlan(
       settings.requireLocalParticipation
         ? "Only locally captured offers with confirmed distances are eligible."
         : "Offers without user-confirmed local participation are labeled before travel.",
-      `Only offers whose official source was checked within the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"} are eligible.`,
+      `Official offers and nearby-location checks must have evidence from the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"}.`,
       settings.allowConditionalStacking
         ? "Conditional stacks are allowed only because you turned on the local override; official terms still control."
         : "Only one offer with conditional or undocumented stacking is counted per merchant trip; exclusive offers are planned alone.",
