@@ -63,6 +63,16 @@ const inventory: LocalMerchantInventory = {
       sourceLabel: "Wendy's official restaurant locator",
       sourceUrl: "https://order.wendys.com/us/en/select-restaurant?location=77386",
       checkedOn: "2026-08-24"
+    },
+    {
+      id: "mcdonalds-rayford",
+      merchantAliases: ["McDonald's"],
+      locationName: "McDonald's Rayford Road",
+      address: "2911 Rayford Road, Spring, TX 77386",
+      distanceMiles: 2.8,
+      sourceLabel: "Business-confirmed McDonald's Rayford Road profile",
+      sourceUrl: "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
+      checkedOn: "2026-08-24"
     }
   ]
 };
@@ -134,5 +144,16 @@ describe("local merchant distance resolution", () => {
     expect(resolved?.distanceMiles).toBe(4.6);
     expect(resolved?.locationName).toBe("Wendy's Sawdust Road");
     expect(resolved?.sourceLabel).toContain("official");
+  });
+
+  it("resolves McDonald's offers to the business-confirmed Rayford Road profile", () => {
+    const resolved = resolveOpportunityDistance(
+      { ...opportunity, merchant: "McDonald's" },
+      inventory
+    );
+
+    expect(resolved?.distanceMiles).toBe(2.8);
+    expect(resolved?.locationName).toBe("McDonald's Rayford Road");
+    expect(resolved?.sourceLabel).toContain("Business-confirmed");
   });
 });

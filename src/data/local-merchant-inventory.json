@@ -78,6 +78,16 @@
       "checkedOn": "2026-08-24"
     },
     {
+      "id": "mcdonalds-rayford",
+      "merchantAliases": ["McDonald's"],
+      "locationName": "McDonald's Rayford Road",
+      "address": "2911 Rayford Road, Spring, TX 77386",
+      "distanceMiles": 2.8,
+      "sourceLabel": "Business-confirmed McDonald's Rayford Road profile",
+      "sourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
+      "checkedOn": "2026-08-24"
+    },
+    {
       "id": "jovi-rayford",
       "merchantAliases": ["JoVi + local coffee shops", "JoVi Coffee", "JoVi"],
       "locationName": "JoVi Coffee Rayford Road",
