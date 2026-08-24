@@ -6,6 +6,7 @@ import type {
   CandidateReviews,
   ValueAlertSettings,
   WeeklyPlanSettings,
+  HouseholdProfile,
   Opportunity
 } from "../types";
 
@@ -22,6 +23,7 @@ const ACKNOWLEDGED_VALUE_ALERTS_KEY = "savings-desk:value-alerts-acknowledged";
 const CANDIDATE_REVIEWS_KEY = "savings-desk:candidate-reviews";
 const WEEKLY_PLAN_SETTINGS_KEY = "savings-desk:weekly-plan-settings";
 const SCORING_WEIGHTS_KEY = "savings-desk:scoring-weights";
+const HOUSEHOLD_PROFILE_KEY = "savings-desk:household-profile";
 const LOCAL_OFFERS_KEY = "savings-desk:local-offers";
 
 function readIds(key: string): string[] {
@@ -268,6 +270,43 @@ export function readScoringWeights(
 export function writeScoringWeights(weights: ScoringWeights): ScoringWeights {
   window.localStorage.setItem(SCORING_WEIGHTS_KEY, JSON.stringify(weights));
   return weights;
+}
+
+export function readHouseholdProfile(
+  defaults: HouseholdProfile
+): HouseholdProfile {
+  try {
+    const value = window.localStorage.getItem(HOUSEHOLD_PROFILE_KEY);
+    if (value === null) return defaults;
+
+    const parsed = JSON.parse(value) as Partial<HouseholdProfile>;
+    return {
+      excludedKeywords: Array.isArray(parsed.excludedKeywords)
+        ? parsed.excludedKeywords.filter(
+            (keyword): keyword is string => typeof keyword === "string"
+          )
+        : defaults.excludedKeywords,
+      highPriorityKeywords: Array.isArray(parsed.highPriorityKeywords)
+        ? parsed.highPriorityKeywords.filter(
+            (keyword): keyword is string => typeof keyword === "string"
+          )
+        : defaults.highPriorityKeywords,
+      preferredKeywords: Array.isArray(parsed.preferredKeywords)
+        ? parsed.preferredKeywords.filter(
+            (keyword): keyword is string => typeof keyword === "string"
+          )
+        : defaults.preferredKeywords
+    };
+  } catch {
+    return defaults;
+  }
+}
+
+export function writeHouseholdProfile(
+  profile: HouseholdProfile
+): HouseholdProfile {
+  window.localStorage.setItem(HOUSEHOLD_PROFILE_KEY, JSON.stringify(profile));
+  return profile;
 }
 
 function isLocalOffer(value: unknown): value is Opportunity {

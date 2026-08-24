@@ -34,6 +34,7 @@ import { useMemo, useState } from "react";
 import opportunitiesData from "./data/opportunities.json";
 import localMerchantInventoryData from "./data/local-merchant-inventory.json";
 import { CriteriaControls } from "./components/CriteriaControls";
+import { HouseholdProfileControls } from "./components/HouseholdProfileControls";
 import { GroceryDashboard, SavingsTools } from "./components/SavingsTools";
 import { SettlementsDashboard } from "./components/SettlementsDashboard";
 import settlementsData from "./data/settlements.json";
@@ -41,6 +42,7 @@ import { buildLearnedPreferences } from "./lib/preferences";
 import {
   formatCurrency,
   formatDate,
+  DEFAULT_HOUSEHOLD_PROFILE,
   DEFAULT_SCORING_WEIGHTS,
   rankOpportunities,
   startOfWeek
@@ -64,9 +66,11 @@ import {
   readWeeklyPlanSettings,
   writeAcknowledgedValueAlertIds,
   readScoringWeights,
+  readHouseholdProfile,
   readLocalOffers,
   writeValueAlertSettings,
   writeLocalOffers,
+  writeHouseholdProfile,
   writeScoringWeights,
   writeWeeklyPlanSettings
 } from "./lib/storage";
@@ -77,6 +81,7 @@ import type {
   Opportunity,
   ReceiptEntry,
   ScoringWeights,
+  HouseholdProfile,
   ScoredOpportunity,
   ValueAlertSettings,
   WeeklyPlanSettings,
@@ -371,6 +376,9 @@ export default function App() {
   const [scoringWeights, setScoringWeights] = useState<ScoringWeights>(() =>
     readScoringWeights(DEFAULT_SCORING_WEIGHTS)
   );
+  const [householdProfile, setHouseholdProfile] = useState<HouseholdProfile>(() =>
+    readHouseholdProfile(DEFAULT_HOUSEHOLD_PROFILE)
+  );
   const [localOffers, setLocalOffers] = useState<Opportunity[]>(readLocalOffers);
   const [acknowledgedValueAlertIds, setAcknowledgedValueAlertIds] = useState<
     string[]
@@ -392,9 +400,16 @@ export default function App() {
         analysisDate,
         learnedPreferences,
         merchantInventory,
-        scoringWeights
+        scoringWeights,
+        householdProfile
       ),
-    [allOpportunities, analysisDate, learnedPreferences, scoringWeights]
+    [
+      allOpportunities,
+      analysisDate,
+      learnedPreferences,
+      scoringWeights,
+      householdProfile
+    ]
   );
 
   const verifiedDeals = useMemo(
@@ -478,6 +493,10 @@ export default function App() {
 
   function updateScoringWeights(weights: ScoringWeights) {
     setScoringWeights(writeScoringWeights(weights));
+  }
+
+  function updateHouseholdProfile(profile: HouseholdProfile) {
+    setHouseholdProfile(writeHouseholdProfile(profile));
   }
 
   function addVerifiedOffer(offer: Opportunity) {
@@ -688,6 +707,11 @@ export default function App() {
               <CriteriaControls
                 weights={scoringWeights}
                 onWeightsChange={updateScoringWeights}
+              />
+
+              <HouseholdProfileControls
+                profile={householdProfile}
+                onProfileChange={updateHouseholdProfile}
               />
 
               <section className="metrics-grid" aria-label="Savings summary">

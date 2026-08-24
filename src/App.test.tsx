@@ -51,6 +51,20 @@ describe("Savings Desk interactions", () => {
   it("persists local ranking priorities and applies them to scoring", () => {
     render(<App />);
 
+    const householdInput = screen.getByLabelText("High priority keywords");
+    expect(householdInput).toHaveProperty(
+      "value",
+      expect.stringContaining("teen")
+    );
+
+    fireEvent.change(householdInput, {
+      target: { value: "family movie night" }
+    });
+    expect(
+      window.localStorage.getItem("savings-desk:household-profile")
+    ).toContain('"highPriorityKeywords":["family movie night"]');
+    expect(householdInput).toHaveProperty("value", "family movie night");
+
     expect(screen.getByLabelText("Evidence priority")).toHaveProperty(
       "value",
       "18"

@@ -4,6 +4,7 @@ import type {
   Category,
   LocalMerchantInventory,
   Opportunity,
+  HouseholdProfile,
   LearnedPreferences,
   ScoringWeights,
   PreferenceEvidence,
@@ -23,6 +24,37 @@ const householdPreferences = preferencesData as {
   preferredKeywords: string[];
   preferredCoffeeBrands: string[];
 };
+
+export const DEFAULT_HOUSEHOLD_PROFILE: HouseholdProfile = {
+  excludedKeywords: householdPreferences.excludedKeywords,
+  highPriorityKeywords: householdPreferences.highPriorityKeywords,
+  preferredKeywords: householdPreferences.preferredKeywords
+};
+
+function normalizeKeywords(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+
+  return Array.from(
+    new Set(
+      value
+        .filter((keyword): keyword is string => typeof keyword === "string")
+        .map((keyword) => keyword.trim().toLowerCase())
+        .filter((keyword) => keyword.length > 0 && keyword.length <= 40)
+    )
+  ).slice(0, 30);
+}
+
+export function normalizeHouseholdProfile(
+  profile?: Partial<HouseholdProfile>
+): HouseholdProfile {
+  if (!profile) return DEFAULT_HOUSEHOLD_PROFILE;
+
+  return {
+    excludedKeywords: normalizeKeywords(profile.excludedKeywords),
+    highPriorityKeywords: normalizeKeywords(profile.highPriorityKeywords),
+    preferredKeywords: normalizeKeywords(profile.preferredKeywords)
+  };
+}
 
 function clamp(value: number, minimum: number, maximum: number): number {
   return Math.min(Math.max(value, minimum), maximum);
@@ -135,7 +167,11 @@ export function isExpired(opportunity: Opportunity, today = new Date()): boolean
   return expiration.getTime() < today.getTime();
 }
 
-export function isExcludedByPreferences(opportunity: Opportunity): boolean {
+export function isExcludedByPreferences(
+  opportunity: Opportunity,
+  rawProfile?: Partial<HouseholdProfile>
+): boolean {
+  const profile = normalizeHouseholdProfile(rawProfile);
   const searchable = [
     opportunity.merchant,
     opportunity.title,
@@ -145,7 +181,7 @@ export function isExcludedByPreferences(opportunity: Opportunity): boolean {
   ]
     .join(" ")
     .toLowerCase();
-  return householdPreferences.excludedKeywords.some((keyword) =>
+  return profile.excludedKeywords.some((keyword) =>
     searchable.includes(keyword.toLowerCase())
   );
 }
@@ -222,8 +258,10 @@ function valueQuality(opportunity: Opportunity): { value: number; detail: string
 
 function householdFit(
   opportunity: Opportunity,
-  learned?: LearnedPreferences
+  learned?: LearnedPreferences,
+  rawProfile?: Partial<HouseholdProfile>
 ): { value: number; detail: string } {
+  const profile = normalizeHouseholdProfile(rawProfile);
   const categoryFit: Record<Category, number> = {
     grocery: 82,
     restaurants: 72,
@@ -248,15 +286,15 @@ function householdFit(
   ]
     .join(" ")
     .toLowerCase();
-  const preferredMatches = householdPreferences.preferredKeywords.filter(
+  const preferredMatches = profile.preferredKeywords.filter(
     (keyword) => searchable.includes(keyword.toLowerCase())
   ).length;
-  const highPriorityMatches = householdPreferences.highPriorityKeywords.filter(
+  const highPriorityMatches = profile.highPriorityKeywords.filter(
     (keyword) => searchable.includes(keyword.toLowerCase())
   ).length;
   const matched = [
-    ...householdPreferences.highPriorityKeywords,
-    ...householdPreferences.preferredKeywords
+    ...profile.highPriorityKeywords,
+    ...profile.preferredKeywords
   ]
     .filter((keyword) => searchable.includes(keyword.toLowerCase()))
     .slice(0, 3);
@@ -449,7 +487,8 @@ export function scoreOpportunity(
   today = new Date(),
   learned?: LearnedPreferences,
   inventory?: LocalMerchantInventory,
-  rawScoringWeights?: Partial<ScoringWeights>
+  rawScoringWeights?: Partial<ScoringWeights>,
+  householdProfile?: Partial<HouseholdProfile>
 ): ScoredOpportunity {
   const proximity = localRelevance(opportunity, inventory);
   const selectedWeights = effectiveScoringWeights(rawScoringWeights);
@@ -463,7 +502,7 @@ export function scoreOpportunity(
           ? `${opportunity.savingsRate}% saved`
           : "Savings rate not published"
     },
-    householdFit(opportunity, learned),
+    householdFit(opportunity, learned, householdProfile),
     proximity,
     timingQuality(opportunity, today),
     effortQuality(opportunity),
@@ -530,12 +569,14 @@ export function rankOpportunities(
   today = new Date(),
   learned?: LearnedPreferences,
   inventory?: LocalMerchantInventory,
-  scoringWeights?: Partial<ScoringWeights>
+  scoringWeights?: Partial<ScoringWeights>,
+  householdProfile?: Partial<HouseholdProfile>
 ): ScoredOpportunity[] {
   return opportunities
     .filter(
       (opportunity) =>
-        !isExpired(opportunity, today) && !isExcludedByPreferences(opportunity)
+        !isExpired(opportunity, today) &&
+        !isExcludedByPreferences(opportunity, householdProfile)
     )
     .map((opportunity) =>
       scoreOpportunity(
@@ -543,7 +584,8 @@ export function rankOpportunities(
         today,
         learned,
         inventory,
-        scoringWeights
+        scoringWeights,
+        householdProfile
       )
     )
     .sort((first, second) => {

@@ -2,10 +2,12 @@ import { describe, expect, it } from "vitest";
 import type { LocalMerchantInventory, Opportunity } from "../types";
 import { buildLearnedPreferences } from "./preferences";
 import {
+  DEFAULT_HOUSEHOLD_PROFILE,
   DEFAULT_SCORING_WEIGHTS,
   effectiveScoringWeights,
   isExcludedByPreferences,
   isExpired,
+  normalizeHouseholdProfile,
   rankOpportunities,
   scoreOpportunity,
   startOfWeek
@@ -318,6 +320,42 @@ describe("savings scoring", () => {
         evidenceFirstWeights
       )[0].id
     ).toBe("fresh-evidence");
+  });
+
+  it("uses local household keywords for fit boosts and exclusions", () => {
+    const today = new Date("2026-07-23T12:00:00");
+    const movieOffer = {
+      ...baseOpportunity,
+      id: "family-movie",
+      category: "movies" as const,
+      title: "Family movie night bundle"
+    };
+    const sportsOffer = {
+      ...baseOpportunity,
+      id: "away-game",
+      category: "sports" as const,
+      title: "Away game ticket package"
+    };
+    const profile = {
+      excludedKeywords: ["away game"],
+      highPriorityKeywords: ["family movie"],
+      preferredKeywords: ["bundle"]
+    };
+    const scored = scoreOpportunity(movieOffer, today, undefined, undefined, undefined, profile);
+    const fit = scored.scoreBreakdown.find(({ label }) => label === "Household fit");
+
+    expect(isExcludedByPreferences(movieOffer, profile)).toBe(false);
+    expect(isExcludedByPreferences(sportsOffer, profile)).toBe(true);
+    expect(fit?.detail).toContain("family movie");
+    const baselineFit = scoreOpportunity(movieOffer, today)
+      .scoreBreakdown.find(({ label }) => label === "Household fit");
+    expect(fit?.points ?? 0).toBeGreaterThan(baselineFit?.points ?? 0);
+    expect(normalizeHouseholdProfile({})).toEqual({
+      excludedKeywords: [],
+      highPriorityKeywords: [],
+      preferredKeywords: []
+    });
+    expect(DEFAULT_HOUSEHOLD_PROFILE.excludedKeywords).toContain("baby");
   });
 
   it("uses a checked merchant location with a conservative distance score", () => {

@@ -154,6 +154,12 @@ export interface ScoringWeights {
   stackability: number;
 }
 
+export interface HouseholdProfile {
+  excludedKeywords: string[];
+  highPriorityKeywords: string[];
+  preferredKeywords: string[];
+}
+
 export interface ValueAlert {
   id: string;
   merchant: string;
