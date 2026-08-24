@@ -5,6 +5,7 @@ import type {
   WeeklyPlan,
   WeeklyPlanSettings
 } from "../types";
+import { effectiveStackCompatibility } from "./scoring";
 
 export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   weeklyBudget: 100,
@@ -316,7 +317,9 @@ export function buildWeeklyPlan(
     }
 
     const warnings: string[] = [];
-    if (opportunity.distanceMiles === undefined) {
+    if (effectiveStackCompatibility(opportunity) === "exclusive") {
+      warnings.push("Official terms require this offer to be redeemed by itself.");
+    } else if (opportunity.distanceMiles === undefined) {
       warnings.push("Distance and local participation are unconfirmed");
     }
     if (!opportunity.stackNote) {
@@ -365,6 +368,14 @@ export function buildWeeklyPlan(
         continue;
       }
       if (hasExclusiveStackConflict(combination)) continue;
+      if (
+        combination.length > 1 &&
+        combination.some(
+          (deal) => effectiveStackCompatibility(deal.opportunity) === "exclusive"
+        )
+      ) {
+        continue;
+      }
       bundles.push(makeBundle(combination));
     }
 
@@ -500,7 +511,7 @@ export function buildWeeklyPlan(
       settings.includeUnconfirmedLocations
         ? "Unconfirmed locations are labeled and receive a planning penalty."
         : `Distances beyond ${settings.maxDistanceMiles} miles or unconfirmed are excluded.`,
-      "Offers sharing an official exclusion group are counted at most once per merchant trip.",
+      "Offers sharing an official exclusion group are counted at most once per merchant trip, and offers with exclusive stack terms are planned alone.",
       settings.minimumDaysRemaining > 0
         ? `Offers must remain valid for at least ${settings.minimumDaysRemaining} more day${settings.minimumDaysRemaining === 1 ? "" : "s"}; this is planning math, not an eligibility guarantee.`
         : "Offers expiring today remain eligible for planning; confirm their terms before acting.",

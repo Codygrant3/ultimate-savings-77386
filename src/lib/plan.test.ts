@@ -167,7 +167,7 @@ describe("weekly action plan optimizer", () => {
     expect(plan.estimatedSavings).toBe(10);
     expect(plan.requiredSpend).toBe(10);
     expect(plan.assumptions).toContain(
-      "Offers sharing an official exclusion group are counted at most once per merchant trip."
+      "Offers sharing an official exclusion group are counted at most once per merchant trip, and offers with exclusive stack terms are planned alone."
     );
   });
 
@@ -198,6 +198,42 @@ describe("weekly action plan optimizer", () => {
       "reward"
     ]);
     expect(plan.estimatedSavings).toBe(19);
+  });
+
+  it("plans an offer with exclusive stack terms by itself", () => {
+    const exclusive = makeOffer({
+      id: "exclusive",
+      merchant: "Solo Market",
+      title: "Strong standalone coupon",
+      estimatedSavings: 10,
+      minimumSpend: 10,
+      stackNote: "This coupon cannot be combined with other offers"
+    });
+    const compatible = makeOffer({
+      id: "compatible",
+      merchant: "Solo Market",
+      title: "Smaller compatible reward",
+      estimatedSavings: 9,
+      minimumSpend: 5,
+      stackNote: "Eligible rewards can combine"
+    });
+
+    const plan = buildWeeklyPlan(
+      [exclusive, compatible],
+      { weeklyBudget: 50, maxDealsPerTrip: 2 },
+      today
+    );
+
+    expect(plan.trips[0].deals.map(({ opportunity }) => opportunity.id)).toEqual([
+      "exclusive"
+    ]);
+    expect(plan.trips[0].deals[0].warnings).toContain(
+      "Official terms require this offer to be redeemed by itself."
+    );
+    expect(plan.estimatedSavings).toBe(10);
+    expect(plan.assumptions).toContain(
+      "Offers sharing an official exclusion group are counted at most once per merchant trip, and offers with exclusive stack terms are planned alone."
+    );
   });
 
   it("counts payment-program labels as one underlying merchant trip", () => {

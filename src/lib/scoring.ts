@@ -458,7 +458,7 @@ function spendEfficiency(opportunity: Opportunity): { value: number; detail: str
   };
 }
 
-function resolveStackCompatibility(
+export function effectiveStackCompatibility(
   opportunity: Opportunity
 ): StackCompatibility | null {
   if (
@@ -468,8 +468,6 @@ function resolveStackCompatibility(
   ) {
     return opportunity.stackStatus;
   }
-
-  if (opportunity.stackGroup) return "exclusive";
 
   const note = opportunity.stackNote;
   if (!note) return null;
@@ -489,11 +487,13 @@ function resolveStackCompatibility(
     return "compatible";
   }
 
+  if (opportunity.stackGroup) return "conditional";
+
   return "conditional";
 }
 
 function stackability(opportunity: Opportunity): { value: number; detail: string } {
-  const classified = resolveStackCompatibility(opportunity);
+  const classified = effectiveStackCompatibility(opportunity);
   if (classified) {
     const value = { compatible: 100, conditional: 55, exclusive: 12 }[classified];
     const label = {
