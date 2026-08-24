@@ -222,6 +222,7 @@ export interface LocalVerifiedOfferDraft {
   expiresOn?: string;
   friction: Friction;
   stackNote?: string;
+  stackGroup?: string;
   savingsRate?: number;
   distanceMiles?: number;
   localParticipationConfirmed: boolean;
@@ -239,6 +240,10 @@ function isValidIsoDate(value: string): boolean {
     Number.isFinite(parsed.getTime()) &&
     parsed.toISOString().slice(0, 10) === value
   );
+}
+
+function normalizedStackGroup(value: string | undefined): string | undefined {
+  return value?.trim().toLowerCase().replaceAll(/\s+/g, "-") || undefined;
 }
 
 export const LOCAL_OFFER_CATEGORIES: Category[] = [
@@ -264,6 +269,7 @@ export function createLocallyVerifiedOffer(
   const minimumSpend = Number(draft.minimumSpend);
   const distanceMiles = draft.distanceMiles;
   const savingsRate = draft.savingsRate;
+  const stackGroup = normalizedStackGroup(draft.stackGroup);
   const checkedOn = today.toISOString().slice(0, 10);
 
   if (!draft.officialTermsConfirmed) {
@@ -292,6 +298,12 @@ export function createLocallyVerifiedOffer(
   }
   if (!["low", "medium", "high"].includes(draft.friction)) {
     errors.push("Choose a valid redemption effort");
+  }
+  if (
+    stackGroup &&
+    !/^[a-z0-9](?:[a-z0-9-]{0,58}[a-z0-9]|[a-z0-9])$/.test(stackGroup)
+  ) {
+    errors.push("Use an exclusion group with 1 to 60 letters, numbers, or dashes");
   }
   if (
     draft.localParticipationConfirmed &&
@@ -343,6 +355,7 @@ export function createLocallyVerifiedOffer(
     actionLabel: "Review confirmed terms",
     tier: "A",
     ...(draft.stackNote ? { stackNote: draft.stackNote } : {}),
+    ...(stackGroup ? { stackGroup } : {}),
     finePrint:
       candidate.detail ||
       "Manually captured from the official source. Recheck the linked terms before redemption.",

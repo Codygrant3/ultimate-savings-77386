@@ -209,6 +209,7 @@ describe("candidate review matching", () => {
         expiresOn: "2026-09-30",
         friction: "low",
         stackNote: "One coupon per visit",
+        stackGroup: "Market App Offer",
         savingsRate: 30,
         distanceMiles: 4.2,
         localParticipationConfirmed: true,
@@ -227,6 +228,7 @@ describe("candidate review matching", () => {
     expect(result.offer.savingsRate).toBe(30);
     expect(result.offer.expiresOn).toBe("2026-09-30");
     expect(result.offer.stackNote).toBe("One coupon per visit");
+    expect(result.offer.stackGroup).toBe("market-app-offer");
     expect(result.offer.locationNote).toContain("locally confirmed");
     expect(result.offer.distanceMiles).toBe(4.2);
   });
@@ -274,6 +276,29 @@ describe("candidate review matching", () => {
     if (result.status !== "invalid") return;
     expect(result.errors).toContain(
       "Enter a savings rate from 1 to 100 percent"
+    );
+  });
+
+  it("rejects an unsafe exclusion group", () => {
+    const result = createLocallyVerifiedOffer(
+      candidate(),
+      {
+        category: "auto",
+        estimatedSavings: 15,
+        minimumSpend: 0,
+        isFree: false,
+        friction: "low",
+        stackGroup: "not safe!",
+        localParticipationConfirmed: false,
+        officialTermsConfirmed: true
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(result.status).toBe("invalid");
+    if (result.status !== "invalid") return;
+    expect(result.errors).toContain(
+      "Use an exclusion group with 1 to 60 letters, numbers, or dashes"
     );
   });
 });

@@ -79,6 +79,7 @@ export function CandidateReviewQueue({
     expiresOn: undefined,
     friction: "low",
     stackNote: "",
+    stackGroup: "",
     savingsRate: undefined,
     distanceMiles: undefined,
     localParticipationConfirmed: false,
@@ -208,6 +209,7 @@ export function CandidateReviewQueue({
       expiresOn: existing?.expiresOn,
       friction: existing?.friction ?? "low",
       stackNote: existing?.stackNote ?? "",
+      stackGroup: existing?.stackGroup ?? "",
       savingsRate: existing?.savingsRate,
       distanceMiles: existing?.distanceMiles,
       localParticipationConfirmed: existing?.localRecord === true,
@@ -236,7 +238,8 @@ export function CandidateReviewQueue({
 
     const result = createLocallyVerifiedOffer(candidate, {
       ...draft,
-      stackNote: (draft.stackNote ?? "").trim() || undefined
+      stackNote: (draft.stackNote ?? "").trim() || undefined,
+      stackGroup: (draft.stackGroup ?? "").trim() || undefined
     });
     if (result.status === "invalid") {
       setDraftErrors(result.errors);
@@ -322,6 +325,7 @@ export function CandidateReviewQueue({
                     {[
                       offer.merchant,
                       formatCurrency(offer.estimatedSavings),
+                      offer.stackGroup ? `group ${offer.stackGroup}` : null,
                       offer.distanceMiles !== undefined ? `${offer.distanceMiles} mi` : null,
                       offer.expiresOn
                         ? `ends ${formatDate(offer.expiresOn)} · ${
@@ -564,6 +568,17 @@ export function CandidateReviewQueue({
                 placeholder="Optional official stack rule"
                 value={draft.stackNote}
                 onChange={(event) => updateDraft("stackNote", event.target.value)}
+              />
+            </label>
+            <label>
+              <span>Exclusion group</span>
+              <input
+                aria-label="Official exclusion group"
+                type="text"
+                maxLength={60}
+                placeholder="Optional same-merchant key"
+                value={draft.stackGroup}
+                onChange={(event) => updateDraft("stackGroup", event.target.value)}
               />
             </label>
             <label>
