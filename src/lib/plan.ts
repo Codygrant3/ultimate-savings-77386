@@ -334,7 +334,7 @@ function makeBundle(
   const estimatedTravelCost = settings.travelCostPerMile > 0 &&
     distanceConfirmed &&
     distanceMiles !== undefined
-    ? distanceMiles * settings.travelCostPerMile
+    ? distanceMiles * 2 * settings.travelCostPerMile
     : 0;
   const grossBenefit = group.reduce(
     (total, deal) =>
@@ -826,7 +826,7 @@ export function buildWeeklyPlan(
       `The optimizer selects trips for ${objectiveLabel(settings.planObjective)}.`,
       `At most ${settings.maxTrips} merchants and ${settings.maxDealsPerTrip} deals per merchant.`,
       settings.travelCostPerMile > 0
-        ? `Planning utility subtracts your $${settings.travelCostPerMile.toFixed(2)}-per-mile travel estimate; this is a household assumption, not official pricing.`
+        ? `Planning utility subtracts your $${settings.travelCostPerMile.toFixed(2)}-per-mile round-trip travel estimate; this is a household assumption, not official pricing.`
         : "Travel is constrained by miles but not assigned a dollar cost.",
       settings.includeUnconfirmedLocations
         ? "Unconfirmed locations are labeled and receive a planning penalty."

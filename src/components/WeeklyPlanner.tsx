@@ -353,7 +353,7 @@ export function WeeklyPlanner({
           <>
             <article>
               <Car size={19} aria-hidden="true" />
-              <span>Estimated travel cost</span>
+              <span>Estimated round-trip travel cost</span>
               <strong>{formatCurrency(plan.totalTravelCost)}</strong>
             </article>
             <article>

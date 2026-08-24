@@ -238,11 +238,11 @@ describe("weekly action plan optimizer", () => {
     expect(withCost.trips.map(({ merchant }) => merchant)).toEqual([
       "Near Market"
     ]);
-    expect(withCost.totalTravelCost).toBeCloseTo(1.4);
-    expect(withCost.netBenefitAfterTravel).toBeCloseTo(8.6);
+    expect(withCost.totalTravelCost).toBeCloseTo(2.8);
+    expect(withCost.netBenefitAfterTravel).toBeCloseTo(7.2);
     expect(
       withCost.assumptions.some((assumption) =>
-        assumption.includes("$0.70-per-mile travel estimate")
+        assumption.includes("$0.70-per-mile round-trip travel estimate")
       )
     ).toBe(true);
   });
@@ -613,8 +613,8 @@ describe("weekly action plan optimizer", () => {
       "Linked local results are below the listed estimate."
     );
     expect(plan.trips[0].calibratedSavings).toBeCloseTo(7.5);
-    expect(plan.totalTravelCost).toBeCloseTo(1);
-    expect(plan.netBenefitAfterTravel).toBeCloseTo(6.5);
+    expect(plan.totalTravelCost).toBeCloseTo(2);
+    expect(plan.netBenefitAfterTravel).toBeCloseTo(5.5);
   });
 
   it("lets the user allow conditional stacking for a merchant trip", () => {
