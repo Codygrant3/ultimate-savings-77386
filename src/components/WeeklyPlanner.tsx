@@ -9,6 +9,7 @@ import {
   MapPin,
   RotateCcw,
   Scale,
+  ShieldCheck,
   ShoppingBasket
 } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -326,6 +327,11 @@ export function WeeklyPlanner({
           <strong>{formatCurrency(plan.requiredSpend)}</strong>
         </article>
         <article>
+          <ShieldCheck size={19} aria-hidden="true" />
+          <span>Planning confidence</span>
+          <strong>{Math.round(plan.evidenceConfidence * 100)}%</strong>
+        </article>
+        <article>
           <CalendarRange size={19} aria-hidden="true" />
           <span>Merchants</span>
           <strong>{plan.trips.length}</strong>
@@ -409,14 +415,17 @@ export function WeeklyPlanner({
                   <span>
                     Spend {formatCurrency(trip.requiredSpend)} · score{" "}
                     {Math.round(trip.averageScore)}
+                    · confidence {Math.round(trip.evidenceConfidence * 100)}%
                   </span>
                   {trip.netBenefitAfterTravel != null && (
                     <span>
                       Official estimate{" "}
                       {formatCurrency(trip.estimatedSavings)} · household
                       estimate {formatCurrency(trip.calibratedSavings)} ·
-                      travel {formatCurrency(trip.estimatedTravelCost ?? 0)} ·
-                      benefit {formatCurrency(trip.netBenefitAfterTravel)}
+                      risk-adjusted value{" "}
+                      {formatCurrency(trip.riskAdjustedSavings)} · travel{" "}
+                      {formatCurrency(trip.estimatedTravelCost ?? 0)} · benefit{" "}
+                      {formatCurrency(trip.netBenefitAfterTravel)}
                     </span>
                   )}
                 </div>

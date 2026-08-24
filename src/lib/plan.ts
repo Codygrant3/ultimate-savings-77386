@@ -36,6 +36,7 @@ interface DealCandidate {
   newCustomerOffer: boolean;
   stackGroup?: string;
   outcomeAdjustment: number;
+  evidenceFactor: number;
 }
 
 interface TripBundle {
@@ -48,6 +49,8 @@ interface TripBundle {
   requiredSpend: number;
   estimatedSavings: number;
   calibratedSavings: number;
+  riskAdjustedSavings: number;
+  evidenceConfidence: number;
   estimatedTravelCost?: number;
   netBenefitAfterTravel?: number | null;
   utility: number;
@@ -160,7 +163,7 @@ function planningMerchant(opportunity: ScoredOpportunity): string {
 function objectiveLabel(objective: WeeklyPlanSettings["planObjective"]): string {
   return {
     balanced: "balanced evidence, value, fit, effort, and travel",
-    cash: "maximum measured cash savings after spend and travel",
+    cash: "maximum measured cash value within spend and travel",
     efficiency: "best measured return per planned dollar"
 }[objective];
 }
@@ -271,6 +274,27 @@ function hasHighPriorityFit(opportunity: ScoredOpportunity): boolean {
   return matchesHighPriorityProfile(opportunity);
 }
 
+function planningEvidenceFactor(
+  opportunity: ScoredOpportunity,
+  today: Date,
+  maximumSourceAgeDays: number
+): number {
+  const age = sourceAgeInDays(opportunity, today);
+  const freshnessFactor =
+    age === null || maximumSourceAgeDays <= 0
+      ? 0.65
+      : clamp(1 - (age / maximumSourceAgeDays) * 0.35, 0.65, 1);
+
+  let participationFactor = 0.75;
+  if (hasConfirmedLocalParticipation(opportunity)) {
+    participationFactor = 1;
+  } else if (opportunity.distanceMiles !== undefined) {
+    participationFactor = 0.85;
+  }
+
+  return freshnessFactor * participationFactor;
+}
+
 export function daysUntilExpiration(
   expiresOn: string,
   today = new Date()
@@ -341,6 +365,16 @@ function makeBundle(
       total + deal.opportunity.estimatedSavings * deal.outcomeAdjustment,
     0
   );
+  const riskAdjustedSavings = group.reduce(
+    (total, deal) =>
+      total +
+      deal.opportunity.estimatedSavings *
+      deal.outcomeAdjustment *
+      deal.evidenceFactor,
+    0
+  );
+  const evidenceConfidence =
+    grossBenefit > 0 ? riskAdjustedSavings / grossBenefit : 1;
   const balancedUtility =
     group.reduce(
       (total, deal) =>
@@ -351,7 +385,7 @@ function makeBundle(
       0
     ) - distancePenalty - estimatedTravelCost * 2;
   const cashUtility =
-    grossBenefit * 2 -
+    riskAdjustedSavings * 2 -
     group.reduce(
       (total, deal) => total + deal.opportunity.minimumSpend * 0.15,
       0
@@ -362,7 +396,7 @@ function makeBundle(
     settings.planObjective === "cash"
       ? cashUtility
       : settings.planObjective === "efficiency"
-        ? clamp((grossBenefit / Math.max(requiredSpend, 1)) * 100, 0, 150) -
+        ? clamp((riskAdjustedSavings / Math.max(requiredSpend, 1)) * 100, 0, 150) -
           distancePenalty -
           estimatedTravelCost * 10
         : balancedUtility;
@@ -380,12 +414,14 @@ function makeBundle(
     requiredSpend,
     estimatedSavings,
     calibratedSavings: grossBenefit,
+    riskAdjustedSavings,
+    evidenceConfidence,
     ...(settings.travelCostPerMile > 0
       ? {
           estimatedTravelCost,
           netBenefitAfterTravel:
             distanceConfirmed && distanceMiles !== undefined
-              ? Math.max(0, grossBenefit - estimatedTravelCost)
+              ? Math.max(0, riskAdjustedSavings - estimatedTravelCost)
               : null
         }
       : {}),
@@ -541,6 +577,11 @@ export function buildWeeklyPlan(
       effectiveStackCompatibility(opportunity) ?? "conditional";
     const outcomeAdjustment =
       outcomeAdjustments[opportunity.id]?.adjustment ?? 1;
+    const evidenceFactor = planningEvidenceFactor(
+      opportunity,
+      today,
+      settings.maximumSourceAgeDays
+    );
     if (stackCompatibility === "exclusive") {
       warnings.push("Official terms require this offer to be redeemed by itself.");
     } else if (stackCompatibility === "conditional") {
@@ -569,7 +610,8 @@ export function buildWeeklyPlan(
       planningMerchant: planningMerchant(opportunity),
       newCustomerOffer: isNewCustomerOffer(opportunity),
       stackGroup: opportunity.stackGroup,
-      outcomeAdjustment
+      outcomeAdjustment,
+      evidenceFactor
     });
   }
 
@@ -699,6 +741,8 @@ export function buildWeeklyPlan(
     requiredSpend: bundle.requiredSpend,
     estimatedSavings: bundle.estimatedSavings,
     calibratedSavings: bundle.calibratedSavings,
+    riskAdjustedSavings: bundle.riskAdjustedSavings,
+    evidenceConfidence: bundle.evidenceConfidence,
     ...(bundle.estimatedTravelCost !== undefined
       ? { estimatedTravelCost: bundle.estimatedTravelCost }
       : {}),
@@ -732,6 +776,10 @@ export function buildWeeklyPlan(
       total +
       deal.opportunity.estimatedSavings *
         (outcomeAdjustments[deal.opportunity.id]?.adjustment ?? 1),
+    0
+  );
+  const riskAdjustedSavings = trips.reduce(
+    (total, trip) => total + trip.riskAdjustedSavings,
     0
   );
   const totalTravelCost = trips.reduce(
@@ -814,11 +862,25 @@ export function buildWeeklyPlan(
     estimatedSavings,
     calibratedSavings,
     calibrationDelta: calibratedSavings - estimatedSavings,
+    evidenceConfidence:
+      calibratedSavings > 0
+        ? trips.reduce(
+            (weightedTotal, trip) =>
+              weightedTotal +
+              trip.calibratedSavings * trip.evidenceConfidence,
+            0
+          ) / calibratedSavings
+        : 1,
+    riskAdjustedSavings,
     totalTravelCost,
     valueEfficiency:
       requiredSpend > 0 ? estimatedSavings / requiredSpend : null,
     estimatedNetCost: Math.max(0, requiredSpend - estimatedSavings),
-    netBenefitAfterTravel: Math.max(0, calibratedSavings - totalTravelCost),
+    netBenefitAfterTravel:
+      trips.reduce(
+        (total, trip) => total + (trip.netBenefitAfterTravel ?? 0),
+        0
+      ),
     savingsRate:
       requiredSpend > 0 ? (estimatedSavings / requiredSpend) * 100 : 100,
     assumptions: [
@@ -840,6 +902,7 @@ export function buildWeeklyPlan(
       settings.requireMeasuredDollarValue
         ? "Only offers with a measured dollar-value estimate are eligible; unpriced rewards are excluded."
         : "Unpriced free rewards remain eligible but do not add estimated savings.",
+      "Older evidence and unconfirmed local participation reduce risk-adjusted planning value; official estimates remain unchanged.",
       `Official offers and nearby-location checks must have evidence from the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"}.`,
       settings.allowConditionalStacking
         ? "Conditional stacks are allowed only because you turned on the local override; official terms still control."

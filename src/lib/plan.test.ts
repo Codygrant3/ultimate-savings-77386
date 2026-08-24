@@ -239,7 +239,9 @@ describe("weekly action plan optimizer", () => {
       "Near Market"
     ]);
     expect(withCost.totalTravelCost).toBeCloseTo(2.8);
-    expect(withCost.netBenefitAfterTravel).toBeCloseTo(7.2);
+    expect(withCost.riskAdjustedSavings).toBeCloseTo(8.5);
+    expect(withCost.evidenceConfidence).toBeCloseTo(0.85);
+    expect(withCost.netBenefitAfterTravel).toBeCloseTo(5.7);
     expect(
       withCost.assumptions.some((assumption) =>
         assumption.includes("$0.70-per-mile round-trip travel estimate")
@@ -287,11 +289,65 @@ describe("weekly action plan optimizer", () => {
       "The optimizer selects trips for balanced evidence, value, fit, effort, and travel."
     );
     expect(maximumCash.assumptions).toContain(
-      "The optimizer selects trips for maximum measured cash savings after spend and travel."
+      "The optimizer selects trips for maximum measured cash value within spend and travel."
     );
     expect(efficiency.assumptions).toContain(
       "The optimizer selects trips for best measured return per planned dollar."
     );
+  });
+
+  it("discounts stale checks and unconfirmed participation in cash-focused planning", () => {
+    const confirmedFresh = makeOffer({
+      id: "confirmed-fresh",
+      merchant: "Confirmed Market",
+      estimatedSavings: 10,
+      minimumSpend: 20,
+      distanceBasis: "offer",
+      localRecord: true
+    });
+    const approximateFresh = makeOffer({
+      id: "approximate-fresh",
+      merchant: "Approximate Market",
+      estimatedSavings: 10,
+      minimumSpend: 20,
+      distanceBasis: "merchant-location"
+    });
+    const staleApproximate = makeOffer({
+      id: "stale-approximate",
+      merchant: "Stale Market",
+      estimatedSavings: 10,
+      minimumSpend: 20,
+      distanceBasis: "merchant-location",
+      source: {
+        label: "Official source",
+        url: "https://example.com/stale",
+        checkedOn: "2026-08-08"
+      }
+    });
+
+    const plan = buildWeeklyPlan(
+      [staleApproximate, approximateFresh, confirmedFresh],
+      {
+        weeklyBudget: 20,
+        maxTrips: 1,
+        maximumSourceAgeDays: 14,
+        planObjective: "cash"
+      },
+      today
+    );
+
+    expect(plan.trips).toHaveLength(1);
+    expect(plan.trips[0].merchant).toBe("Confirmed Market");
+    expect(plan.trips[0].evidenceConfidence).toBe(1);
+    expect(plan.trips[0].riskAdjustedSavings).toBeCloseTo(10);
+    expect(plan.evidenceConfidence).toBe(1);
+    expect(
+      plan.assumptions.some((assumption) =>
+        assumption.includes(
+          "Older evidence and unconfirmed local participation reduce risk-adjusted planning value"
+        )
+      )
+    ).toBe(true);
   });
 
   it("can require a high-priority household match before planning spend", () => {
@@ -613,8 +669,10 @@ describe("weekly action plan optimizer", () => {
       "Linked local results are below the listed estimate."
     );
     expect(plan.trips[0].calibratedSavings).toBeCloseTo(7.5);
+    expect(plan.trips[0].evidenceConfidence).toBeCloseTo(0.85);
+    expect(plan.trips[0].riskAdjustedSavings).toBeCloseTo(6.375);
     expect(plan.totalTravelCost).toBeCloseTo(2);
-    expect(plan.netBenefitAfterTravel).toBeCloseTo(5.5);
+    expect(plan.netBenefitAfterTravel).toBeCloseTo(4.375);
   });
 
   it("lets the user allow conditional stacking for a merchant trip", () => {
