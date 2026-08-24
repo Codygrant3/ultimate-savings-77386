@@ -243,6 +243,13 @@ describe("Savings Desk interactions", () => {
       window.localStorage.getItem("savings-desk:local-offers")
     ).toContain('"id":"local-test-candidate"');
 
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: "Remove locally recorded deal $15 off any oil change"
+      })
+    );
+    expect(window.localStorage.getItem("savings-desk:local-offers")).toBe("[]");
+
     fireEvent.click(screen.getByRole("button", { name: "Keep $15 off any oil change" }));
     expect(window.localStorage.getItem("savings-desk:candidate-reviews")).toContain(
       "keep"

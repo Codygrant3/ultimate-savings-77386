@@ -815,7 +815,8 @@ export function SavingsTools({
   onDeleteReceipt,
   onAcknowledgeValueAlert,
   onUpdateValueAlertSettings,
-  onAddVerifiedOffer
+  onAddVerifiedOffer,
+  onDeleteVerifiedOffer
 }: {
   opportunities: Opportunity[];
   receipts: ReceiptEntry[];
@@ -826,6 +827,7 @@ export function SavingsTools({
   onAcknowledgeValueAlert: (id: string) => void;
   onUpdateValueAlertSettings: (settings: ValueAlertSettings) => void;
   onAddVerifiedOffer: (offer: Opportunity) => void;
+  onDeleteVerifiedOffer: (id: string) => void;
 }) {
   return (
     <>
@@ -854,6 +856,7 @@ export function SavingsTools({
         <CandidateReviewQueue
           opportunities={opportunities}
           onAddVerifiedOffer={onAddVerifiedOffer}
+          onDeleteVerifiedOffer={onDeleteVerifiedOffer}
         />
         <SavingsHistory
           opportunities={opportunities}

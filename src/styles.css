@@ -2198,6 +2198,66 @@ a {
   line-height: 1.35;
 }
 
+.local-offer-manager {
+  display: grid;
+  gap: 8px;
+}
+
+.local-offer-manager h3 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  color: var(--ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+}
+
+.local-offer-manager h3 span {
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #e0eff6;
+  color: #235a75;
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+}
+
+.local-offer-manager ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 7px;
+}
+
+.local-offer-manager li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 9px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid rgba(23, 53, 44, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 254, 250, 0.86);
+}
+
+.local-offer-manager strong,
+.local-offer-manager span:not(h3 span) {
+  display: block;
+}
+
+.local-offer-manager strong {
+  overflow-wrap: anywhere;
+  font-size: 10px;
+}
+
+.local-offer-manager li span {
+  margin-top: 2px;
+  color: #66756e;
+  font-size: 9px;
+}
+
 .candidate-actions {
   display: grid;
   justify-items: end;

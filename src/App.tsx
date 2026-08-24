@@ -488,6 +488,12 @@ export default function App() {
     );
   }
 
+  function deleteVerifiedOffer(id: string) {
+    setLocalOffers(
+      writeLocalOffers(localOffers.filter((offer) => offer.id !== id))
+    );
+  }
+
   function acknowledgeValueAlert(id: string) {
     setAcknowledgedValueAlertIds(
       writeAcknowledgedValueAlertIds([...acknowledgedValueAlertIds, id])
@@ -1009,6 +1015,7 @@ export default function App() {
               onAcknowledgeValueAlert={acknowledgeValueAlert}
               onUpdateValueAlertSettings={updateValueAlertSettings}
               onAddVerifiedOffer={addVerifiedOffer}
+              onDeleteVerifiedOffer={deleteVerifiedOffer}
             />
           )}
 

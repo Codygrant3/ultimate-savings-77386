@@ -3,10 +3,12 @@ import {
   ExternalLink,
   FlaskConical,
   ThumbsDown,
+  Trash2,
   ThumbsUp,
   X
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { daysUntilExpiration } from "../lib/plan";
 import {
   readCandidateReviews,
   writeCandidateReviews
@@ -17,7 +19,10 @@ import {
   LOCAL_OFFER_CATEGORIES,
   type LocalVerifiedOfferDraft
 } from "../lib/candidate-review";
-import { formatCurrency, formatDate } from "../lib/scoring";
+import {
+  formatCurrency,
+  formatDate
+} from "../lib/scoring";
 import type {
   CandidateReviewStatus,
   CandidateReviews,
@@ -34,10 +39,12 @@ interface DiscoverySnapshot {
 
 export function CandidateReviewQueue({
   opportunities,
-  onAddVerifiedOffer
+  onAddVerifiedOffer,
+  onDeleteVerifiedOffer
 }: {
   opportunities: Opportunity[];
   onAddVerifiedOffer: (offer: Opportunity) => void;
+  onDeleteVerifiedOffer: (id: string) => void;
 }) {
   const [candidates, setCandidates] = useState<OfferCandidate[]>([]);
   const [generatedAt, setGeneratedAt] = useState<string>();
@@ -54,6 +61,7 @@ export function CandidateReviewQueue({
     expiresOn: undefined,
     friction: "low",
     stackNote: "",
+    distanceMiles: undefined,
     localParticipationConfirmed: false,
     officialTermsConfirmed: false
   });
@@ -99,6 +107,11 @@ export function CandidateReviewQueue({
   const trackedCount = Array.from(reviewContexts.values()).filter(
     (context) => context.status === "existing"
   ).length;
+
+  const localOffers = useMemo(
+    () => opportunities.filter((opportunity) => opportunity.localRecord === true),
+    [opportunities]
+  );
 
   function evidenceWarnings(
     context: ReturnType<typeof buildCandidateReviewContext> | undefined
@@ -149,6 +162,7 @@ export function CandidateReviewQueue({
       expiresOn: undefined,
       friction: "low",
       stackNote: "",
+      distanceMiles: undefined,
       localParticipationConfirmed: false,
       officialTermsConfirmed: false
     });
@@ -215,6 +229,46 @@ export function CandidateReviewQueue({
         </span>
         {generatedAt && <span className="review-generated">Checked {generatedAt.slice(0, 10)}</span>}
       </div>
+
+      <section className="local-offer-manager" aria-labelledby="local-offer-manager-title">
+        <h3 id="local-offer-manager-title">
+          Locally recorded deals
+          <span>{localOffers.length}</span>
+        </h3>
+        {localOffers.length === 0 ? (
+          <p className="history-empty">No locally recorded deals.</p>
+        ) : (
+          <ul>
+            {localOffers.map((offer) => (
+              <li key={offer.id}>
+                <div>
+                  <strong>{offer.title}</strong>
+                  <span>
+                    {[
+                      offer.merchant,
+                      formatCurrency(offer.estimatedSavings),
+                      offer.distanceMiles !== undefined ? `${offer.distanceMiles} mi` : null,
+                      offer.expiresOn
+                        ? `ends ${formatDate(offer.expiresOn)} · ${
+                            Math.max(0, daysUntilExpiration(offer.expiresOn))
+                          } days left`
+                        : "no end date"
+                    ].filter(Boolean).join(" · ")}
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  className="review-action review-action--dismiss"
+                  onClick={() => onDeleteVerifiedOffer(offer.id)}
+                  aria-label={`Remove locally recorded deal ${offer.title}`}
+                >
+                  <Trash2 size={13} aria-hidden="true" /> Remove
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
 
       {loadError ? (
         <p className="history-empty">Discovery candidates are unavailable.</p>
@@ -416,6 +470,24 @@ export function CandidateReviewQueue({
                 placeholder="Optional official stack rule"
                 value={draft.stackNote}
                 onChange={(event) => updateDraft("stackNote", event.target.value)}
+              />
+            </label>
+            <label>
+              <span>Confirmed miles</span>
+              <input
+                aria-label="Confirmed distance in miles"
+                type="number"
+                min="0"
+                max="50"
+                step="0.1"
+                disabled={!draft.localParticipationConfirmed}
+                value={draft.distanceMiles ?? ""}
+                onChange={(event) =>
+                  updateDraft(
+                    "distanceMiles",
+                    event.target.value === "" ? undefined : Number(event.target.value)
+                  )
+                }
               />
             </label>
           </div>

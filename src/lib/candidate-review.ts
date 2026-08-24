@@ -203,6 +203,7 @@ export interface LocalVerifiedOfferDraft {
   expiresOn?: string;
   friction: Friction;
   stackNote?: string;
+  distanceMiles?: number;
   localParticipationConfirmed: boolean;
   officialTermsConfirmed: boolean;
 }
@@ -241,6 +242,7 @@ export function createLocallyVerifiedOffer(
   const errors: string[] = [];
   const estimatedSavings = Number(draft.estimatedSavings);
   const minimumSpend = Number(draft.minimumSpend);
+  const distanceMiles = draft.distanceMiles;
   const checkedOn = today.toISOString().slice(0, 10);
 
   if (!draft.officialTermsConfirmed) {
@@ -264,6 +266,23 @@ export function createLocallyVerifiedOffer(
   if (!["low", "medium", "high"].includes(draft.friction)) {
     errors.push("Choose a valid redemption effort");
   }
+  if (
+    draft.localParticipationConfirmed &&
+    (
+      distanceMiles === undefined ||
+      !Number.isFinite(distanceMiles) ||
+      distanceMiles < 0 ||
+      distanceMiles > 50
+    )
+  ) {
+    errors.push("Enter a confirmed distance from 0 to 50 miles");
+  }
+  if (
+    !draft.localParticipationConfirmed &&
+    distanceMiles !== undefined
+  ) {
+    errors.push("Clear the distance unless local participation is confirmed");
+  }
 
   if (errors.length > 0) return { status: "invalid", errors };
 
@@ -279,8 +298,11 @@ export function createLocallyVerifiedOffer(
     minimumSpend,
     isFree: draft.isFree,
     ...(draft.expiresOn ? { expiresOn: draft.expiresOn } : {}),
+    ...(draft.localParticipationConfirmed
+      ? { distanceMiles }
+      : {}),
     locationNote: draft.localParticipationConfirmed
-      ? "Marked locally confirmed on this device; recheck before each visit."
+      ? `Marked locally confirmed about ${distanceMiles} miles from 77386 on this device; recheck before each visit.`
       : "Official terms confirmed on this device; local participation remains unconfirmed.",
     verification: "verified",
     friction: draft.friction,

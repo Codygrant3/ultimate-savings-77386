@@ -183,6 +183,7 @@ describe("candidate review matching", () => {
         expiresOn: "2026-09-30",
         friction: "low",
         stackNote: "One coupon per visit",
+        distanceMiles: 4.2,
         localParticipationConfirmed: true,
         officialTermsConfirmed: true
       },
@@ -199,5 +200,29 @@ describe("candidate review matching", () => {
     expect(result.offer.expiresOn).toBe("2026-09-30");
     expect(result.offer.stackNote).toBe("One coupon per visit");
     expect(result.offer.locationNote).toContain("locally confirmed");
+    expect(result.offer.distanceMiles).toBe(4.2);
+  });
+
+  it("requires a bounded distance before marking local participation", () => {
+    const result = createLocallyVerifiedOffer(
+      candidate(),
+      {
+        category: "auto",
+        estimatedSavings: 15,
+        minimumSpend: 0,
+        isFree: false,
+        friction: "low",
+        distanceMiles: 51,
+        localParticipationConfirmed: true,
+        officialTermsConfirmed: true
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(result.status).toBe("invalid");
+    if (result.status !== "invalid") return;
+    expect(result.errors).toContain(
+      "Enter a confirmed distance from 0 to 50 miles"
+    );
   });
 });
