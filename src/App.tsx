@@ -47,7 +47,8 @@ import {
   DEFAULT_SCORING_WEIGHTS,
   rankOpportunities,
   sourceAgeDays,
-  startOfWeek
+  startOfWeek,
+  valueEfficiency
 } from "./lib/scoring";
 import { WeeklyPlanner } from "./components/WeeklyPlanner";
 import { DEFAULT_WEEKLY_PLAN_SETTINGS } from "./lib/plan";
@@ -296,7 +297,8 @@ function OpportunityCard({
           </ul>
         </details>
 
-        {opportunity.estimatedSavings > 0 && (
+        {(opportunity.estimatedSavings > 0 ||
+          opportunity.savingsRate !== undefined) && (
           <div className="deal-math">
             <div>
               <span>Estimated value</span>
@@ -310,6 +312,20 @@ function OpportunityCard({
                   : "None"}
               </strong>
             </div>
+            {opportunity.savingsRate !== undefined && (
+              <div>
+                <span>Official savings rate</span>
+                <strong>{opportunity.savingsRate}%</strong>
+              </div>
+            )}
+            {valueEfficiency(opportunity) !== null && (
+              <div>
+                <span>Value per $1 spent</span>
+                <strong>
+                  ${valueEfficiency(opportunity)!.toFixed(2)} per $1 spent
+                </strong>
+              </div>
+            )}
           </div>
         )}
 

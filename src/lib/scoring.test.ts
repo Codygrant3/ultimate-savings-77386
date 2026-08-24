@@ -11,7 +11,8 @@ import {
   rankOpportunities,
   scoreOpportunity,
   startOfWeek,
-  sourceAgeDays
+  sourceAgeDays,
+  valueEfficiency
 } from "./scoring";
 
 const baseOpportunity: Opportunity = {
@@ -50,6 +51,25 @@ describe("savings scoring", () => {
         { ...baseOpportunity, source: { ...baseOpportunity.source, checkedOn: "" } },
         new Date("2026-07-23T12:00:00")
       )
+    ).toBeNull();
+  });
+
+  it("calculates spend efficiency only when both value and required spend are positive", () => {
+    expect(valueEfficiency(baseOpportunity)).toBeCloseTo(0.5);
+    expect(
+      valueEfficiency({
+        ...baseOpportunity,
+        id: "free-offer",
+        estimatedSavings: 6,
+        minimumSpend: 0
+      })
+    ).toBeNull();
+    expect(
+      valueEfficiency({
+        ...baseOpportunity,
+        id: "no-value",
+        estimatedSavings: 0
+      })
     ).toBeNull();
   });
 

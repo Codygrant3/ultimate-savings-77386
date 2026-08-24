@@ -704,6 +704,14 @@ export function startOfWeek(date = new Date()): Date {
   return result;
 }
 
+export function valueEfficiency(opportunity: Opportunity): number | null {
+  if (opportunity.minimumSpend <= 0 || opportunity.estimatedSavings <= 0) {
+    return null;
+  }
+
+  return opportunity.estimatedSavings / opportunity.minimumSpend;
+}
+
 export function formatCurrency(value: number): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",

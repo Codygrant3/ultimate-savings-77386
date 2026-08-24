@@ -34,6 +34,22 @@ describe("Savings Desk interactions", () => {
     expect(screen.getAllByText("Stackability").length).toBeGreaterThan(0);
   });
 
+  it("shows the official rate and value efficiency on deal math", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Browse this week" }));
+
+    const kodiakCard = screen
+      .getByText("$5 off a $20 Kodiak basket")
+      .closest(".deal-card");
+
+    expect(kodiakCard).not.toBeNull();
+    expect(within(kodiakCard as HTMLElement).getByText("25%")).toBeTruthy();
+    expect(
+      within(kodiakCard as HTMLElement).getByText("$0.25 per $1 spent")
+    ).toBeTruthy();
+  });
+
   it("filters the deal feed by source-check freshness", () => {
     render(<App />);
 
