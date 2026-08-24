@@ -255,4 +255,35 @@ describe("offer candidate ranking", () => {
     expect(ranked[0].candidateReasons).toContain("$15 Off value");
     expect(ranked[0].candidateReasons).toContain("Expires 9/10/26");
   });
+
+  it("demotes expired offers below every currently valid candidate", () => {
+    const ranked = rankOfferCandidates(
+      [
+        {
+          id: "expired",
+          sourceId: "strong-source",
+          merchant: "Test",
+          title: "$30 off any service",
+          url: "https://example.com/expired",
+          amountText: "$30 Off",
+          expirationText: "07/31/2026"
+        },
+        {
+          id: "current-small",
+          sourceId: "weak-source",
+          merchant: "Test",
+          title: "$1 off any service",
+          url: "https://example.com/current",
+          amountText: "$1 Off",
+          expirationText: "9/10/26"
+        }
+      ],
+      { "strong-source": 10, "weak-source": 1 },
+      new Date("2026-08-21T12:00:00")
+    );
+
+    expect(ranked.map(({ id }) => id)).toEqual(["current-small", "expired"]);
+    expect(ranked[0].candidateScore).toBeGreaterThan(ranked[1].candidateScore!);
+    expect(ranked[1].candidateReasons).toContain("Expired date");
+  });
 });

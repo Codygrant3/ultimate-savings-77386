@@ -436,6 +436,22 @@ export function rankOfferCandidates(
   sourcePriorities: Record<string, number> = {},
   today = new Date()
 ): ParsedOfferCandidate[] {
+  const endOfToday = new Date(today);
+  endOfToday.setHours(23, 59, 59, 999);
+
+  function expirationRemaining(candidate: ParsedOfferCandidate): number | null {
+    const dayWindow = candidate.expirationText?.match(/(\d+)\s*-?\s*day/i)?.[1];
+    if (dayWindow) return Number(dayWindow);
+    if (!candidate.expirationText?.includes("/")) return null;
+
+    const expiration = new Date(candidate.expirationText);
+    if (!Number.isFinite(expiration.getTime())) return null;
+
+    return Math.ceil(
+      (expiration.getTime() - endOfToday.getTime()) / 86_400_000
+    );
+  }
+
   return candidates
     .map((candidate) => {
       const reasons: string[] = [];
@@ -468,28 +484,24 @@ export function rankOfferCandidates(
         reasons.push("No minimum captured");
       }
 
-      const daysLeft = candidate.expirationText?.match(/(\d+)\s*-?\s*day/i)?.[1];
+      const remaining = expirationRemaining(candidate);
+      const isExpired = remaining !== null && remaining < 0;
       let timingPoints = 8;
-      if (candidate.expirationText) {
-        if (daysLeft) {
-          const remaining = Number(daysLeft);
-          timingPoints = remaining <= 7 ? 18 : remaining <= 30 ? 13 : 8;
-          reasons.push(`${remaining}-day window`);
-        } else if (candidate.expirationText.includes("/")) {
-          const expiration = new Date(candidate.expirationText);
-          const remaining = Math.ceil(
-            (expiration.getTime() - today.getTime()) / 86_400_000
-          );
-          timingPoints =
-            remaining <= 7 ? 18 : remaining <= 30 ? 13 : remaining > 0 ? 8 : 0;
-          reasons.push(
-            remaining > 0 ? `Expires ${candidate.expirationText}` : "Expired date"
-          );
-        } else {
-          reasons.push("Expiration signal");
-        }
+      if (isExpired) {
+        timingPoints = -100;
+        reasons.push("Expired date");
+      } else if (remaining !== null) {
+        timingPoints = remaining <= 7 ? 18 : remaining <= 30 ? 13 : 8;
+        reasons.push(
+          typeof candidate.expirationText === "string" &&
+            candidate.expirationText.includes("/")
+            ? `Expires ${candidate.expirationText}`
+            : `${remaining}-day window`
+        );
       } else {
-        reasons.push("No expiration captured");
+        reasons.push(
+          candidate.expirationText ? "Expiration signal" : "No expiration captured"
+        );
       }
 
       const sourcePriority = sourcePriorities[candidate.sourceId] ?? 5;
