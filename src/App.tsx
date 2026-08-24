@@ -255,6 +255,14 @@ function OpportunityCard({
               </span>
             );
           })()}
+          {opportunity.distanceEvidenceAgeDays !== undefined && (
+            <span className="quiet-badge">
+              <MapPin size={13} aria-hidden="true" />
+              {opportunity.distanceEvidenceAgeDays === 0
+                ? "Location checked today"
+                : `Location checked ${opportunity.distanceEvidenceAgeDays}d ago`}
+            </span>
+          )}
           {(opportunity.expiresOn || opportunity.expirationLabel) && (
             <span className="quiet-badge">
               <CalendarDays size={13} aria-hidden="true" />

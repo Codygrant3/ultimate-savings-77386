@@ -198,6 +198,46 @@ describe("savings scoring", () => {
     ).toContain("participation unconfirmed");
   });
 
+  it("decays nearby-location proximity as its evidence ages", () => {
+    const today = new Date("2026-08-24T12:00:00");
+    const makeInventory = (checkedOn: string): LocalMerchantInventory => ({
+      zipCode: "77386",
+      origin: { label: "77386 centroid", latitude: 30.1622, longitude: -95.4018 },
+      checkedOn,
+      merchants: [
+        {
+          id: "heb-spring-creek",
+          merchantAliases: ["H-E-B"],
+          locationName: "H-E-B Spring Creek Market",
+          address: "3540 Rayford Road, Spring, TX 77386",
+          distanceMiles: 3.9,
+          sourceLabel: "Business-confirmed profile",
+          sourceUrl: "https://example.com/heb-profile",
+          checkedOn
+        }
+      ]
+    });
+    const fresh = scoreOpportunity(
+      { ...baseOpportunity, merchant: "H-E-B" },
+      today,
+      undefined,
+      makeInventory("2026-08-20")
+    );
+    const stale = scoreOpportunity(
+      { ...baseOpportunity, merchant: "H-E-B" },
+      today,
+      undefined,
+      makeInventory("2026-07-15")
+    );
+
+    expect(fresh.distanceEvidenceAgeDays).toBe(4);
+    expect(stale.distanceEvidenceAgeDays).toBe(40);
+    expect(fresh.score).toBeGreaterThan(stale.score);
+    expect(
+      fresh.scoreBreakdown.find(({ label }) => label === "Local relevance")?.detail
+    ).toContain("location checked 4 days ago");
+  });
+
   it("penalizes stale source evidence", () => {
     const today = new Date("2026-07-23T12:00:00");
     const fresh = scoreOpportunity(baseOpportunity, today);

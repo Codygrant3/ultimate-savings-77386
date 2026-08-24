@@ -109,6 +109,7 @@ export interface ScoredOpportunity extends Opportunity {
   scoreBreakdown: ScoreFactor[];
   distanceBasis?: "offer" | "merchant-location" | "unknown";
   distanceCheckedOn?: string;
+  distanceEvidenceAgeDays?: number;
   distanceSourceLabel?: string;
   distanceSourceUrl?: string;
 }

@@ -327,13 +327,15 @@ function householdFit(
 
 function localRelevance(
   opportunity: Opportunity,
-  inventory?: LocalMerchantInventory
+  inventory: LocalMerchantInventory | undefined,
+  today: Date
 ): {
   value: number;
   detail: string;
   distanceMiles?: number;
   distanceBasis: "offer" | "merchant-location" | "unknown";
   distanceCheckedOn?: string;
+  distanceEvidenceAgeDays?: number;
   distanceSourceLabel?: string;
   distanceSourceUrl?: string;
 } {
@@ -365,12 +367,37 @@ function localRelevance(
               : 10;
 
   if (resolved) {
+    const checkedOn = new Date(`${resolved.checkedOn}T12:00:00`);
+    const evidenceAgeDays = Number.isFinite(checkedOn.getTime())
+      ? Math.max(
+          0,
+          Math.floor((today.getTime() - checkedOn.getTime()) / DAY_IN_MS)
+        )
+      : null;
+    const freshnessFactor =
+      evidenceAgeDays === null
+        ? 0.25
+        : evidenceAgeDays <= 14
+          ? 1
+          : evidenceAgeDays <= 30
+            ? 0.5
+            : 0;
+    const ageLabel =
+      evidenceAgeDays === null
+        ? "location check date missing"
+        : `location checked ${evidenceAgeDays} ${
+            evidenceAgeDays === 1 ? "day" : "days"
+          } ago`;
+
     return {
-      value: Math.round(value * 0.75),
-      detail: `~${distance} miles to ${resolved.locationName}; offer participation unconfirmed`,
+      value: Math.round(value * 0.75 * freshnessFactor),
+      detail: `~${distance} miles to ${resolved.locationName}; ${ageLabel}; offer participation unconfirmed`,
       distanceMiles: distance,
       distanceBasis: "merchant-location",
       distanceCheckedOn: resolved.checkedOn,
+      ...(evidenceAgeDays !== null
+        ? { distanceEvidenceAgeDays: evidenceAgeDays }
+        : {}),
       distanceSourceLabel: resolved.sourceLabel,
       distanceSourceUrl: resolved.sourceUrl
     };
@@ -382,6 +409,9 @@ function localRelevance(
     distanceMiles: distance,
     distanceBasis: "offer",
     distanceCheckedOn: opportunity.source.checkedOn,
+    ...(sourceAgeDays(opportunity, today) !== null
+      ? { distanceEvidenceAgeDays: sourceAgeDays(opportunity, today) as number }
+      : {}),
     distanceSourceLabel: opportunity.source.label,
     distanceSourceUrl: opportunity.source.url
   };
@@ -544,7 +574,7 @@ export function scoreOpportunity(
   rawScoringWeights?: Partial<ScoringWeights>,
   householdProfile?: Partial<HouseholdProfile>
 ): ScoredOpportunity {
-  const proximity = localRelevance(opportunity, inventory);
+  const proximity = localRelevance(opportunity, inventory, today);
   const selectedWeights = effectiveScoringWeights(rawScoringWeights);
   const factors = [
     evidenceQuality(opportunity, today),
@@ -614,6 +644,9 @@ export function scoreOpportunity(
       : {}),
     distanceBasis: proximity.distanceBasis,
     ...(proximity.distanceCheckedOn ? { distanceCheckedOn: proximity.distanceCheckedOn } : {}),
+    ...(proximity.distanceEvidenceAgeDays !== undefined
+      ? { distanceEvidenceAgeDays: proximity.distanceEvidenceAgeDays }
+      : {}),
     ...(proximity.distanceSourceLabel ? { distanceSourceLabel: proximity.distanceSourceLabel } : {}),
     ...(proximity.distanceSourceUrl ? { distanceSourceUrl: proximity.distanceSourceUrl } : {}),
     score,

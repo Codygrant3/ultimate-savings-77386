@@ -29,6 +29,7 @@ describe("Savings Desk interactions", () => {
     fireEvent.click(screen.getAllByText("Score factors")[0]);
 
     expect(screen.getAllByText("Evidence").length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/^Location checked/).length).toBeGreaterThan(0);
     expect(screen.getAllByText("Local relevance").length).toBeGreaterThan(0);
     expect(screen.getAllByText("Stackability").length).toBeGreaterThan(0);
   });
