@@ -11,6 +11,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Logs confirmed receipt results locally and uses recency-weighted category and merchant outcomes to adjust household-fit ranking.
 - Delivers dashboard-only high-value alerts when an offer clears a user-defined dollar threshold, free-reward preference, and maximum redemption effort.
 - Maintains a checked local merchant inventory and uses great-circle distance calculations for nearby branches. A merchant-location distance is clearly marked as approximate and never claims that a specific promotion is confirmed at that branch.
+- Carries checked merchant-location distances into both explainable ranking and the constrained weekly planner, so nearby stores affect trip selection without implying that every promotion runs at that branch.
 - Uses merchant-specific structured parsers for Wendy's, Dutch Bros, the local Take 5 and Costa Oil pages, and the local Rainbow Car Care rewards page to stage official offer candidates with amounts, minimum spend, eligibility caveats, or expiration signals. Every parsed candidate remains a human-review lead, never an automatic dashboard deal.
 - Uses semantic candidate keys to collapse repeated page variants while preserving the most complete spend, expiration, or terms evidence.
 - Ranks discovery candidates by captured value, spend efficiency, expiration timing, source priority, and title quality, then exposes them in a dashboard review queue. Keep/dismiss choices stay in the local browser and never convert a lead into a verified deal.

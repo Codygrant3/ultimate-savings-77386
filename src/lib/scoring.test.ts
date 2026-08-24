@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { Opportunity } from "../types";
+import type { LocalMerchantInventory, Opportunity } from "../types";
 import { buildLearnedPreferences } from "./preferences";
 import {
   isExcludedByPreferences,
@@ -139,6 +139,41 @@ describe("savings scoring", () => {
     expect(nearby.scoreBreakdown.find(({ label }) => label === "Local relevance")?.detail).toBe(
       "2 miles from 77386"
     );
+  });
+
+  it("resolves a checked H-E-B store location as approximate proximity", () => {
+    const today = new Date("2026-08-24T12:00:00");
+    const inventory: LocalMerchantInventory = {
+      zipCode: "77386",
+      origin: { label: "77386 centroid", latitude: 30.1622, longitude: -95.4018 },
+      checkedOn: "2026-08-24",
+      merchants: [
+        {
+          id: "heb-spring-creek",
+          merchantAliases: ["H-E-B"],
+          locationName: "H-E-B Spring Creek Market",
+          address: "3540 Rayford Road, Spring, TX 77386",
+          distanceMiles: 3.9,
+          sourceLabel: "Business-confirmed profile",
+          sourceUrl: "https://example.com/heb-profile",
+          checkedOn: "2026-08-24"
+        }
+      ]
+    };
+    const scored = scoreOpportunity(
+      { ...baseOpportunity, merchant: "H-E-B" },
+      today,
+      undefined,
+      inventory
+    );
+
+    expect(scored.distanceMiles).toBe(3.9);
+    expect(
+      scored.scoreBreakdown.find(({ label }) => label === "Local relevance")?.detail
+    ).toContain("~3.9 miles to H-E-B Spring Creek Market");
+    expect(
+      scored.scoreBreakdown.find(({ label }) => label === "Local relevance")?.detail
+    ).toContain("participation unconfirmed");
   });
 
   it("penalizes stale source evidence", () => {

@@ -33,6 +33,16 @@ const inventory: LocalMerchantInventory = {
       sourceLabel: "Official Take 5 page",
       sourceUrl: "https://example.com/take5",
       checkedOn: "2026-08-19"
+    },
+    {
+      id: "heb-spring-creek",
+      merchantAliases: ["H-E-B"],
+      locationName: "H-E-B Spring Creek Market",
+      address: "3540 Rayford Road, Spring, TX 77386",
+      distanceMiles: 3.9,
+      sourceLabel: "Business-confirmed profile",
+      sourceUrl: "https://example.com/heb-profile",
+      checkedOn: "2026-08-24"
     }
   ]
 };
@@ -72,5 +82,15 @@ describe("local merchant distance resolution", () => {
         inventory
       )
     ).toBeNull();
+  });
+
+  it("resolves the nearby H-E-B store without claiming coupon participation", () => {
+    const resolved = resolveOpportunityDistance(
+      { ...opportunity, merchant: "H-E-B" },
+      inventory
+    );
+
+    expect(resolved?.distanceMiles).toBe(3.9);
+    expect(resolved?.locationName).toBe("H-E-B Spring Creek Market");
   });
 });

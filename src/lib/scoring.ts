@@ -209,7 +209,12 @@ function householdFit(
 function localRelevance(
   opportunity: Opportunity,
   inventory?: LocalMerchantInventory
-): { value: number; detail: string } {
+): {
+  value: number;
+  detail: string;
+  distanceMiles?: number;
+  distanceBasis: "offer" | "merchant-location" | "unknown";
+} {
   const resolved =
     opportunity.distanceMiles !== undefined
       ? null
@@ -217,7 +222,11 @@ function localRelevance(
   const distance = opportunity.distanceMiles ?? resolved?.distanceMiles;
 
   if (distance === undefined) {
-    return { value: 55, detail: "Location not distance-confirmed" };
+    return {
+      value: 55,
+      detail: "Location not distance-confirmed",
+      distanceBasis: "unknown"
+    };
   }
 
   const value =
@@ -236,11 +245,18 @@ function localRelevance(
   if (resolved) {
     return {
       value: Math.round(value * 0.75),
-      detail: `~${distance} miles to ${resolved.locationName}; offer participation unconfirmed`
+      detail: `~${distance} miles to ${resolved.locationName}; offer participation unconfirmed`,
+      distanceMiles: distance,
+      distanceBasis: "merchant-location"
     };
   }
 
-  return { value, detail: `${distance} miles from 77386` };
+  return {
+    value,
+    detail: `${distance} miles from 77386`,
+    distanceMiles: distance,
+    distanceBasis: "offer"
+  };
 }
 
 function timingQuality(
@@ -354,6 +370,7 @@ export function scoreOpportunity(
   learned?: LearnedPreferences,
   inventory?: LocalMerchantInventory
 ): ScoredOpportunity {
+  const proximity = localRelevance(opportunity, inventory);
   const factors = [
     evidenceQuality(opportunity, today),
     valueQuality(opportunity),
@@ -365,7 +382,7 @@ export function scoreOpportunity(
           : "Savings rate not published"
     },
     householdFit(opportunity, learned),
-    localRelevance(opportunity, inventory),
+    proximity,
     timingQuality(opportunity, today),
     effortQuality(opportunity),
     spendEfficiency(opportunity),
@@ -405,7 +422,15 @@ export function scoreOpportunity(
           ? "Worth a look"
           : "Low priority";
 
-  return { ...opportunity, score, scoreLabel, scoreBreakdown };
+  return {
+    ...opportunity,
+    ...(proximity.distanceMiles !== undefined
+      ? { distanceMiles: proximity.distanceMiles }
+      : {}),
+    score,
+    scoreLabel,
+    scoreBreakdown
+  };
 }
 
 export function rankOpportunities(

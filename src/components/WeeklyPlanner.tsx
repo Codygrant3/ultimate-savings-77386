@@ -184,7 +184,7 @@ export function WeeklyPlanner({
                   <span>
                     <MapPin size={14} aria-hidden="true" />
                     {trip.distanceConfirmed
-                      ? `${trip.distanceMiles} mi · confirmed location type`
+                      ? `${trip.distanceMiles} mi · approximate location distance`
                       : "Location unconfirmed"}
                   </span>
                   <span>
