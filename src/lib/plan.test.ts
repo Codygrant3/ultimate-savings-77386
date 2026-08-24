@@ -247,6 +247,53 @@ describe("weekly action plan optimizer", () => {
     ).toBe(true);
   });
 
+  it("changes trip selection when the household chooses a planning objective", () => {
+    const offers = [
+      makeOffer({
+        id: "big-cash",
+        merchant: "Big Cash Market",
+        estimatedSavings: 30,
+        minimumSpend: 100,
+        score: 80
+      }),
+      makeOffer({
+        id: "best-rate",
+        merchant: "Best Rate Market",
+        estimatedSavings: 12,
+        minimumSpend: 20,
+        score: 70
+      })
+    ];
+
+    const balanced = buildWeeklyPlan(
+      offers,
+      { weeklyBudget: 120, maxTrips: 1, planObjective: "balanced" },
+      today
+    );
+    const maximumCash = buildWeeklyPlan(
+      offers,
+      { weeklyBudget: 120, maxTrips: 1, planObjective: "cash" },
+      today
+    );
+    const efficiency = buildWeeklyPlan(
+      offers,
+      { weeklyBudget: 120, maxTrips: 1, planObjective: "efficiency" },
+      today
+    );
+
+    expect(maximumCash.trips[0].merchant).toBe("Big Cash Market");
+    expect(efficiency.trips[0].merchant).toBe("Best Rate Market");
+    expect(balanced.assumptions).toContain(
+      "The optimizer selects trips for balanced evidence, value, fit, effort, and travel."
+    );
+    expect(maximumCash.assumptions).toContain(
+      "The optimizer selects trips for maximum measured cash savings after spend and travel."
+    );
+    expect(efficiency.assumptions).toContain(
+      "The optimizer selects trips for best measured return per planned dollar."
+    );
+  });
+
   it("can require a high-priority household match before planning spend", () => {
     const highPriority = makeOffer({
       id: "high-priority",

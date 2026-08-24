@@ -210,8 +210,11 @@ export interface WeeklyPlanSettings {
   requireMeasuredDollarValue: boolean;
   allowConditionalStacking: boolean;
   maxDealsPerTrip: number;
+  planObjective: PlanObjective;
   tripOrder: TripOrder;
 }
+
+export type PlanObjective = "balanced" | "cash" | "efficiency";
 
 export type TripOrder = "utility" | "distance";
 

@@ -215,6 +215,23 @@ export function WeeklyPlanner({
             <option value="distance">Nearest trip first</option>
           </select>
         </label>
+        <label>
+          <span>Planning objective</span>
+          <select
+            aria-label="Planning objective"
+            value={settings.planObjective}
+            onChange={(event) =>
+              updateSetting(
+                "planObjective",
+                event.target.value as WeeklyPlanSettings["planObjective"]
+              )
+            }
+          >
+            <option value="balanced">Balanced value</option>
+            <option value="cash">Maximum cash</option>
+            <option value="efficiency">Best per dollar</option>
+          </select>
+        </label>
         <label className="planner-toggle">
           <input
             type="checkbox"

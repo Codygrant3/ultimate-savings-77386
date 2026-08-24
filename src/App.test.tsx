@@ -465,10 +465,21 @@ describe("Savings Desk interactions", () => {
       window.localStorage.getItem("savings-desk:weekly-plan-settings")
     ).toContain('"tripOrder":"distance"');
 
+    fireEvent.change(screen.getByLabelText("Planning objective"), {
+      target: { value: "cash" }
+    });
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"planObjective":"cash"');
+
     fireEvent.click(screen.getByRole("button", { name: "Overview" }));
     fireEvent.click(screen.getByRole("button", { name: "Action plan" }));
     expect(screen.getByLabelText("Weekly spend budget")).toHaveProperty("value", "20");
     expect(screen.getByLabelText("Trip order")).toHaveProperty("value", "distance");
+    expect(screen.getByLabelText("Planning objective")).toHaveProperty(
+      "value",
+      "cash"
+    );
     expect(screen.getByLabelText("Require confirmed participation")).toHaveProperty(
       "checked",
       true

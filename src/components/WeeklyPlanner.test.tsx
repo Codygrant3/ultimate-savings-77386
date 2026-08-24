@@ -182,5 +182,13 @@ describe("WeeklyPlanner execution controls", () => {
       ...DEFAULT_WEEKLY_PLAN_SETTINGS,
       requireMeasuredDollarValue: true
     });
+
+    fireEvent.change(screen.getByLabelText("Planning objective"), {
+      target: { value: "efficiency" }
+    });
+    expect(onSettingsChange).toHaveBeenLastCalledWith({
+      ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+      planObjective: "efficiency"
+    });
   });
 });

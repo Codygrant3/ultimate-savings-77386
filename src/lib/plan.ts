@@ -25,6 +25,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   requireMeasuredDollarValue: false,
   allowConditionalStacking: false,
   maxDealsPerTrip: 3,
+  planObjective: "balanced",
   tripOrder: "utility"
 };
 
@@ -132,6 +133,11 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
         5
       )
     ),
+    planObjective: ["balanced", "cash", "efficiency"].includes(
+      settings.planObjective as string
+    )
+      ? (settings.planObjective as WeeklyPlanSettings["planObjective"])
+      : DEFAULT_WEEKLY_PLAN_SETTINGS.planObjective,
     tripOrder: settings.tripOrder === "distance" ? "distance" : "utility"
   };
 }
@@ -148,6 +154,18 @@ function planningMerchant(opportunity: ScoredOpportunity): string {
     ? opportunity.merchant.split("+")[0]
     : opportunity.merchant;
   return withoutPaymentBrand.replace(/\s+(?:Rewards\+?|Fuel)$/i, "").trim();
+}
+
+function objectiveLabel(objective: WeeklyPlanSettings["planObjective"]): string {
+  return {
+    balanced: "balanced evidence, value, fit, effort, and travel",
+    cash: "maximum measured cash savings after spend and travel",
+    efficiency: "best measured return per planned dollar"
+}[objective];
+}
+
+function clamp(value: number, minimum: number, maximum: number): number {
+  return Math.min(Math.max(value, minimum), maximum);
 }
 
 function isNewCustomerOffer(opportunity: ScoredOpportunity): boolean {
@@ -286,7 +304,7 @@ function combinations<T>(items: T[], maxSize: number): T[][] {
 
 function makeBundle(
   group: DealCandidate[],
-  travelCostPerMile = 0
+  settings: Pick<WeeklyPlanSettings, "planObjective" | "travelCostPerMile">
 ): TripBundle {
   const requiredSpend = group.reduce(
     (total, deal) => total + deal.opportunity.minimumSpend,
@@ -312,17 +330,17 @@ function makeBundle(
   const distancePenalty = distanceConfirmed
     ? (distanceMiles ?? 0) * 3
     : 12;
-  const estimatedTravelCost = travelCostPerMile > 0 &&
+  const estimatedTravelCost = settings.travelCostPerMile > 0 &&
     distanceConfirmed &&
     distanceMiles !== undefined
-    ? distanceMiles * travelCostPerMile
+    ? distanceMiles * settings.travelCostPerMile
     : 0;
   const grossBenefit = group.reduce(
     (total, deal) =>
       total + deal.opportunity.estimatedSavings * deal.outcomeAdjustment,
     0
   );
-  const utility =
+  const balancedUtility =
     group.reduce(
       (total, deal) =>
         total +
@@ -331,6 +349,22 @@ function makeBundle(
         deal.opportunity.minimumSpend * 0.15,
       0
     ) - distancePenalty - estimatedTravelCost * 2;
+  const cashUtility =
+    grossBenefit * 2 -
+    group.reduce(
+      (total, deal) => total + deal.opportunity.minimumSpend * 0.15,
+      0
+    ) -
+    distancePenalty -
+    estimatedTravelCost * 2;
+  const utility =
+    settings.planObjective === "cash"
+      ? cashUtility
+      : settings.planObjective === "efficiency"
+        ? clamp((grossBenefit / Math.max(requiredSpend, 1)) * 100, 0, 150) -
+          distancePenalty -
+          estimatedTravelCost * 10
+        : balancedUtility;
   const warnings = Array.from(
     new Set(group.flatMap((deal) => deal.warnings))
   );
@@ -344,7 +378,7 @@ function makeBundle(
     hasUnconfirmedParticipationDeal,
     requiredSpend,
     estimatedSavings,
-    ...(travelCostPerMile > 0
+    ...(settings.travelCostPerMile > 0
       ? {
           estimatedTravelCost,
           netBenefitAfterTravel:
@@ -587,7 +621,7 @@ export function buildWeeklyPlan(
         continue;
       }
       bundles.push(
-        makeBundle(combination, settings.travelCostPerMile)
+        makeBundle(combination, settings)
       );
     }
 
@@ -777,6 +811,7 @@ export function buildWeeklyPlan(
       requiredSpend > 0 ? (estimatedSavings / requiredSpend) * 100 : 100,
     assumptions: [
       `Verified offers only; planned spend capped at $${settings.weeklyBudget.toFixed(2)}.`,
+      `The optimizer selects trips for ${objectiveLabel(settings.planObjective)}.`,
       `At most ${settings.maxTrips} merchants and ${settings.maxDealsPerTrip} deals per merchant.`,
       settings.travelCostPerMile > 0
         ? `Planning utility subtracts your $${settings.travelCostPerMile.toFixed(2)}-per-mile travel estimate; this is a household assumption, not official pricing.`
