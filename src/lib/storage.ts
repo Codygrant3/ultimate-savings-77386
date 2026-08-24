@@ -7,6 +7,7 @@ import type {
   ValueAlertSettings,
   WeeklyPlanSettings,
   HouseholdProfile,
+  EvidenceAgeFilter,
   Opportunity
 } from "../types";
 
@@ -23,6 +24,7 @@ const ACKNOWLEDGED_VALUE_ALERTS_KEY = "savings-desk:value-alerts-acknowledged";
 const CANDIDATE_REVIEWS_KEY = "savings-desk:candidate-reviews";
 const WEEKLY_PLAN_SETTINGS_KEY = "savings-desk:weekly-plan-settings";
 const SCORING_WEIGHTS_KEY = "savings-desk:scoring-weights";
+const EVIDENCE_AGE_FILTER_KEY = "savings-desk:maximum-evidence-age";
 const HOUSEHOLD_PROFILE_KEY = "savings-desk:household-profile";
 const LOCAL_OFFERS_KEY = "savings-desk:local-offers";
 
@@ -299,6 +301,20 @@ export function readScoringWeights(
 export function writeScoringWeights(weights: ScoringWeights): ScoringWeights {
   window.localStorage.setItem(SCORING_WEIGHTS_KEY, JSON.stringify(weights));
   return weights;
+}
+
+export function readEvidenceAgeFilter(): EvidenceAgeFilter {
+  try {
+    const value = window.localStorage.getItem(EVIDENCE_AGE_FILTER_KEY);
+    return value === "7" || value === "14" ? value : "all";
+  } catch {
+    return "all";
+  }
+}
+
+export function writeEvidenceAgeFilter(filter: EvidenceAgeFilter): EvidenceAgeFilter {
+  window.localStorage.setItem(EVIDENCE_AGE_FILTER_KEY, filter);
+  return filter;
 }
 
 export function readHouseholdProfile(

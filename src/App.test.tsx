@@ -43,6 +43,7 @@ describe("Savings Desk interactions", () => {
     fireEvent.change(screen.getByLabelText("Maximum evidence age"), {
       target: { value: "7" }
     });
+    expect(window.localStorage.getItem("savings-desk:maximum-evidence-age")).toBe("7");
 
     expect(screen.queryByText(dutchBrosOffer)).toBeNull();
 
@@ -51,6 +52,16 @@ describe("Savings Desk interactions", () => {
     });
 
     expect(screen.getByText(dutchBrosOffer)).toBeTruthy();
+  });
+
+  it("restores a saved evidence-age limit on reload", () => {
+    window.localStorage.setItem("savings-desk:maximum-evidence-age", "7");
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Browse this week" }));
+
+    expect(screen.queryByText("Free medium drink for eligible new app users")).toBeNull();
+    expect(screen.getByLabelText("Maximum evidence age")).toHaveProperty("value", "7");
   });
 
   it("persists a saved opportunity locally", () => {

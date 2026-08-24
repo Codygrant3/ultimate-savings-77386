@@ -8,7 +8,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Lets the household tune relative ranking priorities for evidence, dollar value, percentage savings, fit, proximity, timing, effort, spend efficiency, and stackability. Custom weights are normalized to the bounded 100-point model and stay in local browser storage.
 - Tunes household fit with local high-priority, preferred, and exclusion keywords. Exclusions are removed before ranking; matching terms raise fit without changing official evidence or offer terms.
 - Separates verified offers from official rewards programs and unverified research leads.
-- Shows each offer's official-source check age in the deal feed and lets the household restrict results to checks from the last 7 or 14 days.
+- Shows each offer's official-source check age in the deal feed, lets the household restrict results to checks from the last 7 or 14 days, and remembers that freshness limit locally.
 - Filters and searches the opportunity list.
 - Saves opportunities and tracks estimated realized savings in browser storage.
 - Logs confirmed receipt results locally and uses recency-weighted category and merchant outcomes to adjust household-fit ranking.

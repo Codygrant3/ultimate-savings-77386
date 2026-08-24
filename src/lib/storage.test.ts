@@ -2,11 +2,13 @@
 
 import { beforeEach, describe, expect, it } from "vitest";
 import {
+  readEvidenceAgeFilter,
   readAcknowledgedValueAlertIds,
   readLocalOffers,
   readSavedIds,
   removeStoredId,
   toggleStoredId,
+  writeEvidenceAgeFilter,
   writeLocalOffers
 } from "./storage";
 import type { Opportunity } from "../types";
@@ -14,6 +16,24 @@ import type { Opportunity } from "../types";
 function setRawIds(key: string, value: unknown): void {
   window.localStorage.setItem(key, JSON.stringify(value));
 }
+
+describe("stored evidence-age preference", () => {
+  beforeEach(() => {
+    window.localStorage.clear();
+  });
+
+  it("falls back to all ages for missing or invalid values", () => {
+    expect(readEvidenceAgeFilter()).toBe("all");
+
+    window.localStorage.setItem("savings-desk:maximum-evidence-age", "30");
+    expect(readEvidenceAgeFilter()).toBe("all");
+  });
+
+  it("writes and restores a bounded freshness choice", () => {
+    expect(writeEvidenceAgeFilter("7")).toBe("7");
+    expect(readEvidenceAgeFilter()).toBe("7");
+  });
+});
 
 describe("stored execution IDs", () => {
   beforeEach(() => {

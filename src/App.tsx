@@ -57,6 +57,7 @@ import {
   buildValueAlerts
 } from "./lib/value-alerts";
 import {
+  readEvidenceAgeFilter,
   readReceipts,
   readRedeemedIds,
   readSavedIds,
@@ -67,6 +68,7 @@ import {
   readValueAlertSettings,
   readWeeklyPlanSettings,
   writeAcknowledgedValueAlertIds,
+  writeEvidenceAgeFilter,
   readScoringWeights,
   readHouseholdProfile,
   readLocalOffers,
@@ -79,6 +81,7 @@ import {
 import type {
   Category,
   ClassActionSettlement,
+  EvidenceAgeFilter,
   LocalMerchantInventory,
   Opportunity,
   ReceiptEntry,
@@ -377,7 +380,8 @@ export default function App() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [category, setCategory] = useState<CategoryFilter>("all");
   const [query, setQuery] = useState("");
-  const [maximumEvidenceAge, setMaximumEvidenceAge] = useState<"all" | "7" | "14">("all");
+  const [maximumEvidenceAge, setMaximumEvidenceAge] =
+    useState<EvidenceAgeFilter>(() => readEvidenceAgeFilter());
   const [savedIds, setSavedIds] = useState<string[]>(readSavedIds);
   const [redeemedIds, setRedeemedIds] = useState<string[]>(readRedeemedIds);
   const [receipts, setReceipts] = useState<ReceiptEntry[]>(readReceipts);
@@ -509,6 +513,10 @@ export default function App() {
 
   function updateWeeklyPlanSettings(settings: WeeklyPlanSettings) {
     setWeeklyPlanSettings(writeWeeklyPlanSettings(settings));
+  }
+
+  function updateMaximumEvidenceAge(filter: EvidenceAgeFilter) {
+    setMaximumEvidenceAge(writeEvidenceAgeFilter(filter));
   }
 
   function updateScoringWeights(weights: ScoringWeights) {
@@ -881,9 +889,7 @@ export default function App() {
                   <select
                     value={maximumEvidenceAge}
                     onChange={(event) =>
-                      setMaximumEvidenceAge(
-                        event.target.value as typeof maximumEvidenceAge
-                      )
+                      updateMaximumEvidenceAge(event.target.value as EvidenceAgeFilter)
                     }
                   >
                     <option value="all">All check ages</option>

@@ -222,6 +222,8 @@ export interface PlannedTrip {
   warnings: string[];
 }
 
+export type EvidenceAgeFilter = "all" | "7" | "14";
+
 export interface ExcludedOpportunity {
   opportunity: ScoredOpportunity;
   reason: string;
