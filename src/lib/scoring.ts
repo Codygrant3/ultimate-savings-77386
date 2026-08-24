@@ -187,6 +187,28 @@ export function isExcludedByPreferences(
   );
 }
 
+export function matchesHighPriorityProfile(
+  opportunity: Opportunity,
+  rawProfile?: Partial<HouseholdProfile>
+): boolean {
+  const profile = normalizeHouseholdProfile(rawProfile);
+  if (profile.highPriorityKeywords.length === 0) return false;
+
+  const searchable = [
+    opportunity.merchant,
+    opportunity.title,
+    opportunity.summary,
+    ...opportunity.tags,
+    ...(opportunity.preferenceSignals ?? [])
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return profile.highPriorityKeywords.some((keyword) =>
+    searchable.includes(keyword.toLowerCase())
+  );
+}
+
 export function sourceAgeDays(
   opportunity: Opportunity,
   today: Date

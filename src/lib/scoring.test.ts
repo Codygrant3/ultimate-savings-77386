@@ -7,6 +7,7 @@ import {
   effectiveScoringWeights,
   isExcludedByPreferences,
   isExpired,
+  matchesHighPriorityProfile,
   normalizeHouseholdProfile,
   rankOpportunities,
   scoreOpportunity,
@@ -131,6 +132,18 @@ describe("savings scoring", () => {
 
     expect(isExcludedByPreferences(babyOffer)).toBe(true);
     expect(rankOpportunities([babyOffer], new Date("2026-07-23T12:00:00"))).toHaveLength(0);
+  });
+
+  it("recognizes high-priority household matches without excluding general offers", () => {
+    const teenOffer = {
+      ...baseOpportunity,
+      id: "teen-offer",
+      title: "Teen school supplies offer",
+      tags: ["school supplies"]
+    };
+
+    expect(matchesHighPriorityProfile(teenOffer)).toBe(true);
+    expect(matchesHighPriorityProfile(baseOpportunity)).toBe(false);
   });
 
   it("prioritizes teen back-to-school needs over generic shopping offers", () => {

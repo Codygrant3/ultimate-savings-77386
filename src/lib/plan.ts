@@ -6,7 +6,10 @@ import type {
   WeeklyPlanSettings
 } from "../types";
 import type { OfferOutcomeAdjustments } from "./outcomes";
-import { effectiveStackCompatibility } from "./scoring";
+import {
+  effectiveStackCompatibility,
+  matchesHighPriorityProfile
+} from "./scoring";
 
 export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   weeklyBudget: 100,
@@ -18,6 +21,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   maximumFriction: "medium",
   includeUnconfirmedLocations: true,
   requireLocalParticipation: false,
+  requireHighPriorityFit: false,
   allowConditionalStacking: false,
   maxDealsPerTrip: 3,
   tripOrder: "utility"
@@ -107,6 +111,10 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
       typeof settings.requireLocalParticipation === "boolean"
         ? settings.requireLocalParticipation
         : DEFAULT_WEEKLY_PLAN_SETTINGS.requireLocalParticipation,
+    requireHighPriorityFit:
+      typeof settings.requireHighPriorityFit === "boolean"
+        ? settings.requireHighPriorityFit
+        : DEFAULT_WEEKLY_PLAN_SETTINGS.requireHighPriorityFit,
     allowConditionalStacking:
       typeof settings.allowConditionalStacking === "boolean"
         ? settings.allowConditionalStacking
@@ -233,6 +241,10 @@ function hasConfirmedLocalParticipation(opportunity: ScoredOpportunity): boolean
     opportunity.distanceMiles !== undefined &&
     opportunity.distanceBasis === "offer"
   );
+}
+
+function hasHighPriorityFit(opportunity: ScoredOpportunity): boolean {
+  return matchesHighPriorityProfile(opportunity);
 }
 
 export function daysUntilExpiration(
@@ -469,6 +481,14 @@ export function buildWeeklyPlan(
       excluded.push({
         opportunity,
         reason: "Local participation is not confirmed on this device"
+      });
+      continue;
+    }
+
+    if (settings.requireHighPriorityFit && !hasHighPriorityFit(opportunity)) {
+      excluded.push({
+        opportunity,
+        reason: "Does not match a high-priority household keyword"
       });
       continue;
     }
@@ -760,6 +780,9 @@ export function buildWeeklyPlan(
       settings.requireLocalParticipation
         ? "Only locally captured offers with confirmed distances are eligible."
         : "Offers without user-confirmed local participation are labeled before travel.",
+      settings.requireHighPriorityFit
+        ? "Only offers matching a high-priority household keyword are eligible."
+        : "Household keywords adjust ranking but do not remove general-priority offers.",
       `Official offers and nearby-location checks must have evidence from the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"}.`,
       settings.allowConditionalStacking
         ? "Conditional stacks are allowed only because you turned on the local override; official terms still control."

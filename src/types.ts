@@ -206,6 +206,7 @@ export interface WeeklyPlanSettings {
   maximumFriction: "low" | "medium" | "any";
   includeUnconfirmedLocations: boolean;
   requireLocalParticipation: boolean;
+  requireHighPriorityFit: boolean;
   allowConditionalStacking: boolean;
   maxDealsPerTrip: number;
   tripOrder: TripOrder;

@@ -166,5 +166,15 @@ describe("WeeklyPlanner execution controls", () => {
       ...DEFAULT_WEEKLY_PLAN_SETTINGS,
       travelCostPerMile: 0.7
     });
+
+    expect(screen.getByLabelText("High-priority only")).toHaveProperty(
+      "checked",
+      false
+    );
+    fireEvent.click(screen.getByLabelText("High-priority only"));
+    expect(onSettingsChange).toHaveBeenLastCalledWith({
+      ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+      requireHighPriorityFit: true
+    });
   });
 });

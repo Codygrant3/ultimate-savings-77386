@@ -247,6 +247,48 @@ describe("weekly action plan optimizer", () => {
     ).toBe(true);
   });
 
+  it("can require a high-priority household match before planning spend", () => {
+    const highPriority = makeOffer({
+      id: "high-priority",
+      merchant: "School Market",
+      title: "Teen school supplies discount",
+      preferenceSignals: ["teen", "school supplies"]
+    });
+    const generalPriority = makeOffer({
+      id: "general",
+      merchant: "General Market",
+      title: "General grocery coupon"
+    });
+
+    const unrestricted = buildWeeklyPlan(
+      [highPriority, generalPriority],
+      { weeklyBudget: 40, maxTrips: 2 },
+      today
+    );
+    const priorityOnly = buildWeeklyPlan(
+      [highPriority, generalPriority],
+      {
+        weeklyBudget: 40,
+        maxTrips: 2,
+        requireHighPriorityFit: true
+      },
+      today
+    );
+
+    expect(unrestricted.trips).toHaveLength(2);
+    expect(priorityOnly.trips.map(({ merchant }) => merchant)).toEqual([
+      "School Market"
+    ]);
+    expect(
+      priorityOnly.excluded.find(
+        ({ opportunity }) => opportunity.id === "general"
+      )?.reason
+    ).toBe("Does not match a high-priority household keyword");
+    expect(priorityOnly.assumptions).toContain(
+      "Only offers matching a high-priority household keyword are eligible."
+    );
+  });
+
   it("does not treat a checked distance as proof of local promotion participation", () => {
     const plan = buildWeeklyPlan([makeOffer({ id: "catalog-local" })], {}, today);
 

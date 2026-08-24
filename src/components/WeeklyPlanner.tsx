@@ -254,6 +254,19 @@ export function WeeklyPlanner({
           />
           <span>Require confirmed participation</span>
         </label>
+        <label className="planner-toggle">
+          <input
+            type="checkbox"
+            checked={settings.requireHighPriorityFit}
+            onChange={(event) =>
+              updateSetting(
+                "requireHighPriorityFit",
+                event.target.checked
+              )
+            }
+          />
+          <span>High-priority only</span>
+        </label>
       </section>
 
       <p className="plan-note">

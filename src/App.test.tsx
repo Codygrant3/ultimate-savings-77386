@@ -448,6 +448,11 @@ describe("Savings Desk interactions", () => {
       window.localStorage.getItem("savings-desk:weekly-plan-settings")
     ).toContain('"requireLocalParticipation":true');
 
+    fireEvent.click(screen.getByLabelText("High-priority only"));
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"requireHighPriorityFit":true');
+
     fireEvent.change(screen.getByLabelText("Trip order"), {
       target: { value: "distance" }
     });
@@ -460,6 +465,10 @@ describe("Savings Desk interactions", () => {
     expect(screen.getByLabelText("Weekly spend budget")).toHaveProperty("value", "20");
     expect(screen.getByLabelText("Trip order")).toHaveProperty("value", "distance");
     expect(screen.getByLabelText("Require confirmed participation")).toHaveProperty(
+      "checked",
+      true
+    );
+    expect(screen.getByLabelText("High-priority only")).toHaveProperty(
       "checked",
       true
     );
