@@ -5,6 +5,7 @@ import type {
   LocalMerchantInventory,
   Opportunity,
   LearnedPreferences,
+  ScoringWeights,
   PreferenceEvidence,
   ScoreFactor,
   ScoredOpportunity
@@ -47,6 +48,85 @@ function learnedHistoryDetail(
   return `Learned history: ${count} result${count === 1 ? "" : "s"}, ${money(
     evidence.confirmedSavings
   )} confirmed`;
+}
+
+export const DEFAULT_SCORING_WEIGHTS: ScoringWeights = {
+  evidence: 18,
+  dollarValue: 24,
+  savingsRate: 6,
+  householdFit: 10,
+  localRelevance: 8,
+  timing: 10,
+  effort: 9,
+  requiredSpend: 8,
+  stackability: 7
+};
+
+const SCORING_WEIGHT_KEYS = [
+  "evidence",
+  "dollarValue",
+  "savingsRate",
+  "householdFit",
+  "localRelevance",
+  "timing",
+  "effort",
+  "requiredSpend",
+  "stackability"
+] as const;
+
+export function effectiveScoringWeights(
+  rawWeights?: Partial<ScoringWeights>
+): ScoringWeights {
+  if (!rawWeights) return DEFAULT_SCORING_WEIGHTS;
+
+  const bounded: ScoringWeights = {
+    evidence: 0,
+    dollarValue: 0,
+    savingsRate: 0,
+    householdFit: 0,
+    localRelevance: 0,
+    timing: 0,
+    effort: 0,
+    requiredSpend: 0,
+    stackability: 0
+  };
+  for (const key of SCORING_WEIGHT_KEYS) {
+    const parsed = Number(rawWeights[key]);
+    bounded[key] = Number.isFinite(parsed) ? clamp(parsed, 0, 50) : 0;
+  }
+  const total = SCORING_WEIGHT_KEYS.reduce(
+    (sum, key) => sum + bounded[key],
+    0
+  );
+  if (total <= 0) return DEFAULT_SCORING_WEIGHTS;
+
+  const scaled = SCORING_WEIGHT_KEYS.map((key) => (bounded[key] / total) * 100);
+  const normalized = scaled.map((weight) => Math.floor(weight));
+  let remaining = 100 - normalized.reduce((sum, weight) => sum + weight, 0);
+  const remainderOrder = scaled
+    .map((weight, index) => ({ index, fraction: weight - Math.floor(weight) }))
+    .sort((first, second) => second.fraction - first.fraction);
+
+  for (
+    let index = 0;
+    index < remainderOrder.length && remaining > 0;
+    index += 1
+  ) {
+    normalized[remainderOrder[index].index] += 1;
+    remaining -= 1;
+  }
+
+  return {
+    evidence: normalized[0],
+    dollarValue: normalized[1],
+    savingsRate: normalized[2],
+    householdFit: normalized[3],
+    localRelevance: normalized[4],
+    timing: normalized[5],
+    effort: normalized[6],
+    requiredSpend: normalized[7],
+    stackability: normalized[8]
+  };
 }
 
 export function isExpired(opportunity: Opportunity, today = new Date()): boolean {
@@ -368,9 +448,11 @@ export function scoreOpportunity(
   opportunity: Opportunity,
   today = new Date(),
   learned?: LearnedPreferences,
-  inventory?: LocalMerchantInventory
+  inventory?: LocalMerchantInventory,
+  rawScoringWeights?: Partial<ScoringWeights>
 ): ScoredOpportunity {
   const proximity = localRelevance(opportunity, inventory);
+  const selectedWeights = effectiveScoringWeights(rawScoringWeights);
   const factors = [
     evidenceQuality(opportunity, today),
     valueQuality(opportunity),
@@ -388,7 +470,17 @@ export function scoreOpportunity(
     spendEfficiency(opportunity),
     stackability(opportunity)
   ];
-  const weights = [18, 24, 6, 10, 8, 10, 9, 8, 7];
+  const weights = [
+    selectedWeights.evidence,
+    selectedWeights.dollarValue,
+    selectedWeights.savingsRate,
+    selectedWeights.householdFit,
+    selectedWeights.localRelevance,
+    selectedWeights.timing,
+    selectedWeights.effort,
+    selectedWeights.requiredSpend,
+    selectedWeights.stackability
+  ];
   const labels = [
     "Evidence",
     "Dollar value",
@@ -437,7 +529,8 @@ export function rankOpportunities(
   opportunities: Opportunity[],
   today = new Date(),
   learned?: LearnedPreferences,
-  inventory?: LocalMerchantInventory
+  inventory?: LocalMerchantInventory,
+  scoringWeights?: Partial<ScoringWeights>
 ): ScoredOpportunity[] {
   return opportunities
     .filter(
@@ -445,7 +538,13 @@ export function rankOpportunities(
         !isExpired(opportunity, today) && !isExcludedByPreferences(opportunity)
     )
     .map((opportunity) =>
-      scoreOpportunity(opportunity, today, learned, inventory)
+      scoreOpportunity(
+        opportunity,
+        today,
+        learned,
+        inventory,
+        scoringWeights
+      )
     )
     .sort((first, second) => {
       if (second.score !== first.score) return second.score - first.score;

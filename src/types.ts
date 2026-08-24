@@ -141,6 +141,18 @@ export interface ValueAlertSettings {
   maximumFriction: "low" | "medium" | "any";
 }
 
+export interface ScoringWeights {
+  evidence: number;
+  dollarValue: number;
+  savingsRate: number;
+  householdFit: number;
+  localRelevance: number;
+  timing: number;
+  effort: number;
+  requiredSpend: number;
+  stackability: number;
+}
+
 export interface ValueAlert {
   id: string;
   merchant: string;

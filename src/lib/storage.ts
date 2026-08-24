@@ -2,6 +2,7 @@ import type {
   GroceryWatchItem,
   PriceAlert,
   ReceiptEntry,
+  ScoringWeights,
   CandidateReviews,
   ValueAlertSettings,
   WeeklyPlanSettings
@@ -19,6 +20,7 @@ const VALUE_ALERT_SETTINGS_KEY = "savings-desk:value-alert-settings";
 const ACKNOWLEDGED_VALUE_ALERTS_KEY = "savings-desk:value-alerts-acknowledged";
 const CANDIDATE_REVIEWS_KEY = "savings-desk:candidate-reviews";
 const WEEKLY_PLAN_SETTINGS_KEY = "savings-desk:weekly-plan-settings";
+const SCORING_WEIGHTS_KEY = "savings-desk:scoring-weights";
 
 function readIds(key: string): string[] {
   try {
@@ -232,4 +234,21 @@ export function writeWeeklyPlanSettings(
     JSON.stringify(settings)
   );
   return settings;
+}
+
+export function readScoringWeights(
+  defaults: ScoringWeights
+): ScoringWeights {
+  try {
+    const value = window.localStorage.getItem(SCORING_WEIGHTS_KEY);
+    if (value === null) return defaults;
+    return { ...defaults, ...(JSON.parse(value) as Partial<ScoringWeights>) };
+  } catch {
+    return defaults;
+  }
+}
+
+export function writeScoringWeights(weights: ScoringWeights): ScoringWeights {
+  window.localStorage.setItem(SCORING_WEIGHTS_KEY, JSON.stringify(weights));
+  return weights;
 }

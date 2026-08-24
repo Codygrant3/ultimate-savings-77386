@@ -48,6 +48,30 @@ describe("Savings Desk interactions", () => {
     );
   });
 
+  it("persists local ranking priorities and applies them to scoring", () => {
+    render(<App />);
+
+    expect(screen.getByLabelText("Evidence priority")).toHaveProperty(
+      "value",
+      "18"
+    );
+
+    fireEvent.change(screen.getByLabelText("Dollar value priority"), {
+      target: { value: "40" }
+    });
+
+    expect(
+      window.localStorage.getItem("savings-desk:scoring-weights")
+    ).toContain('"dollarValue":40');
+
+    cleanup();
+    render(<App />);
+    expect(screen.getByLabelText("Dollar value priority")).toHaveProperty(
+      "value",
+      "40"
+    );
+  });
+
   it("shows the preference-filtered value and offer count", () => {
     render(<App />);
 

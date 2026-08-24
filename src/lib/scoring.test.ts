@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import type { LocalMerchantInventory, Opportunity } from "../types";
 import { buildLearnedPreferences } from "./preferences";
 import {
+  DEFAULT_SCORING_WEIGHTS,
+  effectiveScoringWeights,
   isExcludedByPreferences,
   isExpired,
   rankOpportunities,
@@ -243,6 +245,79 @@ describe("savings scoring", () => {
         baseline.scoreBreakdown.find(({ label }) => label === "Household fit")?.points ?? 0
       );
     expect(fitFactor?.detail).toContain("Learned history:");
+  });
+
+  it("normalizes custom ranking priorities into a bounded 100-point contract", () => {
+    const weights = effectiveScoringWeights({
+      evidence: 80,
+      dollarValue: 20,
+      savingsRate: Number.NaN
+    });
+    const total = Object.values(weights).reduce((sum, weight) => sum + weight, 0);
+
+    expect(weights.evidence).toBeGreaterThan(weights.dollarValue);
+    expect(weights.savingsRate).toBe(0);
+    expect(total).toBe(100);
+    expect(effectiveScoringWeights()).toEqual(DEFAULT_SCORING_WEIGHTS);
+    expect(effectiveScoringWeights({})).toEqual(DEFAULT_SCORING_WEIGHTS);
+  });
+
+  it("changes rankings according to household scoring priorities", () => {
+    const today = new Date("2026-07-23T12:00:00");
+    const highValue = {
+      ...baseOpportunity,
+      id: "high-value",
+      estimatedSavings: 50,
+      source: { ...baseOpportunity.source, checkedOn: "2026-06-01" }
+    };
+    const freshEvidence = {
+      ...baseOpportunity,
+      id: "fresh-evidence",
+      estimatedSavings: 2
+    };
+    const valueFirstWeights = {
+      ...DEFAULT_SCORING_WEIGHTS,
+      dollarValue: 45,
+      evidence: 5,
+      savingsRate: 1,
+      householdFit: 1,
+      localRelevance: 1,
+      timing: 1,
+      effort: 1,
+      requiredSpend: 1,
+      stackability: 1
+    };
+    const evidenceFirstWeights = {
+      ...DEFAULT_SCORING_WEIGHTS,
+      dollarValue: 5,
+      evidence: 45,
+      savingsRate: 1,
+      householdFit: 1,
+      localRelevance: 1,
+      timing: 1,
+      effort: 1,
+      requiredSpend: 1,
+      stackability: 1
+    };
+
+    expect(
+      rankOpportunities(
+        [highValue, freshEvidence],
+        today,
+        undefined,
+        undefined,
+        valueFirstWeights
+      )[0].id
+    ).toBe("high-value");
+    expect(
+      rankOpportunities(
+        [highValue, freshEvidence],
+        today,
+        undefined,
+        undefined,
+        evidenceFirstWeights
+      )[0].id
+    ).toBe("fresh-evidence");
   });
 
   it("uses a checked merchant location with a conservative distance score", () => {

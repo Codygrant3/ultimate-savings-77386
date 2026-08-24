@@ -33,6 +33,7 @@ import {
 import { useMemo, useState } from "react";
 import opportunitiesData from "./data/opportunities.json";
 import localMerchantInventoryData from "./data/local-merchant-inventory.json";
+import { CriteriaControls } from "./components/CriteriaControls";
 import { GroceryDashboard, SavingsTools } from "./components/SavingsTools";
 import { SettlementsDashboard } from "./components/SettlementsDashboard";
 import settlementsData from "./data/settlements.json";
@@ -40,6 +41,7 @@ import { buildLearnedPreferences } from "./lib/preferences";
 import {
   formatCurrency,
   formatDate,
+  DEFAULT_SCORING_WEIGHTS,
   rankOpportunities,
   startOfWeek
 } from "./lib/scoring";
@@ -60,7 +62,9 @@ import {
   readValueAlertSettings,
   readWeeklyPlanSettings,
   writeAcknowledgedValueAlertIds,
+  readScoringWeights,
   writeValueAlertSettings,
+  writeScoringWeights,
   writeWeeklyPlanSettings
 } from "./lib/storage";
 import type {
@@ -69,6 +73,7 @@ import type {
   LocalMerchantInventory,
   Opportunity,
   ReceiptEntry,
+  ScoringWeights,
   ScoredOpportunity,
   ValueAlertSettings,
   WeeklyPlanSettings,
@@ -360,6 +365,9 @@ export default function App() {
     useState<WeeklyPlanSettings>(() =>
       readWeeklyPlanSettings(DEFAULT_WEEKLY_PLAN_SETTINGS)
     );
+  const [scoringWeights, setScoringWeights] = useState<ScoringWeights>(() =>
+    readScoringWeights(DEFAULT_SCORING_WEIGHTS)
+  );
   const [acknowledgedValueAlertIds, setAcknowledgedValueAlertIds] = useState<
     string[]
   >(readAcknowledgedValueAlertIds);
@@ -374,9 +382,10 @@ export default function App() {
         opportunities,
         analysisDate,
         learnedPreferences,
-        merchantInventory
+        merchantInventory,
+        scoringWeights
       ),
-    [analysisDate, learnedPreferences]
+    [analysisDate, learnedPreferences, scoringWeights]
   );
 
   const verifiedDeals = useMemo(
@@ -456,6 +465,10 @@ export default function App() {
 
   function updateWeeklyPlanSettings(settings: WeeklyPlanSettings) {
     setWeeklyPlanSettings(writeWeeklyPlanSettings(settings));
+  }
+
+  function updateScoringWeights(weights: ScoringWeights) {
+    setScoringWeights(writeScoringWeights(weights));
   }
 
   function acknowledgeValueAlert(id: string) {
@@ -645,6 +658,11 @@ export default function App() {
                   </span>
                 </div>
               </section>
+
+              <CriteriaControls
+                weights={scoringWeights}
+                onWeightsChange={updateScoringWeights}
+              />
 
               <section className="metrics-grid" aria-label="Savings summary">
                 <article className="metric-card">

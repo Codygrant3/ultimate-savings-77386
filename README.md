@@ -5,6 +5,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 ## What works now
 
 - Ranks offers by evidence, value, urgency, required spend, and effort.
+- Lets the household tune relative ranking priorities for evidence, dollar value, percentage savings, fit, proximity, timing, effort, spend efficiency, and stackability. Custom weights are normalized to the bounded 100-point model and stay in local browser storage.
 - Separates verified offers from official rewards programs and unverified research leads.
 - Filters and searches the opportunity list.
 - Saves opportunities and tracks estimated realized savings in browser storage.
