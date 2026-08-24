@@ -26,17 +26,31 @@ const SCORING_WEIGHTS_KEY = "savings-desk:scoring-weights";
 const HOUSEHOLD_PROFILE_KEY = "savings-desk:household-profile";
 const LOCAL_OFFERS_KEY = "savings-desk:local-offers";
 
+const MAX_STORED_IDS = 1_000;
+
+function normalizeStoredIds(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+
+  return Array.from(
+    new Set(
+      value.filter(
+        (id): id is string => typeof id === "string" && id.length > 0
+      )
+    )
+  ).slice(0, MAX_STORED_IDS);
+}
+
 function readIds(key: string): string[] {
   try {
     const value = window.localStorage.getItem(key);
-    return value ? (JSON.parse(value) as string[]) : [];
+    return value ? normalizeStoredIds(JSON.parse(value)) : [];
   } catch {
     return [];
   }
 }
 
 function writeIds(key: string, ids: string[]): void {
-  window.localStorage.setItem(key, JSON.stringify(ids));
+  window.localStorage.setItem(key, JSON.stringify(normalizeStoredIds(ids)));
 }
 
 export function readSavedIds(): string[] {
