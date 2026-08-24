@@ -44,6 +44,8 @@ function stableId(prefix: string, value: string): string {
 
 function amountFromTitle(title: string): string | undefined {
   if (/\bfree\b/i.test(title)) return "Free";
+  const earnedBack = title.match(/(?:earn|get|receive)\s+\$(\d+(?:\.\d{2})?)\s+back/i);
+  if (earnedBack) return `$${earnedBack[1]} back`;
   const dollar = title.match(/\$\d+(?:\.\d{2})?(?:\s*(?:off|back))?/i);
   if (dollar) return dollar[0];
   const percentage = title.match(/\d+(?:\.\d+)?%\s*off/i);

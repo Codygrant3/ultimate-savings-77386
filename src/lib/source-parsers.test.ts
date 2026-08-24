@@ -77,6 +77,7 @@ describe("merchant-specific offer parsers", () => {
     expect(paze?.title).toBe(
       "Wendy's and Paze spend $10 at Wendy's earn $10 back"
     );
+    expect(paze?.amountText).toBe("$10 back");
     expect(paze?.minimumSpend).toBe(10);
     expect(paze?.expirationText).toBe("9/10/26");
   });
