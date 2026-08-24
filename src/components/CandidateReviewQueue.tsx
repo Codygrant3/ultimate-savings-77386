@@ -16,6 +16,7 @@ import {
 import {
   buildCandidateReviewContext,
   createLocallyVerifiedOffer,
+  findLocalOfferConflict,
   LOCAL_OFFER_CATEGORIES,
   type LocalVerifiedOfferDraft
 } from "../lib/candidate-review";
@@ -61,6 +62,7 @@ export function CandidateReviewQueue({
     expiresOn: undefined,
     friction: "low",
     stackNote: "",
+    savingsRate: undefined,
     distanceMiles: undefined,
     localParticipationConfirmed: false,
     officialTermsConfirmed: false
@@ -90,10 +92,19 @@ export function CandidateReviewQueue({
   const visibleCandidates = useMemo(() => {
     return candidates.filter((candidate) => {
       const status = reviews[candidate.id];
-      if (filter === "pending") return !status;
+      if (filter === "pending") {
+        const localId = `local-${candidate.id}`;
+        return (
+          !status ||
+          opportunities.some(
+            (opportunity) =>
+              opportunity.id === localId && opportunity.localRecord === true
+          )
+        );
+      }
       return status === filter;
     });
-  }, [candidates, filter, reviews]);
+  }, [candidates, filter, opportunities, reviews]);
 
   const reviewContexts = useMemo(() => {
     return new Map(
@@ -145,9 +156,13 @@ export function CandidateReviewQueue({
   function openVerificationForm(candidate: OfferCandidate) {
     setDraftCandidateId(candidate.id);
     setDraftErrors([]);
+    const conflict = findLocalOfferConflict(candidate, opportunities);
+    const existing =
+      conflict.status === "replace" ? conflict.opportunity : undefined;
     setDraft({
       category:
-        candidate.sourceId.includes("heb") ||
+        existing?.category ??
+        (candidate.sourceId.includes("heb") ||
         candidate.sourceId.includes("target") ||
         candidate.sourceId.includes("kroger")
           ? "grocery"
@@ -155,15 +170,16 @@ export function CandidateReviewQueue({
               candidate.sourceId.includes("costa") ||
               candidate.sourceId.includes("rainbow")
             ? "auto"
-            : "restaurants",
-      estimatedSavings: 0,
-      minimumSpend: candidate.minimumSpend ?? 0,
-      isFree: false,
-      expiresOn: undefined,
-      friction: "low",
-      stackNote: "",
-      distanceMiles: undefined,
-      localParticipationConfirmed: false,
+            : "restaurants"),
+      estimatedSavings: existing?.estimatedSavings ?? 0,
+      minimumSpend: existing?.minimumSpend ?? candidate.minimumSpend ?? 0,
+      isFree: existing?.isFree ?? false,
+      expiresOn: existing?.expiresOn,
+      friction: existing?.friction ?? "low",
+      stackNote: existing?.stackNote ?? "",
+      savingsRate: existing?.savingsRate,
+      distanceMiles: existing?.distanceMiles,
+      localParticipationConfirmed: existing?.localRecord === true,
       officialTermsConfirmed: false
     });
   }
@@ -178,6 +194,14 @@ export function CandidateReviewQueue({
   function submitVerification() {
     const candidate = candidates.find(({ id }) => id === draftCandidateId);
     if (!candidate) return;
+
+    const conflict = findLocalOfferConflict(candidate, opportunities);
+    if (conflict.status === "blocked") {
+      setDraftErrors([
+        `Already tracked as ${conflict.opportunity.title}. Remove the existing record before capturing a replacement.`
+      ]);
+      return;
+    }
 
     const result = createLocallyVerifiedOffer(candidate, {
       ...draft,
@@ -428,6 +452,25 @@ export function CandidateReviewQueue({
               />
             </label>
             <label>
+              <span>Savings rate %</span>
+              <input
+                aria-label="Savings rate percent"
+                type="number"
+                min="1"
+                max="100"
+                step="0.1"
+                value={draft.savingsRate ?? ""}
+                onChange={(event) =>
+                  updateDraft(
+                    "savingsRate",
+                    event.target.value === ""
+                      ? undefined
+                      : Number(event.target.value)
+                  )
+                }
+              />
+            </label>
+            <label>
               <span>Minimum spend</span>
               <input
                 type="number"
@@ -524,7 +567,15 @@ export function CandidateReviewQueue({
           </div>
 
           <button type="submit" className="review-action review-action--keep">
-            <BadgeCheck size={14} aria-hidden="true" /> Add locally recorded deal
+            <BadgeCheck size={14} aria-hidden="true" />
+            {(() => {
+              const candidate = candidates.find(({ id }) => id === draftCandidateId);
+              const conflict =
+                candidate && findLocalOfferConflict(candidate, opportunities);
+              return conflict?.status === "replace"
+                ? "Update locally recorded deal"
+                : "Add locally recorded deal";
+            })()}
           </button>
         </form>
       )}

@@ -76,6 +76,21 @@ export function toggleStoredId(
   return next;
 }
 
+export function removeStoredId(
+  key: "saved" | "redeemed" | "reminder",
+  id: string
+): string[] {
+  const storageKey =
+    key === "saved"
+      ? SAVED_KEY
+      : key === "redeemed"
+        ? REDEEMED_KEY
+        : REMINDERS_KEY;
+  const next = readIds(storageKey).filter((currentId) => currentId !== id);
+  writeIds(storageKey, next);
+  return next;
+}
+
 export function readSettlementSavedIds(): string[] {
   return readIds(SETTLEMENT_SAVED_KEY);
 }

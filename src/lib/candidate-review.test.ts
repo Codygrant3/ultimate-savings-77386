@@ -3,7 +3,8 @@ import type { OfferCandidate, Opportunity } from "../types";
 import {
   buildCandidateReviewContext,
   createLocallyVerifiedOffer,
-  findCandidateMatch
+  findCandidateMatch,
+  findLocalOfferConflict
 } from "./candidate-review";
 
 const tracked: Opportunity[] = [
@@ -151,6 +152,31 @@ describe("candidate review matching", () => {
     expect(match?.minimumSpendMatches).toBe(true);
   });
 
+  it("distinguishes a tracked duplicate from an update to the same local record", () => {
+    const localRecord = {
+      ...tracked[0],
+      id: "local-candidate",
+      localRecord: true as const
+    };
+
+    expect(findLocalOfferConflict(candidate(), tracked)).toEqual({
+      status: "blocked",
+      opportunity: tracked[0]
+    });
+    expect(
+      findLocalOfferConflict(candidate(), [...tracked, localRecord])
+    ).toEqual({
+      status: "replace",
+      opportunity: localRecord
+    });
+    expect(
+      findLocalOfferConflict(
+        candidate({ merchant: "New Market", title: "$15 off groceries" }),
+        []
+      )
+    ).toEqual({ status: "none" });
+  });
+
   it("requires explicit official-source confirmation before local verification", () => {
     const result = createLocallyVerifiedOffer(
       candidate(),
@@ -183,6 +209,7 @@ describe("candidate review matching", () => {
         expiresOn: "2026-09-30",
         friction: "low",
         stackNote: "One coupon per visit",
+        savingsRate: 30,
         distanceMiles: 4.2,
         localParticipationConfirmed: true,
         officialTermsConfirmed: true
@@ -197,6 +224,7 @@ describe("candidate review matching", () => {
     expect(result.offer.localRecord).toBe(true);
     expect(result.offer.estimatedSavings).toBe(15);
     expect(result.offer.minimumSpend).toBe(25);
+    expect(result.offer.savingsRate).toBe(30);
     expect(result.offer.expiresOn).toBe("2026-09-30");
     expect(result.offer.stackNote).toBe("One coupon per visit");
     expect(result.offer.locationNote).toContain("locally confirmed");
@@ -223,6 +251,29 @@ describe("candidate review matching", () => {
     if (result.status !== "invalid") return;
     expect(result.errors).toContain(
       "Enter a confirmed distance from 0 to 50 miles"
+    );
+  });
+
+  it("rejects an out-of-range published savings rate", () => {
+    const result = createLocallyVerifiedOffer(
+      candidate(),
+      {
+        category: "auto",
+        estimatedSavings: 15,
+        minimumSpend: 0,
+        isFree: false,
+        friction: "low",
+        savingsRate: 101,
+        localParticipationConfirmed: false,
+        officialTermsConfirmed: true
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(result.status).toBe("invalid");
+    if (result.status !== "invalid") return;
+    expect(result.errors).toContain(
+      "Enter a savings rate from 1 to 100 percent"
     );
   });
 });

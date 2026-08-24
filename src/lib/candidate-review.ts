@@ -195,6 +195,25 @@ export function buildCandidateReviewContext(
   return match ? { status: "existing", match } : { status: "new" };
 }
 
+export type LocalOfferConflict =
+  | { status: "none" }
+  | { status: "replace"; opportunity: Opportunity }
+  | { status: "blocked"; opportunity: Opportunity };
+
+export function findLocalOfferConflict(
+  candidate: OfferCandidate,
+  opportunities: Opportunity[]
+): LocalOfferConflict {
+  const match = findCandidateMatch(candidate, opportunities);
+  if (!match) return { status: "none" };
+
+  const expectedId = `local-${candidate.id}`;
+  return match.opportunity.localRecord === true &&
+    match.opportunity.id === expectedId
+    ? { status: "replace", opportunity: match.opportunity }
+    : { status: "blocked", opportunity: match.opportunity };
+}
+
 export interface LocalVerifiedOfferDraft {
   category: Category;
   estimatedSavings: number;
@@ -203,6 +222,7 @@ export interface LocalVerifiedOfferDraft {
   expiresOn?: string;
   friction: Friction;
   stackNote?: string;
+  savingsRate?: number;
   distanceMiles?: number;
   localParticipationConfirmed: boolean;
   officialTermsConfirmed: boolean;
@@ -243,6 +263,7 @@ export function createLocallyVerifiedOffer(
   const estimatedSavings = Number(draft.estimatedSavings);
   const minimumSpend = Number(draft.minimumSpend);
   const distanceMiles = draft.distanceMiles;
+  const savingsRate = draft.savingsRate;
   const checkedOn = today.toISOString().slice(0, 10);
 
   if (!draft.officialTermsConfirmed) {
@@ -262,6 +283,12 @@ export function createLocallyVerifiedOffer(
   }
   if (draft.expiresOn && !isValidIsoDate(draft.expiresOn)) {
     errors.push("Use a valid expiration date");
+  }
+  if (
+    savingsRate !== undefined &&
+    (!Number.isFinite(savingsRate) || savingsRate <= 0 || savingsRate > 100)
+  ) {
+    errors.push("Enter a savings rate from 1 to 100 percent");
   }
   if (!["low", "medium", "high"].includes(draft.friction)) {
     errors.push("Choose a valid redemption effort");
@@ -297,6 +324,7 @@ export function createLocallyVerifiedOffer(
     estimatedSavings,
     minimumSpend,
     isFree: draft.isFree,
+    ...(savingsRate !== undefined ? { savingsRate } : {}),
     ...(draft.expiresOn ? { expiresOn: draft.expiresOn } : {}),
     ...(draft.localParticipationConfirmed
       ? { distanceMiles }

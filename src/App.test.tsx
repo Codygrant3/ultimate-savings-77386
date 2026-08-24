@@ -200,13 +200,13 @@ describe("Savings Desk interactions", () => {
               parsedOfferCandidates: [
                 {
                   id: "test-candidate",
-                  sourceId: "take5-rayford",
-                  merchant: "Take 5 Oil Change",
-                  title: "$15 off any oil change",
+                  sourceId: "acme-grocery",
+                  merchant: "Acme Market",
+                  title: "$12 off a $40 grocery basket",
                   url: "https://example.com/coupon",
-                  amountText: "$15 Off",
+                  amountText: "$12 Off",
                   candidateScore: 82,
-                  candidateReasons: ["$15 Off value"]
+                  candidateReasons: ["$12 Off value"]
                 }
               ]
             })
@@ -223,12 +223,15 @@ describe("Savings Desk interactions", () => {
     fireEvent.click(screen.getByRole("button", { name: "Savings tools" }));
 
     expect(await screen.findByRole("heading", { name: "Discovery review queue" })).toBeTruthy();
-    expect(screen.getByText("$15 off any oil change")).toBeTruthy();
+    expect(screen.getByText("$12 off a $40 grocery basket")).toBeTruthy();
     expect(screen.getByText("82/100")).toBeTruthy();
 
-    fireEvent.click(screen.getByRole("button", { name: "Capture terms for $15 off any oil change" }));
+    fireEvent.click(screen.getByRole("button", { name: "Capture terms for $12 off a $40 grocery basket" }));
     fireEvent.change(screen.getByLabelText("Dollar estimate"), {
-      target: { value: "15" }
+      target: { value: "12" }
+    });
+    fireEvent.change(screen.getByLabelText("Savings rate percent"), {
+      target: { value: "30" }
     });
     fireEvent.change(screen.getByLabelText("Minimum spend"), {
       target: { value: "25" }
@@ -242,15 +245,35 @@ describe("Savings Desk interactions", () => {
     expect(
       window.localStorage.getItem("savings-desk:local-offers")
     ).toContain('"id":"local-test-candidate"');
+    expect(
+      window.localStorage.getItem("savings-desk:local-offers")
+    ).toContain('"savingsRate":30');
+
+    fireEvent.click(screen.getByRole("button", { name: "Deal feed" }));
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: "Save $12 off a $40 grocery basket"
+      })
+    );
+    expect(window.localStorage.getItem("savings-desk:saved")).toContain(
+      "local-test-candidate"
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: "Savings tools" }));
 
     fireEvent.click(
       screen.getByRole("button", {
-        name: "Remove locally recorded deal $15 off any oil change"
+        name: "Remove locally recorded deal $12 off a $40 grocery basket"
       })
     );
     expect(window.localStorage.getItem("savings-desk:local-offers")).toBe("[]");
+    expect(window.localStorage.getItem("savings-desk:saved")).toBe("[]");
 
-    fireEvent.click(screen.getByRole("button", { name: "Keep $15 off any oil change" }));
+    fireEvent.click(
+      await screen.findByRole("button", {
+        name: "Keep $12 off a $40 grocery basket"
+      })
+    );
     expect(window.localStorage.getItem("savings-desk:candidate-reviews")).toContain(
       "keep"
     );

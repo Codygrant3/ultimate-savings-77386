@@ -56,6 +56,7 @@ import {
   readReceipts,
   readRedeemedIds,
   readSavedIds,
+  removeStoredId,
   toggleStoredId,
   writeReceipts,
   readAcknowledgedValueAlertIds,
@@ -492,6 +493,8 @@ export default function App() {
     setLocalOffers(
       writeLocalOffers(localOffers.filter((offer) => offer.id !== id))
     );
+    setSavedIds(removeStoredId("saved", id));
+    setRedeemedIds(removeStoredId("redeemed", id));
   }
 
   function acknowledgeValueAlert(id: string) {
