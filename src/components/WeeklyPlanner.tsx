@@ -133,6 +133,23 @@ export function WeeklyPlanner({
           />
         </label>
         <label>
+          <span>Maximum source age</span>
+          <input
+            aria-label="Maximum source age"
+            type="number"
+            min="1"
+            max="90"
+            step="1"
+            value={settings.maximumSourceAgeDays}
+            onChange={(event) =>
+              updateSetting(
+                "maximumSourceAgeDays",
+                Number(event.target.value || 1)
+              )
+            }
+          />
+        </label>
+        <label>
           <span>Maximum effort</span>
           <select
             aria-label="Maximum effort"

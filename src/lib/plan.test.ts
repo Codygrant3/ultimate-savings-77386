@@ -470,6 +470,62 @@ describe("weekly action plan optimizer", () => {
     );
   });
 
+  it("excludes offers whose official-source evidence exceeds the freshness limit", () => {
+    const stale = makeOffer({
+      id: "stale-source",
+      merchant: "Stale Market",
+      source: {
+        label: "Official source",
+        url: "https://example.com/stale",
+        checkedOn: "2026-08-06"
+      }
+    });
+
+    const plan = buildWeeklyPlan(
+      [stale],
+      { ...DEFAULT_WEEKLY_PLAN_SETTINGS, maximumSourceAgeDays: 14 },
+      today
+    );
+
+    expect(plan.trips).toHaveLength(0);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "stale-source")
+        ?.reason
+    ).toBe(
+      "Official-source check is 15 days old, beyond the 14-day freshness limit"
+    );
+    expect(plan.assumptions).toContain(
+      "Only offers whose official source was checked within the last 14 days are eligible."
+    );
+  });
+
+  it("requires a source-check date before action planning", () => {
+    const undated = makeOffer({
+      id: "undated-source",
+      merchant: "Undated Market",
+      source: {
+        label: "Official source",
+        url: "https://example.com/undated",
+        checkedOn: ""
+      }
+    });
+
+    const plan = buildWeeklyPlan(
+      [undated],
+      DEFAULT_WEEKLY_PLAN_SETTINGS,
+      today
+    );
+
+    expect(plan.trips).toHaveLength(0);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "undated-source")
+        ?.reason
+    ).toBe("Source-check date is missing");
+    expect(plan.assumptions).toContain(
+      "Only offers whose official source was checked within the last 14 days are eligible."
+    );
+  });
+
   it("keeps an offer that meets the validity window and treats today as valid when no window is set", () => {
     const meetingMinimum = makeOffer({ id: "meets-minimum" });
     const expiringToday = makeOffer({

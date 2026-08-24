@@ -12,6 +12,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   weeklyBudget: 100,
   maxTrips: 3,
   maxDistanceMiles: 10,
+  maximumSourceAgeDays: 14,
   minimumDaysRemaining: 0,
   maximumFriction: "medium",
   includeUnconfirmedLocations: true,
@@ -63,6 +64,14 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
       DEFAULT_WEEKLY_PLAN_SETTINGS.maxDistanceMiles,
       1,
       50
+    ),
+    maximumSourceAgeDays: Math.round(
+      bounded(
+        settings.maximumSourceAgeDays,
+        DEFAULT_WEEKLY_PLAN_SETTINGS.maximumSourceAgeDays,
+        1,
+        90
+      )
     ),
     minimumDaysRemaining: Math.round(
       bounded(
@@ -143,7 +152,20 @@ function effortLimitLabel(
     low: "low-effort",
     medium: "medium-effort",
     any: "any-effort"
-  }[maximumFriction];
+}[maximumFriction];
+}
+
+function sourceAgeInDays(
+  opportunity: ScoredOpportunity,
+  today: Date
+): number | null {
+  const checkedOn = new Date(`${opportunity.source.checkedOn}T12:00:00`);
+  if (!Number.isFinite(checkedOn.getTime())) return null;
+
+  return Math.max(
+    0,
+    Math.floor((today.getTime() - checkedOn.getTime()) / (24 * 60 * 60 * 1000))
+  );
 }
 
 function hasExclusiveStackConflict(deals: DealCandidate[]): boolean {
@@ -308,6 +330,21 @@ export function buildWeeklyPlan(
       excluded.push({
         opportunity,
         reason: "No captured dollar value"
+      });
+      continue;
+    }
+
+    const sourceAge = sourceAgeInDays(opportunity, today);
+    if (
+      sourceAge === null ||
+      sourceAge > settings.maximumSourceAgeDays
+    ) {
+      excluded.push({
+        opportunity,
+        reason:
+          sourceAge === null
+            ? "Source-check date is missing"
+            : `Official-source check is ${sourceAge} days old, beyond the ${settings.maximumSourceAgeDays}-day freshness limit`
       });
       continue;
     }
@@ -591,6 +628,7 @@ export function buildWeeklyPlan(
       settings.includeUnconfirmedLocations
         ? "Unconfirmed locations are labeled and receive a planning penalty."
         : `Distances beyond ${settings.maxDistanceMiles} miles or unconfirmed are excluded.`,
+      `Only offers whose official source was checked within the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"} are eligible.`,
       settings.allowConditionalStacking
         ? "Conditional stacks are allowed only because you turned on the local override; official terms still control."
         : "Only one offer with conditional or undocumented stacking is counted per merchant trip; exclusive offers are planned alone.",

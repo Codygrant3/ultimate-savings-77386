@@ -195,6 +195,7 @@ export interface WeeklyPlanSettings {
   weeklyBudget: number;
   maxTrips: number;
   maxDistanceMiles: number;
+  maximumSourceAgeDays: number;
   minimumDaysRemaining: number;
   maximumFriction: "low" | "medium" | "any";
   includeUnconfirmedLocations: boolean;
