@@ -16,6 +16,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   minimumDaysRemaining: 0,
   maximumFriction: "medium",
   includeUnconfirmedLocations: true,
+  requireLocalParticipation: false,
   allowConditionalStacking: false,
   maxDealsPerTrip: 3,
   tripOrder: "utility"
@@ -93,6 +94,10 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
       typeof settings.includeUnconfirmedLocations === "boolean"
         ? settings.includeUnconfirmedLocations
         : DEFAULT_WEEKLY_PLAN_SETTINGS.includeUnconfirmedLocations,
+    requireLocalParticipation:
+      typeof settings.requireLocalParticipation === "boolean"
+        ? settings.requireLocalParticipation
+        : DEFAULT_WEEKLY_PLAN_SETTINGS.requireLocalParticipation,
     allowConditionalStacking:
       typeof settings.allowConditionalStacking === "boolean"
         ? settings.allowConditionalStacking
@@ -197,6 +202,14 @@ function hasUnconfirmedStackConflict(
   }).length;
 
   return deals.length > 1 && conditionalCount > 1;
+}
+
+function hasConfirmedLocalParticipation(opportunity: ScoredOpportunity): boolean {
+  return (
+    opportunity.localRecord === true &&
+    opportunity.distanceMiles !== undefined &&
+    opportunity.distanceBasis === "offer"
+  );
 }
 
 export function daysUntilExpiration(
@@ -383,6 +396,17 @@ export function buildWeeklyPlan(
       excluded.push({
         opportunity,
         reason: "Location distance not confirmed"
+      });
+      continue;
+    }
+
+    if (
+      settings.requireLocalParticipation &&
+      !hasConfirmedLocalParticipation(opportunity)
+    ) {
+      excluded.push({
+        opportunity,
+        reason: "Local participation is not confirmed on this device"
       });
       continue;
     }
@@ -651,6 +675,9 @@ export function buildWeeklyPlan(
       settings.includeUnconfirmedLocations
         ? "Unconfirmed locations are labeled and receive a planning penalty."
         : `Distances beyond ${settings.maxDistanceMiles} miles or unconfirmed are excluded.`,
+      settings.requireLocalParticipation
+        ? "Only locally captured offers with confirmed distances are eligible."
+        : "Offers without user-confirmed local participation are labeled before travel.",
       `Only offers whose official source was checked within the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"} are eligible.`,
       settings.allowConditionalStacking
         ? "Conditional stacks are allowed only because you turned on the local override; official terms still control."

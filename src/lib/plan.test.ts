@@ -217,6 +217,36 @@ describe("weekly action plan optimizer", () => {
     ).toBe(false);
   });
 
+  it("can require locally confirmed participation before planning a trip", () => {
+    const catalogOffer = makeOffer({ id: "catalog-distance-only" });
+    const localOffer = makeOffer({
+      id: "local-participation-confirmed",
+      localRecord: true,
+      distanceBasis: "offer"
+    });
+
+    const plan = buildWeeklyPlan(
+      [catalogOffer, localOffer],
+      {
+        ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+        maxDealsPerTrip: 2,
+        requireLocalParticipation: true
+      },
+      today
+    );
+
+    expect(plan.trips[0].deals.map(({ opportunity }) => opportunity.id)).toEqual([
+      "local-participation-confirmed"
+    ]);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "catalog-distance-only")
+        ?.reason
+    ).toBe("Local participation is not confirmed on this device");
+    expect(plan.assumptions).toContain(
+      "Only locally captured offers with confirmed distances are eligible."
+    );
+  });
+
   it("does not combine multiple new-customer rewards at one merchant", () => {
     const stronger = makeOffer({
       id: "new-member-stronger",

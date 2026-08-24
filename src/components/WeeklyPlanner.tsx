@@ -222,6 +222,19 @@ export function WeeklyPlanner({
           />
           <span>Include unconfirmed locations</span>
         </label>
+        <label className="planner-toggle">
+          <input
+            type="checkbox"
+            checked={settings.requireLocalParticipation}
+            onChange={(event) =>
+              updateSetting(
+                "requireLocalParticipation",
+                event.target.checked
+              )
+            }
+          />
+          <span>Require confirmed participation</span>
+        </label>
       </section>
 
       <p className="plan-note">
