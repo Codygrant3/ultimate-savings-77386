@@ -173,6 +173,7 @@ export interface WeeklyPlanSettings {
   weeklyBudget: number;
   maxTrips: number;
   maxDistanceMiles: number;
+  minimumDaysRemaining: number;
   includeUnconfirmedLocations: boolean;
   maxDealsPerTrip: number;
 }

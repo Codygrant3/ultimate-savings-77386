@@ -190,6 +190,48 @@ describe("weekly action plan optimizer", () => {
     expect(reasons["bad-date"]).toBe("Invalid expiration evidence");
   });
 
+  it("excludes offers below the requested minimum validity window", () => {
+    const plan = buildWeeklyPlan(
+      [makeOffer({ id: "too-soon", expiresOn: "2026-08-23" })],
+      { ...DEFAULT_WEEKLY_PLAN_SETTINGS, minimumDaysRemaining: 3 },
+      today
+    );
+
+    expect(plan.trips).toHaveLength(0);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "too-soon")
+        ?.reason
+    ).toBe("Ends within 3-day validity limit");
+    expect(plan.assumptions).toContain(
+      "Offers must remain valid for at least 3 more days; this is planning math, not an eligibility guarantee."
+    );
+  });
+
+  it("keeps an offer that meets the validity window and treats today as valid when no window is set", () => {
+    const meetingMinimum = makeOffer({ id: "meets-minimum" });
+    const expiringToday = makeOffer({
+      id: "expiring-today",
+      merchant: "Today Market",
+      expiresOn: "2026-08-21"
+    });
+
+    const constrained = buildWeeklyPlan(
+      [meetingMinimum],
+      { ...DEFAULT_WEEKLY_PLAN_SETTINGS, minimumDaysRemaining: 10 },
+      today
+    );
+    const unconstrained = buildWeeklyPlan(
+      [expiringToday],
+      DEFAULT_WEEKLY_PLAN_SETTINGS,
+      today
+    );
+
+    expect(constrained.trips[0].deals[0].opportunity.id).toBe("meets-minimum");
+    expect(unconstrained.trips[0].deals[0].opportunity.id).toBe(
+      "expiring-today"
+    );
+  });
+
   it("supports a zero-dollar plan without indexing an undefined budget state", () => {
     const freeReward = makeOffer({
       id: "free-reward",

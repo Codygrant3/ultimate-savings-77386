@@ -10,6 +10,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   weeklyBudget: 100,
   maxTrips: 3,
   maxDistanceMiles: 10,
+  minimumDaysRemaining: 0,
   includeUnconfirmedLocations: true,
   maxDealsPerTrip: 3
 };
@@ -57,6 +58,14 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
       1,
       50
     ),
+    minimumDaysRemaining: Math.round(
+      bounded(
+        settings.minimumDaysRemaining,
+        DEFAULT_WEEKLY_PLAN_SETTINGS.minimumDaysRemaining,
+        0,
+        30
+      )
+    ),
     includeUnconfirmedLocations:
       typeof settings.includeUnconfirmedLocations === "boolean"
         ? settings.includeUnconfirmedLocations
@@ -99,6 +108,25 @@ function isNewCustomerOffer(opportunity: ScoredOpportunity): boolean {
   return (
     /\b(?:new|first)\b[^.]*\b(?:app|account|member|user)s?\b/.test(searchable) ||
     /\bnew app users?\b/.test(searchable)
+  );
+}
+
+export function daysUntilExpiration(
+  expiresOn: string,
+  today = new Date()
+): number {
+  const expirationEnd = new Date(`${expiresOn}T23:59:59`);
+  if (!Number.isFinite(expirationEnd.getTime())) return Number.NaN;
+
+  const expirationDay = new Date(
+    expirationEnd.getFullYear(),
+    expirationEnd.getMonth(),
+    expirationEnd.getDate()
+  );
+  const todayDay = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+  return Math.round(
+    (expirationDay.getTime() - todayDay.getTime()) / (24 * 60 * 60 * 1000)
   );
 }
 
@@ -195,6 +223,18 @@ export function buildWeeklyPlan(
 
     if (expirationEnd && expirationEnd.getTime() < today.getTime()) {
       excluded.push({ opportunity, reason: "Expired" });
+      continue;
+    }
+
+    if (
+      opportunity.expiresOn &&
+      daysUntilExpiration(opportunity.expiresOn, today) <
+        settings.minimumDaysRemaining
+    ) {
+      excluded.push({
+        opportunity,
+        reason: `Ends within ${settings.minimumDaysRemaining}-day validity limit`
+      });
       continue;
     }
 
@@ -416,6 +456,9 @@ export function buildWeeklyPlan(
       settings.includeUnconfirmedLocations
         ? "Unconfirmed locations are labeled and receive a planning penalty."
         : `Distances beyond ${settings.maxDistanceMiles} miles or unconfirmed are excluded.`,
+      settings.minimumDaysRemaining > 0
+        ? `Offers must remain valid for at least ${settings.minimumDaysRemaining} more day${settings.minimumDaysRemaining === 1 ? "" : "s"}; this is planning math, not an eligibility guarantee.`
+        : "Offers expiring today remain eligible for planning; confirm their terms before acting.",
       "Estimated values are planning aids; confirm app/store terms and buy only planned household items."
     ]
   };

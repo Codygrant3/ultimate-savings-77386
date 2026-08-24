@@ -112,4 +112,28 @@ describe("WeeklyPlanner execution controls", () => {
     expect(screen.queryByText("Used offer")).toBeNull();
     expect(screen.getByText("Kept offer")).toBeTruthy();
   });
+
+  it("shows remaining validity on a planned deal and emits validity changes", () => {
+    const onSettingsChange = vi.fn();
+    render(
+      <WeeklyPlanner
+        opportunities={[offer({ id: "kept", title: "Kept offer" })]}
+        settings={DEFAULT_WEEKLY_PLAN_SETTINGS}
+        onSettingsChange={onSettingsChange}
+        savedIds={[]}
+        redeemedIds={[]}
+        onSave={vi.fn()}
+        onRedeem={vi.fn()}
+      />
+    );
+
+    expect(screen.getByText(/ends Sep 30 · 37 days left/)).toBeTruthy();
+    fireEvent.change(screen.getByLabelText("Minimum days valid"), {
+      target: { value: "7" }
+    });
+    expect(onSettingsChange).toHaveBeenCalledWith({
+      ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+      minimumDaysRemaining: 7
+    });
+  });
 });

@@ -233,6 +233,11 @@ describe("Savings Desk interactions", () => {
     expect(screen.getByRole("heading", { name: "Weekly action plan" })).toBeTruthy();
     expect(screen.getByLabelText("Weekly spend budget")).toHaveProperty("value", "100");
 
+    expect(screen.getByLabelText("Minimum days valid")).toHaveProperty(
+      "value",
+      "0"
+    );
+
     fireEvent.change(screen.getByLabelText("Weekly spend budget"), {
       target: { value: "20" }
     });
@@ -240,6 +245,13 @@ describe("Savings Desk interactions", () => {
     expect(
       window.localStorage.getItem("savings-desk:weekly-plan-settings")
     ).toContain('"weeklyBudget":20');
+
+    fireEvent.change(screen.getByLabelText("Minimum days valid"), {
+      target: { value: "7" }
+    });
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"minimumDaysRemaining":7');
 
     fireEvent.click(screen.getByRole("button", { name: "Overview" }));
     fireEvent.click(screen.getByRole("button", { name: "Action plan" }));

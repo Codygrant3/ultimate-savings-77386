@@ -10,7 +10,7 @@ import {
   ShoppingBasket
 } from "lucide-react";
 import { useMemo, useState } from "react";
-import { buildWeeklyPlan } from "../lib/plan";
+import { buildWeeklyPlan, daysUntilExpiration } from "../lib/plan";
 import { formatCurrency, formatDate } from "../lib/scoring";
 import type { ScoredOpportunity, WeeklyPlanSettings } from "../types";
 
@@ -100,6 +100,23 @@ export function WeeklyPlanner({
             value={settings.maxDistanceMiles}
             onChange={(event) =>
               updateSetting("maxDistanceMiles", Number(event.target.value || 1))
+            }
+          />
+        </label>
+        <label>
+          <span>Minimum days valid</span>
+          <input
+            aria-label="Minimum days valid"
+            type="number"
+            min="0"
+            max="30"
+            step="1"
+            value={settings.minimumDaysRemaining}
+            onChange={(event) =>
+              updateSetting(
+                "minimumDaysRemaining",
+                Number(event.target.value || 0)
+              )
             }
           />
         </label>
@@ -203,7 +220,12 @@ export function WeeklyPlanner({
                             ? ` · spend ${formatCurrency(opportunity.minimumSpend)}`
                             : ""}
                           {opportunity.expiresOn
-                            ? ` · ends ${formatDate(opportunity.expiresOn)}`
+                            ? ` · ends ${formatDate(opportunity.expiresOn)} · ${
+                                Math.max(
+                                  0,
+                                  daysUntilExpiration(opportunity.expiresOn, today)
+                                )
+                              } days left`
                             : ""}
                         </span>
                         {warnings.map((warning) => (
