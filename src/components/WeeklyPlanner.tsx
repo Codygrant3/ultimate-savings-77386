@@ -7,6 +7,7 @@ import {
   ExternalLink,
   MapPin,
   RotateCcw,
+  Scale,
   ShoppingBasket
 } from "lucide-react";
 import { useMemo, useState } from "react";
@@ -262,6 +263,20 @@ export function WeeklyPlanner({
           <MapPin size={19} aria-hidden="true" />
           <span>Savings rate</span>
           <strong>{Math.round(plan.savingsRate)}%</strong>
+        </article>
+        <article>
+          <Scale size={19} aria-hidden="true" />
+          <span>Value per $1 spent</span>
+          <strong>
+            {plan.valueEfficiency === null
+              ? "No spend"
+              : `$${plan.valueEfficiency.toFixed(2)} per $1 spent`}
+          </strong>
+        </article>
+        <article>
+          <CircleDollarSign size={19} aria-hidden="true" />
+          <span>Estimated net cost</span>
+          <strong>{formatCurrency(plan.estimatedNetCost)}</strong>
         </article>
       </section>
 

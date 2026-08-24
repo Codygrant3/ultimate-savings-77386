@@ -245,6 +245,8 @@ export interface WeeklyPlan {
   excluded: ExcludedOpportunity[];
   requiredSpend: number;
   estimatedSavings: number;
+  valueEfficiency: number | null;
+  estimatedNetCost: number;
   savingsRate: number;
   assumptions: string[];
 }

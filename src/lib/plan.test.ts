@@ -35,6 +35,10 @@ function makeOffer(overrides: Partial<ScoredOpportunity>): ScoredOpportunity {
   return { ...baseOpportunity, ...overrides };
 }
 
+function expectCloseTo(actual: number, expected: number) {
+  expect(Math.abs(actual - expected)).toBeLessThan(0.0001);
+}
+
 describe("weekly action plan optimizer", () => {
   it("never selects a deal whose required spend exceeds the weekly budget", () => {
     const affordable = makeOffer({
@@ -59,9 +63,39 @@ describe("weekly action plan optimizer", () => {
     expect(plan.trips).toHaveLength(1);
     expect(plan.trips[0].merchant).toBe("Affordable Market");
     expect(plan.requiredSpend).toBe(15);
+    expectCloseTo(plan.valueEfficiency ?? -1, 8 / 15);
+    expectCloseTo(plan.estimatedNetCost, 7);
     expect(plan.excluded.find(({ opportunity }) => opportunity.id === "expensive")?.reason).toBe(
       "Outside the strongest plan under current limits"
     );
+  });
+
+  it("summarizes the blended cash tradeoff for a selected plan", () => {
+    const first = makeOffer({
+      id: "first",
+      merchant: "First Market",
+      estimatedSavings: 12,
+      minimumSpend: 30
+    });
+    const second = makeOffer({
+      id: "second",
+      merchant: "Second Market",
+      estimatedSavings: 4,
+      minimumSpend: 10
+    });
+
+    const plan = buildWeeklyPlan(
+      [first, second],
+      { weeklyBudget: 40, maxTrips: 2 },
+      today
+    );
+
+    expect(plan.selectedDeals).toHaveLength(2);
+    expect(plan.requiredSpend).toBe(40);
+    expect(plan.estimatedSavings).toBe(16);
+    expectCloseTo(plan.valueEfficiency ?? -1, 0.4);
+    expect(plan.estimatedNetCost).toBe(24);
+    expect(plan.savingsRate).toBeCloseTo(40);
   });
 
   it("limits the number of merchant trips", () => {

@@ -698,6 +698,9 @@ export function buildWeeklyPlan(
     ),
     requiredSpend,
     estimatedSavings,
+    valueEfficiency:
+      requiredSpend > 0 ? estimatedSavings / requiredSpend : null,
+    estimatedNetCost: Math.max(0, requiredSpend - estimatedSavings),
     savingsRate:
       requiredSpend > 0 ? (estimatedSavings / requiredSpend) * 100 : 100,
     assumptions: [
