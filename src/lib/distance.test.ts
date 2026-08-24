@@ -53,6 +53,16 @@ const inventory: LocalMerchantInventory = {
       sourceLabel: "Whataburger official Rayford Road location page",
       sourceUrl: "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       checkedOn: "2026-08-24"
+    },
+    {
+      id: "wendys-sawdust",
+      merchantAliases: ["Wendy's", "Wendy's + Paze"],
+      locationName: "Wendy's Sawdust Road",
+      address: "505 Sawdust Road, Spring, TX 77380",
+      distanceMiles: 4.6,
+      sourceLabel: "Wendy's official restaurant locator",
+      sourceUrl: "https://order.wendys.com/us/en/select-restaurant?location=77386",
+      checkedOn: "2026-08-24"
     }
   ]
 };
@@ -112,6 +122,17 @@ describe("local merchant distance resolution", () => {
 
     expect(resolved?.distanceMiles).toBe(3.5);
     expect(resolved?.locationName).toBe("Whataburger Rayford Road");
+    expect(resolved?.sourceLabel).toContain("official");
+  });
+
+  it("resolves Wendy's payment-branded offers to the official nearest locator result", () => {
+    const resolved = resolveOpportunityDistance(
+      { ...opportunity, merchant: "Wendy's + Paze" },
+      inventory
+    );
+
+    expect(resolved?.distanceMiles).toBe(4.6);
+    expect(resolved?.locationName).toBe("Wendy's Sawdust Road");
     expect(resolved?.sourceLabel).toContain("official");
   });
 });

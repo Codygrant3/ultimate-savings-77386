@@ -68,6 +68,16 @@
       "checkedOn": "2026-08-24"
     },
     {
+      "id": "wendys-sawdust",
+      "merchantAliases": ["Wendy's", "Wendy's + Paze"],
+      "locationName": "Wendy's Sawdust Road",
+      "address": "505 Sawdust Road, Spring, TX 77380",
+      "distanceMiles": 4.6,
+      "sourceLabel": "Wendy's official restaurant locator",
+      "sourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
+      "checkedOn": "2026-08-24"
+    },
+    {
       "id": "jovi-rayford",
       "merchantAliases": ["JoVi + local coffee shops", "JoVi Coffee", "JoVi"],
       "locationName": "JoVi Coffee Rayford Road",
