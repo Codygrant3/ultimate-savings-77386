@@ -198,6 +198,7 @@ export interface WeeklyPlanSettings {
   minimumDaysRemaining: number;
   maximumFriction: "low" | "medium" | "any";
   includeUnconfirmedLocations: boolean;
+  allowConditionalStacking: boolean;
   maxDealsPerTrip: number;
 }
 

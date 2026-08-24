@@ -483,7 +483,10 @@ export function effectiveStackCompatibility(
     return "exclusive";
   }
 
-  if (/(?:can|may)\s+(?:also\s+)?(?:combine|stack)/.test(text)) {
+  if (
+    /(?:can|may)\s+(?:also\s+)?(?:combine|stack)/.test(text) ||
+    /compatible/.test(text)
+  ) {
     return "compatible";
   }
 

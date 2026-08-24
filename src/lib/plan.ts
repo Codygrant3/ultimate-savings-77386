@@ -14,6 +14,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   minimumDaysRemaining: 0,
   maximumFriction: "medium",
   includeUnconfirmedLocations: true,
+  allowConditionalStacking: false,
   maxDealsPerTrip: 3
 };
 
@@ -78,6 +79,10 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
       typeof settings.includeUnconfirmedLocations === "boolean"
         ? settings.includeUnconfirmedLocations
         : DEFAULT_WEEKLY_PLAN_SETTINGS.includeUnconfirmedLocations,
+    allowConditionalStacking:
+      typeof settings.allowConditionalStacking === "boolean"
+        ? settings.allowConditionalStacking
+        : DEFAULT_WEEKLY_PLAN_SETTINGS.allowConditionalStacking,
     maxDealsPerTrip: Math.round(
       bounded(
         settings.maxDealsPerTrip,
@@ -149,6 +154,21 @@ function hasExclusiveStackConflict(deals: DealCandidate[]): boolean {
   }
 
   return false;
+}
+
+function hasUnconfirmedStackConflict(
+  deals: DealCandidate[],
+  allowConditionalStacking: boolean
+): boolean {
+  if (allowConditionalStacking) return false;
+
+  const conditionalCount = deals.filter((deal) => {
+    const compatibility =
+      effectiveStackCompatibility(deal.opportunity) ?? "conditional";
+    return compatibility === "conditional";
+  }).length;
+
+  return deals.length > 1 && conditionalCount > 1;
 }
 
 export function daysUntilExpiration(
@@ -317,12 +337,17 @@ export function buildWeeklyPlan(
     }
 
     const warnings: string[] = [];
-    if (effectiveStackCompatibility(opportunity) === "exclusive") {
+    const stackCompatibility =
+      effectiveStackCompatibility(opportunity) ?? "conditional";
+    if (stackCompatibility === "exclusive") {
       warnings.push("Official terms require this offer to be redeemed by itself.");
+    } else if (stackCompatibility === "conditional") {
+      warnings.push("Stacking requires confirmation.");
     } else if (opportunity.distanceMiles === undefined) {
       warnings.push("Distance and local participation are unconfirmed");
     }
-    if (!opportunity.stackNote) {
+
+    if (!opportunity.stackNote && stackCompatibility !== "exclusive") {
       warnings.push("Confirm whether this combines with other offers");
     }
 
@@ -372,6 +397,14 @@ export function buildWeeklyPlan(
         combination.length > 1 &&
         combination.some(
           (deal) => effectiveStackCompatibility(deal.opportunity) === "exclusive"
+        )
+      ) {
+        continue;
+      }
+      if (
+        hasUnconfirmedStackConflict(
+          combination,
+          settings.allowConditionalStacking
         )
       ) {
         continue;
@@ -511,7 +544,9 @@ export function buildWeeklyPlan(
       settings.includeUnconfirmedLocations
         ? "Unconfirmed locations are labeled and receive a planning penalty."
         : `Distances beyond ${settings.maxDistanceMiles} miles or unconfirmed are excluded.`,
-      "Offers sharing an official exclusion group are counted at most once per merchant trip, and offers with exclusive stack terms are planned alone.",
+      settings.allowConditionalStacking
+        ? "Conditional stacks are allowed only because you turned on the local override; official terms still control."
+        : "Only one offer with conditional or undocumented stacking is counted per merchant trip; exclusive offers are planned alone.",
       settings.minimumDaysRemaining > 0
         ? `Offers must remain valid for at least ${settings.minimumDaysRemaining} more day${settings.minimumDaysRemaining === 1 ? "" : "s"}; this is planning math, not an eligibility guarantee.`
         : "Offers expiring today remain eligible for planning; confirm their terms before acting.",

@@ -167,7 +167,7 @@ describe("weekly action plan optimizer", () => {
     expect(plan.estimatedSavings).toBe(10);
     expect(plan.requiredSpend).toBe(10);
     expect(plan.assumptions).toContain(
-      "Offers sharing an official exclusion group are counted at most once per merchant trip, and offers with exclusive stack terms are planned alone."
+      "Only one offer with conditional or undocumented stacking is counted per merchant trip; exclusive offers are planned alone."
     );
   });
 
@@ -232,7 +232,51 @@ describe("weekly action plan optimizer", () => {
     );
     expect(plan.estimatedSavings).toBe(10);
     expect(plan.assumptions).toContain(
-      "Offers sharing an official exclusion group are counted at most once per merchant trip, and offers with exclusive stack terms are planned alone."
+      "Only one offer with conditional or undocumented stacking is counted per merchant trip; exclusive offers are planned alone."
+    );
+  });
+
+  it("lets the user allow conditional stacking for a merchant trip", () => {
+    const first = makeOffer({
+      id: "conditional-one",
+      merchant: "Conditional Market",
+      estimatedSavings: 10,
+      minimumSpend: 10,
+      stackNote: "Use only if both items are already planned"
+    });
+    const second = makeOffer({
+      id: "conditional-two",
+      merchant: "Conditional Market",
+      estimatedSavings: 9,
+      minimumSpend: 5,
+      stackNote: "Confirm whether this can be used with another offer"
+    });
+
+    const conservative = buildWeeklyPlan(
+      [first, second],
+      { weeklyBudget: 50, maxDealsPerTrip: 2 },
+      today
+    );
+    const confirmed = buildWeeklyPlan(
+      [first, second],
+      {
+        weeklyBudget: 50,
+        maxDealsPerTrip: 2,
+        allowConditionalStacking: true
+      },
+      today
+    );
+
+    expect(conservative.trips[0].deals).toHaveLength(1);
+    expect(conservative.trips[0].deals[0].warnings).toContain(
+      "Stacking requires confirmation."
+    );
+    expect(confirmed.trips[0].deals.map(({ opportunity }) => opportunity.id)).toEqual([
+      "conditional-one",
+      "conditional-two"
+    ]);
+    expect(confirmed.assumptions).toContain(
+      "Conditional stacks are allowed only because you turned on the local override; official terms still control."
     );
   });
 

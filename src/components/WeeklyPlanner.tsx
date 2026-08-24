@@ -154,6 +154,19 @@ export function WeeklyPlanner({
         <label className="planner-toggle">
           <input
             type="checkbox"
+            checked={settings.allowConditionalStacking}
+            onChange={(event) =>
+              updateSetting(
+                "allowConditionalStacking",
+                event.target.checked
+              )
+            }
+          />
+          <span>Allow conditional stacks</span>
+        </label>
+        <label className="planner-toggle">
+          <input
+            type="checkbox"
             checked={settings.includeUnconfirmedLocations}
             onChange={(event) =>
               updateSetting(

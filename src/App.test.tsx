@@ -356,6 +356,10 @@ describe("Savings Desk interactions", () => {
       "value",
       "medium"
     );
+    expect(screen.getByLabelText("Allow conditional stacks")).toHaveProperty(
+      "checked",
+      false
+    );
 
     fireEvent.change(screen.getByLabelText("Weekly spend budget"), {
       target: { value: "20" }
@@ -378,6 +382,11 @@ describe("Savings Desk interactions", () => {
     expect(
       window.localStorage.getItem("savings-desk:weekly-plan-settings")
     ).toContain('"maximumFriction":"any"');
+
+    fireEvent.click(screen.getByLabelText("Allow conditional stacks"));
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"allowConditionalStacking":true');
 
     fireEvent.click(screen.getByRole("button", { name: "Overview" }));
     fireEvent.click(screen.getByRole("button", { name: "Action plan" }));

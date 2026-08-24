@@ -113,7 +113,7 @@ describe("WeeklyPlanner execution controls", () => {
     expect(screen.getByText("Kept offer")).toBeTruthy();
   });
 
-  it("shows planning context and emits validity and effort changes", () => {
+  it("shows planning context and emits validity, effort, and stacking changes", () => {
     const onSettingsChange = vi.fn();
     render(
       <WeeklyPlanner
@@ -142,6 +142,16 @@ describe("WeeklyPlanner execution controls", () => {
     expect(onSettingsChange).toHaveBeenCalledWith({
       ...DEFAULT_WEEKLY_PLAN_SETTINGS,
       maximumFriction: "any"
+    });
+
+    expect(screen.getByLabelText("Allow conditional stacks")).toHaveProperty(
+      "checked",
+      false
+    );
+    fireEvent.click(screen.getByLabelText("Allow conditional stacks"));
+    expect(onSettingsChange).toHaveBeenLastCalledWith({
+      ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+      allowConditionalStacking: true
     });
   });
 });
