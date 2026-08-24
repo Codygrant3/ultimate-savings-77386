@@ -259,9 +259,15 @@ export function WeeklyPlanner({
                 <div className="trip-meta">
                   <span>
                     <MapPin size={14} aria-hidden="true" />
-                    {trip.distanceConfirmed
+                    {trip.distanceConfirmed && !trip.hasUnconfirmedLocationDeal
                       ? `${trip.distanceMiles} mi · approximate location distance`
-                      : "Location unconfirmed"}
+                      : trip.distanceConfirmed && trip.hasUnconfirmedLocationDeal
+                        ? `Nearest confirmed ${trip.distanceMiles} mi · ${
+                            trip.deals.filter(
+                              (deal) => deal.opportunity.distanceMiles === undefined
+                            ).length
+                          } deal location unconfirmed`
+                        : "Location unconfirmed"}
                   </span>
                   <span>
                     Spend {formatCurrency(trip.requiredSpend)} · score{" "}

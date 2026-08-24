@@ -213,6 +213,7 @@ export interface PlannedTrip {
   merchant: string;
   distanceMiles?: number;
   distanceConfirmed: boolean;
+  hasUnconfirmedLocationDeal: boolean;
   requiredSpend: number;
   estimatedSavings: number;
   averageScore: number;

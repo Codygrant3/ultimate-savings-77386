@@ -34,6 +34,7 @@ interface TripBundle {
   merchant: string;
   distanceMiles?: number;
   distanceConfirmed: boolean;
+  hasUnconfirmedLocationDeal: boolean;
   requiredSpend: number;
   estimatedSavings: number;
   utility: number;
@@ -239,11 +240,10 @@ function makeBundle(group: DealCandidate[]): TripBundle {
   const distances = group
     .map((deal) => deal.opportunity.distanceMiles)
     .filter((distance): distance is number => distance !== undefined);
-  const distanceConfirmed =
-    group.length > 0 && distances.length === group.length;
-  const distanceMiles = distanceConfirmed
-    ? Math.min(...distances)
-    : undefined;
+  const hasUnconfirmedLocationDeal = distances.length < group.length;
+  const distanceConfirmed = group.length > 0 && distances.length > 0;
+  const distanceMiles =
+    distances.length > 0 ? Math.min(...distances) : undefined;
   const distancePenalty = distanceConfirmed
     ? (distanceMiles ?? 0) * 3
     : 12;
@@ -265,6 +265,7 @@ function makeBundle(group: DealCandidate[]): TripBundle {
     merchant: group[0].planningMerchant,
     distanceMiles,
     distanceConfirmed,
+    hasUnconfirmedLocationDeal,
     requiredSpend,
     estimatedSavings,
     utility,
@@ -522,6 +523,7 @@ export function buildWeeklyPlan(
     merchant: bundle.merchant,
     distanceMiles: bundle.distanceMiles,
     distanceConfirmed: bundle.distanceConfirmed,
+    hasUnconfirmedLocationDeal: bundle.hasUnconfirmedLocationDeal,
     requiredSpend: bundle.requiredSpend,
     estimatedSavings: bundle.estimatedSavings,
     averageScore:

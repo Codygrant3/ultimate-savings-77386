@@ -82,7 +82,7 @@ describe("weekly action plan optimizer", () => {
     expect(plan.excluded.find(({ opportunity }) => opportunity.id === "third")).toBeTruthy();
   });
 
-  it("labels a mixed-distance merchant trip as unconfirmed and warns about participation", () => {
+  it("labels mixed-distance merchant trips while retaining the nearest confirmed distance", () => {
     const confirmed = makeOffer({ id: "confirmed-local", merchant: "Mixed Market" });
     const unconfirmed = makeOffer({
       id: "unknown-local",
@@ -100,7 +100,9 @@ describe("weekly action plan optimizer", () => {
       today
     );
 
-    expect(plan.trips[0].distanceConfirmed).toBe(false);
+    expect(plan.trips[0].distanceConfirmed).toBe(true);
+    expect(plan.trips[0].distanceMiles).toBe(2);
+    expect(plan.trips[0].hasUnconfirmedLocationDeal).toBe(true);
     expect(plan.trips[0].deals.find(({ warnings }) => warnings.length > 0)).toBeTruthy();
   });
 
