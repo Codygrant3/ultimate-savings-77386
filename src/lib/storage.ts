@@ -27,6 +27,20 @@ const HOUSEHOLD_PROFILE_KEY = "savings-desk:household-profile";
 const LOCAL_OFFERS_KEY = "savings-desk:local-offers";
 
 const MAX_STORED_IDS = 1_000;
+const MAX_LOCAL_OFFERS = 1_000;
+const LOCAL_CATEGORIES = new Set([
+  "restaurants",
+  "grocery",
+  "fuel",
+  "coffee",
+  "convenience",
+  "auto",
+  "movies",
+  "sports",
+  "tax-free",
+  "shopping"
+]);
+const FRICTION_LEVELS = new Set(["low", "medium", "high"]);
 
 function normalizeStoredIds(value: unknown): string[] {
   if (!Array.isArray(value)) return [];
@@ -323,6 +337,31 @@ export function writeHouseholdProfile(
   return profile;
 }
 
+function isValidStoredDate(value: unknown): value is string {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    return false;
+  }
+  const parsed = new Date(`${value}T12:00:00`);
+  return Number.isFinite(parsed.getTime());
+}
+
+function isOfficialUrl(value: unknown): value is string {
+  if (typeof value !== "string") return false;
+  try {
+    const url = new URL(value);
+    return url.protocol === "http:" || url.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+function isSafeStackGroup(value: unknown): value is string {
+  return (
+    typeof value === "string" &&
+    /^[a-z0-9](?:[a-z0-9-]{0,58}[a-z0-9]|[a-z0-9])$/.test(value)
+  );
+}
+
 function isLocalOffer(value: unknown): value is Opportunity {
   if (typeof value !== "object" || value === null) return false;
   const offer = value as Partial<Opportunity>;
@@ -330,38 +369,83 @@ function isLocalOffer(value: unknown): value is Opportunity {
   return (
     typeof offer.id === "string" &&
     offer.id.startsWith("local-") &&
+    offer.id.length >= 7 &&
+    offer.id.length <= 120 &&
     typeof offer.merchant === "string" &&
+    offer.merchant.trim().length > 0 &&
+    offer.merchant.length <= 120 &&
     typeof offer.title === "string" &&
+    offer.title.trim().length > 0 &&
+    offer.title.length <= 240 &&
     typeof offer.summary === "string" &&
+    offer.summary.length <= 1_000 &&
     typeof offer.category === "string" &&
-    Number.isFinite(offer.estimatedSavings) &&
-    Number.isFinite(offer.minimumSpend) &&
+    LOCAL_CATEGORIES.has(offer.category) &&
     typeof offer.isFree === "boolean" &&
+    typeof offer.estimatedSavings === "number" &&
+    Number.isFinite(offer.estimatedSavings) &&
+    offer.estimatedSavings >= 0 &&
+    (!offer.isFree || offer.estimatedSavings >= 0) &&
+    (offer.isFree || offer.estimatedSavings > 0) &&
+    typeof offer.minimumSpend === "number" &&
+    Number.isFinite(offer.minimumSpend) &&
+    offer.minimumSpend >= 0 &&
     typeof offer.locationNote === "string" &&
+    offer.locationNote.length <= 500 &&
     offer.verification === "verified" &&
     typeof offer.friction === "string" &&
+    FRICTION_LEVELS.has(offer.friction) &&
     Array.isArray(offer.tags) &&
+    offer.tags.every((tag) => typeof tag === "string" && tag.length <= 60) &&
+    isValidStoredDate(offer.source?.checkedOn) &&
     typeof offer.source?.label === "string" &&
-    typeof offer.source?.url === "string" &&
-    typeof offer.source?.checkedOn === "string" &&
+    offer.source.label.length <= 160 &&
+    isOfficialUrl(offer.source?.url) &&
     typeof offer.actionLabel === "string" &&
+    offer.actionLabel.length <= 120 &&
+    (offer.savingsRate === undefined ||
+      (Number.isFinite(offer.savingsRate) &&
+        offer.savingsRate > 0 &&
+        offer.savingsRate <= 100)) &&
+    (offer.distanceMiles === undefined ||
+      (Number.isFinite(offer.distanceMiles) &&
+        offer.distanceMiles >= 0 &&
+        offer.distanceMiles <= 50)) &&
+    (offer.expiresOn === undefined || isValidStoredDate(offer.expiresOn)) &&
+    (offer.stackGroup === undefined || isSafeStackGroup(offer.stackGroup)) &&
+    (offer.tier === undefined || offer.tier === "A") &&
     offer.localRecord === true
   );
+}
+
+function normalizeLocalOffers(value: unknown): Opportunity[] {
+  if (!Array.isArray(value)) return [];
+  const seenIds = new Set<string>();
+  const offers: Opportunity[] = [];
+
+  for (const item of value) {
+    if (!isLocalOffer(item)) continue;
+    if (seenIds.has(item.id)) continue;
+    seenIds.add(item.id);
+    offers.push(item);
+    if (offers.length >= MAX_LOCAL_OFFERS) break;
+  }
+
+  return offers;
 }
 
 export function readLocalOffers(): Opportunity[] {
   try {
     const value = window.localStorage.getItem(LOCAL_OFFERS_KEY);
     if (value === null) return [];
-    const parsed = JSON.parse(value) as unknown;
-    if (!Array.isArray(parsed)) return [];
-    return parsed.filter(isLocalOffer);
+    return normalizeLocalOffers(JSON.parse(value));
   } catch {
     return [];
   }
 }
 
 export function writeLocalOffers(offers: Opportunity[]): Opportunity[] {
-  window.localStorage.setItem(LOCAL_OFFERS_KEY, JSON.stringify(offers));
-  return offers;
+  const validOffers = normalizeLocalOffers(offers);
+  window.localStorage.setItem(LOCAL_OFFERS_KEY, JSON.stringify(validOffers));
+  return validOffers;
 }
