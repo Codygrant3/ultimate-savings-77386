@@ -134,8 +134,9 @@ Outputs:
 The grocery-watchlist snapshot normalizes the best available official listing
 for each configured comparison. It prefers a 77386-verified price when one is
 available and otherwise labels the result as not locally confirmed. The public
-deployment receives a new snapshot when the validated site is republished; the
-local scheduled refresh does not publish by itself.
+deployment receives a new snapshot only after the refreshed public report is
+committed and the site is rebuilt before packaging; the local scheduled refresh
+does not publish by itself.
 
 Register the daily 7:00 AM refresh:
 
