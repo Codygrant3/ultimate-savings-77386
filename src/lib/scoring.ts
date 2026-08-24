@@ -187,7 +187,7 @@ export function isExcludedByPreferences(
   );
 }
 
-function sourceAgeDays(
+export function sourceAgeDays(
   opportunity: Opportunity,
   today: Date
 ): number | null {

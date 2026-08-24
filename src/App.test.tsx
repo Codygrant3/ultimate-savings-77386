@@ -33,6 +33,26 @@ describe("Savings Desk interactions", () => {
     expect(screen.getAllByText("Stackability").length).toBeGreaterThan(0);
   });
 
+  it("filters the deal feed by source-check freshness", () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Browse this week" }));
+    const dutchBrosOffer = "Free medium drink for eligible new app users";
+    expect(screen.getByText(dutchBrosOffer)).toBeTruthy();
+
+    fireEvent.change(screen.getByLabelText("Maximum evidence age"), {
+      target: { value: "7" }
+    });
+
+    expect(screen.queryByText(dutchBrosOffer)).toBeNull();
+
+    fireEvent.change(screen.getByLabelText("Maximum evidence age"), {
+      target: { value: "all" }
+    });
+
+    expect(screen.getByText(dutchBrosOffer)).toBeTruthy();
+  });
+
   it("persists a saved opportunity locally", () => {
     render(<App />);
 

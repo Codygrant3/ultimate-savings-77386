@@ -10,7 +10,8 @@ import {
   normalizeHouseholdProfile,
   rankOpportunities,
   scoreOpportunity,
-  startOfWeek
+  startOfWeek,
+  sourceAgeDays
 } from "./scoring";
 
 const baseOpportunity: Opportunity = {
@@ -37,6 +38,21 @@ const baseOpportunity: Opportunity = {
 };
 
 describe("savings scoring", () => {
+  it("measures evidence age from the official source-check date", () => {
+    expect(
+      sourceAgeDays(baseOpportunity, new Date("2026-07-23T12:00:00"))
+    ).toBe(0);
+    expect(
+      sourceAgeDays(baseOpportunity, new Date("2026-08-05T12:00:00"))
+    ).toBe(13);
+    expect(
+      sourceAgeDays(
+        { ...baseOpportunity, source: { ...baseOpportunity.source, checkedOn: "" } },
+        new Date("2026-07-23T12:00:00")
+      )
+    ).toBeNull();
+  });
+
   it("rewards verified offers over unverified leads", () => {
     const today = new Date("2026-07-23T12:00:00");
     const verified = scoreOpportunity(baseOpportunity, today);

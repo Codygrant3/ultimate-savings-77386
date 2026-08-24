@@ -7,6 +7,7 @@ import {
   Check,
   ChevronRight,
   CircleDollarSign,
+  Clock,
   Clapperboard,
   Coffee,
   ExternalLink,
@@ -45,6 +46,7 @@ import {
   DEFAULT_HOUSEHOLD_PROFILE,
   DEFAULT_SCORING_WEIGHTS,
   rankOpportunities,
+  sourceAgeDays,
   startOfWeek
 } from "./lib/scoring";
 import { WeeklyPlanner } from "./components/WeeklyPlanner";
@@ -180,12 +182,14 @@ function dealTypeLabel(dealType: Opportunity["dealType"]): string | null {
 
 function OpportunityCard({
   opportunity,
+  analysisDate,
   saved,
   redeemed,
   onSave,
   onRedeem
 }: {
   opportunity: ScoredOpportunity;
+  analysisDate: Date;
   saved: boolean;
   redeemed: boolean;
   onSave: () => void;
@@ -237,6 +241,17 @@ function OpportunityCard({
           {dealTypeLabel(opportunity.dealType) && (
             <span className="deal-type-badge">{dealTypeLabel(opportunity.dealType)}</span>
           )}
+          {(() => {
+            const age = sourceAgeDays(opportunity, analysisDate);
+            if (age === null) return null;
+
+            return (
+              <span className="quiet-badge">
+                <Clock size={13} aria-hidden="true" />
+                {age === 0 ? "Checked today" : `Checked ${age}d ago`}
+              </span>
+            );
+          })()}
           {(opportunity.expiresOn || opportunity.expirationLabel) && (
             <span className="quiet-badge">
               <CalendarDays size={13} aria-hidden="true" />
@@ -362,6 +377,7 @@ export default function App() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [category, setCategory] = useState<CategoryFilter>("all");
   const [query, setQuery] = useState("");
+  const [maximumEvidenceAge, setMaximumEvidenceAge] = useState<"all" | "7" | "14">("all");
   const [savedIds, setSavedIds] = useState<string[]>(readSavedIds);
   const [redeemedIds, setRedeemedIds] = useState<string[]>(readRedeemedIds);
   const [receipts, setReceipts] = useState<ReceiptEntry[]>(readReceipts);
@@ -441,14 +457,18 @@ export default function App() {
     const normalizedQuery = query.trim().toLowerCase();
     return rankedOpportunities.filter((opportunity) => {
       const categoryMatches = category === "all" || opportunity.category === category;
+      const evidenceMatches =
+        maximumEvidenceAge === "all" ||
+        (sourceAgeDays(opportunity, analysisDate) ?? Number.POSITIVE_INFINITY) <=
+          Number(maximumEvidenceAge);
       const queryMatches =
         normalizedQuery.length === 0 ||
         `${opportunity.merchant} ${opportunity.title} ${opportunity.summary} ${opportunity.tags.join(" ")}`
           .toLowerCase()
           .includes(normalizedQuery);
-      return categoryMatches && queryMatches;
+      return categoryMatches && evidenceMatches && queryMatches;
     });
-  }, [category, query, rankedOpportunities]);
+  }, [analysisDate, category, maximumEvidenceAge, query, rankedOpportunities]);
 
   const displayedDeals =
     view === "programs"
@@ -768,6 +788,7 @@ export default function App() {
                     <OpportunityCard
                       key={opportunity.id}
                       opportunity={opportunity}
+                      analysisDate={analysisDate}
                       saved={savedIds.includes(opportunity.id)}
                       redeemed={redeemedIds.includes(opportunity.id)}
                       onSave={() => toggleSaved(opportunity.id)}
@@ -854,6 +875,22 @@ export default function App() {
                     );
                   })}
                 </div>
+                <label className="search-field">
+                  <Clock size={17} aria-hidden="true" />
+                  <span className="sr-only">Maximum evidence age</span>
+                  <select
+                    value={maximumEvidenceAge}
+                    onChange={(event) =>
+                      setMaximumEvidenceAge(
+                        event.target.value as typeof maximumEvidenceAge
+                      )
+                    }
+                  >
+                    <option value="all">All check ages</option>
+                    <option value="7">Checked within 7 days</option>
+                    <option value="14">Checked within 14 days</option>
+                  </select>
+                </label>
               </section>
 
               <div className="results-line">
@@ -869,6 +906,7 @@ export default function App() {
                     <OpportunityCard
                       key={opportunity.id}
                       opportunity={opportunity}
+                      analysisDate={analysisDate}
                       saved={savedIds.includes(opportunity.id)}
                       redeemed={redeemedIds.includes(opportunity.id)}
                       onSave={() => toggleSaved(opportunity.id)}
