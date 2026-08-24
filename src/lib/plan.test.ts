@@ -244,6 +244,65 @@ describe("weekly action plan optimizer", () => {
     );
   });
 
+  it("prefers an otherwise equal offer with stronger linked outcomes", () => {
+    const underperformer = makeOffer({
+      id: "underperformer",
+      merchant: "Outcome Market",
+      estimatedSavings: 10,
+      minimumSpend: 10
+    });
+    const outperformer = makeOffer({
+      id: "outperformer",
+      merchant: "Better Outcome Market",
+      estimatedSavings: 10,
+      minimumSpend: 10
+    });
+
+    const plan = buildWeeklyPlan(
+      [underperformer, outperformer],
+      { weeklyBudget: 20, maxTrips: 1 },
+      today,
+      {
+        underperformer: {
+          ratio: 0.5,
+          samples: 1,
+          adjustment: 0.75
+        },
+        outperformer: {
+          ratio: 1.5,
+          samples: 1,
+          adjustment: 1.25
+        }
+      }
+    );
+
+    expect(plan.trips).toHaveLength(1);
+    expect(plan.trips[0].deals).toHaveLength(1);
+    expect(plan.trips[0].deals[0].opportunity.id).toBe("outperformer");
+    expect(plan.trips[0].estimatedSavings).toBe(10);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "underperformer")
+        ?.reason
+    ).toBe("Outside the strongest plan under current limits");
+    expect(plan.assumptions).toContain(
+      "Linked confirmed results locally adjust planning value when evidence exists."
+    );
+  });
+
+  it("warns when linked local results differ materially from listed estimates", () => {
+    const plan = buildWeeklyPlan([makeOffer({ id: "offer-a" })], {}, today, {
+      "offer-a": {
+        ratio: 0.5,
+        samples: 1,
+        adjustment: 0.75
+      }
+    });
+
+    expect(plan.trips[0].deals[0].warnings).toContain(
+      "Linked local results are below the listed estimate."
+    );
+  });
+
   it("lets the user allow conditional stacking for a merchant trip", () => {
     const first = makeOffer({
       id: "conditional-one",

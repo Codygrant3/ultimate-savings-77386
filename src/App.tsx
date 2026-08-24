@@ -1026,6 +1026,7 @@ export default function App() {
               onSettingsChange={updateWeeklyPlanSettings}
               savedIds={savedIds}
               redeemedIds={redeemedIds}
+              receipts={receipts}
               onSave={toggleSaved}
               onRedeem={toggleRedeemed}
             />

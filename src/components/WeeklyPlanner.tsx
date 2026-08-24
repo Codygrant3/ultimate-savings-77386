@@ -11,8 +11,13 @@ import {
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { buildWeeklyPlan, daysUntilExpiration } from "../lib/plan";
+import { buildOfferOutcomeAdjustments } from "../lib/outcomes";
 import { formatCurrency, formatDate } from "../lib/scoring";
-import type { ScoredOpportunity, WeeklyPlanSettings } from "../types";
+import type {
+  ReceiptEntry,
+  ScoredOpportunity,
+  WeeklyPlanSettings
+} from "../types";
 
 export function WeeklyPlanner({
   opportunities,
@@ -20,6 +25,7 @@ export function WeeklyPlanner({
   onSettingsChange,
   savedIds,
   redeemedIds,
+  receipts,
   onSave,
   onRedeem
 }: {
@@ -28,18 +34,24 @@ export function WeeklyPlanner({
   onSettingsChange: (settings: WeeklyPlanSettings) => void;
   savedIds: string[];
   redeemedIds: string[];
+  receipts: ReceiptEntry[];
   onSave: (id: string) => void;
   onRedeem: (id: string) => void;
 }) {
   const [showExcluded, setShowExcluded] = useState(false);
   const today = useMemo(() => new Date(), []);
+  const outcomeAdjustments = useMemo(
+    () => buildOfferOutcomeAdjustments(receipts, today),
+    [receipts, today]
+  );
   const actionableOpportunities = useMemo(
     () => opportunities.filter((opportunity) => !redeemedIds.includes(opportunity.id)),
     [opportunities, redeemedIds]
   );
   const plan = useMemo(
-    () => buildWeeklyPlan(actionableOpportunities, settings, today),
-    [actionableOpportunities, settings, today]
+    () =>
+      buildWeeklyPlan(actionableOpportunities, settings, today, outcomeAdjustments),
+    [actionableOpportunities, outcomeAdjustments, settings, today]
   );
 
   function updateSetting<K extends keyof WeeklyPlanSettings>(

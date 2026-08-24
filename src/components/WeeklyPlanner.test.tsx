@@ -49,6 +49,7 @@ function renderPlanner(redeemedIds: string[] = []) {
       onSettingsChange={vi.fn()}
       savedIds={[]}
       redeemedIds={redeemedIds}
+      receipts={[]}
       onSave={vi.fn()}
       onRedeem={vi.fn()}
     />
@@ -70,6 +71,7 @@ describe("WeeklyPlanner execution controls", () => {
         onSettingsChange={vi.fn()}
         savedIds={[]}
         redeemedIds={[]}
+        receipts={[]}
         onSave={onSave}
         onRedeem={vi.fn()}
       />
@@ -89,6 +91,7 @@ describe("WeeklyPlanner execution controls", () => {
         onSettingsChange={vi.fn()}
         savedIds={[]}
         redeemedIds={[]}
+        receipts={[]}
         onSave={vi.fn()}
         onRedeem={onRedeem}
       />
@@ -104,6 +107,7 @@ describe("WeeklyPlanner execution controls", () => {
         onSettingsChange={vi.fn()}
         savedIds={[]}
         redeemedIds={["used"]}
+        receipts={[]}
         onSave={vi.fn()}
         onRedeem={onRedeem}
       />
@@ -122,6 +126,7 @@ describe("WeeklyPlanner execution controls", () => {
         onSettingsChange={onSettingsChange}
         savedIds={[]}
         redeemedIds={[]}
+        receipts={[]}
         onSave={vi.fn()}
         onRedeem={vi.fn()}
       />

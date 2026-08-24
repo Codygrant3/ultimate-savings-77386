@@ -11,6 +11,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Filters and searches the opportunity list.
 - Saves opportunities and tracks estimated realized savings in browser storage.
 - Logs confirmed receipt results locally and uses recency-weighted category and merchant outcomes to adjust household-fit ranking.
+- Uses linked local receipt outcomes to adjust weekly planning value and explain when past confirmed results differ from the listed estimate, without changing official offer evidence or promised terms.
 - Delivers dashboard-only high-value alerts when an offer clears a user-defined dollar threshold, free-reward preference, and maximum redemption effort.
 - Maintains a checked local merchant inventory and uses great-circle distance calculations for nearby branches. A merchant-location distance is clearly marked as approximate and never claims that a specific promotion is confirmed at that branch.
 - Carries checked merchant-location distances into both explainable ranking and the constrained weekly planner, so nearby stores affect trip selection without implying that every promotion runs at that branch.

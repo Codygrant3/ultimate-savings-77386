@@ -5,6 +5,7 @@ import type {
   WeeklyPlan,
   WeeklyPlanSettings
 } from "../types";
+import type { OfferOutcomeAdjustments } from "./outcomes";
 import { effectiveStackCompatibility } from "./scoring";
 
 export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
@@ -24,6 +25,7 @@ interface DealCandidate {
   planningMerchant: string;
   newCustomerOffer: boolean;
   stackGroup?: string;
+  outcomeAdjustment: number;
 }
 
 interface TripBundle {
@@ -228,7 +230,7 @@ function makeBundle(group: DealCandidate[]): TripBundle {
       (total, deal) =>
         total +
         deal.opportunity.score +
-        deal.opportunity.estimatedSavings * 2 -
+        deal.opportunity.estimatedSavings * deal.outcomeAdjustment * 2 -
         deal.opportunity.minimumSpend * 0.15,
       0
     ) - distancePenalty;
@@ -252,7 +254,8 @@ function makeBundle(group: DealCandidate[]): TripBundle {
 export function buildWeeklyPlan(
   opportunities: ScoredOpportunity[],
   rawSettings: Partial<WeeklyPlanSettings>,
-  today = new Date()
+  today = new Date(),
+  outcomeAdjustments: OfferOutcomeAdjustments = {}
 ): WeeklyPlan {
   const settings = normalizeSettings(rawSettings);
   const eligible: DealCandidate[] = [];
@@ -339,6 +342,8 @@ export function buildWeeklyPlan(
     const warnings: string[] = [];
     const stackCompatibility =
       effectiveStackCompatibility(opportunity) ?? "conditional";
+    const outcomeAdjustment =
+      outcomeAdjustments[opportunity.id]?.adjustment ?? 1;
     if (stackCompatibility === "exclusive") {
       warnings.push("Official terms require this offer to be redeemed by itself.");
     } else if (stackCompatibility === "conditional") {
@@ -351,12 +356,19 @@ export function buildWeeklyPlan(
       warnings.push("Confirm whether this combines with other offers");
     }
 
+    if (outcomeAdjustment <= 0.95) {
+      warnings.push("Linked local results are below the listed estimate.");
+    } else if (outcomeAdjustment >= 1.05) {
+      warnings.push("Linked local results exceed the listed estimate.");
+    }
+
     eligible.push({
       opportunity,
       warnings,
       planningMerchant: planningMerchant(opportunity),
       newCustomerOffer: isNewCustomerOffer(opportunity),
-      stackGroup: opportunity.stackGroup
+      stackGroup: opportunity.stackGroup,
+      outcomeAdjustment
     });
   }
 
@@ -590,7 +602,10 @@ export function buildWeeklyPlan(
         medium: "Low and medium effort offers are eligible; high effort is excluded.",
         any: "All verified effort levels are eligible."
       }[settings.maximumFriction],
-      "Estimated values are planning aids; confirm app/store terms and buy only planned household items."
+      "Estimated values are planning aids; confirm app/store terms and buy only planned household items.",
+      outcomeAdjustments && Object.keys(outcomeAdjustments).length > 0
+        ? "Linked confirmed results locally adjust planning value when evidence exists."
+        : "Planning value uses listed estimates until linked confirmed results exist."
     ]
   };
 }
