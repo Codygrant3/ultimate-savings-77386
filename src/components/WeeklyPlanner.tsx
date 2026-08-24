@@ -267,6 +267,19 @@ export function WeeklyPlanner({
           />
           <span>High-priority only</span>
         </label>
+        <label className="planner-toggle">
+          <input
+            type="checkbox"
+            checked={settings.requireMeasuredDollarValue}
+            onChange={(event) =>
+              updateSetting(
+                "requireMeasuredDollarValue",
+                event.target.checked
+              )
+            }
+          />
+          <span>Measured cash value only</span>
+        </label>
       </section>
 
       <p className="plan-note">

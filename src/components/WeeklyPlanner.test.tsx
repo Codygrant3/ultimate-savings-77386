@@ -176,5 +176,11 @@ describe("WeeklyPlanner execution controls", () => {
       ...DEFAULT_WEEKLY_PLAN_SETTINGS,
       requireHighPriorityFit: true
     });
+
+    fireEvent.click(screen.getByLabelText("Measured cash value only"));
+    expect(onSettingsChange).toHaveBeenLastCalledWith({
+      ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+      requireMeasuredDollarValue: true
+    });
   });
 });

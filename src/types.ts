@@ -207,6 +207,7 @@ export interface WeeklyPlanSettings {
   includeUnconfirmedLocations: boolean;
   requireLocalParticipation: boolean;
   requireHighPriorityFit: boolean;
+  requireMeasuredDollarValue: boolean;
   allowConditionalStacking: boolean;
   maxDealsPerTrip: number;
   tripOrder: TripOrder;

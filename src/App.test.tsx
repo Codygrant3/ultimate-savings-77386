@@ -453,6 +453,11 @@ describe("Savings Desk interactions", () => {
       window.localStorage.getItem("savings-desk:weekly-plan-settings")
     ).toContain('"requireHighPriorityFit":true');
 
+    fireEvent.click(screen.getByLabelText("Measured cash value only"));
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"requireMeasuredDollarValue":true');
+
     fireEvent.change(screen.getByLabelText("Trip order"), {
       target: { value: "distance" }
     });
@@ -469,6 +474,10 @@ describe("Savings Desk interactions", () => {
       true
     );
     expect(screen.getByLabelText("High-priority only")).toHaveProperty(
+      "checked",
+      true
+    );
+    expect(screen.getByLabelText("Measured cash value only")).toHaveProperty(
       "checked",
       true
     );

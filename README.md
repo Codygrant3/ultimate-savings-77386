@@ -31,6 +31,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Keeps store-distance evidence separate from promotion-participation evidence in weekly trips, adding an explicit confirmation warning when a checked nearby branch does not prove that a specific offer runs there.
 - Offers an opt-in weekly-plan gate that admits only locally captured offers with user-confirmed distances and participation.
 - Provides an opt-in high-priority planning gate so coupon-driven spend can be restricted to offers matching the household's configured high-priority keywords.
+- Adds an opt-in measured-cash-value gate that excludes unpriced free rewards from the weekly optimizer when the household wants planning based only on captured dollar estimates.
 - Lets the household enter its own cost per mile so weekly planning can compare estimated savings against travel cost and show net benefit after travel; the figure remains a local planning assumption.
 - Shows the weekly plan's blended dollar return per $1 of planned spend and its estimated net cash requirement, while keeping those figures separate from guaranteed eligibility or local price evidence.
 - Enforces a user-defined maximum source-check age in the weekly action plan, with a 14-day default, so stale evidence cannot silently become an action recommendation.

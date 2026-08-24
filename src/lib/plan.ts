@@ -22,6 +22,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   includeUnconfirmedLocations: true,
   requireLocalParticipation: false,
   requireHighPriorityFit: false,
+  requireMeasuredDollarValue: false,
   allowConditionalStacking: false,
   maxDealsPerTrip: 3,
   tripOrder: "utility"
@@ -115,6 +116,10 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
       typeof settings.requireHighPriorityFit === "boolean"
         ? settings.requireHighPriorityFit
         : DEFAULT_WEEKLY_PLAN_SETTINGS.requireHighPriorityFit,
+    requireMeasuredDollarValue:
+      typeof settings.requireMeasuredDollarValue === "boolean"
+        ? settings.requireMeasuredDollarValue
+        : DEFAULT_WEEKLY_PLAN_SETTINGS.requireMeasuredDollarValue,
     allowConditionalStacking:
       typeof settings.allowConditionalStacking === "boolean"
         ? settings.allowConditionalStacking
@@ -406,11 +411,13 @@ export function buildWeeklyPlan(
 
     if (
       opportunity.estimatedSavings <= 0 &&
-      !opportunity.isFree
+      (!opportunity.isFree || settings.requireMeasuredDollarValue)
     ) {
       excluded.push({
         opportunity,
-        reason: "No captured dollar value"
+        reason: settings.requireMeasuredDollarValue
+          ? "Unpriced reward has no measured dollar value"
+          : "No captured dollar value"
       });
       continue;
     }
@@ -783,6 +790,9 @@ export function buildWeeklyPlan(
       settings.requireHighPriorityFit
         ? "Only offers matching a high-priority household keyword are eligible."
         : "Household keywords adjust ranking but do not remove general-priority offers.",
+      settings.requireMeasuredDollarValue
+        ? "Only offers with a measured dollar-value estimate are eligible; unpriced rewards are excluded."
+        : "Unpriced free rewards remain eligible but do not add estimated savings.",
       `Official offers and nearby-location checks must have evidence from the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"}.`,
       settings.allowConditionalStacking
         ? "Conditional stacks are allowed only because you turned on the local override; official terms still control."

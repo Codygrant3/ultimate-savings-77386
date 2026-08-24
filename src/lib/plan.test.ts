@@ -862,5 +862,50 @@ describe("weekly action plan optimizer", () => {
     expect(plan.requiredSpend).toBe(0);
     expect(plan.savingsRate).toBe(100);
   });
-});
 
+  it("can exclude unpriced free rewards when optimizing measured cash value", () => {
+    const unpricedReward = makeOffer({
+      id: "unpriced-reward",
+      merchant: "Unpriced Reward Cafe",
+      title: "Free drink reward",
+      estimatedSavings: 0,
+      minimumSpend: 0,
+      isFree: true
+    });
+    const measuredValue = makeOffer({
+      id: "measured-value",
+      merchant: "Measured Market",
+      estimatedSavings: 8,
+      minimumSpend: 20,
+      isFree: false
+    });
+
+    const inclusive = buildWeeklyPlan(
+      [unpricedReward, measuredValue],
+      { weeklyBudget: 40, maxTrips: 2 },
+      today
+    );
+    const measuredOnly = buildWeeklyPlan(
+      [unpricedReward, measuredValue],
+      {
+        weeklyBudget: 40,
+        maxTrips: 2,
+        requireMeasuredDollarValue: true
+      },
+      today
+    );
+
+    expect(inclusive.trips).toHaveLength(2);
+    expect(measuredOnly.trips.map(({ merchant }) => merchant)).toEqual([
+      "Measured Market"
+    ]);
+    expect(
+      measuredOnly.excluded.find(
+        ({ opportunity }) => opportunity.id === "unpriced-reward"
+      )?.reason
+    ).toBe("Unpriced reward has no measured dollar value");
+    expect(measuredOnly.assumptions).toContain(
+      "Only offers with a measured dollar-value estimate are eligible; unpriced rewards are excluded."
+    );
+  });
+});
