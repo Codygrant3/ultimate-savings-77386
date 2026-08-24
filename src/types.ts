@@ -66,6 +66,7 @@ export interface Opportunity {
   freshness?: FreshnessStatus;
   discoveredOn?: string;
   preferenceSignals?: string[];
+  localRecord?: boolean;
 }
 
 export interface LocalMerchantLocation {

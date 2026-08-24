@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-08-23",
-  "adWindow": "Live public listings checked August 23, 2026; only reverified prices use that date, and older prices retain their original check dates.",
+  "checkedOn": "2026-08-24",
+  "adWindow": "Live public listings checked August 24, 2026; only reverified prices use that date, and older prices retain their original check dates.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -89,8 +89,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Rollback at Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-22",
-          "dateLabel": "Store page checked Aug 22; rollback from $0.45 each; no end date shown",
+          "checkedOn": "2026-08-24",
+          "dateLabel": "Store page checked Aug 24; rollback from $0.45 each; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -193,8 +193,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-23",
-          "dateLabel": "Store page checked Aug 23; rollback from $5.33; no end date shown",
+          "checkedOn": "2026-08-24",
+          "dateLabel": "Store page checked Aug 24; rollback from $5.33; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -228,8 +228,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-23",
-          "dateLabel": "Store page checked Aug 23; rollback from $4.92; no end date shown",
+          "checkedOn": "2026-08-24",
+          "dateLabel": "Store page checked Aug 24; rollback from $4.92; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -263,8 +263,8 @@
           "unit": "oz",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-23",
-          "dateLabel": "Store page checked Aug 23; rollback from $4.97; no end date shown",
+          "checkedOn": "2026-08-24",
+          "dateLabel": "Store page checked Aug 24; rollback from $4.97; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
         }
       ]
@@ -307,8 +307,8 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-23",
-          "dateLabel": "Store page checked Aug 23; rollback from $6.97; no end date shown",
+          "checkedOn": "2026-08-24",
+          "dateLabel": "Store page checked Aug 24; rollback from $6.97; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -329,8 +329,8 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-23",
-          "dateLabel": "Store page checked Aug 23; rollback from $2.34; no end date shown",
+          "checkedOn": "2026-08-24",
+          "dateLabel": "Store page checked Aug 24; rollback from $2.34; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -351,8 +351,8 @@
           "unit": "egg",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-23",
-          "dateLabel": "Store page checked Aug 23; rollback from $4.37; no end date shown",
+          "checkedOn": "2026-08-24",
+          "dateLabel": "Store page checked Aug 24; rollback from $4.37; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -373,8 +373,8 @@
           "unit": "oz",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-23",
-          "dateLabel": "Store page checked Aug 23; rollback from $4.28; no end date shown",
+          "checkedOn": "2026-08-24",
+          "dateLabel": "Store page checked Aug 24; rollback from $4.28; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/baking-supply-store"
         }
       ]

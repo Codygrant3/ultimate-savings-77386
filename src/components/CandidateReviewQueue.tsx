@@ -1,14 +1,28 @@
-import { ExternalLink, FlaskConical, ThumbsDown, ThumbsUp } from "lucide-react";
+import {
+  BadgeCheck,
+  ExternalLink,
+  FlaskConical,
+  ThumbsDown,
+  ThumbsUp,
+  X
+} from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import {
   readCandidateReviews,
   writeCandidateReviews
 } from "../lib/storage";
-import { buildCandidateReviewContext } from "../lib/candidate-review";
+import {
+  buildCandidateReviewContext,
+  createLocallyVerifiedOffer,
+  LOCAL_OFFER_CATEGORIES,
+  type LocalVerifiedOfferDraft
+} from "../lib/candidate-review";
 import { formatCurrency, formatDate } from "../lib/scoring";
 import type {
   CandidateReviewStatus,
   CandidateReviews,
+  Category,
+  Friction,
   OfferCandidate,
   Opportunity
 } from "../types";
@@ -19,15 +33,30 @@ interface DiscoverySnapshot {
 }
 
 export function CandidateReviewQueue({
-  opportunities
+  opportunities,
+  onAddVerifiedOffer
 }: {
   opportunities: Opportunity[];
+  onAddVerifiedOffer: (offer: Opportunity) => void;
 }) {
   const [candidates, setCandidates] = useState<OfferCandidate[]>([]);
   const [generatedAt, setGeneratedAt] = useState<string>();
   const [loadError, setLoadError] = useState(false);
   const [reviews, setReviews] = useState<CandidateReviews>(readCandidateReviews);
   const [filter, setFilter] = useState<CandidateReviewStatus | "pending">("pending");
+  const [draftCandidateId, setDraftCandidateId] = useState<string | null>(null);
+  const [draftErrors, setDraftErrors] = useState<string[]>([]);
+  const [draft, setDraft] = useState<LocalVerifiedOfferDraft>({
+    category: "restaurants",
+    estimatedSavings: 0,
+    minimumSpend: 0,
+    isFree: false,
+    expiresOn: undefined,
+    friction: "low",
+    stackNote: "",
+    localParticipationConfirmed: false,
+    officialTermsConfirmed: false
+  });
 
   useEffect(() => {
     let active = true;
@@ -98,6 +127,56 @@ export function CandidateReviewQueue({
       next[id] = status;
     }
     setReviews(writeCandidateReviews(next));
+  }
+
+  function openVerificationForm(candidate: OfferCandidate) {
+    setDraftCandidateId(candidate.id);
+    setDraftErrors([]);
+    setDraft({
+      category:
+        candidate.sourceId.includes("heb") ||
+        candidate.sourceId.includes("target") ||
+        candidate.sourceId.includes("kroger")
+          ? "grocery"
+          : candidate.sourceId.includes("take5") ||
+              candidate.sourceId.includes("costa") ||
+              candidate.sourceId.includes("rainbow")
+            ? "auto"
+            : "restaurants",
+      estimatedSavings: 0,
+      minimumSpend: candidate.minimumSpend ?? 0,
+      isFree: false,
+      expiresOn: undefined,
+      friction: "low",
+      stackNote: "",
+      localParticipationConfirmed: false,
+      officialTermsConfirmed: false
+    });
+  }
+
+  function updateDraft<K extends keyof LocalVerifiedOfferDraft>(
+    key: K,
+    value: LocalVerifiedOfferDraft[K]
+  ) {
+    setDraft((current) => ({ ...current, [key]: value }));
+  }
+
+  function submitVerification() {
+    const candidate = candidates.find(({ id }) => id === draftCandidateId);
+    if (!candidate) return;
+
+    const result = createLocallyVerifiedOffer(candidate, {
+      ...draft,
+      stackNote: (draft.stackNote ?? "").trim() || undefined
+    });
+    if (result.status === "invalid") {
+      setDraftErrors(result.errors);
+      return;
+    }
+
+    onAddVerifiedOffer(result.offer);
+    setDraftCandidateId(null);
+    setDraftErrors([]);
   }
 
   return (
@@ -200,6 +279,19 @@ export function CandidateReviewQueue({
                   </a>
                   <button
                     type="button"
+                    className="review-action"
+                    onClick={() =>
+                      draftCandidateId === candidate.id
+                        ? setDraftCandidateId(null)
+                        : openVerificationForm(candidate)
+                    }
+                    aria-label={`Capture terms for ${candidate.title}`}
+                  >
+                    <BadgeCheck size={14} aria-hidden="true" />
+                    {draftCandidateId === candidate.id ? "Close" : "Capture"}
+                  </button>
+                  <button
+                    type="button"
                     className={status === "keep" ? "review-action review-action--keep" : "review-action"}
                     onClick={() => reviewCandidate(candidate.id, "keep")}
                     aria-label={`${status === "keep" ? "Unmark" : "Keep"} ${candidate.title}`}
@@ -219,6 +311,150 @@ export function CandidateReviewQueue({
             );
           })}
         </ul>
+      )}
+
+      {draftCandidateId && (
+        <form
+          className="candidate-verify-form"
+          aria-label="Capture verified offer terms"
+          onSubmit={(event) => {
+            event.preventDefault();
+            submitVerification();
+          }}
+        >
+          <div className="candidate-verify-header">
+            <div>
+              <span className="eyebrow">Manual confirmation</span>
+              <h3>{candidates.find(({ id }) => id === draftCandidateId)?.title}</h3>
+            </div>
+            <button
+              type="button"
+              className="icon-button"
+              onClick={() => setDraftCandidateId(null)}
+              aria-label="Close offer capture"
+            >
+              <X size={15} aria-hidden="true" />
+            </button>
+          </div>
+
+          {draftErrors.length > 0 && (
+            <ul className="candidate-verify-errors">
+              {draftErrors.map((error) => (
+                <li key={error}>{error}</li>
+              ))}
+            </ul>
+          )}
+
+          <div className="candidate-verify-grid">
+            <label>
+              <span>Category</span>
+              <select
+                value={draft.category}
+                onChange={(event) =>
+                  updateDraft("category", event.target.value as Category)
+                }
+              >
+                {LOCAL_OFFER_CATEGORIES.map((category) => (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              <span>Dollar estimate</span>
+              <input
+                type="number"
+                min="0"
+                step="0.01"
+                value={draft.estimatedSavings}
+                onChange={(event) =>
+                  updateDraft("estimatedSavings", Number(event.target.value || 0))
+                }
+              />
+            </label>
+            <label>
+              <span>Minimum spend</span>
+              <input
+                type="number"
+                min="0"
+                step="0.01"
+                value={draft.minimumSpend}
+                onChange={(event) =>
+                  updateDraft("minimumSpend", Number(event.target.value || 0))
+                }
+              />
+            </label>
+            <label>
+              <span>Expires on</span>
+              <input
+                type="date"
+                value={draft.expiresOn ?? ""}
+                onChange={(event) =>
+                  updateDraft("expiresOn", event.target.value || undefined)
+                }
+              />
+            </label>
+            <label>
+              <span>Redemption effort</span>
+              <select
+                value={draft.friction}
+                onChange={(event) =>
+                  updateDraft("friction", event.target.value as Friction)
+                }
+              >
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+            <label>
+              <span>Stack note</span>
+              <input
+                type="text"
+                maxLength={160}
+                placeholder="Optional official stack rule"
+                value={draft.stackNote}
+                onChange={(event) => updateDraft("stackNote", event.target.value)}
+              />
+            </label>
+          </div>
+
+          <div className="candidate-verify-checks">
+            <label>
+              <input
+                type="checkbox"
+                checked={draft.isFree}
+                onChange={(event) => updateDraft("isFree", event.target.checked)}
+              />
+              <span>Free reward</span>
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={draft.officialTermsConfirmed}
+                onChange={(event) =>
+                  updateDraft("officialTermsConfirmed", event.target.checked)
+                }
+              />
+              <span>I confirmed the linked official terms</span>
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={draft.localParticipationConfirmed}
+                onChange={(event) =>
+                  updateDraft("localParticipationConfirmed", event.target.checked)
+                }
+              />
+              <span>Local participation confirmed</span>
+            </label>
+          </div>
+
+          <button type="submit" className="review-action review-action--keep">
+            <BadgeCheck size={14} aria-hidden="true" /> Add locally recorded deal
+          </button>
+        </form>
       )}
     </section>
   );

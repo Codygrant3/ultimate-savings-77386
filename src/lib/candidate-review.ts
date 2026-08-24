@@ -1,4 +1,9 @@
-import type { OfferCandidate, Opportunity } from "../types";
+import type {
+  Category,
+  Friction,
+  OfferCandidate,
+  Opportunity
+} from "../types";
 
 export interface CandidateOfferMatch {
   opportunity: Opportunity;
@@ -188,4 +193,115 @@ export function buildCandidateReviewContext(
 ): CandidateReviewContext {
   const match = findCandidateMatch(candidate, opportunities);
   return match ? { status: "existing", match } : { status: "new" };
+}
+
+export interface LocalVerifiedOfferDraft {
+  category: Category;
+  estimatedSavings: number;
+  minimumSpend: number;
+  isFree: boolean;
+  expiresOn?: string;
+  friction: Friction;
+  stackNote?: string;
+  localParticipationConfirmed: boolean;
+  officialTermsConfirmed: boolean;
+}
+
+export type LocalVerifiedOfferResult =
+  | { status: "created"; offer: Opportunity }
+  | { status: "invalid"; errors: string[] };
+
+function isValidIsoDate(value: string): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const parsed = new Date(`${value}T12:00:00`);
+  return (
+    Number.isFinite(parsed.getTime()) &&
+    parsed.toISOString().slice(0, 10) === value
+  );
+}
+
+export const LOCAL_OFFER_CATEGORIES: Category[] = [
+  "restaurants",
+  "grocery",
+  "fuel",
+  "coffee",
+  "convenience",
+  "auto",
+  "movies",
+  "sports",
+  "tax-free",
+  "shopping"
+];
+
+export function createLocallyVerifiedOffer(
+  candidate: OfferCandidate,
+  draft: LocalVerifiedOfferDraft,
+  today = new Date()
+): LocalVerifiedOfferResult {
+  const errors: string[] = [];
+  const estimatedSavings = Number(draft.estimatedSavings);
+  const minimumSpend = Number(draft.minimumSpend);
+  const checkedOn = today.toISOString().slice(0, 10);
+
+  if (!draft.officialTermsConfirmed) {
+    errors.push("Confirm the offer terms on the linked official source");
+  }
+  if (!LOCAL_OFFER_CATEGORIES.includes(draft.category)) {
+    errors.push("Choose a valid category");
+  }
+  if (!Number.isFinite(estimatedSavings) || estimatedSavings < 0) {
+    errors.push("Enter a zero or positive dollar estimate");
+  }
+  if (!draft.isFree && estimatedSavings <= 0) {
+    errors.push("Enter a dollar estimate or mark the reward free");
+  }
+  if (!Number.isFinite(minimumSpend) || minimumSpend < 0) {
+    errors.push("Enter a zero or positive minimum spend");
+  }
+  if (draft.expiresOn && !isValidIsoDate(draft.expiresOn)) {
+    errors.push("Use a valid expiration date");
+  }
+  if (!["low", "medium", "high"].includes(draft.friction)) {
+    errors.push("Choose a valid redemption effort");
+  }
+
+  if (errors.length > 0) return { status: "invalid", errors };
+
+  const offer: Opportunity = {
+    id: `local-${candidate.id}`,
+    merchant: candidate.merchant,
+    title: candidate.title,
+    summary:
+      candidate.detail ||
+      "Terms were manually confirmed from the linked official source.",
+    category: draft.category,
+    estimatedSavings,
+    minimumSpend,
+    isFree: draft.isFree,
+    ...(draft.expiresOn ? { expiresOn: draft.expiresOn } : {}),
+    locationNote: draft.localParticipationConfirmed
+      ? "Marked locally confirmed on this device; recheck before each visit."
+      : "Official terms confirmed on this device; local participation remains unconfirmed.",
+    verification: "verified",
+    friction: draft.friction,
+    tags: ["locally recorded", "official source"],
+    source: {
+      label: `${candidate.merchant} official page`,
+      url: candidate.url,
+      checkedOn
+    },
+    actionLabel: "Review confirmed terms",
+    tier: "A",
+    ...(draft.stackNote ? { stackNote: draft.stackNote } : {}),
+    finePrint:
+      candidate.detail ||
+      "Manually captured from the official source. Recheck the linked terms before redemption.",
+    dealType: draft.isFree ? "free-food" : "digital-coupon",
+    freshness: "new",
+    discoveredOn: checkedOn,
+    preferenceSignals: ["user-verified"],
+    localRecord: true
+  };
+
+  return { status: "created", offer };
 }

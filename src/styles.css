@@ -2241,6 +2241,107 @@ a {
   color: #7a4a18;
 }
 
+.candidate-verify-form {
+  display: grid;
+  gap: 12px;
+  padding: 13px;
+  border: 1px solid #c5ddd3;
+  border-radius: 10px;
+  background: #f4faf7;
+}
+
+.candidate-verify-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.candidate-verify-header h3 {
+  margin: 2px 0 0;
+  color: var(--ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+}
+
+.candidate-verify-header button {
+  margin-left: auto;
+}
+
+.candidate-verify-errors {
+  margin: 0;
+  padding: 8px 10px;
+  color: #7a4a18;
+  list-style: none;
+  border: 1px solid #ecd3b1;
+  border-radius: 8px;
+  background: #fdf3e5;
+  font-size: 9px;
+}
+
+.candidate-verify-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.candidate-verify-grid label {
+  min-width: 0;
+}
+
+.candidate-verify-grid span,
+.candidate-verify-checks span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink-soft);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.candidate-verify-grid input,
+.candidate-verify-grid select {
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 10px;
+}
+
+.candidate-verify-checks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.candidate-verify-checks label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 7px 8px;
+  border: 1px solid rgba(23, 53, 44, 0.07);
+  border-radius: 7px;
+  background: rgba(255, 254, 250, 0.85);
+}
+
+.candidate-verify-checks input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: var(--forest);
+}
+
+.candidate-verify-checks span {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.candidate-verify-form > button {
+  justify-self: start;
+}
+
 .planner {
   display: grid;
   gap: 16px;
@@ -3631,6 +3732,11 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .candidate-verify-grid,
+  .candidate-verify-checks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .deal-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3838,6 +3944,11 @@ a {
   }
 
   .criteria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-verify-grid,
+  .candidate-verify-checks {
     grid-template-columns: 1fr;
   }
 

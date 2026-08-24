@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-24T14:06:56.838Z",
+  "generatedAt": "2026-08-24T15:07:55.330Z",
   "weekOf": "2026-08-24",
   "zipCode": "77386",
   "totalPotentialSavings": 184.49,
-  "verifiedCount": 42,
+  "verifiedCount": 43,
   "expiringCount": 20,
   "opportunities": [
     {
@@ -30,7 +30,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84055257",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check and clip coupon",
       "tier": "A",
@@ -132,7 +132,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84049522",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check and clip coupon",
       "tier": "A",
@@ -236,7 +236,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84048755",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check and clip coupon",
       "tier": "A",
@@ -340,7 +340,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84044129",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check and clip coupon",
       "tier": "A",
@@ -538,7 +538,7 @@
       "source": {
         "label": "H-E-B official coupon page",
         "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check and clip coupon",
       "tier": "A",
@@ -640,7 +640,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84056038",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check and clip coupon",
       "tier": "A",
@@ -743,7 +743,7 @@
       "source": {
         "label": "H-E-B official coupon page",
         "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check and clip coupon",
       "tier": "A",
@@ -1038,7 +1038,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84048909",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check and clip coupon",
       "tier": "A",
@@ -1140,7 +1140,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check Paze eligibility",
       "tier": "A",
@@ -1626,7 +1626,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check welcome reward",
       "tier": "A",
@@ -2015,7 +2015,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Claim chili offer",
       "tier": "A",
@@ -3158,7 +3158,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Claim Wednesday offer",
       "tier": "A",
@@ -3254,7 +3254,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Claim Friday offer",
       "tier": "A",
@@ -3352,7 +3352,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check August 26 offer",
       "tier": "A",
@@ -3547,7 +3547,7 @@
       "source": {
         "label": "Dairy Queen official newsroom",
         "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Kicking-Off-Fall-Flavor-Season-with-the-NEW-Caramel-Apple-Cheesecake-BLIZZARD-Treat-and-More-Seasonal-Treats-Coming-Soon-/default.aspx",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-24"
       },
       "actionLabel": "Check Double Flip offer",
       "tier": "A",
@@ -3903,6 +3903,102 @@
           "points": 8,
           "weight": 8,
           "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "whataburger-more-for-four-2026",
+      "merchant": "Whataburger",
+      "title": "Four entree choices for $4 each",
+      "summary": "Whataburger's new More for $4 menu includes the Bacon & Cheese Whataburger Jr., Whataburger Patty Melt Jr., Honey BBQ Chicken Strip Sandwich Jr., and Buffalo Ranch Chicken Strip Sandwich Jr.; a small fries and drink add-on is $3.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 4,
+      "isFree": false,
+      "locationNote": "Officially offered at participating locations nationwide; price and participation at Spring-area restaurants are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "value menu",
+        "$4 entree",
+        "restaurant",
+        "participating locations"
+      ],
+      "source": {
+        "label": "Whataburger official newsroom",
+        "url": "https://stories.whataburger.com/value-more-for-4/",
+        "checkedOn": "2026-08-24"
+      },
+      "actionLabel": "Check local $4 menu",
+      "tier": "B",
+      "stackNote": "Compare the $4 entree or $7 small meal with current app offers before ordering.",
+      "finePrint": "The official announcement says the menu is available now at participating Whataburger locations nationwide, with prices and participation varying by location. No savings estimate is shown because a regular local comparison price was not verified.",
+      "expirationLabel": "Ongoing; confirm local participation",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-24",
+      "preferenceSignals": [
+        "restaurant-value",
+        "low-friction",
+        "location-gated"
+      ],
+      "score": 52,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$4.00 required per $0.00 saved"
         },
         {
           "label": "Stackability",

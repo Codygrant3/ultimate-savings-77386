@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { OfferCandidate, Opportunity } from "../types";
 import {
   buildCandidateReviewContext,
+  createLocallyVerifiedOffer,
   findCandidateMatch
 } from "./candidate-review";
 
@@ -148,5 +149,55 @@ describe("candidate review matching", () => {
     expect(match?.opportunity.id).toBe("rainbow-birthday");
     expect(match?.amountMatches).toBe(true);
     expect(match?.minimumSpendMatches).toBe(true);
+  });
+
+  it("requires explicit official-source confirmation before local verification", () => {
+    const result = createLocallyVerifiedOffer(
+      candidate(),
+      {
+        category: "auto",
+        estimatedSavings: 15,
+        minimumSpend: 0,
+        isFree: false,
+        friction: "low",
+        localParticipationConfirmed: false,
+        officialTermsConfirmed: false
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(result).toEqual({
+      status: "invalid",
+      errors: ["Confirm the offer terms on the linked official source"]
+    });
+  });
+
+  it("creates a gated local offer only after the user captures confirmed terms", () => {
+    const result = createLocallyVerifiedOffer(
+      candidate({ detail: "Valid at participating locations." }),
+      {
+        category: "auto",
+        estimatedSavings: 15,
+        minimumSpend: 25,
+        isFree: false,
+        expiresOn: "2026-09-30",
+        friction: "low",
+        stackNote: "One coupon per visit",
+        localParticipationConfirmed: true,
+        officialTermsConfirmed: true
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(result.status).toBe("created");
+    if (result.status !== "created") return;
+    expect(result.offer.id).toBe("local-candidate");
+    expect(result.offer.verification).toBe("verified");
+    expect(result.offer.localRecord).toBe(true);
+    expect(result.offer.estimatedSavings).toBe(15);
+    expect(result.offer.minimumSpend).toBe(25);
+    expect(result.offer.expiresOn).toBe("2026-09-30");
+    expect(result.offer.stackNote).toBe("One coupon per visit");
+    expect(result.offer.locationNote).toContain("locally confirmed");
   });
 });

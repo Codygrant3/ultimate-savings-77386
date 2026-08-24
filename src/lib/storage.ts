@@ -5,7 +5,8 @@ import type {
   ScoringWeights,
   CandidateReviews,
   ValueAlertSettings,
-  WeeklyPlanSettings
+  WeeklyPlanSettings,
+  Opportunity
 } from "../types";
 
 const SAVED_KEY = "savings-desk:saved";
@@ -21,6 +22,7 @@ const ACKNOWLEDGED_VALUE_ALERTS_KEY = "savings-desk:value-alerts-acknowledged";
 const CANDIDATE_REVIEWS_KEY = "savings-desk:candidate-reviews";
 const WEEKLY_PLAN_SETTINGS_KEY = "savings-desk:weekly-plan-settings";
 const SCORING_WEIGHTS_KEY = "savings-desk:scoring-weights";
+const LOCAL_OFFERS_KEY = "savings-desk:local-offers";
 
 function readIds(key: string): string[] {
   try {
@@ -251,4 +253,47 @@ export function readScoringWeights(
 export function writeScoringWeights(weights: ScoringWeights): ScoringWeights {
   window.localStorage.setItem(SCORING_WEIGHTS_KEY, JSON.stringify(weights));
   return weights;
+}
+
+function isLocalOffer(value: unknown): value is Opportunity {
+  if (typeof value !== "object" || value === null) return false;
+  const offer = value as Partial<Opportunity>;
+
+  return (
+    typeof offer.id === "string" &&
+    offer.id.startsWith("local-") &&
+    typeof offer.merchant === "string" &&
+    typeof offer.title === "string" &&
+    typeof offer.summary === "string" &&
+    typeof offer.category === "string" &&
+    Number.isFinite(offer.estimatedSavings) &&
+    Number.isFinite(offer.minimumSpend) &&
+    typeof offer.isFree === "boolean" &&
+    typeof offer.locationNote === "string" &&
+    offer.verification === "verified" &&
+    typeof offer.friction === "string" &&
+    Array.isArray(offer.tags) &&
+    typeof offer.source?.label === "string" &&
+    typeof offer.source?.url === "string" &&
+    typeof offer.source?.checkedOn === "string" &&
+    typeof offer.actionLabel === "string" &&
+    offer.localRecord === true
+  );
+}
+
+export function readLocalOffers(): Opportunity[] {
+  try {
+    const value = window.localStorage.getItem(LOCAL_OFFERS_KEY);
+    if (value === null) return [];
+    const parsed = JSON.parse(value) as unknown;
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter(isLocalOffer);
+  } catch {
+    return [];
+  }
+}
+
+export function writeLocalOffers(offers: Opportunity[]): Opportunity[] {
+  window.localStorage.setItem(LOCAL_OFFERS_KEY, JSON.stringify(offers));
+  return offers;
 }

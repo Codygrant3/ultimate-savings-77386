@@ -63,7 +63,9 @@ import {
   readWeeklyPlanSettings,
   writeAcknowledgedValueAlertIds,
   readScoringWeights,
+  readLocalOffers,
   writeValueAlertSettings,
+  writeLocalOffers,
   writeScoringWeights,
   writeWeeklyPlanSettings
 } from "./lib/storage";
@@ -368,6 +370,7 @@ export default function App() {
   const [scoringWeights, setScoringWeights] = useState<ScoringWeights>(() =>
     readScoringWeights(DEFAULT_SCORING_WEIGHTS)
   );
+  const [localOffers, setLocalOffers] = useState<Opportunity[]>(readLocalOffers);
   const [acknowledgedValueAlertIds, setAcknowledgedValueAlertIds] = useState<
     string[]
   >(readAcknowledgedValueAlertIds);
@@ -376,16 +379,21 @@ export default function App() {
     () => buildLearnedPreferences(receipts, analysisDate),
     [analysisDate, receipts]
   );
+  const allOpportunities = useMemo(
+    () => [...opportunities, ...localOffers],
+    [localOffers]
+  );
+
   const rankedOpportunities = useMemo(
     () =>
       rankOpportunities(
-        opportunities,
+        allOpportunities,
         analysisDate,
         learnedPreferences,
         merchantInventory,
         scoringWeights
       ),
-    [analysisDate, learnedPreferences, scoringWeights]
+    [allOpportunities, analysisDate, learnedPreferences, scoringWeights]
   );
 
   const verifiedDeals = useMemo(
@@ -469,6 +477,15 @@ export default function App() {
 
   function updateScoringWeights(weights: ScoringWeights) {
     setScoringWeights(writeScoringWeights(weights));
+  }
+
+  function addVerifiedOffer(offer: Opportunity) {
+    setLocalOffers(
+      writeLocalOffers([
+        offer,
+        ...localOffers.filter(({ id }) => id !== offer.id)
+      ])
+    );
   }
 
   function acknowledgeValueAlert(id: string) {
@@ -991,6 +1008,7 @@ export default function App() {
               onDeleteReceipt={deleteReceipt}
               onAcknowledgeValueAlert={acknowledgeValueAlert}
               onUpdateValueAlertSettings={updateValueAlertSettings}
+              onAddVerifiedOffer={addVerifiedOffer}
             />
           )}
 

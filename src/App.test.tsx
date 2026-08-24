@@ -226,6 +226,23 @@ describe("Savings Desk interactions", () => {
     expect(screen.getByText("$15 off any oil change")).toBeTruthy();
     expect(screen.getByText("82/100")).toBeTruthy();
 
+    fireEvent.click(screen.getByRole("button", { name: "Capture terms for $15 off any oil change" }));
+    fireEvent.change(screen.getByLabelText("Dollar estimate"), {
+      target: { value: "15" }
+    });
+    fireEvent.change(screen.getByLabelText("Minimum spend"), {
+      target: { value: "25" }
+    });
+    fireEvent.change(screen.getByLabelText("Expires on"), {
+      target: { value: "2026-09-30" }
+    });
+    fireEvent.click(screen.getByLabelText("I confirmed the linked official terms"));
+    fireEvent.click(screen.getByRole("button", { name: "Add locally recorded deal" }));
+
+    expect(
+      window.localStorage.getItem("savings-desk:local-offers")
+    ).toContain('"id":"local-test-candidate"');
+
     fireEvent.click(screen.getByRole("button", { name: "Keep $15 off any oil change" }));
     expect(window.localStorage.getItem("savings-desk:candidate-reviews")).toContain(
       "keep"
