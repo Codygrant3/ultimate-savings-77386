@@ -213,6 +213,43 @@ describe("savings scoring", () => {
     expect(stacked.score).toBeLessThan(100);
   });
 
+  it("separates compatible, conditional, and exclusive stack evidence", () => {
+    const today = new Date("2026-07-23T12:00:00");
+    const factorFor = (opportunity: Opportunity) =>
+      scoreOpportunity(opportunity, today).scoreBreakdown.find(
+        ({ label }) => label === "Stackability"
+      );
+
+    const compatible = factorFor({
+      ...baseOpportunity,
+      id: "compatible",
+      stackNote: "Eligible rewards can combine"
+    });
+    const conditional = factorFor({
+      ...baseOpportunity,
+      id: "conditional",
+      stackNote: "Use only if both items are already planned"
+    });
+    const exclusive = factorFor({
+      ...baseOpportunity,
+      id: "exclusive",
+      stackNote: "This coupon cannot be combined with other offers"
+    });
+
+    expect(compatible?.detail).toContain("Compatible");
+    expect(conditional?.detail).toContain("confirmation");
+    expect(exclusive?.detail).toContain("restrict combining");
+    if (
+      compatible?.points === undefined ||
+      conditional?.points === undefined ||
+      exclusive?.points === undefined
+    ) {
+      throw new Error("Stackability factor missing");
+    }
+    expect(compatible.points).toBeGreaterThan(conditional.points);
+    expect(conditional.points).toBeGreaterThan(exclusive.points);
+  });
+
   it("uses confirmed receipt history to adjust household fit", () => {
     const today = new Date("2026-08-21T12:00:00");
     const learned = buildLearnedPreferences(

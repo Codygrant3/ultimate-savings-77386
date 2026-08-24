@@ -82,6 +82,7 @@ export function CandidateReviewQueue({
     stackGroup: "",
     savingsRate: undefined,
     distanceMiles: undefined,
+    stackStatus: "conditional",
     localParticipationConfirmed: false,
     officialTermsConfirmed: false
   });
@@ -210,6 +211,7 @@ export function CandidateReviewQueue({
       friction: existing?.friction ?? "low",
       stackNote: existing?.stackNote ?? "",
       stackGroup: existing?.stackGroup ?? "",
+      stackStatus: existing?.stackStatus ?? "conditional",
       savingsRate: existing?.savingsRate,
       distanceMiles: existing?.distanceMiles,
       localParticipationConfirmed: existing?.localRecord === true,
@@ -580,6 +582,23 @@ export function CandidateReviewQueue({
                 value={draft.stackGroup}
                 onChange={(event) => updateDraft("stackGroup", event.target.value)}
               />
+              </label>
+            <label>
+              <span>Stack compatibility</span>
+              <select
+                aria-label="Stack compatibility"
+                value={draft.stackStatus}
+                onChange={(event) =>
+                  updateDraft(
+                    "stackStatus",
+                    event.target.value as LocalVerifiedOfferDraft["stackStatus"]
+                  )
+                }
+              >
+                <option value="compatible">Compatible</option>
+                <option value="conditional">Confirm first</option>
+                <option value="exclusive">Cannot combine</option>
+              </select>
             </label>
             <label>
               <span>Confirmed miles</span>

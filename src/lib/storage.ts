@@ -41,6 +41,7 @@ const LOCAL_CATEGORIES = new Set([
   "shopping"
 ]);
 const FRICTION_LEVELS = new Set(["low", "medium", "high"]);
+const STACK_STATUSES = new Set(["compatible", "conditional", "exclusive"]);
 
 function normalizeStoredIds(value: unknown): string[] {
   if (!Array.isArray(value)) return [];
@@ -413,6 +414,9 @@ function isLocalOffer(value: unknown): value is Opportunity {
         offer.distanceMiles <= 50)) &&
     (offer.expiresOn === undefined || isValidStoredDate(offer.expiresOn)) &&
     (offer.stackGroup === undefined || isSafeStackGroup(offer.stackGroup)) &&
+    (offer.stackStatus === undefined ||
+      (typeof offer.stackStatus === "string" &&
+        STACK_STATUSES.has(offer.stackStatus))) &&
     (offer.tier === undefined || offer.tier === "A") &&
     offer.localRecord === true
   );

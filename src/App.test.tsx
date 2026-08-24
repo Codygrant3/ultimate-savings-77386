@@ -271,6 +271,9 @@ describe("Savings Desk interactions", () => {
     fireEvent.change(screen.getByLabelText("Official exclusion group"), {
       target: { value: "market-app-offer" }
     });
+    fireEvent.change(screen.getByLabelText("Stack compatibility"), {
+      target: { value: "exclusive" }
+    });
     fireEvent.change(screen.getByLabelText("Expires on"), {
       target: { value: "2026-09-30" }
     });
@@ -286,6 +289,9 @@ describe("Savings Desk interactions", () => {
     expect(
       window.localStorage.getItem("savings-desk:local-offers")
     ).toContain('"stackGroup":"market-app-offer"');
+    expect(
+      window.localStorage.getItem("savings-desk:local-offers")
+    ).toContain('"stackStatus":"exclusive"');
 
     fireEvent.click(screen.getByRole("button", { name: "Deal feed" }));
     fireEvent.click(

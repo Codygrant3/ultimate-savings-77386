@@ -186,6 +186,7 @@ describe("candidate review matching", () => {
         minimumSpend: 0,
         isFree: false,
         friction: "low",
+        stackStatus: "conditional",
         localParticipationConfirmed: false,
         officialTermsConfirmed: false
       },
@@ -212,6 +213,7 @@ describe("candidate review matching", () => {
         stackGroup: "Market App Offer",
         savingsRate: 30,
         distanceMiles: 4.2,
+        stackStatus: "exclusive",
         localParticipationConfirmed: true,
         officialTermsConfirmed: true
       },
@@ -229,6 +231,7 @@ describe("candidate review matching", () => {
     expect(result.offer.expiresOn).toBe("2026-09-30");
     expect(result.offer.stackNote).toBe("One coupon per visit");
     expect(result.offer.stackGroup).toBe("market-app-offer");
+    expect(result.offer.stackStatus).toBe("exclusive");
     expect(result.offer.locationNote).toContain("locally confirmed");
     expect(result.offer.distanceMiles).toBe(4.2);
   });
@@ -242,6 +245,7 @@ describe("candidate review matching", () => {
         minimumSpend: 0,
         isFree: false,
         friction: "low",
+        stackStatus: "conditional",
         distanceMiles: 51,
         localParticipationConfirmed: true,
         officialTermsConfirmed: true
@@ -265,6 +269,7 @@ describe("candidate review matching", () => {
         minimumSpend: 0,
         isFree: false,
         friction: "low",
+        stackStatus: "conditional",
         savingsRate: 101,
         localParticipationConfirmed: false,
         officialTermsConfirmed: true
@@ -289,6 +294,7 @@ describe("candidate review matching", () => {
         isFree: false,
         friction: "low",
         stackGroup: "not safe!",
+        stackStatus: "conditional",
         localParticipationConfirmed: false,
         officialTermsConfirmed: true
       },

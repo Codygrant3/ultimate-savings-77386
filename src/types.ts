@@ -32,6 +32,7 @@ export type DealType =
   | "sports-ticket"
   | "tax-holiday";
 export type FreshnessStatus = "new" | "improved" | "current" | "monitoring";
+export type StackCompatibility = "compatible" | "conditional" | "exclusive";
 
 export interface SourceEvidence {
   label: string;
@@ -60,6 +61,7 @@ export interface Opportunity {
   distanceMiles?: number;
   stackNote?: string;
   stackGroup?: string;
+  stackStatus?: StackCompatibility;
   finePrint?: string;
   expirationLabel?: string;
   availability?: AvailabilityStatus;

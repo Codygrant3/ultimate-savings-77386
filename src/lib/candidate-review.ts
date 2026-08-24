@@ -2,7 +2,8 @@ import type {
   Category,
   Friction,
   OfferCandidate,
-  Opportunity
+  Opportunity,
+  StackCompatibility
 } from "../types";
 
 export interface CandidateOfferMatch {
@@ -223,6 +224,7 @@ export interface LocalVerifiedOfferDraft {
   friction: Friction;
   stackNote?: string;
   stackGroup?: string;
+  stackStatus: StackCompatibility;
   savingsRate?: number;
   distanceMiles?: number;
   localParticipationConfirmed: boolean;
@@ -244,6 +246,14 @@ function isValidIsoDate(value: string): boolean {
 
 function normalizedStackGroup(value: string | undefined): string | undefined {
   return value?.trim().toLowerCase().replaceAll(/\s+/g, "-") || undefined;
+}
+
+function isValidStackCompatibility(
+  value: StackCompatibility
+): value is StackCompatibility {
+  return (
+    value === "compatible" || value === "conditional" || value === "exclusive"
+  );
 }
 
 export const LOCAL_OFFER_CATEGORIES: Category[] = [
@@ -270,6 +280,7 @@ export function createLocallyVerifiedOffer(
   const distanceMiles = draft.distanceMiles;
   const savingsRate = draft.savingsRate;
   const stackGroup = normalizedStackGroup(draft.stackGroup);
+  const stackStatus = draft.stackStatus;
   const checkedOn = today.toISOString().slice(0, 10);
 
   if (!draft.officialTermsConfirmed) {
@@ -298,6 +309,9 @@ export function createLocallyVerifiedOffer(
   }
   if (!["low", "medium", "high"].includes(draft.friction)) {
     errors.push("Choose a valid redemption effort");
+  }
+  if (!isValidStackCompatibility(stackStatus)) {
+    errors.push("Choose a valid stack compatibility");
   }
   if (
     stackGroup &&
@@ -356,6 +370,7 @@ export function createLocallyVerifiedOffer(
     tier: "A",
     ...(draft.stackNote ? { stackNote: draft.stackNote } : {}),
     ...(stackGroup ? { stackGroup } : {}),
+    stackStatus,
     finePrint:
       candidate.detail ||
       "Manually captured from the official source. Recheck the linked terms before redemption.",

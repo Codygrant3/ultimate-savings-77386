@@ -81,6 +81,7 @@ describe("stored locally captured offers", () => {
     dealType: "digital-coupon",
     freshness: "new",
     discoveredOn: "2026-08-24",
+    stackStatus: "conditional",
     preferenceSignals: ["user-verified"],
     localRecord: true
   } as unknown as Opportunity;
@@ -94,7 +95,8 @@ describe("stored locally captured offers", () => {
       friction: "extreme",
       expiresOn: "2026-02-31",
       distanceMiles: 99,
-      stackGroup: "not safe!"
+      stackGroup: "not safe!",
+      stackStatus: "impossible"
     } as unknown as Opportunity;
 
     window.localStorage.setItem(

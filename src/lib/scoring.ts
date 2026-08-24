@@ -9,6 +9,7 @@ import type {
   ScoringWeights,
   PreferenceEvidence,
   ScoreFactor,
+  StackCompatibility,
   ScoredOpportunity
 } from "../types";
 
@@ -457,9 +458,50 @@ function spendEfficiency(opportunity: Opportunity): { value: number; detail: str
   };
 }
 
+function resolveStackCompatibility(
+  opportunity: Opportunity
+): StackCompatibility | null {
+  if (
+    opportunity.stackStatus === "compatible" ||
+    opportunity.stackStatus === "conditional" ||
+    opportunity.stackStatus === "exclusive"
+  ) {
+    return opportunity.stackStatus;
+  }
+
+  if (opportunity.stackGroup) return "exclusive";
+
+  const note = opportunity.stackNote;
+  if (!note) return null;
+
+  const text = note.toLowerCase();
+  if (
+    /(?:cannot(?: be)?|can't|do not|don't)\s+(?:be\s+)?combined/.test(text) ||
+    /one app offer per order/.test(text) ||
+    /use\s+.+\s+by itself/.test(text) ||
+    /keep\s+.+\s+separate/.test(text) ||
+    /no additional stacking/.test(text)
+  ) {
+    return "exclusive";
+  }
+
+  if (/(?:can|may)\s+(?:also\s+)?(?:combine|stack)/.test(text)) {
+    return "compatible";
+  }
+
+  return "conditional";
+}
+
 function stackability(opportunity: Opportunity): { value: number; detail: string } {
-  if (opportunity.stackNote) {
-    return { value: 100, detail: "Compatible stack documented" };
+  const classified = resolveStackCompatibility(opportunity);
+  if (classified) {
+    const value = { compatible: 100, conditional: 55, exclusive: 12 }[classified];
+    const label = {
+      compatible: "Compatible stack documented",
+      conditional: "Stack terms require confirmation",
+      exclusive: "Official terms restrict combining offers"
+    }[classified];
+    return { value, detail: label };
   }
 
   const dealTypeValue: Record<NonNullable<Opportunity["dealType"]>, number> = {
