@@ -169,6 +169,54 @@ describe("weekly action plan optimizer", () => {
     );
   });
 
+  it("does not treat a checked distance as proof of local promotion participation", () => {
+    const plan = buildWeeklyPlan([makeOffer({ id: "catalog-local" })], {}, today);
+
+    expect(plan.trips[0].hasUnconfirmedParticipationDeal).toBe(true);
+    expect(plan.trips[0].deals[0].warnings).toContain(
+      "Distance does not prove local participation; confirm it before travel."
+    );
+  });
+
+  it("explains when proximity comes from a nearby store rather than the offer", () => {
+    const plan = buildWeeklyPlan(
+      [
+        makeOffer({
+          id: "merchant-location-only",
+          distanceBasis: "merchant-location"
+        })
+      ],
+      {},
+      today
+    );
+
+    expect(plan.trips[0].hasUnconfirmedParticipationDeal).toBe(true);
+    expect(plan.trips[0].deals[0].warnings).toContain(
+      "Nearby store is confirmed; confirm promotion participation."
+    );
+  });
+
+  it("treats a locally captured confirmed-distance offer as participation-ready", () => {
+    const plan = buildWeeklyPlan(
+      [
+        makeOffer({
+          id: "local-confirmed",
+          localRecord: true,
+          distanceBasis: "offer"
+        })
+      ],
+      {},
+      today
+    );
+
+    expect(plan.trips[0].hasUnconfirmedParticipationDeal).toBe(false);
+    expect(
+      plan.trips[0].deals[0].warnings.some((warning) =>
+        warning.toLowerCase().includes("participation")
+      )
+    ).toBe(false);
+  });
+
   it("does not combine multiple new-customer rewards at one merchant", () => {
     const stronger = makeOffer({
       id: "new-member-stronger",

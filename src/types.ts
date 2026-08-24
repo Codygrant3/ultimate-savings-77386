@@ -107,6 +107,7 @@ export interface ScoredOpportunity extends Opportunity {
   score: number;
   scoreLabel: "Excellent" | "Strong" | "Worth a look" | "Low priority";
   scoreBreakdown: ScoreFactor[];
+  distanceBasis?: "offer" | "merchant-location" | "unknown";
 }
 
 export interface ScoreFactor {
@@ -217,6 +218,7 @@ export interface PlannedTrip {
   distanceMiles?: number;
   distanceConfirmed: boolean;
   hasUnconfirmedLocationDeal: boolean;
+  hasUnconfirmedParticipationDeal: boolean;
   requiredSpend: number;
   estimatedSavings: number;
   averageScore: number;

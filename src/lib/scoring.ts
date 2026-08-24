@@ -603,6 +603,7 @@ export function scoreOpportunity(
     ...(proximity.distanceMiles !== undefined
       ? { distanceMiles: proximity.distanceMiles }
       : {}),
+    distanceBasis: proximity.distanceBasis,
     score,
     scoreLabel,
     scoreBreakdown

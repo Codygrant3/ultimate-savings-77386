@@ -276,13 +276,21 @@ export function WeeklyPlanner({
                   <span>
                     <MapPin size={14} aria-hidden="true" />
                     {trip.distanceConfirmed && !trip.hasUnconfirmedLocationDeal
-                      ? `${trip.distanceMiles} mi · approximate location distance`
+                      ? `${trip.distanceMiles} mi · approximate location distance${
+                          trip.hasUnconfirmedParticipationDeal
+                            ? " · confirm participation"
+                            : ""
+                        }`
                       : trip.distanceConfirmed && trip.hasUnconfirmedLocationDeal
                         ? `Nearest confirmed ${trip.distanceMiles} mi · ${
                             trip.deals.filter(
                               (deal) => deal.opportunity.distanceMiles === undefined
                             ).length
-                          } deal location unconfirmed`
+                          } deal location unconfirmed${
+                            trip.hasUnconfirmedParticipationDeal
+                              ? " · confirm participation"
+                              : ""
+                          }`
                         : "Location unconfirmed"}
                   </span>
                   <span>

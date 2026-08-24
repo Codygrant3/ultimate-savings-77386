@@ -36,6 +36,7 @@ interface TripBundle {
   distanceMiles?: number;
   distanceConfirmed: boolean;
   hasUnconfirmedLocationDeal: boolean;
+  hasUnconfirmedParticipationDeal: boolean;
   requiredSpend: number;
   estimatedSavings: number;
   utility: number;
@@ -244,6 +245,12 @@ function makeBundle(group: DealCandidate[]): TripBundle {
     .filter((distance): distance is number => distance !== undefined);
   const hasUnconfirmedLocationDeal = distances.length < group.length;
   const distanceConfirmed = group.length > 0 && distances.length > 0;
+  const hasUnconfirmedParticipationDeal = group.some(
+    ({ opportunity }) =>
+      opportunity.distanceMiles === undefined ||
+      opportunity.distanceBasis === "merchant-location" ||
+      !(opportunity.localRecord === true && opportunity.distanceMiles !== undefined)
+  );
   const distanceMiles =
     distances.length > 0 ? Math.min(...distances) : undefined;
   const distancePenalty = distanceConfirmed
@@ -268,6 +275,7 @@ function makeBundle(group: DealCandidate[]): TripBundle {
     distanceMiles,
     distanceConfirmed,
     hasUnconfirmedLocationDeal,
+    hasUnconfirmedParticipationDeal,
     requiredSpend,
     estimatedSavings,
     utility,
@@ -390,6 +398,10 @@ export function buildWeeklyPlan(
       warnings.push("Stacking requires confirmation.");
     } else if (opportunity.distanceMiles === undefined) {
       warnings.push("Distance and local participation are unconfirmed");
+    } else if (opportunity.distanceBasis === "merchant-location") {
+      warnings.push("Nearby store is confirmed; confirm promotion participation.");
+    } else if (opportunity.localRecord !== true) {
+      warnings.push("Distance does not prove local participation; confirm it before travel.");
     }
 
     if (!opportunity.stackNote && stackCompatibility !== "exclusive") {
@@ -532,6 +544,7 @@ export function buildWeeklyPlan(
     distanceMiles: bundle.distanceMiles,
     distanceConfirmed: bundle.distanceConfirmed,
     hasUnconfirmedLocationDeal: bundle.hasUnconfirmedLocationDeal,
+    hasUnconfirmedParticipationDeal: bundle.hasUnconfirmedParticipationDeal,
     requiredSpend: bundle.requiredSpend,
     estimatedSavings: bundle.estimatedSavings,
     averageScore:
