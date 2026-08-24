@@ -2111,6 +2111,40 @@ a {
   font-size: 10px;
 }
 
+.source-health {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 11px 12px;
+  border: 1px solid #d9d3c4;
+  border-radius: 9px;
+  background: #fffdf5;
+}
+
+.source-health div {
+  min-width: 0;
+}
+
+.source-health span {
+  display: block;
+  color: #66756e;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.source-health strong {
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.source-health p {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #5d6b65;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
 .review-controls {
   display: flex;
   align-items: center;

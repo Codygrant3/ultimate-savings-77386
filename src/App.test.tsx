@@ -211,6 +211,18 @@ describe("Savings Desk interactions", () => {
             ok: true,
             json: async () => ({
               generatedAt: "2026-08-21T13:00:00.000Z",
+              sourceCount: 3,
+              successfulCount: 2,
+              failedCount: 1,
+              results: [
+                { id: "readable", name: "Readable market", status: "unchanged" },
+                {
+                  id: "blocked-market",
+                  name: "Blocked Market",
+                  status: "failed",
+                  error: "HTTP 403"
+                }
+              ],
               parsedOfferCandidates: [
                 {
                   id: "test-candidate",
@@ -237,6 +249,12 @@ describe("Savings Desk interactions", () => {
     fireEvent.click(screen.getByRole("button", { name: "Savings tools" }));
 
     expect(await screen.findByRole("heading", { name: "Discovery review queue" })).toBeTruthy();
+    const sourceHealth = screen.getByLabelText("Discovery source health");
+    expect(sourceHealth).toBeTruthy();
+    expect(sourceHealth.textContent).toContain("2 of 3");
+    expect(
+      screen.getByText(/Not machine-readable this run: Blocked Market/)
+    ).toBeTruthy();
     expect(screen.getByText("$12 off a $40 grocery basket")).toBeTruthy();
     expect(screen.getByText("82/100")).toBeTruthy();
 

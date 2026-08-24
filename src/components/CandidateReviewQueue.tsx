@@ -35,7 +35,23 @@ import type {
 
 interface DiscoverySnapshot {
   generatedAt: string;
+  sourceCount?: number;
+  successfulCount?: number;
+  failedCount?: number;
+  results?: Array<{
+    id?: string;
+    name?: string;
+    status?: string;
+    error?: string;
+  }>;
   parsedOfferCandidates: OfferCandidate[];
+}
+
+interface SourceHealth {
+  total: number;
+  successful: number;
+  blocked: number;
+  blockedNames: string[];
 }
 
 export function CandidateReviewQueue({
@@ -49,6 +65,7 @@ export function CandidateReviewQueue({
 }) {
   const [candidates, setCandidates] = useState<OfferCandidate[]>([]);
   const [generatedAt, setGeneratedAt] = useState<string>();
+  const [sourceHealth, setSourceHealth] = useState<SourceHealth>();
   const [loadError, setLoadError] = useState(false);
   const [reviews, setReviews] = useState<CandidateReviews>(readCandidateReviews);
   const [filter, setFilter] = useState<CandidateReviewStatus | "pending">("pending");
@@ -78,6 +95,20 @@ export function CandidateReviewQueue({
         if (!active) return;
         setCandidates(snapshot.parsedOfferCandidates ?? []);
         setGeneratedAt(snapshot.generatedAt);
+        if (
+          typeof snapshot.sourceCount === "number" &&
+          typeof snapshot.successfulCount === "number" &&
+          typeof snapshot.failedCount === "number"
+        ) {
+          setSourceHealth({
+            total: snapshot.sourceCount,
+            successful: snapshot.successfulCount,
+            blocked: snapshot.failedCount,
+            blockedNames: (snapshot.results ?? [])
+              .filter((result) => result.status === "failed")
+              .map((result) => result.name ?? result.id ?? "Unnamed source")
+          });
+        }
       } catch {
         if (active) setLoadError(true);
       }
@@ -236,6 +267,26 @@ export function CandidateReviewQueue({
         Ranked official-source candidates only. Confirm every term before treating
         one as a deal.
       </p>
+
+      {sourceHealth && (
+        <section className="source-health" aria-label="Discovery source health">
+          <div>
+            <span>Readable sources</span>
+            <strong>
+              {sourceHealth.successful} of {sourceHealth.total}
+            </strong>
+          </div>
+          <div>
+            <span>Unavailable checks</span>
+            <strong>{sourceHealth.blocked}</strong>
+          </div>
+          <p>
+            {sourceHealth.blockedNames.length > 0
+              ? `Not machine-readable this run: ${sourceHealth.blockedNames.join(", ")}.`
+              : "All configured public sources were readable on the latest run."}
+          </p>
+        </section>
+      )}
 
       <div className="review-controls" role="group" aria-label="Candidate review filter">
         {(["pending", "keep", "dismissed"] as const).map((option) => (
