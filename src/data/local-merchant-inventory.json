@@ -5,7 +5,7 @@
     "latitude": 30.1622,
     "longitude": -95.4018
   },
-  "checkedOn": "2026-08-21",
+  "checkedOn": "2026-08-24",
   "merchants": [
     {
       "id": "dunkin-rayford",
@@ -55,6 +55,16 @@
       "distanceMiles": 3.9,
       "sourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
       "sourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "checkedOn": "2026-08-24"
+    },
+    {
+      "id": "whataburger-rayford",
+      "merchantAliases": ["Whataburger", "Whataburger Rewards"],
+      "locationName": "Whataburger Rayford Road",
+      "address": "3447 Rayford Road, Spring, TX 77386",
+      "distanceMiles": 3.5,
+      "sourceLabel": "Whataburger official Rayford Road location page",
+      "sourceUrl": "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       "checkedOn": "2026-08-24"
     },
     {

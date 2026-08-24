@@ -43,6 +43,16 @@ const inventory: LocalMerchantInventory = {
       sourceLabel: "Business-confirmed profile",
       sourceUrl: "https://example.com/heb-profile",
       checkedOn: "2026-08-24"
+    },
+    {
+      id: "whataburger-rayford",
+      merchantAliases: ["Whataburger", "Whataburger Rewards"],
+      locationName: "Whataburger Rayford Road",
+      address: "3447 Rayford Road, Spring, TX 77386",
+      distanceMiles: 3.5,
+      sourceLabel: "Whataburger official Rayford Road location page",
+      sourceUrl: "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
+      checkedOn: "2026-08-24"
     }
   ]
 };
@@ -92,5 +102,16 @@ describe("local merchant distance resolution", () => {
 
     expect(resolved?.distanceMiles).toBe(3.9);
     expect(resolved?.locationName).toBe("H-E-B Spring Creek Market");
+  });
+
+  it("resolves Whataburger rewards and offers to the official Rayford location", () => {
+    const resolved = resolveOpportunityDistance(
+      { ...opportunity, merchant: "Whataburger Rewards" },
+      inventory
+    );
+
+    expect(resolved?.distanceMiles).toBe(3.5);
+    expect(resolved?.locationName).toBe("Whataburger Rayford Road");
+    expect(resolved?.sourceLabel).toContain("official");
   });
 });
