@@ -1,5 +1,5 @@
-import { formatCurrency, formatDate } from "./scoring";
-import type { WeeklyPlan } from "../types";
+import { effectiveStackCompatibility, formatCurrency, formatDate } from "./scoring";
+import type { ScoredOpportunity, WeeklyPlan } from "../types";
 
 function checklistDate(date: Date): string {
   return date.toISOString().slice(0, 10);
@@ -11,6 +11,25 @@ function effortLabel(friction: "low" | "medium" | "high"): string {
     medium: "Medium",
     high: "High"
   }[friction];
+}
+
+function householdMatch(opportunity: ScoredOpportunity): string {
+  const fit = opportunity.scoreBreakdown.find(
+    ({ label }) => label.toLowerCase() === "household fit"
+  );
+
+  return fit?.detail ?? "General household priority";
+}
+
+function stackTerms(opportunity: ScoredOpportunity): string {
+  switch (effectiveStackCompatibility(opportunity)) {
+    case "compatible":
+      return "Compatible stack documented";
+    case "exclusive":
+      return "Official terms restrict combining offers";
+    default:
+      return "Stack terms require confirmation";
+  }
 }
 
 export function buildWeeklyPlanChecklist(
@@ -66,6 +85,8 @@ export function buildWeeklyPlanChecklist(
       lines.push(
         `  - Effort: ${effortLabel(opportunity.friction)}`
       );
+      lines.push(`  - Fit: ${householdMatch(opportunity)}`);
+      lines.push(`  - Stack terms: ${stackTerms(opportunity)}`);
       lines.push(
         `  - Source checked: ${formatDate(opportunity.source.checkedOn)}`
       );

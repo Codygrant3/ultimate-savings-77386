@@ -534,6 +534,15 @@ export function WeeklyPlanner({
                             opportunity.source.checkedOn
                           )}`}
                         </span>
+                        {(() => {
+                          const fit = opportunity.scoreBreakdown.find(
+                            ({ label }) =>
+                              label.toLowerCase() === "household fit"
+                          );
+                          if (!fit) return null;
+
+                          return <small>{fit.detail}</small>;
+                        })()}
                         {warnings.map((warning) => (
                           <em key={warning}>
                             <AlertTriangle size={12} aria-hidden="true" />{" "}

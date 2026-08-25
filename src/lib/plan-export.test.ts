@@ -28,7 +28,16 @@ const opportunity: ScoredOpportunity = {
   ,
   score: 80,
   scoreLabel: "Strong",
-  scoreBreakdown: []
+  preferenceSignals: ["teen"],
+  stackNote: "This offer cannot be combined with other promotions.",
+  scoreBreakdown: [
+    {
+      label: "Household fit",
+      points: 7,
+      weight: 10,
+      detail: "Household match: teen"
+    }
+  ]
 };
 
 const plan: WeeklyPlan = {
@@ -91,6 +100,10 @@ describe("weekly plan checklist export", () => {
     expect(markdown).toContain("https://example.com/offer");
     expect(markdown).toContain("- Effort: Low");
     expect(markdown).toContain("- Source checked: Aug 24");
+    expect(markdown).toContain("- Fit: Household match: teen");
+    expect(markdown).toContain(
+      "- Stack terms: Official terms restrict combining offers"
+    );
     expect(markdown).toContain("- Confirm: Nearby store is confirmed");
     expect(markdown).toContain("- Estimated values are planning aids.");
   });
