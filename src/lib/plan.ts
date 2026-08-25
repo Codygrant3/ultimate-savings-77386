@@ -38,6 +38,7 @@ interface DealCandidate {
   stackGroup?: string;
   outcomeAdjustment: number;
   evidenceFactor: number;
+  timingFactor: number;
 }
 
 interface TripBundle {
@@ -311,6 +312,20 @@ function planningEvidenceFactor(
   return freshnessFactor * participationFactor * locationFactor;
 }
 
+function planningTimingFactor(
+  opportunity: ScoredOpportunity,
+  today: Date
+): number {
+  if (!opportunity.expiresOn) return 0.85;
+
+  const daysLeft = daysUntilExpiration(opportunity.expiresOn, today);
+  if (!Number.isFinite(daysLeft)) return 0.75;
+  if (daysLeft <= 2) return 1;
+  if (daysLeft <= 7) return 0.95;
+  if (daysLeft <= 14) return 0.9;
+  return 0.8;
+}
+
 export function daysUntilExpiration(
   expiresOn: string,
   today = new Date()
@@ -389,6 +404,15 @@ function makeBundle(
       deal.evidenceFactor,
     0
   );
+  const priorityAdjustedSavings = group.reduce(
+    (total, deal) =>
+      total +
+      deal.opportunity.estimatedSavings *
+      deal.outcomeAdjustment *
+      deal.evidenceFactor *
+      deal.timingFactor,
+    0
+  );
   const evidenceConfidence =
     grossBenefit > 0 ? riskAdjustedSavings / grossBenefit : 1;
   const balancedUtility =
@@ -401,7 +425,7 @@ function makeBundle(
       0
     ) - distancePenalty - estimatedTravelCost * 2;
   const cashUtility =
-    riskAdjustedSavings * 2 -
+    priorityAdjustedSavings * 2 -
     group.reduce(
       (total, deal) => total + deal.opportunity.minimumSpend * 0.15,
       0
@@ -412,7 +436,7 @@ function makeBundle(
     settings.planObjective === "cash"
       ? cashUtility
       : settings.planObjective === "efficiency"
-        ? riskAdjustedSavings - estimatedTravelCost
+        ? priorityAdjustedSavings - estimatedTravelCost
         : balancedUtility;
   const warnings = Array.from(
     new Set(group.flatMap((deal) => deal.warnings))
@@ -637,8 +661,9 @@ export function buildWeeklyPlan(
       planningMerchant: planningMerchant(opportunity),
       newCustomerOffer: isNewCustomerOffer(opportunity),
       stackGroup: opportunity.stackGroup,
-      outcomeAdjustment,
-      evidenceFactor
+    outcomeAdjustment,
+    evidenceFactor,
+    timingFactor: planningTimingFactor(opportunity, today)
     });
   }
 
@@ -1020,6 +1045,9 @@ export function buildWeeklyPlan(
       settings.minimumValuePerDollar > 0
         ? `Offers must return at least $${settings.minimumValuePerDollar.toFixed(2)} per $1 of required spend; zero-spend rewards remain eligible.`
         : "No minimum return-per-dollar threshold is applied.",
+      settings.planObjective === "balanced"
+        ? "Deadline urgency remains part of the balanced evidence score."
+        : "Cash- and efficiency-focused planning gives nearer deadlines a bounded priority; official estimates remain unchanged.",
       "Older source or nearby-location evidence and unconfirmed local participation reduce risk-adjusted planning value; official estimates remain unchanged.",
       `Official offers and nearby-location checks must have evidence from the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"}.`,
       settings.allowConditionalStacking

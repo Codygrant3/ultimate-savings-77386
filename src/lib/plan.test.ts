@@ -334,6 +334,37 @@ describe("weekly action plan optimizer", () => {
     expect(plan.valueEfficiency).toBeCloseTo(1);
   });
 
+  it("gives nearer deadlines a bounded priority in cash-focused planning", () => {
+    const expiring = makeOffer({
+      id: "expiring",
+      merchant: "Expiring Market",
+      estimatedSavings: 9,
+      minimumSpend: 20,
+      score: 70,
+      expiresOn: "2026-08-21"
+    });
+    const ongoing = makeOffer({
+      id: "ongoing",
+      merchant: "Ongoing Market",
+      estimatedSavings: 10,
+      minimumSpend: 20,
+      score: 82,
+      expiresOn: undefined
+    });
+
+    const plan = buildWeeklyPlan(
+      [ongoing, expiring],
+      { weeklyBudget: 20, maxTrips: 1, planObjective: "cash" },
+      today
+    );
+
+    expect(plan.trips[0].merchant).toBe("Expiring Market");
+    expect(plan.trips[0].estimatedSavings).toBe(9);
+    expect(plan.assumptions).toContain(
+      "Cash- and efficiency-focused planning gives nearer deadlines a bounded priority; official estimates remain unchanged."
+    );
+  });
+
   it("discounts stale checks and unconfirmed participation in cash-focused planning", () => {
     const confirmedFresh = makeOffer({
       id: "confirmed-fresh",
