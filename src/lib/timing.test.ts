@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import {
   formatRedemptionWindows,
   isValidRedemptionWindows,
+  parseRedemptionDaysFromText,
+  parseRedemptionTimeWindowsFromText,
   parseTimeOfDay,
   redemptionTimingWarnings
 } from "./timing";
@@ -42,5 +44,21 @@ describe("official redemption timing", () => {
         { startTime: "15:00" }
       ])
     ).toBe("5:00 PM-10:00 PM, after 3:00 PM");
+  });
+
+  it("extracts official day and clock evidence from source text", () => {
+    expect(parseRedemptionDaysFromText("Valid Friday only")).toEqual([5]);
+    expect(
+      parseRedemptionDaysFromText("Offer runs Wednesday and Fryday")
+    ).toEqual([3, 5]);
+    expect(
+      parseRedemptionTimeWindowsFromText("Valid from 3 p.m. to 6 p.m.")
+    ).toEqual([{ startTime: "15:00", endTime: "18:00" }]);
+    expect(
+      parseRedemptionTimeWindowsFromText("Available after 3 p.m.")
+    ).toEqual([{ startTime: "15:00" }]);
+    expect(
+      parseRedemptionTimeWindowsFromText("Up to 10 times per card")
+    ).toBeUndefined();
   });
 });

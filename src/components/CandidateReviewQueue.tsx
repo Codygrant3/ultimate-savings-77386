@@ -24,6 +24,7 @@ import {
   formatCurrency,
   formatDate
 } from "../lib/scoring";
+import { formatRedemptionWindows } from "../lib/timing";
 import type {
   CandidateReviewStatus,
   CandidateReviews,
@@ -379,7 +380,18 @@ export function CandidateReviewQueue({
                     {[
                       candidate.amountText,
                       candidate.minimumSpend ? `spend $${candidate.minimumSpend}` : null,
-                      candidate.expirationText ? `through ${candidate.expirationText}` : null
+                      candidate.expirationText ? `through ${candidate.expirationText}` : null,
+                      candidate.availableDaysOfWeek?.length
+                        ? candidate.availableDaysOfWeek.map((day) =>
+                            new Intl.DateTimeFormat("en-US", {
+                              weekday: "short",
+                              timeZone: "UTC"
+                            }).format(new Date(Date.UTC(2026, 0, 4 + day)))
+                          ).join(", ")
+                        : null,
+                      candidate.redemptionTimeWindows?.length
+                        ? formatRedemptionWindows(candidate.redemptionTimeWindows)
+                        : null
                     ]
                       .filter(Boolean)
                       .join(" · ")}

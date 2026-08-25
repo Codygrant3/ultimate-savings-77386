@@ -74,12 +74,27 @@ describe("merchant-specific offer parsers", () => {
     expect(nuggets?.amountText).toBe("Free");
     expect(nuggets?.minimumSpend).toBe(5);
     expect(nuggets?.expirationText).toBe("9/10/26");
+    expect(nuggets?.availableDaysOfWeek).toEqual([3]);
     expect(paze?.title).toBe(
       "Wendy's and Paze spend $10 at Wendy's earn $10 back"
     );
     expect(paze?.amountText).toBe("$10 back");
     expect(paze?.minimumSpend).toBe(10);
     expect(paze?.expirationText).toBe("9/10/26");
+  });
+
+  it("captures official clock windows from Wendy's offer evidence", () => {
+    const html = `
+      <main>
+        <h3>$1 Large Slurpee-style offer</h3>
+        <p>Valid from 3 p.m. to 6 p.m. while listed.</p>
+      </main>
+    `;
+    const candidates = parseSourceOffers(wendysSource, wendysSource.url, html);
+
+    expect(candidates[0].redemptionTimeWindows).toEqual([
+      { startTime: "15:00", endTime: "18:00" }
+    ]);
   });
 
   it("parses a Take 5 local coupon without treating it as verified dashboard data", () => {

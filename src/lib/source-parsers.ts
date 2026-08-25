@@ -1,4 +1,9 @@
 import type { DiscoverySource } from "./source-parsers-types";
+import {
+  parseRedemptionDaysFromText,
+  parseRedemptionTimeWindowsFromText
+} from "./timing";
+import type { RedemptionTimeWindow } from "../types";
 
 export interface ParsedOfferCandidate {
   id: string;
@@ -10,6 +15,8 @@ export interface ParsedOfferCandidate {
   amountText?: string;
   minimumSpend?: number;
   expirationText?: string;
+  availableDaysOfWeek?: number[];
+  redemptionTimeWindows?: RedemptionTimeWindow[];
   candidateScore?: number;
   candidateReasons?: string[];
 }
@@ -70,8 +77,24 @@ function expirationFromDetail(detail: string): string | undefined {
 }
 
 function dedupeCandidates(candidates: ParsedOfferCandidate[]): ParsedOfferCandidate[] {
+  const enriched = candidates.map((candidate) => {
+    const evidence = [candidate.title, candidate.detail]
+      .filter(Boolean)
+      .join(" ");
+
+    return {
+      ...candidate,
+      availableDaysOfWeek:
+        candidate.availableDaysOfWeek ??
+        parseRedemptionDaysFromText(evidence),
+      redemptionTimeWindows:
+        candidate.redemptionTimeWindows ??
+        parseRedemptionTimeWindowsFromText(evidence)
+    };
+  });
+
   const bySemanticKey = new Map<string, ParsedOfferCandidate>();
-  for (const candidate of candidates) {
+  for (const candidate of enriched) {
     const key = semanticOfferKey(candidate);
     const existing = bySemanticKey.get(key);
     if (!existing) {
@@ -82,6 +105,8 @@ function dedupeCandidates(candidates: ParsedOfferCandidate[]): ParsedOfferCandid
     const specificity = (candidate: ParsedOfferCandidate) =>
       (candidate.minimumSpend !== undefined ? 2 : 0) +
       (candidate.expirationText ? 2 : 0) +
+      (candidate.availableDaysOfWeek ? 3 : 0) +
+      (candidate.redemptionTimeWindows ? 3 : 0) +
       (candidate.detail ? 1 : 0);
     const candidateScore = specificity(candidate);
     const existingScore = specificity(existing);
@@ -95,6 +120,10 @@ function dedupeCandidates(candidates: ParsedOfferCandidate[]): ParsedOfferCandid
       ...preferred,
       minimumSpend: preferred.minimumSpend ?? existing.minimumSpend,
       expirationText: preferred.expirationText ?? existing.expirationText,
+      availableDaysOfWeek:
+        preferred.availableDaysOfWeek ?? existing.availableDaysOfWeek,
+      redemptionTimeWindows:
+        preferred.redemptionTimeWindows ?? existing.redemptionTimeWindows,
       detail: preferred.detail ?? existing.detail
     });
   }
@@ -184,7 +213,9 @@ function parseWendys({ source, pageUrl }: ParserContext, html: string): ParsedOf
       const lineIndex = lines.indexOf(line);
       const nearbyDetail = lines
         .slice(lineIndex + 1, lineIndex + 6)
-        .find((detail) => /(?:offer|valid)\s+(?:runs?\s+)?through|ends?\s+\d/i.test(detail));
+        .find((detail) =>
+          /(?:offer|valid)\s+(?:runs?\s+)?through|ends?\s+\d|from\s+\d/i.test(detail)
+        );
 
       return {
         id: stableId(source.id, line),
@@ -195,7 +226,11 @@ function parseWendys({ source, pageUrl }: ParserContext, html: string): ParsedOf
         amountText: amountFromTitle(line),
         minimumSpend: minimumSpendFromTitle(line),
         expirationText: nearbyDetail ? expirationFromDetail(nearbyDetail) : undefined,
-        detail: nearbyDetail && /terms|account|app/i.test(nearbyDetail) ? nearbyDetail : undefined
+        detail:
+          nearbyDetail &&
+          /terms|account|app|from\s+\d/i.test(nearbyDetail)
+            ? nearbyDetail
+            : undefined
       };
     })
   );
