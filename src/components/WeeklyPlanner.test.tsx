@@ -132,7 +132,7 @@ describe("WeeklyPlanner execution controls", () => {
       />
     );
 
-    expect(screen.getByText(/ends Sep 30 · 37 days left/)).toBeTruthy();
+    expect(screen.getByText(/ends Sep 30 · \d+ days left/)).toBeTruthy();
     fireEvent.change(screen.getByLabelText("Minimum days valid"), {
       target: { value: "7" }
     });

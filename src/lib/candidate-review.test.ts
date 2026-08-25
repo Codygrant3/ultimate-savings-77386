@@ -103,6 +103,61 @@ describe("candidate review matching", () => {
     ).toEqual({ status: "new" });
   });
 
+  it("keeps a different value at the same merchant as a new lead", () => {
+    const freeNuggets: Opportunity = {
+      ...tracked[2],
+      id: "wendys-free-nuggets",
+      merchant: "Wendy's",
+      title: "Free 6-piece nuggets Wednesday with $5 purchase",
+      summary: "Wendy's app offer.",
+      tags: ["nuggets", "wednesday", "app"]
+    };
+
+    expect(
+      buildCandidateReviewContext(
+        candidate({
+          merchant: "Wendy's",
+          title: "$1 Off Crispy Chicken or 4-piece Nuggets w/ $5 Purchase",
+          amountText: "$1 Off",
+          minimumSpend: 5
+        }),
+        [freeNuggets]
+      )
+    ).toEqual({ status: "new" });
+  });
+
+  it("matches cashback evidence before treating the estimate as a rate", () => {
+    const pazeOffer: Opportunity = {
+      ...tracked[2],
+      id: "wendys-paze-offer",
+      merchant: "Wendy's + Paze",
+      title: "$10 back on a $10+ Wendy's app order",
+      summary:
+        "Eligible Paze users can earn a $10 statement credit on a Wendy's app purchase of at least $10.",
+      estimatedSavings: 10,
+      minimumSpend: 10,
+      savingsRate: 100,
+      isFree: false,
+      expiresOn: "2026-09-10"
+    };
+
+    const match = findCandidateMatch(
+      candidate({
+        merchant: "Wendy's + Paze",
+        title: "Paze users spend $10+ in the Wendy's app to earn $10 back",
+        amountText: "$10 back",
+        minimumSpend: 10,
+        expirationText: "9/10/2026"
+      }),
+      [pazeOffer]
+    );
+
+    expect(match?.opportunity.id).toBe("wendys-paze-offer");
+    expect(match?.amountMatches).toBe(true);
+    expect(match?.minimumSpendMatches).toBe(true);
+    expect(match?.expirationMatches).toBe(true);
+  });
+
   it("normalizes local merchant naming without losing the tracked match", () => {
     const match = findCandidateMatch(
       candidate({

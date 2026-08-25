@@ -18,6 +18,8 @@ export type CandidateReviewContext =
   | { status: "new" }
   | { status: "existing"; match: CandidateOfferMatch };
 
+const TITLE_OVERLAP_THRESHOLD = 0.6;
+
 const STOP_WORDS = new Set([
   "a",
   "an",
@@ -51,6 +53,7 @@ function titleTokens(value: string): Set<string> {
       .replace(/[^a-z0-9$%]+/g, " ")
       .split(/\s+/)
       .map((token) => token.replace(/^[$%]+|[$%]+$/g, ""))
+      .map((token) => (token === "nuggs" ? "nuggets" : token))
       .filter((token) => token.length > 1 && !STOP_WORDS.has(token))
   );
 }
@@ -72,6 +75,33 @@ function parseAmount(value: string | undefined): Amount {
   const percent = text.match(/(\d+(?:\.\d+)?)\s*%/);
   if (percent) return { kind: "percent", value: Number(percent[1]) };
 
+  return { kind: "unknown" };
+}
+
+function opportunityAmount(
+  opportunity: Pick<
+    Opportunity,
+    "estimatedSavings" | "finePrint" | "isFree" | "savingsRate" | "summary" | "title"
+  >
+): Amount {
+  const text = [opportunity.title, opportunity.summary, opportunity.finePrint]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  const isCashbackEstimate =
+    /\$\d+(?:\.\d{2})?/.test(text) &&
+    /\b(?:back|cashback|statement credit)\b/.test(text);
+
+  if (opportunity.isFree) return { kind: "free" };
+  if (isCashbackEstimate) {
+    return { kind: "dollar", value: opportunity.estimatedSavings };
+  }
+  if (opportunity.savingsRate !== undefined) {
+    return { kind: "percent", value: opportunity.savingsRate };
+  }
+  if (opportunity.estimatedSavings > 0) {
+    return { kind: "dollar", value: opportunity.estimatedSavings };
+  }
   return { kind: "unknown" };
 }
 
@@ -112,19 +142,22 @@ function merchantsMatch(candidate: OfferCandidate, opportunity: Opportunity): bo
 }
 
 function tokenOverlap(candidate: OfferCandidate, opportunity: Opportunity): number {
-  const left = titleTokens(
-    [candidate.title, candidate.detail].filter(Boolean).join(" ")
-  );
-  const right = titleTokens(
-    [
-      opportunity.title,
-      opportunity.summary,
-      opportunity.tags.join(" "),
-      opportunity.finePrint
-    ]
+  return tokenOverlapFromSets(
+    titleTokens([candidate.title, candidate.detail].filter(Boolean).join(" ")),
+    titleTokens(
+      [
+        opportunity.title,
+        opportunity.summary,
+        opportunity.tags.join(" "),
+        opportunity.finePrint
+      ]
       .filter(Boolean)
       .join(" ")
+    )
   );
+}
+
+function tokenOverlapFromSets(left: Set<string>, right: Set<string>): number {
   if (left.size === 0 || right.size === 0) return 0;
 
   let shared = 0;
@@ -139,28 +172,37 @@ export function findCandidateMatch(
   opportunities: Opportunity[]
 ): CandidateOfferMatch | null {
   const candidateAmount = parseAmount(candidate.amountText);
+  const candidateTitleTokens = titleTokens(candidate.title);
   const matches: CandidateOfferMatch[] = [];
 
   for (const opportunity of opportunities) {
     if (!merchantsMatch(candidate, opportunity)) continue;
 
     const overlap = tokenOverlap(candidate, opportunity);
-    if (overlap < 0.34) continue;
+    const titleOverlap = tokenOverlapFromSets(
+      candidateTitleTokens,
+      titleTokens(
+        [opportunity.title, opportunity.summary, opportunity.tags.join(" ")]
+          .filter(Boolean)
+          .join(" ")
+      )
+    );
+    if (overlap < 0.34 || titleOverlap < TITLE_OVERLAP_THRESHOLD) continue;
 
-    const opportunityAmount: Amount = opportunity.isFree
-      ? { kind: "free" }
-      : opportunity.savingsRate !== undefined
-        ? { kind: "percent", value: opportunity.savingsRate }
-      : opportunity.estimatedSavings > 0
-        ? { kind: "dollar", value: opportunity.estimatedSavings }
-        : { kind: "unknown" };
+    const trackedAmount = opportunityAmount(opportunity);
+    const rewardKindConflicts =
+      candidateAmount.kind !== "unknown" &&
+      trackedAmount.kind !== "unknown" &&
+      (candidateAmount.kind === "free") !== (trackedAmount.kind === "free");
+    if (rewardKindConflicts) continue;
+
     const candidateExpiration = expirationDate(candidate.expirationText);
     const opportunityExpiration = expirationDate(opportunity.expiresOn);
 
     matches.push({
       opportunity,
       tokenOverlap: overlap,
-      amountMatches: amountsMatch(candidateAmount, opportunityAmount),
+      amountMatches: amountsMatch(candidateAmount, trackedAmount),
       minimumSpendMatches:
         candidate.minimumSpend === undefined ||
         Math.abs(candidate.minimumSpend - opportunity.minimumSpend) < 0.01,
