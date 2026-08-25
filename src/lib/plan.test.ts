@@ -344,7 +344,7 @@ describe("weekly action plan optimizer", () => {
     expect(
       plan.assumptions.some((assumption) =>
         assumption.includes(
-          "Older evidence and unconfirmed local participation reduce risk-adjusted planning value"
+          "Older source or nearby-location evidence and unconfirmed local participation reduce risk-adjusted planning value"
         )
       )
     ).toBe(true);
@@ -908,6 +908,42 @@ describe("weekly action plan optimizer", () => {
 
     expect(plan.trips).toHaveLength(1);
     expect(plan.trips[0].deals[0].opportunity.id).toBe("fresh-location");
+  });
+
+  it("decays nearby-location evidence separately in cash-focused planning", () => {
+    const freshLocation = makeOffer({
+      id: "fresh-location",
+      merchant: "Fresh Location Market",
+      distanceBasis: "merchant-location",
+      distanceCheckedOn: "2026-08-21"
+    });
+    const olderLocation = makeOffer({
+      id: "older-location",
+      merchant: "Older Location Market",
+      distanceBasis: "merchant-location",
+      distanceCheckedOn: "2026-08-14"
+    });
+
+    const plan = buildWeeklyPlan(
+      [freshLocation, olderLocation],
+      {
+        weeklyBudget: 40,
+        maxTrips: 1,
+        maximumSourceAgeDays: 14,
+        planObjective: "cash"
+      },
+      today
+    );
+
+    expect(plan.trips[0].merchant).toBe("Fresh Location Market");
+    expect(plan.trips[0].evidenceConfidence).toBeCloseTo(0.85);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "older-location")
+        ?.reason
+    ).toBe("Outside the strongest plan under current limits");
+    expect(plan.assumptions).toContain(
+      "Older source or nearby-location evidence and unconfirmed local participation reduce risk-adjusted planning value; official estimates remain unchanged."
+    );
   });
 
   it("requires a source-check date before action planning", () => {

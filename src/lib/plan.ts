@@ -292,7 +292,16 @@ function planningEvidenceFactor(
     participationFactor = 0.85;
   }
 
-  return freshnessFactor * participationFactor;
+  let locationFactor = 1;
+  if (opportunity.distanceBasis === "merchant-location") {
+    const locationAge = evidenceAgeInDays(opportunity.distanceCheckedOn, today);
+    locationFactor =
+      locationAge === null || maximumSourceAgeDays <= 0
+        ? 0.65
+        : clamp(1 - (locationAge / maximumSourceAgeDays) * 0.25, 0.75, 1);
+  }
+
+  return freshnessFactor * participationFactor * locationFactor;
 }
 
 export function daysUntilExpiration(
@@ -902,7 +911,7 @@ export function buildWeeklyPlan(
       settings.requireMeasuredDollarValue
         ? "Only offers with a measured dollar-value estimate are eligible; unpriced rewards are excluded."
         : "Unpriced free rewards remain eligible but do not add estimated savings.",
-      "Older evidence and unconfirmed local participation reduce risk-adjusted planning value; official estimates remain unchanged.",
+      "Older source or nearby-location evidence and unconfirmed local participation reduce risk-adjusted planning value; official estimates remain unchanged.",
       `Official offers and nearby-location checks must have evidence from the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"}.`,
       settings.allowConditionalStacking
         ? "Conditional stacks are allowed only because you turned on the local override; official terms still control."
