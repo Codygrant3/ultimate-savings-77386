@@ -284,6 +284,7 @@ export interface WeeklyPlan {
   riskAdjustedSavings: number;
   totalTravelCost: number;
   valueEfficiency: number | null;
+  planningEfficiency: number | null;
   estimatedNetCost: number;
   netBenefitAfterTravel: number;
   savingsRate: number;

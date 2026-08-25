@@ -396,6 +396,17 @@ export function WeeklyPlanner({
               : `$${plan.valueEfficiency.toFixed(2)} per $1 spent`}
           </strong>
         </article>
+        {settings.planObjective === "efficiency" && (
+          <article>
+            <Scale size={19} aria-hidden="true" />
+            <span>Whole-plan efficiency</span>
+            <strong>
+              {plan.planningEfficiency === null
+                ? "No spend"
+                : `$${plan.planningEfficiency.toFixed(2)} per $1 effective cost`}
+            </strong>
+          </article>
+        )}
         <article>
           <CircleDollarSign size={19} aria-hidden="true" />
           <span>Estimated net cost</span>

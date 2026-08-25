@@ -70,6 +70,7 @@ const plan: WeeklyPlan = {
   riskAdjustedSavings: 8.5,
   totalTravelCost: 1.4,
   valueEfficiency: 0.5,
+  planningEfficiency: 0.61,
   estimatedNetCost: 10,
   netBenefitAfterTravel: 7.1,
   savingsRate: 50,

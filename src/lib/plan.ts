@@ -1036,6 +1036,7 @@ function buildBaseWeeklyPlan(
     totalTravelCost,
     valueEfficiency:
       requiredSpend > 0 ? estimatedSavings / requiredSpend : null,
+    planningEfficiency: planningEfficiency({ trips }),
     estimatedNetCost: Math.max(0, requiredSpend - estimatedSavings),
     netBenefitAfterTravel:
       trips.reduce(
@@ -1130,7 +1131,7 @@ function selectedDealIds(plan: BaseWeeklyPlan): Set<string> {
   return new Set(plan.selectedDeals.map(({ opportunity }) => opportunity.id));
 }
 
-function planningEfficiency(plan: BaseWeeklyPlan): number | null {
+function planningEfficiency(plan: { trips: PlannedTrip[] }): number | null {
   const effectiveCost = plan.trips.reduce(
     (total, trip) =>
       total + trip.requiredSpend + (trip.estimatedTravelCost ?? 0),

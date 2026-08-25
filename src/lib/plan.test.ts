@@ -220,13 +220,17 @@ describe("weekly action plan optimizer", () => {
     expect(plan.trips.map(({ merchant }) => merchant)).toEqual([
       "High Dollar Market"
     ]);
+    expectCloseTo(plan.planningEfficiency ?? -1, 14.45 / 20);
     expect(plan.constraintChecks).toHaveLength(1);
     expect(plan.constraintChecks[0].key).toBe("weeklyBudget");
     expect(plan.constraintChecks[0].estimatedSavingsGain).toBeCloseTo(5);
     expect(plan.constraintChecks[0].relaxedPlanningEfficiency).toBeCloseTo(0.95);
     expect(
-      plan.constraintChecks[0].planningEfficiencyGain ?? 0
+      (plan.constraintChecks[0].planningEfficiencyGain ?? 0)
     ).toBeGreaterThan(0.2);
+    expect(
+      plan.constraintChecks[0].relaxedPlanningEfficiency ?? 0
+    ).toBeCloseTo(plan.planningEfficiency === null ? 0 : 0.95);
     expect(plan.constraintChecks[0].message).toContain(
       "raises whole-plan planning efficiency"
     );
