@@ -723,30 +723,46 @@ function buildBaseWeeklyPlan(
       });
     });
 
-  type PlanState = {
-    utility: number;
-    bundles: TripBundle[];
+  type BundlePath = {
+    bundle: TripBundle;
+    previous: BundlePath | null;
   };
-  let best: PlanState = { utility: 0, bundles: [] };
+  type DpCell = {
+    utility: number;
+    path: BundlePath | null;
+    tripCount: number;
+  };
 
-  if (settings.planObjective === "efficiency") {
-    const efficiencyDp = Array.from(
+  const createDpMatrix = (): DpCell[][] =>
+    Array.from(
       { length: settings.maxTrips + 1 },
       () =>
-        Array.from({ length: budgetCents + 1 }, (): PlanState => ({
+        Array.from({ length: budgetCents + 1 }, (): DpCell => ({
           utility: Number.NEGATIVE_INFINITY,
-          bundles: []
+          path: null,
+          tripCount: 0
         }))
     );
-    efficiencyDp[0][0] = { utility: 0, bundles: [] };
+  let sourceDp = createDpMatrix();
+  let targetDp = createDpMatrix();
+  let best: DpCell = {
+    utility: 0,
+    path: null,
+    tripCount: 0
+  };
+
+  if (settings.planObjective === "efficiency") {
+    sourceDp[0][0] = { utility: 0, path: null, tripCount: 0 };
 
     for (const merchantBundles of bundlesByMerchant) {
-      const next = efficiencyDp.map((states) =>
-        states.map((state) => ({
-          utility: state.utility,
-          bundles: [...state.bundles]
-        }))
-      );
+      const previousDp = sourceDp;
+      const next = targetDp;
+
+      for (let tripsUsed = 0; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
+        for (let spent = 0; spent <= budgetCents; spent += 1) {
+          next[tripsUsed][spent] = previousDp[tripsUsed][spent];
+        }
+      }
 
       for (const bundle of merchantBundles) {
         const costCents = Math.round(
@@ -760,26 +776,28 @@ function buildBaseWeeklyPlan(
           tripsUsed += 1
         ) {
           for (let spent = costCents; spent <= budgetCents; spent += 1) {
-            const previous = efficiencyDp[tripsUsed - 1][spent - costCents];
+            const previous = previousDp[tripsUsed - 1][spent - costCents];
             if (!Number.isFinite(previous.utility)) continue;
 
             const candidateUtility = previous.utility + bundle.utility;
             if (candidateUtility > next[tripsUsed][spent].utility) {
               next[tripsUsed][spent] = {
                 utility: candidateUtility,
-                bundles: [...previous.bundles, bundle]
+                path: { bundle, previous: previous.path },
+                tripCount: previous.tripCount + 1
               };
             }
           }
         }
       }
-      efficiencyDp.splice(0, efficiencyDp.length, ...next);
+      sourceDp = next;
+      targetDp = previousDp;
     }
 
     let bestEfficiency = Number.NEGATIVE_INFINITY;
     for (let tripsUsed = 1; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
       for (let spentCents = 1; spentCents <= budgetCents; spentCents += 1) {
-        const candidate = efficiencyDp[tripsUsed][spentCents];
+        const candidate = sourceDp[tripsUsed][spentCents];
         if (!Number.isFinite(candidate.utility)) continue;
 
         const candidateEfficiency =
@@ -795,25 +813,20 @@ function buildBaseWeeklyPlan(
       }
     }
   } else {
-    const additiveDp = Array.from(
-      { length: settings.maxTrips + 1 },
-      () =>
-        Array.from({ length: budgetCents + 1 }, (): PlanState => ({
-          utility: Number.NEGATIVE_INFINITY,
-          bundles: []
-        }))
-    );
+    const additiveDp = sourceDp;
     for (let budget = 0; budget <= budgetCents; budget += 1) {
-      additiveDp[0][budget] = { utility: 0, bundles: [] };
+      additiveDp[0][budget] = { utility: 0, path: null, tripCount: 0 };
     }
 
     for (const merchantBundles of bundlesByMerchant) {
-      const next = additiveDp.map((states) =>
-        states.map((state) => ({
-          utility: state.utility,
-          bundles: [...state.bundles]
-        }))
-      );
+      const previousDp = sourceDp;
+      const next = targetDp;
+
+      for (let tripsUsed = 0; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
+        for (let budget = 0; budget <= budgetCents; budget += 1) {
+          next[tripsUsed][budget] = previousDp[tripsUsed][budget];
+        }
+      }
 
       for (const bundle of merchantBundles) {
         const costCents = Math.round(bundle.requiredSpend * 100);
@@ -825,35 +838,45 @@ function buildBaseWeeklyPlan(
           tripsUsed += 1
         ) {
           for (let budget = costCents; budget <= budgetCents; budget += 1) {
-            const previous = additiveDp[tripsUsed - 1][budget - costCents];
+            const previous = previousDp[tripsUsed - 1][budget - costCents];
             if (!Number.isFinite(previous.utility)) continue;
 
             const candidateUtility = previous.utility + bundle.utility;
             if (candidateUtility > next[tripsUsed][budget].utility) {
               next[tripsUsed][budget] = {
                 utility: candidateUtility,
-                bundles: [...previous.bundles, bundle]
+                path: { bundle, previous: previous.path },
+                tripCount: previous.tripCount + 1
               };
             }
           }
         }
       }
-      additiveDp.splice(0, additiveDp.length, ...next);
+      sourceDp = next;
+      targetDp = previousDp;
     }
 
     for (let tripsUsed = 1; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
-      const candidate = additiveDp[tripsUsed][budgetCents];
+      const candidate = sourceDp[tripsUsed][budgetCents];
       if (
         candidate.utility > best.utility ||
         (candidate.utility === best.utility &&
-          candidate.bundles.length < best.bundles.length)
+          candidate.tripCount < best.tripCount)
       ) {
         best = candidate;
       }
     }
   }
 
-  const selectedBundles = [...best.bundles].sort((first, second) => {
+  const optimizedBundles: TripBundle[] = [];
+  let remainingPath = best.path;
+  while (remainingPath) {
+    optimizedBundles.push(remainingPath.bundle);
+    remainingPath = remainingPath.previous;
+  }
+  optimizedBundles.reverse();
+
+  const selectedBundles = optimizedBundles.sort((first, second) => {
     if (settings.tripOrder === "distance") {
       const firstDistance = first.distanceMiles ?? Number.POSITIVE_INFINITY;
       const secondDistance = second.distanceMiles ?? Number.POSITIVE_INFINITY;
