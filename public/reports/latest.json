@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-25T06:08:13.024Z",
+  "generatedAt": "2026-08-25T15:09:44.299Z",
   "weekOf": "2026-08-24",
   "zipCode": "77386",
-  "totalPotentialSavings": 184.49,
-  "verifiedCount": 42,
-  "expiringCount": 19,
+  "totalPotentialSavings": 181.49,
+  "verifiedCount": 43,
+  "expiringCount": 20,
   "opportunities": [
     {
       "id": "heb-starbucks-frappuccino-bogo-2026-08",
@@ -459,7 +459,7 @@
       "source": {
         "label": "Take 5 Spring location coupons",
         "url": "https://www.take5.com/locations/texas/spring/30083/",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Get coupon",
       "tier": "A",
@@ -476,8 +476,8 @@
         "local-high-value"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-08-23",
-      "distanceEvidenceAgeDays": 1,
+      "distanceCheckedOn": "2026-08-25",
+      "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Take 5 Spring location coupons",
       "distanceSourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
       "score": 76,
@@ -487,7 +487,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -536,6 +536,110 @@
           "points": 3.8500000000000005,
           "weight": 7,
           "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "seven-rewards-fuel-welcome-2026",
+      "merchant": "7REWARDS Fuel",
+      "title": "11¢ off per gallon on the first seven fills",
+      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
+      "category": "fuel",
+      "estimatedSavings": 11.55,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "fuel",
+        "new member",
+        "seven fills",
+        "local station"
+      ],
+      "source": {
+        "label": "7REWARDS Fuel",
+        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
+        "checkedOn": "2026-08-25"
+      },
+      "actionLabel": "Review fuel offer",
+      "tier": "A",
+      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
+      "stackGroup": "7rewards-fuel-promotion",
+      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
+      "expirationLabel": "First 90 days or seven trips",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "local-high-value",
+        "stacking"
+      ],
+      "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
+      "score": 76,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 15.36,
+          "weight": 24,
+          "detail": "$11.55 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 0 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
         }
       ]
     },
@@ -971,110 +1075,6 @@
       ]
     },
     {
-      "id": "seven-rewards-fuel-welcome-2026",
-      "merchant": "7REWARDS Fuel",
-      "title": "11¢ off per gallon on the first seven fills",
-      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
-      "category": "fuel",
-      "estimatedSavings": 11.55,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "fuel",
-        "new member",
-        "seven fills",
-        "local station"
-      ],
-      "source": {
-        "label": "7REWARDS Fuel",
-        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-        "checkedOn": "2026-08-17"
-      },
-      "actionLabel": "Review fuel offer",
-      "tier": "A",
-      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
-      "stackGroup": "7rewards-fuel-promotion",
-      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
-      "expirationLabel": "First 90 days or seven trips",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-09",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "local-high-value",
-        "stacking"
-      ],
-      "distanceMiles": 3.35,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 0,
-      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
-      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
-      "score": 73,
-      "scoreLabel": "Strong",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 15.36,
-          "weight": 24,
-          "detail": "$11.55 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.96,
-          "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 0 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
       "id": "wendys-paze-ten-back-2026",
       "merchant": "Wendy's + Paze",
       "title": "$10 back on a $10+ Wendy's app order",
@@ -1098,7 +1098,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-24"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Check Paze eligibility",
       "tier": "A",
@@ -1201,7 +1201,7 @@
       "source": {
         "label": "Shell Fuel Rewards",
         "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Review offer",
       "tier": "A",
@@ -1219,8 +1219,8 @@
         "stacking"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-08-23",
-      "distanceEvidenceAgeDays": 1,
+      "distanceCheckedOn": "2026-08-25",
+      "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Shell Fuel Rewards",
       "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
       "score": 73,
@@ -1230,7 +1230,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1304,7 +1304,7 @@
       "source": {
         "label": "Exxon Mobil Rewards+ official offer FAQ",
         "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Check app eligibility",
       "tier": "A",
@@ -1335,7 +1335,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1615,7 +1615,7 @@
       "source": {
         "label": "Taco Bell official offers and deals",
         "url": "https://www.tacobell.com/offers-and-deals",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Check welcome reward",
       "tier": "A",
@@ -1644,7 +1644,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1717,7 +1717,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-24"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Check welcome reward",
       "tier": "A",
@@ -1829,7 +1829,7 @@
       "source": {
         "label": "Chipotle official newsroom",
         "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Check Sundays code",
       "tier": "A",
@@ -1853,7 +1853,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1906,6 +1906,104 @@
       ]
     },
     {
+      "id": "sonic-rewards-welcome-reward-2026",
+      "merchant": "SONIC Rewards",
+      "title": "Free medium fries, tots, or drink for new members",
+      "summary": "The nationwide SONIC Rewards program includes a welcome reward with a choice of medium fries, tots, or a drink.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "Nationwide app offer; a convenient participating 77386-area location was not confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "free drink",
+        "new member",
+        "app"
+      ],
+      "source": {
+        "label": "SONIC official newsroom",
+        "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
+        "checkedOn": "2026-08-25"
+      },
+      "actionLabel": "Check welcome reward",
+      "tier": "A",
+      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
+      "finePrint": "The official newsroom does not state a purchase requirement for the welcome reward. App enrollment and participating-location availability apply; confirm the reward is loaded before making a trip. No dollar value is estimated because local menu pricing was not verified.",
+      "expirationLabel": "New members",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "free-food",
+        "free-drink",
+        "new-member",
+        "app-specific"
+      ],
+      "distanceBasis": "unknown",
+      "score": 67,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8,
+          "weight": 10,
+          "detail": "Household match: free food, free drink"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "exxon-mobil-referral-five-fill-bonus-2026",
       "merchant": "Exxon Mobil Rewards+",
       "title": "Up to 30¢ per gallon on five referral-code fills",
@@ -1928,7 +2026,7 @@
       "source": {
         "label": "Exxon Mobil Rewards+ official terms",
         "url": "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Review referral offer",
       "tier": "A",
@@ -1959,7 +2057,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -2320,6 +2418,105 @@
       ]
     },
     {
+      "id": "exxon-mobil-rewards-base-points-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "Earn 3¢ per gallon or more in points",
+      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
+      "category": "fuel",
+      "estimatedSavings": 0.45,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "fuel",
+        "points",
+        "rewards program"
+      ],
+      "source": {
+        "label": "Exxon Mobil Rewards+",
+        "url": "https://www.exxonmobilfuels.com/en/rewards",
+        "checkedOn": "2026-08-25"
+      },
+      "actionLabel": "Review rewards",
+      "tier": "B",
+      "distanceMiles": 1.8,
+      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
+      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
+      "expirationLabel": "Ongoing",
+      "availability": "program",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "stacking"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-25",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Exxon Mobil Rewards+",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
+      "score": 64,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 2.16,
+          "weight": 24,
+          "detail": "$0.45 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "1.8 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
       "id": "houston-dynamo-dash-first-time-fan-free-tickets-2026",
       "merchant": "Houston Dynamo FC + Houston Dash",
       "title": "Complimentary tickets for eligible first-time Houston fans",
@@ -2418,104 +2615,6 @@
       ]
     },
     {
-      "id": "sonic-rewards-welcome-reward-2026",
-      "merchant": "SONIC Rewards",
-      "title": "Free medium fries, tots, or drink for new members",
-      "summary": "The nationwide SONIC Rewards program includes a welcome reward with a choice of medium fries, tots, or a drink.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "Nationwide app offer; a convenient participating 77386-area location was not confirmed in this public scan.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "free drink",
-        "new member",
-        "app"
-      ],
-      "source": {
-        "label": "SONIC official newsroom",
-        "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
-        "checkedOn": "2026-08-17"
-      },
-      "actionLabel": "Check welcome reward",
-      "tier": "A",
-      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
-      "finePrint": "The official newsroom does not state a purchase requirement for the welcome reward. App enrollment and participating-location availability apply; confirm the reward is loaded before making a trip. No dollar value is estimated because local menu pricing was not verified.",
-      "expirationLabel": "New members",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "new",
-      "discoveredOn": "2026-08-09",
-      "preferenceSignals": [
-        "free-food",
-        "free-drink",
-        "new-member",
-        "app-specific"
-      ],
-      "distanceBasis": "unknown",
-      "score": 64,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8,
-          "weight": 10,
-          "detail": "Household match: free food, free drink"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
       "id": "shell-race-day-22-cents-2026",
       "merchant": "Shell Fuel Rewards",
       "title": "22¢ off per gallon on eligible race days",
@@ -2536,7 +2635,7 @@
       "source": {
         "label": "Shell Fuel Rewards",
         "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Opt in for race days",
       "tier": "A",
@@ -2566,7 +2665,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -2640,7 +2739,7 @@
       "source": {
         "label": "McDonald's official deals",
         "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Check first-order offer",
       "tier": "A",
@@ -2670,7 +2769,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -3046,7 +3145,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-        "checkedOn": "2026-08-24"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Check August 26 offer",
       "tier": "A",
@@ -3119,108 +3218,6 @@
           "points": 8,
           "weight": 8,
           "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "dunkin-six-dollar-meal-deal-rayford-2026",
-      "merchant": "Dunkin",
-      "title": "$6 Meal Deal with coffee and two Wake-Up Wraps",
-      "summary": "The Rayford Road location advertises a medium hot or iced coffee with two Wake-Up Wraps for $6.",
-      "category": "coffee",
-      "estimatedSavings": 3,
-      "minimumSpend": 6,
-      "isFree": false,
-      "locationNote": "2222 Rayford Road, Spring, TX 77386.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "coffee",
-        "breakfast",
-        "meal deal",
-        "preferred brand"
-      ],
-      "source": {
-        "label": "Dunkin Rayford Road location",
-        "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-        "checkedOn": "2026-08-11"
-      },
-      "actionLabel": "Review local offer",
-      "tier": "A",
-      "distanceMiles": 2.8,
-      "stackNote": "Scan Dunkin Rewards when permitted to earn points on the discounted meal.",
-      "finePrint": "Limited-time offer. Product substitutions, taxes, and participation can vary by location.",
-      "expirationLabel": "Limited time",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "preferred-coffee",
-        "local-offer",
-        "loyalty-stack"
-      ],
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-08-11",
-      "distanceEvidenceAgeDays": 13,
-      "distanceSourceLabel": "Dunkin Rayford Road location",
-      "distanceSourceUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "score": 60,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 13 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 8.4,
-          "weight": 24,
-          "detail": "$3.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.8,
-          "weight": 10,
-          "detail": "Household match: coffee"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "2.8 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 6.4,
-          "weight": 8,
-          "detail": "$6.00 required per $3.00 saved"
         },
         {
           "label": "Stackability",
@@ -3358,7 +3355,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-24"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Claim Wednesday offer",
       "tier": "A",
@@ -3464,7 +3461,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-08-24"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Claim Friday offer",
       "tier": "A",
@@ -3643,59 +3640,61 @@
       ]
     },
     {
-      "id": "exxon-mobil-rewards-base-points-2026",
-      "merchant": "Exxon Mobil Rewards+",
-      "title": "Earn 3¢ per gallon or more in points",
-      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
-      "category": "fuel",
-      "estimatedSavings": 0.45,
+      "id": "chipotle-fritz-win-bogo-2026",
+      "merchant": "Chipotle",
+      "title": "BOGO entree code drop after each Taylor Fritz win",
+      "summary": "After each Taylor Fritz men's singles win in New York, the first fans to text his Instagram Story code to 888-222 can receive a digital buy-one-get-one entree offer.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
       "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
+      "isFree": true,
+      "expiresOn": "2026-09-08",
+      "locationNote": "The digital offer is open in the 50 states and D.C., but codes are limited, event-triggered, and first-come; redemption at a 77386-area restaurant is not confirmed.",
       "verification": "verified",
-      "friction": "low",
+      "friction": "high",
       "tags": [
-        "fuel",
-        "points",
-        "rewards program"
+        "BOGO",
+        "free food",
+        "flash deal",
+        "text code",
+        "Instagram"
       ],
       "source": {
-        "label": "Exxon Mobil Rewards+",
-        "url": "https://www.exxonmobilfuels.com/en/rewards",
-        "checkedOn": "2026-08-15"
+        "label": "Chipotle official newsroom",
+        "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
+        "checkedOn": "2026-08-25"
       },
-      "actionLabel": "Review rewards",
+      "actionLabel": "Watch for a win code",
       "tier": "B",
-      "distanceMiles": 1.8,
-      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
-      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
-      "expirationLabel": "Ongoing",
-      "availability": "program",
-      "dealType": "fuel-reward",
-      "freshness": "current",
+      "stackNote": "Use the issued BOGO by itself; no stacking is assumed.",
+      "stackGroup": "chipotle-promo-code",
+      "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because the local entree price is unverified.",
+      "expirationLabel": "Win-triggered drops through September 8 while codes last",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-25",
       "preferenceSignals": [
-        "fuel-reward",
-        "stacking"
+        "free-food",
+        "flash-deal",
+        "time-sensitive",
+        "app-specific"
       ],
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-08-15",
-      "distanceEvidenceAgeDays": 9,
-      "distanceSourceLabel": "Exxon Mobil Rewards+",
-      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "score": 58,
+      "distanceBasis": "unknown",
+      "score": 59,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 11.7,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
-          "points": 2.16,
+          "points": 13.2,
           "weight": 24,
-          "detail": "$0.45 estimated value"
+          "detail": "free reward"
         },
         {
           "label": "Savings rate",
@@ -3705,27 +3704,27 @@
         },
         {
           "label": "Household fit",
-          "points": 7.800000000000001,
+          "points": 7.6000000000000005,
           "weight": 10,
-          "detail": "Household match: fuel"
+          "detail": "Household match: free food"
         },
         {
           "label": "Local relevance",
-          "points": 7.36,
+          "points": 4.4,
           "weight": 8,
-          "detail": "1.8 miles from 77386"
+          "detail": "Location not distance-confirmed"
         },
         {
           "label": "Timing",
-          "points": 4.6000000000000005,
+          "points": 5.1000000000000005,
           "weight": 10,
-          "detail": "No stated end date; current"
+          "detail": "Ends 2026-09-08; newly found"
         },
         {
           "label": "Effort",
-          "points": 9,
+          "points": 1.7999999999999998,
           "weight": 9,
-          "detail": "low redemption effort"
+          "detail": "high redemption effort"
         },
         {
           "label": "Required spend",
@@ -3735,9 +3734,9 @@
         },
         {
           "label": "Stackability",
-          "points": 7.000000000000001,
+          "points": 0.8400000000000001,
           "weight": 7,
-          "detail": "Compatible stack documented"
+          "detail": "Official terms restrict combining offers"
         }
       ]
     },
@@ -4047,6 +4046,108 @@
       ]
     },
     {
+      "id": "dunkin-six-dollar-meal-deal-rayford-2026",
+      "merchant": "Dunkin",
+      "title": "$6 Meal Deal with coffee, sandwich, and hash browns",
+      "summary": "Dunkin's current $6 Meal Deal includes a Bacon, Egg and Cheese Sandwich, hash browns, and a medium hot or iced coffee.",
+      "category": "coffee",
+      "estimatedSavings": 0,
+      "minimumSpend": 6,
+      "isFree": false,
+      "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participation and pricing at that shop are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "coffee",
+        "breakfast",
+        "meal deal",
+        "preferred brand"
+      ],
+      "source": {
+        "label": "Dunkin official newsroom",
+        "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
+        "checkedOn": "2026-08-25"
+      },
+      "actionLabel": "Check local $6 deal",
+      "tier": "A",
+      "distanceMiles": 2.8,
+      "stackNote": "The official terms say the meal deal cannot be combined with other offers; Rewards points are not assumed.",
+      "finePrint": "Limited-time offer on a Bacon, Egg and Cheese Sandwich, hash browns, and a medium hot or iced coffee. Espresso, cold brew, seasoned bacon, and loaded hash browns are excluded. Taxes, pricing, and participation vary. No dollar savings estimate is shown because comparable local menu prices were not verified.",
+      "expirationLabel": "Limited time",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "improved",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "preferred-coffee",
+        "local-offer",
+        "meal-deal"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-25",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Dunkin official newsroom",
+      "distanceSourceUrl": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
+      "score": 50,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.8,
+          "weight": 10,
+          "detail": "Household match: coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.8 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$6.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "whataburger-more-for-four-2026",
       "merchant": "Whataburger",
       "title": "Four entree choices for $4 each",
@@ -4067,7 +4168,7 @@
       "source": {
         "label": "Whataburger official newsroom",
         "url": "https://stories.whataburger.com/value-more-for-4/",
-        "checkedOn": "2026-08-24"
+        "checkedOn": "2026-08-25"
       },
       "actionLabel": "Check local $4 menu",
       "tier": "B",
@@ -4727,6 +4828,109 @@
           "points": 1.7500000000000002,
           "weight": 7,
           "detail": "No compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "seven-eleven-labor-day-six-dollar-meal-2026",
+      "merchant": "7-Eleven",
+      "title": "$6 sandwich meal deal starts August 26",
+      "summary": "7Rewards and Speedy Rewards members can get an eligible hot sandwich plus a 20-ounce Coca-Cola or Pepsi drink for $6 starting August 26.",
+      "category": "convenience",
+      "estimatedSavings": 0,
+      "minimumSpend": 6,
+      "isFree": false,
+      "expiresOn": "2026-10-27",
+      "locationNote": "The offer is limited to participating 7-Eleven, Speedway, and Stripes stores; the Birnham Woods 77386 store has not been confirmed for this meal deal.",
+      "verification": "needs-check",
+      "friction": "low",
+      "tags": [
+        "meal deal",
+        "rewards",
+        "convenience",
+        "upcoming"
+      ],
+      "source": {
+        "label": "7-Eleven official press release",
+        "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
+        "checkedOn": "2026-08-25"
+      },
+      "actionLabel": "Confirm after August 26",
+      "tier": "B",
+      "stackNote": "No additional coupon or points stacking is assumed.",
+      "finePrint": "Official terms list August 26 through October 27 for loyalty members at participating stores. The qualifying sandwich selection, local inventory, and 77386 participation are not yet confirmed, so this remains a research lead until the start date.",
+      "expirationLabel": "Starts August 26; ends October 27",
+      "availability": "waitlist",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-25",
+      "preferenceSignals": [
+        "convenience-reward",
+        "time-sensitive",
+        "local-station"
+      ],
+      "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
+      "score": 32,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.7999999999999998,
+          "weight": 18,
+          "detail": "Unverified lead; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 6.4,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 0 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-10-27; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$6.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
         }
       ]
     }

@@ -80,6 +80,14 @@
     "keywords": ["free drink", "free snacks", "bonus points", "exclusive deals"]
   },
   {
+    "id": "seven-eleven-newsroom",
+    "name": "7-Eleven official newsroom",
+    "url": "https://corp.7-eleven.com/corp/in-the-news",
+    "category": "convenience",
+    "priority": 10,
+    "keywords": ["free", "deal", "offer valid", "rewards"]
+  },
+  {
     "id": "take5-rayford",
     "name": "Take 5 Rayford Road coupons",
     "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
@@ -195,6 +203,14 @@
     "category": "restaurants",
     "priority": 8,
     "keywords": ["free", "rewards", "offer", "limited-time"]
+  },
+  {
+    "id": "chipotle-newsroom",
+    "name": "Chipotle official newsroom",
+    "url": "https://newsroom.chipotle.com/press-releases?l=10",
+    "category": "restaurants",
+    "priority": 10,
+    "keywords": ["free", "BOGO", "offer", "promo code"]
   },
   {
     "id": "settlement-online-tv",

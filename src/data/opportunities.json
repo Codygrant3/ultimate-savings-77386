@@ -69,7 +69,7 @@
     "source": {
       "label": "Taco Bell official offers and deals",
       "url": "https://www.tacobell.com/offers-and-deals",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -108,7 +108,7 @@
     "source": {
       "label": "McDonald's official deals",
       "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check first-order offer",
     "tier": "A",
@@ -187,7 +187,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-24"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -226,7 +226,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/value-more-for-4/",
-      "checkedOn": "2026-08-24"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check local $4 menu",
     "tier": "B",
@@ -270,7 +270,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-24"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check August 26 offer",
     "tier": "A",
@@ -308,7 +308,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Review offer",
     "tier": "A",
@@ -347,7 +347,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Opt in for race days",
     "tier": "A",
@@ -389,7 +389,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-24"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -430,7 +430,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-24"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -470,7 +470,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-24"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -485,44 +485,6 @@
     "preferenceSignals": [
       "free-food",
       "weekday",
-      "app-specific"
-    ]
-  },
-  {
-    "id": "wendys-free-small-chili-2026-08",
-    "merchant": "Wendy's",
-    "title": "Free small chili with $5 purchase",
-    "summary": "Wendy's official offers page lists a free small chili with a $5 qualifying purchase through August 24.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 5,
-    "isFree": true,
-    "expiresOn": "2026-08-24",
-    "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free food",
-      "app",
-      "qualifying purchase"
-    ],
-    "source": {
-      "label": "Wendy's official offers page",
-      "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Claim chili offer",
-    "tier": "A",
-    "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
-    "stackGroup": "wendys-app-order",
-    "finePrint": "Requires a $5 qualifying purchase and is listed through August 24. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local chili price was not verified.",
-    "expirationLabel": "Ends August 24",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "new",
-    "discoveredOn": "2026-08-12",
-    "preferenceSignals": [
-      "free-food",
       "app-specific"
     ]
   },
@@ -547,7 +509,7 @@
     "source": {
       "label": "SONIC official newsroom",
       "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
-      "checkedOn": "2026-08-17"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -586,7 +548,7 @@
     "source": {
       "label": "7REWARDS Fuel",
       "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-      "checkedOn": "2026-08-17"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Review fuel offer",
     "tier": "A",
@@ -710,7 +672,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+ official offer FAQ",
       "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check app eligibility",
     "tier": "A",
@@ -752,7 +714,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+ official terms",
       "url": "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Review referral offer",
     "tier": "A",
@@ -1123,7 +1085,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+",
       "url": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedOn": "2026-08-15"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Review rewards",
     "tier": "B",
@@ -1213,13 +1175,13 @@
   {
     "id": "dunkin-six-dollar-meal-deal-rayford-2026",
     "merchant": "Dunkin",
-    "title": "$6 Meal Deal with coffee and two Wake-Up Wraps",
-    "summary": "The Rayford Road location advertises a medium hot or iced coffee with two Wake-Up Wraps for $6.",
+    "title": "$6 Meal Deal with coffee, sandwich, and hash browns",
+    "summary": "Dunkin's current $6 Meal Deal includes a Bacon, Egg and Cheese Sandwich, hash browns, and a medium hot or iced coffee.",
     "category": "coffee",
-    "estimatedSavings": 3,
+    "estimatedSavings": 0,
     "minimumSpend": 6,
     "isFree": false,
-    "locationNote": "2222 Rayford Road, Spring, TX 77386.",
+    "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participation and pricing at that shop are not locally confirmed.",
     "verification": "verified",
     "friction": "low",
     "tags": [
@@ -1229,24 +1191,24 @@
       "preferred brand"
     ],
     "source": {
-      "label": "Dunkin Rayford Road location",
-      "url": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedOn": "2026-08-11"
+      "label": "Dunkin official newsroom",
+      "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
+      "checkedOn": "2026-08-25"
     },
-    "actionLabel": "Review local offer",
+    "actionLabel": "Check local $6 deal",
     "tier": "A",
     "distanceMiles": 2.8,
-    "stackNote": "Scan Dunkin Rewards when permitted to earn points on the discounted meal.",
-    "finePrint": "Limited-time offer. Product substitutions, taxes, and participation can vary by location.",
+    "stackNote": "The official terms say the meal deal cannot be combined with other offers; Rewards points are not assumed.",
+    "finePrint": "Limited-time offer on a Bacon, Egg and Cheese Sandwich, hash browns, and a medium hot or iced coffee. Espresso, cold brew, seasoned bacon, and loaded hash browns are excluded. Taxes, pricing, and participation vary. No dollar savings estimate is shown because comparable local menu prices were not verified.",
     "expirationLabel": "Limited time",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "current",
+    "freshness": "improved",
     "discoveredOn": "2026-07-23",
     "preferenceSignals": [
       "preferred-coffee",
       "local-offer",
-      "loyalty-stack"
+      "meal-deal"
     ]
   },
   {
@@ -1341,7 +1303,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/texas/spring/30083/",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -1828,7 +1790,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-25"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",
@@ -1843,6 +1805,87 @@
       "app-specific",
       "time-sensitive",
       "free-food"
+    ]
+  },
+  {
+    "id": "chipotle-fritz-win-bogo-2026",
+    "merchant": "Chipotle",
+    "title": "BOGO entree code drop after each Taylor Fritz win",
+    "summary": "After each Taylor Fritz men's singles win in New York, the first fans to text his Instagram Story code to 888-222 can receive a digital buy-one-get-one entree offer.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-08",
+    "locationNote": "The digital offer is open in the 50 states and D.C., but codes are limited, event-triggered, and first-come; redemption at a 77386-area restaurant is not confirmed.",
+    "verification": "verified",
+    "friction": "high",
+    "tags": [
+      "BOGO",
+      "free food",
+      "flash deal",
+      "text code",
+      "Instagram"
+    ],
+    "source": {
+      "label": "Chipotle official newsroom",
+      "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
+      "checkedOn": "2026-08-25"
+    },
+    "actionLabel": "Watch for a win code",
+    "tier": "B",
+    "stackNote": "Use the issued BOGO by itself; no stacking is assumed.",
+    "stackGroup": "chipotle-promo-code",
+    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because the local entree price is unverified.",
+    "expirationLabel": "Win-triggered drops through September 8 while codes last",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-25",
+    "preferenceSignals": [
+      "free-food",
+      "flash-deal",
+      "time-sensitive",
+      "app-specific"
+    ]
+  },
+  {
+    "id": "seven-eleven-labor-day-six-dollar-meal-2026",
+    "merchant": "7-Eleven",
+    "title": "$6 sandwich meal deal starts August 26",
+    "summary": "7Rewards and Speedy Rewards members can get an eligible hot sandwich plus a 20-ounce Coca-Cola or Pepsi drink for $6 starting August 26.",
+    "category": "convenience",
+    "estimatedSavings": 0,
+    "minimumSpend": 6,
+    "isFree": false,
+    "expiresOn": "2026-10-27",
+    "locationNote": "The offer is limited to participating 7-Eleven, Speedway, and Stripes stores; the Birnham Woods 77386 store has not been confirmed for this meal deal.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "meal deal",
+      "rewards",
+      "convenience",
+      "upcoming"
+    ],
+    "source": {
+      "label": "7-Eleven official press release",
+      "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
+      "checkedOn": "2026-08-25"
+    },
+    "actionLabel": "Confirm after August 26",
+    "tier": "B",
+    "stackNote": "No additional coupon or points stacking is assumed.",
+    "finePrint": "Official terms list August 26 through October 27 for loyalty members at participating stores. The qualifying sandwich selection, local inventory, and 77386 participation are not yet confirmed, so this remains a research lead until the start date.",
+    "expirationLabel": "Starts August 26; ends October 27",
+    "availability": "waitlist",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-25",
+    "preferenceSignals": [
+      "convenience-reward",
+      "time-sensitive",
+      "local-station"
     ]
   }
 ]
