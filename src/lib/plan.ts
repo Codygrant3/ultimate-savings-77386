@@ -1267,6 +1267,15 @@ function buildConstraintChecks(
       );
     }
 
+    if (
+      definition.key === "maximumFriction" &&
+      savingsGain < -0.01
+    ) {
+      messageParts.push(
+        "Official estimated savings fall; the recommendation is based on the stronger risk-adjusted household result."
+      );
+    }
+
     if (additionalMerchantTrips > 0) {
       messageParts.push(
         `It adds ${additionalMerchantTrips} merchant trip${additionalMerchantTrips === 1 ? "" : "s"}.`

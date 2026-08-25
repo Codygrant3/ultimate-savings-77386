@@ -185,6 +185,60 @@ describe("weekly action plan optimizer", () => {
     expect(plan.constraintChecks[0].message).toContain("risk-adjusted planning value");
   });
 
+  it("discloses lower official value on an effort tradeoff backed by local outcomes", () => {
+    const listed = makeOffer({
+      id: "listed-low-effort",
+      merchant: "Listed Market",
+      estimatedSavings: 20,
+      minimumSpend: 10,
+      expiresOn: undefined
+    });
+    const calibrated = makeOffer({
+      id: "calibrated-medium-effort",
+      merchant: "Calibrated Market",
+      estimatedSavings: 15,
+      minimumSpend: 15,
+      friction: "medium",
+      score: 90,
+      expiresOn: undefined,
+      distanceMiles: undefined
+    });
+
+    const plan = buildWeeklyPlan(
+      [listed, calibrated],
+      {
+        weeklyBudget: 20,
+        maxTrips: 1,
+        maximumFriction: "low"
+      },
+      today,
+      {
+        "listed-low-effort": {
+          ratio: 0.5,
+          samples: 1,
+          adjustment: 0.75
+        },
+        "calibrated-medium-effort": {
+          ratio: 1.5,
+          samples: 1,
+          adjustment: 1.25
+        }
+      }
+    );
+
+    expect(plan.trips.map(({ merchant }) => merchant)).toEqual([
+      "Listed Market"
+    ]);
+    const effortCheck = plan.constraintChecks.find(
+      ({ key }) => key === "maximumFriction"
+    );
+    expect(effortCheck).toBeTruthy();
+    expect(effortCheck?.estimatedSavingsGain).toBeLessThan(0);
+    expect(effortCheck?.message).toContain(
+      "Official estimated savings fall; the recommendation is based on the stronger risk-adjusted household result."
+    );
+  });
+
   it("hides a relaxation whose extra official value lowers risk-adjusted results", () => {
     const provenSmall = makeOffer({
       id: "proven-small",
