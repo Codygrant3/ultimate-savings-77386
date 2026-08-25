@@ -232,6 +232,9 @@ export interface WeeklyConstraintCheck {
   estimatedSavingsGain: number;
   additionalRequiredSpend: number;
   additionalMerchantTrips: number;
+  currentPlanningEfficiency: number | null;
+  relaxedPlanningEfficiency: number | null;
+  planningEfficiencyGain: number | null;
   message: string;
 }
 

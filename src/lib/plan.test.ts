@@ -187,6 +187,54 @@ describe("weekly action plan optimizer", () => {
     expect(plan.constraintChecks).toEqual([]);
   });
 
+  it("uses whole-plan efficiency, not absolute dollars, for Best-per-dollar checks", () => {
+    const highDollars = makeOffer({
+      id: "high-dollars",
+      merchant: "High Dollar Market",
+      estimatedSavings: 20,
+      minimumSpend: 20,
+      score: 80,
+      expiresOn: undefined
+    });
+    const efficient = makeOffer({
+      id: "efficient",
+      merchant: "Efficient Market",
+      estimatedSavings: 25,
+      minimumSpend: 25,
+      score: 70,
+      localRecord: true,
+      distanceBasis: "offer",
+      expiresOn: "2026-08-24"
+    });
+
+    const plan = buildWeeklyPlan(
+      [highDollars, efficient],
+      {
+        weeklyBudget: 20,
+        maxTrips: 1,
+        planObjective: "efficiency"
+      },
+      today
+    );
+
+    expect(plan.trips.map(({ merchant }) => merchant)).toEqual([
+      "High Dollar Market"
+    ]);
+    expect(plan.constraintChecks).toHaveLength(1);
+    expect(plan.constraintChecks[0].key).toBe("weeklyBudget");
+    expect(plan.constraintChecks[0].estimatedSavingsGain).toBeCloseTo(5);
+    expect(plan.constraintChecks[0].relaxedPlanningEfficiency).toBeCloseTo(0.95);
+    expect(
+      plan.constraintChecks[0].planningEfficiencyGain ?? 0
+    ).toBeGreaterThan(0.2);
+    expect(plan.constraintChecks[0].message).toContain(
+      "raises whole-plan planning efficiency"
+    );
+    expect(plan.constraintChecks[0].message).not.toContain(
+      "Official estimated savings fall"
+    );
+  });
+
   it("keeps negative travel-adjusted trip value in the whole-plan result", () => {
     const near = makeOffer({
       id: "near",

@@ -1130,6 +1130,20 @@ function selectedDealIds(plan: BaseWeeklyPlan): Set<string> {
   return new Set(plan.selectedDeals.map(({ opportunity }) => opportunity.id));
 }
 
+function planningEfficiency(plan: BaseWeeklyPlan): number | null {
+  const effectiveCost = plan.trips.reduce(
+    (total, trip) =>
+      total + trip.requiredSpend + (trip.estimatedTravelCost ?? 0),
+    0
+  );
+  if (effectiveCost <= 0) return null;
+
+  return (
+    plan.trips.reduce((total, trip) => total + trip.utility, 0) /
+    effectiveCost
+  );
+}
+
 function buildConstraintChecks(
   currentPlan: BaseWeeklyPlan,
   opportunities: ScoredOpportunity[],
@@ -1163,11 +1177,21 @@ function buildConstraintChecks(
       alternative.estimatedSavings - currentPlan.estimatedSavings;
     const riskAdjustedGain =
       alternative.riskAdjustedSavings - currentPlan.riskAdjustedSavings;
+    const usesEfficiencyObjective = settings.planObjective === "efficiency";
+    const currentEfficiency = planningEfficiency(currentPlan);
+    const alternativeEfficiency = planningEfficiency(alternative);
+    const efficiencyGain =
+      currentEfficiency !== null && alternativeEfficiency !== null
+        ? alternativeEfficiency - currentEfficiency
+        : null;
+
+    const objectiveImprovement = usesEfficiencyObjective
+      ? efficiencyGain !== null && efficiencyGain > 0.0001
+      : savingsGain >= 0.01 && riskAdjustedGain >= -0.01;
 
     if (
       !selectionChanged ||
-      savingsGain < 0.01 ||
-      riskAdjustedGain < -0.01 ||
+      !objectiveImprovement ||
       alternative.netBenefitAfterTravel <
         currentPlan.netBenefitAfterTravel - 0.01
     ) {
@@ -1180,9 +1204,19 @@ function buildConstraintChecks(
     );
     const additionalRequiredSpend =
       alternative.requiredSpend - currentPlan.requiredSpend;
-    const messageParts = [
-      `${definition.label} would add ${formatCurrency(savingsGain)} in official estimated savings for ${formatCurrency(additionalRequiredSpend)} more planned spend.`
-    ];
+    const messageParts = usesEfficiencyObjective
+      ? [
+          `${definition.label} raises whole-plan planning efficiency from $${currentEfficiency?.toFixed(2)} to $${alternativeEfficiency?.toFixed(2)} per $1 of effective cost for ${formatCurrency(additionalRequiredSpend)} more planned spend.`
+        ]
+      : [
+          `${definition.label} would add ${formatCurrency(savingsGain)} in official estimated savings for ${formatCurrency(additionalRequiredSpend)} more planned spend.`
+        ];
+
+    if (usesEfficiencyObjective && savingsGain < -0.01) {
+      messageParts.push(
+        "Official estimated savings fall, which can be correct when you chose Best per dollar."
+      );
+    }
 
     if (additionalMerchantTrips > 0) {
       messageParts.push(
@@ -1210,6 +1244,9 @@ function buildConstraintChecks(
         estimatedSavingsGain: savingsGain,
         additionalRequiredSpend,
         additionalMerchantTrips,
+        currentPlanningEfficiency: currentEfficiency,
+        relaxedPlanningEfficiency: alternativeEfficiency,
+        planningEfficiencyGain: efficiencyGain,
         message: messageParts.join(" ")
       }
     ];
