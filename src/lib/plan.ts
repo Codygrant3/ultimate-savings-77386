@@ -17,6 +17,7 @@ export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   maxDistanceMiles: 10,
   travelCostPerMile: 0,
   maximumSourceAgeDays: 14,
+  minimumValuePerDollar: 0,
   minimumDaysRemaining: 0,
   maximumFriction: "medium",
   includeUnconfirmedLocations: true,
@@ -95,6 +96,12 @@ function normalizeSettings(settings: Partial<WeeklyPlanSettings>): WeeklyPlanSet
         1,
         90
       )
+    ),
+    minimumValuePerDollar: bounded(
+      settings.minimumValuePerDollar,
+      DEFAULT_WEEKLY_PLAN_SETTINGS.minimumValuePerDollar,
+      0,
+      10
     ),
     minimumDaysRemaining: Math.round(
       bounded(
@@ -518,6 +525,19 @@ export function buildWeeklyPlan(
       continue;
     }
 
+    if (
+      settings.minimumValuePerDollar > 0 &&
+      opportunity.minimumSpend > 0 &&
+      opportunity.estimatedSavings / opportunity.minimumSpend <
+        settings.minimumValuePerDollar - 0.000001
+    ) {
+      excluded.push({
+        opportunity,
+        reason: `Below the $${settings.minimumValuePerDollar.toFixed(2)}-per-$1-spent efficiency floor`
+      });
+      continue;
+    }
+
     if (opportunity.distanceBasis === "merchant-location") {
       const locationAge = evidenceAgeInDays(opportunity.distanceCheckedOn, today);
       if (
@@ -911,6 +931,9 @@ export function buildWeeklyPlan(
       settings.requireMeasuredDollarValue
         ? "Only offers with a measured dollar-value estimate are eligible; unpriced rewards are excluded."
         : "Unpriced free rewards remain eligible but do not add estimated savings.",
+      settings.minimumValuePerDollar > 0
+        ? `Offers must return at least $${settings.minimumValuePerDollar.toFixed(2)} per $1 of required spend; zero-spend rewards remain eligible.`
+        : "No minimum return-per-dollar threshold is applied.",
       "Older source or nearby-location evidence and unconfirmed local participation reduce risk-adjusted planning value; official estimates remain unchanged.",
       `Official offers and nearby-location checks must have evidence from the last ${settings.maximumSourceAgeDays} day${settings.maximumSourceAgeDays === 1 ? "" : "s"}.`,
       settings.allowConditionalStacking

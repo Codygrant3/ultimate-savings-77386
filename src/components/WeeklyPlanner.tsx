@@ -170,6 +170,23 @@ export function WeeklyPlanner({
           />
         </label>
         <label>
+          <span>Minimum value per $1</span>
+          <input
+            aria-label="Minimum value per $1"
+            type="number"
+            min="0"
+            max="10"
+            step="0.05"
+            value={settings.minimumValuePerDollar}
+            onChange={(event) =>
+              updateSetting(
+                "minimumValuePerDollar",
+                Number(event.target.value || 0)
+              )
+            }
+          />
+        </label>
+        <label>
           <span>Maximum effort</span>
           <select
             aria-label="Maximum effort"

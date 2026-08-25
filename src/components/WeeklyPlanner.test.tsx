@@ -190,5 +190,13 @@ describe("WeeklyPlanner execution controls", () => {
       ...DEFAULT_WEEKLY_PLAN_SETTINGS,
       planObjective: "efficiency"
     });
+
+    fireEvent.change(screen.getByLabelText("Minimum value per $1"), {
+      target: { value: "0.50" }
+    });
+    expect(onSettingsChange).toHaveBeenLastCalledWith({
+      ...DEFAULT_WEEKLY_PLAN_SETTINGS,
+      minimumValuePerDollar: 0.5
+    });
   });
 });

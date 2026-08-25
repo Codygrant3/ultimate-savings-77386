@@ -392,6 +392,59 @@ describe("weekly action plan optimizer", () => {
     );
   });
 
+  it("enforces a minimum measured return per required dollar", () => {
+    const efficient = makeOffer({
+      id: "efficient",
+      merchant: "Efficient Market",
+      estimatedSavings: 12,
+      minimumSpend: 20
+    });
+    const inefficient = makeOffer({
+      id: "inefficient",
+      merchant: "Inefficient Market",
+      estimatedSavings: 5,
+      minimumSpend: 100
+    });
+    const zeroSpendReward = makeOffer({
+      id: "zero-spend-reward",
+      merchant: "Free Reward Cafe",
+      title: "Free drink reward",
+      estimatedSavings: 5,
+      minimumSpend: 0,
+      isFree: true
+    });
+    const offers = [inefficient, efficient, zeroSpendReward];
+
+    const unrestricted = buildWeeklyPlan(
+      offers,
+      { weeklyBudget: 130, maxTrips: 3 },
+      today
+    );
+    const gated = buildWeeklyPlan(
+      offers,
+      {
+        weeklyBudget: 130,
+        maxTrips: 3,
+        minimumValuePerDollar: 0.5
+      },
+      today
+    );
+
+    expect(unrestricted.trips).toHaveLength(3);
+    expect(gated.trips.map(({ merchant }) => merchant)).toEqual([
+      "Efficient Market",
+      "Free Reward Cafe"
+    ]);
+    expect(
+      gated.excluded.find(
+        ({ opportunity }) => opportunity.id === "inefficient"
+      )?.reason
+    ).toBe("Below the $0.50-per-$1-spent efficiency floor");
+    expect(gated.assumptions).toContain(
+      "Offers must return at least $0.50 per $1 of required spend; zero-spend rewards remain eligible."
+    );
+  });
+
   it("does not treat a checked distance as proof of local promotion participation", () => {
     const plan = buildWeeklyPlan([makeOffer({ id: "catalog-local" })], {}, today);
 

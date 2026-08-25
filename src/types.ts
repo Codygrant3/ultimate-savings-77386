@@ -202,6 +202,7 @@ export interface WeeklyPlanSettings {
   maxDistanceMiles: number;
   travelCostPerMile: number;
   maximumSourceAgeDays: number;
+  minimumValuePerDollar: number;
   minimumDaysRemaining: number;
   maximumFriction: "low" | "medium" | "any";
   includeUnconfirmedLocations: boolean;

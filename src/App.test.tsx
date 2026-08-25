@@ -431,6 +431,13 @@ describe("Savings Desk interactions", () => {
       window.localStorage.getItem("savings-desk:weekly-plan-settings")
     ).toContain('"minimumDaysRemaining":7');
 
+    fireEvent.change(screen.getByLabelText("Minimum value per $1"), {
+      target: { value: "0.5" }
+    });
+    expect(
+      window.localStorage.getItem("savings-desk:weekly-plan-settings")
+    ).toContain('"minimumValuePerDollar":0.5');
+
     fireEvent.change(screen.getByLabelText("Maximum effort"), {
       target: { value: "any" }
     });
