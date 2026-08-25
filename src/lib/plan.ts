@@ -171,7 +171,7 @@ function objectiveLabel(objective: WeeklyPlanSettings["planObjective"]): string 
   return {
     balanced: "balanced evidence, value, fit, effort, and travel",
     cash: "maximum measured cash value within spend and travel",
-    efficiency: "best measured return per planned dollar"
+    efficiency: "best blended net return per planned dollar"
 }[objective];
 }
 
@@ -412,9 +412,7 @@ function makeBundle(
     settings.planObjective === "cash"
       ? cashUtility
       : settings.planObjective === "efficiency"
-        ? clamp((riskAdjustedSavings / Math.max(requiredSpend, 1)) * 100, 0, 150) -
-          distancePenalty -
-          estimatedTravelCost * 10
+        ? riskAdjustedSavings - estimatedTravelCost
         : balancedUtility;
   const warnings = Array.from(
     new Set(group.flatMap((deal) => deal.warnings))
@@ -651,94 +649,170 @@ export function buildWeeklyPlan(
   }
 
   const budgetCents = Math.round(settings.weeklyBudget * 100);
-  let dp = Array.from(
-    { length: settings.maxTrips + 1 },
-    () =>
-      Array.from({ length: budgetCents + 1 }, () => ({
-        utility: Number.NEGATIVE_INFINITY,
-        bundles: [] as TripBundle[]
-      }))
-  );
-  for (let budget = 0; budget <= budgetCents; budget += 1) {
-    dp[0][budget] = { utility: 0, bundles: [] };
-  }
+  const bundlesByMerchant = [...groups.keys()]
+    .sort((first, second) => first.localeCompare(second))
+    .map((merchantKey) => {
+      const group = groups.get(merchantKey);
+      if (!group) return [];
 
-  for (const merchant of [...groups.keys()].sort((first, second) =>
-    first.localeCompare(second)
-  )) {
-    const group = groups.get(merchant);
-    if (!group) continue;
-    const bundles: TripBundle[] = [];
-    for (const combination of combinations(group, settings.maxDealsPerTrip)) {
-      if (combination.length === 0) continue;
-      if (
-        combination.filter((deal) => deal.newCustomerOffer).length > 1
-      ) {
-        continue;
-      }
-      if (hasExclusiveStackConflict(combination)) continue;
-      if (
-        combination.length > 1 &&
-        combination.some(
-          (deal) => effectiveStackCompatibility(deal.opportunity) === "exclusive"
-        )
-      ) {
-        continue;
-      }
-      if (
-        hasUnconfirmedStackConflict(
-          combination,
-          settings.allowConditionalStacking
-        )
-      ) {
-        continue;
-      }
-      bundles.push(
-        makeBundle(combination, settings)
+      return Array.from(
+        combinations(group, settings.maxDealsPerTrip)
+      ).flatMap((combination) => {
+        if (combination.length === 0) return [];
+        if (
+          combination.filter((deal) => deal.newCustomerOffer).length > 1
+        ) {
+          return [];
+        }
+        if (hasExclusiveStackConflict(combination)) return [];
+        if (
+          combination.length > 1 &&
+          combination.some(
+            (deal) =>
+              effectiveStackCompatibility(deal.opportunity) === "exclusive"
+          )
+        ) {
+          return [];
+        }
+        if (
+          hasUnconfirmedStackConflict(
+            combination,
+            settings.allowConditionalStacking
+          )
+        ) {
+          return [];
+        }
+        return [makeBundle(combination, settings)];
+      });
+    });
+
+  type PlanState = {
+    utility: number;
+    bundles: TripBundle[];
+  };
+  let best: PlanState = { utility: 0, bundles: [] };
+
+  if (settings.planObjective === "efficiency") {
+    const efficiencyDp = Array.from(
+      { length: settings.maxTrips + 1 },
+      () =>
+        Array.from({ length: budgetCents + 1 }, (): PlanState => ({
+          utility: Number.NEGATIVE_INFINITY,
+          bundles: []
+        }))
+    );
+    efficiencyDp[0][0] = { utility: 0, bundles: [] };
+
+    for (const merchantBundles of bundlesByMerchant) {
+      const next = efficiencyDp.map((states) =>
+        states.map((state) => ({
+          utility: state.utility,
+          bundles: [...state.bundles]
+        }))
       );
-    }
 
-    const merchantBundles = bundles
-      .filter((bundle) => Math.round(bundle.requiredSpend * 100) <= budgetCents)
-      .sort((first, second) => second.utility - first.utility);
-    if (merchantBundles.length === 0) continue;
+      for (const bundle of merchantBundles) {
+        const costCents = Math.round(
+          (bundle.requiredSpend + (bundle.estimatedTravelCost ?? 0)) * 100
+        );
+        if (costCents > budgetCents) continue;
 
-    const next: typeof dp = [];
-    for (let tripsUsed = 0; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
-      next[tripsUsed] = dp[tripsUsed].map((state) => ({
-        utility: state.utility,
-        bundles: [...state.bundles]
-      }));
-    }
+        for (
+          let tripsUsed = 1;
+          tripsUsed <= settings.maxTrips;
+          tripsUsed += 1
+        ) {
+          for (let spent = costCents; spent <= budgetCents; spent += 1) {
+            const previous = efficiencyDp[tripsUsed - 1][spent - costCents];
+            if (!Number.isFinite(previous.utility)) continue;
 
-    for (const bundle of merchantBundles) {
-      const costCents = Math.round(bundle.requiredSpend * 100);
-      for (let tripsUsed = 1; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
-        for (let budget = costCents; budget <= budgetCents; budget += 1) {
-          const previous = dp[tripsUsed - 1][budget - costCents];
-          if (!Number.isFinite(previous.utility)) continue;
-          const candidateUtility = previous.utility + bundle.utility;
-          if (candidateUtility > next[tripsUsed][budget].utility) {
-            next[tripsUsed][budget] = {
-              utility: candidateUtility,
-              bundles: [...previous.bundles, bundle]
-            };
+            const candidateUtility = previous.utility + bundle.utility;
+            if (candidateUtility > next[tripsUsed][spent].utility) {
+              next[tripsUsed][spent] = {
+                utility: candidateUtility,
+                bundles: [...previous.bundles, bundle]
+              };
+            }
           }
         }
       }
+      efficiencyDp.splice(0, efficiencyDp.length, ...next);
     }
-    dp = next;
-  }
 
-  let best = dp[0][budgetCents];
-  for (let tripsUsed = 1; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
-    const candidate = dp[tripsUsed][budgetCents];
-    if (
-      candidate.utility > best.utility ||
-      (candidate.utility === best.utility &&
-        candidate.bundles.length < best.bundles.length)
-    ) {
-      best = candidate;
+    let bestEfficiency = Number.NEGATIVE_INFINITY;
+    for (let tripsUsed = 1; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
+      for (let spentCents = 1; spentCents <= budgetCents; spentCents += 1) {
+        const candidate = efficiencyDp[tripsUsed][spentCents];
+        if (!Number.isFinite(candidate.utility)) continue;
+
+        const candidateEfficiency =
+          candidate.utility / Math.max(spentCents / 100, 1);
+        if (
+          candidateEfficiency > bestEfficiency ||
+          (candidateEfficiency === bestEfficiency &&
+            candidate.utility > best.utility)
+        ) {
+          bestEfficiency = candidateEfficiency;
+          best = candidate;
+        }
+      }
+    }
+  } else {
+    const additiveDp = Array.from(
+      { length: settings.maxTrips + 1 },
+      () =>
+        Array.from({ length: budgetCents + 1 }, (): PlanState => ({
+          utility: Number.NEGATIVE_INFINITY,
+          bundles: []
+        }))
+    );
+    for (let budget = 0; budget <= budgetCents; budget += 1) {
+      additiveDp[0][budget] = { utility: 0, bundles: [] };
+    }
+
+    for (const merchantBundles of bundlesByMerchant) {
+      const next = additiveDp.map((states) =>
+        states.map((state) => ({
+          utility: state.utility,
+          bundles: [...state.bundles]
+        }))
+      );
+
+      for (const bundle of merchantBundles) {
+        const costCents = Math.round(bundle.requiredSpend * 100);
+        if (costCents > budgetCents) continue;
+
+        for (
+          let tripsUsed = 1;
+          tripsUsed <= settings.maxTrips;
+          tripsUsed += 1
+        ) {
+          for (let budget = costCents; budget <= budgetCents; budget += 1) {
+            const previous = additiveDp[tripsUsed - 1][budget - costCents];
+            if (!Number.isFinite(previous.utility)) continue;
+
+            const candidateUtility = previous.utility + bundle.utility;
+            if (candidateUtility > next[tripsUsed][budget].utility) {
+              next[tripsUsed][budget] = {
+                utility: candidateUtility,
+                bundles: [...previous.bundles, bundle]
+              };
+            }
+          }
+        }
+      }
+      additiveDp.splice(0, additiveDp.length, ...next);
+    }
+
+    for (let tripsUsed = 1; tripsUsed <= settings.maxTrips; tripsUsed += 1) {
+      const candidate = additiveDp[tripsUsed][budgetCents];
+      if (
+        candidate.utility > best.utility ||
+        (candidate.utility === best.utility &&
+          candidate.bundles.length < best.bundles.length)
+      ) {
+        best = candidate;
+      }
     }
   }
 
@@ -747,6 +821,18 @@ export function buildWeeklyPlan(
       const firstDistance = first.distanceMiles ?? Number.POSITIVE_INFINITY;
       const secondDistance = second.distanceMiles ?? Number.POSITIVE_INFINITY;
       if (firstDistance !== secondDistance) return firstDistance - secondDistance;
+    }
+
+    if (settings.planObjective === "efficiency") {
+      const firstCost =
+        first.requiredSpend + (first.estimatedTravelCost ?? 0);
+      const secondCost =
+        second.requiredSpend + (second.estimatedTravelCost ?? 0);
+      const firstEfficiency = first.utility / Math.max(firstCost, 1);
+      const secondEfficiency = second.utility / Math.max(secondCost, 1);
+      if (secondEfficiency !== firstEfficiency) {
+        return secondEfficiency - firstEfficiency;
+      }
     }
 
     if (second.utility !== first.utility) return second.utility - first.utility;

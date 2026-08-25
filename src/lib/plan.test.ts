@@ -292,8 +292,46 @@ describe("weekly action plan optimizer", () => {
       "The optimizer selects trips for maximum measured cash value within spend and travel."
     );
     expect(efficiency.assumptions).toContain(
-      "The optimizer selects trips for best measured return per planned dollar."
+      "The optimizer selects trips for best blended net return per planned dollar."
     );
+  });
+
+  it("optimizes the whole plan's blended return for the efficiency objective", () => {
+    const offers = [
+      makeOffer({
+        id: "rate-a",
+        merchant: "Rate A Market",
+        estimatedSavings: 45,
+        minimumSpend: 50,
+        score: 80
+      }),
+      makeOffer({
+        id: "rate-b",
+        merchant: "Rate B Market",
+        estimatedSavings: 40,
+        minimumSpend: 50,
+        score: 78
+      }),
+      makeOffer({
+        id: "blended-winner",
+        merchant: "Blended Winner Market",
+        estimatedSavings: 60,
+        minimumSpend: 60,
+        score: 70
+      })
+    ];
+
+    const plan = buildWeeklyPlan(offers, {
+      weeklyBudget: 80,
+      maxTrips: 2,
+      planObjective: "efficiency"
+    }, today);
+
+    expect(plan.trips.map(({ merchant }) => merchant)).toEqual([
+      "Blended Winner Market"
+    ]);
+    expect(plan.requiredSpend).toBe(60);
+    expect(plan.valueEfficiency).toBeCloseTo(1);
   });
 
   it("discounts stale checks and unconfirmed participation in cash-focused planning", () => {
