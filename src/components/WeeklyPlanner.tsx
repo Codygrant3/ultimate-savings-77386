@@ -367,6 +367,11 @@ export function WeeklyPlanner({
         </article>
         <article>
           <CalendarRange size={19} aria-hidden="true" />
+          <span>Deadline priority</span>
+          <strong>{Math.round(plan.timingPriority * 100)}%</strong>
+        </article>
+        <article>
+          <CalendarRange size={19} aria-hidden="true" />
           <span>Merchants</span>
           <strong>{plan.trips.length}</strong>
         </article>
@@ -462,6 +467,8 @@ export function WeeklyPlanner({
                     Spend {formatCurrency(trip.requiredSpend)} · score{" "}
                     {Math.round(trip.averageScore)}
                     · confidence {Math.round(trip.evidenceConfidence * 100)}%
+                    · deadline priority{" "}
+                    {Math.round(trip.timingPriority * 100)}%
                   </span>
                   {trip.netBenefitAfterTravel != null && (
                     <span>

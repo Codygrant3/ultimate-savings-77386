@@ -31,6 +31,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Lets the household display the optimized trip set strongest-value first or nearest-location first, so the same evidence-based selection can support either review priority or errand routing.
 - Lets the household choose the weekly optimizer's objective among balanced value, maximum measured cash, or best whole-plan blended return per dollar while retaining every evidence, freshness, effort, distance, travel-cost, stacking, and participation guard.
 - Gives nearer expiration deadlines a bounded priority in cash- and efficiency-focused planning so limited-time opportunities are not silently deferred behind similar ongoing offers.
+- Shows weighted deadline priority alongside planning confidence, making timing pressure visible without changing the official offer estimate.
 - Applies explicit evidence-confidence discounts for older source checks and unconfirmed local participation in cash-focused planning, and shows the resulting planning confidence without changing official offer estimates.
 - Separately decays nearby-location evidence in cash-focused planning so a recently checked official offer cannot borrow confidence from an older store check.
 - Keeps store-distance evidence separate from promotion-participation evidence in weekly trips, adding an explicit confirmation warning when a checked nearby branch does not prove that a specific offer runs there.

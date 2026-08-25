@@ -360,6 +360,8 @@ describe("weekly action plan optimizer", () => {
 
     expect(plan.trips[0].merchant).toBe("Expiring Market");
     expect(plan.trips[0].estimatedSavings).toBe(9);
+    expect(plan.trips[0].timingPriority).toBe(1);
+    expect(plan.timingPriority).toBe(1);
     expect(plan.assumptions).toContain(
       "Cash- and efficiency-focused planning gives nearer deadlines a bounded priority; official estimates remain unchanged."
     );

@@ -235,6 +235,7 @@ export interface PlannedTrip {
   estimatedSavings: number;
   calibratedSavings: number;
   evidenceConfidence: number;
+  timingPriority: number;
   riskAdjustedSavings: number;
   estimatedTravelCost?: number;
   netBenefitAfterTravel?: number | null;
@@ -260,6 +261,7 @@ export interface WeeklyPlan {
   calibratedSavings: number;
   calibrationDelta: number;
   evidenceConfidence: number;
+  timingPriority: number;
   riskAdjustedSavings: number;
   totalTravelCost: number;
   valueEfficiency: number | null;

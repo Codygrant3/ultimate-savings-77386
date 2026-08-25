@@ -53,6 +53,7 @@ interface TripBundle {
   calibratedSavings: number;
   riskAdjustedSavings: number;
   evidenceConfidence: number;
+  timingPriority: number;
   estimatedTravelCost?: number;
   netBenefitAfterTravel?: number | null;
   utility: number;
@@ -360,7 +361,7 @@ function combinations<T>(items: T[], maxSize: number): T[][] {
 
 function makeBundle(
   group: DealCandidate[],
-  settings: Pick<WeeklyPlanSettings, "planObjective" | "travelCostPerMile">
+  settings: WeeklyPlanSettings
 ): TripBundle {
   const requiredSpend = group.reduce(
     (total, deal) => total + deal.opportunity.minimumSpend,
@@ -413,6 +414,11 @@ function makeBundle(
       deal.timingFactor,
     0
   );
+  const averageTimingFactor =
+    group.length > 0
+      ? group.reduce((total, deal) => total + deal.timingFactor, 0) /
+        group.length
+      : 1;
   const evidenceConfidence =
     grossBenefit > 0 ? riskAdjustedSavings / grossBenefit : 1;
   const balancedUtility =
@@ -452,6 +458,7 @@ function makeBundle(
     requiredSpend,
     estimatedSavings,
     calibratedSavings: grossBenefit,
+    timingPriority: averageTimingFactor,
     riskAdjustedSavings,
     evidenceConfidence,
     ...(settings.travelCostPerMile > 0
@@ -883,6 +890,7 @@ export function buildWeeklyPlan(
     calibratedSavings: bundle.calibratedSavings,
     riskAdjustedSavings: bundle.riskAdjustedSavings,
     evidenceConfidence: bundle.evidenceConfidence,
+    timingPriority: bundle.timingPriority,
     ...(bundle.estimatedTravelCost !== undefined
       ? { estimatedTravelCost: bundle.estimatedTravelCost }
       : {}),
@@ -1008,6 +1016,14 @@ export function buildWeeklyPlan(
             (weightedTotal, trip) =>
               weightedTotal +
               trip.calibratedSavings * trip.evidenceConfidence,
+            0
+          ) / calibratedSavings
+        : 1,
+    timingPriority:
+      calibratedSavings > 0
+        ? trips.reduce(
+            (weightedTotal, trip) =>
+              weightedTotal + trip.calibratedSavings * trip.timingPriority,
             0
           ) / calibratedSavings
         : 1,
