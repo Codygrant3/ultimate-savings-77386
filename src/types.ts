@@ -223,7 +223,8 @@ export type WeeklyConstraintCheckKey =
   | "weeklyBudget"
   | "maxTrips"
   | "maxDistanceMiles"
-  | "maxDealsPerTrip";
+  | "maxDealsPerTrip"
+  | "maximumFriction";
 
 export interface WeeklyConstraintCheck {
   key: WeeklyConstraintCheckKey;

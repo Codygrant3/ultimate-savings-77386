@@ -143,6 +143,48 @@ describe("weekly action plan optimizer", () => {
     expect(plan.constraintChecks).toEqual([]);
   });
 
+  it("recommends a higher effort limit only when risk-adjusted value improves", () => {
+    const lowEffort = makeOffer({
+      id: "low-effort",
+      merchant: "Low Effort Market",
+      estimatedSavings: 10,
+      minimumSpend: 10
+    });
+    const mediumEffort = makeOffer({
+      id: "medium-effort",
+      merchant: "Medium Effort Market",
+      estimatedSavings: 15,
+      minimumSpend: 20,
+      friction: "medium",
+      score: 84
+    });
+
+    const plan = buildWeeklyPlan(
+      [lowEffort, mediumEffort],
+      {
+        weeklyBudget: 20,
+        maxTrips: 1,
+        maximumFriction: "low"
+      },
+      today
+    );
+
+    expect(plan.trips.map(({ merchant }) => merchant)).toEqual([
+      "Low Effort Market"
+    ]);
+    expect(plan.constraintChecks).toHaveLength(1);
+    expect(plan.constraintChecks[0].key).toBe("maximumFriction");
+    expect(plan.constraintChecks[0].relaxedLimitLabel).toBe("medium");
+    expect(
+      plan.constraintChecks[0].estimatedSavingsGain
+    ).toBeGreaterThan(0);
+    expect(plan.constraintChecks[0].planningEfficiencyGain).toBeLessThan(0);
+    expect(plan.constraintChecks[0].message).toContain(
+      "A higher redemption-effort limit would add"
+    );
+    expect(plan.constraintChecks[0].message).toContain("risk-adjusted planning value");
+  });
+
   it("hides a relaxation whose extra official value lowers risk-adjusted results", () => {
     const provenSmall = makeOffer({
       id: "proven-small",

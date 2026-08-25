@@ -1120,8 +1120,8 @@ function buildBaseWeeklyPlan(
 
 const constraintCheckDefinitions: Array<{
   key: WeeklyConstraintCheckKey;
-  increment: number;
-  maximum: number;
+  increment?: number;
+  maximum?: number;
   label: string;
 }> = [
   {
@@ -1147,8 +1147,21 @@ const constraintCheckDefinitions: Array<{
     increment: 1,
     maximum: 5,
     label: "one more deal per merchant trip"
+  },
+  {
+    key: "maximumFriction",
+    label: "A higher redemption-effort limit"
   }
 ];
+
+const effortRelaxations: Record<
+  WeeklyPlanSettings["maximumFriction"],
+  WeeklyPlanSettings["maximumFriction"] | null
+> = {
+  low: "medium",
+  medium: "any",
+  any: null
+};
 
 function selectedDealIds(plan: BaseWeeklyPlan): Set<string> {
   return new Set(plan.selectedDeals.map(({ opportunity }) => opportunity.id));
@@ -1178,10 +1191,14 @@ function buildConstraintChecks(
   const currentIds = selectedDealIds(currentPlan);
 
   return constraintCheckDefinitions.flatMap((definition) => {
-    const relaxedValue = Math.min(
-      settings[definition.key] + definition.increment,
-      definition.maximum
-    );
+    const relaxedValue =
+      definition.key === "maximumFriction"
+        ? effortRelaxations[settings.maximumFriction]
+        : Math.min(
+            settings[definition.key] + (definition.increment ?? 0),
+            definition.maximum ?? Number.POSITIVE_INFINITY
+          );
+    if (relaxedValue === null) return [];
     if (relaxedValue <= settings[definition.key]) return [];
 
     const alternative = buildBaseWeeklyPlan(
@@ -1211,7 +1228,11 @@ function buildConstraintChecks(
 
     const objectiveImprovement = usesEfficiencyObjective
       ? efficiencyGain !== null && efficiencyGain > 0.0001
-      : savingsGain >= 0.01 && riskAdjustedGain >= -0.01;
+      : definition.key === "maximumFriction"
+        ? riskAdjustedGain >= 0.01 &&
+          alternative.netBenefitAfterTravel >=
+            currentPlan.netBenefitAfterTravel - 0.01
+        : savingsGain >= 0.01 && riskAdjustedGain >= -0.01;
 
     if (
       !selectionChanged ||
@@ -1228,7 +1249,11 @@ function buildConstraintChecks(
     );
     const additionalRequiredSpend =
       alternative.requiredSpend - currentPlan.requiredSpend;
-    const messageParts = usesEfficiencyObjective
+    const messageParts = definition.key === "maximumFriction"
+      ? [
+          `${definition.label} would add ${formatCurrency(riskAdjustedGain)} in risk-adjusted planning value for ${formatCurrency(additionalRequiredSpend)} more planned spend.`
+        ]
+      : usesEfficiencyObjective
       ? [
           `${definition.label} raises whole-plan planning efficiency from $${currentEfficiency?.toFixed(2)} to $${alternativeEfficiency?.toFixed(2)} per $1 of effective cost for ${formatCurrency(additionalRequiredSpend)} more planned spend.`
         ]
