@@ -1,4 +1,8 @@
-import { effectiveStackCompatibility, formatCurrency, formatDate } from "./scoring";
+import {
+  effectiveStackCompatibility,
+  formatCurrency,
+  formatDate
+} from "./scoring";
 import type { ScoredOpportunity, WeeklyPlan } from "../types";
 
 function checklistDate(date: Date): string {
@@ -11,14 +15,6 @@ function effortLabel(friction: "low" | "medium" | "high"): string {
     medium: "Medium",
     high: "High"
   }[friction];
-}
-
-function householdMatch(opportunity: ScoredOpportunity): string {
-  const fit = opportunity.scoreBreakdown.find(
-    ({ label }) => label.toLowerCase() === "household fit"
-  );
-
-  return fit?.detail ?? "General household priority";
 }
 
 function stackTerms(opportunity: ScoredOpportunity): string {
@@ -85,7 +81,6 @@ export function buildWeeklyPlanChecklist(
       lines.push(
         `  - Effort: ${effortLabel(opportunity.friction)}`
       );
-      lines.push(`  - Fit: ${householdMatch(opportunity)}`);
       lines.push(`  - Stack terms: ${stackTerms(opportunity)}`);
       lines.push(
         `  - Source checked: ${formatDate(opportunity.source.checkedOn)}`
