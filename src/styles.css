@@ -2733,6 +2733,42 @@ a {
   font-size: 9px;
 }
 
+.plan-export {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid rgba(23, 53, 44, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 254, 250, 0.86);
+}
+
+.plan-export button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 31px;
+  padding: 0 11px;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  background: var(--forest);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.plan-export button:disabled {
+  color: #7d8b85;
+  background: #d8ded9;
+  cursor: not-allowed;
+}
+
+.plan-export span {
+  color: #66756e;
+  font-size: 9px;
+}
+
 .plan-assumptions,
 .plan-exclusions {
   padding: 14px;
@@ -4373,6 +4409,11 @@ a {
 
   .plan-metrics strong {
     font-size: 17px;
+  }
+
+  .plan-export {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .trip-card {

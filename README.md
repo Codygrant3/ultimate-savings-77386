@@ -45,6 +45,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Shows the age and source of checked proximity evidence, and decays merchant-location ranking value when a nearby-store check becomes stale.
 - Explains stacking-related omissions separately from ordinary lower-priority results, including exclusion-group limits, exclusive-offer conflicts, and the conservative conditional-stacking guard.
 - Connects the weekly action plan to local execution tracking: save planned offers for later or mark them used. Marking an offer used removes it from the next optimized plan and feeds the existing recency-weighted preference history.
+- Exports the selected weekly trips as a Markdown shopping checklist with deadlines, official links, local caveats, and confirmation warnings—without exporting household data.
 - Generates a dated Markdown briefing and dashboard-ready JSON.
 - Includes a Windows Task Scheduler installer for Monday reports.
 - Checks a curated set of public sources for new or improved high-value matches.

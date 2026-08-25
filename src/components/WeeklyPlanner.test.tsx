@@ -199,4 +199,33 @@ describe("WeeklyPlanner execution controls", () => {
       minimumValuePerDollar: 0.5
     });
   });
+
+  it("downloads a privacy-safe action checklist", () => {
+    const createObjectURL = vi.fn(() => "blob:test");
+    const revokeObjectURL = vi.fn();
+    const click = vi
+      .spyOn(HTMLAnchorElement.prototype, "click")
+      .mockImplementation(() => {});
+
+    Object.defineProperty(URL, "createObjectURL", {
+      configurable: true,
+      writable: true,
+      value: createObjectURL
+    });
+    Object.defineProperty(URL, "revokeObjectURL", {
+      configurable: true,
+      writable: true,
+      value: revokeObjectURL
+    });
+
+    renderPlanner();
+    fireEvent.click(
+      screen.getByRole("button", { name: "Download action checklist" })
+    );
+
+    expect(createObjectURL).toHaveBeenCalledTimes(1);
+    expect(click).toHaveBeenCalledTimes(1);
+    expect(revokeObjectURL).toHaveBeenCalledWith("blob:test");
+    click.mockRestore();
+  });
 });

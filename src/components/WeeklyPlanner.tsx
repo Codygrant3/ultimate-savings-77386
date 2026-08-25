@@ -14,6 +14,10 @@ import {
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { buildWeeklyPlan, daysUntilExpiration } from "../lib/plan";
+import {
+  buildWeeklyPlanChecklist,
+  weeklyPlanChecklistFileName
+} from "../lib/plan-export";
 import { buildOfferOutcomeAdjustments } from "../lib/outcomes";
 import { formatCurrency, formatDate } from "../lib/scoring";
 import type {
@@ -62,6 +66,19 @@ export function WeeklyPlanner({
     value: WeeklyPlanSettings[K]
   ) {
     onSettingsChange({ ...settings, [key]: value });
+  }
+
+  function downloadChecklist() {
+    const markdown = buildWeeklyPlanChecklist(plan, today);
+    const blob = new Blob([markdown], { type: "text/markdown" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = weeklyPlanChecklistFileName(today);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
   }
 
   return (
@@ -387,6 +404,18 @@ export function WeeklyPlanner({
           </>
         )}
       </section>
+
+      <div className="plan-export">
+        <button
+          type="button"
+          onClick={downloadChecklist}
+          disabled={plan.trips.length === 0}
+        >
+          <ShoppingBasket size={15} aria-hidden="true" />
+          Download action checklist
+        </button>
+        <span>Markdown only; contains offer facts and links, not household data.</span>
+      </div>
 
       {plan.trips.length === 0 ? (
         <p className="plan-empty">
