@@ -185,6 +185,44 @@ describe("weekly action plan optimizer", () => {
     expect(plan.constraintChecks[0].message).toContain("risk-adjusted planning value");
   });
 
+  it("evaluates the medium-to-any effort relaxation despite categorical labels", () => {
+    const lowEffort = makeOffer({
+      id: "medium-low-effort",
+      merchant: "Low Effort Market",
+      estimatedSavings: 10,
+      minimumSpend: 10
+    });
+    const highEffort = makeOffer({
+      id: "any-high-effort",
+      merchant: "High Effort Market",
+      estimatedSavings: 20,
+      minimumSpend: 10,
+      friction: "high",
+      score: 90,
+      expiresOn: undefined,
+      localRecord: true,
+      distanceBasis: "offer"
+    });
+
+    const plan = buildWeeklyPlan(
+      [lowEffort, highEffort],
+      {
+        weeklyBudget: 20,
+        maxTrips: 1,
+        maximumFriction: "medium",
+        planObjective: "cash"
+      },
+      today
+    );
+
+    expect(plan.trips.map(({ merchant }) => merchant)).toEqual([
+      "Low Effort Market"
+    ]);
+    expect(plan.constraintChecks.some(({ key }) => key === "maximumFriction")).toBe(
+      true
+    );
+  });
+
   it("discloses lower official value on an effort tradeoff backed by local outcomes", () => {
     const listed = makeOffer({
       id: "listed-low-effort",

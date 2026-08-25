@@ -1191,16 +1191,52 @@ function buildConstraintChecks(
   const currentIds = selectedDealIds(currentPlan);
 
   return constraintCheckDefinitions.flatMap((definition) => {
-    const relaxedValue =
-      definition.key === "maximumFriction"
-        ? effortRelaxations[settings.maximumFriction]
-        : Math.min(
-            settings[definition.key] + (definition.increment ?? 0),
-            definition.maximum ?? Number.POSITIVE_INFINITY
-          );
-    if (relaxedValue === null) return [];
+    if (definition.key === "maximumFriction") {
+      const relaxedEffort = effortRelaxations[settings.maximumFriction];
+      if (!relaxedEffort) return [];
+
+      return buildConstraintCheck(
+        definition,
+        relaxedEffort,
+        currentPlan,
+        opportunities,
+        settings,
+        today,
+        outcomeAdjustments,
+        currentIds
+      );
+    }
+
+    const relaxedValue = Math.min(
+      settings[definition.key] + (definition.increment ?? 0),
+      definition.maximum ?? Number.POSITIVE_INFINITY
+    );
     if (relaxedValue <= settings[definition.key]) return [];
 
+    return buildConstraintCheck(
+      definition,
+      relaxedValue,
+      currentPlan,
+      opportunities,
+      settings,
+      today,
+      outcomeAdjustments,
+      currentIds
+    );
+  });
+}
+
+function buildConstraintCheck(
+  definition: (typeof constraintCheckDefinitions)[number],
+  relaxedValue: number | WeeklyPlanSettings["maximumFriction"],
+  currentPlan: BaseWeeklyPlan,
+  opportunities: ScoredOpportunity[],
+  settings: WeeklyPlanSettings,
+  today: Date,
+  outcomeAdjustments: OfferOutcomeAdjustments,
+  currentIds: Set<string>
+): WeeklyConstraintCheck[] {
+  {
     const alternative = buildBaseWeeklyPlan(
       opportunities,
       {
@@ -1308,7 +1344,7 @@ function buildConstraintChecks(
         message: messageParts.join(" ")
       }
     ];
-  });
+  }
 }
 
 export function buildWeeklyPlan(
