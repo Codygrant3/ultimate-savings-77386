@@ -1161,10 +1161,13 @@ function buildConstraintChecks(
       [...currentIds].some((id) => !alternativeIds.has(id));
     const savingsGain =
       alternative.estimatedSavings - currentPlan.estimatedSavings;
+    const riskAdjustedGain =
+      alternative.riskAdjustedSavings - currentPlan.riskAdjustedSavings;
 
     if (
       !selectionChanged ||
       savingsGain < 0.01 ||
+      riskAdjustedGain < -0.01 ||
       alternative.netBenefitAfterTravel <
         currentPlan.netBenefitAfterTravel - 0.01
     ) {
@@ -1189,7 +1192,13 @@ function buildConstraintChecks(
 
     if (settings.travelCostPerMile > 0) {
       messageParts.push(
-        "The estimate does not lower net benefit after your travel-cost assumption."
+        "The change does not lower net benefit after your travel-cost assumption."
+      );
+    }
+
+    if (riskAdjustedGain < savingsGain - 0.01) {
+      messageParts.push(
+        "Linked local outcomes reduce the risk-adjusted gain, so review those results before acting."
       );
     }
 

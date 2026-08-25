@@ -143,6 +143,50 @@ describe("weekly action plan optimizer", () => {
     expect(plan.constraintChecks).toEqual([]);
   });
 
+  it("hides a relaxation whose extra official value lowers risk-adjusted results", () => {
+    const provenSmall = makeOffer({
+      id: "proven-small",
+      merchant: "Proven Market",
+      estimatedSavings: 10,
+      minimumSpend: 10,
+      score: 80,
+      expiresOn: undefined
+    });
+    const largerWeak = makeOffer({
+      id: "larger-weak",
+      merchant: "Weak Outcome Market",
+      estimatedSavings: 20,
+      minimumSpend: 30,
+      score: 90,
+      distanceMiles: undefined,
+      expiresOn: undefined
+    });
+
+    const plan = buildWeeklyPlan(
+      [provenSmall, largerWeak],
+      { weeklyBudget: 10, maxTrips: 1, planObjective: "cash" },
+      today,
+      {
+        "proven-small": {
+          ratio: 1.5,
+          samples: 1,
+          adjustment: 1.25
+        },
+        "larger-weak": {
+          ratio: 0.5,
+          samples: 1,
+          adjustment: 0.75
+        }
+      }
+    );
+
+    expect(plan.trips.map(({ merchant }) => merchant)).toEqual([
+      "Proven Market"
+    ]);
+    expect(plan.riskAdjustedSavings).toBeCloseTo(10.625);
+    expect(plan.constraintChecks).toEqual([]);
+  });
+
   it("keeps negative travel-adjusted trip value in the whole-plan result", () => {
     const near = makeOffer({
       id: "near",
