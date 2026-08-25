@@ -51,6 +51,7 @@ export interface Opportunity {
   savingsRate?: number;
   isFree: boolean;
   expiresOn?: string;
+  availableDaysOfWeek?: number[];
   locationNote: string;
   verification: VerificationStatus;
   friction: Friction;
@@ -188,6 +189,7 @@ export interface OfferCandidate {
   amountText?: string;
   minimumSpend?: number;
   expirationText?: string;
+  availableDaysOfWeek?: number[];
   candidateScore?: number;
   candidateReasons?: string[];
 }

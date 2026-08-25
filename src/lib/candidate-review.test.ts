@@ -315,6 +315,47 @@ describe("candidate review matching", () => {
     );
   });
 
+  it("carries valid official redemption days into a local offer and rejects bad evidence", () => {
+    const valid = createLocallyVerifiedOffer(
+      candidate({ availableDaysOfWeek: [3, 3, 5] }),
+      {
+        category: "restaurants",
+        estimatedSavings: 0,
+        minimumSpend: 5,
+        isFree: true,
+        friction: "low",
+        stackStatus: "conditional",
+        localParticipationConfirmed: false,
+        officialTermsConfirmed: true
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(valid.status).toBe("created");
+    if (valid.status !== "created") return;
+    expect(valid.offer.availableDaysOfWeek).toEqual([3, 5]);
+
+    const invalid = createLocallyVerifiedOffer(
+      candidate({ availableDaysOfWeek: [7] }),
+      {
+        category: "restaurants",
+        estimatedSavings: 0,
+        minimumSpend: 5,
+        isFree: true,
+        friction: "low",
+        stackStatus: "conditional",
+        localParticipationConfirmed: false,
+        officialTermsConfirmed: true
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(invalid).toEqual({
+      status: "invalid",
+      errors: ["Capture valid official redemption days from Sunday to Saturday"]
+    });
+  });
+
   it("rejects an out-of-range published savings rate", () => {
     const result = createLocallyVerifiedOffer(
       candidate(),

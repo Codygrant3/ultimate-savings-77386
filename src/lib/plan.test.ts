@@ -40,6 +40,62 @@ function expectCloseTo(actual: number, expected: number) {
 }
 
 describe("weekly action plan optimizer", () => {
+  it("excludes a recurring offer outside its captured official redemption days", () => {
+    const wednesdayOffer = makeOffer({
+      id: "wednesday-offer",
+      merchant: "Wednesday Market",
+      availableDaysOfWeek: [3]
+    });
+
+    const plan = buildWeeklyPlan([wednesdayOffer], {}, new Date("2026-08-21T12:00:00"));
+
+    expect(plan.trips).toHaveLength(0);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "wednesday-offer")
+        ?.reason
+    ).toBe("Captured official days exclude Friday");
+  });
+
+  it("keeps a recurring offer on a captured redemption day", () => {
+    const wednesdayOffer = makeOffer({
+      id: "wednesday-offer",
+      merchant: "Wednesday Market",
+      availableDaysOfWeek: [3]
+    });
+
+    const plan = buildWeeklyPlan(
+      [wednesdayOffer],
+      {},
+      new Date("2026-08-26T12:00:00")
+    );
+
+    expect(plan.trips).toHaveLength(1);
+    expect(plan.trips[0].merchant).toBe("Wednesday Market");
+  });
+
+  it("fails closed when captured redemption-day evidence is invalid", () => {
+    const invalidDay = makeOffer({
+      id: "invalid-day",
+      merchant: "Invalid Day Market",
+      availableDaysOfWeek: [7]
+    });
+    const emptyDays = makeOffer({
+      id: "empty-days",
+      merchant: "Empty Day Market",
+      availableDaysOfWeek: []
+    });
+
+    const plan = buildWeeklyPlan([invalidDay, emptyDays], {}, today);
+
+    expect(plan.trips).toHaveLength(0);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "invalid-day")?.reason
+    ).toBe("Invalid redemption-day evidence");
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "empty-days")?.reason
+    ).toBe("Invalid redemption-day evidence");
+  });
+
   it("never selects a deal whose required spend exceeds the weekly budget", () => {
     const affordable = makeOffer({
       id: "affordable",

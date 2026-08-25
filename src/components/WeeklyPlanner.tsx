@@ -540,6 +540,16 @@ export function WeeklyPlanner({
                                 )
                               } days left`
                             : ""}
+                          {opportunity.availableDaysOfWeek?.length
+                            ? ` · official days: ${opportunity.availableDaysOfWeek
+                                .map((day) =>
+                                  new Intl.DateTimeFormat("en-US", {
+                                    weekday: "short",
+                                    timeZone: "UTC"
+                                  }).format(new Date(Date.UTC(2026, 0, 4 + day)))
+                                )
+                                .join(", ")}`
+                            : ""}
                           {` · ${opportunity.friction} effort`}
                           {` · source checked ${formatDate(
                             opportunity.source.checkedOn

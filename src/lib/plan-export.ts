@@ -28,6 +28,23 @@ function stackTerms(opportunity: ScoredOpportunity): string {
   }
 }
 
+function redemptionDays(opportunity: ScoredOpportunity): string | null {
+  const days = opportunity.availableDaysOfWeek;
+  if (!Array.isArray(days) || days.length === 0) return null;
+
+  const formatter = new Intl.DateTimeFormat("en-US", {
+    weekday: "short",
+    timeZone: "UTC"
+  });
+  const labels = [...new Set(days)]
+    .filter((day) => Number.isInteger(day) && day >= 0 && day <= 6)
+    .sort((first, second) => first - second)
+    .map((day) =>
+      formatter.format(new Date(Date.UTC(2026, 0, 4 + day)))
+    );
+  return labels.length > 0 ? labels.join(", ") : null;
+}
+
 export function buildWeeklyPlanChecklist(
   plan: WeeklyPlan,
   generatedOn = new Date()
@@ -76,6 +93,10 @@ export function buildWeeklyPlanChecklist(
             : "; no required spend"
         }${opportunity.expiresOn ? `; ends ${formatDate(opportunity.expiresOn)}` : ""}`
       );
+      const days = redemptionDays(opportunity);
+      if (days) {
+        lines.push(`  - Official day window: ${days}`);
+      }
       lines.push(`  - Source: ${opportunity.source.url}`);
       lines.push(`  - Location: ${opportunity.locationNote}`);
       lines.push(

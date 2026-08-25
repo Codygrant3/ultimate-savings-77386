@@ -519,6 +519,37 @@ function buildBaseWeeklyPlan(
       continue;
     }
 
+    const availableDays = opportunity.availableDaysOfWeek;
+    if (
+      availableDays !== undefined &&
+      (!Array.isArray(availableDays) ||
+        availableDays.length === 0 ||
+        availableDays.some(
+          (day) => !Number.isInteger(day) || day < 0 || day > 6
+        ))
+    ) {
+      excluded.push({
+        opportunity,
+        reason: "Invalid redemption-day evidence"
+      });
+      continue;
+    }
+
+    if (
+      Array.isArray(availableDays) &&
+      !availableDays.includes(today.getDay())
+    ) {
+      excluded.push({
+        opportunity,
+        reason: `Captured official days exclude ${
+          new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(
+            today
+          )
+        }`
+      });
+      continue;
+    }
+
     if (
       opportunity.expiresOn &&
       daysUntilExpiration(opportunity.expiresOn, today) <
@@ -1101,6 +1132,7 @@ function buildBaseWeeklyPlan(
       settings.minimumDaysRemaining > 0
         ? `Offers must remain valid for at least ${settings.minimumDaysRemaining} more day${settings.minimumDaysRemaining === 1 ? "" : "s"}; this is planning math, not an eligibility guarantee.`
         : "Offers expiring today remain eligible for planning; confirm their terms before acting.",
+      "Offers with captured official redemption days are planned only on those days; confirm any stated time window before acting.",
       {
         low: "Only low-effort offers are eligible.",
         medium: "Low and medium effort offers are eligible; high effort is excluded.",

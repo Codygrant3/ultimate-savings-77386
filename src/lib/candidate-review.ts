@@ -324,6 +324,10 @@ export function createLocallyVerifiedOffer(
   const stackGroup = normalizedStackGroup(draft.stackGroup);
   const stackStatus = draft.stackStatus;
   const checkedOn = today.toISOString().slice(0, 10);
+  const availableDaysOfWeek =
+    candidate.availableDaysOfWeek === undefined
+      ? undefined
+      : Array.from(new Set(candidate.availableDaysOfWeek));
 
   if (!draft.officialTermsConfirmed) {
     errors.push("Confirm the offer terms on the linked official source");
@@ -342,6 +346,15 @@ export function createLocallyVerifiedOffer(
   }
   if (draft.expiresOn && !isValidIsoDate(draft.expiresOn)) {
     errors.push("Use a valid expiration date");
+  }
+  if (
+    availableDaysOfWeek !== undefined &&
+    (availableDaysOfWeek.length === 0 ||
+      availableDaysOfWeek.some(
+        (day) => !Number.isInteger(day) || day < 0 || day > 6
+      ))
+  ) {
+    errors.push("Capture valid official redemption days from Sunday to Saturday");
   }
   if (
     savingsRate !== undefined &&
@@ -394,6 +407,7 @@ export function createLocallyVerifiedOffer(
     isFree: draft.isFree,
     ...(savingsRate !== undefined ? { savingsRate } : {}),
     ...(draft.expiresOn ? { expiresOn: draft.expiresOn } : {}),
+    ...(availableDaysOfWeek ? { availableDaysOfWeek } : {}),
     ...(draft.localParticipationConfirmed
       ? { distanceMiles }
       : {}),
