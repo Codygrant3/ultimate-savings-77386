@@ -2489,6 +2489,29 @@ a {
   padding-bottom: 6px;
 }
 
+.constraint-checks {
+  border-left: 3px solid var(--forest);
+  padding: 2px 0 2px 14px;
+}
+
+.constraint-checks h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.constraint-checks ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.constraint-checks li {
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+}
+
 .planner-controls,
 .plan-metrics {
   border: 1px solid rgba(23, 53, 44, 0.1);

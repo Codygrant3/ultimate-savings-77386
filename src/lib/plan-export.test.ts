@@ -73,6 +73,7 @@ const plan: WeeklyPlan = {
   estimatedNetCost: 10,
   netBenefitAfterTravel: 7.1,
   savingsRate: 50,
+  constraintChecks: [],
   assumptions: ["Estimated values are planning aids."]
 };
 

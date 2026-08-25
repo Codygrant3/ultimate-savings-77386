@@ -98,6 +98,51 @@ describe("weekly action plan optimizer", () => {
     expect(plan.savingsRate).toBeCloseTo(40);
   });
 
+  it("shows only meaningful constraint relaxations that add official value", () => {
+    const affordable = makeOffer({
+      id: "affordable",
+      merchant: "Affordable Market",
+      estimatedSavings: 8,
+      minimumSpend: 15
+    });
+    const valuable = makeOffer({
+      id: "valuable",
+      merchant: "Valuable Market",
+      estimatedSavings: 20,
+      minimumSpend: 30,
+      score: 90
+    });
+
+    const plan = buildWeeklyPlan(
+      [affordable, valuable],
+      { weeklyBudget: 20, maxTrips: 2 },
+      today
+    );
+
+    expect(plan.trips.map(({ merchant }) => merchant)).toEqual([
+      "Affordable Market"
+    ]);
+    expect(plan.constraintChecks).toHaveLength(1);
+    expect(plan.constraintChecks[0].key).toBe("weeklyBudget");
+    expect(plan.constraintChecks[0].estimatedSavingsGain).toBeCloseTo(20);
+    expect(plan.constraintChecks[0].additionalRequiredSpend).toBeCloseTo(30);
+    expect(plan.constraintChecks[0].additionalMerchantTrips).toBe(1);
+    expect(plan.constraintChecks[0].message).toContain(
+      "A $25 higher weekly budget would add $20 in official estimated savings for $30 more planned spend."
+    );
+  });
+
+  it("hides constraint checks when relaxing a limit does not change the plan", () => {
+    const plan = buildWeeklyPlan(
+      [makeOffer({ id: "only-offer" })],
+      { weeklyBudget: 100, maxTrips: 1 },
+      today
+    );
+
+    expect(plan.trips).toHaveLength(1);
+    expect(plan.constraintChecks).toEqual([]);
+  });
+
   it("limits the number of merchant trips", () => {
     const plan = buildWeeklyPlan(
       [

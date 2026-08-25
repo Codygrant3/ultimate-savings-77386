@@ -183,6 +183,9 @@ describe("WeeklyPlanner execution controls", () => {
       requireMeasuredDollarValue: true
     });
 
+    expect(screen.getByLabelText("Planning objective")).toBeTruthy();
+    expect(screen.getAllByText(/Deadline priority/).length).toBeGreaterThan(0);
+
     fireEvent.change(screen.getByLabelText("Planning objective"), {
       target: { value: "efficiency" }
     });
@@ -198,6 +201,54 @@ describe("WeeklyPlanner execution controls", () => {
       ...DEFAULT_WEEKLY_PLAN_SETTINGS,
       minimumValuePerDollar: 0.5
     });
+  });
+
+  it("shows a meaningful constraint check without inventing no-op advice", () => {
+    render(
+      <WeeklyPlanner
+        opportunities={[
+          offer({
+            id: "affordable",
+            merchant: "Affordable Market",
+            title: "Affordable offer"
+          }),
+          offer({
+            id: "valuable",
+            merchant: "Valuable Market",
+            title: "Valuable offer",
+            estimatedSavings: 20,
+            minimumSpend: 30,
+            score: 90
+          })
+        ]}
+        settings={{ ...DEFAULT_WEEKLY_PLAN_SETTINGS, weeklyBudget: 20 }}
+        onSettingsChange={vi.fn()}
+        savedIds={[]}
+        redeemedIds={[]}
+        receipts={[]}
+        onSave={vi.fn()}
+        onRedeem={vi.fn()}
+      />
+    );
+
+    expect(screen.getByLabelText("Constraint checks")).toBeTruthy();
+    expect(screen.getByText(/A \$25 higher weekly budget/)).toBeTruthy();
+
+    cleanup();
+    render(
+      <WeeklyPlanner
+        opportunities={[offer({ id: "only-offer", title: "Only offer" })]}
+        settings={{ ...DEFAULT_WEEKLY_PLAN_SETTINGS, weeklyBudget: 100 }}
+        onSettingsChange={vi.fn()}
+        savedIds={[]}
+        redeemedIds={[]}
+        receipts={[]}
+        onSave={vi.fn()}
+        onRedeem={vi.fn()}
+      />
+    );
+
+    expect(screen.queryByLabelText("Constraint checks")).toBeNull();
   });
 
   it("downloads a privacy-safe action checklist", () => {

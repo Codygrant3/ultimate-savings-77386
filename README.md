@@ -41,6 +41,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Enforces a user-defined minimum return per $1 of required spend in weekly planning, with a clear exclusion reason and an exemption for genuine zero-spend rewards.
 - Lets the household enter its own cost per mile so weekly planning can compare estimated savings against explicit round-trip travel cost and show net benefit after travel; the figure remains a local planning assumption.
 - Shows the weekly plan's blended dollar return per $1 of planned spend and its estimated net cash requirement, while keeping those figures separate from guaranteed eligibility or local price evidence.
+- Tests bounded budget, trip, distance, and deals-per-merchant relaxations and reports only changes that add official estimated value without lowering the travel-adjusted household result; every evidence and stacking guard remains active.
 - Enforces a user-defined maximum source-check age in the weekly action plan, with a 14-day default, so stale evidence cannot silently become an action recommendation.
 - Applies that same freshness gate to checked nearby-location evidence as well as official offer sources, so old store checks cannot masquerade as current proximity.
 - Shows the age and source of checked proximity evidence, and decays merchant-location ranking value when a nearby-store check becomes stale.

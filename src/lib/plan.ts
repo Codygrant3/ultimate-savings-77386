@@ -3,13 +3,18 @@ import type {
   PlannedTrip,
   ScoredOpportunity,
   WeeklyPlan,
+  WeeklyConstraintCheck,
+  WeeklyConstraintCheckKey,
   WeeklyPlanSettings
 } from "../types";
 import type { OfferOutcomeAdjustments } from "./outcomes";
 import {
   effectiveStackCompatibility,
+  formatCurrency,
   matchesHighPriorityProfile
 } from "./scoring";
+
+type BaseWeeklyPlan = Omit<WeeklyPlan, "constraintChecks">;
 
 export const DEFAULT_WEEKLY_PLAN_SETTINGS: WeeklyPlanSettings = {
   weeklyBudget: 100,
@@ -476,12 +481,12 @@ function makeBundle(
   };
 }
 
-export function buildWeeklyPlan(
+function buildBaseWeeklyPlan(
   opportunities: ScoredOpportunity[],
   rawSettings: Partial<WeeklyPlanSettings>,
   today = new Date(),
   outcomeAdjustments: OfferOutcomeAdjustments = {}
-): WeeklyPlan {
+): BaseWeeklyPlan {
   const settings = normalizeSettings(rawSettings);
   const eligible: DealCandidate[] = [];
   const excluded: WeeklyPlan["excluded"] = [];
@@ -1085,6 +1090,145 @@ export function buildWeeklyPlan(
       settings.tripOrder === "distance"
         ? ["Trips are displayed nearest first using approximate location distances."]
         : ["Trips are displayed strongest planning value first."]
+    )
+  };
+}
+
+const constraintCheckDefinitions: Array<{
+  key: WeeklyConstraintCheckKey;
+  increment: number;
+  maximum: number;
+  label: string;
+}> = [
+  {
+    key: "weeklyBudget",
+    increment: 25,
+    maximum: 500,
+    label: "A $25 higher weekly budget"
+  },
+  {
+    key: "maxTrips",
+    increment: 1,
+    maximum: 8,
+    label: "one more merchant trip"
+  },
+  {
+    key: "maxDistanceMiles",
+    increment: 5,
+    maximum: 50,
+    label: "five more miles of travel range"
+  },
+  {
+    key: "maxDealsPerTrip",
+    increment: 1,
+    maximum: 5,
+    label: "one more deal per merchant trip"
+  }
+];
+
+function selectedDealIds(plan: BaseWeeklyPlan): Set<string> {
+  return new Set(plan.selectedDeals.map(({ opportunity }) => opportunity.id));
+}
+
+function buildConstraintChecks(
+  currentPlan: BaseWeeklyPlan,
+  opportunities: ScoredOpportunity[],
+  settings: WeeklyPlanSettings,
+  today: Date,
+  outcomeAdjustments: OfferOutcomeAdjustments
+): WeeklyConstraintCheck[] {
+  const currentIds = selectedDealIds(currentPlan);
+
+  return constraintCheckDefinitions.flatMap((definition) => {
+    const relaxedValue = Math.min(
+      settings[definition.key] + definition.increment,
+      definition.maximum
+    );
+    if (relaxedValue <= settings[definition.key]) return [];
+
+    const alternative = buildBaseWeeklyPlan(
+      opportunities,
+      {
+        ...settings,
+        [definition.key]: relaxedValue
+      },
+      today,
+      outcomeAdjustments
+    );
+    const alternativeIds = selectedDealIds(alternative);
+    const selectionChanged =
+      alternativeIds.size !== currentIds.size ||
+      [...currentIds].some((id) => !alternativeIds.has(id));
+    const savingsGain =
+      alternative.estimatedSavings - currentPlan.estimatedSavings;
+
+    if (
+      !selectionChanged ||
+      savingsGain < 0.01 ||
+      alternative.netBenefitAfterTravel <
+        currentPlan.netBenefitAfterTravel - 0.01
+    ) {
+      return [];
+    }
+
+    const additionalMerchantTrips = Math.max(
+      0,
+      alternative.trips.length - currentPlan.trips.length
+    );
+    const additionalRequiredSpend =
+      alternative.requiredSpend - currentPlan.requiredSpend;
+    const messageParts = [
+      `${definition.label} would add ${formatCurrency(savingsGain)} in official estimated savings for ${formatCurrency(additionalRequiredSpend)} more planned spend.`
+    ];
+
+    if (additionalMerchantTrips > 0) {
+      messageParts.push(
+        `It adds ${additionalMerchantTrips} merchant trip${additionalMerchantTrips === 1 ? "" : "s"}.`
+      );
+    }
+
+    if (settings.travelCostPerMile > 0) {
+      messageParts.push(
+        "The estimate does not lower net benefit after your travel-cost assumption."
+      );
+    }
+
+    return [
+      {
+        key: definition.key,
+        label: definition.label,
+        relaxedLimitLabel: String(relaxedValue),
+        estimatedSavingsGain: savingsGain,
+        additionalRequiredSpend,
+        additionalMerchantTrips,
+        message: messageParts.join(" ")
+      }
+    ];
+  });
+}
+
+export function buildWeeklyPlan(
+  opportunities: ScoredOpportunity[],
+  rawSettings: Partial<WeeklyPlanSettings>,
+  today = new Date(),
+  outcomeAdjustments: OfferOutcomeAdjustments = {}
+): WeeklyPlan {
+  const plan = buildBaseWeeklyPlan(
+    opportunities,
+    rawSettings,
+    today,
+    outcomeAdjustments
+  );
+  const settings = normalizeSettings(rawSettings);
+
+  return {
+    ...plan,
+    constraintChecks: buildConstraintChecks(
+      plan,
+      opportunities,
+      settings,
+      today,
+      outcomeAdjustments
     )
   };
 }

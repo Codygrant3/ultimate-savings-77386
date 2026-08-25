@@ -422,6 +422,17 @@ export function WeeklyPlanner({
         <span>Markdown only; contains offer facts and links, not household data.</span>
       </div>
 
+      {plan.constraintChecks.length > 0 && (
+        <section className="constraint-checks" aria-label="Constraint checks">
+          <h2>Constraint checks</h2>
+          <ul>
+            {plan.constraintChecks.map((check) => (
+              <li key={check.key}>{check.message}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {plan.trips.length === 0 ? (
         <p className="plan-empty">
           No verified offers fit these limits. Raise the budget or include more

@@ -219,6 +219,22 @@ export type PlanObjective = "balanced" | "cash" | "efficiency";
 
 export type TripOrder = "utility" | "distance";
 
+export type WeeklyConstraintCheckKey =
+  | "weeklyBudget"
+  | "maxTrips"
+  | "maxDistanceMiles"
+  | "maxDealsPerTrip";
+
+export interface WeeklyConstraintCheck {
+  key: WeeklyConstraintCheckKey;
+  label: string;
+  relaxedLimitLabel: string;
+  estimatedSavingsGain: number;
+  additionalRequiredSpend: number;
+  additionalMerchantTrips: number;
+  message: string;
+}
+
 export interface PlannedDeal {
   opportunity: ScoredOpportunity;
   warnings: string[];
@@ -268,6 +284,7 @@ export interface WeeklyPlan {
   estimatedNetCost: number;
   netBenefitAfterTravel: number;
   savingsRate: number;
+  constraintChecks: WeeklyConstraintCheck[];
   assumptions: string[];
 }
 
