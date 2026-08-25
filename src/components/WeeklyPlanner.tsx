@@ -529,6 +529,10 @@ export function WeeklyPlanner({
                                 )
                               } days left`
                             : ""}
+                          {` · ${opportunity.friction} effort`}
+                          {` · source checked ${formatDate(
+                            opportunity.source.checkedOn
+                          )}`}
                         </span>
                         {warnings.map((warning) => (
                           <em key={warning}>

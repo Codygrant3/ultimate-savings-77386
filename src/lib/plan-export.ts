@@ -5,6 +5,14 @@ function checklistDate(date: Date): string {
   return date.toISOString().slice(0, 10);
 }
 
+function effortLabel(friction: "low" | "medium" | "high"): string {
+  return {
+    low: "Low",
+    medium: "Medium",
+    high: "High"
+  }[friction];
+}
+
 export function buildWeeklyPlanChecklist(
   plan: WeeklyPlan,
   generatedOn = new Date()
@@ -55,6 +63,12 @@ export function buildWeeklyPlanChecklist(
       );
       lines.push(`  - Source: ${opportunity.source.url}`);
       lines.push(`  - Location: ${opportunity.locationNote}`);
+      lines.push(
+        `  - Effort: ${effortLabel(opportunity.friction)}`
+      );
+      lines.push(
+        `  - Source checked: ${formatDate(opportunity.source.checkedOn)}`
+      );
       for (const warning of warnings) {
         lines.push(`  - Confirm: ${warning}`);
       }
