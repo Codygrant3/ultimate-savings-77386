@@ -13,6 +13,9 @@ await cp(resolve(output, "assets"), resolve(client, "assets"), {
   recursive: true
 });
 await cp(resolve(output, "favicon.svg"), resolve(client, "favicon.svg"));
+await cp(resolve(output, "robots.txt"), resolve(client, "robots.txt"));
+await cp(resolve(output, "llms.txt"), resolve(client, "llms.txt"));
+await cp(resolve(output, "sitemap.xml"), resolve(client, "sitemap.xml"));
 await cp(resolve(output, "reports"), resolve(client, "reports"), {
   recursive: true
 });

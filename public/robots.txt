@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ultimate-savings-77386.sgtsmoke.chatgpt.site/sitemap.xml

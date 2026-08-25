@@ -7,7 +7,7 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   --ink: #17352c;
-  --ink-soft: #5f716b;
+  --ink-soft: #52635d;
   --forest: #0f4c3a;
   --forest-deep: #0a372b;
   --mint: #d8eadf;
@@ -643,7 +643,7 @@ a {
 
 .notice span {
   margin-top: 2px;
-  color: #5c766d;
+  color: #4a6158;
   font-size: 10px;
   line-height: 1.45;
 }
@@ -945,7 +945,7 @@ a {
 
 .deal-card__merchant span {
   margin-top: 2px;
-  color: #85928e;
+  color: #5f6d68;
   font-size: 9px;
 }
 
@@ -965,7 +965,7 @@ a {
 
 .score span {
   margin-top: 3px;
-  color: #75847f;
+  color: #56645f;
   font-size: 8px;
 }
 
@@ -1113,7 +1113,7 @@ a {
 }
 
 .quiet-badge {
-  color: #717f7b;
+  color: #57655f;
   background: #f0f0eb;
 }
 
@@ -1154,7 +1154,7 @@ a {
 }
 
 .deal-math span {
-  color: #7a8883;
+  color: #5c6a65;
   font-size: 8px;
 }
 
@@ -1749,7 +1749,7 @@ a {
 
 .grocery-verification-banner span {
   margin-top: 2px;
-  color: #5c766d;
+  color: #4a6158;
   font-size: 9px;
   line-height: 1.45;
 }

@@ -1,0 +1,9 @@
+# Ultimate Savings 77386
+
+> A privacy-first savings dashboard for verified offers, grocery prices, settlements, and constrained weekly planning around Spring and The Woodlands, Texas.
+
+- [Ultimate Savings 77386](https://ultimate-savings-77386.sgtsmoke.chatgpt.site/): Open the live dashboard.
+- [Weekly savings report](https://ultimate-savings-77386.sgtsmoke.chatgpt.site/reports/latest.json): Current verified opportunities, totals, deadlines, sources, and watchlist data.
+- [Deal discovery snapshot](https://ultimate-savings-77386.sgtsmoke.chatgpt.site/reports/discovery.json): Source coverage, check timestamps, parsed review candidates, limitations, and failed checks.
+- [Grocery price snapshot](https://ultimate-savings-77386.sgtsmoke.chatgpt.site/reports/grocery-watchlist.json): Normalized official grocery prices and local-confirmation status.
+- [Settlements snapshot](https://ultimate-savings-77386.sgtsmoke.chatgpt.site/reports/settlements.json): Official open settlement examples, deadlines, benefits, and source links.
