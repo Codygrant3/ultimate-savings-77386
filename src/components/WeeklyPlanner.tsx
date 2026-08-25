@@ -97,6 +97,7 @@ export function WeeklyPlanner({
           <span>Weekly spend budget</span>
           <input
             aria-label="Weekly spend budget"
+            name="weeklyBudget"
             type="number"
             min="0"
             max="500"
@@ -111,6 +112,7 @@ export function WeeklyPlanner({
           <span>Maximum trips</span>
           <input
             aria-label="Maximum trips"
+            name="maxTrips"
             type="number"
             min="1"
             max="8"
@@ -125,6 +127,7 @@ export function WeeklyPlanner({
           <span>Maximum miles</span>
           <input
             aria-label="Maximum miles"
+            name="maxDistanceMiles"
             type="number"
             min="1"
             max="50"
@@ -139,6 +142,7 @@ export function WeeklyPlanner({
           <span>Cost per mile</span>
           <input
             aria-label="Estimated cost per mile"
+            name="travelCostPerMile"
             type="number"
             min="0"
             max="5"
@@ -156,6 +160,7 @@ export function WeeklyPlanner({
           <span>Minimum days valid</span>
           <input
             aria-label="Minimum days valid"
+            name="minimumDaysRemaining"
             type="number"
             min="0"
             max="30"
@@ -173,6 +178,7 @@ export function WeeklyPlanner({
           <span>Maximum source age</span>
           <input
             aria-label="Maximum source age"
+            name="maximumSourceAgeDays"
             type="number"
             min="1"
             max="90"
@@ -190,6 +196,7 @@ export function WeeklyPlanner({
           <span>Minimum value per $1</span>
           <input
             aria-label="Minimum value per $1"
+            name="minimumValuePerDollar"
             type="number"
             min="0"
             max="10"
@@ -207,6 +214,7 @@ export function WeeklyPlanner({
           <span>Maximum effort</span>
           <select
             aria-label="Maximum effort"
+            name="maximumFriction"
             value={settings.maximumFriction}
             onChange={(event) =>
               updateSetting(
@@ -224,6 +232,7 @@ export function WeeklyPlanner({
           <span>Deals per merchant</span>
           <input
             aria-label="Deals per merchant"
+            name="maxDealsPerTrip"
             type="number"
             min="1"
             max="5"
@@ -238,6 +247,7 @@ export function WeeklyPlanner({
           <span>Trip order</span>
           <select
             aria-label="Trip order"
+            name="tripOrder"
             value={settings.tripOrder}
             onChange={(event) =>
               updateSetting(
@@ -254,6 +264,7 @@ export function WeeklyPlanner({
           <span>Planning objective</span>
           <select
             aria-label="Planning objective"
+            name="planObjective"
             value={settings.planObjective}
             onChange={(event) =>
               updateSetting(

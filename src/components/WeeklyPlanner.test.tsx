@@ -191,6 +191,14 @@ describe("WeeklyPlanner execution controls", () => {
     ).toBeGreaterThan(0);
     expect(screen.getByText("Risk-adjusted planning value")).toBeTruthy();
     expect(screen.getByText("$8.50")).toBeTruthy();
+    expect(screen.getByLabelText("Weekly spend budget")).toHaveProperty(
+      "name",
+      "weeklyBudget"
+    );
+    expect(screen.getByLabelText("Planning objective")).toHaveProperty(
+      "name",
+      "planObjective"
+    );
 
     fireEvent.change(screen.getByLabelText("Planning objective"), {
       target: { value: "efficiency" }
