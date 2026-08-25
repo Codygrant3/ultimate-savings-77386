@@ -254,6 +254,9 @@
     "isFree": false,
     "expiresOn": "2026-08-26",
     "availableDaysOfWeek": [3],
+    "redemptionTimeWindows": [
+      { "startTime": "17:00", "endTime": "22:00" }
+    ],
     "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
     "verification": "verified",
     "friction": "low",
@@ -652,6 +655,9 @@
     "isFree": false,
     "expiresOn": "2026-08-25",
     "availableDaysOfWeek": [1, 2, 3, 4, 5],
+    "redemptionTimeWindows": [
+      { "startTime": "15:00", "endTime": "18:00" }
+    ],
     "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
     "verification": "verified",
     "friction": "low",
@@ -1807,6 +1813,9 @@
     "isFree": true,
     "expiresOn": "2026-09-06",
     "availableDaysOfWeek": [0],
+    "redemptionTimeWindows": [
+      { "startTime": "15:00" }
+    ],
     "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
     "verification": "verified",
     "friction": "medium",

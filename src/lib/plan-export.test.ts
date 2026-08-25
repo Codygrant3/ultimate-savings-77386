@@ -16,6 +16,7 @@ const opportunity: ScoredOpportunity = {
   isFree: false,
   expiresOn: "2026-08-31",
   availableDaysOfWeek: [2, 3],
+  redemptionTimeWindows: [{ startTime: "17:00", endTime: "22:00" }],
   locationNote: "Spring-area participation must be confirmed.",
   verification: "verified",
   friction: "low",
@@ -99,6 +100,7 @@ describe("weekly plan checklist export", () => {
     expect(markdown).toContain("## Trip 1: Market A");
     expect(markdown).toContain("- [ ] $10 off $20 — $10 value; spend $20; ends Aug 31");
     expect(markdown).toContain("- Official day window: Tue, Wed");
+    expect(markdown).toContain("- Official time window: 5:00 PM-10:00 PM");
     expect(markdown).toContain("https://example.com/offer");
     expect(markdown).toContain("- Effort: Low");
     expect(markdown).toContain("- Source checked: Aug 24");

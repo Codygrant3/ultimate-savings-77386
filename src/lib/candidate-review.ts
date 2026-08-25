@@ -328,6 +328,7 @@ export function createLocallyVerifiedOffer(
     candidate.availableDaysOfWeek === undefined
       ? undefined
       : Array.from(new Set(candidate.availableDaysOfWeek));
+  const redemptionTimeWindows = candidate.redemptionTimeWindows;
 
   if (!draft.officialTermsConfirmed) {
     errors.push("Confirm the offer terms on the linked official source");
@@ -355,6 +356,22 @@ export function createLocallyVerifiedOffer(
       ))
   ) {
     errors.push("Capture valid official redemption days from Sunday to Saturday");
+  }
+  if (redemptionTimeWindows !== undefined) {
+    const invalidWindow = !Array.isArray(redemptionTimeWindows) ||
+      redemptionTimeWindows.length === 0 ||
+      redemptionTimeWindows.some(({ startTime, endTime }) => {
+        const startMatch = typeof startTime === "string"
+          ? /^([01]\d|2[0-3]):([0-5]\d)$/.test(startTime)
+          : false;
+        if (!startMatch) return true;
+        return endTime !== undefined &&
+          (!/^([01]\d|2[0-3]):([0-5]\d)$/.test(endTime) || startTime >= endTime);
+      });
+
+    if (invalidWindow) {
+      errors.push("Capture valid official start and end times");
+    }
   }
   if (
     savingsRate !== undefined &&
@@ -408,6 +425,7 @@ export function createLocallyVerifiedOffer(
     ...(savingsRate !== undefined ? { savingsRate } : {}),
     ...(draft.expiresOn ? { expiresOn: draft.expiresOn } : {}),
     ...(availableDaysOfWeek ? { availableDaysOfWeek } : {}),
+    ...(redemptionTimeWindows ? { redemptionTimeWindows } : {}),
     ...(draft.localParticipationConfirmed
       ? { distanceMiles }
       : {}),

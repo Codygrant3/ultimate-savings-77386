@@ -19,6 +19,7 @@ import {
   weeklyPlanChecklistFileName
 } from "../lib/plan-export";
 import { buildOfferOutcomeAdjustments } from "../lib/outcomes";
+import { formatRedemptionWindows } from "../lib/timing";
 import { formatCurrency, formatDate } from "../lib/scoring";
 import type {
   ReceiptEntry,
@@ -549,6 +550,11 @@ export function WeeklyPlanner({
                                   }).format(new Date(Date.UTC(2026, 0, 4 + day)))
                                 )
                                 .join(", ")}`
+                            : ""}
+                          {opportunity.redemptionTimeWindows?.length
+                            ? ` · official times: ${formatRedemptionWindows(
+                                opportunity.redemptionTimeWindows
+                              )}`
                             : ""}
                           {` · ${opportunity.friction} effort`}
                           {` · source checked ${formatDate(

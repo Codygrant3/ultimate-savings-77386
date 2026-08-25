@@ -73,6 +73,83 @@ describe("weekly action plan optimizer", () => {
     expect(plan.trips[0].merchant).toBe("Wednesday Market");
   });
 
+  it("keeps a valid-day offer before its official clock window and explains the start", () => {
+    const happyHour = makeOffer({
+      id: "happy-hour",
+      merchant: "Happy Hour Market",
+      availableDaysOfWeek: [2],
+      redemptionTimeWindows: [{ startTime: "15:00", endTime: "18:00" }]
+    });
+
+    const plan = buildWeeklyPlan(
+      [happyHour],
+      {},
+      new Date("2026-08-25T13:00:00")
+    );
+
+    expect(plan.trips).toHaveLength(1);
+    expect(plan.trips[0].deals[0].warnings).toContain(
+      "Official redemption starts at 3:00 PM."
+    );
+  });
+
+  it("marks an active official clock window on a selected deal", () => {
+    const happyHour = makeOffer({
+      id: "happy-hour",
+      merchant: "Happy Hour Market",
+      availableDaysOfWeek: [2],
+      redemptionTimeWindows: [{ startTime: "15:00", endTime: "18:00" }]
+    });
+
+    const plan = buildWeeklyPlan(
+      [happyHour],
+      {},
+      new Date("2026-08-25T16:30:00")
+    );
+
+    expect(plan.trips).toHaveLength(1);
+    expect(plan.trips[0].deals[0].warnings).toContain(
+      "An official redemption window is active now."
+    );
+  });
+
+  it("excludes an offer after its official clock window closes for the day", () => {
+    const happyHour = makeOffer({
+      id: "happy-hour",
+      merchant: "Happy Hour Market",
+      availableDaysOfWeek: [2],
+      redemptionTimeWindows: [{ startTime: "15:00", endTime: "18:00" }]
+    });
+
+    const plan = buildWeeklyPlan(
+      [happyHour],
+      {},
+      new Date("2026-08-25T19:00:00")
+    );
+
+    expect(plan.trips).toHaveLength(0);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "happy-hour")
+        ?.reason
+    ).toBe("Official redemption ended for Tuesday");
+  });
+
+  it("fails closed when captured clock-window evidence is invalid", () => {
+    const badWindow = makeOffer({
+      id: "bad-window",
+      merchant: "Bad Window Market",
+      redemptionTimeWindows: [{ startTime: "18:00", endTime: "17:00" }]
+    });
+
+    const plan = buildWeeklyPlan([badWindow], {}, today);
+
+    expect(plan.trips).toHaveLength(0);
+    expect(
+      plan.excluded.find(({ opportunity }) => opportunity.id === "bad-window")
+        ?.reason
+    ).toBe("Invalid redemption-time evidence");
+  });
+
   it("fails closed when captured redemption-day evidence is invalid", () => {
     const invalidDay = makeOffer({
       id: "invalid-day",

@@ -4,6 +4,7 @@ import {
   formatDate
 } from "./scoring";
 import type { ScoredOpportunity, WeeklyPlan } from "../types";
+import { formatRedemptionWindows } from "./timing";
 
 function checklistDate(date: Date): string {
   return date.toISOString().slice(0, 10);
@@ -43,6 +44,17 @@ function redemptionDays(opportunity: ScoredOpportunity): string | null {
       formatter.format(new Date(Date.UTC(2026, 0, 4 + day)))
     );
   return labels.length > 0 ? labels.join(", ") : null;
+}
+
+function redemptionTimes(opportunity: ScoredOpportunity): string | null {
+  const windows = opportunity.redemptionTimeWindows;
+  if (!Array.isArray(windows) || windows.length === 0) return null;
+
+  try {
+    return formatRedemptionWindows(windows);
+  } catch {
+    return "invalid captured times";
+  }
 }
 
 export function buildWeeklyPlanChecklist(
@@ -96,6 +108,10 @@ export function buildWeeklyPlanChecklist(
       const days = redemptionDays(opportunity);
       if (days) {
         lines.push(`  - Official day window: ${days}`);
+      }
+      const times = redemptionTimes(opportunity);
+      if (times) {
+        lines.push(`  - Official time window: ${times}`);
       }
       lines.push(`  - Source: ${opportunity.source.url}`);
       lines.push(`  - Location: ${opportunity.locationNote}`);

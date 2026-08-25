@@ -40,6 +40,11 @@ export interface SourceEvidence {
   checkedOn: string;
 }
 
+export interface RedemptionTimeWindow {
+  startTime: string;
+  endTime?: string;
+}
+
 export interface Opportunity {
   id: string;
   merchant: string;
@@ -52,6 +57,7 @@ export interface Opportunity {
   isFree: boolean;
   expiresOn?: string;
   availableDaysOfWeek?: number[];
+  redemptionTimeWindows?: RedemptionTimeWindow[];
   locationNote: string;
   verification: VerificationStatus;
   friction: Friction;
@@ -190,6 +196,7 @@ export interface OfferCandidate {
   minimumSpend?: number;
   expirationText?: string;
   availableDaysOfWeek?: number[];
+  redemptionTimeWindows?: RedemptionTimeWindow[];
   candidateScore?: number;
   candidateReasons?: string[];
 }

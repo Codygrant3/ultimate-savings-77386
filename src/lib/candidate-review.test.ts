@@ -356,6 +356,57 @@ describe("candidate review matching", () => {
     });
   });
 
+  it("carries valid official time windows and rejects invalid timing evidence", () => {
+    const valid = createLocallyVerifiedOffer(
+      candidate({
+        redemptionTimeWindows: [
+          { startTime: "17:00", endTime: "22:00" },
+          { startTime: "15:00" }
+        ]
+      }),
+      {
+        category: "restaurants",
+        estimatedSavings: 0,
+        minimumSpend: 5,
+        isFree: true,
+        friction: "low",
+        stackStatus: "conditional",
+        localParticipationConfirmed: false,
+        officialTermsConfirmed: true
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(valid.status).toBe("created");
+    if (valid.status !== "created") return;
+    expect(valid.offer.redemptionTimeWindows).toEqual([
+      { startTime: "17:00", endTime: "22:00" },
+      { startTime: "15:00" }
+    ]);
+
+    const invalid = createLocallyVerifiedOffer(
+      candidate({
+        redemptionTimeWindows: [{ startTime: "18:00", endTime: "17:00" }]
+      }),
+      {
+        category: "restaurants",
+        estimatedSavings: 0,
+        minimumSpend: 5,
+        isFree: true,
+        friction: "low",
+        stackStatus: "conditional",
+        localParticipationConfirmed: false,
+        officialTermsConfirmed: true
+      },
+      new Date("2026-08-24T12:00:00")
+    );
+
+    expect(invalid).toEqual({
+      status: "invalid",
+      errors: ["Capture valid official start and end times"]
+    });
+  });
+
   it("rejects an out-of-range published savings rate", () => {
     const result = createLocallyVerifiedOffer(
       candidate(),

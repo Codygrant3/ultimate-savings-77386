@@ -9,6 +9,11 @@ import type {
 } from "../types";
 import type { OfferOutcomeAdjustments } from "./outcomes";
 import {
+  formatTimeOfDay,
+  isValidRedemptionWindows,
+  parseTimeOfDay
+} from "./timing";
+import {
   effectiveStackCompatibility,
   formatCurrency,
   matchesHighPriorityProfile
@@ -550,6 +555,40 @@ function buildBaseWeeklyPlan(
       continue;
     }
 
+    const timeWindows = opportunity.redemptionTimeWindows;
+    if (!isValidRedemptionWindows(timeWindows)) {
+      excluded.push({
+        opportunity,
+        reason: "Invalid redemption-time evidence"
+      });
+      continue;
+    }
+
+    const currentMinutes = today.getHours() * 60 + today.getMinutes();
+    const activeWindow = (timeWindows ?? []).find(({ startTime, endTime }) => {
+      const start = parseTimeOfDay(startTime);
+      if (start === null || currentMinutes < start) return false;
+      if (endTime === undefined) return true;
+      const end = parseTimeOfDay(endTime);
+      return end !== null && currentMinutes < end;
+    });
+    if (
+      (timeWindows ?? []).length > 0 &&
+      !activeWindow &&
+      (timeWindows ?? []).every(({ endTime }) => {
+        return endTime === undefined || currentMinutes >= parseTimeOfDay(endTime)!;
+      })
+    ) {
+      excluded.push({
+        opportunity,
+        reason: `Official redemption ended for ${new Intl.DateTimeFormat(
+          "en-US",
+          { weekday: "long" }
+        ).format(today)}`
+      });
+      continue;
+    }
+
     if (
       opportunity.expiresOn &&
       daysUntilExpiration(opportunity.expiresOn, today) <
@@ -690,6 +729,14 @@ function buildBaseWeeklyPlan(
 
     if (!opportunity.stackNote && stackCompatibility !== "exclusive") {
       warnings.push("Confirm whether this combines with other offers");
+    }
+
+    if (activeWindow) {
+      warnings.push("An official redemption window is active now.");
+    } else if ((timeWindows ?? []).length > 0) {
+      warnings.push(
+        `Official redemption starts at ${formatTimeOfDay(timeWindows![0].startTime)}.`
+      );
     }
 
     if (outcomeAdjustment <= 0.95) {
@@ -1132,7 +1179,7 @@ function buildBaseWeeklyPlan(
       settings.minimumDaysRemaining > 0
         ? `Offers must remain valid for at least ${settings.minimumDaysRemaining} more day${settings.minimumDaysRemaining === 1 ? "" : "s"}; this is planning math, not an eligibility guarantee.`
         : "Offers expiring today remain eligible for planning; confirm their terms before acting.",
-      "Offers with captured official redemption days are planned only on those days; confirm any stated time window before acting.",
+      "Offers with captured official redemption days are planned only on those days; captured clock windows are checked against the planning moment.",
       {
         low: "Only low-effort offers are eligible.",
         medium: "Low and medium effort offers are eligible; high effort is excluded.",
