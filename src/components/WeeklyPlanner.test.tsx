@@ -185,6 +185,8 @@ describe("WeeklyPlanner execution controls", () => {
 
     expect(screen.getByLabelText("Planning objective")).toBeTruthy();
     expect(screen.getAllByText(/Deadline priority/).length).toBeGreaterThan(0);
+    expect(screen.getByText("Risk-adjusted planning value")).toBeTruthy();
+    expect(screen.getByText("$8.50")).toBeTruthy();
 
     fireEvent.change(screen.getByLabelText("Planning objective"), {
       target: { value: "efficiency" }

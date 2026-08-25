@@ -471,7 +471,7 @@ function makeBundle(
           estimatedTravelCost,
           netBenefitAfterTravel:
             distanceConfirmed && distanceMiles !== undefined
-              ? Math.max(0, riskAdjustedSavings - estimatedTravelCost)
+              ? riskAdjustedSavings - estimatedTravelCost
               : null
         }
       : {}),

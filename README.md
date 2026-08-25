@@ -15,6 +15,7 @@ A local, evidence-first savings dashboard for Spring / The Woodlands, Texas. It 
 - Logs confirmed receipt results locally and uses recency-weighted category and merchant outcomes to adjust household-fit ranking.
 - Uses linked local receipt outcomes to adjust weekly planning value and explain when past confirmed results differ from the listed estimate, without changing official offer evidence or promised terms.
 - Separates the official estimate from household-calibrated planning value in weekly results, and uses calibrated value for net benefit after travel so confirmed local outcomes are visible in the cash decision rather than hidden in scoring alone.
+- Shows evidence-discounted risk-adjusted planning value alongside official estimates, and preserves negative trip-level net benefit after travel so an overly expensive trip cannot be hidden by a zero floor.
 - Delivers dashboard-only high-value alerts when an offer clears a user-defined dollar threshold, free-reward preference, and maximum redemption effort.
 - Maintains a checked local merchant inventory and uses great-circle distance calculations for nearby branches. A merchant-location distance is clearly marked as approximate and never claims that a specific promotion is confirmed at that branch.
 - Includes officially sourced Shell, Exxon Mobil Rewards+, and 7-Eleven locations near 77386 so fuel rewards can be compared and planned by nearby branch instead of remaining location-blind.

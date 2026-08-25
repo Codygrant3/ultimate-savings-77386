@@ -360,6 +360,13 @@ export function WeeklyPlanner({
           <span>Planned spend</span>
           <strong>{formatCurrency(plan.requiredSpend)}</strong>
         </article>
+        {plan.riskAdjustedSavings > 0 && (
+          <article>
+            <Scale size={19} aria-hidden="true" />
+            <span>Risk-adjusted planning value</span>
+            <strong>{formatCurrency(plan.riskAdjustedSavings)}</strong>
+          </article>
+        )}
         <article>
           <ShieldCheck size={19} aria-hidden="true" />
           <span>Planning confidence</span>

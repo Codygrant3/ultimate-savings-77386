@@ -143,6 +143,43 @@ describe("weekly action plan optimizer", () => {
     expect(plan.constraintChecks).toEqual([]);
   });
 
+  it("keeps negative travel-adjusted trip value in the whole-plan result", () => {
+    const near = makeOffer({
+      id: "near",
+      merchant: "Near Market",
+      estimatedSavings: 20,
+      minimumSpend: 20,
+      distanceMiles: 1,
+      score: 82,
+      localRecord: true,
+      distanceBasis: "offer"
+    });
+    const far = makeOffer({
+      id: "far",
+      merchant: "Far Market",
+      estimatedSavings: 10,
+      minimumSpend: 10,
+      distanceMiles: 10,
+      score: 80,
+      localRecord: true,
+      distanceBasis: "offer"
+    });
+
+    const plan = buildWeeklyPlan(
+      [near, far],
+      { weeklyBudget: 40, maxTrips: 2, travelCostPerMile: 0.7 },
+      today
+    );
+
+    const nearTrip = plan.trips.find(({ merchant }) => merchant === "Near Market");
+    const farTrip = plan.trips.find(({ merchant }) => merchant === "Far Market");
+
+    expect(plan.trips).toHaveLength(2);
+    expect(nearTrip?.netBenefitAfterTravel).toBeCloseTo(18.6);
+    expect(farTrip?.netBenefitAfterTravel).toBeCloseTo(-4);
+    expect(plan.netBenefitAfterTravel).toBeCloseTo(14.6);
+  });
+
   it("limits the number of merchant trips", () => {
     const plan = buildWeeklyPlan(
       [
