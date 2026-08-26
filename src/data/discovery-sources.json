@@ -157,6 +157,14 @@
     "keywords": ["grand opening", "free", "rewards", "offer"]
   },
   {
+    "id": "krispy-kreme-offers",
+    "name": "Krispy Kreme official offers",
+    "url": "https://www.krispykreme.com/offers",
+    "category": "restaurants",
+    "priority": 9,
+    "keywords": ["free", "$1", "rewards", "offer valid"]
+  },
+  {
     "id": "wendys-offers",
     "name": "Wendy's official offers",
     "url": "https://www.wendys.com/offers-coupons",

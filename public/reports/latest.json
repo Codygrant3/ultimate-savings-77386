@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-26T12:14:27.011Z",
+  "generatedAt": "2026-08-26T15:10:32.957Z",
   "weekOf": "2026-08-24",
   "zipCode": "77386",
-  "totalPotentialSavings": 146.49,
-  "verifiedCount": 34,
-  "expiringCount": 12,
+  "totalPotentialSavings": 159.49,
+  "verifiedCount": 41,
+  "expiringCount": 18,
   "opportunities": [
     {
       "id": "take5-rayford-15-off-oil-change-2026",
@@ -397,6 +397,220 @@
           "points": 4.6000000000000005,
           "weight": 10,
           "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "heb-buns-free-baked-beans-2026-09",
+      "merchant": "H-E-B",
+      "title": "Free baked beans with buns",
+      "summary": "Buy one qualifying eight-count Mrs Baird's hot dog or hamburger buns and get one qualifying 21.7- to 28-ounce Bush's Best baked or Grillin' Beans free.",
+      "category": "grocery",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-09-08",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "bread",
+        "beans",
+        "free item",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84038788",
+        "checkedOn": "2026-08-26"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "Use only when buns and beans are both planned; confirm both products and the coupon in the selected Spring store.",
+      "finePrint": "Requires one qualifying eight-count Mrs Baird's hot dog or hamburger buns package and provides one qualifying Bush's Best baked or Grillin' Beans item, 21.7 to 28 ounces. The official page lists unlimited use through September 8. No dollar value is estimated because the public page is location-gated to Victoria.",
+      "expirationLabel": "Ends September 8",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "grocery",
+        "staple",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 1,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 72,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.200000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 1 day ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 14 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "heb-crackers-free-storage-bags-2026-09",
+      "merchant": "H-E-B",
+      "title": "Free snack or sandwich bags with 3 cracker bags",
+      "summary": "Buy the qualifying three-count H-E-B Lone Star Cheddar Crackers pack and get a qualifying 50- to 100-count H-E-B Texas Tough snack or sandwich bag box free.",
+      "category": "grocery",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-09-08",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible bag size, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "snacks",
+        "storage bags",
+        "free item",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84055356",
+        "checkedOn": "2026-08-26"
+      },
+      "actionLabel": "Check and clip coupon",
+      "tier": "A",
+      "stackNote": "Use only if the three-bag cracker pack fits the grocery plan; confirm the selected Spring store carries the coupon and free-item size.",
+      "finePrint": "Requires the three-count 10-ounce H-E-B Lone Star Cheddar Crackers pack and provides one qualifying H-E-B Texas Tough snack or sandwich bag box, 50 to 100 count. The official page lists unlimited use through September 8. No dollar value is estimated because the public page is location-gated to Victoria.",
+      "expirationLabel": "Ends September 8",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "grocery",
+        "staple",
+        "free-item",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 1,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 72,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.200000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 1 day ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 14 days; newly found"
         },
         {
           "label": "Effort",
@@ -1348,6 +1562,217 @@
       ]
     },
     {
+      "id": "heb-six-off-eighteen-household-essentials-2026-09",
+      "merchant": "H-E-B",
+      "title": "$6 off $18 in select household essentials",
+      "summary": "Clip the H-E-B coupon for $6 off an $18 basket of qualifying Colgate, Softsoap, Irish Spring, Speed Stick, Tom's of Maine, hello, Palmolive, Ajax, Fabuloso, Suavitel, or Murphy's items.",
+      "category": "home",
+      "estimatedSavings": 6,
+      "minimumSpend": 18,
+      "savingsRate": 33.3,
+      "isFree": false,
+      "expiresOn": "2026-09-08",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, product eligibility, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "household essentials",
+        "personal care",
+        "cleaning",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84047476",
+        "checkedOn": "2026-08-26"
+      },
+      "actionLabel": "Check eligible basket",
+      "tier": "A",
+      "stackNote": "The 33.3% rate is reached at exactly $18; compare unit prices and confirm any item price cuts combine before checkout.",
+      "finePrint": "Requires an $18 qualifying basket and is limited to one use per customer through September 8. Colgate Base items are excluded. The fixed $6 coupon is defensible, but the offer remains location-gated until it appears for a selected Spring-area store.",
+      "expirationLabel": "Ends September 8",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "household-staple",
+        "high-value",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 1,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 64,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 11.76,
+          "weight": 24,
+          "detail": "$6.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 3.9959999999999996,
+          "weight": 6,
+          "detail": "33.3% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 1.2000000000000002,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 1 day ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 14 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$18.00 required per $6.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "heb-five-off-twenty-arm-hammer-2026-09",
+      "merchant": "H-E-B",
+      "title": "$5 off $20 in Arm & Hammer laundry items",
+      "summary": "Clip the H-E-B coupon for $5 off a $20 basket of qualifying Arm & Hammer detergent, Power Paks, Power Sheets, scent boosters, rinse, or dryer sheets.",
+      "category": "home",
+      "estimatedSavings": 5,
+      "minimumSpend": 20,
+      "savingsRate": 25,
+      "isFree": false,
+      "expiresOn": "2026-09-01",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, product eligibility, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "laundry",
+        "household essentials",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84050511",
+        "checkedOn": "2026-08-26"
+      },
+      "actionLabel": "Check eligible basket",
+      "tier": "A",
+      "stackNote": "The 25% rate is reached at exactly $20; compare per-load pricing and confirm any item price cuts combine before checkout.",
+      "finePrint": "Requires a $20 qualifying Arm & Hammer basket. The page displays 'Expires Tuesday' during the August 26 check, which is September 1, and lists unlimited use. The fixed $5 coupon is defensible, but the offer remains location-gated until it appears for a selected Spring-area store.",
+      "expirationLabel": "Ends September 1",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "household-staple",
+        "high-value",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 1,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 64,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 11.04,
+          "weight": 24,
+          "detail": "$5.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 3,
+          "weight": 6,
+          "detail": "25% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 1.2000000000000002,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 1 day ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 7 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$20.00 required per $5.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
       "id": "shell-app-first-pay-save-25-cents-2026",
       "merchant": "Shell Fuel Rewards",
       "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
@@ -1844,6 +2269,113 @@
           "points": 8,
           "weight": 8,
           "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "heb-two-off-eight-trail-mix-nuts-2026-09",
+      "merchant": "H-E-B",
+      "title": "$2 off $8 in H-E-B trail mix or nuts",
+      "summary": "Clip the H-E-B coupon for $2 off an $8 basket of qualifying H-E-B, Higher Harvest, H-E-B Organics, H-E-B Mi Tienda, or Hill Country Fare trail mixes or nuts.",
+      "category": "grocery",
+      "estimatedSavings": 2,
+      "minimumSpend": 8,
+      "savingsRate": 25,
+      "isFree": false,
+      "expiresOn": "2026-09-15",
+      "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, product eligibility, inventory, and prices are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "nuts",
+        "trail mix",
+        "snacks",
+        "digital coupon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84054890",
+        "checkedOn": "2026-08-26"
+      },
+      "actionLabel": "Check eligible basket",
+      "tier": "A",
+      "stackNote": "The 25% rate is reached at exactly $8; compare price per ounce and confirm any item-level price cuts combine before checkout.",
+      "finePrint": "Requires an $8 qualifying basket and is listed as unlimited use through September 15. The fixed $2 coupon is defensible, but the offer remains location-gated until it appears for a selected Spring-area store.",
+      "expirationLabel": "Ends September 15",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "grocery",
+        "staple",
+        "coupon-stack",
+        "location-gated"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 1,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 63,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 6.72,
+          "weight": 24,
+          "detail": "$2.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 3,
+          "weight": 6,
+          "detail": "25% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.200000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 1 day ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-09-15; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$8.00 required per $2.00 saved"
         },
         {
           "label": "Stackability",
@@ -2781,6 +3313,109 @@
       ]
     },
     {
+      "id": "wendys-free-small-chili-current-2026",
+      "merchant": "Wendy's",
+      "title": "Free small chili with $5 purchase",
+      "summary": "Wendy's official offers page again lists a free small chili with a $5 qualifying purchase.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": true,
+      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "chili",
+        "app",
+        "qualifying purchase"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-08-26"
+      },
+      "actionLabel": "Check current chili offer",
+      "tier": "A",
+      "stackNote": "Use one app offer per order; Wendy's says coupons may not be combined.",
+      "stackGroup": "wendys-app-order",
+      "finePrint": "Requires a $5 qualifying purchase while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No end date or local chili price is published, so confirm the loaded offer before ordering and no dollar estimate is shown.",
+      "expirationLabel": "While listed in the app",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "free-food",
+        "app-specific",
+        "local-restaurant"
+      ],
+      "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 1,
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
+      "score": 60,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 1 day ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$5.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "starbucks-rewards-ongoing-2026",
       "merchant": "Starbucks Rewards",
       "title": "Earn toward free food and drinks",
@@ -3061,6 +3696,106 @@
           "points": 9,
           "weight": 9,
           "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "krispy-kreme-one-dollar-second-dozen-signup-2026-08",
+      "merchant": "Krispy Kreme",
+      "title": "$1 Original Glazed dozen with any dozen purchase",
+      "summary": "New and existing Krispy Kreme Rewards members who sign up by August 26 can receive an Original Glazed dozen for $1 when buying any regular-price dozen or 16-count Minis.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-08-26",
+      "locationNote": "Rewards-account and participating-shop gated. The official Texas directory lists a Humble shop, but proximity and offer participation for a practical 77386 trip are not confirmed.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "doughnuts",
+        "one-dollar",
+        "second dozen",
+        "rewards",
+        "same-day signup"
+      ],
+      "source": {
+        "label": "Krispy Kreme official offers page",
+        "url": "https://www.krispykreme.com/offers",
+        "checkedOn": "2026-08-26"
+      },
+      "actionLabel": "Join by August 26",
+      "tier": "A",
+      "stackNote": "The official terms say the offer cannot be combined with another coupon, offer, or discount.",
+      "finePrint": "Sign up for Krispy Kreme Rewards by August 26 to receive the offer, then redeem it within two weeks of signing up. Requires purchase of any regular-price dozen or 16-count Minis at a participating U.S. Krispy Kreme shop, excludes grocery and convenience-store locations, and is limited to one redemption. No dollar savings estimate or percentage is shown because the regular local dozen price and practical participating shop were not verified.",
+      "expirationLabel": "Sign up by August 26; redeem within two weeks",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "restaurant",
+        "high-value",
+        "time-sensitive",
+        "account-specific"
+      ],
+      "distanceBasis": "unknown",
+      "score": 54,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 10,
+          "weight": 10,
+          "detail": "Ends in 1 day; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
         },
         {
           "label": "Required spend",
@@ -3491,6 +4226,111 @@
     }
   ],
   "watchlist": [
+    {
+      "id": "dunkin-easychoice-free-espresso-2026-08",
+      "merchant": "Dunkin",
+      "title": "Free espresso beverage with code EASYCHOICE",
+      "summary": "Dunkin Rewards members can try the official EASYCHOICE code for one free espresso beverage from a supply of one million codes released August 25.",
+      "category": "coffee",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "Rewards-account and code-supply gated. A nearby Dunkin is on Rayford Road, but code inventory and local redemption are not publicly confirmed.",
+      "verification": "needs-check",
+      "friction": "low",
+      "tags": [
+        "coffee",
+        "free drink",
+        "promo code",
+        "rewards",
+        "flash deal",
+        "while supplies last"
+      ],
+      "source": {
+        "label": "Dunkin official newsroom",
+        "url": "https://news.dunkindonuts.com/blog/dunkinR-is-celebrating-pumpkin-season-with-1-million-free-espresso-beverages",
+        "checkedOn": "2026-08-26"
+      },
+      "actionLabel": "Try EASYCHOICE now",
+      "tier": "A",
+      "distanceMiles": 2.8,
+      "stackNote": "Use the free-beverage code by itself unless app checkout expressly allows another reward.",
+      "finePrint": "Dunkin released one million codes beginning at noon Eastern on August 25 and says to redeem as soon as possible. The newsroom does not publish an end date, participating-product cap, or remaining-code count. Confirm the code in the Dunkin app before making a trip. No dollar value is estimated because code availability and the eligible local beverage price are not verified.",
+      "expirationLabel": "While the one-million-code supply lasts",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "preferred-coffee",
+        "free-drink",
+        "flash-deal",
+        "app-specific"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-08-26",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Dunkin official newsroom",
+      "distanceSourceUrl": "https://news.dunkindonuts.com/blog/dunkinR-is-celebrating-pumpkin-season-with-1-million-free-espresso-beverages",
+      "score": 55,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.7999999999999998,
+          "weight": 18,
+          "detail": "Unverified lead; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 9.200000000000001,
+          "weight": 10,
+          "detail": "Household match: free drink, coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.8 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
     {
       "id": "scooters-birthday-smiles-reward-2026",
       "merchant": "Scooter's Coffee",
