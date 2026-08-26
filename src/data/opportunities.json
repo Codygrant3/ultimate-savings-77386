@@ -187,7 +187,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-26"
     },
     "actionLabel": "Check welcome reward",
     "tier": "A",
@@ -253,9 +253,14 @@
     "minimumSpend": 0,
     "isFree": false,
     "expiresOn": "2026-08-26",
-    "availableDaysOfWeek": [3],
+    "availableDaysOfWeek": [
+      3
+    ],
     "redemptionTimeWindows": [
-      { "startTime": "17:00", "endTime": "22:00" }
+      {
+        "startTime": "17:00",
+        "endTime": "22:00"
+      }
     ],
     "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
     "verification": "verified",
@@ -268,9 +273,9 @@
       "rewards"
     ],
     "source": {
-      "label": "Whataburger official newsroom",
-      "url": "https://stories.whataburger.com/national-whataburger-day-2026/",
-      "checkedOn": "2026-08-25"
+      "label": "Whataburger official PR Newswire release",
+      "url": "https://www.prnewswire.com/news-releases/whataburger-celebrates-76-years-with-a-month-long-birthday-bash-and-exclusive-app-only-offers-302832799.html",
+      "checkedOn": "2026-08-26"
     },
     "actionLabel": "Check August 26 offer",
     "tier": "A",
@@ -291,7 +296,7 @@
   {
     "id": "shell-fuel-rewards-new-member-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "10\u00a2, 20\u00a2, then 30\u00a2 off per gallon",
+    "title": "10¢, 20¢, then 30¢ off per gallon",
     "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
     "category": "fuel",
     "estimatedSavings": 9,
@@ -329,7 +334,7 @@
   {
     "id": "shell-race-day-22-cents-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "22\u00a2 off per gallon on eligible race days",
+    "title": "22¢ off per gallon on eligible race days",
     "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
     "category": "fuel",
     "estimatedSavings": 3.3,
@@ -389,7 +394,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-26"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -417,7 +422,9 @@
     "estimatedSavings": 0,
     "minimumSpend": 5,
     "isFree": true,
-    "availableDaysOfWeek": [3],
+    "availableDaysOfWeek": [
+      3
+    ],
     "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
     "verification": "verified",
     "friction": "low",
@@ -430,7 +437,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-26"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -457,7 +464,9 @@
     "estimatedSavings": 0,
     "minimumSpend": 5,
     "isFree": true,
-    "availableDaysOfWeek": [5],
+    "availableDaysOfWeek": [
+      5
+    ],
     "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
     "verification": "verified",
     "friction": "low",
@@ -470,7 +479,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-26"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -530,7 +539,7 @@
   {
     "id": "seven-rewards-fuel-welcome-2026",
     "merchant": "7REWARDS Fuel",
-    "title": "11\u00a2 off per gallon on the first seven fills",
+    "title": "11¢ off per gallon on the first seven fills",
     "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
     "category": "fuel",
     "estimatedSavings": 11.55,
@@ -570,7 +579,7 @@
   {
     "id": "seven-rewards-fuel-sms-25-cents-2026",
     "merchant": "7REWARDS Fuel",
-    "title": "25\u00a2 off per gallon on the next three fills",
+    "title": "25¢ off per gallon on the next three fills",
     "summary": "The official fuel-rewards page offers 25 cents off per gallon on the next three fills after texting SAVE to 711711.",
     "category": "fuel",
     "estimatedSavings": 11.25,
@@ -604,50 +613,6 @@
       "fuel-reward",
       "sms-specific",
       "high-value"
-    ]
-  },
-  {
-    "id": "seven-eleven-slurpee-happy-hour-2026",
-    "merchant": "7-Eleven",
-    "title": "$1 large Slurpee weekday Happy Hour",
-    "summary": "7Rewards and Speedy Rewards members can get a large Slurpee for $1 Monday through Friday from 3 p.m. to 6 p.m.",
-    "category": "convenience",
-    "estimatedSavings": 0,
-    "minimumSpend": 1,
-    "isFree": false,
-    "expiresOn": "2026-08-25",
-    "availableDaysOfWeek": [1, 2, 3, 4, 5],
-    "redemptionTimeWindows": [
-      { "startTime": "15:00", "endTime": "18:00" }
-    ],
-    "locationNote": "Available at participating 7-Eleven, Speedway, and Stripes locations; eligibility at the 77386 Birnham Woods store must be confirmed in the app or store.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "slurpee",
-      "one-dollar",
-      "weekday",
-      "rewards",
-      "local station"
-    ],
-    "source": {
-      "label": "7-Eleven official press release",
-      "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-brings-big-chill-energy-with-slurpee-drink-happy-hour-this-summer",
-      "checkedOn": "2026-08-15"
-    },
-    "actionLabel": "Check Happy Hour",
-    "tier": "B",
-    "stackNote": "No additional coupon or points stacking is assumed.",
-    "finePrint": "Valid Monday-Friday from 3-6 p.m. through August 25 for registered 7Rewards or Speedy Rewards members at participating locations. No dollar savings estimate is shown because the regular local Slurpee price was not verified.",
-    "expirationLabel": "Weekdays through August 25",
-    "availability": "available",
-    "dealType": "convenience-reward",
-    "freshness": "new",
-    "discoveredOn": "2026-08-11",
-    "preferenceSignals": [
-      "convenience-reward",
-      "time-sensitive",
-      "local-station"
     ]
   },
   {
@@ -734,269 +699,6 @@
     ]
   },
   {
-    "id": "heb-general-mills-free-snack-bags-2026-08",
-    "merchant": "H-E-B",
-    "title": "Free snack or sandwich bags with family-size cereal",
-    "summary": "Buy one qualifying 14- to 24-ounce General Mills family-size cereal and get a 50-count box of H-E-B Texas Tough snack or sandwich bags free.",
-    "category": "grocery",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-08-25",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "cereal",
-      "sandwich bags",
-      "free item",
-      "digital coupon",
-      "back to school",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84044129",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Several qualifying cereals show a price cut on the public page, but confirm both the price cut and coupon in the selected Spring-area store before checkout.",
-    "finePrint": "Requires one qualifying General Mills family-size cereal, 14 to 24 ounces. The official page lists one free 50-count H-E-B Texas Tough snack- or sandwich-bag box, unlimited use, and an August 25 expiration. No dollar value is estimated because the public page is bound to Victoria rather than a verified Spring store.",
-    "expirationLabel": "Ends August 25",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-19",
-    "preferenceSignals": [
-      "grocery",
-      "staple",
-      "back-to-school",
-      "free-item",
-      "coupon-stack",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-starbucks-frappuccino-bogo-2026-08",
-    "merchant": "H-E-B",
-    "title": "Buy one Starbucks Frappuccino bottle, get one free",
-    "summary": "Buy one qualifying 13.7-ounce Starbucks Frappuccino bottled drink and get a second qualifying bottle free.",
-    "category": "coffee",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "savingsRate": 50,
-    "isFree": true,
-    "expiresOn": "2026-08-25",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "coffee",
-      "BOGO",
-      "free item",
-      "digital coupon",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84055257",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Treat this as 50% off only when two qualifying bottles were already useful; confirm the selected Spring store shows the coupon before shopping.",
-    "finePrint": "Qualifying 13.7-ounce Starbucks Frappuccino single-serve bottles only. The official page lists unlimited use through August 25. No dollar value is estimated because the displayed Victoria price does not establish Spring-area pricing or availability.",
-    "expirationLabel": "Ends August 25",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-19",
-    "preferenceSignals": [
-      "coffee",
-      "free-item",
-      "coupon-stack",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-frozen-fruit-free-ice-cream-2026-08",
-    "merchant": "H-E-B",
-    "title": "Free ice cream pint with bulk frozen fruit",
-    "summary": "Buy one qualifying 48- or 80-ounce H-E-B frozen fruit item and get one qualifying pint of H-E-B Creamy Creations ice cream or sherbet free.",
-    "category": "grocery",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-08-25",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "frozen fruit",
-      "ice cream",
-      "free item",
-      "digital coupon",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84056038",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only if the large frozen-fruit package is already a good unit-price fit; confirm the coupon in the selected Spring store.",
-    "finePrint": "Requires one qualifying H-E-B frozen-fruit package, 48 or 80 ounces, and provides one qualifying pint of H-E-B Creamy Creations ice cream or sherbet. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
-    "expirationLabel": "Ends August 25",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-19",
-    "preferenceSignals": [
-      "grocery",
-      "staple",
-      "free-item",
-      "coupon-stack",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-kodiak-five-off-twenty-2026-08",
-    "merchant": "H-E-B",
-    "title": "$5 off a $20 Kodiak basket",
-    "summary": "Clip the public H-E-B coupon for $5 off a qualifying $20 basket of Kodiak items.",
-    "category": "grocery",
-    "estimatedSavings": 5,
-    "minimumSpend": 20,
-    "savingsRate": 25,
-    "isFree": false,
-    "expiresOn": "2026-08-25",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible products, inventory, and prices are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "breakfast",
-      "protein",
-      "digital coupon",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84048909",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "The 25% rate is achieved only at exactly $20; compare unit prices and confirm any item-level price cuts can combine before checkout.",
-    "finePrint": "Requires a qualifying $20 Kodiak basket. The official page lists unlimited use and an August 25 expiration. The $5 coupon value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
-    "expirationLabel": "Ends August 25",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-19",
-    "preferenceSignals": [
-      "grocery",
-      "staple",
-      "high-value",
-      "coupon-stack",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-frito-lay-free-gatorade-2026-08",
-    "merchant": "H-E-B",
-    "title": "Free Gatorade six-pack with 42-count snack variety pack",
-    "summary": "Buy one qualifying 42-count Frito-Lay snack variety pack and get one qualifying six-pack of 12-ounce Gatorade bottles free.",
-    "category": "grocery",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-08-25",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "snacks",
-      "sports drink",
-      "free item",
-      "back to school",
-      "digital coupon",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84048755",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only if the 42-count snack pack is already planned; compare the effective per-item cost and confirm the selected Spring store carries the coupon.",
-    "finePrint": "Requires one qualifying 42-count Frito-Lay snack variety pack and provides one qualifying six-pack of 12-ounce Gatorade bottles. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
-    "expirationLabel": "Ends August 25",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-19",
-    "preferenceSignals": [
-      "grocery",
-      "teen",
-      "back-to-school",
-      "free-item",
-      "coupon-stack",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-mac-cups-free-capri-sun-2026-08",
-    "merchant": "H-E-B",
-    "title": "Free Capri Sun ten-pack with mac-and-cheese cups",
-    "summary": "Buy one qualifying eight-count Kraft or Velveeta macaroni-and-cheese cups package and get one qualifying ten-pack of Capri Sun free.",
-    "category": "grocery",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-08-25",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "lunch",
-      "juice drink",
-      "free item",
-      "back to school",
-      "digital coupon",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84049522",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only if both the mac-and-cheese cups and juice drinks fit the grocery plan; confirm the coupon in the selected Spring store.",
-    "finePrint": "Requires one qualifying eight-count Kraft or Velveeta macaroni-and-cheese cups package and provides one qualifying ten-pack of Capri Sun. The official page lists unlimited use and an August 25 expiration. No dollar value is estimated because the public page is location-gated to Victoria.",
-    "expirationLabel": "Ends August 25",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-19",
-    "preferenceSignals": [
-      "grocery",
-      "teen",
-      "back-to-school",
-      "free-item",
-      "coupon-stack",
-      "location-gated"
-    ]
-  },
-  {
     "id": "starbucks-birthday-reward-2026",
     "merchant": "Starbucks Rewards",
     "title": "Free birthday drink or food item",
@@ -1068,7 +770,7 @@
   {
     "id": "exxon-mobil-rewards-base-points-2026",
     "merchant": "Exxon Mobil Rewards+",
-    "title": "Earn 3\u00a2 per gallon or more in points",
+    "title": "Earn 3¢ per gallon or more in points",
     "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
     "category": "fuel",
     "estimatedSavings": 0.45,
@@ -1449,7 +1151,10 @@
     "minimumSpend": 8.88,
     "savingsRate": 50,
     "isFree": false,
-    "availableDaysOfWeek": [2, 3],
+    "availableDaysOfWeek": [
+      2,
+      3
+    ],
     "locationNote": "Participating AMC locations; compare travel distance and showtime pricing before booking.",
     "verification": "verified",
     "friction": "low",
@@ -1480,47 +1185,9 @@
     ]
   },
   {
-    "id": "wendys-one-dollar-small-frosty-summer-2026",
-    "merchant": "Wendy's",
-    "title": "$1 small Classic Frosty for a limited time",
-    "summary": "Wendy's is advertising a small Classic Frosty for $1 with no app offer required.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 1,
-    "isFree": false,
-    "locationNote": "U.S. price and participation vary; confirm the selected Spring-area restaurant before making a trip.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "one-dollar",
-      "dessert",
-      "limited-time",
-      "no app required"
-    ],
-    "source": {
-      "label": "Wendy's official home page",
-      "url": "https://www.wendys.com/",
-      "checkedOn": "2026-08-17"
-    },
-    "actionLabel": "Check local price",
-    "tier": "B",
-    "stackNote": "No coupon or reward is required; no additional stacking is assumed.",
-    "finePrint": "A la carte only, not valid for delivery, limit 10 per transaction, and participation varies. Wendy's does not publish an end date, so confirm the $1 price before ordering.",
-    "expirationLabel": "Limited time; no end date published",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-08-17",
-    "preferenceSignals": [
-      "price-drop",
-      "low-friction",
-      "restaurant"
-    ]
-  },
-  {
     "id": "shell-app-first-pay-save-25-cents-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "Earn 25\u00a2/gal after the first 10-gallon Pay & Save fill",
+    "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
     "summary": "The Shell App first-time offer awards 25 cents per gallon in savings after an initial Pay & Save transaction of at least 10 gallons.",
     "category": "fuel",
     "estimatedSavings": 3.75,
@@ -1565,7 +1232,9 @@
     "estimatedSavings": 4,
     "minimumSpend": 0,
     "isFree": false,
-    "availableDaysOfWeek": [2],
+    "availableDaysOfWeek": [
+      2
+    ],
     "locationNote": "Daikin Park in Houston; count travel and parking before treating a promotion as savings.",
     "verification": "verified",
     "friction": "high",
@@ -1676,95 +1345,6 @@
     ]
   },
   {
-    "id": "heb-academy-gift-card-fifteen-off-2026-08",
-    "merchant": "H-E-B",
-    "title": "$15 off $75 in Academy gift cards",
-    "summary": "H-E-B's official coupon page lists $15 off a basket containing $75 or more in Academy gift cards.",
-    "category": "shopping",
-    "estimatedSavings": 15,
-    "minimumSpend": 75,
-    "savingsRate": 20,
-    "isFree": false,
-    "expiresOn": "2026-08-25",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability and in-store gift-card inventory are not locally confirmed.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "back to school",
-      "sports",
-      "clothing",
-      "gift card",
-      "digital coupon",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon page",
-      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only for an already-planned Academy purchase. Do not assume this coupon combines with another gift-card promotion.",
-    "stackGroup": "heb-gift-card-coupon",
-    "finePrint": "Requires at least $75 in Academy gift cards and is listed as redeemable in store with a limit of one per customer. The official page says it expires Tuesday, August 25. The $15 value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
-    "expirationLabel": "Ends August 25",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-21",
-    "preferenceSignals": [
-      "teen",
-      "back-to-school",
-      "shopping",
-      "high-value",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-select-clothing-gift-cards-fifteen-off-2026-08",
-    "merchant": "H-E-B",
-    "title": "$15 off $75 in select clothing gift cards",
-    "summary": "H-E-B's official coupon page lists $15 off $75 or more in select clothing gift cards, including Nike, Adidas, Gap, H&M, and American Eagle.",
-    "category": "shopping",
-    "estimatedSavings": 15,
-    "minimumSpend": 75,
-    "savingsRate": 20,
-    "isFree": false,
-    "expiresOn": "2026-08-25",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability and in-store gift-card inventory are not locally confirmed.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "back to school",
-      "teen clothing",
-      "gift card",
-      "digital coupon",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon page",
-      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons?pageName=all-coupons&sort_order=HIGHEST_VALUE",
-      "checkedOn": "2026-08-24"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only for an already-planned purchase. Do not assume this coupon combines with another gift-card promotion.",
-    "stackGroup": "heb-gift-card-coupon",
-    "finePrint": "Requires at least $75 in one eligible clothing-brand gift card category and is listed as redeemable in store with a limit of one per customer. The official page says it expires Tuesday, August 25. The $15 value is fixed, but the offer remains location-gated until it appears for a selected Spring-area store.",
-    "expirationLabel": "Ends August 25",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-23",
-    "preferenceSignals": [
-      "teen",
-      "back-to-school",
-      "shopping",
-      "high-value",
-      "location-gated"
-    ]
-  },
-  {
     "id": "chipotle-sundays-free-entree-2026",
     "merchant": "Chipotle",
     "title": "Free entree with code SUNDAYS after 3 p.m.",
@@ -1774,9 +1354,13 @@
     "minimumSpend": 0,
     "isFree": true,
     "expiresOn": "2026-09-06",
-    "availableDaysOfWeek": [0],
+    "availableDaysOfWeek": [
+      0
+    ],
     "redemptionTimeWindows": [
-      { "startTime": "15:00" }
+      {
+        "startTime": "15:00"
+      }
     ],
     "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
     "verification": "verified",
@@ -1852,8 +1436,8 @@
   {
     "id": "seven-eleven-labor-day-six-dollar-meal-2026",
     "merchant": "7-Eleven",
-    "title": "$6 sandwich meal deal starts August 26",
-    "summary": "7Rewards and Speedy Rewards members can get an eligible hot sandwich plus a 20-ounce Coca-Cola or Pepsi drink for $6 starting August 26.",
+    "title": "$6 sandwich + 20 oz soda for rewards members",
+    "summary": "7Rewards and Speedy Rewards members can get an eligible hot sandwich plus a 20-ounce Coca-Cola or Pepsi drink for $6 at participating stores.",
     "category": "convenience",
     "estimatedSavings": 0,
     "minimumSpend": 6,
@@ -1865,27 +1449,105 @@
     "tags": [
       "meal deal",
       "rewards",
-      "convenience",
-      "upcoming"
+      "convenience"
     ],
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-26"
     },
-    "actionLabel": "Confirm after August 26",
+    "actionLabel": "Confirm at participating store",
     "tier": "B",
     "stackNote": "No additional coupon or points stacking is assumed.",
-    "finePrint": "Official terms list August 26 through October 27 for loyalty members at participating stores. The qualifying sandwich selection, local inventory, and 77386 participation are not yet confirmed, so this remains a research lead until the start date.",
-    "expirationLabel": "Starts August 26; ends October 27",
-    "availability": "waitlist",
+    "finePrint": "Official terms list August 26 through October 27 for loyalty members at participating 7-Eleven, Speedway, and Stripes stores. The qualifying sandwich selection, local inventory, and 77386 participation are not confirmed.",
+    "expirationLabel": "Ends October 27",
+    "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "improved",
     "discoveredOn": "2026-08-25",
     "preferenceSignals": [
       "convenience-reward",
       "time-sensitive",
       "local-station"
+    ]
+  },
+  {
+    "id": "seven-eleven-roller-grill-three-dollar-meal-2026",
+    "merchant": "7-Eleven",
+    "title": "$3 roller grill + chips + large Big Gulp",
+    "summary": "Loyalty members can get any roller grill item, a bag of 7-Select chips, and a large Big Gulp for $3 at participating stores.",
+    "category": "convenience",
+    "estimatedSavings": 0,
+    "minimumSpend": 3,
+    "isFree": false,
+    "expiresOn": "2026-10-27",
+    "locationNote": "Participating 7-Eleven, Speedway, and Stripes stores; the Birnham Woods 77386 store has not been confirmed for this meal deal.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "meal deal",
+      "rewards",
+      "convenience",
+      "roller grill"
+    ],
+    "source": {
+      "label": "7-Eleven official press release",
+      "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
+      "checkedOn": "2026-08-26"
+    },
+    "actionLabel": "Confirm at participating store",
+    "tier": "B",
+    "stackNote": "No additional coupon or points stacking is assumed.",
+    "finePrint": "Official terms list August 26 through October 27 for 7Rewards and Speedy Rewards members. The public homepage also lists any sausage/hot dog plus 7-Select chips (2.5-3.25 oz) and a large Big Gulp valid through October 27. 77386 participation and in-store price are not confirmed.",
+    "expirationLabel": "Ends October 27",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-26",
+    "preferenceSignals": [
+      "convenience-reward",
+      "time-sensitive",
+      "local-station"
+    ]
+  },
+  {
+    "id": "wendys-199-ten-piece-nuggets-2026",
+    "merchant": "Wendy's",
+    "title": "$1.99 10-piece nuggets with any purchase",
+    "summary": "Wendy's Rewards members can add 10-piece Classic or Spicy Nuggets for $1.99 with any purchase through a daily digital offer in the app.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 1.99,
+    "isFree": false,
+    "expiresOn": "2026-09-27",
+    "locationNote": "App-only offer at participating U.S. Wendy's; availability at the selected Spring-area restaurant must be confirmed in the app.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "restaurant",
+      "app",
+      "nuggets",
+      "daily digital offer"
+    ],
+    "source": {
+      "label": "Wendy's official PR Newswire release",
+      "url": "https://www.prnewswire.com/news-releases/nugget-lovers-rejoice-get-10-piece-wendys-nuggets-for-just-1-99-with-in-app-offer-302857563.html",
+      "checkedOn": "2026-08-26"
+    },
+    "actionLabel": "Claim in Wendy's app",
+    "tier": "A",
+    "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+    "stackGroup": "wendys-app-order",
+    "finePrint": "Official window is August 24 through September 27. Requires the Wendy's app, account registration, and any other purchase. Participating U.S. restaurants only. No dollar value is estimated because the local regular nugget price was not verified.",
+    "expirationLabel": "Ends September 27",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-26",
+    "preferenceSignals": [
+      "restaurant",
+      "app-specific",
+      "time-sensitive"
     ]
   }
 ]

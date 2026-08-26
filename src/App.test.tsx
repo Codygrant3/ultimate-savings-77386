@@ -39,14 +39,14 @@ describe("Savings Desk interactions", () => {
 
     fireEvent.click(screen.getByRole("button", { name: "Browse this week" }));
 
-    const kodiakCard = screen
-      .getByText("$5 off a $20 Kodiak basket")
+    const pazeCard = screen
+      .getByText("$10 back on a $10+ Wendy's app order")
       .closest(".deal-card");
 
-    expect(kodiakCard).not.toBeNull();
-    expect(within(kodiakCard as HTMLElement).getByText("25%")).toBeTruthy();
+    expect(pazeCard).not.toBeNull();
+    expect(within(pazeCard as HTMLElement).getByText("100%")).toBeTruthy();
     expect(
-      within(kodiakCard as HTMLElement).getByText("$0.25 per $1 spent")
+      within(pazeCard as HTMLElement).getByText("$1.00 per $1 spent")
     ).toBeTruthy();
   });
 

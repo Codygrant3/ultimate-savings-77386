@@ -25,7 +25,7 @@ function offer(overrides: Partial<ScoredOpportunity>): ScoredOpportunity {
     source: {
       label: "Official source",
       url: "https://example.com/offer",
-      checkedOn: "2026-08-24"
+      checkedOn: "2026-08-26"
     },
     actionLabel: "Review",
     distanceMiles: 2,
@@ -187,7 +187,7 @@ describe("WeeklyPlanner execution controls", () => {
     expect(screen.getAllByText(/Deadline priority/).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/low effort/).length).toBeGreaterThan(0);
     expect(
-      screen.getAllByText(/source checked Aug 24/).length
+      screen.getAllByText(/source checked Aug 26/).length
     ).toBeGreaterThan(0);
     expect(screen.getByText("Risk-adjusted planning value")).toBeTruthy();
     expect(screen.getByText("$8.50")).toBeTruthy();
