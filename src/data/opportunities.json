@@ -263,7 +263,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Review offer",
     "tier": "A",
@@ -302,7 +302,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Opt in for race days",
     "tier": "A",
@@ -626,7 +626,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+ official offer FAQ",
       "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Check app eligibility",
     "tier": "A",
@@ -668,7 +668,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+ official terms",
       "url": "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Review referral offer",
     "tier": "A",
@@ -1032,7 +1032,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+",
       "url": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Review rewards",
     "tier": "B",
@@ -1181,7 +1181,7 @@
     "source": {
       "label": "Dunkin official newsroom",
       "url": "https://news.dunkindonuts.com/blog/dunkinR-is-celebrating-pumpkin-season-with-1-million-free-espresso-beverages",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Try EASYCHOICE now",
     "tier": "A",
@@ -1292,7 +1292,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/texas/spring/30083/",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -1332,7 +1332,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Review eligibility",
     "tier": "A",
@@ -1372,7 +1372,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Review diesel coupon",
     "tier": "A",
@@ -1411,7 +1411,7 @@
     "source": {
       "label": "Rainbow Car Care frequent wash program",
       "url": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedOn": "2026-08-15"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Review wash program",
     "tier": "A",
@@ -1492,7 +1492,7 @@
     "source": {
       "label": "Shell official app-offers support page",
       "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Review Shell App offer",
     "tier": "B",
@@ -1508,6 +1508,45 @@
       "fuel-reward",
       "app-specific",
       "first-time"
+    ]
+  },
+  {
+    "id": "shell-app-s-pay-discount-2026",
+    "merchant": "Shell Fuel Rewards",
+    "title": "10¢/gal with Shell S Pay; 15¢ for Platinum members",
+    "summary": "Shell App users with a linked Fuel Rewards account can save 10 cents per gallon at Silver or Gold status, or 15 cents per gallon at Platinum status, when paying with Shell S Pay.",
+    "category": "fuel",
+    "estimatedSavings": 1.5,
+    "minimumSpend": 0,
+    "isFree": false,
+    "locationNote": "Shell App, linked Fuel Rewards account, Shell S Pay, and a participating station are required; compare the posted pump price before fueling.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "fuel",
+      "app",
+      "mobile pay",
+      "10 cents per gallon"
+    ],
+    "source": {
+      "label": "Shell official app-offers support page",
+      "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
+      "checkedOn": "2026-08-27"
+    },
+    "actionLabel": "Compare Shell S Pay price",
+    "tier": "B",
+    "stackNote": "Count only the discount displayed in the Shell App; do not assume this combines with new-member, race-day, or first-time Pay & Save rewards.",
+    "stackGroup": "shell-fuel-promotion",
+    "finePrint": "The official support page states no minimum gallon requirement and availability for Shell App users with a linked Fuel Rewards account. The $1.50 estimate assumes 15 gallons at the 10-cent Silver or Gold rate; a qualifying Platinum member could save $2.25 on 15 gallons. No end date is published, and station participation must be confirmed in the app.",
+    "expirationLabel": "No end date published",
+    "availability": "available",
+    "dealType": "fuel-reward",
+    "freshness": "new",
+    "discoveredOn": "2026-08-27",
+    "preferenceSignals": [
+      "fuel-reward",
+      "app-specific",
+      "mobile-pay"
     ]
   },
   {
@@ -1741,7 +1780,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1780,7 +1819,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",

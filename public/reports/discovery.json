@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-27T12:05:46.276Z",
+  "generatedAt": "2026-08-27T15:07:09.976Z",
   "sourceCount": 31,
   "successfulCount": 26,
   "failedCount": 5,
-  "newOrImprovedCount": 0,
+  "newOrImprovedCount": 1,
   "results": [
     {
       "id": "heb-digital-coupons",
@@ -18,10 +18,10 @@
         "off"
       ],
       "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "changed",
       "matchedKeywords": [],
-      "contentHash": "0fa64d015471450b05683a7b66bdbfbe0e2467528feb742baf8a52f9ce863d9a",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "parsedOffers": []
     },
     {
@@ -37,7 +37,7 @@
         "circle"
       ],
       "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "weekly ad",
@@ -60,7 +60,7 @@
         "5x"
       ],
       "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -78,7 +78,7 @@
         "points"
       ],
       "canonicalUrl": "https://www.dutchbros.com/dutch-101",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free drink",
@@ -121,7 +121,7 @@
         "offer"
       ],
       "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "deal",
@@ -146,7 +146,7 @@
         "birthday"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -171,7 +171,7 @@
         "opening"
       ],
       "canonicalUrl": "https://joviroasters.com",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "offer",
@@ -195,7 +195,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -218,7 +218,7 @@
         "offer"
       ],
       "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "per gallon",
@@ -243,7 +243,7 @@
         "exclusive deals"
       ],
       "canonicalUrl": "https://www.7-eleven.com/7rewards",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free snacks",
@@ -267,12 +267,12 @@
         "rewards"
       ],
       "canonicalUrl": "https://corp.7-eleven.com/corp/in-the-news",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
-      "status": "unchanged",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
+      "status": "changed",
       "matchedKeywords": [
         "deal"
       ],
-      "contentHash": "4af888f06e80cd4cfffe9438c7e03033c025cc4fbdee40ae35263012d34e6bcc",
+      "contentHash": "e90b7eda45874414a43fbce0aa02ed0a68113f4f778476fdaf03dbefd39b8058",
       "title": "In the news | 7-Eleven",
       "parsedOffers": []
     },
@@ -289,14 +289,15 @@
         "save"
       ],
       "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
-      "status": "unchanged",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
+      "status": "improved",
       "matchedKeywords": [
         "coupon",
         "oil change",
-        "off"
+        "off",
+        "save"
       ],
-      "contentHash": "74b165d9c2a3b44b1be64a7211651ac27fc31bbcc6fde3e56fef26d380eb8bbc",
+      "contentHash": "5794fcb947d12832be5924b4216fb0ac222cc83e28c68176874f91d0adbd227f",
       "title": "Oil Change Near Me in Spring Texas 77386 - Take 5 #83",
       "parsedOffers": [
         {
@@ -323,7 +324,7 @@
         "coupon"
       ],
       "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "oil change",
@@ -379,7 +380,7 @@
         "reward"
       ],
       "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -449,7 +450,7 @@
         "stubs"
       ],
       "canonicalUrl": "https://www.amctheatres.com/offers",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -467,7 +468,7 @@
         "ticket"
       ],
       "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "promotion",
@@ -492,7 +493,7 @@
         "promotion"
       ],
       "canonicalUrl": "https://www.houstondynamofc.com/tickets",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "ticket",
@@ -515,7 +516,7 @@
         "backpacks"
       ],
       "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "sales tax holiday",
@@ -540,7 +541,7 @@
         "offer"
       ],
       "canonicalUrl": "https://news.dunkindonuts.com",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -563,7 +564,7 @@
         "offer valid"
       ],
       "canonicalUrl": "https://www.krispykreme.com/offers",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -586,7 +587,7 @@
         "rewards"
       ],
       "canonicalUrl": "https://www.wendys.com/offers-coupons",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -713,7 +714,7 @@
         "birthday reward"
       ],
       "canonicalUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "welcome reward",
@@ -738,7 +739,7 @@
         "offer"
       ],
       "canonicalUrl": "https://stories.whataburger.com",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -762,7 +763,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://about.starbucks.com/press",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -780,7 +781,7 @@
         "valid"
       ],
       "canonicalUrl": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -805,7 +806,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://www.tacobell.com/newsroom",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "rewards",
@@ -828,7 +829,7 @@
         "promo code"
       ],
       "canonicalUrl": "https://newsroom.chipotle.com/press-releases",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -852,7 +853,7 @@
         "cash payment"
       ],
       "canonicalUrl": "https://www.onlinetvsettlement.com",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -870,7 +871,7 @@
         "settlement class"
       ],
       "canonicalUrl": "https://landsenddatasettlement.com/faq",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "claim",
@@ -895,7 +896,7 @@
         "authorized by the court"
       ],
       "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -912,7 +913,7 @@
         "official settlement website"
       ],
       "canonicalUrl": "https://www.clarkcountydatasettlement.com",
-      "checkedAt": "2026-08-27T12:05:46.276Z",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
       "status": "unchanged",
       "matchedKeywords": [
         "submit claim",
@@ -924,7 +925,43 @@
       "parsedOffers": []
     }
   ],
-  "highValueMatches": [],
+  "highValueMatches": [
+    {
+      "id": "take5-rayford",
+      "name": "Take 5 Rayford Road coupons",
+      "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
+      "category": "auto",
+      "priority": 10,
+      "keywords": [
+        "coupon",
+        "oil change",
+        "off",
+        "save"
+      ],
+      "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
+      "checkedAt": "2026-08-27T15:07:09.976Z",
+      "status": "improved",
+      "matchedKeywords": [
+        "coupon",
+        "oil change",
+        "off",
+        "save"
+      ],
+      "contentHash": "5794fcb947d12832be5924b4216fb0ac222cc83e28c68176874f91d0adbd227f",
+      "title": "Oil Change Near Me in Spring Texas 77386 - Take 5 #83",
+      "parsedOffers": [
+        {
+          "id": "take5-rayford-15-off-core-complete-or-ultimate-oil-change",
+          "sourceId": "take5-rayford",
+          "merchant": "Take 5 Oil Change",
+          "title": "$15 Off Core, Complete or Ultimate Oil Change",
+          "url": "https://www.take5.com/locations/oil-change/texas/spring/30083/",
+          "amountText": "$15 Off",
+          "detail": "Coupons have no cash value. Coupons valid only if emailed or texted - requires enrollment in marketing emails or texts from Take 5. You can unsubscribe at any time by replying STOP to a text or following email UNSUBSCRIBE instructions."
+        }
+      ]
+    }
+  ],
   "parsedOfferCandidates": [
     {
       "id": "wendys-offers-paze-users-spend-10-in-the-wendy-s-app-to-earn-10-back",

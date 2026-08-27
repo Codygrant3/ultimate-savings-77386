@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-27T12:05:48.560Z",
+  "generatedAt": "2026-08-27T15:07:16.776Z",
   "weekOf": "2026-08-24",
   "zipCode": "77386",
-  "totalPotentialSavings": 159.49,
-  "verifiedCount": 41,
+  "totalPotentialSavings": 160.99,
+  "verifiedCount": 42,
   "expiringCount": 18,
   "opportunities": [
     {
@@ -26,7 +26,7 @@
       "source": {
         "label": "Take 5 Spring location coupons",
         "url": "https://www.take5.com/locations/texas/spring/30083/",
-        "checkedOn": "2026-08-25"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Get coupon",
       "tier": "A",
@@ -43,8 +43,8 @@
         "local-high-value"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-08-25",
-      "distanceEvidenceAgeDays": 1,
+      "distanceCheckedOn": "2026-08-27",
+      "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Take 5 Spring location coupons",
       "distanceSourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
       "score": 76,
@@ -54,7 +54,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -440,7 +440,7 @@
       "source": {
         "label": "Shell Fuel Rewards",
         "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-08-25"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Review offer",
       "tier": "A",
@@ -458,8 +458,8 @@
         "stacking"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-08-25",
-      "distanceEvidenceAgeDays": 1,
+      "distanceCheckedOn": "2026-08-27",
+      "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Shell Fuel Rewards",
       "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
       "score": 73,
@@ -469,7 +469,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -506,6 +506,108 @@
           "points": 9,
           "weight": 9,
           "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "rainbow-car-care-birthday-wash-2026",
+      "merchant": "Rainbow Car Care",
+      "title": "Free full-service car wash on your birthday",
+      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
+      "category": "auto",
+      "estimatedSavings": 20,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "car wash",
+        "birthday",
+        "free service",
+        "loyalty"
+      ],
+      "source": {
+        "label": "Rainbow Car Care frequent wash program",
+        "url": "https://rainbowcarcare.com/frequent-wash-program",
+        "checkedOn": "2026-08-27"
+      },
+      "actionLabel": "Review wash program",
+      "tier": "A",
+      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
+      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
+      "expirationLabel": "Your birthday",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "free-service",
+        "loyalty-reward"
+      ],
+      "distanceMiles": 4.7,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-15",
+      "distanceEvidenceAgeDays": 11,
+      "distanceSourceLabel": "Rainbow Car Care frequent wash program",
+      "distanceSourceUrl": "https://rainbowcarcare.com/frequent-wash-program",
+      "score": 72,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 18.48,
+          "weight": 24,
+          "detail": "free reward plus $20.00 estimate"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: car wash"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.96,
+          "weight": 8,
+          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; location checked 11 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
         },
         {
           "label": "Required spend",
@@ -757,7 +859,7 @@
       "source": {
         "label": "Exxon Mobil Rewards+ official offer FAQ",
         "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-        "checkedOn": "2026-08-25"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Check app eligibility",
       "tier": "A",
@@ -788,7 +890,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -862,7 +964,7 @@
       "source": {
         "label": "Costa Oil Rayford specials",
         "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Review diesel coupon",
       "tier": "A",
@@ -892,7 +994,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 3 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1479,7 +1581,7 @@
       "source": {
         "label": "Exxon Mobil Rewards+ official terms",
         "url": "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions",
-        "checkedOn": "2026-08-25"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Review referral offer",
       "tier": "A",
@@ -1510,7 +1612,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1559,108 +1661,6 @@
           "points": 0.8400000000000001,
           "weight": 7,
           "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
-      "id": "rainbow-car-care-birthday-wash-2026",
-      "merchant": "Rainbow Car Care",
-      "title": "Free full-service car wash on your birthday",
-      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
-      "category": "auto",
-      "estimatedSavings": 20,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "car wash",
-        "birthday",
-        "free service",
-        "loyalty"
-      ],
-      "source": {
-        "label": "Rainbow Car Care frequent wash program",
-        "url": "https://rainbowcarcare.com/frequent-wash-program",
-        "checkedOn": "2026-08-15"
-      },
-      "actionLabel": "Review wash program",
-      "tier": "A",
-      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
-      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
-      "expirationLabel": "Your birthday",
-      "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "free-service",
-        "loyalty-reward"
-      ],
-      "distanceMiles": 4.7,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-15",
-      "distanceEvidenceAgeDays": 11,
-      "distanceSourceLabel": "Rainbow Car Care frequent wash program",
-      "distanceSourceUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "score": 65,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 11 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 18.48,
-          "weight": 24,
-          "detail": "free reward plus $20.00 estimate"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.4,
-          "weight": 10,
-          "detail": "Household match: car wash"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.96,
-          "weight": 8,
-          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; location checked 11 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -1896,7 +1896,7 @@
       "source": {
         "label": "Shell official app-offers support page",
         "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Review Shell App offer",
       "tier": "B",
@@ -1926,7 +1926,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 3 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1998,7 +1998,7 @@
       "source": {
         "label": "Exxon Mobil Rewards+",
         "url": "https://www.exxonmobilfuels.com/en/rewards",
-        "checkedOn": "2026-08-25"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Review rewards",
       "tier": "B",
@@ -2014,8 +2014,8 @@
         "stacking"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-08-25",
-      "distanceEvidenceAgeDays": 1,
+      "distanceCheckedOn": "2026-08-27",
+      "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Exxon Mobil Rewards+",
       "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
       "score": 64,
@@ -2025,7 +2025,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -2299,7 +2299,7 @@
       "source": {
         "label": "Shell Fuel Rewards",
         "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-08-25"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Opt in for race days",
       "tier": "A",
@@ -2329,7 +2329,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -2885,6 +2885,109 @@
           "points": 0.8400000000000001,
           "weight": 7,
           "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "shell-app-s-pay-discount-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "10¢/gal with Shell S Pay; 15¢ for Platinum members",
+      "summary": "Shell App users with a linked Fuel Rewards account can save 10 cents per gallon at Silver or Gold status, or 15 cents per gallon at Platinum status, when paying with Shell S Pay.",
+      "category": "fuel",
+      "estimatedSavings": 1.5,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Shell App, linked Fuel Rewards account, Shell S Pay, and a participating station are required; compare the posted pump price before fueling.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "app",
+        "mobile pay",
+        "10 cents per gallon"
+      ],
+      "source": {
+        "label": "Shell official app-offers support page",
+        "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
+        "checkedOn": "2026-08-27"
+      },
+      "actionLabel": "Compare Shell S Pay price",
+      "tier": "B",
+      "stackNote": "Count only the discount displayed in the Shell App; do not assume this combines with new-member, race-day, or first-time Pay & Save rewards.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "The official support page states no minimum gallon requirement and availability for Shell App users with a linked Fuel Rewards account. The $1.50 estimate assumes 15 gallons at the 10-cent Silver or Gold rate; a qualifying Platinum member could save $2.25 on 15 gallons. No end date is published, and station participation must be confirmed in the app.",
+      "expirationLabel": "No end date published",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-27",
+      "preferenceSignals": [
+        "fuel-reward",
+        "app-specific",
+        "mobile-pay"
+      ],
+      "distanceMiles": 2.87,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 2,
+      "distanceSourceLabel": "Shell official Rayford Road station page",
+      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
+      "score": 60,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 5.52,
+          "weight": 24,
+          "detail": "$1.50 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 5.5200000000000005,
+          "weight": 8,
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 2 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -3822,7 +3925,7 @@
       "source": {
         "label": "Costa Oil Rayford specials",
         "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-08-23"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Review eligibility",
       "tier": "A",
@@ -3852,7 +3955,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 3 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -4237,7 +4340,7 @@
       "source": {
         "label": "Dunkin official newsroom",
         "url": "https://news.dunkindonuts.com/blog/dunkinR-is-celebrating-pumpkin-season-with-1-million-free-espresso-beverages",
-        "checkedOn": "2026-08-26"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Try EASYCHOICE now",
       "tier": "A",
@@ -4256,7 +4359,7 @@
         "app-specific"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-08-26",
+      "distanceCheckedOn": "2026-08-27",
       "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Dunkin official newsroom",
       "distanceSourceUrl": "https://news.dunkindonuts.com/blog/dunkinR-is-celebrating-pumpkin-season-with-1-million-free-espresso-beverages",
@@ -4702,7 +4805,7 @@
       "source": {
         "label": "7-Eleven official press release",
         "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-        "checkedOn": "2026-08-26"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Confirm at participating store",
       "tier": "B",
@@ -4804,7 +4907,7 @@
       "source": {
         "label": "7-Eleven official press release",
         "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-        "checkedOn": "2026-08-26"
+        "checkedOn": "2026-08-27"
       },
       "actionLabel": "Confirm at participating store",
       "tier": "B",

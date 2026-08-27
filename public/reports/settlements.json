@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T12:05:46.276Z",
+  "generatedAt": "2026-08-27T15:07:09.976Z",
   "checkedOn": "2026-08-27",
   "openCount": 4,
   "settlements": [
@@ -19,7 +19,7 @@
       "administrator": "Court-approved settlement administrator",
       "court": "U.S. District Court, Northern District of California",
       "verification": "court-authorized-notice",
-      "checkedOn": "2026-08-26",
+      "checkedOn": "2026-08-27",
       "freshness": "current",
       "relevanceScore": 88,
       "relevanceReason": "Broad consumer subscription category; confirm service, dates, and state coverage.",
@@ -88,7 +88,7 @@
       "administrator": "Kroll Settlement Administration",
       "court": "U.S. District Court, Central District of California",
       "verification": "official-administrator",
-      "checkedOn": "2026-08-26",
+      "checkedOn": "2026-08-27",
       "freshness": "current",
       "relevanceScore": 68,
       "relevanceReason": "Potentially high vehicle value, but only for specific Toyota models and verified VINs.",
