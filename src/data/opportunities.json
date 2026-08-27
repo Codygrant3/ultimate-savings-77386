@@ -244,56 +244,6 @@
     ]
   },
   {
-    "id": "whataburger-wednesday-chicken-sandwich-2026-08-26",
-    "merchant": "Whataburger",
-    "title": "76-cent Signature Chicken Sandwich on Wednesday",
-    "summary": "Whataburger Rewards members can get a Signature Chicken Sandwich entree for 76 cents on August 26 from 5 p.m. to 10 p.m. local time.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-08-26",
-    "availableDaysOfWeek": [
-      3
-    ],
-    "redemptionTimeWindows": [
-      {
-        "startTime": "17:00",
-        "endTime": "22:00"
-      }
-    ],
-    "locationNote": "One-day app offer at participating locations; Spring-area participation is not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "one-day",
-      "76-cent",
-      "entree",
-      "app",
-      "rewards"
-    ],
-    "source": {
-      "label": "Whataburger official PR Newswire release",
-      "url": "https://www.prnewswire.com/news-releases/whataburger-celebrates-76-years-with-a-month-long-birthday-bash-and-exclusive-app-only-offers-302832799.html",
-      "checkedOn": "2026-08-26"
-    },
-    "actionLabel": "Check August 26 offer",
-    "tier": "A",
-    "stackNote": "Do not assume another coupon can be combined with this app offer.",
-    "stackGroup": "whataburger-app-offer",
-    "finePrint": "Valid only through the Whataburger App, one redemption per account, at participating locations during the stated local-time window. No dollar savings estimate is shown because the regular local price was not verified.",
-    "expirationLabel": "August 26, 5-10 p.m.",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-08-11",
-    "preferenceSignals": [
-      "one-day",
-      "app-specific",
-      "time-sensitive"
-    ]
-  },
-  {
     "id": "shell-fuel-rewards-new-member-2026",
     "merchant": "Shell Fuel Rewards",
     "title": "10¢, 20¢, then 30¢ off per gallon",
@@ -394,7 +344,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -437,7 +387,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -479,7 +429,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -518,7 +468,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Check current chili offer",
     "tier": "A",
@@ -1251,47 +1201,6 @@
     ]
   },
   {
-    "id": "krispy-kreme-one-dollar-second-dozen-signup-2026-08",
-    "merchant": "Krispy Kreme",
-    "title": "$1 Original Glazed dozen with any dozen purchase",
-    "summary": "New and existing Krispy Kreme Rewards members who sign up by August 26 can receive an Original Glazed dozen for $1 when buying any regular-price dozen or 16-count Minis.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-08-26",
-    "locationNote": "Rewards-account and participating-shop gated. The official Texas directory lists a Humble shop, but proximity and offer participation for a practical 77386 trip are not confirmed.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "doughnuts",
-      "one-dollar",
-      "second dozen",
-      "rewards",
-      "same-day signup"
-    ],
-    "source": {
-      "label": "Krispy Kreme official offers page",
-      "url": "https://www.krispykreme.com/offers",
-      "checkedOn": "2026-08-26"
-    },
-    "actionLabel": "Join by August 26",
-    "tier": "A",
-    "stackNote": "The official terms say the offer cannot be combined with another coupon, offer, or discount.",
-    "finePrint": "Sign up for Krispy Kreme Rewards by August 26 to receive the offer, then redeem it within two weeks of signing up. Requires purchase of any regular-price dozen or 16-count Minis at a participating U.S. Krispy Kreme shop, excludes grocery and convenience-store locations, and is limited to one redemption. No dollar savings estimate or percentage is shown because the regular local dozen price and practical participating shop were not verified.",
-    "expirationLabel": "Sign up by August 26; redeem within two weeks",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-08-26",
-    "preferenceSignals": [
-      "restaurant",
-      "high-value",
-      "time-sensitive",
-      "account-specific"
-    ]
-  },
-  {
     "id": "scooters-birthday-smiles-reward-2026",
     "merchant": "Scooter's Coffee",
     "title": "Birthday Smiles toward a free drink or treat",
@@ -1752,7 +1661,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",
@@ -1908,9 +1817,9 @@
       "daily digital offer"
     ],
     "source": {
-      "label": "Wendy's official PR Newswire release",
-      "url": "https://www.prnewswire.com/news-releases/nugget-lovers-rejoice-get-10-piece-wendys-nuggets-for-just-1-99-with-in-app-offer-302857563.html",
-      "checkedOn": "2026-08-26"
+      "label": "Wendy's official offers page",
+      "url": "https://www.wendys.com/offers-coupons",
+      "checkedOn": "2026-08-27"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1926,6 +1835,90 @@
       "restaurant",
       "app-specific",
       "time-sensitive"
+    ]
+  },
+  {
+    "id": "chipotle-free-double-protein-2026-08-27",
+    "merchant": "Chipotle",
+    "title": "Free double protein with code PROTEIN",
+    "summary": "On Thursday August 27 only, guests in the U.S. and Canada can receive one free double protein portion on a full-priced burrito, bowl, or salad when ordering through the Chipotle app or website with code PROTEIN.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-08-27",
+    "availableDaysOfWeek": [
+      4
+    ],
+    "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; Spring-area participation was not confirmed in this public scan.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "one-day",
+      "free protein",
+      "promo code",
+      "app",
+      "Honey Chicken"
+    ],
+    "source": {
+      "label": "Chipotle official investor newsroom",
+      "url": "https://ir.chipotle.com/2026-08-26-CHIPOTLE-OFFERS-FREE-DOUBLE-PROTEIN-ON-AUGUST-27-TO-CELEBRATE-CHIPOTLE-HONEY-CHICKENS-FINAL-WEEK",
+      "checkedOn": "2026-08-27"
+    },
+    "actionLabel": "Use code PROTEIN today",
+    "tier": "A",
+    "stackNote": "Do not assume this combines with other coupons or the Sundays code.",
+    "finePrint": "Valid August 27, 2026 only for one free double protein portion (meat or Sofritas) on one full-priced burrito, bowl, or salad. Code PROTEIN required once per eligible digital transaction. App or Chipotle.com only; not valid in-restaurant or on third-party delivery. Not valid on High Protein Cup sides, tacos, quesadillas, or kids meals. Mixed protein orders charge the higher-priced protein. No dollar value is estimated because the local double-protein upcharge was not verified.",
+    "expirationLabel": "Today only, August 27",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-27",
+    "preferenceSignals": [
+      "one-day",
+      "app-specific",
+      "time-sensitive",
+      "free-food"
+    ]
+  },
+  {
+    "id": "krispy-kreme-pumpkin-spice-five-dollar-dozen-2026-08-27",
+    "merchant": "Krispy Kreme",
+    "title": "$5 Pumpkin Spice or Original Glazed dozen with any dozen",
+    "summary": "From August 27 through August 30, buy any regular-price dozen or 16-count Minis and get a Pumpkin Spice Original Glazed dozen or standard Original Glazed dozen for $5 at participating shops.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-08-30",
+    "locationNote": "Participating U.S. and Canadian Krispy Kreme shops only. The official Texas directory lists a Humble shop, but proximity and offer participation for a practical 77386 trip are not confirmed.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "doughnuts",
+      "pumpkin spice",
+      "five-dollar",
+      "limited window",
+      "promo code"
+    ],
+    "source": {
+      "label": "Krispy Kreme official Pumpkin Spice offer page",
+      "url": "https://www.krispykreme.com/offers/pumpkin-spice",
+      "checkedOn": "2026-08-27"
+    },
+    "actionLabel": "Check $5 dozen offer",
+    "tier": "A",
+    "stackNote": "Official terms do not state stacking with other coupons; treat as exclusive unless checkout shows otherwise.",
+    "finePrint": "Offer window is August 27-30, 2026. Buy any dozen or 16-count Minis at regular price to get a Pumpkin Spice Original Glazed dozen or standard Original Glazed dozen for $5. Limit 2 in-shop or drive-thru; limit 1 online for pickup or delivery. Online orders use promo code BOGO5. Not offered in Puerto Rico. No dollar savings estimate is shown because the regular local dozen price and practical participating shop were not verified.",
+    "expirationLabel": "Through August 30",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-08-27",
+    "preferenceSignals": [
+      "restaurant",
+      "time-sensitive",
+      "high-value"
     ]
   }
 ]
