@@ -344,7 +344,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -387,7 +387,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -429,7 +429,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -468,7 +468,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Check current chili offer",
     "tier": "A",
@@ -688,50 +688,6 @@
     ]
   },
   {
-    "id": "heb-avocados-free-organic-greens-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free organic greens with a 5-count avocado bag",
-    "summary": "Buy one qualifying five-count bag of H-E-B Hass avocados and get a five-ounce H-E-B Organics spring mix or baby spinach free.",
-    "category": "grocery",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-01",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, prices, and inventory are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "produce",
-      "avocados",
-      "salad greens",
-      "free item",
-      "digital coupon",
-      "location-gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84063692",
-      "checkedOn": "2026-08-26"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only if the avocado bag is already a good unit-price fit; confirm the coupon and any price cut in the selected Spring store.",
-    "finePrint": "Requires one qualifying five-count H-E-B Hass avocado bag and provides one qualifying five-ounce H-E-B Organics spring mix or baby spinach. The page displays 'Expires Tuesday' during the August 26 check, which is September 1. No dollar value is estimated because the public page is bound to Victoria rather than a verified Spring store.",
-    "expirationLabel": "Ends September 1",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-08-26",
-    "preferenceSignals": [
-      "grocery",
-      "staple",
-      "free-item",
-      "coupon-stack",
-      "location-gated"
-    ]
-  },
-  {
     "id": "heb-crackers-free-storage-bags-2026-09",
     "merchant": "H-E-B",
     "title": "Free snack or sandwich bags with 3 cracker bags",
@@ -755,7 +711,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84055356",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -798,7 +754,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84038788",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -841,7 +797,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84047476",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -852,6 +808,47 @@
     "dealType": "digital-coupon",
     "freshness": "new",
     "discoveredOn": "2026-08-26",
+    "preferenceSignals": [
+      "household-staple",
+      "high-value",
+      "coupon-stack",
+      "location-gated"
+    ]
+  },
+  {
+    "id": "heb-five-off-fifteen-dove-body-care-2026-09",
+    "merchant": "H-E-B",
+    "title": "$5 off $15 in select Dove body-care items",
+    "summary": "Clip the H-E-B coupon for $5 off a $15 basket of qualifying Dove or Dove Men+Care body wash, bar soap, hand soap, or deodorant items.",
+    "category": "home",
+    "estimatedSavings": 5,
+    "minimumSpend": 15,
+    "savingsRate": 33.3,
+    "isFree": false,
+    "expiresOn": "2026-09-01",
+    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, product eligibility, inventory, and prices are not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "household essentials",
+      "personal care",
+      "digital coupon",
+      "location-gated"
+    ],
+    "source": {
+      "label": "H-E-B official coupon list",
+      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
+      "checkedOn": "2026-08-28"
+    },
+    "actionLabel": "Check eligible basket",
+    "tier": "A",
+    "stackNote": "The 33.3% rate is reached at exactly $15; compare unit prices and confirm any item price cuts combine before checkout.",
+    "finePrint": "Requires a $15 qualifying basket of Dove or Dove Men+Care body wash, bar soap, hand soap, or deodorant. Hair, baby, lotion, and trial or travel items are excluded. The official page displayed 'Expires Tuesday' on August 28, which is September 1, and listed unlimited use. The offer remains location-gated until it appears for a selected Spring-area store.",
+    "expirationLabel": "Ends September 1",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-08-28",
     "preferenceSignals": [
       "household-staple",
       "high-value",
@@ -882,7 +879,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84050511",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -925,7 +922,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84054890",
-      "checkedOn": "2026-08-26"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -1858,7 +1855,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-28"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1874,50 +1871,6 @@
       "restaurant",
       "app-specific",
       "time-sensitive"
-    ]
-  },
-  {
-    "id": "chipotle-free-double-protein-2026-08-27",
-    "merchant": "Chipotle",
-    "title": "Free double protein with code PROTEIN",
-    "summary": "On Thursday August 27 only, guests in the U.S. and Canada can receive one free double protein portion on a full-priced burrito, bowl, or salad when ordering through the Chipotle app or website with code PROTEIN.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-08-27",
-    "availableDaysOfWeek": [
-      4
-    ],
-    "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; Spring-area participation was not confirmed in this public scan.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "one-day",
-      "free protein",
-      "promo code",
-      "app",
-      "Honey Chicken"
-    ],
-    "source": {
-      "label": "Chipotle official investor newsroom",
-      "url": "https://ir.chipotle.com/2026-08-26-CHIPOTLE-OFFERS-FREE-DOUBLE-PROTEIN-ON-AUGUST-27-TO-CELEBRATE-CHIPOTLE-HONEY-CHICKENS-FINAL-WEEK",
-      "checkedOn": "2026-08-27"
-    },
-    "actionLabel": "Use code PROTEIN today",
-    "tier": "A",
-    "stackNote": "Do not assume this combines with other coupons or the Sundays code.",
-    "finePrint": "Valid August 27, 2026 only for one free double protein portion (meat or Sofritas) on one full-priced burrito, bowl, or salad. Code PROTEIN required once per eligible digital transaction. App or Chipotle.com only; not valid in-restaurant or on third-party delivery. Not valid on High Protein Cup sides, tacos, quesadillas, or kids meals. Mixed protein orders charge the higher-priced protein. No dollar value is estimated because the local double-protein upcharge was not verified.",
-    "expirationLabel": "Today only, August 27",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-08-27",
-    "preferenceSignals": [
-      "one-day",
-      "app-specific",
-      "time-sensitive",
-      "free-food"
     ]
   },
   {

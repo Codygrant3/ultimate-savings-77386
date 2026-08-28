@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { ScoredOpportunity } from "../types";
 import { DEFAULT_WEEKLY_PLAN_SETTINGS } from "../lib/plan";
 import { WeeklyPlanner } from "./WeeklyPlanner";
@@ -57,7 +57,15 @@ function renderPlanner(redeemedIds: string[] = []) {
 }
 
 describe("WeeklyPlanner execution controls", () => {
-  afterEach(cleanup);
+  beforeEach(() => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-08-26T12:00:00"));
+  });
+
+  afterEach(() => {
+    cleanup();
+    vi.useRealTimers();
+  });
 
   it("saves a selected plan deal without removing it from the plan", () => {
     renderPlanner();
