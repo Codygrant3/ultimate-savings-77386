@@ -108,7 +108,7 @@
     "source": {
       "label": "McDonald's official deals",
       "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check first-order offer",
     "tier": "A",
@@ -124,6 +124,47 @@
       "free-food",
       "new-member",
       "app-specific"
+    ]
+  },
+  {
+    "id": "mcdonalds-weekly-two-dollar-breakfast-sandwich-2026",
+    "merchant": "McDonald's",
+    "title": "$2 breakfast sandwich once weekly",
+    "summary": "McDonald's Rewards members can choose an eligible breakfast sandwich for $2 once per week in the app through October 4.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 2,
+    "isFree": false,
+    "expiresOn": "2026-10-04",
+    "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "breakfast",
+      "$2 deal",
+      "weekly",
+      "app"
+    ],
+    "source": {
+      "label": "McDonald's official deals",
+      "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+      "checkedOn": "2026-08-29"
+    },
+    "actionLabel": "Check $2 breakfast offer",
+    "tier": "A",
+    "stackNote": "Use this app offer by itself unless checkout expressly permits another deal.",
+    "stackGroup": "mcdonalds-app-offer",
+    "finePrint": "Available once per week through October 4, 2026, in the McDonald's app at participating restaurants. The official page names the Sausage, Egg & Cheese McGriddles, Bacon, Egg & Cheese Biscuit, Egg McMuffin, and additional eligible choices. Delivery is excluded, Rewards enrollment is required, and local participation may vary. No dollar savings estimate is shown because regular Spring-area sandwich prices were not verified.",
+    "expirationLabel": "Ends October 4",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-08-29",
+    "preferenceSignals": [
+      "restaurant",
+      "breakfast",
+      "app-specific",
+      "low-price"
     ]
   },
   {
@@ -148,7 +189,7 @@
     "source": {
       "label": "McDonald's official deals",
       "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check weekly fries offer",
     "tier": "A",
@@ -344,7 +385,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -387,7 +428,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -429,7 +470,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -468,7 +509,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check current chili offer",
     "tier": "A",
@@ -711,7 +752,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84055356",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -754,7 +795,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84038788",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -797,7 +838,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84047476",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -838,7 +879,7 @@
     "source": {
       "label": "H-E-B official coupon list",
       "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -879,7 +920,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84050511",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -922,7 +963,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84054890",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -1254,7 +1295,7 @@
     "source": {
       "label": "JoVi Coffee official site",
       "url": "https://joviroasters.com/",
-      "checkedOn": "2026-08-11"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Review local shop",
     "tier": "C",
@@ -1329,7 +1370,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Review eligibility",
     "tier": "A",
@@ -1345,46 +1386,6 @@
       "vehicle-maintenance",
       "local-high-value",
       "eligibility-gated"
-    ]
-  },
-  {
-    "id": "costa-oil-rayford-diesel-ten-off-2026",
-    "merchant": "Costa Oil Rayford",
-    "title": "$10 off a diesel full-synthetic oil change",
-    "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
-    "category": "auto",
-    "estimatedSavings": 10,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-12-31",
-    "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "oil change",
-      "diesel",
-      "full synthetic",
-      "local coupon"
-    ],
-    "source": {
-      "label": "Costa Oil Rayford specials",
-      "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-08-27"
-    },
-    "actionLabel": "Review diesel coupon",
-    "tier": "A",
-    "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
-    "stackGroup": "costa-oil-coupon",
-    "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
-    "expirationLabel": "Ends December 31",
-    "availability": "available",
-    "dealType": "vehicle-maintenance",
-    "freshness": "new",
-    "discoveredOn": "2026-08-22",
-    "preferenceSignals": [
-      "vehicle-maintenance",
-      "local-high-value",
-      "fixed-dollar-coupon"
     ]
   },
   {
@@ -1649,7 +1650,7 @@
     "source": {
       "label": "Dairy Queen official newsroom",
       "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Kicking-Off-Fall-Flavor-Season-with-the-NEW-Caramel-Apple-Cheesecake-BLIZZARD-Treat-and-More-Seasonal-Treats-Coming-Soon-/default.aspx",
-      "checkedOn": "2026-08-24"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check Double Flip offer",
     "tier": "A",
@@ -1697,7 +1698,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",
@@ -1737,7 +1738,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Watch for a win code",
     "tier": "B",
@@ -1767,7 +1768,7 @@
     "isFree": false,
     "expiresOn": "2026-10-27",
     "locationNote": "The offer is limited to participating 7-Eleven, Speedway, and Stripes stores; the Birnham Woods 77386 store has not been confirmed for this meal deal.",
-    "verification": "needs-check",
+    "verification": "verified",
     "friction": "low",
     "tags": [
       "meal deal",
@@ -1777,7 +1778,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1805,7 +1806,7 @@
     "isFree": false,
     "expiresOn": "2026-10-27",
     "locationNote": "Participating 7-Eleven, Speedway, and Stripes stores; the Birnham Woods 77386 store has not been confirmed for this meal deal.",
-    "verification": "needs-check",
+    "verification": "verified",
     "friction": "low",
     "tags": [
       "meal deal",
@@ -1816,7 +1817,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1825,7 +1826,7 @@
     "expirationLabel": "Ends October 27",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "improved",
     "discoveredOn": "2026-08-26",
     "preferenceSignals": [
       "convenience-reward",
@@ -1855,7 +1856,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-28"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1896,7 +1897,7 @@
     "source": {
       "label": "Krispy Kreme official Pumpkin Spice offer page",
       "url": "https://www.krispykreme.com/offers/pumpkin-spice",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-29"
     },
     "actionLabel": "Check $5 dozen offer",
     "tier": "A",
