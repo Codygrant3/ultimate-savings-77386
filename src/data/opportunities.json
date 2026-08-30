@@ -385,7 +385,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -428,7 +428,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -470,7 +470,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -486,45 +486,6 @@
       "free-food",
       "weekday",
       "app-specific"
-    ]
-  },
-  {
-    "id": "wendys-free-small-chili-current-2026",
-    "merchant": "Wendy's",
-    "title": "Free small chili with $5 purchase",
-    "summary": "Wendy's official offers page again lists a free small chili with a $5 qualifying purchase.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 5,
-    "isFree": true,
-    "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free food",
-      "chili",
-      "app",
-      "qualifying purchase"
-    ],
-    "source": {
-      "label": "Wendy's official offers page",
-      "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-29"
-    },
-    "actionLabel": "Check current chili offer",
-    "tier": "A",
-    "stackNote": "Use one app offer per order; Wendy's says coupons may not be combined.",
-    "stackGroup": "wendys-app-order",
-    "finePrint": "Requires a $5 qualifying purchase while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No end date or local chili price is published, so confirm the loaded offer before ordering and no dollar estimate is shown.",
-    "expirationLabel": "While listed in the app",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "improved",
-    "discoveredOn": "2026-08-26",
-    "preferenceSignals": [
-      "free-food",
-      "app-specific",
-      "local-restaurant"
     ]
   },
   {
@@ -752,7 +713,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84055356",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -795,7 +756,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84038788",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
@@ -838,7 +799,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84047476",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -877,9 +838,9 @@
       "location-gated"
     ],
     "source": {
-      "label": "H-E-B official coupon list",
-      "url": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedOn": "2026-08-29"
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84055491",
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -920,7 +881,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84050511",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -963,7 +924,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84054890",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
@@ -1330,7 +1291,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/texas/spring/30083/",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -1370,7 +1331,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Review eligibility",
     "tier": "A",
@@ -1386,6 +1347,46 @@
       "vehicle-maintenance",
       "local-high-value",
       "eligibility-gated"
+    ]
+  },
+  {
+    "id": "costa-oil-rayford-diesel-ten-off-2026",
+    "merchant": "Costa Oil Rayford",
+    "title": "$10 off a diesel full-synthetic oil change",
+    "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
+    "category": "auto",
+    "estimatedSavings": 10,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-12-31",
+    "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "oil change",
+      "diesel",
+      "full synthetic",
+      "local coupon"
+    ],
+    "source": {
+      "label": "Costa Oil Rayford specials",
+      "url": "https://spring-rayford.costaoils.com/specials",
+      "checkedOn": "2026-08-30"
+    },
+    "actionLabel": "Review diesel coupon",
+    "tier": "A",
+    "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
+    "stackGroup": "costa-oil-coupon",
+    "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
+    "expirationLabel": "Ends December 31",
+    "availability": "available",
+    "dealType": "vehicle-maintenance",
+    "freshness": "improved",
+    "discoveredOn": "2026-08-30",
+    "preferenceSignals": [
+      "vehicle-maintenance",
+      "local-high-value",
+      "fixed-dollar-coupon"
     ]
   },
   {
@@ -1650,7 +1651,7 @@
     "source": {
       "label": "Dairy Queen official newsroom",
       "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Kicking-Off-Fall-Flavor-Season-with-the-NEW-Caramel-Apple-Cheesecake-BLIZZARD-Treat-and-More-Seasonal-Treats-Coming-Soon-/default.aspx",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check Double Flip offer",
     "tier": "A",
@@ -1698,7 +1699,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",
@@ -1738,7 +1739,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Watch for a win code",
     "tier": "B",
@@ -1897,7 +1898,7 @@
     "source": {
       "label": "Krispy Kreme official Pumpkin Spice offer page",
       "url": "https://www.krispykreme.com/offers/pumpkin-spice",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-08-30"
     },
     "actionLabel": "Check $5 dozen offer",
     "tier": "A",
