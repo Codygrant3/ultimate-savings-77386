@@ -87,46 +87,6 @@
     ]
   },
   {
-    "id": "mcdonalds-free-big-mac-new-app-user-2026",
-    "merchant": "McDonald's",
-    "title": "Free Big Mac with $1+ first app purchase",
-    "summary": "First-time McDonald's app users can get a free Big Mac with a purchase of at least $1 through the end of the month.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 1,
-    "isFree": true,
-    "expiresOn": "2026-08-31",
-    "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free food",
-      "new member",
-      "app",
-      "$1 purchase"
-    ],
-    "source": {
-      "label": "McDonald's official deals",
-      "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-08-29"
-    },
-    "actionLabel": "Check first-order offer",
-    "tier": "A",
-    "stackNote": "Use this offer by itself unless the app checkout expressly permits another deal.",
-    "stackGroup": "mcdonalds-app-offer",
-    "finePrint": "For first-time app users on a first order through the McDonald's app at participating U.S. restaurants. Requires a minimum $1 purchase and Rewards enrollment. The offer may take up to 48 hours to appear and excludes delivery. One redemption through August 31, 2026. No dollar value is estimated because the local Big Mac price was not verified.",
-    "expirationLabel": "Ends August 31",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "new",
-    "discoveredOn": "2026-08-23",
-    "preferenceSignals": [
-      "free-food",
-      "new-member",
-      "app-specific"
-    ]
-  },
-  {
     "id": "mcdonalds-weekly-two-dollar-breakfast-sandwich-2026",
     "merchant": "McDonald's",
     "title": "$2 breakfast sandwich once weekly",
@@ -204,6 +164,47 @@
     "preferenceSignals": [
       "free-food",
       "repeatable",
+      "app-specific"
+    ]
+  },
+  {
+    "id": "mcdonalds-free-snack-wrap-new-app-user-2026-09",
+    "merchant": "McDonald's",
+    "title": "Free Ranch or Spicy Snack Wrap with $1+ first app purchase",
+    "summary": "The official McDonald's deals page now advertises a free Ranch or Spicy Snack Wrap on a first $1+ purchase for new app users, replacing the August free Big Mac new-user offer.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 1,
+    "isFree": true,
+    "expiresOn": "2026-09-30",
+    "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free food",
+      "new member",
+      "app",
+      "$1 purchase"
+    ],
+    "source": {
+      "label": "McDonald's official deals",
+      "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+      "checkedOn": "2026-09-01"
+    },
+    "actionLabel": "Check first-order offer",
+    "tier": "A",
+    "stackNote": "Use this offer by itself unless the app checkout expressly permits another deal.",
+    "stackGroup": "mcdonalds-app-offer",
+    "stackStatus": "exclusive",
+    "finePrint": "Official deals page copy: new app users can start with a free Ranch or Spicy Snack Wrap on a first purchase of $1+ when they download the app. Offer valid 1x thru the last day of the month for new app users at participating McDonald's. May take up to 48 hours to appear in deals. Excludes tax. Must opt in to Rewards. Direct page fetch timed out on 2026-09-01; evidence is the indexed official deals page. No dollar value is estimated because the local Snack Wrap price was not verified.",
+    "expirationLabel": "New-app-user offer through September 30",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-01",
+    "preferenceSignals": [
+      "free-food",
+      "new-member",
       "app-specific"
     ]
   },
@@ -385,7 +386,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -428,7 +429,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -470,7 +471,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -548,7 +549,7 @@
     "source": {
       "label": "7REWARDS Fuel",
       "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Review fuel offer",
     "tier": "A",
@@ -588,7 +589,7 @@
     "source": {
       "label": "7REWARDS Fuel",
       "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-      "checkedOn": "2026-08-17"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Review SMS fuel offer",
     "tier": "A",
@@ -628,7 +629,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+ official offer FAQ",
       "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check app eligibility",
     "tier": "A",
@@ -699,7 +700,7 @@
     "minimumSpend": 0,
     "isFree": true,
     "expiresOn": "2026-09-08",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible bag size, inventory, and prices are not locally confirmed.",
+    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
     "verification": "verified",
     "friction": "low",
     "tags": [
@@ -707,29 +708,27 @@
       "snacks",
       "storage bags",
       "free item",
-      "digital coupon",
-      "location-gated"
+      "digital coupon"
     ],
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84055356",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
     "stackNote": "Use only if the three-bag cracker pack fits the grocery plan; confirm the selected Spring store carries the coupon and free-item size.",
-    "finePrint": "Requires the three-count 10-ounce H-E-B Lone Star Cheddar Crackers pack and provides one qualifying H-E-B Texas Tough snack or sandwich bag box, 50 to 100 count. The official page lists unlimited use through September 8. No dollar value is estimated because the public page is location-gated to Victoria.",
+    "finePrint": "Requires the three-count 10-ounce H-E-B Lone Star Cheddar Crackers pack and provides one qualifying H-E-B Texas Tough snack or sandwich bag box, 50 to 100 count. Spring Creek Market public page on 2026-09-01 showed 'Expires 9/8/2026, Unlimited use.' No dollar value is estimated because the bag box price was not recorded on the coupon page. Clip requires an account; this scan did not clip.",
     "expirationLabel": "Ends September 8",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-26",
     "preferenceSignals": [
       "grocery",
       "staple",
       "free-item",
-      "coupon-stack",
-      "location-gated"
+      "coupon-stack"
     ]
   },
   {
@@ -742,7 +741,7 @@
     "minimumSpend": 0,
     "isFree": true,
     "expiresOn": "2026-09-08",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, eligible varieties, inventory, and prices are not locally confirmed.",
+    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
     "verification": "verified",
     "friction": "low",
     "tags": [
@@ -750,29 +749,27 @@
       "bread",
       "beans",
       "free item",
-      "digital coupon",
-      "location-gated"
+      "digital coupon"
     ],
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84038788",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check and clip coupon",
     "tier": "A",
     "stackNote": "Use only when buns and beans are both planned; confirm both products and the coupon in the selected Spring store.",
-    "finePrint": "Requires one qualifying eight-count Mrs Baird's hot dog or hamburger buns package and provides one qualifying Bush's Best baked or Grillin' Beans item, 21.7 to 28 ounces. The official page lists unlimited use through September 8. No dollar value is estimated because the public page is location-gated to Victoria.",
+    "finePrint": "Requires one qualifying eight-count Mrs Baird's hot dog or hamburger buns package and provides one qualifying Bush's Best baked or Grillin' Beans item, 21.7 to 28 ounces. Spring Creek Market public page on 2026-09-01 showed 'Expires 9/8/2026, Unlimited use.' No dollar value is estimated because the qualifying beans price was not recorded on the coupon page. Clip requires an account; this scan did not clip.",
     "expirationLabel": "Ends September 8",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-26",
     "preferenceSignals": [
       "grocery",
       "staple",
       "free-item",
-      "coupon-stack",
-      "location-gated"
+      "coupon-stack"
     ]
   },
   {
@@ -786,35 +783,33 @@
     "savingsRate": 33.3,
     "isFree": false,
     "expiresOn": "2026-09-08",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, product eligibility, inventory, and prices are not locally confirmed.",
+    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
     "verification": "verified",
     "friction": "low",
     "tags": [
       "household essentials",
       "personal care",
       "cleaning",
-      "digital coupon",
-      "location-gated"
+      "digital coupon"
     ],
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84047476",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
     "stackNote": "The 33.3% rate is reached at exactly $18; compare unit prices and confirm any item price cuts combine before checkout.",
-    "finePrint": "Requires an $18 qualifying basket and is limited to one use per customer through September 8. Colgate Base items are excluded. The fixed $6 coupon is defensible, but the offer remains location-gated until it appears for a selected Spring-area store.",
+    "finePrint": "Requires an $18 qualifying basket and is limited to one use per customer through September 8. Colgate Base items are excluded. Spring Creek Market public page on 2026-09-01 showed 'Expires 9/8/2026, Limit 1 per customer.' Clip requires an account; this scan did not clip.",
     "expirationLabel": "Ends September 8",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-26",
     "preferenceSignals": [
       "household-staple",
       "high-value",
-      "coupon-stack",
-      "location-gated"
+      "coupon-stack"
     ]
   },
   {
@@ -828,34 +823,32 @@
     "savingsRate": 33.3,
     "isFree": false,
     "expiresOn": "2026-09-01",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, product eligibility, inventory, and prices are not locally confirmed.",
+    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
     "verification": "verified",
     "friction": "low",
     "tags": [
       "household essentials",
       "personal care",
-      "digital coupon",
-      "location-gated"
+      "digital coupon"
     ],
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84055491",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
     "stackNote": "The 33.3% rate is reached at exactly $15; compare unit prices and confirm any item price cuts combine before checkout.",
-    "finePrint": "Requires a $15 qualifying basket of Dove or Dove Men+Care body wash, bar soap, hand soap, or deodorant. Hair, baby, lotion, and trial or travel items are excluded. The official page displayed 'Expires Tuesday' on August 28, which is September 1, and listed unlimited use. The offer remains location-gated until it appears for a selected Spring-area store.",
-    "expirationLabel": "Ends September 1",
+    "finePrint": "Requires a $15 qualifying basket of Dove or Dove Men+Care body wash, bar soap, hand soap, or deodorant. Hair, baby, lotion, and trial or travel items are excluded. Spring Creek Market public page on 2026-09-01 showed 'Expires today, Unlimited use.' Clip requires an account; this scan did not clip.",
+    "expirationLabel": "Ends today, September 1",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-28",
     "preferenceSignals": [
       "household-staple",
       "high-value",
-      "coupon-stack",
-      "location-gated"
+      "coupon-stack"
     ]
   },
   {
@@ -869,34 +862,32 @@
     "savingsRate": 25,
     "isFree": false,
     "expiresOn": "2026-09-01",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, product eligibility, inventory, and prices are not locally confirmed.",
+    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
     "verification": "verified",
     "friction": "low",
     "tags": [
       "laundry",
       "household essentials",
-      "digital coupon",
-      "location-gated"
+      "digital coupon"
     ],
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84050511",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
     "stackNote": "The 25% rate is reached at exactly $20; compare per-load pricing and confirm any item price cuts combine before checkout.",
-    "finePrint": "Requires a $20 qualifying Arm & Hammer basket. The page displays 'Expires Tuesday' during the August 26 check, which is September 1, and lists unlimited use. The fixed $5 coupon is defensible, but the offer remains location-gated until it appears for a selected Spring-area store.",
-    "expirationLabel": "Ends September 1",
+    "finePrint": "Requires a $20 qualifying Arm & Hammer detergent, Power Paks, Power Sheets, scent boosters, rinse, or dryer-sheets basket. Spring Creek Market public page on 2026-09-01 showed 'Expires today, Unlimited use.' Clip requires an account; this scan did not clip.",
+    "expirationLabel": "Ends today, September 1",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-26",
     "preferenceSignals": [
       "household-staple",
       "high-value",
-      "coupon-stack",
-      "location-gated"
+      "coupon-stack"
     ]
   },
   {
@@ -910,7 +901,7 @@
     "savingsRate": 25,
     "isFree": false,
     "expiresOn": "2026-09-15",
-    "locationNote": "The public coupon page is set to Victoria H-E-B plus!; Spring-area coupon availability, product eligibility, inventory, and prices are not locally confirmed.",
+    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
     "verification": "verified",
     "friction": "low",
     "tags": [
@@ -918,28 +909,26 @@
       "nuts",
       "trail mix",
       "snacks",
-      "digital coupon",
-      "location-gated"
+      "digital coupon"
     ],
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84054890",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check eligible basket",
     "tier": "A",
     "stackNote": "The 25% rate is reached at exactly $8; compare price per ounce and confirm any item-level price cuts combine before checkout.",
-    "finePrint": "Requires an $8 qualifying basket and is listed as unlimited use through September 15. The fixed $2 coupon is defensible, but the offer remains location-gated until it appears for a selected Spring-area store.",
+    "finePrint": "Requires an $8 qualifying basket of H-E-B, Higher Harvest, H-E-B Organics, H-E-B Mi Tienda, or Hill Country Fare trail mixes or nuts. Spring Creek Market public page on 2026-09-01 showed 'Expires 9/15/2026, Unlimited use.' Clip requires an account; this scan did not clip.",
     "expirationLabel": "Ends September 15",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-26",
     "preferenceSignals": [
       "grocery",
       "staple",
-      "coupon-stack",
-      "location-gated"
+      "coupon-stack"
     ]
   },
   {
@@ -1031,7 +1020,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+",
       "url": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Review rewards",
     "tier": "B",
@@ -1139,7 +1128,7 @@
     "source": {
       "label": "Dunkin official newsroom",
       "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check local $6 deal",
     "tier": "A",
@@ -1155,6 +1144,49 @@
       "preferred-coffee",
       "local-offer",
       "meal-deal"
+    ]
+  },
+  {
+    "id": "dunkin-4x-any-beverage-2026-09-01",
+    "merchant": "Dunkin",
+    "title": "4x Rewards points on any beverage today",
+    "summary": "Dunkin Rewards members can earn 4x points on any beverage purchase on September 1, 2026.",
+    "category": "coffee",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-09-01",
+    "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participating-store and app-activation status are not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "coffee",
+      "rewards",
+      "bonus points",
+      "app",
+      "same-day"
+    ],
+    "source": {
+      "label": "Dunkin official newsroom",
+      "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
+      "checkedOn": "2026-09-01"
+    },
+    "actionLabel": "Activate 4x in app",
+    "tier": "A",
+    "distanceMiles": 2.8,
+    "stackNote": "Official terms say the bonus cannot be combined with any other offer, promotion, or coupon.",
+    "stackGroup": "dunkin-rewards-offer",
+    "stackStatus": "exclusive",
+    "finePrint": "Offer valid 9/01/2026. Single-use per member. Valid at participating US Dunkin stores by Dunkin Rewards members who order ahead in the Dunkin App, scan their Dunkin Rewards ID at checkout, or pay with an enrolled Dunkin card. Bonus points are provided on base points only. No substitutions. No cash refunds. Cannot be combined with any other offer, promotion or coupon. Activate in the app before ordering. No dollar value is estimated because local beverage prices and remaining point-redemption value were not verified.",
+    "expirationLabel": "Today only, September 1",
+    "availability": "available",
+    "dealType": "loyalty-reward",
+    "freshness": "new",
+    "discoveredOn": "2026-09-01",
+    "preferenceSignals": [
+      "preferred-coffee",
+      "app-specific",
+      "time-sensitive"
     ]
   },
   {
@@ -1291,7 +1323,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/texas/spring/30083/",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -1331,7 +1363,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Review eligibility",
     "tier": "A",
@@ -1371,7 +1403,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Review diesel coupon",
     "tier": "A",
@@ -1410,7 +1442,7 @@
     "source": {
       "label": "Rainbow Car Care frequent wash program",
       "url": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Review wash program",
     "tier": "A",
@@ -1453,16 +1485,16 @@
     "source": {
       "label": "AMC Stubs midweek discount",
       "url": "https://www.amctheatres.com/50pct-off-tuesdays-and-wednesdays",
-      "checkedOn": "2026-08-22"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "View discount",
     "tier": "A",
     "stackNote": "The $4.44 estimate counts only the minimum published small-combo savings; the separate ticket discount can add value.",
-    "finePrint": "AMC Stubs membership is required. The ticket discount applies to the adult evening base price, limit 10 tickets per show date. The in-theatre small combo normally costs $8.88 to $15.58 and is also 50% off. Premium formats, special events, taxes, and convenience fees are excluded or can add cost.",
+    "finePrint": "AMC Stubs membership is required, including the free Insider tier. The ticket discount applies to the adult evening base price for Tuesday and Wednesday showtimes at participating locations, limit 10 tickets per show date. The in-theatre small combo normally costs $8.88 to $15.58 and is also 50% off; items must be purchased together. Premium formats, special events, taxes, and convenience fees are excluded or can add cost. Confirmed on the official AMC page on 2026-09-01.",
     "expirationLabel": "Tuesdays + Wednesdays",
     "availability": "program",
     "dealType": "movie-discount",
-    "freshness": "improved",
+    "freshness": "current",
     "discoveredOn": "2026-07-23",
     "preferenceSignals": [
       "movie-discount",
@@ -1551,8 +1583,8 @@
   {
     "id": "astros-2026-promotion-calendar",
     "merchant": "Houston Astros",
-    "title": "$1 Hot Dog Night on Tuesday home games",
-    "summary": "The Astros official fan-value page states that every Tuesday night at Daikin Park is Dollar Dog Night. The dated August 18 home game has passed; later Tuesday home games remain a program fact.",
+    "title": "$1 Hot Dog Night and Hello Kitty Night, Sept 1",
+    "summary": "Tonight's Astros home game vs the White Sox at Daikin Park, 7:10 p.m. CT, is listed as Hello Kitty Night with a Hello Kitty plush keychain giveaway (10,000 fans) and Dollar Dog Night. A valid game ticket is required.",
     "category": "sports",
     "estimatedSavings": 4,
     "minimumSpend": 0,
@@ -1572,13 +1604,13 @@
     "source": {
       "label": "Houston Astros official $1 Hot Dog Night page",
       "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-      "checkedOn": "2026-08-23"
+      "checkedOn": "2026-09-01"
     },
-    "actionLabel": "Review promotions",
+    "actionLabel": "Review tonight's promotions",
     "tier": "B",
     "stackNote": "Pair a promotion with an already-planned game; never buy a ticket solely for a low-value giveaway.",
-    "finePrint": "A valid game ticket is required. Giveaways are limited, may require early arrival, and can change. Do not buy a ticket solely for this promotion. The August 18 dated listing has expired.",
-    "expirationLabel": "Tuesday home games",
+    "finePrint": "Official Hello Kitty Night page lists Tuesday, September 1 at Daikin Park. Official Dollar Dog Night page lists Tuesday Sep 1, 7:10 p.m. CT. Gate giveaways are for ticketed fans only, one item per ticketed fan while supplies last. VIP and tumbler add-ons are paid extras, not free. Do not buy a ticket solely for the hot-dog or giveaway promotion.",
+    "expirationLabel": "Tonight, September 1, 7:10 p.m. CT",
     "availability": "program",
     "dealType": "sports-ticket",
     "freshness": "current",
@@ -1587,7 +1619,8 @@
       "sports-ticket",
       "local-team",
       "promotion-event"
-    ]
+    ],
+    "expiresOn": "2026-09-01"
   },
   {
     "id": "houston-dynamo-dash-first-time-fan-free-tickets-2026",
@@ -1629,51 +1662,10 @@
     ]
   },
   {
-    "id": "dq-double-flip-blizzard-2026-08",
-    "merchant": "Dairy Queen",
-    "title": "Second Blizzard Treat for 99 cents",
-    "summary": "DQ Rewards members can buy one Blizzard Treat and get a second for 99 cents once per day through August 30.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-08-30",
-    "locationNote": "DQ app and Rewards account required at participating U.S. locations; Spring-area participation and menu prices are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "dessert",
-      "app",
-      "rewards",
-      "buy one get one",
-      "daily"
-    ],
-    "source": {
-      "label": "Dairy Queen official newsroom",
-      "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Kicking-Off-Fall-Flavor-Season-with-the-NEW-Caramel-Apple-Cheesecake-BLIZZARD-Treat-and-More-Seasonal-Treats-Coming-Soon-/default.aspx",
-      "checkedOn": "2026-08-30"
-    },
-    "actionLabel": "Check Double Flip offer",
-    "tier": "A",
-    "stackNote": "Use the loaded DQ app deal by itself unless checkout expressly permits another reward.",
-    "finePrint": "Available August 3-30 at participating U.S. locations. A DQ Rewards account is required, and the deal may take up to 24 hours to appear. Redeemable once per day. No dollar estimate is shown because regular local Blizzard prices and participating Spring locations were not publicly verified.",
-    "expirationLabel": "Ends August 30",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-08-21",
-    "preferenceSignals": [
-      "restaurant",
-      "app-specific",
-      "repeatable",
-      "high-value"
-    ]
-  },
-  {
     "id": "chipotle-sundays-free-entree-2026",
     "merchant": "Chipotle",
     "title": "Free entree with code SUNDAYS after 3 p.m.",
-    "summary": "On Sundays August 23, August 30, and September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS.",
+    "summary": "On Sunday September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS. August 23 and August 30 dates have passed.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -1699,16 +1691,16 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",
     "stackNote": "Use code SUNDAYS on a same-day digital order after 3 p.m. Do not assume it combines with other coupons.",
     "finePrint": "Valid 8/23/26, 8/30/26, and 9/6/26. One free entree with purchase of at least two other entrees. Chipotle.com and mobile app only. Redemption subject to availability. No dollar value is estimated because local entree prices were not verified.",
-    "expirationLabel": "Aug 23, Aug 30, and Sep 6 after 3 p.m.",
+    "expirationLabel": "Sep 6 after 3 p.m.",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-18",
     "preferenceSignals": [
       "app-specific",
@@ -1720,7 +1712,7 @@
     "id": "chipotle-fritz-win-bogo-2026",
     "merchant": "Chipotle",
     "title": "BOGO entree code drop after each Taylor Fritz win",
-    "summary": "After each Taylor Fritz men's singles win in New York, the first fans to text his Instagram Story code to 888-222 can receive a digital buy-one-get-one entree offer.",
+    "summary": "After each Taylor Fritz men's singles win in New York, the first fans to text his Instagram Story code to 888-222 can receive a digital buy-one-get-one entree offer. Round 1 vs Darwin Blanch is scheduled today 2026-09-01; no live code at morning scan.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -1739,7 +1731,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
-      "checkedOn": "2026-08-30"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Watch for a win code",
     "tier": "B",
@@ -1778,8 +1770,8 @@
     ],
     "source": {
       "label": "7-Eleven official press release",
-      "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-08-29"
+      "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1817,8 +1809,8 @@
     ],
     "source": {
       "label": "7-Eleven official press release",
-      "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-08-29"
+      "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1833,6 +1825,46 @@
       "convenience-reward",
       "time-sensitive",
       "local-station"
+    ]
+  },
+  {
+    "id": "seven-eleven-two-dollar-snacks-2026-09",
+    "merchant": "7-Eleven",
+    "title": "$2 select snacks and drinks Sept 4-14",
+    "summary": "From September 4 through September 14, 7Rewards and Speedy Rewards members can buy select snacks and drinks for $2 each, including 19.2-ounce Liquid Death tea, 16-ounce Reign and Bang, Kettle Brand chips, and single-serve Cheetos or Doritos.",
+    "category": "convenience",
+    "estimatedSavings": 0,
+    "minimumSpend": 2,
+    "isFree": false,
+    "expiresOn": "2026-09-14",
+    "locationNote": "Loyalty offer at participating 7-Eleven, Speedway, and Stripes stores. The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 is nearby, but participation is not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "snacks",
+      "drinks",
+      "loyalty",
+      "two-dollar"
+    ],
+    "source": {
+      "label": "7-Eleven official press release",
+      "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
+      "checkedOn": "2026-09-01"
+    },
+    "actionLabel": "Check $2 snack list",
+    "tier": "A",
+    "stackNote": "Loyalty membership is required. Do not assume this stacks with the separate $3 and $6 meal deals unless the app shows both.",
+    "stackGroup": "7rewards-in-store",
+    "finePrint": "Offer valid from 9/4/26 through 9/14/26 only for 7Rewards and Speedy Rewards members. Plus tax. No dollar savings estimate is shown because regular local prices for the listed items were not verified. Confirm the $2 price in the app or at the register before making a trip.",
+    "expirationLabel": "Sept 4-14",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-01",
+    "preferenceSignals": [
+      "convenience",
+      "loyalty-reward",
+      "time-sensitive"
     ]
   },
   {
@@ -1857,7 +1889,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-09-01"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1873,46 +1905,6 @@
       "restaurant",
       "app-specific",
       "time-sensitive"
-    ]
-  },
-  {
-    "id": "krispy-kreme-pumpkin-spice-five-dollar-dozen-2026-08-27",
-    "merchant": "Krispy Kreme",
-    "title": "$5 Pumpkin Spice or Original Glazed dozen with any dozen",
-    "summary": "From August 27 through August 30, buy any regular-price dozen or 16-count Minis and get a Pumpkin Spice Original Glazed dozen or standard Original Glazed dozen for $5 at participating shops.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-08-30",
-    "locationNote": "Participating U.S. and Canadian Krispy Kreme shops only. The official Texas directory lists a Humble shop, but proximity and offer participation for a practical 77386 trip are not confirmed.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "doughnuts",
-      "pumpkin spice",
-      "five-dollar",
-      "limited window",
-      "promo code"
-    ],
-    "source": {
-      "label": "Krispy Kreme official Pumpkin Spice offer page",
-      "url": "https://www.krispykreme.com/offers/pumpkin-spice",
-      "checkedOn": "2026-08-30"
-    },
-    "actionLabel": "Check $5 dozen offer",
-    "tier": "A",
-    "stackNote": "Official terms do not state stacking with other coupons; treat as exclusive unless checkout shows otherwise.",
-    "finePrint": "Offer window is August 27-30, 2026. Buy any dozen or 16-count Minis at regular price to get a Pumpkin Spice Original Glazed dozen or standard Original Glazed dozen for $5. Limit 2 in-shop or drive-thru; limit 1 online for pickup or delivery. Online orders use promo code BOGO5. Not offered in Puerto Rico. No dollar savings estimate is shown because the regular local dozen price and practical participating shop were not verified.",
-    "expirationLabel": "Through August 30",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-08-27",
-    "preferenceSignals": [
-      "restaurant",
-      "time-sensitive",
-      "high-value"
     ]
   }
 ]
