@@ -189,7 +189,7 @@
     "source": {
       "label": "McDonald's official deals",
       "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Check first-order offer",
     "tier": "A",
@@ -305,7 +305,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Review offer",
     "tier": "A",
@@ -344,7 +344,7 @@
     "source": {
       "label": "Shell Fuel Rewards",
       "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Opt in for race days",
     "tier": "A",
@@ -386,7 +386,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -429,7 +429,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -471,7 +471,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -487,6 +487,46 @@
       "free-food",
       "weekday",
       "app-specific"
+    ]
+  },
+  {
+    "id": "wendys-free-small-chili-2026-09",
+    "merchant": "Wendy's",
+    "title": "Free small chili with $5 purchase",
+    "summary": "Wendy's current official offers page lists a free small chili with a $5 qualifying purchase.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 5,
+    "isFree": true,
+    "locationNote": "App-only offer at participating U.S. Wendy's; availability at the selected Spring-area restaurant must be confirmed in the app.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free food",
+      "chili",
+      "app",
+      "qualifying purchase"
+    ],
+    "source": {
+      "label": "Wendy's official offers page",
+      "url": "https://www.wendys.com/offers-coupons",
+      "checkedOn": "2026-09-02"
+    },
+    "actionLabel": "Claim chili offer",
+    "tier": "A",
+    "stackNote": "Use one app offer per order because Wendy's says coupons may not be combined.",
+    "stackGroup": "wendys-app-order",
+    "stackStatus": "exclusive",
+    "finePrint": "Requires a $5 qualifying purchase while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No end date or dollar value is shown because the official page does not publish an expiration and the local chili price was not verified.",
+    "expirationLabel": "Limited time while listed",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-02",
+    "preferenceSignals": [
+      "free-food",
+      "app-specific",
+      "time-sensitive"
     ]
   },
   {
@@ -813,84 +853,6 @@
     ]
   },
   {
-    "id": "heb-five-off-fifteen-dove-body-care-2026-09",
-    "merchant": "H-E-B",
-    "title": "$5 off $15 in select Dove body-care items",
-    "summary": "Clip the H-E-B coupon for $5 off a $15 basket of qualifying Dove or Dove Men+Care body wash, bar soap, hand soap, or deodorant items.",
-    "category": "home",
-    "estimatedSavings": 5,
-    "minimumSpend": 15,
-    "savingsRate": 33.3,
-    "isFree": false,
-    "expiresOn": "2026-09-01",
-    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "household essentials",
-      "personal care",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84055491",
-      "checkedOn": "2026-09-01"
-    },
-    "actionLabel": "Check eligible basket",
-    "tier": "A",
-    "stackNote": "The 33.3% rate is reached at exactly $15; compare unit prices and confirm any item price cuts combine before checkout.",
-    "finePrint": "Requires a $15 qualifying basket of Dove or Dove Men+Care body wash, bar soap, hand soap, or deodorant. Hair, baby, lotion, and trial or travel items are excluded. Spring Creek Market public page on 2026-09-01 showed 'Expires today, Unlimited use.' Clip requires an account; this scan did not clip.",
-    "expirationLabel": "Ends today, September 1",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "current",
-    "discoveredOn": "2026-08-28",
-    "preferenceSignals": [
-      "household-staple",
-      "high-value",
-      "coupon-stack"
-    ]
-  },
-  {
-    "id": "heb-five-off-twenty-arm-hammer-2026-09",
-    "merchant": "H-E-B",
-    "title": "$5 off $20 in Arm & Hammer laundry items",
-    "summary": "Clip the H-E-B coupon for $5 off a $20 basket of qualifying Arm & Hammer detergent, Power Paks, Power Sheets, scent boosters, rinse, or dryer sheets.",
-    "category": "home",
-    "estimatedSavings": 5,
-    "minimumSpend": 20,
-    "savingsRate": 25,
-    "isFree": false,
-    "expiresOn": "2026-09-01",
-    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "laundry",
-      "household essentials",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84050511",
-      "checkedOn": "2026-09-01"
-    },
-    "actionLabel": "Check eligible basket",
-    "tier": "A",
-    "stackNote": "The 25% rate is reached at exactly $20; compare per-load pricing and confirm any item price cuts combine before checkout.",
-    "finePrint": "Requires a $20 qualifying Arm & Hammer detergent, Power Paks, Power Sheets, scent boosters, rinse, or dryer-sheets basket. Spring Creek Market public page on 2026-09-01 showed 'Expires today, Unlimited use.' Clip requires an account; this scan did not clip.",
-    "expirationLabel": "Ends today, September 1",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "current",
-    "discoveredOn": "2026-08-26",
-    "preferenceSignals": [
-      "household-staple",
-      "high-value",
-      "coupon-stack"
-    ]
-  },
-  {
     "id": "heb-two-off-eight-trail-mix-nuts-2026-09",
     "merchant": "H-E-B",
     "title": "$2 off $8 in H-E-B trail mix or nuts",
@@ -1020,7 +982,7 @@
     "source": {
       "label": "Exxon Mobil Rewards+",
       "url": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Review rewards",
     "tier": "B",
@@ -1147,15 +1109,18 @@
     ]
   },
   {
-    "id": "dunkin-4x-any-beverage-2026-09-01",
+    "id": "dunkin-mobile-mondays-2026-09",
     "merchant": "Dunkin",
-    "title": "4x Rewards points on any beverage today",
-    "summary": "Dunkin Rewards members can earn 4x points on any beverage purchase on September 1, 2026.",
+    "title": "100 bonus points on Mobile Mondays",
+    "summary": "Dunkin Rewards members can earn 100 bonus points when they activate the offer and order ahead in the app on September 7, 14, 21, or 28.",
     "category": "coffee",
     "estimatedSavings": 0,
     "minimumSpend": 0,
     "isFree": false,
-    "expiresOn": "2026-09-01",
+    "expiresOn": "2026-09-28",
+    "availableDaysOfWeek": [
+      1
+    ],
     "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participating-store and app-activation status are not locally confirmed.",
     "verification": "verified",
     "friction": "low",
@@ -1164,25 +1129,24 @@
       "rewards",
       "bonus points",
       "app",
-      "same-day"
+      "Monday"
     ],
     "source": {
       "label": "Dunkin official newsroom",
       "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
-    "actionLabel": "Activate 4x in app",
-    "tier": "A",
+    "actionLabel": "Activate on Monday",
+    "tier": "B",
     "distanceMiles": 2.8,
-    "stackNote": "Official terms say the bonus cannot be combined with any other offer, promotion, or coupon.",
+    "stackNote": "Activate the Mobile Monday offer before ordering; do not assume another coupon combines unless checkout allows it.",
     "stackGroup": "dunkin-rewards-offer",
-    "stackStatus": "exclusive",
-    "finePrint": "Offer valid 9/01/2026. Single-use per member. Valid at participating US Dunkin stores by Dunkin Rewards members who order ahead in the Dunkin App, scan their Dunkin Rewards ID at checkout, or pay with an enrolled Dunkin card. Bonus points are provided on base points only. No substitutions. No cash refunds. Cannot be combined with any other offer, promotion or coupon. Activate in the app before ordering. No dollar value is estimated because local beverage prices and remaining point-redemption value were not verified.",
-    "expirationLabel": "Today only, September 1",
+    "finePrint": "Valid each Monday from September 7 through September 28, limit 100 bonus points per member per Monday. The offer must be activated in the mobile app and earned on an eligible order-ahead purchase at a participating Dunkin store. No dollar value is estimated because the redemption value and local order price were not verified.",
+    "expirationLabel": "Mondays, September 7-28",
     "availability": "available",
     "dealType": "loyalty-reward",
     "freshness": "new",
-    "discoveredOn": "2026-09-01",
+    "discoveredOn": "2026-09-02",
     "preferenceSignals": [
       "preferred-coffee",
       "app-specific",
@@ -1323,7 +1287,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/texas/spring/30083/",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -1363,7 +1327,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Review eligibility",
     "tier": "A",
@@ -1403,7 +1367,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Review diesel coupon",
     "tier": "A",
@@ -1581,48 +1545,6 @@
     ]
   },
   {
-    "id": "astros-2026-promotion-calendar",
-    "merchant": "Houston Astros",
-    "title": "$1 Hot Dog Night and Hello Kitty Night, Sept 1",
-    "summary": "Tonight's Astros home game vs the White Sox at Daikin Park, 7:10 p.m. CT, is listed as Hello Kitty Night with a Hello Kitty plush keychain giveaway (10,000 fans) and Dollar Dog Night. A valid game ticket is required.",
-    "category": "sports",
-    "estimatedSavings": 4,
-    "minimumSpend": 0,
-    "isFree": false,
-    "availableDaysOfWeek": [
-      2
-    ],
-    "locationNote": "Daikin Park in Houston; count travel and parking before treating a promotion as savings.",
-    "verification": "verified",
-    "friction": "high",
-    "tags": [
-      "sports tickets",
-      "Dollar Dog Night",
-      "giveaway",
-      "promotion"
-    ],
-    "source": {
-      "label": "Houston Astros official $1 Hot Dog Night page",
-      "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-      "checkedOn": "2026-09-01"
-    },
-    "actionLabel": "Review tonight's promotions",
-    "tier": "B",
-    "stackNote": "Pair a promotion with an already-planned game; never buy a ticket solely for a low-value giveaway.",
-    "finePrint": "Official Hello Kitty Night page lists Tuesday, September 1 at Daikin Park. Official Dollar Dog Night page lists Tuesday Sep 1, 7:10 p.m. CT. Gate giveaways are for ticketed fans only, one item per ticketed fan while supplies last. VIP and tumbler add-ons are paid extras, not free. Do not buy a ticket solely for the hot-dog or giveaway promotion.",
-    "expirationLabel": "Tonight, September 1, 7:10 p.m. CT",
-    "availability": "program",
-    "dealType": "sports-ticket",
-    "freshness": "current",
-    "discoveredOn": "2026-07-23",
-    "preferenceSignals": [
-      "sports-ticket",
-      "local-team",
-      "promotion-event"
-    ],
-    "expiresOn": "2026-09-01"
-  },
-  {
     "id": "houston-dynamo-dash-first-time-fan-free-tickets-2026",
     "merchant": "Houston Dynamo FC + Houston Dash",
     "title": "Complimentary tickets for eligible first-time Houston fans",
@@ -1691,7 +1613,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",
@@ -1712,7 +1634,7 @@
     "id": "chipotle-fritz-win-bogo-2026",
     "merchant": "Chipotle",
     "title": "BOGO entree code drop after each Taylor Fritz win",
-    "summary": "After each Taylor Fritz men's singles win in New York, the first fans to text his Instagram Story code to 888-222 can receive a digital buy-one-get-one entree offer. Round 1 vs Darwin Blanch is scheduled today 2026-09-01; no live code at morning scan.",
+    "summary": "Taylor Fritz won his first-round match on September 1, triggering a limited Instagram Story code drop; current code availability is not publicly verified, and future win drops remain possible through September 8.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -1731,13 +1653,13 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Watch for a win code",
     "tier": "B",
     "stackNote": "Use the issued BOGO by itself; no stacking is assumed.",
     "stackGroup": "chipotle-promo-code",
-    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because the local entree price is unverified.",
+    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. The official US Open site confirms Fritz defeated Darwin Blanch on September 1. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because current code supply and the local entree price are unverified.",
     "expirationLabel": "Win-triggered drops through September 8 while codes last",
     "availability": "available",
     "dealType": "promotion-event",
@@ -1868,6 +1790,88 @@
     ]
   },
   {
+    "id": "krispy-kreme-labor-day-five-dollar-dozen-2026",
+    "merchant": "Krispy Kreme",
+    "title": "$5 Original Glazed dozen with any dozen",
+    "summary": "From Friday September 4 through Monday September 7, buy any dozen and get an Original Glazed dozen for $5 at participating Krispy Kreme shops.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-09-07",
+    "locationNote": "Participating Krispy Kreme shops only. The official Texas directory lists a Humble shop, but practical distance and offer participation for a 77386 trip are not confirmed.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "doughnuts",
+      "five-dollar",
+      "Labor Day",
+      "limited window"
+    ],
+    "source": {
+      "label": "Krispy Kreme official offers page",
+      "url": "https://www.krispykreme.com/offers",
+      "checkedOn": "2026-09-02"
+    },
+    "actionLabel": "Check $5 dozen offer",
+    "tier": "A",
+    "stackNote": "Treat the deal as exclusive unless the selected shop's checkout expressly allows another offer.",
+    "finePrint": "The official offer page lists Friday September 4 through Monday September 7. Buy any dozen, including the Pokemon Specialty Dozen, and get an Original Glazed dozen for $5. Participation and product availability apply. No dollar savings estimate is shown because the regular local dozen price and practical participating shop were not verified.",
+    "expirationLabel": "September 4-7",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-02",
+    "preferenceSignals": [
+      "restaurant",
+      "time-sensitive",
+      "high-value"
+    ]
+  },
+  {
+    "id": "mcdonalds-grubhub-first-order-ten-off-2026",
+    "merchant": "McDonald's + Grubhub",
+    "title": "$10 off $15+ for first-time Grubhub diners",
+    "summary": "First-time Grubhub diners can use code MCDS26 for $10 off a first McDonald's order with a subtotal of at least $15.",
+    "category": "restaurants",
+    "estimatedSavings": 10,
+    "minimumSpend": 15,
+    "savingsRate": 66.7,
+    "isFree": false,
+    "expiresOn": "2026-12-31",
+    "locationNote": "First-time Grubhub account and a participating McDonald's restaurant are required; Spring-area delivery availability is not publicly confirmed.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "restaurant",
+      "delivery",
+      "first order",
+      "promo code"
+    ],
+    "source": {
+      "label": "McDonald's official delivery page",
+      "url": "https://www.mcdonalds.com/us/en-us/food-delivery-near-me.html",
+      "checkedOn": "2026-09-02"
+    },
+    "actionLabel": "Compare delivered total",
+    "tier": "A",
+    "stackNote": "Compare the final delivered total against pickup; delivery prices, taxes, tips, and fees can erase part of the discount.",
+    "stackGroup": "mcdonalds-delivery-first-order",
+    "stackStatus": "exclusive",
+    "finePrint": "Use code MCDS26 once by December 31 at 11:59 p.m. local time. Available only to first-time Grubhub diners ordering from a participating McDonald's; the subtotal must be at least $15 before tax, tip, and fees. Prices may be higher than in the restaurant and delivery or other fees may apply. The $10 estimate counts only the published discount, not the net savings after fees.",
+    "expirationLabel": "Ends December 31",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-02",
+    "preferenceSignals": [
+      "restaurant",
+      "high-value",
+      "account-specific",
+      "delivery"
+    ]
+  },
+  {
     "id": "wendys-199-ten-piece-nuggets-2026",
     "merchant": "Wendy's",
     "title": "$1.99 10-piece nuggets with any purchase",
@@ -1889,7 +1893,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-02"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
