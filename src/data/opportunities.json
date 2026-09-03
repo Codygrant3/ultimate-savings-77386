@@ -1634,7 +1634,7 @@
     "id": "chipotle-fritz-win-bogo-2026",
     "merchant": "Chipotle",
     "title": "BOGO entree code drop after each Taylor Fritz win",
-    "summary": "Taylor Fritz won his first-round match on September 1, triggering a limited Instagram Story code drop; current code availability is not publicly verified, and future win drops remain possible through September 8.",
+    "summary": "Taylor Fritz won Round 1 on September 1 vs Darwin Blanch, triggering a limited Instagram Story code drop; Round 2 vs Mattia Bellucci is scheduled/upcoming September 3. Current code availability is not publicly verified, and future win drops remain possible through September 8 while limited codes last.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -1659,11 +1659,11 @@
     "tier": "B",
     "stackNote": "Use the issued BOGO by itself; no stacking is assumed.",
     "stackGroup": "chipotle-promo-code",
-    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. The official US Open site confirms Fritz defeated Darwin Blanch on September 1. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because current code supply and the local entree price are unverified.",
+    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. The official US Open site confirms Fritz defeated Darwin Blanch on September 1. Round 2 vs Mattia Bellucci is scheduled for September 3; a win is not claimed here. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because current code supply and the local entree price are unverified.",
     "expirationLabel": "Win-triggered drops through September 8 while codes last",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "improved",
     "discoveredOn": "2026-08-25",
     "preferenceSignals": [
       "free-food",
@@ -1771,7 +1771,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-03"
     },
     "actionLabel": "Check $2 snack list",
     "tier": "A",
@@ -1781,7 +1781,7 @@
     "expirationLabel": "Sept 4-14",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "improved",
     "discoveredOn": "2026-09-01",
     "preferenceSignals": [
       "convenience",
@@ -1811,7 +1811,7 @@
     "source": {
       "label": "Krispy Kreme official offers page",
       "url": "https://www.krispykreme.com/offers",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-03"
     },
     "actionLabel": "Check $5 dozen offer",
     "tier": "A",
@@ -1820,7 +1820,7 @@
     "expirationLabel": "September 4-7",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "improved",
     "discoveredOn": "2026-09-02",
     "preferenceSignals": [
       "restaurant",
@@ -1909,6 +1909,84 @@
       "restaurant",
       "app-specific",
       "time-sensitive"
+    ]
+  },
+  {
+    "id": "taco-bell-zero-delivery-fee-2026-09",
+    "merchant": "Taco Bell",
+    "title": "$0 delivery fee on $25+ orders through Sept 16",
+    "summary": "Taco Bell Rewards members can get a $0 delivery fee on app delivery orders of $25 or more (before taxes, tips, and fees) through September 16, one redemption per registered user per day.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 25,
+    "isFree": false,
+    "expiresOn": "2026-09-16",
+    "locationNote": "App delivery only at participating U.S. Taco Bell locations; delivery not available everywhere. Spring-area participation and delivery coverage must be confirmed in the app.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "delivery",
+      "app",
+      "rewards",
+      "zero delivery fee"
+    ],
+    "source": {
+      "label": "Taco Bell official fan-favorite promotions page",
+      "url": "https://www.tacobell.com/promotions/fan-favorite-voting",
+      "checkedOn": "2026-09-03"
+    },
+    "actionLabel": "Check $0 delivery offer",
+    "tier": "A",
+    "stackNote": "Delivery-only Rewards offer; cannot be combined with other offers. Colorado still has a state-mandated retail delivery fee.",
+    "finePrint": "Official terms: August 3, 2026 12:01 AM through September 16, 2026 11:59 PM. $25+ before taxes, tips, and fees on the Taco Bell app for delivery at participating U.S. locations while supplies last. Must be a registered Rewards member. Valid one time per registered user per day. Not valid in-store or pickup. No dollar savings estimate because the usual local delivery fee was not verified.",
+    "expirationLabel": "Ends September 16",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-03",
+    "preferenceSignals": [
+      "app-specific",
+      "delivery",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "astros-daikin-giveaways-2026-09-04-06",
+    "merchant": "Houston Astros",
+    "title": "Daikin Park weekend gate giveaways Sept 4-6",
+    "summary": "Home series vs Arizona Diamondbacks: Friday Sept 4 7:10 CT Orbit Foul Pole Bobblehead (first 10,000) plus First Bud Friday and Friday Night Fireworks; Saturday Sept 5 6:15 CT Bravo Night and Astros Retro Clear Purse (first 10,000); Sunday Sept 6 1:10 CT Yordan Alvarez Retro Football Jersey (first 10,000) plus Kids Run the Bases ages 5-12.",
+    "category": "sports",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-09-06",
+    "locationNote": "Daikin Park, Houston. Ticket required for gate giveaways while supplies last (stated first 10,000 for listed items).",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "Astros",
+      "giveaway",
+      "Daikin Park",
+      "ticket required"
+    ],
+    "source": {
+      "label": "Houston Astros official 2026 promotions page",
+      "url": "https://www.mlb.com/astros/tickets/promotions/2026",
+      "checkedOn": "2026-09-03"
+    },
+    "actionLabel": "Review Astros giveaways",
+    "tier": "A",
+    "stackNote": "A paid game ticket is required; giveaways are while supplies last and are not a free-admission offer.",
+    "finePrint": "Official MLB Astros promotions page lists: Sept 4 Orbit Foul Pole Bobblehead (10,000 fans), First Bud Friday, Friday Night Fireworks; Sept 5 Astros Retro Clear Purse (10,000 fans) and Bravo Night; Sept 6 Yordan Alvarez Retro Football Jersey (10,000 fans) and Kids Run the Bases (ages 5-12). Dates corroborated by Ticketmaster Astros promotions schedule. Ticket required; gate giveaways while supplies last. No dollar value is estimated because ticket price and giveaway retail value vary.",
+    "expirationLabel": "Series ends September 6",
+    "availability": "available",
+    "dealType": "sports-ticket",
+    "freshness": "new",
+    "discoveredOn": "2026-09-03",
+    "preferenceSignals": [
+      "sports-ticket",
+      "time-sensitive",
+      "local-team"
     ]
   }
 ]
