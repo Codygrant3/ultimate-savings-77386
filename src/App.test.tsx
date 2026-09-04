@@ -539,10 +539,10 @@ describe("Savings Desk interactions", () => {
       screen.getByRole("heading", { name: "Class action settlements" })
     ).toBeTruthy();
     expect(screen.getByText("Informational only — not legal advice")).toBeTruthy();
-    expect(screen.getAllByText("Eligibility not confirmed")).toHaveLength(7);
+    expect(screen.getAllByText("Eligibility not confirmed")).toHaveLength(6);
     expect(
       screen.getAllByRole("link", { name: "Open official claim form" })
-    ).toHaveLength(7);
+    ).toHaveLength(6);
     expect(screen.queryByRole("button", { name: /submit claim/i })).toBeNull();
 
     fireEvent.click(

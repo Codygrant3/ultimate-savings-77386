@@ -386,7 +386,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -429,7 +429,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -471,7 +471,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -1613,7 +1613,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",
@@ -1693,7 +1693,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1732,7 +1732,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-01"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1753,7 +1753,7 @@
     "id": "seven-eleven-two-dollar-snacks-2026-09",
     "merchant": "7-Eleven",
     "title": "$2 select snacks and drinks Sept 4-14",
-    "summary": "From September 4 through September 14, 7Rewards and Speedy Rewards members can buy select snacks and drinks for $2 each, including 19.2-ounce Liquid Death tea, 16-ounce Reign and Bang, Kettle Brand chips, and single-serve Cheetos or Doritos.",
+    "summary": "From September 4 through September 14, 7Rewards and Speedy Rewards members can buy select snacks and drinks for $2 each, including 19.2-ounce Liquid Death tea, 16-ounce Reign and Bang, Kettle Brand chips, and single-serve Cheetos or Doritos. Window opens today.",
     "category": "convenience",
     "estimatedSavings": 0,
     "minimumSpend": 2,
@@ -1771,7 +1771,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-03"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Check $2 snack list",
     "tier": "A",
@@ -1790,10 +1790,10 @@
     ]
   },
   {
-    "id": "krispy-kreme-labor-day-five-dollar-dozen-2026",
+    "id": "krispy-kreme-labor-day-two-dollar-dozen-2026",
     "merchant": "Krispy Kreme",
-    "title": "$5 Original Glazed dozen with any dozen",
-    "summary": "From Friday September 4 through Monday September 7, buy any dozen and get an Original Glazed dozen for $5 at participating Krispy Kreme shops.",
+    "title": "$2 Original Glazed dozen with any dozen",
+    "summary": "From Friday September 4 through Monday September 7, buy any dozen, including the Pokemon Specialty Dozen, and get an Original Glazed dozen for $2 at participating Krispy Kreme shops.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -1804,19 +1804,19 @@
     "friction": "medium",
     "tags": [
       "doughnuts",
-      "five-dollar",
+      "two-dollar",
       "Labor Day",
       "limited window"
     ],
     "source": {
       "label": "Krispy Kreme official offers page",
       "url": "https://www.krispykreme.com/offers",
-      "checkedOn": "2026-09-03"
+      "checkedOn": "2026-09-04"
     },
-    "actionLabel": "Check $5 dozen offer",
+    "actionLabel": "Check $2 dozen offer",
     "tier": "A",
     "stackNote": "Treat the deal as exclusive unless the selected shop's checkout expressly allows another offer.",
-    "finePrint": "The official offer page lists Friday September 4 through Monday September 7. Buy any dozen, including the Pokemon Specialty Dozen, and get an Original Glazed dozen for $5. Participation and product availability apply. No dollar savings estimate is shown because the regular local dozen price and practical participating shop were not verified.",
+    "finePrint": "Official Krispy Kreme offers page checked 2026-09-04 lists Friday 9/4 through Monday 9/7: buy any dozen, including the Pokemon Specialty Dozen, and get an Original Glazed dozen for $2. Corrects the prior $5 catalog wording. Participating U.S. shops and product availability apply. No dollar savings estimate is shown because the regular local dozen price and practical participating shop for a 77386 trip were not verified.",
     "expirationLabel": "September 4-7",
     "availability": "available",
     "dealType": "promotion-event",
@@ -1893,7 +1893,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1933,7 +1933,7 @@
     "source": {
       "label": "Taco Bell official fan-favorite promotions page",
       "url": "https://www.tacobell.com/promotions/fan-favorite-voting",
-      "checkedOn": "2026-09-03"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Check $0 delivery offer",
     "tier": "A",
@@ -1972,7 +1972,7 @@
     "source": {
       "label": "Houston Astros official 2026 promotions page",
       "url": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedOn": "2026-09-03"
+      "checkedOn": "2026-09-04"
     },
     "actionLabel": "Review Astros giveaways",
     "tier": "A",
@@ -1981,12 +1981,50 @@
     "expirationLabel": "Series ends September 6",
     "availability": "available",
     "dealType": "sports-ticket",
-    "freshness": "new",
+    "freshness": "improved",
     "discoveredOn": "2026-09-03",
     "preferenceSignals": [
       "sports-ticket",
       "time-sensitive",
       "local-team"
+    ]
+  },
+  {
+    "id": "taco-bell-salt-straw-churro-ice-cream-taco-2026",
+    "merchant": "Taco Bell",
+    "title": "Salt & Straw Churro Ice Cream Taco $3.99 LTO",
+    "summary": "Starting September 1, Taco Bell restaurants nationwide carry the Salt & Straw Churro Ice Cream Taco for $3.99 for a limited time while supplies last. A Salt & Straw Choco-Waffle Chiller is separate and Live Mas Cafe only.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 3.99,
+    "isFree": false,
+    "locationNote": "Official newsroom says nationwide at participating Taco Bell restaurants while supplies last (front counter, kiosk, or drive-thru). Spring-area inventory is not locally confirmed. Live Mas Cafe Chiller is limited to listed cafe markets including Houston, not a general 77386 Taco Bell claim.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "dessert",
+      "LTO",
+      "ice cream",
+      "Salt & Straw"
+    ],
+    "source": {
+      "label": "Taco Bell official newsroom Salt & Straw",
+      "url": "https://www.tacobell.com/newsroom/salt-and-straw",
+      "checkedOn": "2026-09-04"
+    },
+    "actionLabel": "Check ice cream taco availability",
+    "tier": "A",
+    "stackNote": "Menu LTO pricing is not a coupon; do not assume it stacks with Rewards offers unless checkout shows both.",
+    "finePrint": "Official Taco Bell newsroom 2026-09-01: Salt & Straw Churro Ice Cream Taco $3.99 at participating locations while supplies last; front counter, kiosk, or drive-thru; taxes extra; limit 5 per order and per person. No hard end date is published beyond while-supplies-last. Estimated savings is 0 because this is an LTO menu price, not a verified discount versus a prior local price. Tuesday Drop cooler sweepstakes on 9/8 is separate and not a savings offer.",
+    "expirationLabel": "While supplies last",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-04",
+    "preferenceSignals": [
+      "restaurant",
+      "time-sensitive",
+      "dessert"
     ]
   }
 ]
