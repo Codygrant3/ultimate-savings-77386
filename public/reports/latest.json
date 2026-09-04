@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T13:03:22.020Z",
+  "generatedAt": "2026-09-04T15:06:04.069Z",
   "weekOf": "2026-08-31",
   "zipCode": "77386",
-  "totalPotentialSavings": 161.99,
-  "verifiedCount": 47,
-  "expiringCount": 23,
+  "totalPotentialSavings": 171.99,
+  "verifiedCount": 50,
+  "expiringCount": 27,
   "opportunities": [
     {
       "id": "take5-rayford-15-off-oil-change-2026",
@@ -1343,6 +1343,220 @@
           "points": 8,
           "weight": 8,
           "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "dennys-diner-days-ten-off-thirty-2026-09",
+      "merchant": "Denny's",
+      "title": "$10 off $30 Sept 7-11",
+      "summary": "Denny's Rewards members can get $10 off an eligible check of $30 or more from September 7 through September 11.",
+      "category": "restaurants",
+      "estimatedSavings": 10,
+      "minimumSpend": 30,
+      "savingsRate": 33.3,
+      "isFree": false,
+      "expiresOn": "2026-09-11",
+      "availableDaysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "restaurant",
+        "ten dollars off",
+        "rewards",
+        "limited window"
+      ],
+      "source": {
+        "label": "Denny's official Diner Days terms",
+        "url": "https://dennys.com/diner-days",
+        "checkedOn": "2026-09-04"
+      },
+      "actionLabel": "Check Sept 7-11 reward",
+      "tier": "A",
+      "stackNote": "Rewards-member offer cannot be combined with another offer and excludes specified value-menu and discount categories.",
+      "stackGroup": "dennys-diner-days",
+      "stackStatus": "exclusive",
+      "finePrint": "Valid September 7 through September 11 until 11:59 p.m. PST for one redemption per Rewards member at participating U.S. locations. Dine-in or Denny's online ordering only; third-party delivery is excluded. Requires a $30 minimum purchase before taxes and gratuity. The $10 estimate is the published fixed discount.",
+      "expirationLabel": "September 7-11",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-09-04",
+      "preferenceSignals": [
+        "restaurant",
+        "high-value",
+        "account-specific",
+        "time-sensitive"
+      ],
+      "distanceBasis": "unknown",
+      "score": 66,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 14.639999999999999,
+          "weight": 24,
+          "detail": "$10.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 3.9959999999999996,
+          "weight": 6,
+          "detail": "33.3% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 8 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$30.00 required per $10.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "dennys-diner-days-bogo-dessert-2026-09-04",
+      "merchant": "Denny's",
+      "title": "Buy one dessert, get one free Sept 4",
+      "summary": "Denny's Rewards members can get a second dessert of equal or lesser value free with the purchase of any dessert and a $25 minimum purchase on Friday, September 4.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 25,
+      "savingsRate": 50,
+      "isFree": true,
+      "expiresOn": "2026-09-04",
+      "availableDaysOfWeek": [
+        5
+      ],
+      "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "restaurant",
+        "free dessert",
+        "rewards",
+        "one-day"
+      ],
+      "source": {
+        "label": "Denny's official Diner Days terms",
+        "url": "https://dennys.com/diner-days",
+        "checkedOn": "2026-09-04"
+      },
+      "actionLabel": "Check Denny's reward",
+      "tier": "A",
+      "stackNote": "Rewards-member offer cannot be combined with another offer and excludes specified value-menu and discount categories.",
+      "stackGroup": "dennys-diner-days",
+      "stackStatus": "exclusive",
+      "finePrint": "Valid September 4 only through 11:59 p.m. PST for one redemption per Rewards member at participating U.S. locations, dine-in or Denny's online ordering only. Third-party delivery is excluded. Requires any dessert plus a $25 minimum purchase; the free dessert must be equal or lesser value. No dollar estimate is shown because local dessert prices were not verified.",
+      "expirationLabel": "Today only",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-09-04",
+      "preferenceSignals": [
+        "free food",
+        "restaurant",
+        "account-specific",
+        "time-sensitive"
+      ],
+      "distanceBasis": "unknown",
+      "score": 66,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 6,
+          "weight": 6,
+          "detail": "50% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 10,
+          "weight": 10,
+          "detail": "Ends in 1 day; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$25.00 required per $0.00 saved"
         },
         {
           "label": "Stackability",
@@ -3796,6 +4010,110 @@
       ]
     },
     {
+      "id": "dennys-diner-days-half-off-dipper-2026-09-05",
+      "merchant": "Denny's",
+      "title": "50% off a Diner Dipper Sept 5",
+      "summary": "Denny's Rewards members can get 50% off one Diner Dipper with a $25 minimum purchase on Saturday, September 5.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 25,
+      "savingsRate": 50,
+      "isFree": false,
+      "expiresOn": "2026-09-05",
+      "availableDaysOfWeek": [
+        6
+      ],
+      "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "restaurant",
+        "half off",
+        "rewards",
+        "one-day"
+      ],
+      "source": {
+        "label": "Denny's official Diner Days terms",
+        "url": "https://dennys.com/diner-days",
+        "checkedOn": "2026-09-04"
+      },
+      "actionLabel": "Check Saturday reward",
+      "tier": "A",
+      "stackNote": "Rewards-member offer cannot be combined with another offer.",
+      "stackGroup": "dennys-diner-days",
+      "stackStatus": "exclusive",
+      "finePrint": "Valid September 5 only through 11:59 p.m. PST for one redemption per Rewards member at participating U.S. locations, dine-in or Denny's online ordering only. Third-party delivery is excluded. Requires a $25 minimum purchase. No dollar estimate is shown because the local Diner Dipper price was not verified.",
+      "expirationLabel": "Saturday only",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-09-04",
+      "preferenceSignals": [
+        "restaurant",
+        "account-specific",
+        "time-sensitive"
+      ],
+      "distanceBasis": "unknown",
+      "score": 53,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 6,
+          "weight": 6,
+          "detail": "50% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 10,
+          "weight": 10,
+          "detail": "Ends in 2 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$25.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "dunkin-six-dollar-meal-deal-rayford-2026",
       "merchant": "Dunkin",
       "title": "$6 Meal Deal with coffee, sandwich, and hash browns",
@@ -3894,108 +4212,6 @@
           "points": 0.8400000000000001,
           "weight": 7,
           "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
-      "id": "taco-bell-salt-straw-churro-ice-cream-taco-2026",
-      "merchant": "Taco Bell",
-      "title": "Salt & Straw Churro Ice Cream Taco $3.99 LTO",
-      "summary": "Starting September 1, Taco Bell restaurants nationwide carry the Salt & Straw Churro Ice Cream Taco for $3.99 for a limited time while supplies last. A Salt & Straw Choco-Waffle Chiller is separate and Live Mas Cafe only.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 3.99,
-      "isFree": false,
-      "locationNote": "Official newsroom says nationwide at participating Taco Bell restaurants while supplies last (front counter, kiosk, or drive-thru). Spring-area inventory is not locally confirmed. Live Mas Cafe Chiller is limited to listed cafe markets including Houston, not a general 77386 Taco Bell claim.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "dessert",
-        "LTO",
-        "ice cream",
-        "Salt & Straw"
-      ],
-      "source": {
-        "label": "Taco Bell official newsroom Salt & Straw",
-        "url": "https://www.tacobell.com/newsroom/salt-and-straw",
-        "checkedOn": "2026-09-04"
-      },
-      "actionLabel": "Check ice cream taco availability",
-      "tier": "A",
-      "stackNote": "Menu LTO pricing is not a coupon; do not assume it stacks with Rewards offers unless checkout shows both.",
-      "finePrint": "Official Taco Bell newsroom 2026-09-01: Salt & Straw Churro Ice Cream Taco $3.99 at participating locations while supplies last; front counter, kiosk, or drive-thru; taxes extra; limit 5 per order and per person. No hard end date is published beyond while-supplies-last. Estimated savings is 0 because this is an LTO menu price, not a verified discount versus a prior local price. Tuesday Drop cooler sweepstakes on 9/8 is separate and not a savings offer.",
-      "expirationLabel": "While supplies last",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-09-04",
-      "preferenceSignals": [
-        "restaurant",
-        "time-sensitive",
-        "dessert"
-      ],
-      "distanceMiles": 2.8,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 10,
-      "distanceSourceLabel": "Taco Bell official Rayford Road location page",
-      "distanceSourceUrl": "https://locations.tacobell.com/tx/spring/2681-rayford-rd.html",
-      "score": 50,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.2,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 5.5200000000000005,
-          "weight": 8,
-          "detail": "~2.8 miles to Taco Bell Rayford Road; location checked 10 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$3.99 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -4410,6 +4626,111 @@
           "points": 3.8500000000000005,
           "weight": 7,
           "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "dennys-diner-days-fifteen-percent-2026-09-06",
+      "merchant": "Denny's",
+      "title": "15% off dinner and late night Sept 6",
+      "summary": "Denny's Rewards members can get 15% off an eligible order from 4 p.m. to 4 a.m. with an $8 minimum purchase, up to $10 off, on Sunday, September 6.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 8,
+      "savingsRate": 15,
+      "isFree": false,
+      "expiresOn": "2026-09-06",
+      "availableDaysOfWeek": [
+        0
+      ],
+      "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "restaurant",
+        "dinner",
+        "late night",
+        "rewards",
+        "one-day"
+      ],
+      "source": {
+        "label": "Denny's official Diner Days terms",
+        "url": "https://dennys.com/diner-days",
+        "checkedOn": "2026-09-04"
+      },
+      "actionLabel": "Check Sunday reward",
+      "tier": "A",
+      "stackNote": "Rewards-member offer cannot be combined with another offer and excludes specified value-menu and discount categories.",
+      "stackGroup": "dennys-diner-days",
+      "stackStatus": "exclusive",
+      "finePrint": "Valid September 6 from 4 p.m. to 4 a.m., with an $8 minimum purchase and a $10 maximum discount, at participating U.S. locations. Dine-in or Denny's online ordering only; third-party delivery is excluded. No dollar estimate is shown because the qualifying local check total is unknown.",
+      "expirationLabel": "Sunday 4 p.m.-4 a.m.",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-09-04",
+      "preferenceSignals": [
+        "restaurant",
+        "account-specific",
+        "time-sensitive"
+      ],
+      "distanceBasis": "unknown",
+      "score": 48,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 1.7999999999999998,
+          "weight": 6,
+          "detail": "15% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 10,
+          "weight": 10,
+          "detail": "Ends in 3 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$8.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
         }
       ]
     },

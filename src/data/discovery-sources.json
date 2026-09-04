@@ -205,6 +205,14 @@
     "keywords": ["free", "minimum purchase", "rewards", "valid"]
   },
   {
+    "id": "dennys-diner-days",
+    "name": "Denny's official Diner Days",
+    "url": "https://dennys.com/diner-days",
+    "category": "restaurants",
+    "priority": 10,
+    "keywords": ["free", "off", "rewards members", "offer valid"]
+  },
+  {
     "id": "taco-bell-newsroom",
     "name": "Taco Bell official newsroom",
     "url": "https://www.tacobell.com/newsroom",

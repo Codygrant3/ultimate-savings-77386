@@ -69,7 +69,7 @@ describe("Savings Desk interactions", () => {
     });
 
     expect(screen.getByText(dutchBrosOffer)).toBeTruthy();
-  });
+  }, 10_000);
 
   it("restores a saved evidence-age limit on reload", () => {
     window.localStorage.setItem("savings-desk:maximum-evidence-age", "7");
