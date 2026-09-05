@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-04T15:06:01.500Z",
+  "generatedAt": "2026-09-05T15:08:08.696Z",
   "sourceCount": 32,
-  "successfulCount": 25,
-  "failedCount": 7,
+  "successfulCount": 26,
+  "failedCount": 6,
   "newOrImprovedCount": 0,
   "results": [
     {
@@ -18,10 +18,10 @@
         "off"
       ],
       "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "changed",
       "matchedKeywords": [],
-      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contentHash": "3066e138907f6bc82ce2437be78d13863e9c488b7ca814074f285c9d9d2837ac",
       "parsedOffers": []
     },
     {
@@ -37,7 +37,7 @@
         "circle"
       ],
       "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "weekly ad",
@@ -60,7 +60,7 @@
         "5x"
       ],
       "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -78,7 +78,7 @@
         "points"
       ],
       "canonicalUrl": "https://www.dutchbros.com/dutch-101",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free drink",
@@ -121,7 +121,7 @@
         "offer"
       ],
       "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [],
       "contentHash": "18180d80a048bdbbc9869e4a60c30d7eef65aff34e5ac23a5374d62a6916104a",
@@ -141,7 +141,7 @@
         "birthday"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -166,8 +166,8 @@
         "opening"
       ],
       "canonicalUrl": "https://joviroasters.com",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
-      "status": "changed",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
+      "status": "unchanged",
       "matchedKeywords": [
         "offer",
         "sale",
@@ -190,7 +190,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -213,7 +213,7 @@
         "offer"
       ],
       "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "per gallon",
@@ -238,7 +238,7 @@
         "exclusive deals"
       ],
       "canonicalUrl": "https://www.7-eleven.com/7rewards",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free snacks",
@@ -262,7 +262,7 @@
         "rewards"
       ],
       "canonicalUrl": "https://corp.7-eleven.com/corp/in-the-news",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "deal"
@@ -284,7 +284,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "coupon",
@@ -319,7 +319,7 @@
         "coupon"
       ],
       "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "oil change",
@@ -375,10 +375,62 @@
         "reward"
       ],
       "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
-      "status": "failed",
-      "matchedKeywords": [],
-      "error": "HTTP 404"
+      "checkedAt": "2026-09-05T15:08:08.696Z",
+      "status": "unchanged",
+      "matchedKeywords": [
+        "free",
+        "car wash",
+        "birthday"
+      ],
+      "contentHash": "3aaa6ebf3d428058b5330415a25c739ff9fddbc0e6c50c0f09efb0412ed86d99",
+      "title": "Frequent Wash Program - Rainbow Car Care",
+      "parsedOffers": [
+        {
+          "id": "rainbow-car-care-birthday-full-service-wash",
+          "sourceId": "rainbow-car-care",
+          "merchant": "Rainbow Car Care",
+          "title": "Free full-service car wash on your birthday",
+          "url": "https://rainbowcarcare.com/frequent-wash-program",
+          "amountText": "Free",
+          "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021"
+        },
+        {
+          "id": "rainbow-car-care-every-eleventh-full-service-car-wash",
+          "sourceId": "rainbow-car-care",
+          "merchant": "Rainbow Car Care",
+          "title": "Every 11th Full Service Car Wash is free",
+          "url": "https://rainbowcarcare.com/frequent-wash-program",
+          "amountText": "Free",
+          "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021"
+        },
+        {
+          "id": "rainbow-car-care-every-eleventh-woodlands-special-package",
+          "sourceId": "rainbow-car-care",
+          "merchant": "Rainbow Car Care",
+          "title": "Every 11th Woodlands Special Package is free",
+          "url": "https://rainbowcarcare.com/frequent-wash-program",
+          "amountText": "Free",
+          "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021"
+        },
+        {
+          "id": "rainbow-car-care-every-eleventh-texas-special-package",
+          "sourceId": "rainbow-car-care",
+          "merchant": "Rainbow Car Care",
+          "title": "Every 11th Texas Special Package is free",
+          "url": "https://rainbowcarcare.com/frequent-wash-program",
+          "amountText": "Free",
+          "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021"
+        },
+        {
+          "id": "rainbow-car-care-every-eleventh-express-service-or-detail",
+          "sourceId": "rainbow-car-care",
+          "merchant": "Rainbow Car Care",
+          "title": "Every 11th Express Service or Detail is free",
+          "url": "https://rainbowcarcare.com/frequent-wash-program",
+          "amountText": "Free",
+          "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021"
+        }
+      ]
     },
     {
       "id": "amc-offers",
@@ -393,7 +445,7 @@
         "stubs"
       ],
       "canonicalUrl": "https://www.amctheatres.com/offers",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -411,15 +463,15 @@
         "ticket"
       ],
       "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
-      "status": "unchanged",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
+      "status": "changed",
       "matchedKeywords": [
         "promotion",
         "dollar dog",
         "giveaway",
         "ticket"
       ],
-      "contentHash": "6430a5a66ef41894d52c445c551ce547610ca7ca075e9635c7c4a43d8e5e3b2b",
+      "contentHash": "fd2d0de12148a222ebe4c7d1f85dbd1280a864869333952ce8c90f7215b2f964",
       "title": "2026 Promotions | Houston Astros",
       "parsedOffers": []
     },
@@ -436,7 +488,7 @@
         "promotion"
       ],
       "canonicalUrl": "https://www.houstondynamofc.com/tickets",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "ticket",
@@ -459,7 +511,7 @@
         "backpacks"
       ],
       "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "sales tax holiday",
@@ -484,7 +536,7 @@
         "offer"
       ],
       "canonicalUrl": "https://news.dunkindonuts.com",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -507,7 +559,7 @@
         "offer valid"
       ],
       "canonicalUrl": "https://www.krispykreme.com/offers",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -530,7 +582,7 @@
         "rewards"
       ],
       "canonicalUrl": "https://www.wendys.com/offers-coupons",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -657,7 +709,7 @@
         "birthday reward"
       ],
       "canonicalUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "welcome reward",
@@ -682,7 +734,7 @@
         "offer"
       ],
       "canonicalUrl": "https://stories.whataburger.com",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -706,7 +758,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://about.starbucks.com/press",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -724,7 +776,7 @@
         "valid"
       ],
       "canonicalUrl": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -749,7 +801,7 @@
         "offer valid"
       ],
       "canonicalUrl": "https://dennys.com/diner-days",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -767,7 +819,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://www.tacobell.com/newsroom",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "rewards",
@@ -790,7 +842,7 @@
         "promo code"
       ],
       "canonicalUrl": "https://newsroom.chipotle.com/press-releases",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -814,7 +866,7 @@
         "cash payment"
       ],
       "canonicalUrl": "https://www.onlinetvsettlement.com",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -832,7 +884,7 @@
         "settlement class"
       ],
       "canonicalUrl": "https://landsenddatasettlement.com/faq",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "claim",
@@ -857,7 +909,7 @@
         "authorized by the court"
       ],
       "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -874,7 +926,7 @@
         "official settlement website"
       ],
       "canonicalUrl": "https://www.clarkcountydatasettlement.com",
-      "checkedAt": "2026-09-04T15:06:01.500Z",
+      "checkedAt": "2026-09-05T15:08:08.696Z",
       "status": "unchanged",
       "matchedKeywords": [
         "submit claim",
@@ -1022,6 +1074,86 @@
         "No minimum captured",
         "No expiration captured",
         "Source priority 10"
+      ]
+    },
+    {
+      "id": "rainbow-car-care-every-eleventh-express-service-or-detail",
+      "sourceId": "rainbow-car-care",
+      "merchant": "Rainbow Car Care",
+      "title": "Every 11th Express Service or Detail is free",
+      "url": "https://rainbowcarcare.com/frequent-wash-program",
+      "amountText": "Free",
+      "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021",
+      "candidateScore": 47,
+      "candidateReasons": [
+        "Free reward",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 9"
+      ]
+    },
+    {
+      "id": "rainbow-car-care-every-eleventh-full-service-car-wash",
+      "sourceId": "rainbow-car-care",
+      "merchant": "Rainbow Car Care",
+      "title": "Every 11th Full Service Car Wash is free",
+      "url": "https://rainbowcarcare.com/frequent-wash-program",
+      "amountText": "Free",
+      "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021",
+      "candidateScore": 47,
+      "candidateReasons": [
+        "Free reward",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 9"
+      ]
+    },
+    {
+      "id": "rainbow-car-care-every-eleventh-texas-special-package",
+      "sourceId": "rainbow-car-care",
+      "merchant": "Rainbow Car Care",
+      "title": "Every 11th Texas Special Package is free",
+      "url": "https://rainbowcarcare.com/frequent-wash-program",
+      "amountText": "Free",
+      "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021",
+      "candidateScore": 47,
+      "candidateReasons": [
+        "Free reward",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 9"
+      ]
+    },
+    {
+      "id": "rainbow-car-care-every-eleventh-woodlands-special-package",
+      "sourceId": "rainbow-car-care",
+      "merchant": "Rainbow Car Care",
+      "title": "Every 11th Woodlands Special Package is free",
+      "url": "https://rainbowcarcare.com/frequent-wash-program",
+      "amountText": "Free",
+      "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021",
+      "candidateScore": 47,
+      "candidateReasons": [
+        "Free reward",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 9"
+      ]
+    },
+    {
+      "id": "rainbow-car-care-birthday-full-service-wash",
+      "sourceId": "rainbow-car-care",
+      "merchant": "Rainbow Car Care",
+      "title": "Free full-service car wash on your birthday",
+      "url": "https://rainbowcarcare.com/frequent-wash-program",
+      "amountText": "Free",
+      "detail": "*(some restrictions apply &ndash; please call or see store for details) 318 Sawdust Rd, (281) 363-0021",
+      "candidateScore": 47,
+      "candidateReasons": [
+        "Free reward",
+        "No minimum captured",
+        "No expiration captured",
+        "Source priority 9"
       ]
     },
     {

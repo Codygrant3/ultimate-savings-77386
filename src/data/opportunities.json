@@ -813,6 +813,48 @@
     ]
   },
   {
+    "id": "heb-starbucks-frappuccino-free-quaker-oatmeal-2026-09",
+    "merchant": "H-E-B",
+    "title": "Free Quaker oatmeal with a Starbucks Frappuccino 4-pack",
+    "summary": "Buy one qualifying four-pack of 9.5-ounce Starbucks Frappuccino bottles and get one qualifying 8- to 10-count Quaker Instant Oatmeal box free.",
+    "category": "grocery",
+    "estimatedSavings": 2.97,
+    "minimumSpend": 7.78,
+    "savingsRate": 38.2,
+    "isFree": true,
+    "expiresOn": "2026-09-08",
+    "locationNote": "The official coupon page supports the terms and displayed prices, but its public store context was not confirmed as H-E-B Spring Creek Market in 77386. Clip requires an H-E-B account; this scan did not clip or log in.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "grocery",
+      "coffee",
+      "breakfast",
+      "free item",
+      "digital coupon"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84050061",
+      "checkedOn": "2026-08-30"
+    },
+    "actionLabel": "Confirm and clip coupon",
+    "tier": "A",
+    "stackNote": "Use only if both the bottled coffee and oatmeal are planned; confirm the coupon, prices, and qualifying varieties in the selected Spring store.",
+    "finePrint": "The official page snapshot checked August 30 listed the qualifying Starbucks Frappuccino four-pack at $7.78 and the qualifying Quaker oatmeal at $2.97, with a September 8 expiration and unlimited use. The $2.97 estimate and 38.2% rate use that page's displayed prices, not a confirmed Spring Creek Market price. Confirm the selected 77386 store, current prices, coupon availability, and package varieties before purchase.",
+    "expirationLabel": "Ends September 8",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-05",
+    "preferenceSignals": [
+      "grocery",
+      "coffee",
+      "free-item",
+      "coupon-stack"
+    ]
+  },
+  {
     "id": "heb-six-off-eighteen-household-essentials-2026-09",
     "merchant": "H-E-B",
     "title": "$6 off $18 in select household essentials",
@@ -1613,7 +1655,7 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Check Sundays code",
     "tier": "A",
@@ -1634,7 +1676,7 @@
     "id": "chipotle-fritz-win-bogo-2026",
     "merchant": "Chipotle",
     "title": "BOGO entree code drop after each Taylor Fritz win",
-    "summary": "Taylor Fritz won Round 1 on September 1 vs Darwin Blanch, triggering a limited Instagram Story code drop; Round 2 vs Mattia Bellucci is scheduled/upcoming September 3. Current code availability is not publicly verified, and future win drops remain possible through September 8 while limited codes last.",
+    "summary": "Taylor Fritz won Rounds 1 and 2, triggering limited Instagram Story code drops. He plays Francisco Cerundolo in Round 3 on September 5, so another first-come BOGO drop is possible today if he wins; current code inventory is not publicly verified.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -1653,14 +1695,14 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Watch for a win code",
     "tier": "B",
     "stackNote": "Use the issued BOGO by itself; no stacking is assumed.",
     "stackGroup": "chipotle-promo-code",
-    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. The official US Open site confirms Fritz defeated Darwin Blanch on September 1. Round 2 vs Mattia Bellucci is scheduled for September 3; a win is not claimed here. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because current code supply and the local entree price are unverified.",
-    "expirationLabel": "Win-triggered drops through September 8 while codes last",
+    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. Official US Open results confirm Fritz defeated Darwin Blanch on September 1 and Mattia Bellucci on September 3; the September 5 schedule lists his Round 3 match against Francisco Cerundolo. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because current code supply and the local entree price are unverified.",
+    "expirationLabel": "Possible win-triggered drop September 5; program ends September 8 or when codes run out",
     "availability": "available",
     "dealType": "promotion-event",
     "freshness": "improved",
@@ -1693,7 +1735,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1732,7 +1774,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Confirm at participating store",
     "tier": "B",
@@ -1771,7 +1813,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Check $2 snack list",
     "tier": "A",
@@ -1811,12 +1853,12 @@
     "source": {
       "label": "Krispy Kreme official offers page",
       "url": "https://www.krispykreme.com/offers",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Check $2 dozen offer",
     "tier": "A",
     "stackNote": "Treat the deal as exclusive unless the selected shop's checkout expressly allows another offer.",
-    "finePrint": "Official Krispy Kreme offers page checked 2026-09-04 lists Friday 9/4 through Monday 9/7: buy any dozen, including the Pokemon Specialty Dozen, and get an Original Glazed dozen for $2. Corrects the prior $5 catalog wording. Participating U.S. shops and product availability apply. No dollar savings estimate is shown because the regular local dozen price and practical participating shop for a 77386 trip were not verified.",
+    "finePrint": "Official Krispy Kreme offers page checked 2026-09-05 lists Friday 9/4 through Monday 9/7: buy any dozen, including the Pokemon Specialty Dozen, and get an Original Glazed dozen for $2. Participating U.S. shops and product availability apply. No dollar savings estimate is shown because the regular local dozen price and practical participating shop for a 77386 trip were not verified.",
     "expirationLabel": "September 4-7",
     "availability": "available",
     "dealType": "promotion-event",
@@ -1990,50 +2032,6 @@
     ]
   },
   {
-    "id": "dennys-diner-days-bogo-dessert-2026-09-04",
-    "merchant": "Denny's",
-    "title": "Buy one dessert, get one free Sept 4",
-    "summary": "Denny's Rewards members can get a second dessert of equal or lesser value free with the purchase of any dessert and a $25 minimum purchase on Friday, September 4.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 25,
-    "savingsRate": 50,
-    "isFree": true,
-    "expiresOn": "2026-09-04",
-    "availableDaysOfWeek": [5],
-    "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "restaurant",
-      "free dessert",
-      "rewards",
-      "one-day"
-    ],
-    "source": {
-      "label": "Denny's official Diner Days terms",
-      "url": "https://dennys.com/diner-days",
-      "checkedOn": "2026-09-04"
-    },
-    "actionLabel": "Check Denny's reward",
-    "tier": "A",
-    "stackNote": "Rewards-member offer cannot be combined with another offer and excludes specified value-menu and discount categories.",
-    "stackGroup": "dennys-diner-days",
-    "stackStatus": "exclusive",
-    "finePrint": "Valid September 4 only through 11:59 p.m. PST for one redemption per Rewards member at participating U.S. locations, dine-in or Denny's online ordering only. Third-party delivery is excluded. Requires any dessert plus a $25 minimum purchase; the free dessert must be equal or lesser value. No dollar estimate is shown because local dessert prices were not verified.",
-    "expirationLabel": "Today only",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "new",
-    "discoveredOn": "2026-09-04",
-    "preferenceSignals": [
-      "free food",
-      "restaurant",
-      "account-specific",
-      "time-sensitive"
-    ]
-  },
-  {
     "id": "dennys-diner-days-half-off-dipper-2026-09-05",
     "merchant": "Denny's",
     "title": "50% off a Diner Dipper Sept 5",
@@ -2057,7 +2055,7 @@
     "source": {
       "label": "Denny's official Diner Days terms",
       "url": "https://dennys.com/diner-days",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Check Saturday reward",
     "tier": "A",
@@ -2065,7 +2063,7 @@
     "stackGroup": "dennys-diner-days",
     "stackStatus": "exclusive",
     "finePrint": "Valid September 5 only through 11:59 p.m. PST for one redemption per Rewards member at participating U.S. locations, dine-in or Denny's online ordering only. Third-party delivery is excluded. Requires a $25 minimum purchase. No dollar estimate is shown because the local Diner Dipper price was not verified.",
-    "expirationLabel": "Saturday only",
+    "expirationLabel": "Today only",
     "availability": "available",
     "dealType": "promotion-event",
     "freshness": "new",
@@ -2101,7 +2099,7 @@
     "source": {
       "label": "Denny's official Diner Days terms",
       "url": "https://dennys.com/diner-days",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Check Sunday reward",
     "tier": "A",
@@ -2144,7 +2142,7 @@
     "source": {
       "label": "Denny's official Diner Days terms",
       "url": "https://dennys.com/diner-days",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-05"
     },
     "actionLabel": "Check Sept 7-11 reward",
     "tier": "A",
