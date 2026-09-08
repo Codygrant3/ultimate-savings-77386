@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T12:26:41.682Z",
+  "generatedAt": "2026-09-08T15:06:17.013Z",
   "weekOf": "2026-09-07",
   "zipCode": "77386",
   "totalPotentialSavings": 174.95999999999998,
@@ -2501,6 +2501,112 @@
       ]
     },
     {
+      "id": "mcdonalds-free-snack-wrap-new-app-user-2026-09",
+      "merchant": "McDonald's",
+      "title": "Free 10-piece McNuggets with $1+ first app purchase",
+      "summary": "The official McDonald's deals page now advertises a free 10-piece McNuggets order on a first $1+ purchase for new app users, replacing the earlier September Snack Wrap offer.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 1,
+      "isFree": true,
+      "expiresOn": "2026-09-30",
+      "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "10-piece nuggets",
+        "new member",
+        "app",
+        "$1 purchase"
+      ],
+      "source": {
+        "label": "McDonald's official deals",
+        "url": "https://www.mcdonalds.com/us/en-us/deals.html",
+        "checkedOn": "2026-09-08"
+      },
+      "actionLabel": "Check first-order offer",
+      "tier": "A",
+      "stackNote": "Use this offer by itself unless the app checkout expressly permits another deal.",
+      "stackGroup": "mcdonalds-app-offer",
+      "stackStatus": "exclusive",
+      "finePrint": "New app users can get one free 10-piece McNuggets order with a first purchase of $1 or more. Offer valid once through September 30 at participating McDonald's restaurants. It may take up to 48 hours to appear in the app; Rewards opt-in is required and tax is excluded. No dollar value is estimated because the local McNuggets price was not verified.",
+      "expirationLabel": "New-app-user offer through September 30",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-09-01",
+      "preferenceSignals": [
+        "free-food",
+        "new-member",
+        "app-specific"
+      ],
+      "distanceMiles": 2.8,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 14,
+      "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
+      "score": 60,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 5.5200000000000005,
+          "weight": 8,
+          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 14 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-09-30; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$1.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "whataburger-signup-free-burger-2026",
       "merchant": "Whataburger Rewards",
       "title": "Free Whataburger for new app members",
@@ -3214,111 +3320,6 @@
           "points": 7.000000000000001,
           "weight": 7,
           "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "mcdonalds-free-snack-wrap-new-app-user-2026-09",
-      "merchant": "McDonald's",
-      "title": "Free Ranch or Spicy Snack Wrap with $1+ first app purchase",
-      "summary": "The official McDonald's deals page now advertises a free Ranch or Spicy Snack Wrap on a first $1+ purchase for new app users, replacing the August free Big Mac new-user offer.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 1,
-      "isFree": true,
-      "expiresOn": "2026-09-30",
-      "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "new member",
-        "app",
-        "$1 purchase"
-      ],
-      "source": {
-        "label": "McDonald's official deals",
-        "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-        "checkedOn": "2026-09-02"
-      },
-      "actionLabel": "Check first-order offer",
-      "tier": "A",
-      "stackNote": "Use this offer by itself unless the app checkout expressly permits another deal.",
-      "stackGroup": "mcdonalds-app-offer",
-      "stackStatus": "exclusive",
-      "finePrint": "Official deals page copy: new app users can start with a free Ranch or Spicy Snack Wrap on a first purchase of $1+ when they download the app. Offer valid 1x thru the last day of the month for new app users at participating McDonald's. May take up to 48 hours to appear in deals. Excludes tax. Must opt in to Rewards. Direct page fetch timed out on 2026-09-01; evidence is the indexed official deals page. No dollar value is estimated because the local Snack Wrap price was not verified.",
-      "expirationLabel": "New-app-user offer through September 30",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "new",
-      "discoveredOn": "2026-09-01",
-      "preferenceSignals": [
-        "free-food",
-        "new-member",
-        "app-specific"
-      ],
-      "distanceMiles": 2.8,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 14,
-      "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
-      "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
-      "score": 57,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 5 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Household match: free food"
-        },
-        {
-          "label": "Local relevance",
-          "points": 5.5200000000000005,
-          "weight": 8,
-          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 14 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.1000000000000005,
-          "weight": 10,
-          "detail": "Ends 2026-09-30; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$1.00 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
         }
       ]
     },

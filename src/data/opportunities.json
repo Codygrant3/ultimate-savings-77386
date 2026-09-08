@@ -170,8 +170,8 @@
   {
     "id": "mcdonalds-free-snack-wrap-new-app-user-2026-09",
     "merchant": "McDonald's",
-    "title": "Free Ranch or Spicy Snack Wrap with $1+ first app purchase",
-    "summary": "The official McDonald's deals page now advertises a free Ranch or Spicy Snack Wrap on a first $1+ purchase for new app users, replacing the August free Big Mac new-user offer.",
+    "title": "Free 10-piece McNuggets with $1+ first app purchase",
+    "summary": "The official McDonald's deals page now advertises a free 10-piece McNuggets order on a first $1+ purchase for new app users, replacing the earlier September Snack Wrap offer.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 1,
@@ -182,6 +182,7 @@
     "friction": "low",
     "tags": [
       "free food",
+      "10-piece nuggets",
       "new member",
       "app",
       "$1 purchase"
@@ -189,14 +190,14 @@
     "source": {
       "label": "McDonald's official deals",
       "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Check first-order offer",
     "tier": "A",
     "stackNote": "Use this offer by itself unless the app checkout expressly permits another deal.",
     "stackGroup": "mcdonalds-app-offer",
     "stackStatus": "exclusive",
-    "finePrint": "Official deals page copy: new app users can start with a free Ranch or Spicy Snack Wrap on a first purchase of $1+ when they download the app. Offer valid 1x thru the last day of the month for new app users at participating McDonald's. May take up to 48 hours to appear in deals. Excludes tax. Must opt in to Rewards. Direct page fetch timed out on 2026-09-01; evidence is the indexed official deals page. No dollar value is estimated because the local Snack Wrap price was not verified.",
+    "finePrint": "New app users can get one free 10-piece McNuggets order with a first purchase of $1 or more. Offer valid once through September 30 at participating McDonald's restaurants. It may take up to 48 hours to appear in the app; Rewards opt-in is required and tax is excluded. No dollar value is estimated because the local McNuggets price was not verified.",
     "expirationLabel": "New-app-user offer through September 30",
     "availability": "available",
     "dealType": "free-food",
