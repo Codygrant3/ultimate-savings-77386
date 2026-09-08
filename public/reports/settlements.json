@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-05T15:08:08.696Z",
-  "checkedOn": "2026-09-05",
+  "generatedAt": "2026-09-08T12:26:39.894Z",
+  "checkedOn": "2026-09-08",
   "openCount": 6,
   "settlements": [
     {
@@ -19,10 +19,10 @@
       "administrator": "Court-approved settlement administrator",
       "court": "U.S. District Court, Northern District of California",
       "verification": "court-authorized-notice",
-      "checkedOn": "2026-09-05",
+      "checkedOn": "2026-09-08",
       "freshness": "current",
       "relevanceScore": 88,
-      "relevanceReason": "Broad consumer subscription category; confirm service, dates, and state coverage.",
+      "relevanceReason": "Claim deadline is today September 8; confirm service, dates, and state coverage. This scan did not submit a claim.",
       "feeRequired": false,
       "eligibilityStatus": "user-confirmation-required"
     },
@@ -42,7 +42,7 @@
       "administrator": "Settlement Administrator supervised by Class Counsel",
       "court": "U.S. District Court, Southern District of New York, 22-MD-3050 (KPF)",
       "verification": "official-administrator",
-      "checkedOn": "2026-09-05",
+      "checkedOn": "2026-09-08",
       "freshness": "current",
       "relevanceScore": 42,
       "relevanceReason": "Relevant only if the household paid for Chantix during 2015-2021.",

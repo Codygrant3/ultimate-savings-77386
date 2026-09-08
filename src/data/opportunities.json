@@ -268,7 +268,7 @@
     "source": {
       "label": "Whataburger official newsroom",
       "url": "https://stories.whataburger.com/value-more-for-4/",
-      "checkedOn": "2026-08-25"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Check local $4 menu",
     "tier": "B",
@@ -386,7 +386,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -396,7 +396,7 @@
     "expirationLabel": "Ends September 10",
     "availability": "available",
     "dealType": "stacking-strategy",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-09",
     "preferenceSignals": [
       "restaurant",
@@ -429,7 +429,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -471,7 +471,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -510,7 +510,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Claim chili offer",
     "tier": "A",
@@ -1176,7 +1176,7 @@
     "source": {
       "label": "Dunkin official newsroom",
       "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-      "checkedOn": "2026-09-02"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Activate on Monday",
     "tier": "B",
@@ -1626,57 +1626,10 @@
     ]
   },
   {
-    "id": "chipotle-sundays-free-entree-2026",
-    "merchant": "Chipotle",
-    "title": "Free entree with code SUNDAYS after 3 p.m.",
-    "summary": "On Sunday September 6, guests who order two or more entrees after 3 p.m. local time on the Chipotle app or website can receive a free entree with code SUNDAYS. August 23 and August 30 dates have passed.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-06",
-    "availableDaysOfWeek": [
-      0
-    ],
-    "redemptionTimeWindows": [
-      {
-        "startTime": "15:00"
-      }
-    ],
-    "locationNote": "Digital only at participating Chipotle restaurants in the U.S. and Canada; 77386 participation was not confirmed in this public scan.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "app",
-      "free food",
-      "Sunday",
-      "promo code"
-    ],
-    "source": {
-      "label": "Chipotle official newsroom",
-      "url": "https://newsroom.chipotle.com/2026-08-17-CHIPOTLE-CELEBRATES-BACK-TO-SCHOOL-SEASON-WITH-SCHOOL-SPIRIT-BOGO-AND-CHIPOTLE-SUNDAYS-DEAL",
-      "checkedOn": "2026-09-05"
-    },
-    "actionLabel": "Check Sundays code",
-    "tier": "A",
-    "stackNote": "Use code SUNDAYS on a same-day digital order after 3 p.m. Do not assume it combines with other coupons.",
-    "finePrint": "Valid 8/23/26, 8/30/26, and 9/6/26. One free entree with purchase of at least two other entrees. Chipotle.com and mobile app only. Redemption subject to availability. No dollar value is estimated because local entree prices were not verified.",
-    "expirationLabel": "Sep 6 after 3 p.m.",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "current",
-    "discoveredOn": "2026-08-18",
-    "preferenceSignals": [
-      "app-specific",
-      "time-sensitive",
-      "free-food"
-    ]
-  },
-  {
     "id": "chipotle-fritz-win-bogo-2026",
     "merchant": "Chipotle",
     "title": "BOGO entree code drop after each Taylor Fritz win",
-    "summary": "Taylor Fritz won Rounds 1 and 2, triggering limited Instagram Story code drops. He plays Francisco Cerundolo in Round 3 on September 5, so another first-come BOGO drop is possible today if he wins; current code inventory is not publicly verified.",
+    "summary": "Taylor Fritz US Open win-triggered BOGO Instagram Story codes ran August 25 through September 8. Official program ends today or when remaining codes are claimed; current live code inventory is not publicly verified.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -1695,17 +1648,17 @@
     "source": {
       "label": "Chipotle official newsroom",
       "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
-      "checkedOn": "2026-09-05"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Watch for a win code",
     "tier": "B",
     "stackNote": "Use the issued BOGO by itself; no stacking is assumed.",
     "stackGroup": "chipotle-promo-code",
-    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. Official US Open results confirm Fritz defeated Darwin Blanch on September 1 and Mattia Bellucci on September 3; the September 5 schedule lists his Round 3 match against Francisco Cerundolo. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed. No dollar value is estimated because current code supply and the local entree price are unverified.",
-    "expirationLabel": "Possible win-triggered drop September 5; program ends September 8 or when codes run out",
+    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed today. No dollar value is estimated because current code supply and the local entree price are unverified.",
+    "expirationLabel": "Program ends September 8 or when codes run out",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "improved",
+    "freshness": "current",
     "discoveredOn": "2026-08-25",
     "preferenceSignals": [
       "free-food",
@@ -1795,7 +1748,7 @@
     "id": "seven-eleven-two-dollar-snacks-2026-09",
     "merchant": "7-Eleven",
     "title": "$2 select snacks and drinks Sept 4-14",
-    "summary": "From September 4 through September 14, 7Rewards and Speedy Rewards members can buy select snacks and drinks for $2 each, including 19.2-ounce Liquid Death tea, 16-ounce Reign and Bang, Kettle Brand chips, and single-serve Cheetos or Doritos. Window opens today.",
+    "summary": "From September 4 through September 14, 7Rewards and Speedy Rewards members can buy select snacks and drinks for $2 each, including 19.2-ounce Liquid Death tea, 16-ounce Reign and Bang, Kettle Brand chips, and single-serve Cheetos or Doritos.",
     "category": "convenience",
     "estimatedSavings": 0,
     "minimumSpend": 2,
@@ -1813,7 +1766,7 @@
     "source": {
       "label": "7-Eleven official press release",
       "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-05"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Check $2 snack list",
     "tier": "A",
@@ -1823,51 +1776,12 @@
     "expirationLabel": "Sept 4-14",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "improved",
+    "freshness": "current",
     "discoveredOn": "2026-09-01",
     "preferenceSignals": [
       "convenience",
       "loyalty-reward",
       "time-sensitive"
-    ]
-  },
-  {
-    "id": "krispy-kreme-labor-day-two-dollar-dozen-2026",
-    "merchant": "Krispy Kreme",
-    "title": "$2 Original Glazed dozen with any dozen",
-    "summary": "From Friday September 4 through Monday September 7, buy any dozen, including the Pokemon Specialty Dozen, and get an Original Glazed dozen for $2 at participating Krispy Kreme shops.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-09-07",
-    "locationNote": "Participating Krispy Kreme shops only. The official Texas directory lists a Humble shop, but practical distance and offer participation for a 77386 trip are not confirmed.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "doughnuts",
-      "two-dollar",
-      "Labor Day",
-      "limited window"
-    ],
-    "source": {
-      "label": "Krispy Kreme official offers page",
-      "url": "https://www.krispykreme.com/offers",
-      "checkedOn": "2026-09-05"
-    },
-    "actionLabel": "Check $2 dozen offer",
-    "tier": "A",
-    "stackNote": "Treat the deal as exclusive unless the selected shop's checkout expressly allows another offer.",
-    "finePrint": "Official Krispy Kreme offers page checked 2026-09-05 lists Friday 9/4 through Monday 9/7: buy any dozen, including the Pokemon Specialty Dozen, and get an Original Glazed dozen for $2. Participating U.S. shops and product availability apply. No dollar savings estimate is shown because the regular local dozen price and practical participating shop for a 77386 trip were not verified.",
-    "expirationLabel": "September 4-7",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "improved",
-    "discoveredOn": "2026-09-02",
-    "preferenceSignals": [
-      "restaurant",
-      "time-sensitive",
-      "high-value"
     ]
   },
   {
@@ -1935,7 +1849,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-08"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1945,7 +1859,7 @@
     "expirationLabel": "Ends September 27",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-08-26",
     "preferenceSignals": [
       "restaurant",
@@ -1975,7 +1889,7 @@
     "source": {
       "label": "Taco Bell official fan-favorite promotions page",
       "url": "https://www.tacobell.com/promotions/fan-favorite-voting",
-      "checkedOn": "2026-09-04"
+      "checkedOn": "2026-09-03"
     },
     "actionLabel": "Check $0 delivery offer",
     "tier": "A",
@@ -1993,132 +1907,6 @@
     ]
   },
   {
-    "id": "astros-daikin-giveaways-2026-09-04-06",
-    "merchant": "Houston Astros",
-    "title": "Daikin Park weekend gate giveaways Sept 4-6",
-    "summary": "Home series vs Arizona Diamondbacks: Friday Sept 4 7:10 CT Orbit Foul Pole Bobblehead (first 10,000) plus First Bud Friday and Friday Night Fireworks; Saturday Sept 5 6:15 CT Bravo Night and Astros Retro Clear Purse (first 10,000); Sunday Sept 6 1:10 CT Yordan Alvarez Retro Football Jersey (first 10,000) plus Kids Run the Bases ages 5-12.",
-    "category": "sports",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-09-06",
-    "locationNote": "Daikin Park, Houston. Ticket required for gate giveaways while supplies last (stated first 10,000 for listed items).",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "Astros",
-      "giveaway",
-      "Daikin Park",
-      "ticket required"
-    ],
-    "source": {
-      "label": "Houston Astros official 2026 promotions page",
-      "url": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedOn": "2026-09-04"
-    },
-    "actionLabel": "Review Astros giveaways",
-    "tier": "A",
-    "stackNote": "A paid game ticket is required; giveaways are while supplies last and are not a free-admission offer.",
-    "finePrint": "Official MLB Astros promotions page lists: Sept 4 Orbit Foul Pole Bobblehead (10,000 fans), First Bud Friday, Friday Night Fireworks; Sept 5 Astros Retro Clear Purse (10,000 fans) and Bravo Night; Sept 6 Yordan Alvarez Retro Football Jersey (10,000 fans) and Kids Run the Bases (ages 5-12). Dates corroborated by Ticketmaster Astros promotions schedule. Ticket required; gate giveaways while supplies last. No dollar value is estimated because ticket price and giveaway retail value vary.",
-    "expirationLabel": "Series ends September 6",
-    "availability": "available",
-    "dealType": "sports-ticket",
-    "freshness": "improved",
-    "discoveredOn": "2026-09-03",
-    "preferenceSignals": [
-      "sports-ticket",
-      "time-sensitive",
-      "local-team"
-    ]
-  },
-  {
-    "id": "dennys-diner-days-half-off-dipper-2026-09-05",
-    "merchant": "Denny's",
-    "title": "50% off a Diner Dipper Sept 5",
-    "summary": "Denny's Rewards members can get 50% off one Diner Dipper with a $25 minimum purchase on Saturday, September 5.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 25,
-    "savingsRate": 50,
-    "isFree": false,
-    "expiresOn": "2026-09-05",
-    "availableDaysOfWeek": [6],
-    "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "restaurant",
-      "half off",
-      "rewards",
-      "one-day"
-    ],
-    "source": {
-      "label": "Denny's official Diner Days terms",
-      "url": "https://dennys.com/diner-days",
-      "checkedOn": "2026-09-05"
-    },
-    "actionLabel": "Check Saturday reward",
-    "tier": "A",
-    "stackNote": "Rewards-member offer cannot be combined with another offer.",
-    "stackGroup": "dennys-diner-days",
-    "stackStatus": "exclusive",
-    "finePrint": "Valid September 5 only through 11:59 p.m. PST for one redemption per Rewards member at participating U.S. locations, dine-in or Denny's online ordering only. Third-party delivery is excluded. Requires a $25 minimum purchase. No dollar estimate is shown because the local Diner Dipper price was not verified.",
-    "expirationLabel": "Today only",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-09-04",
-    "preferenceSignals": [
-      "restaurant",
-      "account-specific",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "dennys-diner-days-fifteen-percent-2026-09-06",
-    "merchant": "Denny's",
-    "title": "15% off dinner and late night Sept 6",
-    "summary": "Denny's Rewards members can get 15% off an eligible order from 4 p.m. to 4 a.m. with an $8 minimum purchase, up to $10 off, on Sunday, September 6.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 8,
-    "savingsRate": 15,
-    "isFree": false,
-    "expiresOn": "2026-09-06",
-    "availableDaysOfWeek": [0],
-    "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "restaurant",
-      "dinner",
-      "late night",
-      "rewards",
-      "one-day"
-    ],
-    "source": {
-      "label": "Denny's official Diner Days terms",
-      "url": "https://dennys.com/diner-days",
-      "checkedOn": "2026-09-05"
-    },
-    "actionLabel": "Check Sunday reward",
-    "tier": "A",
-    "stackNote": "Rewards-member offer cannot be combined with another offer and excludes specified value-menu and discount categories.",
-    "stackGroup": "dennys-diner-days",
-    "stackStatus": "exclusive",
-    "finePrint": "Valid September 6 from 4 p.m. to 4 a.m., with an $8 minimum purchase and a $10 maximum discount, at participating U.S. locations. Dine-in or Denny's online ordering only; third-party delivery is excluded. No dollar estimate is shown because the qualifying local check total is unknown.",
-    "expirationLabel": "Sunday 4 p.m.-4 a.m.",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-09-04",
-    "preferenceSignals": [
-      "restaurant",
-      "account-specific",
-      "time-sensitive"
-    ]
-  },
-  {
     "id": "dennys-diner-days-ten-off-thirty-2026-09",
     "merchant": "Denny's",
     "title": "$10 off $30 Sept 7-11",
@@ -2129,7 +1917,13 @@
     "savingsRate": 33.3,
     "isFree": false,
     "expiresOn": "2026-09-11",
-    "availableDaysOfWeek": [1, 2, 3, 4, 5],
+    "availableDaysOfWeek": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
     "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
     "verification": "verified",
     "friction": "medium",
@@ -2159,6 +1953,95 @@
       "restaurant",
       "high-value",
       "account-specific",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "dunkin-free-pumpkin-spice-latte-2026-09-08",
+    "merchant": "Dunkin",
+    "title": "Free medium Pumpkin Spice Signature Latte with purchase today 2-6 p.m.",
+    "summary": "On September 8 only from 2 p.m. to 6 p.m. local time, guests can get a free medium hot or iced Pumpkin Spice Signature Latte with a qualifying purchase at participating Dunkin stores.",
+    "category": "coffee",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-08",
+    "redemptionTimeWindows": [
+      {
+        "startTime": "14:00",
+        "endTime": "18:00"
+      }
+    ],
+    "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participating-store status for this one-day window is not locally confirmed.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "coffee",
+      "free drink",
+      "pumpkin spice",
+      "one-day",
+      "qualifying purchase"
+    ],
+    "source": {
+      "label": "Dunkin official newsroom",
+      "url": "https://news.dunkindonuts.com/news/dunkin-pumpkin-spice-2026",
+      "checkedOn": "2026-09-08"
+    },
+    "actionLabel": "Claim 2-6 p.m. free PSL",
+    "tier": "A",
+    "distanceMiles": 2.8,
+    "stackNote": "Cannot be combined with another offer, promotion, or coupon. Add the latte when ordering in-store or in the app.",
+    "stackGroup": "dunkin-same-day-offer",
+    "stackStatus": "exclusive",
+    "finePrint": "Offer valid for one free medium Pumpkin Spice Signature Latte with qualifying purchase made during the promo period at participating Dunkin stores. The latte must be added to the order when ordering in-store or in the mobile app. Qualifying purchases exclude individual MUNCHKINS Donut Hole Treats or a cup of water. Not available on delivery platforms. No cash refunds. While supplies last. Participation may vary. No dollar value is estimated because the local latte price was not verified.",
+    "expirationLabel": "Today only, 2-6 p.m. local",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-08",
+    "preferenceSignals": [
+      "preferred-coffee",
+      "free-drink",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "chipotle-pollo-asado-zero-delivery-2026-09",
+    "merchant": "Chipotle",
+    "title": "$0 delivery fee on Pollo Asado orders through Sept 13",
+    "summary": "Chipotle is offering a $0 delivery fee on Pollo Asado orders placed through the Chipotle app or Chipotle.com from August 31 through September 13.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 10,
+    "isFree": false,
+    "expiresOn": "2026-09-13",
+    "locationNote": "Digital Chipotle delivery areas only at participating U.S. and Canada locations; 77386 delivery availability is not confirmed in this public scan.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "delivery",
+      "pollo asado",
+      "zero fee",
+      "app"
+    ],
+    "source": {
+      "label": "Chipotle official newsroom",
+      "url": "https://newsroom.chipotle.com/2026-08-31-CHIPOTLE-MARKS-A-BRAND-FIRST-WITH-ALL-NEW-POLLO-ASADO-AND-THE-DEBUT-OF-CHILI-LIME-CHIPS",
+      "checkedOn": "2026-09-08"
+    },
+    "actionLabel": "Compare Pollo Asado delivery total",
+    "tier": "A",
+    "stackNote": "Higher menu prices are charged for delivery; service and other fees can still apply. Compare the final delivered total against pickup.",
+    "stackGroup": "chipotle-delivery",
+    "finePrint": "Available August 31 to September 13, 2026 within Chipotle delivery areas from participating U.S. and Canada locations during normal hours. Purchase of a Pollo Asado entree is required. Minimum order $10 USD excluding tax and fees; maximum item numbers apply. Not valid on catering, Burritos by the Box, or third-party delivery platforms. Rewards and other promo redemptions may be included but do not count toward the minimum. No dollar savings estimate because local delivery fees and menu upcharges were not verified.",
+    "expirationLabel": "Through September 13",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-08",
+    "preferenceSignals": [
+      "restaurant",
+      "delivery",
       "time-sensitive"
     ]
   }
