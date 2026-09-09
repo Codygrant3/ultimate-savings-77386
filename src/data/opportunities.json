@@ -1519,7 +1519,7 @@
     "minimumSpend": 0,
     "isFree": false,
     "locationNote": "Shell App and linked Fuel Rewards account required; confirm the selected station near 77386 participates.",
-    "verification": "verified",
+    "verification": "needs-check",
     "friction": "medium",
     "tags": [
       "fuel",
@@ -1528,19 +1528,19 @@
       "25 cents per gallon"
     ],
     "source": {
-      "label": "Shell official app-offers support page",
+      "label": "Shell app-offers support page (currently unavailable)",
       "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-09-09"
     },
     "actionLabel": "Review Shell App offer",
     "tier": "B",
     "stackNote": "Use only the savings the Shell App shows; do not assume it combines with the separate new-member or race-day rewards.",
     "stackGroup": "shell-fuel-promotion",
-    "finePrint": "The initial Pay & Save transaction must include at least 10 gallons. The $3.75 estimate assumes the earned 25-cent reward is redeemed on 15 gallons. The official page does not publish an end date or full redemption window.",
+    "finePrint": "The previously cited Shell support page now redirects to an expired-page notice, and Shell's current public promotions page does not confirm this offer. Do not count the $3.75 estimate unless the offer appears in the signed-in Shell App; the estimate assumes a 25-cent reward redeemed on 15 gallons.",
     "expirationLabel": "No end date published",
     "availability": "available",
     "dealType": "fuel-reward",
-    "freshness": "new",
+    "freshness": "monitoring",
     "discoveredOn": "2026-08-17",
     "preferenceSignals": [
       "fuel-reward",
@@ -1558,7 +1558,7 @@
     "minimumSpend": 0,
     "isFree": false,
     "locationNote": "Shell App, linked Fuel Rewards account, Shell S Pay, and a participating station are required; compare the posted pump price before fueling.",
-    "verification": "verified",
+    "verification": "needs-check",
     "friction": "medium",
     "tags": [
       "fuel",
@@ -1567,19 +1567,19 @@
       "10 cents per gallon"
     ],
     "source": {
-      "label": "Shell official app-offers support page",
+      "label": "Shell app-offers support page (currently unavailable)",
       "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
-      "checkedOn": "2026-08-27"
+      "checkedOn": "2026-09-09"
     },
     "actionLabel": "Compare Shell S Pay price",
     "tier": "B",
     "stackNote": "Count only the discount displayed in the Shell App; do not assume this combines with new-member, race-day, or first-time Pay & Save rewards.",
     "stackGroup": "shell-fuel-promotion",
-    "finePrint": "The official support page states no minimum gallon requirement and availability for Shell App users with a linked Fuel Rewards account. The $1.50 estimate assumes 15 gallons at the 10-cent Silver or Gold rate; a qualifying Platinum member could save $2.25 on 15 gallons. No end date is published, and station participation must be confirmed in the app.",
+    "finePrint": "The previously cited Shell support page now redirects to an expired-page notice, and Shell's current public promotions page does not confirm this offer. Do not count the estimate unless the signed-in Shell App shows the discount for the selected station. The $1.50 estimate assumes 15 gallons at 10 cents per gallon.",
     "expirationLabel": "No end date published",
     "availability": "available",
     "dealType": "fuel-reward",
-    "freshness": "new",
+    "freshness": "monitoring",
     "discoveredOn": "2026-08-27",
     "preferenceSignals": [
       "fuel-reward",
@@ -2044,6 +2044,212 @@
       "restaurant",
       "delivery",
       "time-sensitive"
+    ]
+  },
+  {
+    "id": "sonic-seven-dollar-big-deal-meal-2026",
+    "merchant": "SONIC",
+    "title": "$7 Big Deal Meal with cheeseburger, side, drink, and sundae",
+    "summary": "SONIC's limited-time $7 Big Deal Meal includes a cheeseburger, medium fries or tots, a medium soft drink or SONIC Splash, and a vanilla sundae.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 7,
+    "isFree": false,
+    "locationNote": "Available at participating SONIC locations nationwide for a limited time; participation at a specific 77386-area drive-in was not confirmed in this public scan.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "restaurant",
+      "combo meal",
+      "family dining",
+      "limited time"
+    ],
+    "source": {
+      "label": "SONIC official announcement",
+      "url": "https://stories.inspirebrands.com/sonic-7-big-deal-meal/",
+      "checkedOn": "2026-09-09"
+    },
+    "actionLabel": "Compare the $7 meal",
+    "tier": "B",
+    "stackNote": "Treat this as a fixed-price bundle; compare it with app offers before ordering and do not assume another promotion stacks.",
+    "finePrint": "Limited-time offer at participating SONIC locations. The published bundle includes a cheeseburger, medium fries or tots, a medium soft drink or SONIC Splash, and a vanilla sundae. Taxes and add-ons may cost extra. No dollar savings estimate is shown because the comparable local a-la-carte total was not verified.",
+    "expirationLabel": "Limited time; no end date published",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-09",
+    "preferenceSignals": [
+      "restaurant",
+      "family-value",
+      "fixed-price-meal"
+    ]
+  },
+  {
+    "id": "astros-dollar-dog-night-2026-09-15",
+    "merchant": "Houston Astros",
+    "title": "$1 Hot Dog Night on September 15",
+    "summary": "The Astros' official weekly promotion offers $1 hot dogs at every Tuesday home game, with the September 15 game listed on the promotions calendar.",
+    "category": "sports",
+    "estimatedSavings": 0,
+    "minimumSpend": 1,
+    "isFree": false,
+    "expiresOn": "2026-09-15",
+    "availableDaysOfWeek": [
+      2
+    ],
+    "locationNote": "Daikin Park in Houston; a valid game ticket and travel from 77386 are required.",
+    "verification": "verified",
+    "friction": "high",
+    "tags": [
+      "baseball",
+      "concessions",
+      "one-dollar food",
+      "Tuesday"
+    ],
+    "source": {
+      "label": "Houston Astros official Hot Dog Night page",
+      "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
+      "checkedOn": "2026-09-09"
+    },
+    "actionLabel": "Review September 15 game",
+    "tier": "B",
+    "stackNote": "Use only if attending the game already; ticket, parking, and travel costs overwhelm the food discount if this creates a separate trip.",
+    "finePrint": "The official Astros page says $1 hot dogs are available at every Tuesday home game. The September 15 home date is shown on the official promotions calendar. A game ticket is required, availability and purchase limits may apply, and no dollar savings estimate is shown because the regular concession price was not verified.",
+    "expirationLabel": "September 15 home game",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-09",
+    "preferenceSignals": [
+      "sports",
+      "local-event",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "heb-easy-melt-free-breakfast-sausage-2026-09",
+    "merchant": "H-E-B",
+    "title": "Free breakfast sausage with H-E-B Easy Melt cheese",
+    "summary": "Buy a qualifying 32-ounce H-E-B Easy Melt cheese and get a qualifying 16-ounce H-E-B Premium Breakfast Sausage free through September 15.",
+    "category": "grocery",
+    "estimatedSavings": 3.99,
+    "minimumSpend": 6.97,
+    "savingsRate": 57.2,
+    "isFree": true,
+    "expiresOn": "2026-09-15",
+    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and both item prices after selecting the 77386 store before clipping.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "grocery",
+      "cheese",
+      "breakfast sausage",
+      "free item",
+      "digital coupon"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84056030",
+      "checkedOn": "2026-09-09"
+    },
+    "actionLabel": "Confirm at Spring Creek",
+    "tier": "A",
+    "stackNote": "Use only if both items are planned and the coupon appears for Spring Creek Market; compare unit prices before choosing the bundle.",
+    "finePrint": "The public page showed Easy Melt at $6.97 and the free sausage at $3.99, expiring September 15. The 57.2% rate uses those displayed Victoria-store prices. This scan did not sign in, clip the coupon, or confirm availability and pricing at Spring Creek Market.",
+    "expirationLabel": "Ends September 15",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-09",
+    "preferenceSignals": [
+      "grocery",
+      "free-item",
+      "high-value",
+      "location-gated"
+    ]
+  },
+  {
+    "id": "heb-natural-cheese-free-wheat-crackers-2026-09",
+    "merchant": "H-E-B",
+    "title": "Free wheat crackers with H-E-B Natural Cheese",
+    "summary": "Buy a qualifying 16-ounce H-E-B Natural Cheese and get qualifying 8.5-ounce H-E-B Thin Wheat Crackers free through September 15.",
+    "category": "grocery",
+    "estimatedSavings": 2.98,
+    "minimumSpend": 4.99,
+    "savingsRate": 59.7,
+    "isFree": true,
+    "expiresOn": "2026-09-15",
+    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and both item prices after selecting the 77386 store before clipping.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "grocery",
+      "cheese",
+      "crackers",
+      "free item",
+      "digital coupon"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84056516",
+      "checkedOn": "2026-09-09"
+    },
+    "actionLabel": "Confirm at Spring Creek",
+    "tier": "A",
+    "stackNote": "Use only if both items are planned and the coupon appears for Spring Creek Market; compare unit prices before choosing the bundle.",
+    "finePrint": "The public page showed Natural Cheese at $4.99 and the free crackers at $2.98, expiring September 15. The 59.7% rate uses those displayed Victoria-store prices. This scan did not sign in, clip the coupon, or confirm availability and pricing at Spring Creek Market.",
+    "expirationLabel": "Ends September 15",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-09",
+    "preferenceSignals": [
+      "grocery",
+      "free-item",
+      "high-value",
+      "location-gated"
+    ]
+  },
+  {
+    "id": "heb-organics-bread-free-bananas-2026-09",
+    "merchant": "H-E-B",
+    "title": "Free organic bananas with H-E-B Organics bread",
+    "summary": "Buy a qualifying 20-ounce H-E-B Organics bread and get two pounds of H-E-B Organics bananas free in store through September 15.",
+    "category": "grocery",
+    "estimatedSavings": 1.48,
+    "minimumSpend": 4.18,
+    "savingsRate": 35.4,
+    "isFree": true,
+    "expiresOn": "2026-09-15",
+    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and both item prices after selecting the 77386 store before clipping.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "grocery",
+      "bread",
+      "bananas",
+      "free item",
+      "digital coupon"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84064325",
+      "checkedOn": "2026-09-09"
+    },
+    "actionLabel": "Confirm at Spring Creek",
+    "tier": "A",
+    "stackNote": "Use only if both items are planned and the coupon appears for Spring Creek Market; compare unit prices before choosing the bundle.",
+    "finePrint": "The public page showed qualifying bread starting at $4.18 and organic bananas at $0.74 per pound, expiring September 15. The $1.48 estimate and 35.4% rate use those displayed Victoria-store prices. In-store redemption is required. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
+    "expirationLabel": "Ends September 15",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-09",
+    "preferenceSignals": [
+      "grocery",
+      "produce",
+      "free-item",
+      "location-gated"
     ]
   }
 ]
