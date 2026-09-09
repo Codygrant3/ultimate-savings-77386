@@ -26,7 +26,7 @@ describe("verified opportunity catalog", () => {
     expect(exxon?.title).toBe("Up to $15 in points across seven qualifying app fill-ups");
     expect(exxon?.estimatedSavings).toBe(15);
     expect(exxon?.source.url).toBe("https://www.exxonmobilfuels.com/en/rewards/faqs");
-    expect(exxon?.source.checkedOn).toBe("2026-09-01");
+    expect(exxon?.source.checkedOn).toBe("2026-09-09");
     expect(exxon?.finePrint).toContain("next five qualifying app fills");
   });
 

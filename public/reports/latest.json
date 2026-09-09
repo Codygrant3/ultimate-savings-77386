@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T15:12:41.888Z",
+  "generatedAt": "2026-09-09T15:22:03.794Z",
   "weekOf": "2026-09-07",
   "zipCode": "77386",
   "totalPotentialSavings": 160.74,
@@ -26,7 +26,7 @@
       "source": {
         "label": "Take 5 Spring location coupons",
         "url": "https://www.take5.com/locations/texas/spring/30083/",
-        "checkedOn": "2026-09-02"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Get coupon",
       "tier": "A",
@@ -43,18 +43,18 @@
         "local-high-value"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-02",
-      "distanceEvidenceAgeDays": 6,
+      "distanceCheckedOn": "2026-09-09",
+      "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Take 5 Spring location coupons",
       "distanceSourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
-      "score": 74,
+      "score": 76,
       "scoreLabel": "Strong",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 15.299999999999999,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 6 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -130,7 +130,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-08"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Check Paze eligibility",
       "tier": "A",
@@ -234,7 +234,7 @@
       "source": {
         "label": "7REWARDS Fuel",
         "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-        "checkedOn": "2026-09-01"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Review fuel offer",
       "tier": "A",
@@ -258,14 +258,14 @@
       "distanceEvidenceAgeDays": 15,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
-      "score": 70,
-      "scoreLabel": "Worth a look",
+      "score": 73,
+      "scoreLabel": "Strong",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 15.299999999999999,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -337,7 +337,7 @@
       "source": {
         "label": "Shell Fuel Rewards",
         "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-09-02"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Review offer",
       "tier": "A",
@@ -355,18 +355,18 @@
         "stacking"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-02",
-      "distanceEvidenceAgeDays": 6,
+      "distanceCheckedOn": "2026-09-09",
+      "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Shell Fuel Rewards",
       "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "score": 70,
-      "scoreLabel": "Worth a look",
+      "score": 73,
+      "scoreLabel": "Strong",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 15.299999999999999,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 6 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -419,6 +419,108 @@
       ]
     },
     {
+      "id": "rainbow-car-care-birthday-wash-2026",
+      "merchant": "Rainbow Car Care",
+      "title": "Free full-service car wash on your birthday",
+      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
+      "category": "auto",
+      "estimatedSavings": 20,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "car wash",
+        "birthday",
+        "free service",
+        "loyalty"
+      ],
+      "source": {
+        "label": "Rainbow Car Care frequent wash program",
+        "url": "https://rainbowcarcare.com/frequent-wash-program",
+        "checkedOn": "2026-09-09"
+      },
+      "actionLabel": "Review wash program",
+      "tier": "A",
+      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
+      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
+      "expirationLabel": "Your birthday",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "free-service",
+        "loyalty-reward"
+      ],
+      "distanceMiles": 4.7,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-15",
+      "distanceEvidenceAgeDays": 24,
+      "distanceSourceLabel": "Rainbow Car Care frequent wash program",
+      "distanceSourceUrl": "https://rainbowcarcare.com/frequent-wash-program",
+      "score": 69,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 18.48,
+          "weight": 24,
+          "detail": "free reward plus $20.00 estimate"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: car wash"
+        },
+        {
+          "label": "Local relevance",
+          "points": 2.48,
+          "weight": 8,
+          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; location checked 24 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
       "id": "dennys-diner-days-ten-off-thirty-2026-09",
       "merchant": "Denny's",
       "title": "$10 off $30 Sept 7-11",
@@ -448,7 +550,7 @@
       "source": {
         "label": "Denny's official Diner Days terms",
         "url": "https://dennys.com/diner-days",
-        "checkedOn": "2026-09-05"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Check Sept 7-11 reward",
       "tier": "A",
@@ -475,7 +577,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 3 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -528,62 +630,65 @@
       ]
     },
     {
-      "id": "rainbow-car-care-birthday-wash-2026",
-      "merchant": "Rainbow Car Care",
-      "title": "Free full-service car wash on your birthday",
-      "summary": "The Woodlands car wash advertises a complimentary full-service birthday wash and an every-11th-wash reward.",
-      "category": "auto",
-      "estimatedSavings": 20,
+      "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "Up to $15 in points across seven qualifying app fill-ups",
+      "summary": "First-time Exxon Mobil Rewards+ app fuel purchasers can earn $5 in points on each of their first two qualifying fills, then $1 on each of five additional qualifying fills completed within 60 days.",
+      "category": "fuel",
+      "estimatedSavings": 15,
       "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "318 Sawdust Road, The Woodlands, TX 77380.",
+      "isFree": false,
+      "expiresOn": "2026-09-30",
+      "locationNote": "Participating Exxon and Mobil stations; no 77386 station with full Rewards+ support was confirmed in this public scan.",
       "verification": "verified",
       "friction": "medium",
       "tags": [
-        "car wash",
-        "birthday",
-        "free service",
-        "loyalty"
+        "fuel",
+        "first-time app user",
+        "points",
+        "seven fill-ups"
       ],
       "source": {
-        "label": "Rainbow Car Care frequent wash program",
-        "url": "https://rainbowcarcare.com/frequent-wash-program",
-        "checkedOn": "2026-09-01"
+        "label": "Exxon Mobil Rewards+ official offer FAQ",
+        "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
+        "checkedOn": "2026-09-09"
       },
-      "actionLabel": "Review wash program",
+      "actionLabel": "Check app eligibility",
       "tier": "A",
-      "stackNote": "Use the birthday wash independently; regular visits also progress toward the every-11th-wash reward.",
-      "finePrint": "Call or check the official program before visiting because service scope and restrictions can change.",
-      "expirationLabel": "Your birthday",
+      "stackNote": "Regular Rewards+ points are also earned on the qualifying fills; confirm current app terms before assuming another promotion combines.",
+      "stackGroup": "exxon-mobil-new-member-bonus",
+      "finePrint": "Available to members making their first app-paid fuel purchase during the May 20-September 30 offer period. Each purchase must be paid through the app, include at least eight gallons, and occur at a participating Exxon or Mobil station. The first two qualifying fills earn $5 each; after those, the next five qualifying app fills within 60 days earn $1 each. Do not assume this combines with the separate referral-code promotion.",
+      "expirationLabel": "Start by September 30; finish the five follow-up fills within 60 days",
       "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
+      "dealType": "fuel-reward",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-09",
       "preferenceSignals": [
-        "vehicle-maintenance",
-        "free-service",
-        "loyalty-reward"
+        "fuel-reward",
+        "new-member",
+        "new-app-user",
+        "high-value"
       ],
-      "distanceMiles": 4.7,
+      "distanceMiles": 1.9,
       "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-15",
-      "distanceEvidenceAgeDays": 24,
-      "distanceSourceLabel": "Rainbow Car Care frequent wash program",
-      "distanceSourceUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "score": 67,
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 15,
+      "distanceSourceLabel": "Exxon Mobil official station locator result",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
+      "score": 68,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 15.299999999999999,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
-          "points": 18.48,
+          "points": 17.04,
           "weight": 24,
-          "detail": "free reward plus $20.00 estimate"
+          "detail": "$15.00 estimated value"
         },
         {
           "label": "Savings rate",
@@ -593,21 +698,21 @@
         },
         {
           "label": "Household fit",
-          "points": 8.4,
+          "points": 7.800000000000001,
           "weight": 10,
-          "detail": "Household match: car wash"
+          "detail": "Household match: fuel"
         },
         {
           "label": "Local relevance",
-          "points": 2.48,
+          "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; location checked 24 days ago; offer participation unconfirmed"
+          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 15 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
-          "points": 4.6000000000000005,
+          "points": 4.7,
           "weight": 10,
-          "detail": "No stated end date; current"
+          "detail": "Ends 2026-09-30; recently improved"
         },
         {
           "label": "Effort",
@@ -626,6 +731,213 @@
           "points": 3.8500000000000005,
           "weight": 7,
           "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "seven-rewards-fuel-sms-25-cents-2026",
+      "merchant": "7REWARDS Fuel",
+      "title": "25¢ off per gallon on the next three fills",
+      "summary": "The official fuel-rewards page offers 25 cents off per gallon on the next three fills after texting SAVE to 711711.",
+      "category": "fuel",
+      "estimatedSavings": 11.25,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "SMS enrollment, a registered phone number, and a participating fuel location are required; confirm the discount before fueling.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "sms",
+        "three fills",
+        "account specific"
+      ],
+      "source": {
+        "label": "7REWARDS Fuel",
+        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
+        "checkedOn": "2026-09-09"
+      },
+      "actionLabel": "Review SMS fuel offer",
+      "tier": "A",
+      "stackNote": "Do not assume this combines with the 11-cent new-member offer unless the app or pump explicitly shows both discounts.",
+      "stackGroup": "7rewards-fuel-promotion",
+      "finePrint": "The $11.25 estimate assumes 15 gallons on each of three eligible fills. Text-message and data rates may apply. Confirm enrollment, participating-store eligibility, gallon limits, and the loaded discount before making a special trip.",
+      "expirationLabel": "Current official introductory offer",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-15",
+      "preferenceSignals": [
+        "fuel-reward",
+        "sms-specific",
+        "high-value"
+      ],
+      "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 15,
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
+      "score": 66,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 15.36,
+          "weight": 24,
+          "detail": "$11.25 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 2.48,
+          "weight": 8,
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 15 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "costa-oil-rayford-diesel-ten-off-2026",
+      "merchant": "Costa Oil Rayford",
+      "title": "$10 off a diesel full-synthetic oil change",
+      "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
+      "category": "auto",
+      "estimatedSavings": 10,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-12-31",
+      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "oil change",
+        "diesel",
+        "full synthetic",
+        "local coupon"
+      ],
+      "source": {
+        "label": "Costa Oil Rayford specials",
+        "url": "https://spring-rayford.costaoils.com/specials",
+        "checkedOn": "2026-09-09"
+      },
+      "actionLabel": "Review diesel coupon",
+      "tier": "A",
+      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
+      "stackGroup": "costa-oil-coupon",
+      "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
+      "expirationLabel": "Ends December 31",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-30",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "local-high-value",
+        "fixed-dollar-coupon"
+      ],
+      "distanceMiles": 2.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceEvidenceAgeDays": 23,
+      "distanceSourceLabel": "Costa Oil Rayford specials",
+      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
+      "score": 66,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 14.639999999999999,
+          "weight": 24,
+          "detail": "$10.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 2.8000000000000003,
+          "weight": 8,
+          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 23 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.7,
+          "weight": 10,
+          "detail": "Ends 2026-12-31; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
         }
       ]
     },
@@ -732,111 +1044,6 @@
       ]
     },
     {
-      "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
-      "merchant": "Exxon Mobil Rewards+",
-      "title": "Up to $15 in points across seven qualifying app fill-ups",
-      "summary": "First-time Exxon Mobil Rewards+ app fuel purchasers can earn $5 in points on each of their first two qualifying fills, then $1 on each of five additional qualifying fills completed within 60 days.",
-      "category": "fuel",
-      "estimatedSavings": 15,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-09-30",
-      "locationNote": "Participating Exxon and Mobil stations; no 77386 station with full Rewards+ support was confirmed in this public scan.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "first-time app user",
-        "points",
-        "seven fill-ups"
-      ],
-      "source": {
-        "label": "Exxon Mobil Rewards+ official offer FAQ",
-        "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-        "checkedOn": "2026-09-01"
-      },
-      "actionLabel": "Check app eligibility",
-      "tier": "A",
-      "stackNote": "Regular Rewards+ points are also earned on the qualifying fills; confirm current app terms before assuming another promotion combines.",
-      "stackGroup": "exxon-mobil-new-member-bonus",
-      "finePrint": "Available to members making their first app-paid fuel purchase during the May 20-September 30 offer period. Each purchase must be paid through the app, include at least eight gallons, and occur at a participating Exxon or Mobil station. The first two qualifying fills earn $5 each; after those, the next five qualifying app fills within 60 days earn $1 each. Do not assume this combines with the separate referral-code promotion.",
-      "expirationLabel": "Start by September 30; finish the five follow-up fills within 60 days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-09",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "new-app-user",
-        "high-value"
-      ],
-      "distanceMiles": 1.9,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 15,
-      "distanceSourceLabel": "Exxon Mobil official station locator result",
-      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
-      "score": 65,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 17.04,
-          "weight": 24,
-          "detail": "$15.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.8000000000000003,
-          "weight": 8,
-          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 15 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.7,
-          "weight": 10,
-          "detail": "Ends 2026-09-30; recently improved"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "mcdonalds-grubhub-first-order-ten-off-2026",
       "merchant": "McDonald's + Grubhub",
       "title": "$10 off $15+ for first-time Grubhub diners",
@@ -929,213 +1136,6 @@
           "points": 6.4,
           "weight": 8,
           "detail": "$15.00 required per $10.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
-      "id": "seven-rewards-fuel-sms-25-cents-2026",
-      "merchant": "7REWARDS Fuel",
-      "title": "25¢ off per gallon on the next three fills",
-      "summary": "The official fuel-rewards page offers 25 cents off per gallon on the next three fills after texting SAVE to 711711.",
-      "category": "fuel",
-      "estimatedSavings": 11.25,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "SMS enrollment, a registered phone number, and a participating fuel location are required; confirm the discount before fueling.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "sms",
-        "three fills",
-        "account specific"
-      ],
-      "source": {
-        "label": "7REWARDS Fuel",
-        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-        "checkedOn": "2026-09-01"
-      },
-      "actionLabel": "Review SMS fuel offer",
-      "tier": "A",
-      "stackNote": "Do not assume this combines with the 11-cent new-member offer unless the app or pump explicitly shows both discounts.",
-      "stackGroup": "7rewards-fuel-promotion",
-      "finePrint": "The $11.25 estimate assumes 15 gallons on each of three eligible fills. Text-message and data rates may apply. Confirm enrollment, participating-store eligibility, gallon limits, and the loaded discount before making a special trip.",
-      "expirationLabel": "Current official introductory offer",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-15",
-      "preferenceSignals": [
-        "fuel-reward",
-        "sms-specific",
-        "high-value"
-      ],
-      "distanceMiles": 3.35,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 15,
-      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
-      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
-      "score": 64,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 15.36,
-          "weight": 24,
-          "detail": "$11.25 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.48,
-          "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 15 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "costa-oil-rayford-diesel-ten-off-2026",
-      "merchant": "Costa Oil Rayford",
-      "title": "$10 off a diesel full-synthetic oil change",
-      "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
-      "category": "auto",
-      "estimatedSavings": 10,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-12-31",
-      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "oil change",
-        "diesel",
-        "full synthetic",
-        "local coupon"
-      ],
-      "source": {
-        "label": "Costa Oil Rayford specials",
-        "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-09-02"
-      },
-      "actionLabel": "Review diesel coupon",
-      "tier": "A",
-      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
-      "stackGroup": "costa-oil-coupon",
-      "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
-      "expirationLabel": "Ends December 31",
-      "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-30",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "local-high-value",
-        "fixed-dollar-coupon"
-      ],
-      "distanceMiles": 2.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 23,
-      "distanceSourceLabel": "Costa Oil Rayford specials",
-      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
-      "score": 64,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 6 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 14.639999999999999,
-          "weight": 24,
-          "detail": "$10.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.4,
-          "weight": 10,
-          "detail": "Household match: oil change"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.8000000000000003,
-          "weight": 8,
-          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 23 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.7,
-          "weight": 10,
-          "detail": "Ends 2026-12-31; recently improved"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
         },
         {
           "label": "Stackability",
@@ -1448,6 +1448,109 @@
       ]
     },
     {
+      "id": "shell-race-day-22-cents-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "22¢ off per gallon on eligible race days",
+      "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
+      "category": "fuel",
+      "estimatedSavings": 3.3,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "race day",
+        "app",
+        "opt in"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-09-09"
+      },
+      "actionLabel": "Opt in for race days",
+      "tier": "A",
+      "stackNote": "Use only the savings shown in the Fuel Rewards app; do not assume another fuel promotion combines.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "The $3.30 estimate assumes 15 gallons on one eligible race day. Opt in once in the Shell app, use a Fuel Rewards member ID, and confirm the selected station and race day are eligible before fueling.",
+      "expirationLabel": "Eligible 2026 race days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-15",
+      "preferenceSignals": [
+        "fuel-reward",
+        "app-specific",
+        "time-sensitive"
+      ],
+      "distanceMiles": 2.87,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 15,
+      "distanceSourceLabel": "Shell official Rayford Road station page",
+      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
+      "score": 60,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 8.879999999999999,
+          "weight": 24,
+          "detail": "$3.30 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 2.8000000000000003,
+          "weight": 8,
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 15 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
       "id": "dunkin-mobile-mondays-2026-09",
       "merchant": "Dunkin",
       "title": "100 bonus points on Mobile Mondays",
@@ -1628,109 +1731,6 @@
           "points": 3.8000000000000003,
           "weight": 10,
           "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "shell-race-day-22-cents-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "22¢ off per gallon on eligible race days",
-      "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
-      "category": "fuel",
-      "estimatedSavings": 3.3,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "race day",
-        "app",
-        "opt in"
-      ],
-      "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-09-02"
-      },
-      "actionLabel": "Opt in for race days",
-      "tier": "A",
-      "stackNote": "Use only the savings shown in the Fuel Rewards app; do not assume another fuel promotion combines.",
-      "stackGroup": "shell-fuel-promotion",
-      "finePrint": "The $3.30 estimate assumes 15 gallons on one eligible race day. Opt in once in the Shell app, use a Fuel Rewards member ID, and confirm the selected station and race day are eligible before fueling.",
-      "expirationLabel": "Eligible 2026 race days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-15",
-      "preferenceSignals": [
-        "fuel-reward",
-        "app-specific",
-        "time-sensitive"
-      ],
-      "distanceMiles": 2.87,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 15,
-      "distanceSourceLabel": "Shell official Rayford Road station page",
-      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
-      "score": 58,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 6 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 8.879999999999999,
-          "weight": 24,
-          "detail": "$3.30 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.8000000000000003,
-          "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 15 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
         },
         {
           "label": "Effort",
@@ -2295,7 +2295,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-08"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Claim Wednesday offer",
       "tier": "A",
@@ -2401,7 +2401,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-08"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Claim Friday offer",
       "tier": "A",
@@ -2504,7 +2504,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-08"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Claim chili offer",
       "tier": "A",
@@ -2983,6 +2983,111 @@
       ]
     },
     {
+      "id": "costa-oil-rayford-service-30-percent-2026",
+      "merchant": "Costa Oil Rayford",
+      "title": "30% off any oil change for eligible service members",
+      "summary": "The Rayford Road location offers veterans, military members, and first responders 30% off any oil change through December 31.",
+      "category": "auto",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-12-31",
+      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; eligibility proof is required.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "oil change",
+        "veteran",
+        "military",
+        "first responder",
+        "local coupon"
+      ],
+      "source": {
+        "label": "Costa Oil Rayford specials",
+        "url": "https://spring-rayford.costaoils.com/specials",
+        "checkedOn": "2026-09-09"
+      },
+      "actionLabel": "Review eligibility",
+      "tier": "A",
+      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with Take 5 before choosing.",
+      "stackGroup": "costa-oil-coupon",
+      "finePrint": "Valid only for qualifying veterans, military members, or first responders who show proof of service or military ID. No dollar estimate is shown because the vehicle's oil specification and final service price are unknown.",
+      "expirationLabel": "Ends December 31",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "new",
+      "discoveredOn": "2026-08-15",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "local-high-value",
+        "eligibility-gated"
+      ],
+      "distanceMiles": 2.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceEvidenceAgeDays": 23,
+      "distanceSourceLabel": "Costa Oil Rayford specials",
+      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
+      "score": 49,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 2.8000000000000003,
+          "weight": 8,
+          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 23 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-12-31; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "sonic-seven-dollar-big-deal-meal-2026",
       "merchant": "SONIC",
       "title": "$7 Big Deal Meal with cheeseburger, side, drink, and sundae",
@@ -3101,7 +3206,7 @@
       "source": {
         "label": "7-Eleven official press release",
         "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-        "checkedOn": "2026-09-08"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Check $2 snack list",
       "tier": "A",
@@ -3487,111 +3592,6 @@
       ]
     },
     {
-      "id": "costa-oil-rayford-service-30-percent-2026",
-      "merchant": "Costa Oil Rayford",
-      "title": "30% off any oil change for eligible service members",
-      "summary": "The Rayford Road location offers veterans, military members, and first responders 30% off any oil change through December 31.",
-      "category": "auto",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-12-31",
-      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; eligibility proof is required.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "oil change",
-        "veteran",
-        "military",
-        "first responder",
-        "local coupon"
-      ],
-      "source": {
-        "label": "Costa Oil Rayford specials",
-        "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-09-02"
-      },
-      "actionLabel": "Review eligibility",
-      "tier": "A",
-      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with Take 5 before choosing.",
-      "stackGroup": "costa-oil-coupon",
-      "finePrint": "Valid only for qualifying veterans, military members, or first responders who show proof of service or military ID. No dollar estimate is shown because the vehicle's oil specification and final service price are unknown.",
-      "expirationLabel": "Ends December 31",
-      "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "new",
-      "discoveredOn": "2026-08-15",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "local-high-value",
-        "eligibility-gated"
-      ],
-      "distanceMiles": 2.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 23,
-      "distanceSourceLabel": "Costa Oil Rayford specials",
-      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
-      "score": 46,
-      "scoreLabel": "Low priority",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 6 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.4,
-          "weight": 10,
-          "detail": "Household match: oil change"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.8000000000000003,
-          "weight": 8,
-          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 23 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.1000000000000005,
-          "weight": 10,
-          "detail": "Ends 2026-12-31; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
       "id": "seven-eleven-roller-grill-three-dollar-meal-2026",
       "merchant": "7-Eleven",
       "title": "$3 roller grill + chips + large Big Gulp",
@@ -3613,7 +3613,7 @@
       "source": {
         "label": "7-Eleven official press release",
         "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-        "checkedOn": "2026-09-05"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Confirm at participating store",
       "tier": "B",
@@ -3642,7 +3642,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 3 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -3715,7 +3715,7 @@
       "source": {
         "label": "7-Eleven official press release",
         "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-        "checkedOn": "2026-09-05"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Confirm at participating store",
       "tier": "B",
@@ -3744,7 +3744,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 3 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -3818,7 +3818,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-08"
+        "checkedOn": "2026-09-09"
       },
       "actionLabel": "Claim in Wendy's app",
       "tier": "A",
