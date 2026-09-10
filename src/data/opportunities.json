@@ -2251,5 +2251,205 @@
       "free-item",
       "location-gated"
     ]
+  },
+  {
+    "id": "wendys-rewards-signup-free-nuggets-2026",
+    "merchant": "Wendy's",
+    "title": "Free 10-piece nuggets plus 200 points for joining Rewards",
+    "summary": "New Wendy's Rewards members can receive a free 10-piece nugget reward and 200 bonus points after signing up.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "locationNote": "Available to new Wendy's Rewards members at participating U.S. restaurants; confirm the reward appears for the selected Spring-area location before ordering.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free food",
+      "new member",
+      "rewards",
+      "app"
+    ],
+    "source": {
+      "label": "Wendy's official Rewards page",
+      "url": "https://www.wendys.com/rewards",
+      "checkedOn": "2026-09-10"
+    },
+    "actionLabel": "Join Wendy's Rewards",
+    "tier": "A",
+    "stackNote": "Treat the signup reward as its own app offer; do not assume it combines with another Wendy's coupon in the same order.",
+    "stackGroup": "wendys-app-order",
+    "finePrint": "New-account and participating-location restrictions apply. Wendy's currently advertises a free 10-piece nugget reward plus 200 bonus points for signup. No dollar value is estimated because the local menu price and account-level reward timing were not verified.",
+    "expirationLabel": "While listed",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-10",
+    "preferenceSignals": [
+      "free-food",
+      "new-member",
+      "app-specific"
+    ]
+  },
+  {
+    "id": "heb-duracell-six-off-two-2026-09",
+    "merchant": "H-E-B",
+    "title": "$6 off two Duracell 8-packs",
+    "summary": "Clip the H-E-B coupon for $6 off two qualifying Duracell Coppertop AA or AAA eight-packs through September 29.",
+    "category": "home",
+    "estimatedSavings": 6,
+    "minimumSpend": 19.46,
+    "savingsRate": 30.8,
+    "isFree": false,
+    "expiresOn": "2026-09-29",
+    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and prices after selecting the 77386 store before clipping.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "batteries",
+      "household",
+      "digital coupon",
+      "location gated"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84058534",
+      "checkedOn": "2026-09-10"
+    },
+    "actionLabel": "Confirm at Spring Creek",
+    "tier": "A",
+    "stackNote": "Use only if two battery packs are needed and the coupon appears for Spring Creek Market; compare unit prices with larger packs before checkout.",
+    "finePrint": "The official public page showed AA and AAA eight-packs at $9.73 each and an unlimited-use $6-off-two coupon through September 29. The $19.46 basket and 30.8% rate use Victoria-store prices. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
+    "expirationLabel": "Ends September 29",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-10",
+    "preferenceSignals": [
+      "household-staple",
+      "high-value",
+      "location-gated"
+    ]
+  },
+  {
+    "id": "heb-mighty-crust-free-higher-harvest-2026-09",
+    "merchant": "H-E-B",
+    "title": "Free Higher Harvest pint with Mighty Crust pizza",
+    "summary": "Buy one qualifying Mighty Crust frozen pizza and get one qualifying Higher Harvest frozen-dessert pint free through September 22.",
+    "category": "grocery",
+    "estimatedSavings": 3.44,
+    "minimumSpend": 5.97,
+    "savingsRate": 57.6,
+    "isFree": true,
+    "expiresOn": "2026-09-22",
+    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and both prices after selecting the 77386 store before clipping.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "grocery",
+      "frozen pizza",
+      "free item",
+      "digital coupon"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84056113",
+      "checkedOn": "2026-09-10"
+    },
+    "actionLabel": "Confirm at Spring Creek",
+    "tier": "A",
+    "stackNote": "Use only if both items fit the grocery plan and the coupon appears for Spring Creek Market; compare the final bundle against other pizza options.",
+    "finePrint": "The official page showed qualifying pizzas at $5.97 and Higher Harvest pints at $3.44, with unlimited use through September 22. The $3.44 estimate and 57.6% rate use Victoria-store prices. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
+    "expirationLabel": "Ends September 22",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-10",
+    "preferenceSignals": [
+      "grocery",
+      "free-item",
+      "high-value",
+      "location-gated"
+    ]
+  },
+  {
+    "id": "heb-arm-hammer-five-off-twenty-2026-09",
+    "merchant": "H-E-B",
+    "title": "$5 off $20 in Arm & Hammer or OxiClean laundry items",
+    "summary": "Clip the H-E-B coupon for $5 off a $20 qualifying Arm & Hammer or OxiClean laundry basket through September 22.",
+    "category": "home",
+    "estimatedSavings": 5,
+    "minimumSpend": 20,
+    "savingsRate": 25,
+    "isFree": false,
+    "expiresOn": "2026-09-22",
+    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and eligible items after selecting the 77386 store before clipping.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "laundry",
+      "household",
+      "digital coupon",
+      "location gated"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84050519",
+      "checkedOn": "2026-09-10"
+    },
+    "actionLabel": "Confirm at Spring Creek",
+    "tier": "A",
+    "stackNote": "The 25% rate is reached at exactly $20; compare per-load prices and confirm any item price cuts combine before checkout.",
+    "finePrint": "Requires a $20 qualifying Arm & Hammer or OxiClean laundry basket. The public page showed unlimited use through September 22, but its selected store was Victoria. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
+    "expirationLabel": "Ends September 22",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-10",
+    "preferenceSignals": [
+      "household-staple",
+      "high-value",
+      "location-gated"
+    ]
+  },
+  {
+    "id": "heb-prime-one-beef-five-off-thirty-2026-09-10",
+    "merchant": "H-E-B",
+    "title": "$5 off $30 in Prime 1 Beef today",
+    "summary": "Clip the H-E-B coupon for $5 off a $30 qualifying Prime 1 Beef service-case purchase on September 10.",
+    "category": "grocery",
+    "estimatedSavings": 5,
+    "minimumSpend": 30,
+    "savingsRate": 16.7,
+    "isFree": false,
+    "expiresOn": "2026-09-10",
+    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the same-day coupon and eligible service-case items after selecting the 77386 store.",
+    "verification": "needs-check",
+    "friction": "medium",
+    "tags": [
+      "grocery",
+      "beef",
+      "same day",
+      "digital coupon"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84058938",
+      "checkedOn": "2026-09-10"
+    },
+    "actionLabel": "Confirm today at Spring Creek",
+    "tier": "A",
+    "stackNote": "Use only for a planned qualifying beef purchase of at least $30 and only if the coupon appears for Spring Creek Market today.",
+    "finePrint": "The official page offered $5 off a $30 Prime 1 Beef purchase from the service case and stated that it expires Wednesday, September 10. The page was in Victoria-store context. This scan did not sign in, clip the coupon, or confirm Spring Creek participation.",
+    "expirationLabel": "Ends September 10",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-10",
+    "preferenceSignals": [
+      "grocery",
+      "same-day",
+      "location-gated"
+    ]
   }
 ]

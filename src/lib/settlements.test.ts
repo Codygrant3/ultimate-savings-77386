@@ -15,7 +15,7 @@ describe("class action settlement guardrails", () => {
     };
     const ranked = rankSettlements([...settlements, expired], testDate);
 
-    expect(ranked).toHaveLength(8);
+    expect(ranked).toHaveLength(9);
     expect(ranked.some((settlement) => settlement.id === "expired")).toBe(false);
     expect(ranked.every((settlement) => settlement.feeRequired === false)).toBe(true);
   });

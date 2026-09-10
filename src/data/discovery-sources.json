@@ -278,5 +278,18 @@
       "september 24, 2026",
       "official settlement website"
     ]
+  },
+  {
+    "id": "settlement-comcast-data-breach",
+    "name": "Comcast data breach official settlement",
+    "url": "https://www.comcastbreachsettlement.com/",
+    "category": "settlements",
+    "priority": 10,
+    "keywords": [
+      "submit a claim",
+      "september 14, 2026",
+      "alternative cash payment",
+      "settlement class"
+    ]
   }
 ]
