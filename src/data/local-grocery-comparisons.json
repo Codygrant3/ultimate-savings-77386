@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-08-29",
-  "adWindow": "Live public listings checked August 29, 2026; only reverified prices use that date, and older prices retain their original check dates.",
+  "checkedOn": "2026-09-11",
+  "adWindow": "Live public listings checked September 11, 2026; only reverified prices use that date, and older prices retain their original check dates.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -89,8 +89,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Rollback at Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-29",
-          "dateLabel": "Store page checked Aug 29; rollback from $0.45 each; no end date shown",
+          "checkedOn": "2026-09-11",
+          "dateLabel": "Store page checked Sep 11; rollback from $0.45 each; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -181,20 +181,20 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "These are store-specific rollbacks, not a four-store comparison. Green seedless grapes were reverified at $1.97/lb on August 29; the Gala apple price retains its August 15 check date.",
-      "winner": "Walmart #3585 Gala apples at $1.08/lb (last checked August 15)",
+      "comparisonNote": "These are store-specific rollbacks, not a four-store comparison. Green seedless grapes improved to $1.77/lb and Gala apples held at $1.08/lb when reverified September 11.",
+      "winner": "Walmart #3585 Gala apples at $1.08/lb",
       "prices": [
         {
           "retailer": "Walmart",
           "product": "Green seedless grapes",
           "packageSize": "About 2.25 lb bag",
-          "price": 4.43,
-          "unitPrice": 1.97,
+          "price": 3.98,
+          "unitPrice": 1.77,
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-29",
-          "dateLabel": "Store page checked Aug 29; rollback from $5.33; no end date shown",
+          "checkedOn": "2026-09-11",
+          "dateLabel": "Store page checked Sep 11; rollback from $5.33; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         },
         {
@@ -206,8 +206,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-15",
-          "dateLabel": "Store page checked Aug 15; rollback from $3.64; no end date shown",
+          "checkedOn": "2026-09-11",
+          "dateLabel": "Store page checked Sep 11; rollback from $3.64; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -307,8 +307,8 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-28",
-          "dateLabel": "Store page checked Aug 28; rollback from $6.97; no end date shown",
+          "checkedOn": "2026-09-11",
+          "dateLabel": "Store page checked Sep 11; rollback from $6.97; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -329,8 +329,8 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-08-24",
-          "dateLabel": "Store page checked Aug 24; rollback from $2.34; no end date shown",
+          "checkedOn": "2026-09-11",
+          "dateLabel": "Store page checked Sep 11; rollback from $2.34; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]

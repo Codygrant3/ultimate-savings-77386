@@ -221,6 +221,22 @@
     "keywords": ["free", "rewards", "offer", "limited-time"]
   },
   {
+    "id": "dairy-queen-newsroom",
+    "name": "Dairy Queen official newsroom",
+    "url": "https://news.dairyqueen.com/announcements/",
+    "category": "restaurants",
+    "priority": 9,
+    "keywords": ["free", "rewards", "deal", "limited-time"]
+  },
+  {
+    "id": "topgolf-spring-promotions",
+    "name": "Topgolf Houston-Spring promotions",
+    "url": "https://topgolf.com/us/houston-spring/promotions/",
+    "category": "sports",
+    "priority": 8,
+    "keywords": ["discount", "game play", "coupon", "promotion"]
+  },
+  {
     "id": "chipotle-newsroom",
     "name": "Chipotle official newsroom",
     "url": "https://newsroom.chipotle.com/press-releases?l=10",

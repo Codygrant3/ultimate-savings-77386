@@ -387,7 +387,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-09"
+      "checkedOn": "2026-09-11"
     },
     "actionLabel": "Check Paze eligibility",
     "tier": "A",
@@ -430,7 +430,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-09"
+      "checkedOn": "2026-09-11"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -472,7 +472,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-09"
+      "checkedOn": "2026-09-11"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -511,7 +511,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-09"
+      "checkedOn": "2026-09-11"
     },
     "actionLabel": "Claim chili offer",
     "tier": "A",
@@ -1850,7 +1850,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-09"
+      "checkedOn": "2026-09-11"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1937,7 +1937,7 @@
     "source": {
       "label": "Denny's official Diner Days terms",
       "url": "https://dennys.com/diner-days",
-      "checkedOn": "2026-09-09"
+      "checkedOn": "2026-09-11"
     },
     "actionLabel": "Check Sept 7-11 reward",
     "tier": "A",
@@ -2273,7 +2273,7 @@
     "source": {
       "label": "Wendy's official Rewards page",
       "url": "https://www.wendys.com/rewards",
-      "checkedOn": "2026-09-10"
+      "checkedOn": "2026-09-11"
     },
     "actionLabel": "Join Wendy's Rewards",
     "tier": "A",
@@ -2450,6 +2450,143 @@
       "grocery",
       "same-day",
       "location-gated"
+    ]
+  },
+  {
+    "id": "dairy-queen-free-cheeseburger-2026-09",
+    "merchant": "Dairy Queen",
+    "title": "Free cheeseburger with a $1+ app order Sept 14-18",
+    "summary": "DQ Rewards members can get one free single Original Cheeseburger Signature Stackburger with an app or online order of at least $1 from September 14 through September 18.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 1,
+    "isFree": true,
+    "expiresOn": "2026-09-18",
+    "locationNote": "The offer is nationwide at participating DQ Grill & Chill locations. Spring has official DQ listings, but participation at a specific nearby restaurant is not confirmed in this public scan.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free food",
+      "cheeseburger",
+      "rewards",
+      "app",
+      "national cheeseburger day"
+    ],
+    "source": {
+      "label": "Dairy Queen official newsroom",
+      "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Giving-Rewards-Members-a-Free-Single-Original-Cheeseburger-Signature-Stackburger-in-Honor-of-National-Cheeseburger-Day-/default.aspx",
+      "checkedOn": "2026-09-11"
+    },
+    "actionLabel": "Load Sept 14-18 burger deal",
+    "tier": "A",
+    "stackNote": "Treat the free burger as a single digital deal and do not assume another DQ offer combines unless checkout shows it.",
+    "stackGroup": "dairy-queen-app-offer",
+    "finePrint": "Valid September 14-18, 2026 at participating U.S. DQ Grill & Chill locations. A DQ Rewards account and an app or online order of at least $1 are required. Deals may take up to 24 hours to appear. Limit one deal per person and one redemption per deal. No dollar estimate is shown because the local menu price was not verified.",
+    "expirationLabel": "September 14-18",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-11",
+    "preferenceSignals": [
+      "free-food",
+      "restaurant",
+      "app-specific",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "taco-bell-topgolf-twenty-five-off-2026",
+    "merchant": "Taco Bell Rewards + Topgolf",
+    "title": "$25 off Topgolf game play through Sept 27",
+    "summary": "Taco Bell Rewards members can claim a limited-supply code for $25 off eligible Topgolf game play on Monday through Thursday visits through September 27.",
+    "category": "sports",
+    "estimatedSavings": 25,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-09-27",
+    "availableDaysOfWeek": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "locationNote": "Topgolf Houston-Spring is officially listed at 560 Spring Park Center Blvd, Spring, TX 77373. Confirm that the Rewards code applies to the selected Spring reservation before booking.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "sports",
+      "Topgolf",
+      "Taco Bell Rewards",
+      "entertainment",
+      "coupon code"
+    ],
+    "source": {
+      "label": "Taco Bell official Live Mas Open announcement",
+      "url": "https://www.tacobell.com/newsroom/inaugural-live-mas-open-golf-tournament",
+      "checkedOn": "2026-09-11"
+    },
+    "actionLabel": "Check Rewards code before booking",
+    "tier": "A",
+    "stackNote": "The coupon cannot combine with other game-play coupons, bundles, or packages; compare it with Topgolf's own weekday pricing before booking.",
+    "stackGroup": "topgolf-gameplay-discount",
+    "stackStatus": "exclusive",
+    "finePrint": "The promotional code is limited supply and good for $25 off Topgolf game play for Taco Bell Rewards members. Visits must occur Monday through Thursday by September 27, 2026. It applies to eligible one- or two-bay reservations booked through Topgolf's app or website and to qualifying walk-ins. A $6 one-time Topgolf account fee applies to new guests. Limit one coupon per person and per bay; exclusions include events, Lounge, Swing Suite, and Toptracer Range locations.",
+    "expirationLabel": "Monday-Thursday visits through September 27; while codes last",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-11",
+    "preferenceSignals": [
+      "sports",
+      "local-entertainment",
+      "high-value",
+      "account-specific"
+    ]
+  },
+  {
+    "id": "dunkin-tennis-beverage-bonus-points-2026-09",
+    "merchant": "Dunkin",
+    "title": "100 bonus points daily with a Tennis Beverage Sept 12-13",
+    "summary": "Dunkin Rewards members can earn 100 bonus points each day on September 12 and 13 when they activate the offer and order an eligible Tennis Beverage ahead in the app.",
+    "category": "coffee",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-09-13",
+    "availableDaysOfWeek": [
+      0,
+      6
+    ],
+    "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participation and eligible beverage availability at that store are not confirmed in this public scan.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "coffee",
+      "bonus points",
+      "rewards",
+      "app",
+      "weekend"
+    ],
+    "source": {
+      "label": "Dunkin official fall 2026 newsroom announcement",
+      "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
+      "checkedOn": "2026-09-11"
+    },
+    "actionLabel": "Activate weekend points offer",
+    "tier": "B",
+    "stackNote": "Use only if a Matcha Point Latte or Melon Deuce drink is already planned; no cash value is estimated for the points.",
+    "stackGroup": "dunkin-september-rewards",
+    "finePrint": "Valid September 12-13, 2026 only on qualifying Matcha Point Latte or Melon Deuce drink purchases. Limit 100 bonus points per member per day. The offer must be activated in the Dunkin app, and the qualifying purchase must be ordered ahead through the app at a participating store. No dollar estimate is shown because the beverage price and point redemption value for this purchase were not verified.",
+    "expirationLabel": "September 12-13",
+    "availability": "available",
+    "dealType": "loyalty-reward",
+    "freshness": "new",
+    "discoveredOn": "2026-09-11",
+    "preferenceSignals": [
+      "preferred-coffee",
+      "bonus-points",
+      "time-sensitive",
+      "app-specific"
     ]
   }
 ]
