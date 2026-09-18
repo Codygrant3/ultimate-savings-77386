@@ -364,49 +364,6 @@
     ]
   },
   {
-    "id": "wendys-paze-ten-back-2026",
-    "merchant": "Wendy's + Paze",
-    "title": "$10 back on a $10+ Wendy's app order",
-    "summary": "Eligible Paze users can earn a $10 statement credit on a Wendy's app purchase of at least $10, up to ten times per eligible card.",
-    "category": "restaurants",
-    "estimatedSavings": 10,
-    "minimumSpend": 10,
-    "savingsRate": 100,
-    "isFree": false,
-    "expiresOn": "2026-09-10",
-    "locationNote": "App and payment-method specific. Spring-area Wendy's locations exist, but local Paze checkout eligibility must be confirmed in the app.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "restaurant",
-      "cashback",
-      "statement credit",
-      "app",
-      "payment method"
-    ],
-    "source": {
-      "label": "Wendy's official offers page",
-      "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-11"
-    },
-    "actionLabel": "Check Paze eligibility",
-    "tier": "A",
-    "stackNote": "Do not assume coupon stacking; the Paze offer details must appear for the selected card at checkout and at least $10 must be charged through Paze.",
-    "stackGroup": "wendys-app-order",
-    "finePrint": "The $10 estimate is for one qualifying use. Requires Wendy's account registration, Paze activation, an eligible card from a participating financial institution, and an eligible transaction. Credits may take up to two billing cycles; maximum is ten credits per eligible card.",
-    "expirationLabel": "Ends September 10",
-    "availability": "available",
-    "dealType": "stacking-strategy",
-    "freshness": "current",
-    "discoveredOn": "2026-08-09",
-    "preferenceSignals": [
-      "restaurant",
-      "high-value",
-      "account-specific",
-      "payment-method-specific"
-    ]
-  },
-  {
     "id": "wendys-wednesday-free-nuggets-2026",
     "merchant": "Wendy's",
     "title": "Free 6-piece nuggets Wednesday with $5 purchase",
@@ -430,7 +387,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-11"
+      "checkedOn": "2026-09-18"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -440,7 +397,7 @@
     "expirationLabel": "Wednesdays while listed",
     "availability": "available",
     "dealType": "free-food",
-    "freshness": "improved",
+    "freshness": "current",
     "discoveredOn": "2026-08-11",
     "preferenceSignals": [
       "free-food",
@@ -472,7 +429,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-11"
+      "checkedOn": "2026-09-18"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -482,7 +439,7 @@
     "expirationLabel": "Fridays while listed",
     "availability": "available",
     "dealType": "free-food",
-    "freshness": "improved",
+    "freshness": "current",
     "discoveredOn": "2026-08-11",
     "preferenceSignals": [
       "free-food",
@@ -511,7 +468,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-11"
+      "checkedOn": "2026-09-18"
     },
     "actionLabel": "Claim chili offer",
     "tier": "A",
@@ -522,7 +479,7 @@
     "expirationLabel": "Limited time while listed",
     "availability": "available",
     "dealType": "free-food",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-02",
     "preferenceSignals": [
       "free-food",
@@ -729,211 +686,6 @@
       "new-member",
       "referral-code",
       "high-value"
-    ]
-  },
-  {
-    "id": "heb-crackers-free-storage-bags-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free snack or sandwich bags with 3 cracker bags",
-    "summary": "Buy the qualifying three-count H-E-B Lone Star Cheddar Crackers pack and get a qualifying 50- to 100-count H-E-B Texas Tough snack or sandwich bag box free.",
-    "category": "grocery",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-08",
-    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "snacks",
-      "storage bags",
-      "free item",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84055356",
-      "checkedOn": "2026-09-01"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only if the three-bag cracker pack fits the grocery plan; confirm the selected Spring store carries the coupon and free-item size.",
-    "finePrint": "Requires the three-count 10-ounce H-E-B Lone Star Cheddar Crackers pack and provides one qualifying H-E-B Texas Tough snack or sandwich bag box, 50 to 100 count. Spring Creek Market public page on 2026-09-01 showed 'Expires 9/8/2026, Unlimited use.' No dollar value is estimated because the bag box price was not recorded on the coupon page. Clip requires an account; this scan did not clip.",
-    "expirationLabel": "Ends September 8",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "current",
-    "discoveredOn": "2026-08-26",
-    "preferenceSignals": [
-      "grocery",
-      "staple",
-      "free-item",
-      "coupon-stack"
-    ]
-  },
-  {
-    "id": "heb-buns-free-baked-beans-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free baked beans with buns",
-    "summary": "Buy one qualifying eight-count Mrs Baird's hot dog or hamburger buns and get one qualifying 21.7- to 28-ounce Bush's Best baked or Grillin' Beans free.",
-    "category": "grocery",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-08",
-    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "bread",
-      "beans",
-      "free item",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84038788",
-      "checkedOn": "2026-09-01"
-    },
-    "actionLabel": "Check and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only when buns and beans are both planned; confirm both products and the coupon in the selected Spring store.",
-    "finePrint": "Requires one qualifying eight-count Mrs Baird's hot dog or hamburger buns package and provides one qualifying Bush's Best baked or Grillin' Beans item, 21.7 to 28 ounces. Spring Creek Market public page on 2026-09-01 showed 'Expires 9/8/2026, Unlimited use.' No dollar value is estimated because the qualifying beans price was not recorded on the coupon page. Clip requires an account; this scan did not clip.",
-    "expirationLabel": "Ends September 8",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "current",
-    "discoveredOn": "2026-08-26",
-    "preferenceSignals": [
-      "grocery",
-      "staple",
-      "free-item",
-      "coupon-stack"
-    ]
-  },
-  {
-    "id": "heb-starbucks-frappuccino-free-quaker-oatmeal-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free Quaker oatmeal with a Starbucks Frappuccino 4-pack",
-    "summary": "Buy one qualifying four-pack of 9.5-ounce Starbucks Frappuccino bottles and get one qualifying 8- to 10-count Quaker Instant Oatmeal box free.",
-    "category": "grocery",
-    "estimatedSavings": 2.97,
-    "minimumSpend": 7.78,
-    "savingsRate": 38.2,
-    "isFree": true,
-    "expiresOn": "2026-09-08",
-    "locationNote": "The official coupon page supports the terms and displayed prices, but its public store context was not confirmed as H-E-B Spring Creek Market in 77386. Clip requires an H-E-B account; this scan did not clip or log in.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "coffee",
-      "breakfast",
-      "free item",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84050061",
-      "checkedOn": "2026-08-30"
-    },
-    "actionLabel": "Confirm and clip coupon",
-    "tier": "A",
-    "stackNote": "Use only if both the bottled coffee and oatmeal are planned; confirm the coupon, prices, and qualifying varieties in the selected Spring store.",
-    "finePrint": "The official page snapshot checked August 30 listed the qualifying Starbucks Frappuccino four-pack at $7.78 and the qualifying Quaker oatmeal at $2.97, with a September 8 expiration and unlimited use. The $2.97 estimate and 38.2% rate use that page's displayed prices, not a confirmed Spring Creek Market price. Confirm the selected 77386 store, current prices, coupon availability, and package varieties before purchase.",
-    "expirationLabel": "Ends September 8",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-09-05",
-    "preferenceSignals": [
-      "grocery",
-      "coffee",
-      "free-item",
-      "coupon-stack"
-    ]
-  },
-  {
-    "id": "heb-six-off-eighteen-household-essentials-2026-09",
-    "merchant": "H-E-B",
-    "title": "$6 off $18 in select household essentials",
-    "summary": "Clip the H-E-B coupon for $6 off an $18 basket of qualifying Colgate, Softsoap, Irish Spring, Speed Stick, Tom's of Maine, hello, Palmolive, Ajax, Fabuloso, Suavitel, or Murphy's items.",
-    "category": "home",
-    "estimatedSavings": 6,
-    "minimumSpend": 18,
-    "savingsRate": 33.3,
-    "isFree": false,
-    "expiresOn": "2026-09-08",
-    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "household essentials",
-      "personal care",
-      "cleaning",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84047476",
-      "checkedOn": "2026-09-01"
-    },
-    "actionLabel": "Check eligible basket",
-    "tier": "A",
-    "stackNote": "The 33.3% rate is reached at exactly $18; compare unit prices and confirm any item price cuts combine before checkout.",
-    "finePrint": "Requires an $18 qualifying basket and is limited to one use per customer through September 8. Colgate Base items are excluded. Spring Creek Market public page on 2026-09-01 showed 'Expires 9/8/2026, Limit 1 per customer.' Clip requires an account; this scan did not clip.",
-    "expirationLabel": "Ends September 8",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "current",
-    "discoveredOn": "2026-08-26",
-    "preferenceSignals": [
-      "household-staple",
-      "high-value",
-      "coupon-stack"
-    ]
-  },
-  {
-    "id": "heb-two-off-eight-trail-mix-nuts-2026-09",
-    "merchant": "H-E-B",
-    "title": "$2 off $8 in H-E-B trail mix or nuts",
-    "summary": "Clip the H-E-B coupon for $2 off an $8 basket of qualifying H-E-B, Higher Harvest, H-E-B Organics, H-E-B Mi Tienda, or Hill Country Fare trail mixes or nuts.",
-    "category": "grocery",
-    "estimatedSavings": 2,
-    "minimumSpend": 8,
-    "savingsRate": 25,
-    "isFree": false,
-    "expiresOn": "2026-09-15",
-    "locationNote": "Confirmed on the public coupon page for H-E-B Spring Creek Market (3540 Rayford Rd, Spring, TX 77386). Clip requires an H-E-B account; this scan did not clip or log in.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "nuts",
-      "trail mix",
-      "snacks",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84054890",
-      "checkedOn": "2026-09-01"
-    },
-    "actionLabel": "Check eligible basket",
-    "tier": "A",
-    "stackNote": "The 25% rate is reached at exactly $8; compare price per ounce and confirm any item-level price cuts combine before checkout.",
-    "finePrint": "Requires an $8 qualifying basket of H-E-B, Higher Harvest, H-E-B Organics, H-E-B Mi Tienda, or Hill Country Fare trail mixes or nuts. Spring Creek Market public page on 2026-09-01 showed 'Expires 9/15/2026, Unlimited use.' Clip requires an account; this scan did not clip.",
-    "expirationLabel": "Ends September 15",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "current",
-    "discoveredOn": "2026-08-26",
-    "preferenceSignals": [
-      "grocery",
-      "staple",
-      "coupon-stack"
     ]
   },
   {
@@ -1177,7 +929,7 @@
     "source": {
       "label": "Dunkin official newsroom",
       "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-      "checkedOn": "2026-09-08"
+      "checkedOn": "2026-09-18"
     },
     "actionLabel": "Activate on Monday",
     "tier": "B",
@@ -1627,48 +1379,6 @@
     ]
   },
   {
-    "id": "chipotle-fritz-win-bogo-2026",
-    "merchant": "Chipotle",
-    "title": "BOGO entree code drop after each Taylor Fritz win",
-    "summary": "Taylor Fritz US Open win-triggered BOGO Instagram Story codes ran August 25 through September 8. Official program ends today or when remaining codes are claimed; current live code inventory is not publicly verified.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-08",
-    "locationNote": "The digital offer is open in the 50 states and D.C., but codes are limited, event-triggered, and first-come; redemption at a 77386-area restaurant is not confirmed.",
-    "verification": "verified",
-    "friction": "high",
-    "tags": [
-      "BOGO",
-      "free food",
-      "flash deal",
-      "text code",
-      "Instagram"
-    ],
-    "source": {
-      "label": "Chipotle official newsroom",
-      "url": "https://newsroom.chipotle.com/2026-08-24-CHIPOTLE-DROPS-BOGOS-EVERY-TIME-TAYLOR-FRITZ-WINS-AS-HE-CHASES-HISTORY-IN-NEW-YORK",
-      "checkedOn": "2026-09-08"
-    },
-    "actionLabel": "Watch for a win code",
-    "tier": "B",
-    "stackNote": "Use the issued BOGO by itself; no stacking is assumed.",
-    "stackGroup": "chipotle-promo-code",
-    "finePrint": "Promotion runs August 25 through September 8, or until all codes are claimed. Fritz posts a unique Instagram Story code after each singles victory; the first eligible fans to text it to 888-222 receive a BOGO offer while supplies last. Quantities range from 2,500 to 10,000 by round, limit one code per person per advancement, and standard text rates may apply. A code is not guaranteed today. No dollar value is estimated because current code supply and the local entree price are unverified.",
-    "expirationLabel": "Program ends September 8 or when codes run out",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "current",
-    "discoveredOn": "2026-08-25",
-    "preferenceSignals": [
-      "free-food",
-      "flash-deal",
-      "time-sensitive",
-      "app-specific"
-    ]
-  },
-  {
     "id": "seven-eleven-labor-day-six-dollar-meal-2026",
     "merchant": "7-Eleven",
     "title": "$6 sandwich + 20 oz soda for rewards members",
@@ -1746,46 +1456,6 @@
     ]
   },
   {
-    "id": "seven-eleven-two-dollar-snacks-2026-09",
-    "merchant": "7-Eleven",
-    "title": "$2 select snacks and drinks Sept 4-14",
-    "summary": "From September 4 through September 14, 7Rewards and Speedy Rewards members can buy select snacks and drinks for $2 each, including 19.2-ounce Liquid Death tea, 16-ounce Reign and Bang, Kettle Brand chips, and single-serve Cheetos or Doritos.",
-    "category": "convenience",
-    "estimatedSavings": 0,
-    "minimumSpend": 2,
-    "isFree": false,
-    "expiresOn": "2026-09-14",
-    "locationNote": "Loyalty offer at participating 7-Eleven, Speedway, and Stripes stores. The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 is nearby, but participation is not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "snacks",
-      "drinks",
-      "loyalty",
-      "two-dollar"
-    ],
-    "source": {
-      "label": "7-Eleven official press release",
-      "url": "https://www.corp.7-eleven.com/corp-press-releases/7-eleven-inc-delivers-the-ultimate-summer-sendoff-with-labor-day-deals",
-      "checkedOn": "2026-09-09"
-    },
-    "actionLabel": "Check $2 snack list",
-    "tier": "A",
-    "stackNote": "Loyalty membership is required. Do not assume this stacks with the separate $3 and $6 meal deals unless the app shows both.",
-    "stackGroup": "7rewards-in-store",
-    "finePrint": "Offer valid from 9/4/26 through 9/14/26 only for 7Rewards and Speedy Rewards members. Plus tax. No dollar savings estimate is shown because regular local prices for the listed items were not verified. Confirm the $2 price in the app or at the register before making a trip.",
-    "expirationLabel": "Sept 4-14",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "current",
-    "discoveredOn": "2026-09-01",
-    "preferenceSignals": [
-      "convenience",
-      "loyalty-reward",
-      "time-sensitive"
-    ]
-  },
-  {
     "id": "mcdonalds-grubhub-first-order-ten-off-2026",
     "merchant": "McDonald's + Grubhub",
     "title": "$10 off $15+ for first-time Grubhub diners",
@@ -1850,7 +1520,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-11"
+      "checkedOn": "2026-09-18"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1865,184 +1535,6 @@
     "preferenceSignals": [
       "restaurant",
       "app-specific",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "taco-bell-zero-delivery-fee-2026-09",
-    "merchant": "Taco Bell",
-    "title": "$0 delivery fee on $25+ orders through Sept 16",
-    "summary": "Taco Bell Rewards members can get a $0 delivery fee on app delivery orders of $25 or more (before taxes, tips, and fees) through September 16, one redemption per registered user per day.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 25,
-    "isFree": false,
-    "expiresOn": "2026-09-16",
-    "locationNote": "App delivery only at participating U.S. Taco Bell locations; delivery not available everywhere. Spring-area participation and delivery coverage must be confirmed in the app.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "delivery",
-      "app",
-      "rewards",
-      "zero delivery fee"
-    ],
-    "source": {
-      "label": "Taco Bell official fan-favorite promotions page",
-      "url": "https://www.tacobell.com/promotions/fan-favorite-voting",
-      "checkedOn": "2026-09-03"
-    },
-    "actionLabel": "Check $0 delivery offer",
-    "tier": "A",
-    "stackNote": "Delivery-only Rewards offer; cannot be combined with other offers. Colorado still has a state-mandated retail delivery fee.",
-    "finePrint": "Official terms: August 3, 2026 12:01 AM through September 16, 2026 11:59 PM. $25+ before taxes, tips, and fees on the Taco Bell app for delivery at participating U.S. locations while supplies last. Must be a registered Rewards member. Valid one time per registered user per day. Not valid in-store or pickup. No dollar savings estimate because the usual local delivery fee was not verified.",
-    "expirationLabel": "Ends September 16",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-09-03",
-    "preferenceSignals": [
-      "app-specific",
-      "delivery",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "dennys-diner-days-ten-off-thirty-2026-09",
-    "merchant": "Denny's",
-    "title": "$10 off $30 Sept 7-11",
-    "summary": "Denny's Rewards members can get $10 off an eligible check of $30 or more from September 7 through September 11.",
-    "category": "restaurants",
-    "estimatedSavings": 10,
-    "minimumSpend": 30,
-    "savingsRate": 33.3,
-    "isFree": false,
-    "expiresOn": "2026-09-11",
-    "availableDaysOfWeek": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ],
-    "locationNote": "Participating U.S. Denny's locations only. Denny's lists three Spring restaurants, but this Rewards offer is not confirmed at a specific location near 77386.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "restaurant",
-      "ten dollars off",
-      "rewards",
-      "limited window"
-    ],
-    "source": {
-      "label": "Denny's official Diner Days terms",
-      "url": "https://dennys.com/diner-days",
-      "checkedOn": "2026-09-11"
-    },
-    "actionLabel": "Check Sept 7-11 reward",
-    "tier": "A",
-    "stackNote": "Rewards-member offer cannot be combined with another offer and excludes specified value-menu and discount categories.",
-    "stackGroup": "dennys-diner-days",
-    "stackStatus": "exclusive",
-    "finePrint": "Valid September 7 through September 11 until 11:59 p.m. PST for one redemption per Rewards member at participating U.S. locations. Dine-in or Denny's online ordering only; third-party delivery is excluded. Requires a $30 minimum purchase before taxes and gratuity. The $10 estimate is the published fixed discount.",
-    "expirationLabel": "September 7-11",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-09-04",
-    "preferenceSignals": [
-      "restaurant",
-      "high-value",
-      "account-specific",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "dunkin-free-pumpkin-spice-latte-2026-09-08",
-    "merchant": "Dunkin",
-    "title": "Free medium Pumpkin Spice Signature Latte with purchase today 2-6 p.m.",
-    "summary": "On September 8 only from 2 p.m. to 6 p.m. local time, guests can get a free medium hot or iced Pumpkin Spice Signature Latte with a qualifying purchase at participating Dunkin stores.",
-    "category": "coffee",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-08",
-    "redemptionTimeWindows": [
-      {
-        "startTime": "14:00",
-        "endTime": "18:00"
-      }
-    ],
-    "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participating-store status for this one-day window is not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "coffee",
-      "free drink",
-      "pumpkin spice",
-      "one-day",
-      "qualifying purchase"
-    ],
-    "source": {
-      "label": "Dunkin official newsroom",
-      "url": "https://news.dunkindonuts.com/news/dunkin-pumpkin-spice-2026",
-      "checkedOn": "2026-09-08"
-    },
-    "actionLabel": "Claim 2-6 p.m. free PSL",
-    "tier": "A",
-    "distanceMiles": 2.8,
-    "stackNote": "Cannot be combined with another offer, promotion, or coupon. Add the latte when ordering in-store or in the app.",
-    "stackGroup": "dunkin-same-day-offer",
-    "stackStatus": "exclusive",
-    "finePrint": "Offer valid for one free medium Pumpkin Spice Signature Latte with qualifying purchase made during the promo period at participating Dunkin stores. The latte must be added to the order when ordering in-store or in the mobile app. Qualifying purchases exclude individual MUNCHKINS Donut Hole Treats or a cup of water. Not available on delivery platforms. No cash refunds. While supplies last. Participation may vary. No dollar value is estimated because the local latte price was not verified.",
-    "expirationLabel": "Today only, 2-6 p.m. local",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-09-08",
-    "preferenceSignals": [
-      "preferred-coffee",
-      "free-drink",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "chipotle-pollo-asado-zero-delivery-2026-09",
-    "merchant": "Chipotle",
-    "title": "$0 delivery fee on Pollo Asado orders through Sept 13",
-    "summary": "Chipotle is offering a $0 delivery fee on Pollo Asado orders placed through the Chipotle app or Chipotle.com from August 31 through September 13.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 10,
-    "isFree": false,
-    "expiresOn": "2026-09-13",
-    "locationNote": "Digital Chipotle delivery areas only at participating U.S. and Canada locations; 77386 delivery availability is not confirmed in this public scan.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "delivery",
-      "pollo asado",
-      "zero fee",
-      "app"
-    ],
-    "source": {
-      "label": "Chipotle official newsroom",
-      "url": "https://newsroom.chipotle.com/2026-08-31-CHIPOTLE-MARKS-A-BRAND-FIRST-WITH-ALL-NEW-POLLO-ASADO-AND-THE-DEBUT-OF-CHILI-LIME-CHIPS",
-      "checkedOn": "2026-09-08"
-    },
-    "actionLabel": "Compare Pollo Asado delivery total",
-    "tier": "A",
-    "stackNote": "Higher menu prices are charged for delivery; service and other fees can still apply. Compare the final delivered total against pickup.",
-    "stackGroup": "chipotle-delivery",
-    "finePrint": "Available August 31 to September 13, 2026 within Chipotle delivery areas from participating U.S. and Canada locations during normal hours. Purchase of a Pollo Asado entree is required. Minimum order $10 USD excluding tax and fees; maximum item numbers apply. Not valid on catering, Burritos by the Box, or third-party delivery platforms. Rewards and other promo redemptions may be included but do not count toward the minimum. No dollar savings estimate because local delivery fees and menu upcharges were not verified.",
-    "expirationLabel": "Through September 13",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-09-08",
-    "preferenceSignals": [
-      "restaurant",
-      "delivery",
       "time-sensitive"
     ]
   },
@@ -2082,174 +1574,6 @@
       "restaurant",
       "family-value",
       "fixed-price-meal"
-    ]
-  },
-  {
-    "id": "astros-dollar-dog-night-2026-09-15",
-    "merchant": "Houston Astros",
-    "title": "$1 Hot Dog Night on September 15",
-    "summary": "The Astros' official weekly promotion offers $1 hot dogs at every Tuesday home game, with the September 15 game listed on the promotions calendar.",
-    "category": "sports",
-    "estimatedSavings": 0,
-    "minimumSpend": 1,
-    "isFree": false,
-    "expiresOn": "2026-09-15",
-    "availableDaysOfWeek": [
-      2
-    ],
-    "locationNote": "Daikin Park in Houston; a valid game ticket and travel from 77386 are required.",
-    "verification": "verified",
-    "friction": "high",
-    "tags": [
-      "baseball",
-      "concessions",
-      "one-dollar food",
-      "Tuesday"
-    ],
-    "source": {
-      "label": "Houston Astros official Hot Dog Night page",
-      "url": "https://www.mlb.com/astros/tickets/specials/fan-value/hot-dog-night",
-      "checkedOn": "2026-09-09"
-    },
-    "actionLabel": "Review September 15 game",
-    "tier": "B",
-    "stackNote": "Use only if attending the game already; ticket, parking, and travel costs overwhelm the food discount if this creates a separate trip.",
-    "finePrint": "The official Astros page says $1 hot dogs are available at every Tuesday home game. The September 15 home date is shown on the official promotions calendar. A game ticket is required, availability and purchase limits may apply, and no dollar savings estimate is shown because the regular concession price was not verified.",
-    "expirationLabel": "September 15 home game",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "new",
-    "discoveredOn": "2026-09-09",
-    "preferenceSignals": [
-      "sports",
-      "local-event",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "heb-easy-melt-free-breakfast-sausage-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free breakfast sausage with H-E-B Easy Melt cheese",
-    "summary": "Buy a qualifying 32-ounce H-E-B Easy Melt cheese and get a qualifying 16-ounce H-E-B Premium Breakfast Sausage free through September 15.",
-    "category": "grocery",
-    "estimatedSavings": 3.99,
-    "minimumSpend": 6.97,
-    "savingsRate": 57.2,
-    "isFree": true,
-    "expiresOn": "2026-09-15",
-    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and both item prices after selecting the 77386 store before clipping.",
-    "verification": "needs-check",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "cheese",
-      "breakfast sausage",
-      "free item",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84056030",
-      "checkedOn": "2026-09-09"
-    },
-    "actionLabel": "Confirm at Spring Creek",
-    "tier": "A",
-    "stackNote": "Use only if both items are planned and the coupon appears for Spring Creek Market; compare unit prices before choosing the bundle.",
-    "finePrint": "The public page showed Easy Melt at $6.97 and the free sausage at $3.99, expiring September 15. The 57.2% rate uses those displayed Victoria-store prices. This scan did not sign in, clip the coupon, or confirm availability and pricing at Spring Creek Market.",
-    "expirationLabel": "Ends September 15",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-09-09",
-    "preferenceSignals": [
-      "grocery",
-      "free-item",
-      "high-value",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-natural-cheese-free-wheat-crackers-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free wheat crackers with H-E-B Natural Cheese",
-    "summary": "Buy a qualifying 16-ounce H-E-B Natural Cheese and get qualifying 8.5-ounce H-E-B Thin Wheat Crackers free through September 15.",
-    "category": "grocery",
-    "estimatedSavings": 2.98,
-    "minimumSpend": 4.99,
-    "savingsRate": 59.7,
-    "isFree": true,
-    "expiresOn": "2026-09-15",
-    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and both item prices after selecting the 77386 store before clipping.",
-    "verification": "needs-check",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "cheese",
-      "crackers",
-      "free item",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84056516",
-      "checkedOn": "2026-09-09"
-    },
-    "actionLabel": "Confirm at Spring Creek",
-    "tier": "A",
-    "stackNote": "Use only if both items are planned and the coupon appears for Spring Creek Market; compare unit prices before choosing the bundle.",
-    "finePrint": "The public page showed Natural Cheese at $4.99 and the free crackers at $2.98, expiring September 15. The 59.7% rate uses those displayed Victoria-store prices. This scan did not sign in, clip the coupon, or confirm availability and pricing at Spring Creek Market.",
-    "expirationLabel": "Ends September 15",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-09-09",
-    "preferenceSignals": [
-      "grocery",
-      "free-item",
-      "high-value",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-organics-bread-free-bananas-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free organic bananas with H-E-B Organics bread",
-    "summary": "Buy a qualifying 20-ounce H-E-B Organics bread and get two pounds of H-E-B Organics bananas free in store through September 15.",
-    "category": "grocery",
-    "estimatedSavings": 1.48,
-    "minimumSpend": 4.18,
-    "savingsRate": 35.4,
-    "isFree": true,
-    "expiresOn": "2026-09-15",
-    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and both item prices after selecting the 77386 store before clipping.",
-    "verification": "needs-check",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "bread",
-      "bananas",
-      "free item",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84064325",
-      "checkedOn": "2026-09-09"
-    },
-    "actionLabel": "Confirm at Spring Creek",
-    "tier": "A",
-    "stackNote": "Use only if both items are planned and the coupon appears for Spring Creek Market; compare unit prices before choosing the bundle.",
-    "finePrint": "The public page showed qualifying bread starting at $4.18 and organic bananas at $0.74 per pound, expiring September 15. The $1.48 estimate and 35.4% rate use those displayed Victoria-store prices. In-store redemption is required. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
-    "expirationLabel": "Ends September 15",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-09-09",
-    "preferenceSignals": [
-      "grocery",
-      "produce",
-      "free-item",
-      "location-gated"
     ]
   },
   {
@@ -2413,46 +1737,6 @@
     ]
   },
   {
-    "id": "heb-prime-one-beef-five-off-thirty-2026-09-10",
-    "merchant": "H-E-B",
-    "title": "$5 off $30 in Prime 1 Beef today",
-    "summary": "Clip the H-E-B coupon for $5 off a $30 qualifying Prime 1 Beef service-case purchase on September 10.",
-    "category": "grocery",
-    "estimatedSavings": 5,
-    "minimumSpend": 30,
-    "savingsRate": 16.7,
-    "isFree": false,
-    "expiresOn": "2026-09-10",
-    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the same-day coupon and eligible service-case items after selecting the 77386 store.",
-    "verification": "needs-check",
-    "friction": "medium",
-    "tags": [
-      "grocery",
-      "beef",
-      "same day",
-      "digital coupon"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84058938",
-      "checkedOn": "2026-09-10"
-    },
-    "actionLabel": "Confirm today at Spring Creek",
-    "tier": "A",
-    "stackNote": "Use only for a planned qualifying beef purchase of at least $30 and only if the coupon appears for Spring Creek Market today.",
-    "finePrint": "The official page offered $5 off a $30 Prime 1 Beef purchase from the service case and stated that it expires Wednesday, September 10. The page was in Victoria-store context. This scan did not sign in, clip the coupon, or confirm Spring Creek participation.",
-    "expirationLabel": "Ends September 10",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "new",
-    "discoveredOn": "2026-09-10",
-    "preferenceSignals": [
-      "grocery",
-      "same-day",
-      "location-gated"
-    ]
-  },
-  {
     "id": "dairy-queen-free-cheeseburger-2026-09",
     "merchant": "Dairy Queen",
     "title": "Free cheeseburger with a $1+ app order Sept 14-18",
@@ -2475,17 +1759,17 @@
     "source": {
       "label": "Dairy Queen official newsroom",
       "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Giving-Rewards-Members-a-Free-Single-Original-Cheeseburger-Signature-Stackburger-in-Honor-of-National-Cheeseburger-Day-/default.aspx",
-      "checkedOn": "2026-09-11"
+      "checkedOn": "2026-09-18"
     },
     "actionLabel": "Load Sept 14-18 burger deal",
     "tier": "A",
     "stackNote": "Treat the free burger as a single digital deal and do not assume another DQ offer combines unless checkout shows it.",
     "stackGroup": "dairy-queen-app-offer",
     "finePrint": "Valid September 14-18, 2026 at participating U.S. DQ Grill & Chill locations. A DQ Rewards account and an app or online order of at least $1 are required. Deals may take up to 24 hours to appear. Limit one deal per person and one redemption per deal. No dollar estimate is shown because the local menu price was not verified.",
-    "expirationLabel": "September 14-18",
+    "expirationLabel": "LAST DAY September 18",
     "availability": "available",
     "dealType": "free-food",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-11",
     "preferenceSignals": [
       "free-food",
@@ -2544,49 +1828,181 @@
     ]
   },
   {
-    "id": "dunkin-tennis-beverage-bonus-points-2026-09",
-    "merchant": "Dunkin",
-    "title": "100 bonus points daily with a Tennis Beverage Sept 12-13",
-    "summary": "Dunkin Rewards members can earn 100 bonus points each day on September 12 and 13 when they activate the offer and order an eligible Tennis Beverage ahead in the app.",
-    "category": "coffee",
+    "id": "wendys-daves-single-199-cheeseburger-day-2026-09-18",
+    "merchant": "Wendy's",
+    "title": "Dave's Single for $1.99 with purchase today only",
+    "summary": "Wendy's official offers page lists a National Cheeseburger Day digital offer for a Dave's Single at $1.99 with purchase, today only (September 18).",
+    "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
     "isFree": false,
-    "expiresOn": "2026-09-13",
+    "expiresOn": "2026-09-18",
     "availableDaysOfWeek": [
-      0,
-      6
+      5
     ],
-    "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participation and eligible beverage availability at that store are not confirmed in this public scan.",
+    "locationNote": "App-only digital offer at participating Wendy's. Confirm the Spring-area restaurant and exact purchase requirement in the app before ordering.",
     "verification": "verified",
-    "friction": "medium",
+    "friction": "low",
     "tags": [
-      "coffee",
-      "bonus points",
-      "rewards",
+      "cheeseburger",
       "app",
-      "weekend"
+      "national cheeseburger day",
+      "one-day"
     ],
     "source": {
-      "label": "Dunkin official fall 2026 newsroom announcement",
-      "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-      "checkedOn": "2026-09-11"
+      "label": "Wendy's official offers page",
+      "url": "https://www.wendys.com/offers-coupons",
+      "checkedOn": "2026-09-18"
     },
-    "actionLabel": "Activate weekend points offer",
-    "tier": "B",
-    "stackNote": "Use only if a Matcha Point Latte or Melon Deuce drink is already planned; no cash value is estimated for the points.",
-    "stackGroup": "dunkin-september-rewards",
-    "finePrint": "Valid September 12-13, 2026 only on qualifying Matcha Point Latte or Melon Deuce drink purchases. Limit 100 bonus points per member per day. The offer must be activated in the Dunkin app, and the qualifying purchase must be ordered ahead through the app at a participating store. No dollar estimate is shown because the beverage price and point redemption value for this purchase were not verified.",
-    "expirationLabel": "September 12-13",
+    "actionLabel": "Claim $1.99 Dave's Single",
+    "tier": "A",
+    "stackNote": "Treat as one Wendy's app offer per order unless checkout expressly allows another.",
+    "stackGroup": "wendys-app-order",
+    "finePrint": "Valid today only (9/18/2026) via in-app offer with purchase. App offers cannot be printed. No dollar savings estimate is shown because the local regular menu price was not verified.",
+    "expirationLabel": "Today only 9/18",
     "availability": "available",
     "dealType": "loyalty-reward",
     "freshness": "new",
-    "discoveredOn": "2026-09-11",
+    "discoveredOn": "2026-09-18",
     "preferenceSignals": [
-      "preferred-coffee",
-      "bonus-points",
-      "time-sensitive",
+      "restaurant",
+      "app-specific",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "five-guys-bogoburger-2026-09-16-18",
+    "merchant": "Five Guys",
+    "title": "BOGO burger with code BOGOBURGER Sept 16-18",
+    "summary": "Buy any burger and get a second burger of equal or lesser value free with code BOGOBURGER on digital orders from September 16 through September 18.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-18",
+    "locationNote": "Participating U.S. locations for digital ordering; Spring-area participation not separately confirmed beyond the national official post. App/website only.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "free food",
+      "BOGO",
+      "app",
+      "national cheeseburger day",
+      "code"
+    ],
+    "source": {
+      "label": "Five Guys official news blog",
+      "url": "https://www.fiveguys.com/news/blog/national-cheeseburger-day-2026-buy-one-burger-get-one-free/",
+      "checkedOn": "2026-09-18"
+    },
+    "actionLabel": "Order with BOGOBURGER",
+    "tier": "A",
+    "stackNote": "One code per transaction and one redemption per online account; do not assume third-party delivery or in-store stacking.",
+    "stackGroup": "five-guys-digital-offer",
+    "finePrint": "Valid September 16-18, 2026 at participating U.S. Five Guys locations and select Canadian locations. Must be signed in. Code BOGOBURGER at checkout on the Five Guys app or FiveGuys.com for pickup or first-party delivery only. Not valid in-store or with third-party delivery. Code will not work past midnight local time or for future-dated orders. No dollar estimate because local burger prices were not verified.",
+    "expirationLabel": "LAST DAY September 18",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-18",
+    "preferenceSignals": [
+      "free-food",
+      "restaurant",
+      "app-specific",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "applebees-nfl-season-wing-ticket-2026",
+    "merchant": "Applebee's",
+    "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
+    "summary": "Club Applebee's members who sign up for the free NFL Season Wing Ticket receive a unique weekly email code for six free Boneless Wings To Go with a $15+ online To Go order, Sunday through Thursday, from September 13, 2026 through January 10, 2027.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 15,
+    "isFree": true,
+    "expiresOn": "2027-01-10",
+    "availableDaysOfWeek": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "locationNote": "Participating Applebee's locations nationwide for website/app To Go. Local Spring participation and weekly code delivery must be confirmed after signup.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "free food",
+      "wings",
+      "NFL",
+      "loyalty",
+      "app",
+      "email code"
+    ],
+    "source": {
+      "label": "Applebee's official NFL Wing Ticket news",
+      "url": "https://cm4.applebees.com/en/news/2026/applebees-introduces-nfl-season-wing-ticket-free-boneless-wings-weekly",
+      "checkedOn": "2026-09-18"
+    },
+    "actionLabel": "Sign up for Wing Ticket",
+    "tier": "A",
+    "stackNote": "Weekly code is its own To Go offer; not valid on third-party delivery sites.",
+    "stackGroup": "applebees-to-go-offer",
+    "finePrint": "Signup and weekly codes for Club Applebee's members. Codes arrive by email each Sunday and are redeemable Sunday through Thursday of that week through January 10, 2027. Minimum $15 online To Go order excluding alcohol, gift cards, tax, delivery/service fees, and gratuity. Limit one order of 6 free Boneless Wings per week. Participating locations; other restrictions may apply. No dollar estimate because the local wing price was not verified.",
+    "expirationLabel": "Through January 10, 2027",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-18",
+    "preferenceSignals": [
+      "free-food",
+      "restaurant",
+      "loyalty",
       "app-specific"
+    ]
+  },
+  {
+    "id": "burger-king-royal-perks-cheeseburger-week-2026-09",
+    "merchant": "Burger King",
+    "title": "Royal Perks National Cheeseburger Day week freebies (app confirm)",
+    "summary": "Secondary coverage reports a Royal Perks week of free daily items Sept 14-20, including a free Bacon Cheeseburger with $3+ purchase today (9/18). Burger King newsroom did not publish a matching press release in this scan, so the offer remains needs-check until the BK app/Offers tab confirms it for your account and location.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 3,
+    "isFree": true,
+    "expiresOn": "2026-09-20",
+    "locationNote": "App/BK.com Royal Perks digital offers at participating restaurants; 77386 participation and today's exact item must be confirmed in the Offers tab.",
+    "verification": "needs-check",
+    "friction": "medium",
+    "tags": [
+      "free food",
+      "Royal Perks",
+      "app",
+      "national cheeseburger day",
+      "needs-check"
+    ],
+    "source": {
+      "label": "Fox Business National Cheeseburger Day roundup (secondary; confirm in BK app)",
+      "url": "https://www.foxbusiness.com/lifestyle/national-cheeseburger-day-2026-burger-deals-mcdonalds-wendys-more",
+      "checkedOn": "2026-09-18"
+    },
+    "actionLabel": "Check BK Offers tab",
+    "tier": "B",
+    "stackNote": "Activate the day's offer before checkout; secondary reports say it may not stack on Trio meals.",
+    "stackGroup": "burger-king-app-offer",
+    "finePrint": "Reported week runs Sept 14-20 with different free items each day and usually a $3 minimum (except the reported Sept 15 BOGO Whopper Jr.). Royal Perks membership and app/BK.com ordering required. Not verified on news.bk.com in this run. Confirm exact item, purchase minimum, and local availability in the app before traveling.",
+    "expirationLabel": "Week through September 20",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-18",
+    "preferenceSignals": [
+      "free-food",
+      "restaurant",
+      "app-specific",
+      "time-sensitive",
+      "unverified"
     ]
   }
 ]

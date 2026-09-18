@@ -539,28 +539,28 @@ describe("Savings Desk interactions", () => {
       screen.getByRole("heading", { name: "Class action settlements" })
     ).toBeTruthy();
     expect(screen.getByText("Informational only — not legal advice")).toBeTruthy();
-    expect(screen.getAllByText("Eligibility not confirmed")).toHaveLength(6);
+    expect(screen.getAllByText("Eligibility not confirmed")).toHaveLength(4);
     expect(
       screen.getAllByRole("link", { name: "Open official claim form" })
-    ).toHaveLength(6);
+    ).toHaveLength(4);
     expect(screen.queryByRole("button", { name: /submit claim/i })).toBeNull();
 
     fireEvent.click(
       screen.getByRole("button", {
-        name: "Save Chantix retail-purchase settlement"
+        name: "Save Lands' End data incident settlement"
       })
     );
     fireEvent.click(
       screen.getByRole("button", {
-        name: "Enable reminder for Chantix retail-purchase settlement"
+        name: "Enable reminder for Lands' End data incident settlement"
       })
     );
 
     expect(
       window.localStorage.getItem("savings-desk:settlement-saved")
-    ).toContain("chantix-consumer-settlement-2026");
+    ).toContain("lands-end-data-2026");
     expect(
       window.localStorage.getItem("savings-desk:settlement-reminders")
-    ).toContain("chantix-consumer-settlement-2026");
+    ).toContain("lands-end-data-2026");
   });
 });
