@@ -387,7 +387,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-18"
+      "checkedOn": "2026-09-19"
     },
     "actionLabel": "Claim Wednesday offer",
     "tier": "A",
@@ -429,7 +429,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-18"
+      "checkedOn": "2026-09-19"
     },
     "actionLabel": "Claim Friday offer",
     "tier": "A",
@@ -468,7 +468,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-18"
+      "checkedOn": "2026-09-19"
     },
     "actionLabel": "Claim chili offer",
     "tier": "A",
@@ -1520,7 +1520,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-18"
+      "checkedOn": "2026-09-19"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1737,48 +1737,6 @@
     ]
   },
   {
-    "id": "dairy-queen-free-cheeseburger-2026-09",
-    "merchant": "Dairy Queen",
-    "title": "Free cheeseburger with a $1+ app order Sept 14-18",
-    "summary": "DQ Rewards members can get one free single Original Cheeseburger Signature Stackburger with an app or online order of at least $1 from September 14 through September 18.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 1,
-    "isFree": true,
-    "expiresOn": "2026-09-18",
-    "locationNote": "The offer is nationwide at participating DQ Grill & Chill locations. Spring has official DQ listings, but participation at a specific nearby restaurant is not confirmed in this public scan.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free food",
-      "cheeseburger",
-      "rewards",
-      "app",
-      "national cheeseburger day"
-    ],
-    "source": {
-      "label": "Dairy Queen official newsroom",
-      "url": "https://news.dairyqueen.com/announcements/details/2026/DQ-is-Giving-Rewards-Members-a-Free-Single-Original-Cheeseburger-Signature-Stackburger-in-Honor-of-National-Cheeseburger-Day-/default.aspx",
-      "checkedOn": "2026-09-18"
-    },
-    "actionLabel": "Load Sept 14-18 burger deal",
-    "tier": "A",
-    "stackNote": "Treat the free burger as a single digital deal and do not assume another DQ offer combines unless checkout shows it.",
-    "stackGroup": "dairy-queen-app-offer",
-    "finePrint": "Valid September 14-18, 2026 at participating U.S. DQ Grill & Chill locations. A DQ Rewards account and an app or online order of at least $1 are required. Deals may take up to 24 hours to appear. Limit one deal per person and one redemption per deal. No dollar estimate is shown because the local menu price was not verified.",
-    "expirationLabel": "LAST DAY September 18",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "current",
-    "discoveredOn": "2026-09-11",
-    "preferenceSignals": [
-      "free-food",
-      "restaurant",
-      "app-specific",
-      "time-sensitive"
-    ]
-  },
-  {
     "id": "taco-bell-topgolf-twenty-five-off-2026",
     "merchant": "Taco Bell Rewards + Topgolf",
     "title": "$25 off Topgolf game play through Sept 27",
@@ -1828,91 +1786,6 @@
     ]
   },
   {
-    "id": "wendys-daves-single-199-cheeseburger-day-2026-09-18",
-    "merchant": "Wendy's",
-    "title": "Dave's Single for $1.99 with purchase today only",
-    "summary": "Wendy's official offers page lists a National Cheeseburger Day digital offer for a Dave's Single at $1.99 with purchase, today only (September 18).",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-09-18",
-    "availableDaysOfWeek": [
-      5
-    ],
-    "locationNote": "App-only digital offer at participating Wendy's. Confirm the Spring-area restaurant and exact purchase requirement in the app before ordering.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "cheeseburger",
-      "app",
-      "national cheeseburger day",
-      "one-day"
-    ],
-    "source": {
-      "label": "Wendy's official offers page",
-      "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-18"
-    },
-    "actionLabel": "Claim $1.99 Dave's Single",
-    "tier": "A",
-    "stackNote": "Treat as one Wendy's app offer per order unless checkout expressly allows another.",
-    "stackGroup": "wendys-app-order",
-    "finePrint": "Valid today only (9/18/2026) via in-app offer with purchase. App offers cannot be printed. No dollar savings estimate is shown because the local regular menu price was not verified.",
-    "expirationLabel": "Today only 9/18",
-    "availability": "available",
-    "dealType": "loyalty-reward",
-    "freshness": "new",
-    "discoveredOn": "2026-09-18",
-    "preferenceSignals": [
-      "restaurant",
-      "app-specific",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "five-guys-bogoburger-2026-09-16-18",
-    "merchant": "Five Guys",
-    "title": "BOGO burger with code BOGOBURGER Sept 16-18",
-    "summary": "Buy any burger and get a second burger of equal or lesser value free with code BOGOBURGER on digital orders from September 16 through September 18.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-18",
-    "locationNote": "Participating U.S. locations for digital ordering; Spring-area participation not separately confirmed beyond the national official post. App/website only.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "free food",
-      "BOGO",
-      "app",
-      "national cheeseburger day",
-      "code"
-    ],
-    "source": {
-      "label": "Five Guys official news blog",
-      "url": "https://www.fiveguys.com/news/blog/national-cheeseburger-day-2026-buy-one-burger-get-one-free/",
-      "checkedOn": "2026-09-18"
-    },
-    "actionLabel": "Order with BOGOBURGER",
-    "tier": "A",
-    "stackNote": "One code per transaction and one redemption per online account; do not assume third-party delivery or in-store stacking.",
-    "stackGroup": "five-guys-digital-offer",
-    "finePrint": "Valid September 16-18, 2026 at participating U.S. Five Guys locations and select Canadian locations. Must be signed in. Code BOGOBURGER at checkout on the Five Guys app or FiveGuys.com for pickup or first-party delivery only. Not valid in-store or with third-party delivery. Code will not work past midnight local time or for future-dated orders. No dollar estimate because local burger prices were not verified.",
-    "expirationLabel": "LAST DAY September 18",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "new",
-    "discoveredOn": "2026-09-18",
-    "preferenceSignals": [
-      "free-food",
-      "restaurant",
-      "app-specific",
-      "time-sensitive"
-    ]
-  },
-  {
     "id": "applebees-nfl-season-wing-ticket-2026",
     "merchant": "Applebee's",
     "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
@@ -1943,7 +1816,7 @@
     "source": {
       "label": "Applebee's official NFL Wing Ticket news",
       "url": "https://cm4.applebees.com/en/news/2026/applebees-introduces-nfl-season-wing-ticket-free-boneless-wings-weekly",
-      "checkedOn": "2026-09-18"
+      "checkedOn": "2026-09-19"
     },
     "actionLabel": "Sign up for Wing Ticket",
     "tier": "A",
@@ -1966,7 +1839,7 @@
     "id": "burger-king-royal-perks-cheeseburger-week-2026-09",
     "merchant": "Burger King",
     "title": "Royal Perks National Cheeseburger Day week freebies (app confirm)",
-    "summary": "Secondary coverage reports a Royal Perks week of free daily items Sept 14-20, including a free Bacon Cheeseburger with $3+ purchase today (9/18). Burger King newsroom did not publish a matching press release in this scan, so the offer remains needs-check until the BK app/Offers tab confirms it for your account and location.",
+    "summary": "Secondary deal roundups say Royal Perks members get a different free item each day Sept 14-20 (today Sat 9/19 often listed as free 4-piece Nuggets with $3+). Official news.bk.com still has no matching Cheeseburger Week release as of this check.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 3,
@@ -1985,17 +1858,17 @@
     "source": {
       "label": "Fox Business National Cheeseburger Day roundup (secondary; confirm in BK app)",
       "url": "https://www.foxbusiness.com/lifestyle/national-cheeseburger-day-2026-burger-deals-mcdonalds-wendys-more",
-      "checkedOn": "2026-09-18"
+      "checkedOn": "2026-09-19"
     },
     "actionLabel": "Check BK Offers tab",
     "tier": "B",
     "stackNote": "Activate the day's offer before checkout; secondary reports say it may not stack on Trio meals.",
     "stackGroup": "burger-king-app-offer",
-    "finePrint": "Reported week runs Sept 14-20 with different free items each day and usually a $3 minimum (except the reported Sept 15 BOGO Whopper Jr.). Royal Perks membership and app/BK.com ordering required. Not verified on news.bk.com in this run. Confirm exact item, purchase minimum, and local availability in the app before traveling.",
+    "finePrint": "Needs app confirmation. Secondary sources disagree on exact daily items and purchase minimums ($1+ vs $3+). news.bk.com homepage checked 2026-09-19 showed other Sept releases but not this week. Do not treat as verified until the BK app or an official BK newsroom/press release confirms today's offer.",
     "expirationLabel": "Week through September 20",
     "availability": "available",
     "dealType": "free-food",
-    "freshness": "new",
+    "freshness": "monitoring",
     "discoveredOn": "2026-09-18",
     "preferenceSignals": [
       "free-food",
@@ -2003,6 +1876,128 @@
       "app-specific",
       "time-sensitive",
       "unverified"
+    ]
+  },
+  {
+    "id": "long-john-silvers-talk-like-a-pirate-day-2026-09-19",
+    "merchant": "Long John Silver's",
+    "title": "Talk Like a Pirate Day free fish or chicken today",
+    "summary": "On September 19 only, guests who talk like a pirate at participating Long John Silver's can get a free piece of hand-battered fish or a Chicken Plank; guests who dress like a pirate can get a free two-piece fish or chicken basket. Temporary pirate tattoos while supplies last.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-19",
+    "availableDaysOfWeek": [
+      6
+    ],
+    "locationNote": "Participating locations nationwide. Official locator lists Long John Silver's at 2058 FM 2920, Spring, TX 77388; that page marks the store Non-Participating for online ordering, so confirm in-store promo participation before a special trip.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free food",
+      "one-day",
+      "Talk Like a Pirate Day",
+      "in-store"
+    ],
+    "source": {
+      "label": "Long John Silver's PR Newswire release",
+      "url": "https://www.prnewswire.com/news-releases/arr-you-ready-long-john-silvers-celebrates-talk-like-a-pirate-day-with-free-food-302874688.html",
+      "checkedOn": "2026-09-19"
+    },
+    "actionLabel": "Visit participating LJS today",
+    "tier": "A",
+    "stackNote": "In-restaurant promo; do not assume app coupons stack with the free item.",
+    "finePrint": "Valid September 19, 2026 at participating locations while supplies last. Talk like a pirate for one free fish piece or Chicken Plank; dress like a pirate for a free two-piece fish or chicken basket. Temporary tattoos while supplies last. No purchase requirement stated in the official release. No dollar estimate because local menu prices were not verified.",
+    "expirationLabel": "TODAY ONLY September 19",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-19",
+    "preferenceSignals": [
+      "free-food",
+      "restaurant",
+      "time-sensitive"
+    ]
+  },
+  {
+    "id": "seven-eleven-byoc-slurpee-199-2026-09-19",
+    "merchant": "7-Eleven",
+    "title": "Bring Your Own Cup Slurpee for $1.99 today only",
+    "summary": "On Saturday September 19 only, customers can fill a clean, watertight, leak-proof container that fits the 10-inch in-store cutout with any available Slurpee flavor for $1.99 at participating 7-Eleven, Speedway, and Stripes stores.",
+    "category": "convenience",
+    "estimatedSavings": 0,
+    "minimumSpend": 1.99,
+    "isFree": false,
+    "expiresOn": "2026-09-19",
+    "availableDaysOfWeek": [
+      6
+    ],
+    "locationNote": "Participating 7-Eleven, Speedway, and Stripes stores; 77386 / Spring participation not separately confirmed beyond the national official release.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "Slurpee",
+      "BYOC",
+      "one-day",
+      "convenience"
+    ],
+    "source": {
+      "label": "7-Eleven official corporate press release",
+      "url": "https://corp.7-eleven.com/corp-press-releases/think-outside-the-cup-for-7-eleven-inc-s-bring-your-own-cup-day",
+      "checkedOn": "2026-09-19"
+    },
+    "actionLabel": "Fill BYOC Slurpee today",
+    "tier": "A",
+    "stackNote": "Standalone fill offer; no loyalty stacking assumed.",
+    "finePrint": "Valid only on 9/19/2026. Limit one cup per person. Container must be clean, watertight, leak-proof, stand upright, and fit within the 10-inch cutout. Available while supplies last at participating stores. No dollar savings estimate because the local regular Slurpee price for an equivalent size was not verified.",
+    "expirationLabel": "TODAY ONLY September 19",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-19",
+    "preferenceSignals": [
+      "convenience-reward",
+      "time-sensitive",
+      "local-station"
+    ]
+  },
+  {
+    "id": "krispy-kreme-blueberry-five-dollar-dozen-2026-09",
+    "merchant": "Krispy Kreme",
+    "title": "$5 Original Glazed Blueberry dozen with any dozen",
+    "summary": "From September 17 through September 20, buy any regularly priced dozen (or 16-ct Minis) and get a dozen Original Glazed Blueberry Flavored Doughnuts for $5 at participating shops. Online pickup/delivery uses code BLUEBERRY.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-09-20",
+    "locationNote": "Participating U.S. Krispy Kreme shops; confirm the nearest Spring / The Woodlands shop and product availability before a trip.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "doughnut",
+      "dozen",
+      "limited time",
+      "code"
+    ],
+    "source": {
+      "label": "Krispy Kreme official Blueberry offer page",
+      "url": "https://www.krispykreme.com/Blueberry",
+      "checkedOn": "2026-09-19"
+    },
+    "actionLabel": "Get $5 blueberry dozen",
+    "tier": "A",
+    "stackNote": "Treat as its own dozen deal; online code BLUEBERRY for app/website orders.",
+    "finePrint": "Available Thursday 9/17 through Sunday 9/20/2026 at participating U.S. and Canadian shops while supplies last; not offered in Puerto Rico. In-shop/drive-thru limit two discounted dozens per guest; online pickup/delivery limit one per guest with code BLUEBERRY. Requires purchase of any regularly priced dozen or 16-ct Minis. No dollar estimate because local dozen prices were not verified.",
+    "expirationLabel": "Ends Sunday September 20",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-19",
+    "preferenceSignals": [
+      "restaurant",
+      "time-sensitive"
     ]
   }
 ]
