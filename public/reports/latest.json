@@ -1,47 +1,48 @@
 {
-  "generatedAt": "2026-09-19T12:05:25.188Z",
+  "generatedAt": "2026-09-20T12:05:27.247Z",
   "weekOf": "2026-09-14",
   "zipCode": "77386",
   "totalPotentialSavings": 163.74,
-  "verifiedCount": 40,
-  "expiringCount": 17,
+  "verifiedCount": 39,
+  "expiringCount": 16,
   "opportunities": [
     {
-      "id": "long-john-silvers-talk-like-a-pirate-day-2026-09-19",
-      "merchant": "Long John Silver's",
-      "title": "Talk Like a Pirate Day free fish or chicken today",
-      "summary": "On September 19 only, guests who talk like a pirate at participating Long John Silver's can get a free piece of hand-battered fish or a Chicken Plank; guests who dress like a pirate can get a free two-piece fish or chicken basket. Temporary pirate tattoos while supplies last.",
+      "id": "moes-national-queso-day-free-cup-2026-09-20",
+      "merchant": "Moe's Southwest Grill",
+      "title": "National Queso Day free cup of queso (no purchase)",
+      "summary": "On September 20 only, participating Moe's locations offer a free cup of queso in-store with no purchase necessary (taxes/fees excluded). Moe Rewards members also have a Cup of Queso loyalty reward window through Sept 20.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 0,
       "isFree": true,
-      "expiresOn": "2026-09-19",
+      "expiresOn": "2026-09-20",
       "availableDaysOfWeek": [
-        6
+        0
       ],
-      "locationNote": "Participating locations nationwide. Official locator lists Long John Silver's at 2058 FM 2920, Spring, TX 77388; that page marks the store Non-Participating for online ordering, so confirm in-store promo participation before a special trip.",
+      "locationNote": "Participating Moe's locations. Nearby listings include Spring (Louetta Rd / 77379 area) and Tomball/Woodlands-area stores; confirm participation and in-store availability before a trip.",
       "verification": "verified",
       "friction": "low",
       "tags": [
         "free food",
+        "queso",
         "one-day",
-        "Talk Like a Pirate Day",
+        "National Queso Day",
         "in-store"
       ],
       "source": {
-        "label": "Long John Silver's PR Newswire release",
-        "url": "https://www.prnewswire.com/news-releases/arr-you-ready-long-john-silvers-celebrates-talk-like-a-pirate-day-with-free-food-302874688.html",
-        "checkedOn": "2026-09-19"
+        "label": "Moe's official offers page (National Queso Day)",
+        "url": "https://www.moes.com/offers",
+        "checkedOn": "2026-09-20"
       },
-      "actionLabel": "Visit participating LJS today",
+      "actionLabel": "Get free queso today",
       "tier": "A",
-      "stackNote": "In-restaurant promo; do not assume app coupons stack with the free item.",
-      "finePrint": "Valid September 19, 2026 at participating locations while supplies last. Talk like a pirate for one free fish piece or Chicken Plank; dress like a pirate for a free two-piece fish or chicken basket. Temporary tattoos while supplies last. No purchase requirement stated in the official release. No dollar estimate because local menu prices were not verified.",
-      "expirationLabel": "TODAY ONLY September 19",
+      "stackNote": "Standalone in-store promo; not valid with other offers/rewards or third-party delivery.",
+      "finePrint": "Official moes.com/offers: \"National Queso Day - Cup of Queso on Us\" valid in store on 9/20/26, no purchase necessary, excluding taxes and fees, participating locations, in-store only, single use. Separate Loyalty Offer for Moe Rewards members runs 9/17-9/20 for one Cup of Queso on us (must apply Reward at checkout for online/app). Double Dip Days also notes free Cup of Queso on 9/20 for non-members in-store with mention of the offer. No dollar estimate because local cup price was not verified.",
+      "expirationLabel": "TODAY ONLY September 20",
       "availability": "available",
       "dealType": "free-food",
       "freshness": "new",
-      "discoveredOn": "2026-09-19",
+      "discoveredOn": "2026-09-20",
       "preferenceSignals": [
         "free-food",
         "restaurant",
@@ -145,7 +146,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-09-09",
-      "distanceEvidenceAgeDays": 9,
+      "distanceEvidenceAgeDays": 10,
       "distanceSourceLabel": "Take 5 Spring location coupons",
       "distanceSourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
       "score": 70,
@@ -155,7 +156,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -174,6 +175,211 @@
           "points": 8.4,
           "weight": 10,
           "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.4 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "seven-rewards-fuel-welcome-2026",
+      "merchant": "7REWARDS Fuel",
+      "title": "11¢ off per gallon on the first seven fills",
+      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
+      "category": "fuel",
+      "estimatedSavings": 11.55,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "fuel",
+        "new member",
+        "seven fills",
+        "local station"
+      ],
+      "source": {
+        "label": "7REWARDS Fuel",
+        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
+        "checkedOn": "2026-09-09"
+      },
+      "actionLabel": "Review fuel offer",
+      "tier": "A",
+      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
+      "stackGroup": "7rewards-fuel-promotion",
+      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
+      "expirationLabel": "First 90 days or seven trips",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "local-high-value",
+        "stacking"
+      ],
+      "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 26,
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
+      "score": 67,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 11.7,
+          "weight": 18,
+          "detail": "Official source verified; checked 10 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 15.36,
+          "weight": 24,
+          "detail": "$11.55 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 2.48,
+          "weight": 8,
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 26 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "shell-fuel-rewards-new-member-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "10¢, 20¢, then 30¢ off per gallon",
+      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
+      "category": "fuel",
+      "estimatedSavings": 9,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "new member",
+        "fuel",
+        "three fill-ups"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-09-09"
+      },
+      "actionLabel": "Review offer",
+      "tier": "A",
+      "distanceMiles": 2.4,
+      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
+      "expirationLabel": "Use within 60 days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "stacking"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-09-09",
+      "distanceEvidenceAgeDays": 10,
+      "distanceSourceLabel": "Shell Fuel Rewards",
+      "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+      "score": 66,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 11.7,
+          "weight": 18,
+          "detail": "Official source verified; checked 10 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 14.16,
+          "weight": 24,
+          "detail": "$9.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
         },
         {
           "label": "Local relevance",
@@ -256,14 +462,14 @@
         "account-specific"
       ],
       "distanceBasis": "unknown",
-      "score": 67,
+      "score": 63,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 15.299999999999999,
+          "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
+          "detail": "Official source verified; checked 8 days ago"
         },
         {
           "label": "Dollar value",
@@ -293,7 +499,7 @@
           "label": "Timing",
           "points": 6.9,
           "weight": 10,
-          "detail": "Ends in 9 days; newly found"
+          "detail": "Ends in 8 days; newly found"
         },
         {
           "label": "Effort",
@@ -312,314 +518,6 @@
           "points": 0.8400000000000001,
           "weight": 7,
           "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
-      "id": "seven-rewards-fuel-welcome-2026",
-      "merchant": "7REWARDS Fuel",
-      "title": "11¢ off per gallon on the first seven fills",
-      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
-      "category": "fuel",
-      "estimatedSavings": 11.55,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "fuel",
-        "new member",
-        "seven fills",
-        "local station"
-      ],
-      "source": {
-        "label": "7REWARDS Fuel",
-        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-        "checkedOn": "2026-09-09"
-      },
-      "actionLabel": "Review fuel offer",
-      "tier": "A",
-      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
-      "stackGroup": "7rewards-fuel-promotion",
-      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
-      "expirationLabel": "First 90 days or seven trips",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-09",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "local-high-value",
-        "stacking"
-      ],
-      "distanceMiles": 3.35,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
-      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
-      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
-      "score": 67,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 15.36,
-          "weight": 24,
-          "detail": "$11.55 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.48,
-          "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 25 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "shell-fuel-rewards-new-member-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "10¢, 20¢, then 30¢ off per gallon",
-      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
-      "category": "fuel",
-      "estimatedSavings": 9,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "new member",
-        "fuel",
-        "three fill-ups"
-      ],
-      "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-09-09"
-      },
-      "actionLabel": "Review offer",
-      "tier": "A",
-      "distanceMiles": 2.4,
-      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
-      "stackGroup": "shell-fuel-promotion",
-      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
-      "expirationLabel": "Use within 60 days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "stacking"
-      ],
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-09",
-      "distanceEvidenceAgeDays": 9,
-      "distanceSourceLabel": "Shell Fuel Rewards",
-      "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "score": 66,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 14.16,
-          "weight": 24,
-          "detail": "$9.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "2.4 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "wendys-rewards-signup-free-nuggets-2026",
-      "merchant": "Wendy's",
-      "title": "Free 10-piece nuggets plus 200 points for joining Rewards",
-      "summary": "New Wendy's Rewards members can receive a free 10-piece nugget reward and 200 bonus points after signing up.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "Available to new Wendy's Rewards members at participating U.S. restaurants; confirm the reward appears for the selected Spring-area location before ordering.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "new member",
-        "rewards",
-        "app"
-      ],
-      "source": {
-        "label": "Wendy's official Rewards page",
-        "url": "https://www.wendys.com/rewards",
-        "checkedOn": "2026-09-11"
-      },
-      "actionLabel": "Join Wendy's Rewards",
-      "tier": "A",
-      "stackNote": "Treat the signup reward as its own app offer; do not assume it combines with another Wendy's coupon in the same order.",
-      "stackGroup": "wendys-app-order",
-      "finePrint": "New-account and participating-location restrictions apply. Wendy's currently advertises a free 10-piece nugget reward plus 200 bonus points for signup. No dollar value is estimated because the local menu price and account-level reward timing were not verified.",
-      "expirationLabel": "While listed",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "new",
-      "discoveredOn": "2026-09-10",
-      "preferenceSignals": [
-        "free-food",
-        "new-member",
-        "app-specific"
-      ],
-      "distanceMiles": 4.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
-      "distanceSourceLabel": "Wendy's official restaurant locator",
-      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
-      "score": 65,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 7 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Household match: free food"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.48,
-          "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 25 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -666,7 +564,7 @@
       "distanceMiles": 1.9,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Exxon Mobil official station locator result",
       "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
       "score": 63,
@@ -676,7 +574,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -700,13 +598,13 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 6.5,
           "weight": 10,
-          "detail": "Ends in 12 days; recently improved"
+          "detail": "Ends in 11 days; recently improved"
         },
         {
           "label": "Effort",
@@ -774,7 +672,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-09-18",
-      "distanceEvidenceAgeDays": 0,
+      "distanceEvidenceAgeDays": 1,
       "distanceSourceLabel": "Dunkin official newsroom",
       "distanceSourceUrl": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
       "score": 62,
@@ -784,7 +682,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
+          "detail": "Official source verified; checked 1 day ago"
         },
         {
           "label": "Dollar value",
@@ -814,7 +712,110 @@
           "label": "Timing",
           "points": 6.9,
           "weight": 10,
-          "detail": "Ends in 10 days; newly found"
+          "detail": "Ends in 9 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "wendys-rewards-signup-free-nuggets-2026",
+      "merchant": "Wendy's",
+      "title": "Free 10-piece nuggets plus 200 points for joining Rewards",
+      "summary": "New Wendy's Rewards members can receive a free 10-piece nugget reward and 200 bonus points after signing up.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "Available to new Wendy's Rewards members at participating U.S. restaurants; confirm the reward appears for the selected Spring-area location before ordering.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "new member",
+        "rewards",
+        "app"
+      ],
+      "source": {
+        "label": "Wendy's official Rewards page",
+        "url": "https://www.wendys.com/rewards",
+        "checkedOn": "2026-09-11"
+      },
+      "actionLabel": "Join Wendy's Rewards",
+      "tier": "A",
+      "stackNote": "Treat the signup reward as its own app offer; do not assume it combines with another Wendy's coupon in the same order.",
+      "stackGroup": "wendys-app-order",
+      "finePrint": "New-account and participating-location restrictions apply. Wendy's currently advertises a free 10-piece nugget reward plus 200 bonus points for signup. No dollar value is estimated because the local menu price and account-level reward timing were not verified.",
+      "expirationLabel": "While listed",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-09-10",
+      "preferenceSignals": [
+        "free-food",
+        "new-member",
+        "app-specific"
+      ],
+      "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 26,
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
+      "score": 61,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 11.7,
+          "weight": 18,
+          "detail": "Official source verified; checked 8 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 2.48,
+          "weight": 8,
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 26 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
         },
         {
           "label": "Effort",
@@ -876,7 +877,7 @@
       "distanceMiles": 4.7,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-15",
-      "distanceEvidenceAgeDays": 34,
+      "distanceEvidenceAgeDays": 35,
       "distanceSourceLabel": "Rainbow Car Care frequent wash program",
       "distanceSourceUrl": "https://rainbowcarcare.com/frequent-wash-program",
       "score": 60,
@@ -886,7 +887,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -910,7 +911,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; location checked 34 days ago; offer participation unconfirmed"
+          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; location checked 35 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -979,7 +980,7 @@
       "distanceMiles": 3.35,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 60,
@@ -989,7 +990,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -1013,7 +1014,7 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -1045,7 +1046,7 @@
       "id": "krispy-kreme-blueberry-five-dollar-dozen-2026-09",
       "merchant": "Krispy Kreme",
       "title": "$5 Original Glazed Blueberry dozen with any dozen",
-      "summary": "From September 17 through September 20, buy any regularly priced dozen (or 16-ct Minis) and get a dozen Original Glazed Blueberry Flavored Doughnuts for $5 at participating shops. Online pickup/delivery uses code BLUEBERRY.",
+      "summary": "LAST DAY Sunday September 20: buy any regularly priced dozen (or 16-ct Minis) and get a dozen Original Glazed Blueberry Flavored Doughnuts for $5 at participating shops. Online pickup/delivery uses code BLUEBERRY.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 0,
@@ -1063,16 +1064,16 @@
       "source": {
         "label": "Krispy Kreme official Blueberry offer page",
         "url": "https://www.krispykreme.com/Blueberry",
-        "checkedOn": "2026-09-19"
+        "checkedOn": "2026-09-20"
       },
       "actionLabel": "Get $5 blueberry dozen",
       "tier": "A",
       "stackNote": "Treat as its own dozen deal; online code BLUEBERRY for app/website orders.",
       "finePrint": "Available Thursday 9/17 through Sunday 9/20/2026 at participating U.S. and Canadian shops while supplies last; not offered in Puerto Rico. In-shop/drive-thru limit two discounted dozens per guest; online pickup/delivery limit one per guest with code BLUEBERRY. Requires purchase of any regularly priced dozen or 16-ct Minis. No dollar estimate because local dozen prices were not verified.",
-      "expirationLabel": "Ends Sunday September 20",
+      "expirationLabel": "LAST DAY Sunday September 20",
       "availability": "available",
       "dealType": "promotion-event",
-      "freshness": "new",
+      "freshness": "current",
       "discoveredOn": "2026-09-19",
       "preferenceSignals": [
         "restaurant",
@@ -1114,9 +1115,9 @@
         },
         {
           "label": "Timing",
-          "points": 10,
+          "points": 9.1,
           "weight": 10,
-          "detail": "Ends in 2 days; newly found"
+          "detail": "Ends in 1 day; current"
         },
         {
           "label": "Effort",
@@ -1188,7 +1189,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 17 days ago"
+          "detail": "Official source verified; checked 18 days ago"
         },
         {
           "label": "Dollar value",
@@ -1241,115 +1242,6 @@
       ]
     },
     {
-      "id": "applebees-nfl-season-wing-ticket-2026",
-      "merchant": "Applebee's",
-      "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
-      "summary": "Club Applebee's members who sign up for the free NFL Season Wing Ticket receive a unique weekly email code for six free Boneless Wings To Go with a $15+ online To Go order, Sunday through Thursday, from September 13, 2026 through January 10, 2027.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 15,
-      "isFree": true,
-      "expiresOn": "2027-01-10",
-      "availableDaysOfWeek": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "locationNote": "Participating Applebee's locations nationwide for website/app To Go. Local Spring participation and weekly code delivery must be confirmed after signup.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "free food",
-        "wings",
-        "NFL",
-        "loyalty",
-        "app",
-        "email code"
-      ],
-      "source": {
-        "label": "Applebee's official NFL Wing Ticket news",
-        "url": "https://cm4.applebees.com/en/news/2026/applebees-introduces-nfl-season-wing-ticket-free-boneless-wings-weekly",
-        "checkedOn": "2026-09-19"
-      },
-      "actionLabel": "Sign up for Wing Ticket",
-      "tier": "A",
-      "stackNote": "Weekly code is its own To Go offer; not valid on third-party delivery sites.",
-      "stackGroup": "applebees-to-go-offer",
-      "finePrint": "Signup and weekly codes for Club Applebee's members. Codes arrive by email each Sunday and are redeemable Sunday through Thursday of that week through January 10, 2027. Minimum $15 online To Go order excluding alcohol, gift cards, tax, delivery/service fees, and gratuity. Limit one order of 6 free Boneless Wings per week. Participating locations; other restrictions may apply. No dollar estimate because the local wing price was not verified.",
-      "expirationLabel": "Through January 10, 2027",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "new",
-      "discoveredOn": "2026-09-18",
-      "preferenceSignals": [
-        "free-food",
-        "restaurant",
-        "loyalty",
-        "app-specific"
-      ],
-      "distanceBasis": "unknown",
-      "score": 58,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Household match: free food"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.1000000000000005,
-          "weight": 10,
-          "detail": "Ends 2027-01-10; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$15.00 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "costa-oil-rayford-diesel-ten-off-2026",
       "merchant": "Costa Oil Rayford",
       "title": "$10 off a diesel full-synthetic oil change",
@@ -1391,7 +1283,7 @@
       "distanceMiles": 2.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 33,
+      "distanceEvidenceAgeDays": 34,
       "distanceSourceLabel": "Costa Oil Rayford specials",
       "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
       "score": 57,
@@ -1401,7 +1293,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -1425,7 +1317,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 33 days ago; offer participation unconfirmed"
+          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 34 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -1503,7 +1395,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
+          "detail": "Official source verified; checked 17 days ago"
         },
         {
           "label": "Dollar value",
@@ -1579,7 +1471,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-19"
+        "checkedOn": "2026-09-20"
       },
       "actionLabel": "Claim Wednesday offer",
       "tier": "A",
@@ -1599,7 +1491,7 @@
       "distanceMiles": 4.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Wendy's official restaurant locator",
       "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 57,
@@ -1633,7 +1525,7 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -1685,7 +1577,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-19"
+        "checkedOn": "2026-09-20"
       },
       "actionLabel": "Claim Friday offer",
       "tier": "A",
@@ -1705,7 +1597,7 @@
       "distanceMiles": 4.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Wendy's official restaurant locator",
       "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 57,
@@ -1739,7 +1631,7 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -1788,7 +1680,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-19"
+        "checkedOn": "2026-09-20"
       },
       "actionLabel": "Claim chili offer",
       "tier": "A",
@@ -1809,7 +1701,7 @@
       "distanceMiles": 4.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Wendy's official restaurant locator",
       "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 57,
@@ -1843,7 +1735,7 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -1868,6 +1760,115 @@
           "points": 0.8400000000000001,
           "weight": 7,
           "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "applebees-nfl-season-wing-ticket-2026",
+      "merchant": "Applebee's",
+      "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
+      "summary": "Club Applebee's members who signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online To Go order, redeemable Sunday through Thursday, through January 10, 2027. Today's Sunday code window is active.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 15,
+      "isFree": true,
+      "expiresOn": "2027-01-10",
+      "availableDaysOfWeek": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "locationNote": "Participating Applebee's locations nationwide for website/app To Go. Local Spring participation and weekly code delivery must be confirmed after signup.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "free food",
+        "wings",
+        "NFL",
+        "loyalty",
+        "app",
+        "email code"
+      ],
+      "source": {
+        "label": "Applebee's official NFL Wing Ticket news",
+        "url": "https://cm4.applebees.com/en/news/2026/applebees-introduces-nfl-season-wing-ticket-free-boneless-wings-weekly",
+        "checkedOn": "2026-09-20"
+      },
+      "actionLabel": "Sign up for Wing Ticket",
+      "tier": "A",
+      "stackNote": "Weekly code is its own To Go offer; not valid on third-party delivery sites.",
+      "stackGroup": "applebees-to-go-offer",
+      "finePrint": "Signup and weekly codes for Club Applebee's members. Codes arrive by email each Sunday and are redeemable Sunday through Thursday of that week through January 10, 2027. Minimum $15 online To Go order excluding alcohol, gift cards, tax, delivery/service fees, and gratuity. Limit one order of 6 free Boneless Wings per week. Participating locations; other restrictions may apply. No dollar estimate because the local wing price was not verified.",
+      "expirationLabel": "Through January 10, 2027",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "current",
+      "discoveredOn": "2026-09-18",
+      "preferenceSignals": [
+        "free-food",
+        "restaurant",
+        "loyalty",
+        "app-specific"
+      ],
+      "distanceBasis": "unknown",
+      "score": 57,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.2,
+          "weight": 10,
+          "detail": "Ends 2027-01-10; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$15.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -1917,7 +1918,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 24 days ago"
+          "detail": "Official source verified; checked 25 days ago"
         },
         {
           "label": "Dollar value",
@@ -2010,7 +2011,7 @@
       "distanceMiles": 2.87,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Shell official Rayford Road station page",
       "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
       "score": 54,
@@ -2020,7 +2021,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -2044,7 +2045,7 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -2113,7 +2114,7 @@
       "distanceMiles": 2.8,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Taco Bell official Rayford Road location page",
       "distanceSourceUrl": "https://locations.tacobell.com/tx/spring/2681-rayford-rd.html",
       "score": 54,
@@ -2123,7 +2124,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 24 days ago"
+          "detail": "Official source verified; checked 25 days ago"
         },
         {
           "label": "Dollar value",
@@ -2147,7 +2148,7 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~2.8 miles to Taco Bell Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~2.8 miles to Taco Bell Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -2219,7 +2220,7 @@
       "distanceMiles": 1.9,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Exxon Mobil official station locator result",
       "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
       "score": 53,
@@ -2229,7 +2230,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 22 days ago"
+          "detail": "Official source verified; checked 23 days ago"
         },
         {
           "label": "Dollar value",
@@ -2253,7 +2254,7 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -2313,7 +2314,7 @@
       "availability": "available",
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 33,
+      "distanceEvidenceAgeDays": 34,
       "distanceSourceLabel": "Starbucks Rewards terms",
       "distanceSourceUrl": "https://www.starbucks.com/rewards/terms/",
       "score": 53,
@@ -2323,7 +2324,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 33 days ago"
+          "detail": "Official source verified; checked 34 days ago"
         },
         {
           "label": "Dollar value",
@@ -2414,7 +2415,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 33,
+      "distanceEvidenceAgeDays": 34,
       "distanceSourceLabel": "7REWARDS",
       "distanceSourceUrl": "https://www.7-eleven.com/7rewards",
       "score": 53,
@@ -2424,7 +2425,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 33 days ago"
+          "detail": "Official source verified; checked 34 days ago"
         },
         {
           "label": "Dollar value",
@@ -2513,7 +2514,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-09-02",
-      "distanceEvidenceAgeDays": 16,
+      "distanceEvidenceAgeDays": 17,
       "distanceSourceLabel": "Exxon Mobil Rewards+",
       "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
       "score": 53,
@@ -2523,7 +2524,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
+          "detail": "Official source verified; checked 17 days ago"
         },
         {
           "label": "Dollar value",
@@ -2619,7 +2620,7 @@
       "distanceMiles": 2.8,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
       "score": 53,
@@ -2629,7 +2630,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 10 days ago"
+          "detail": "Official source verified; checked 11 days ago"
         },
         {
           "label": "Dollar value",
@@ -2653,13 +2654,13 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 6.9,
           "weight": 10,
-          "detail": "Ends in 12 days; newly found"
+          "detail": "Ends in 11 days; newly found"
         },
         {
           "label": "Effort",
@@ -2722,7 +2723,7 @@
       "distanceMiles": 3.5,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Whataburger official Rayford Road location page",
       "distanceSourceUrl": "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       "score": 53,
@@ -2732,7 +2733,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 23 days ago"
+          "detail": "Official source verified; checked 24 days ago"
         },
         {
           "label": "Dollar value",
@@ -2756,7 +2757,7 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~3.5 miles to Whataburger Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~3.5 miles to Whataburger Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -2830,7 +2831,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 26 days ago"
+          "detail": "Official source verified; checked 27 days ago"
         },
         {
           "label": "Dollar value",
@@ -2927,7 +2928,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 38 days ago"
+          "detail": "Official source verified; checked 39 days ago"
         },
         {
           "label": "Dollar value",
@@ -2980,112 +2981,6 @@
       ]
     },
     {
-      "id": "seven-eleven-byoc-slurpee-199-2026-09-19",
-      "merchant": "7-Eleven",
-      "title": "Bring Your Own Cup Slurpee for $1.99 today only",
-      "summary": "On Saturday September 19 only, customers can fill a clean, watertight, leak-proof container that fits the 10-inch in-store cutout with any available Slurpee flavor for $1.99 at participating 7-Eleven, Speedway, and Stripes stores.",
-      "category": "convenience",
-      "estimatedSavings": 0,
-      "minimumSpend": 1.99,
-      "isFree": false,
-      "expiresOn": "2026-09-19",
-      "availableDaysOfWeek": [
-        6
-      ],
-      "locationNote": "Participating 7-Eleven, Speedway, and Stripes stores; 77386 / Spring participation not separately confirmed beyond the national official release.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "Slurpee",
-        "BYOC",
-        "one-day",
-        "convenience"
-      ],
-      "source": {
-        "label": "7-Eleven official corporate press release",
-        "url": "https://corp.7-eleven.com/corp-press-releases/think-outside-the-cup-for-7-eleven-inc-s-bring-your-own-cup-day",
-        "checkedOn": "2026-09-19"
-      },
-      "actionLabel": "Fill BYOC Slurpee today",
-      "tier": "A",
-      "stackNote": "Standalone fill offer; no loyalty stacking assumed.",
-      "finePrint": "Valid only on 9/19/2026. Limit one cup per person. Container must be clean, watertight, leak-proof, stand upright, and fit within the 10-inch cutout. Available while supplies last at participating stores. No dollar savings estimate because the local regular Slurpee price for an equivalent size was not verified.",
-      "expirationLabel": "TODAY ONLY September 19",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-09-19",
-      "preferenceSignals": [
-        "convenience-reward",
-        "time-sensitive",
-        "local-station"
-      ],
-      "distanceMiles": 3.35,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
-      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
-      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
-      "score": 51,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 6.4,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.48,
-          "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 25 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 10,
-          "weight": 10,
-          "detail": "Ends in 1 day; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$1.99 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "starbucks-rewards-ongoing-2026",
       "merchant": "Starbucks Rewards",
       "title": "Earn toward free food and drinks",
@@ -3119,7 +3014,7 @@
       "freshness": "current",
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 33,
+      "distanceEvidenceAgeDays": 34,
       "distanceSourceLabel": "Starbucks Rewards",
       "distanceSourceUrl": "https://www.starbucks.com/rewards",
       "score": 50,
@@ -3129,7 +3024,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 33 days ago"
+          "detail": "Official source verified; checked 34 days ago"
         },
         {
           "label": "Dollar value",
@@ -3223,7 +3118,7 @@
       "distanceMiles": 2.8,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
       "score": 47,
@@ -3233,7 +3128,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 20 days ago"
+          "detail": "Official source verified; checked 21 days ago"
         },
         {
           "label": "Dollar value",
@@ -3257,7 +3152,7 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -3307,7 +3202,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-19"
+        "checkedOn": "2026-09-20"
       },
       "actionLabel": "Claim in Wendy's app",
       "tier": "A",
@@ -3327,7 +3222,7 @@
       "distanceMiles": 4.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Wendy's official restaurant locator",
       "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 44,
@@ -3361,13 +3256,13 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 6,
           "weight": 10,
-          "detail": "Ends in 9 days; current"
+          "detail": "Ends in 8 days; current"
         },
         {
           "label": "Effort",
@@ -3434,7 +3329,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -3526,7 +3421,7 @@
       "distanceMiles": 3.5,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Whataburger official Rayford Road location page",
       "distanceSourceUrl": "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       "score": 41,
@@ -3536,7 +3431,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 10 days ago"
+          "detail": "Official source verified; checked 11 days ago"
         },
         {
           "label": "Dollar value",
@@ -3560,7 +3455,7 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~3.5 miles to Whataburger Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~3.5 miles to Whataburger Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -3631,7 +3526,7 @@
       "distanceMiles": 2.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 33,
+      "distanceEvidenceAgeDays": 34,
       "distanceSourceLabel": "Costa Oil Rayford specials",
       "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
       "score": 39,
@@ -3641,7 +3536,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -3665,7 +3560,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 33 days ago; offer participation unconfirmed"
+          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 34 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -3733,7 +3628,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-09-01",
-      "distanceEvidenceAgeDays": 17,
+      "distanceEvidenceAgeDays": 18,
       "distanceSourceLabel": "Dunkin official newsroom",
       "distanceSourceUrl": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
       "score": 39,
@@ -3743,7 +3638,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 17 days ago"
+          "detail": "Official source verified; checked 18 days ago"
         },
         {
           "label": "Dollar value",
@@ -3836,7 +3731,7 @@
       "distanceMiles": 3.35,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 39,
@@ -3846,7 +3741,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -3870,7 +3765,7 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -3938,7 +3833,7 @@
       "distanceMiles": 3.35,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 39,
@@ -3948,7 +3843,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
+          "detail": "Official source verified; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -3972,7 +3867,7 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4043,7 +3938,7 @@
       "distanceMiles": 2.8,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
       "score": 33,
@@ -4053,7 +3948,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 20 days ago"
+          "detail": "Official source verified; checked 21 days ago"
         },
         {
           "label": "Dollar value",
@@ -4077,7 +3972,7 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4150,17 +4045,17 @@
       "distanceMiles": 3.9,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
-      "score": 59,
+      "score": 60,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Unverified lead; checked 8 days ago"
+          "detail": "Unverified lead; checked 9 days ago"
         },
         {
           "label": "Dollar value",
@@ -4184,13 +4079,13 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
-          "points": 8.5,
+          "points": 10,
           "weight": 10,
-          "detail": "Ends in 4 days; newly found"
+          "detail": "Ends in 3 days; newly found"
         },
         {
           "label": "Effort",
@@ -4255,7 +4150,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-08-27",
-      "distanceEvidenceAgeDays": 22,
+      "distanceEvidenceAgeDays": 23,
       "distanceSourceLabel": "Dunkin official newsroom",
       "distanceSourceUrl": "https://news.dunkindonuts.com/blog/dunkinR-is-celebrating-pumpkin-season-with-1-million-free-espresso-beverages",
       "score": 54,
@@ -4265,7 +4160,7 @@
           "label": "Evidence",
           "points": 0.72,
           "weight": 18,
-          "detail": "Unverified lead; checked 22 days ago"
+          "detail": "Unverified lead; checked 23 days ago"
         },
         {
           "label": "Dollar value",
@@ -4361,7 +4256,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Official ongoing program; checked 38 days ago"
+          "detail": "Official ongoing program; checked 39 days ago"
         },
         {
           "label": "Dollar value",
@@ -4414,110 +4309,6 @@
       ]
     },
     {
-      "id": "heb-duracell-six-off-two-2026-09",
-      "merchant": "H-E-B",
-      "title": "$6 off two Duracell 8-packs",
-      "summary": "Clip the H-E-B coupon for $6 off two qualifying Duracell Coppertop AA or AAA eight-packs through September 29.",
-      "category": "home",
-      "estimatedSavings": 6,
-      "minimumSpend": 19.46,
-      "savingsRate": 30.8,
-      "isFree": false,
-      "expiresOn": "2026-09-29",
-      "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and prices after selecting the 77386 store before clipping.",
-      "verification": "needs-check",
-      "friction": "low",
-      "tags": [
-        "batteries",
-        "household",
-        "digital coupon",
-        "location gated"
-      ],
-      "source": {
-        "label": "H-E-B official coupon detail",
-        "url": "https://www.heb.com/digital-coupon/coupon-detail/84058534",
-        "checkedOn": "2026-09-10"
-      },
-      "actionLabel": "Confirm at Spring Creek",
-      "tier": "A",
-      "stackNote": "Use only if two battery packs are needed and the coupon appears for Spring Creek Market; compare unit prices with larger packs before checkout.",
-      "finePrint": "The official public page showed AA and AAA eight-packs at $9.73 each and an unlimited-use $6-off-two coupon through September 29. The $19.46 basket and 30.8% rate use Victoria-store prices. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
-      "expirationLabel": "Ends September 29",
-      "availability": "available",
-      "dealType": "digital-coupon",
-      "freshness": "new",
-      "discoveredOn": "2026-09-10",
-      "preferenceSignals": [
-        "household-staple",
-        "high-value",
-        "location-gated"
-      ],
-      "distanceMiles": 3.9,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
-      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
-      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
-      "score": 45,
-      "scoreLabel": "Low priority",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 1.26,
-          "weight": 18,
-          "detail": "Unverified lead; checked 8 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 11.76,
-          "weight": 24,
-          "detail": "$6.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 3.6959999999999997,
-          "weight": 6,
-          "detail": "30.8% saved"
-        },
-        {
-          "label": "Household fit",
-          "points": 1.2000000000000002,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 2.48,
-          "weight": 8,
-          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 25 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 6.9,
-          "weight": 10,
-          "detail": "Ends in 11 days; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "$19.46 required per $6.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "heb-arm-hammer-five-off-twenty-2026-09",
       "merchant": "H-E-B",
       "title": "$5 off $20 in Arm & Hammer or OxiClean laundry items",
@@ -4559,17 +4350,17 @@
       "distanceMiles": 3.9,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
-      "score": 45,
+      "score": 46,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
         {
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Unverified lead; checked 8 days ago"
+          "detail": "Unverified lead; checked 9 days ago"
         },
         {
           "label": "Dollar value",
@@ -4593,13 +4384,13 @@
           "label": "Local relevance",
           "points": 2.48,
           "weight": 8,
-          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
-          "points": 8.5,
+          "points": 10,
           "weight": 10,
-          "detail": "Ends in 4 days; newly found"
+          "detail": "Ends in 3 days; newly found"
         },
         {
           "label": "Effort",
@@ -4622,10 +4413,114 @@
       ]
     },
     {
+      "id": "heb-duracell-six-off-two-2026-09",
+      "merchant": "H-E-B",
+      "title": "$6 off two Duracell 8-packs",
+      "summary": "Clip the H-E-B coupon for $6 off two qualifying Duracell Coppertop AA or AAA eight-packs through September 29.",
+      "category": "home",
+      "estimatedSavings": 6,
+      "minimumSpend": 19.46,
+      "savingsRate": 30.8,
+      "isFree": false,
+      "expiresOn": "2026-09-29",
+      "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and prices after selecting the 77386 store before clipping.",
+      "verification": "needs-check",
+      "friction": "low",
+      "tags": [
+        "batteries",
+        "household",
+        "digital coupon",
+        "location gated"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84058534",
+        "checkedOn": "2026-09-10"
+      },
+      "actionLabel": "Confirm at Spring Creek",
+      "tier": "A",
+      "stackNote": "Use only if two battery packs are needed and the coupon appears for Spring Creek Market; compare unit prices with larger packs before checkout.",
+      "finePrint": "The official public page showed AA and AAA eight-packs at $9.73 each and an unlimited-use $6-off-two coupon through September 29. The $19.46 basket and 30.8% rate use Victoria-store prices. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
+      "expirationLabel": "Ends September 29",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-09-10",
+      "preferenceSignals": [
+        "household-staple",
+        "high-value",
+        "location-gated"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 26,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 45,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.26,
+          "weight": 18,
+          "detail": "Unverified lead; checked 9 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 11.76,
+          "weight": 24,
+          "detail": "$6.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 3.6959999999999997,
+          "weight": 6,
+          "detail": "30.8% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 1.2000000000000002,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 2.48,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 26 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 10 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$19.46 required per $6.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
       "id": "burger-king-royal-perks-cheeseburger-week-2026-09",
       "merchant": "Burger King",
-      "title": "Royal Perks National Cheeseburger Day week freebies (app confirm)",
-      "summary": "Secondary deal roundups say Royal Perks members get a different free item each day Sept 14-20 (today Sat 9/19 often listed as free 4-piece Nuggets with $3+). Official news.bk.com still has no matching Cheeseburger Week release as of this check.",
+      "title": "Royal Perks week free Original Chicken Sandwich (app confirm)",
+      "summary": "Secondary deal roundups say Royal Perks members get a free Original Chicken Sandwich with $3+ purchase today only (Sunday Sept 20), the final day of Cheeseburger Week (Sept 14-20). Official news.bk.com still has no matching Cheeseburger Week release as of this check.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 3,
@@ -4642,16 +4537,16 @@
         "needs-check"
       ],
       "source": {
-        "label": "Fox Business National Cheeseburger Day roundup (secondary; confirm in BK app)",
-        "url": "https://www.foxbusiness.com/lifestyle/national-cheeseburger-day-2026-burger-deals-mcdonalds-wendys-more",
-        "checkedOn": "2026-09-19"
+        "label": "Secondary Perks Week roundups (confirm in BK app); news.bk.com lacked matching release",
+        "url": "https://news.bk.com/",
+        "checkedOn": "2026-09-20"
       },
       "actionLabel": "Check BK Offers tab",
       "tier": "B",
       "stackNote": "Activate the day's offer before checkout; secondary reports say it may not stack on Trio meals.",
       "stackGroup": "burger-king-app-offer",
-      "finePrint": "Needs app confirmation. Secondary sources disagree on exact daily items and purchase minimums ($1+ vs $3+). news.bk.com homepage checked 2026-09-19 showed other Sept releases but not this week. Do not treat as verified until the BK app or an official BK newsroom/press release confirms today's offer.",
-      "expirationLabel": "Week through September 20",
+      "finePrint": "Needs app confirmation. Secondary sources list Sept 20 as free Original Chicken Sandwich with $3+ via Royal Perks app/BK.com. news.bk.com homepage checked 2026-09-20 showed other Sept releases (Le Nugguette, Dragon Ball) but not this week. Do not treat as verified until the BK app or an official BK newsroom/press release confirms today's offer.",
+      "expirationLabel": "LAST DAY September 20",
       "availability": "available",
       "dealType": "free-food",
       "freshness": "monitoring",
@@ -4701,7 +4596,7 @@
           "label": "Timing",
           "points": 8.4,
           "weight": 10,
-          "detail": "Ends in 2 days; monitoring only"
+          "detail": "Ends in 1 day; monitoring only"
         },
         {
           "label": "Effort",
@@ -4714,6 +4609,110 @@
           "points": 0.8,
           "weight": 8,
           "detail": "$3.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "torchys-national-queso-day-free-queso-2026-09-20",
+      "merchant": "Torchy's Tacos",
+      "title": "National Queso Day free large queso (Rewards; confirm)",
+      "summary": "Secondary local coverage says Torchy's Rewards members can get a free large Green Chile Queso and chips with any purchase today only, in-restaurant at participating locations. Torchy's newsroom fetch did not surface a matching press release; confirm in the Rewards app before a trip.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 1,
+      "isFree": true,
+      "expiresOn": "2026-09-20",
+      "availableDaysOfWeek": [
+        0
+      ],
+      "locationNote": "Participating Torchy's restaurants. Spring / The Woodlands area has Torchy's locations (incl. Spring Stuebner and Woodlands Mall / Research Forest); confirm the digital reward loads and store participation.",
+      "verification": "needs-check",
+      "friction": "medium",
+      "tags": [
+        "free food",
+        "queso",
+        "one-day",
+        "Rewards",
+        "needs-check"
+      ],
+      "source": {
+        "label": "Austin Food Magazine Torchy's Queso Day coverage (secondary; confirm in Rewards app)",
+        "url": "https://austinfoodmagazine.com/torchys-national-queso-day-free-queso/",
+        "checkedOn": "2026-09-20"
+      },
+      "actionLabel": "Confirm in Torchy's Rewards",
+      "tier": "B",
+      "stackNote": "In-restaurant Rewards digital reward; do not assume delivery or stacking.",
+      "finePrint": "Needs app/in-restaurant confirmation. Secondary reporting (Austin Food Magazine, Sep 18 2026) describes free large Green Chile Queso and chips with any purchase for Rewards members, in-restaurant only, Sept 20. Official torchystacos.com newsroom page did not clearly list the promo on this scan. Do not treat as verified until Torchy's Rewards shows the digital offer or an official Torchy's release confirms it.",
+      "expirationLabel": "TODAY ONLY September 20 (unverified)",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "monitoring",
+      "discoveredOn": "2026-09-20",
+      "preferenceSignals": [
+        "free-food",
+        "restaurant",
+        "time-sensitive",
+        "unverified",
+        "app-specific"
+      ],
+      "distanceBasis": "unknown",
+      "score": 45,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.7999999999999998,
+          "weight": 18,
+          "detail": "Unverified lead; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Ends in 1 day; monitoring only"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$1.00 required per $0.00 saved"
         },
         {
           "label": "Stackability",
@@ -4764,7 +4763,7 @@
       "distanceMiles": 2.87,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Shell official Rayford Road station page",
       "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
       "score": 43,
@@ -4774,7 +4773,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Unverified lead; checked 9 days ago"
+          "detail": "Unverified lead; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -4798,7 +4797,7 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4867,7 +4866,7 @@
       "distanceMiles": 2.87,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 25,
+      "distanceEvidenceAgeDays": 26,
       "distanceSourceLabel": "Shell official Rayford Road station page",
       "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
       "score": 38,
@@ -4877,7 +4876,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Unverified lead; checked 9 days ago"
+          "detail": "Unverified lead; checked 10 days ago"
         },
         {
           "label": "Dollar value",
@@ -4901,7 +4900,7 @@
           "label": "Local relevance",
           "points": 2.8000000000000003,
           "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 25 days ago; offer participation unconfirmed"
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 26 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4960,7 +4959,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Official ongoing program; checked 57 days ago"
+          "detail": "Official ongoing program; checked 58 days ago"
         },
         {
           "label": "Dollar value",
@@ -5043,7 +5042,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Official ongoing program; checked 57 days ago"
+          "detail": "Official ongoing program; checked 58 days ago"
         },
         {
           "label": "Dollar value",
@@ -5132,7 +5131,7 @@
       "distanceMiles": 2.2,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-11",
-      "distanceEvidenceAgeDays": 38,
+      "distanceEvidenceAgeDays": 39,
       "distanceSourceLabel": "JoVI Coffee official site",
       "distanceSourceUrl": "https://joviroasters.com/",
       "score": 33,
@@ -5142,7 +5141,7 @@
           "label": "Evidence",
           "points": 0.72,
           "weight": 18,
-          "detail": "Unverified lead; checked 20 days ago"
+          "detail": "Unverified lead; checked 21 days ago"
         },
         {
           "label": "Dollar value",
@@ -5166,7 +5165,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.2 miles to JoVi Coffee Rayford Road; location checked 38 days ago; offer participation unconfirmed"
+          "detail": "~2.2 miles to JoVi Coffee Rayford Road; location checked 39 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
