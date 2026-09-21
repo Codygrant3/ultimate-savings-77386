@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-20T12:05:25.531Z",
-  "checkedOn": "2026-09-20",
+  "generatedAt": "2026-09-21T12:30:46.853Z",
+  "checkedOn": "2026-09-21",
   "openCount": 4,
   "settlements": [
     {
@@ -19,7 +19,7 @@
       "administrator": "Angeion Group",
       "court": "Clark County Superior Court, Washington",
       "verification": "official-administrator",
-      "checkedOn": "2026-09-20",
+      "checkedOn": "2026-09-21",
       "freshness": "current",
       "relevanceScore": 25,
       "relevanceReason": "Verified and open, but unlikely to fit a Texas household without a prior Clark County connection.",
@@ -65,7 +65,7 @@
       "administrator": "Simpluris",
       "court": "Circuit Court for Iowa County, Wisconsin",
       "verification": "court-authorized-notice",
-      "checkedOn": "2026-09-20",
+      "checkedOn": "2026-09-21",
       "freshness": "current",
       "relevanceScore": 80,
       "relevanceReason": "Nationwide consumer data incident; relevant only after confirming notice or affected status.",

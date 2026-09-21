@@ -907,7 +907,7 @@
     "id": "dunkin-mobile-mondays-2026-09",
     "merchant": "Dunkin",
     "title": "100 bonus points on Mobile Mondays",
-    "summary": "Dunkin Rewards members can earn 100 bonus points when they activate the offer and order ahead in the app on September 7, 14, 21, or 28.",
+    "summary": "Dunkin Rewards members can earn 100 bonus points when they activate the offer and order ahead in the app on Mondays September 7, 14, 21, or 28. Today (Monday Sep 21) is an active Mobile Monday.",
     "category": "coffee",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -929,7 +929,7 @@
     "source": {
       "label": "Dunkin official newsroom",
       "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-      "checkedOn": "2026-09-18"
+      "checkedOn": "2026-09-21"
     },
     "actionLabel": "Activate on Monday",
     "tier": "B",
@@ -937,10 +937,10 @@
     "stackNote": "Activate the Mobile Monday offer before ordering; do not assume another coupon combines unless checkout allows it.",
     "stackGroup": "dunkin-rewards-offer",
     "finePrint": "Valid each Monday from September 7 through September 28, limit 100 bonus points per member per Monday. The offer must be activated in the mobile app and earned on an eligible order-ahead purchase at a participating Dunkin store. No dollar value is estimated because the redemption value and local order price were not verified.",
-    "expirationLabel": "Mondays, September 7-28",
+    "expirationLabel": "Mondays through September 28 (TODAY is a Mobile Monday)",
     "availability": "available",
     "dealType": "loyalty-reward",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-02",
     "preferenceSignals": [
       "preferred-coffee",
@@ -1520,7 +1520,7 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-20"
+      "checkedOn": "2026-09-21"
     },
     "actionLabel": "Claim in Wendy's app",
     "tier": "A",
@@ -1684,10 +1684,10 @@
     "tier": "A",
     "stackNote": "Use only if both items fit the grocery plan and the coupon appears for Spring Creek Market; compare the final bundle against other pizza options.",
     "finePrint": "The official page showed qualifying pizzas at $5.97 and Higher Harvest pints at $3.44, with unlimited use through September 22. The $3.44 estimate and 57.6% rate use Victoria-store prices. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
-    "expirationLabel": "Ends September 22",
+    "expirationLabel": "Ends tomorrow September 22 (needs Spring Creek confirm)",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-10",
     "preferenceSignals": [
       "grocery",
@@ -1725,10 +1725,10 @@
     "tier": "A",
     "stackNote": "The 25% rate is reached at exactly $20; compare per-load prices and confirm any item price cuts combine before checkout.",
     "finePrint": "Requires a $20 qualifying Arm & Hammer or OxiClean laundry basket. The public page showed unlimited use through September 22, but its selected store was Victoria. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
-    "expirationLabel": "Ends September 22",
+    "expirationLabel": "Ends tomorrow September 22 (needs Spring Creek confirm)",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-10",
     "preferenceSignals": [
       "household-staple",
@@ -1789,7 +1789,7 @@
     "id": "applebees-nfl-season-wing-ticket-2026",
     "merchant": "Applebee's",
     "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
-    "summary": "Club Applebee's members who signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online To Go order, redeemable Sunday through Thursday, through January 10, 2027. Today's Sunday code window is active.",
+    "summary": "Club Applebee's members who signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online To Go order, redeemable Sunday through Thursday, through January 10, 2027. Monday is inside this week's redemption window.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 15,
@@ -1816,7 +1816,7 @@
     "source": {
       "label": "Applebee's official NFL Wing Ticket news",
       "url": "https://cm4.applebees.com/en/news/2026/applebees-introduces-nfl-season-wing-ticket-free-boneless-wings-weekly",
-      "checkedOn": "2026-09-20"
+      "checkedOn": "2026-09-21"
     },
     "actionLabel": "Sign up for Wing Ticket",
     "tier": "A",
@@ -1836,172 +1836,95 @@
     ]
   },
   {
-    "id": "burger-king-royal-perks-cheeseburger-week-2026-09",
-    "merchant": "Burger King",
-    "title": "Royal Perks week free Original Chicken Sandwich (app confirm)",
-    "summary": "Secondary deal roundups say Royal Perks members get a free Original Chicken Sandwich with $3+ purchase today only (Sunday Sept 20), the final day of Cheeseburger Week (Sept 14-20). Official news.bk.com still has no matching Cheeseburger Week release as of this check.",
+    "id": "dunkin-boosted-3x-beverages-after-1pm-2026-09-21-25",
+    "merchant": "Dunkin",
+    "title": "Boosted members: 3x points on beverages after 1 p.m.",
+    "summary": "From September 21 through September 25, Dunkin Rewards Boosted Status members can earn 3x points on any beverage purchase after 1 p.m. local time when the offer is activated. Starts today.",
+    "category": "coffee",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-09-25",
+    "redemptionTimeWindows": [
+      {
+        "startTime": "13:00"
+      }
+    ],
+    "locationNote": "Participating U.S. Dunkin stores for Boosted Status members; nearby Rayford Road Spring shop participation and Boosted eligibility must be confirmed in the app.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "coffee",
+      "rewards",
+      "bonus points",
+      "Boosted Status",
+      "app",
+      "afternoon"
+    ],
+    "source": {
+      "label": "Dunkin official newsroom (fall menu Rewards calendar)",
+      "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
+      "checkedOn": "2026-09-21"
+    },
+    "actionLabel": "Activate after 1 p.m.",
+    "tier": "B",
+    "distanceMiles": 2.8,
+    "stackNote": "Boosted-only; activate in app. Official terms say it cannot be combined with other offers, promotions, or coupons. Mobile Mondays is a separate Monday order-ahead bonus — do not assume stacking.",
+    "stackGroup": "dunkin-rewards-offer",
+    "finePrint": "Offer valid 9/21/26-9/25/26 for Boosted Status members only. Single-use per member per day. Must be activated on the mobile app. Applies to qualifying mobile orders or in-store when scanning Dunkin Rewards ID or paying with an enrolled Dunkin card after 1 p.m. Bonus points on base points only. Participating U.S. stores. No dollar estimate because redemption value and local beverage price were not verified.",
+    "expirationLabel": "September 21-25 after 1 p.m. (starts TODAY)",
+    "availability": "available",
+    "dealType": "loyalty-reward",
+    "freshness": "new",
+    "discoveredOn": "2026-09-21",
+    "preferenceSignals": [
+      "preferred-coffee",
+      "app-specific",
+      "time-sensitive",
+      "status-gated"
+    ]
+  },
+  {
+    "id": "chipotle-national-quesadilla-day-2026-09",
+    "merchant": "Chipotle",
+    "title": "National Quesadilla Day free quesadilla with $20+ (code NQD2026)",
+    "summary": "Official Chipotle 2026 offer terms: September 24-25 only, digital orders get one free quesadilla entree with a $20+ same-transaction purchase using promo code NQD2026. Upcoming — not redeemable yet today.",
     "category": "restaurants",
     "estimatedSavings": 0,
-    "minimumSpend": 3,
+    "minimumSpend": 20,
     "isFree": true,
-    "expiresOn": "2026-09-20",
-    "locationNote": "App/BK.com Royal Perks digital offers at participating restaurants; 77386 participation and today's exact item must be confirmed in the Offers tab.",
-    "verification": "needs-check",
+    "expiresOn": "2026-09-25",
+    "locationNote": "Participating U.S. and Canada Chipotle restaurants for chipotle.com / app digital orders only. Confirm Spring-area digital availability when the window opens.",
+    "verification": "verified",
     "friction": "medium",
     "tags": [
       "free food",
-      "Royal Perks",
-      "app",
-      "national cheeseburger day",
-      "needs-check"
+      "quesadilla",
+      "promo code",
+      "digital only",
+      "upcoming"
     ],
     "source": {
-      "label": "Secondary Perks Week roundups (confirm in BK app); news.bk.com lacked matching release",
-      "url": "https://news.bk.com/",
-      "checkedOn": "2026-09-20"
+      "label": "Chipotle official National Quesadilla Day 2026 offer terms",
+      "url": "https://www.chipotle.com/national-quesadilla-day-2026-offer",
+      "checkedOn": "2026-09-21"
     },
-    "actionLabel": "Check BK Offers tab",
-    "tier": "B",
-    "stackNote": "Activate the day's offer before checkout; secondary reports say it may not stack on Trio meals.",
-    "stackGroup": "burger-king-app-offer",
-    "finePrint": "Needs app confirmation. Secondary sources list Sept 20 as free Original Chicken Sandwich with $3+ via Royal Perks app/BK.com. news.bk.com homepage checked 2026-09-20 showed other Sept releases (Le Nugguette, Dragon Ball) but not this week. Do not treat as verified until the BK app or an official BK newsroom/press release confirms today's offer.",
-    "expirationLabel": "LAST DAY September 20",
+    "actionLabel": "Use code NQD2026 Sep 24-25",
+    "tier": "A",
+    "stackNote": "Digital-only promo code; not valid in-restaurant or on third-party platforms; may not combine with other coupons/promotions.",
+    "stackGroup": "chipotle-digital-offer",
+    "finePrint": "Official terms page: valid 9/24 through 9/25/26 only for digital orders from participating U.S. and Canada Chipotle restaurants. One free quesadilla entree with purchase in the same transaction of at least $20 excluding taxes, tips, or fees. Add-ons not permitted on the free quesadilla. Promo code NQD2026 required at checkout. Valid only on chipotle.com and the Chipotle mobile app. Subject to availability. Note: chipotle.com/free-quesadilla still showed prior-year NQD2025 / 9/22-9/25/25 wording on this scan and was not used for dates. No dollar estimate because local quesadilla price was not verified.",
+    "expirationLabel": "September 24-25 only (upcoming)",
     "availability": "available",
     "dealType": "free-food",
-    "freshness": "monitoring",
-    "discoveredOn": "2026-09-18",
+    "freshness": "new",
+    "discoveredOn": "2026-09-21",
     "preferenceSignals": [
       "free-food",
       "restaurant",
       "app-specific",
       "time-sensitive",
-      "unverified"
-    ]
-  },
-  {
-    "id": "krispy-kreme-blueberry-five-dollar-dozen-2026-09",
-    "merchant": "Krispy Kreme",
-    "title": "$5 Original Glazed Blueberry dozen with any dozen",
-    "summary": "LAST DAY Sunday September 20: buy any regularly priced dozen (or 16-ct Minis) and get a dozen Original Glazed Blueberry Flavored Doughnuts for $5 at participating shops. Online pickup/delivery uses code BLUEBERRY.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-09-20",
-    "locationNote": "Participating U.S. Krispy Kreme shops; confirm the nearest Spring / The Woodlands shop and product availability before a trip.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "doughnut",
-      "dozen",
-      "limited time",
-      "code"
-    ],
-    "source": {
-      "label": "Krispy Kreme official Blueberry offer page",
-      "url": "https://www.krispykreme.com/Blueberry",
-      "checkedOn": "2026-09-20"
-    },
-    "actionLabel": "Get $5 blueberry dozen",
-    "tier": "A",
-    "stackNote": "Treat as its own dozen deal; online code BLUEBERRY for app/website orders.",
-    "finePrint": "Available Thursday 9/17 through Sunday 9/20/2026 at participating U.S. and Canadian shops while supplies last; not offered in Puerto Rico. In-shop/drive-thru limit two discounted dozens per guest; online pickup/delivery limit one per guest with code BLUEBERRY. Requires purchase of any regularly priced dozen or 16-ct Minis. No dollar estimate because local dozen prices were not verified.",
-    "expirationLabel": "LAST DAY Sunday September 20",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "current",
-    "discoveredOn": "2026-09-19",
-    "preferenceSignals": [
-      "restaurant",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "moes-national-queso-day-free-cup-2026-09-20",
-    "merchant": "Moe's Southwest Grill",
-    "title": "National Queso Day free cup of queso (no purchase)",
-    "summary": "On September 20 only, participating Moe's locations offer a free cup of queso in-store with no purchase necessary (taxes/fees excluded). Moe Rewards members also have a Cup of Queso loyalty reward window through Sept 20.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-20",
-    "availableDaysOfWeek": [
-      0
-    ],
-    "locationNote": "Participating Moe's locations. Nearby listings include Spring (Louetta Rd / 77379 area) and Tomball/Woodlands-area stores; confirm participation and in-store availability before a trip.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free food",
-      "queso",
-      "one-day",
-      "National Queso Day",
-      "in-store"
-    ],
-    "source": {
-      "label": "Moe's official offers page (National Queso Day)",
-      "url": "https://www.moes.com/offers",
-      "checkedOn": "2026-09-20"
-    },
-    "actionLabel": "Get free queso today",
-    "tier": "A",
-    "stackNote": "Standalone in-store promo; not valid with other offers/rewards or third-party delivery.",
-    "finePrint": "Official moes.com/offers: \"National Queso Day - Cup of Queso on Us\" valid in store on 9/20/26, no purchase necessary, excluding taxes and fees, participating locations, in-store only, single use. Separate Loyalty Offer for Moe Rewards members runs 9/17-9/20 for one Cup of Queso on us (must apply Reward at checkout for online/app). Double Dip Days also notes free Cup of Queso on 9/20 for non-members in-store with mention of the offer. No dollar estimate because local cup price was not verified.",
-    "expirationLabel": "TODAY ONLY September 20",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "new",
-    "discoveredOn": "2026-09-20",
-    "preferenceSignals": [
-      "free-food",
-      "restaurant",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "torchys-national-queso-day-free-queso-2026-09-20",
-    "merchant": "Torchy's Tacos",
-    "title": "National Queso Day free large queso (Rewards; confirm)",
-    "summary": "Secondary local coverage says Torchy's Rewards members can get a free large Green Chile Queso and chips with any purchase today only, in-restaurant at participating locations. Torchy's newsroom fetch did not surface a matching press release; confirm in the Rewards app before a trip.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 1,
-    "isFree": true,
-    "expiresOn": "2026-09-20",
-    "availableDaysOfWeek": [
-      0
-    ],
-    "locationNote": "Participating Torchy's restaurants. Spring / The Woodlands area has Torchy's locations (incl. Spring Stuebner and Woodlands Mall / Research Forest); confirm the digital reward loads and store participation.",
-    "verification": "needs-check",
-    "friction": "medium",
-    "tags": [
-      "free food",
-      "queso",
-      "one-day",
-      "Rewards",
-      "needs-check"
-    ],
-    "source": {
-      "label": "Austin Food Magazine Torchy's Queso Day coverage (secondary; confirm in Rewards app)",
-      "url": "https://austinfoodmagazine.com/torchys-national-queso-day-free-queso/",
-      "checkedOn": "2026-09-20"
-    },
-    "actionLabel": "Confirm in Torchy's Rewards",
-    "tier": "B",
-    "stackNote": "In-restaurant Rewards digital reward; do not assume delivery or stacking.",
-    "finePrint": "Needs app/in-restaurant confirmation. Secondary reporting (Austin Food Magazine, Sep 18 2026) describes free large Green Chile Queso and chips with any purchase for Rewards members, in-restaurant only, Sept 20. Official torchystacos.com newsroom page did not clearly list the promo on this scan. Do not treat as verified until Torchy's Rewards shows the digital offer or an official Torchy's release confirms it.",
-    "expirationLabel": "TODAY ONLY September 20 (unverified)",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "monitoring",
-    "discoveredOn": "2026-09-20",
-    "preferenceSignals": [
-      "free-food",
-      "restaurant",
-      "time-sensitive",
-      "unverified",
-      "app-specific"
+      "upcoming"
     ]
   }
 ]
