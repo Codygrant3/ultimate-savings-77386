@@ -108,7 +108,7 @@
     "source": {
       "label": "McDonald's official deals",
       "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-09-24"
     },
     "actionLabel": "Check $2 breakfast offer",
     "tier": "A",
@@ -149,7 +149,7 @@
     "source": {
       "label": "McDonald's official deals",
       "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-08-29"
+      "checkedOn": "2026-09-24"
     },
     "actionLabel": "Check weekly fries offer",
     "tier": "A",
@@ -190,7 +190,7 @@
     "source": {
       "label": "McDonald's official deals",
       "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-09-08"
+      "checkedOn": "2026-09-24"
     },
     "actionLabel": "Check first-order offer",
     "tier": "A",
@@ -1888,13 +1888,13 @@
     "id": "chipotle-national-quesadilla-day-2026-09",
     "merchant": "Chipotle",
     "title": "National Quesadilla Day free quesadilla with $20+ (code NQD2026)",
-    "summary": "Official Chipotle terms and Sep 21 newsroom: September 24-25 only, digital orders get one free quesadilla entree with a $20+ same-transaction purchase using promo code NQD2026. Upcoming — not redeemable yet today.",
+    "summary": "Active today and September 25: digital orders get one free quesadilla entree with a $20+ same-transaction purchase using promo code NQD2026.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 20,
     "isFree": true,
     "expiresOn": "2026-09-25",
-    "locationNote": "Participating U.S. and Canada Chipotle restaurants for chipotle.com / app digital orders only. Confirm Spring-area digital availability when the window opens.",
+    "locationNote": "Participating U.S. and Canada Chipotle restaurants for chipotle.com / app digital orders only. Confirm Spring-area digital availability at checkout.",
     "verification": "verified",
     "friction": "medium",
     "tags": [
@@ -1902,19 +1902,19 @@
       "quesadilla",
       "promo code",
       "digital only",
-      "upcoming"
+      "same-day"
     ],
     "source": {
       "label": "Chipotle official National Quesadilla Day 2026 offer terms + newsroom",
       "url": "https://www.chipotle.com/national-quesadilla-day-2026-offer",
-      "checkedOn": "2026-09-22"
+      "checkedOn": "2026-09-24"
     },
     "actionLabel": "Use code NQD2026 Sep 24-25",
     "tier": "A",
     "stackNote": "Digital-only promo code; not valid in-restaurant or on third-party platforms; may not combine with other coupons/promotions.",
     "stackGroup": "chipotle-digital-offer",
     "finePrint": "Official terms page: valid 9/24 through 9/25/26 only for digital orders from participating U.S. and Canada Chipotle restaurants. One free quesadilla entree with purchase in the same transaction of at least $20 excluding taxes, tips, or fees. Add-ons not permitted on the free quesadilla. Promo code NQD2026 required at checkout. Valid only on chipotle.com and the Chipotle mobile app. Subject to availability. Note: chipotle.com/free-quesadilla still showed prior-year NQD2025 / 9/22-9/25/25 wording on this scan and was not used for dates. No dollar estimate because local quesadilla price was not verified.",
-    "expirationLabel": "September 24-25 only (upcoming in 2 days)",
+    "expirationLabel": "Active today; ends September 25",
     "availability": "available",
     "dealType": "free-food",
     "freshness": "current",
@@ -1924,7 +1924,7 @@
       "restaurant",
       "app-specific",
       "time-sensitive",
-      "upcoming"
+      "same-day"
     ]
   },
   {
@@ -2059,6 +2059,216 @@
       "free-item",
       "time-sensitive",
       "same-day"
+    ]
+  },
+  {
+    "id": "arbys-loaded-rewards-free-sandwich-2026",
+    "merchant": "Arby's",
+    "title": "Free sandwich with $5 first order for new Rewards members",
+    "summary": "New Arby's Loaded Rewards members receive a free sandwich with a $5 first order, followed by 2x points on the second order. The offer requires a new account and participating-location confirmation.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 5,
+    "isFree": true,
+    "locationNote": "The official announcement describes the offer for new U.S. member sign-ups but does not confirm a specific Spring / 77386 restaurant. Confirm the welcome offer and restaurant participation in the Arby's app before ordering.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "free food",
+      "sandwich",
+      "new member",
+      "app",
+      "loyalty"
+    ],
+    "source": {
+      "label": "Arby's official Loaded Rewards announcement",
+      "url": "https://stories.inspirebrands.com/arbys-angie-katsanevas-partnership/",
+      "checkedOn": "2026-09-24"
+    },
+    "actionLabel": "Confirm welcome offer in app",
+    "tier": "A",
+    "stackNote": "The free-sandwich welcome offer is tied to a $5 first order for new sign-ups. Arby's says members may use rewards and one offer per order, but the welcome offer's in-app terms control combination eligibility.",
+    "stackStatus": "conditional",
+    "finePrint": "Official announcement dated September 23, 2026: new member sign-ups receive a free sandwich with a $5 spend on the first order and 2x points on a second order. The announcement does not state a public end date or a local sandwich price, so estimated savings remains unpriced. Account creation and app or website sign-in are required; no account was created during this scan.",
+    "expirationLabel": "No public end date; account offer controls",
+    "availability": "program",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-23",
+    "preferenceSignals": [
+      "free-food",
+      "restaurant",
+      "app-specific",
+      "new-member"
+    ]
+  },
+  {
+    "id": "heb-dr-pepper-free-chick-fil-a-chips-2026-09",
+    "merchant": "H-E-B",
+    "title": "Free Chick-fil-A waffle chips with Dr Pepper six-pack",
+    "summary": "Buy a qualifying 6-pack of 16.9-ounce Dr Pepper bottles and get a 7-ounce bag of Chick-fil-A waffle chips free through September 29. Confirm the coupon and both items after selecting Spring Creek Market.",
+    "category": "grocery",
+    "estimatedSavings": 4.78,
+    "minimumSpend": 3.74,
+    "savingsRate": 127.8,
+    "isFree": true,
+    "expiresOn": "2026-09-29",
+    "locationNote": "The official public coupon page displayed $3.74 for the qualifying Dr Pepper six-pack and $4.78 for the chips but did not provide proof that those prices or the coupon apply at Spring Creek Market. Confirm after selecting the 77386 store.",
+    "verification": "needs-check",
+    "friction": "low",
+    "tags": [
+      "grocery",
+      "free item",
+      "digital coupon",
+      "beverage",
+      "snack",
+      "location gated"
+    ],
+    "source": {
+      "label": "H-E-B official coupon detail",
+      "url": "https://www.heb.com/digital-coupon/coupon-detail/84063792",
+      "checkedOn": "2026-09-24"
+    },
+    "actionLabel": "Confirm at Spring Creek",
+    "tier": "A",
+    "stackNote": "The Dr Pepper page showed a separate price cut; confirm the clipped coupon still combines with that price after selecting Spring Creek Market.",
+    "stackStatus": "conditional",
+    "finePrint": "Official coupon terms: buy one qualifying Dr Pepper, Diet Dr Pepper, Dr Pepper Zero Sugar, Dr Pepper & Cream Soda, or Dr Pepper Strawberries & Cream six-pack of 0.5-liter bottles and get one 7-ounce Chick-fil-A Original Waffle Potato Chips bag free. Expires September 29, unlimited use, while supplies last, and may not be redeemable at all H-E-B locations. The $4.78 value and $3.74 spend use the public page's displayed prices; this scan did not sign in, clip the coupon, or confirm Spring Creek pricing.",
+    "expirationLabel": "Ends September 29; confirm Spring Creek",
+    "availability": "available",
+    "dealType": "digital-coupon",
+    "freshness": "new",
+    "discoveredOn": "2026-09-23",
+    "preferenceSignals": [
+      "grocery",
+      "free-item",
+      "high-value",
+      "location-gated"
+    ]
+  },
+  {
+    "id": "krispy-kreme-coffee-dozen-five-dollars-2026-09",
+    "merchant": "Krispy Kreme",
+    "title": "$5 coffee-flavored or Original Glazed dozen with dozen purchase",
+    "summary": "From September 26-29, buy any regular-priced dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5 at participating U.S. shops.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-09-29",
+    "locationNote": "Dedicated U.S. Krispy Kreme shops only. The promotion page requires shop participation and does not confirm a Spring-area shop or local regular-dozen price; check the official locator before making a trip.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "doughnuts",
+      "coffee",
+      "National Coffee Day",
+      "bundle",
+      "limited time"
+    ],
+    "source": {
+      "label": "Krispy Kreme official National Coffee Day promotion",
+      "url": "https://www.krispykreme.com/promos/national-coffee-day",
+      "checkedOn": "2026-09-24"
+    },
+    "actionLabel": "Check participating shop",
+    "tier": "B",
+    "stackNote": "Requires a regular-priced dozen or 16-count Minis. Limit two redemptions in shop or drive-thru and one online with code COFFEE; not valid with other orders or coupons.",
+    "stackStatus": "exclusive",
+    "finePrint": "Offer runs September 26-29, 2026 at participating dedicated U.S. Krispy Kreme shops while supplies last. Buy any dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5. Online pickup or delivery requires promo code COFFEE. Not valid at grocery or convenience locations, in Puerto Rico, Canada, or outside dedicated retail shops. No savings estimate is listed because a local participating shop and its regular-dozen price were not verified.",
+    "expirationLabel": "September 26-29",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-23",
+    "preferenceSignals": [
+      "restaurant",
+      "limited-time",
+      "upcoming"
+    ]
+  },
+  {
+    "id": "krispy-kreme-national-coffee-day-free-coffee-2026",
+    "merchant": "Krispy Kreme",
+    "title": "Free small or medium coffee with any purchase on Sept 29",
+    "summary": "On National Coffee Day, get one free small or medium hot or iced coffee with any purchase in shop at a participating U.S. Krispy Kreme.",
+    "category": "coffee",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-29",
+    "locationNote": "In-shop redemption at participating dedicated U.S. Krispy Kreme locations only. Confirm a participating Spring / Houston-area shop before visiting.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free drink",
+      "coffee",
+      "National Coffee Day",
+      "one day"
+    ],
+    "source": {
+      "label": "Krispy Kreme official National Coffee Day promotion",
+      "url": "https://www.krispykreme.com/promos/national-coffee-day",
+      "checkedOn": "2026-09-24"
+    },
+    "actionLabel": "Redeem in shop Sept 29",
+    "tier": "A",
+    "stackNote": "The official promotion labels the coffee offer stackable. It is separate from the $5 second-dozen offer, but both still require a participating dedicated shop and product availability.",
+    "stackStatus": "compatible",
+    "finePrint": "Valid only September 29, 2026 at participating U.S. Krispy Kreme shops. Limit one small or medium hot or iced coffee per guest with any purchase, in shop only. Specialty and frozen beverages are excluded. Not valid in Puerto Rico or at grocery or convenience locations. No dollar estimate because no participating local shop price was verified.",
+    "expirationLabel": "September 29 only",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-23",
+    "preferenceSignals": [
+      "preferred-coffee",
+      "free-drink",
+      "time-sensitive",
+      "upcoming"
+    ]
+  },
+  {
+    "id": "dunkin-national-coffee-day-free-medium-2026",
+    "merchant": "Dunkin",
+    "title": "Free medium coffee with any purchase on Sept 29",
+    "summary": "Dunkin Rewards members can get one free medium hot or iced coffee with any purchase through the Dunkin app on National Coffee Day.",
+    "category": "coffee",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-29",
+    "locationNote": "Dunkin Rewards and app redemption are required at a participating U.S. Dunkin. Confirm the offer appears for the selected Spring-area shop before ordering.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free drink",
+      "coffee",
+      "National Coffee Day",
+      "app",
+      "one day"
+    ],
+    "source": {
+      "label": "Dunkin official L.L.Bean collaboration announcement",
+      "url": "https://news.dunkindonuts.com/news/dunkin-llbean-collab-2026",
+      "checkedOn": "2026-09-24"
+    },
+    "actionLabel": "Activate in app Sept 29",
+    "tier": "A",
+    "stackNote": "Single-use Rewards offer; the official terms say it cannot combine with another offer, promotion, or coupon.",
+    "stackStatus": "exclusive",
+    "finePrint": "Valid only September 29, 2026, for Dunkin Rewards members at participating U.S. stores. Redeem through the Dunkin app with any purchase. Limit one per member. Cold Brew and hot espresso beverages are excluded. The offer cannot be combined with another offer, promotion, or coupon. No dollar estimate is listed because the local participating-store price was not verified.",
+    "expirationLabel": "September 29 only",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-24",
+    "preferenceSignals": [
+      "preferred-coffee",
+      "free-drink",
+      "app-specific",
+      "time-sensitive",
+      "upcoming"
     ]
   }
 ]

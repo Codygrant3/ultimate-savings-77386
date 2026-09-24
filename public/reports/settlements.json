@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-22T12:09:53.224Z",
-  "checkedOn": "2026-09-22",
+  "generatedAt": "2026-09-24T17:16:36.015Z",
+  "checkedOn": "2026-09-24",
   "openCount": 4,
   "settlements": [
     {
@@ -19,10 +19,10 @@
       "administrator": "Angeion Group",
       "court": "Clark County Superior Court, Washington",
       "verification": "official-administrator",
-      "checkedOn": "2026-09-22",
+      "checkedOn": "2026-09-24",
       "freshness": "current",
       "relevanceScore": 25,
-      "relevanceReason": "Claim deadline September 24, 2026 (2 days); confirm Clark County WA connection before any claim. This scan did not submit a claim.",
+      "relevanceReason": "Claim deadline is today, September 24, 2026; confirm Clark County WA connection before any claim. This scan did not submit a claim.",
       "feeRequired": false,
       "eligibilityStatus": "user-confirmation-required"
     },
@@ -42,7 +42,7 @@
       "administrator": "Settlement Administrator for Jason Buhl v. Dairy Farmers of America, Inc.",
       "court": "District Court of Wyandotte County, Kansas, Case No. WY-2026-CV-000143",
       "verification": "official-administrator",
-      "checkedOn": "2026-09-11",
+      "checkedOn": "2026-09-24",
       "freshness": "current",
       "relevanceScore": 78,
       "relevanceReason": "Nationwide consumer data incident; relevant only after confirming notice or affected status.",
@@ -65,7 +65,7 @@
       "administrator": "Simpluris",
       "court": "Circuit Court for Iowa County, Wisconsin",
       "verification": "court-authorized-notice",
-      "checkedOn": "2026-09-22",
+      "checkedOn": "2026-09-24",
       "freshness": "current",
       "relevanceScore": 80,
       "relevanceReason": "Nationwide consumer data incident; relevant only after confirming notice or affected status.",
@@ -88,7 +88,7 @@
       "administrator": "Kroll Settlement Administration",
       "court": "U.S. District Court, Central District of California",
       "verification": "official-administrator",
-      "checkedOn": "2026-09-11",
+      "checkedOn": "2026-09-24",
       "freshness": "current",
       "relevanceScore": 68,
       "relevanceReason": "Potentially high vehicle value, but only for specific Toyota models and verified VINs.",
