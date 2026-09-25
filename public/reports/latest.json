@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-24T17:16:37.699Z",
+  "generatedAt": "2026-09-25T12:27:28.366Z",
   "weekOf": "2026-09-21",
   "zipCode": "77386",
   "totalPotentialSavings": 163.74,
-  "verifiedCount": 44,
+  "verifiedCount": 46,
   "expiringCount": 20,
   "opportunities": [
     {
@@ -84,7 +84,7 @@
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 6 days; newly found"
+          "detail": "Ends in 5 days; newly found"
         },
         {
           "label": "Effort",
@@ -107,10 +107,118 @@
       ]
     },
     {
+      "id": "taco-bell-topgolf-twenty-five-off-2026",
+      "merchant": "Taco Bell Rewards + Topgolf",
+      "title": "$25 off Topgolf game play through Sept 27",
+      "summary": "Taco Bell Rewards members can claim a limited-supply code for $25 off eligible Topgolf game play on Monday through Thursday visits through September 27. Codes while supplies last; not for Friday-Sunday visits.",
+      "category": "sports",
+      "estimatedSavings": 25,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-09-27",
+      "availableDaysOfWeek": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "locationNote": "Topgolf Houston-Spring is officially listed at 560 Spring Park Center Blvd, Spring, TX 77373. Confirm that the Rewards code applies to the selected Spring reservation before booking.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "sports",
+        "Topgolf",
+        "Taco Bell Rewards",
+        "entertainment",
+        "coupon code"
+      ],
+      "source": {
+        "label": "Topgolf / Taco Bell Live Mas Open official promotion",
+        "url": "https://topgolf.com/us/promo/taco-bell-open-qualifier/",
+        "checkedOn": "2026-09-25"
+      },
+      "actionLabel": "Check Rewards code before booking",
+      "tier": "A",
+      "stackNote": "The coupon cannot combine with other game-play coupons, bundles, or packages; compare it with Topgolf's own weekday pricing before booking.",
+      "stackGroup": "topgolf-gameplay-discount",
+      "stackStatus": "exclusive",
+      "finePrint": "The promotional code is limited supply and good for $25 off Topgolf game play for Taco Bell Rewards members. Visits must occur Monday through Thursday by September 27, 2026. It applies to eligible one- or two-bay reservations booked through Topgolf's app or website and to qualifying walk-ins. A $6 one-time Topgolf account fee applies to new guests. Limit one coupon per person and per bay; exclusions include events, Lounge, Swing Suite, and Toptracer Range locations.",
+      "expirationLabel": "Monday-Thursday visits through September 27; while codes last (ends in 2 days)",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "current",
+      "discoveredOn": "2026-09-11",
+      "preferenceSignals": [
+        "sports",
+        "local-entertainment",
+        "high-value",
+        "account-specific"
+      ],
+      "distanceBasis": "unknown",
+      "score": 71,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 19.919999999999998,
+          "weight": 24,
+          "detail": "$25.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 5.800000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 9.1,
+          "weight": 10,
+          "detail": "Ends in 3 days; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "tropical-smoothie-tropic-fan-fest-free-smoothie-2026-09",
       "merchant": "Tropical Smoothie Cafe",
       "title": "Free 24 oz smoothie with Tropic Bowl or food purchase",
-      "summary": "Tropic Fan Fest: Tropic Rewards members get one free 24 oz smoothie daily with a qualifying Tropic Bowl or food purchase September 21-27 when redeemed via app/account. Local Spring locations include Riley Fuzzel Road (77386); confirm participating status.",
+      "summary": "Tropic Fan Fest still live: Tropic Rewards members get one free 24 oz smoothie daily with a qualifying Tropic Bowl or food purchase September 21-27 when redeemed via app/account. Local Spring locations include Riley Fuzzel Road (77386); confirm participating status.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 0,
@@ -127,19 +235,19 @@
         "Tropic Fan Fest"
       ],
       "source": {
-        "label": "Tropical Smoothie Cafe official Tropic Fan Fest terms",
+        "label": "Tropical Smoothie Cafe Tropic Fan Fest official terms",
         "url": "https://pages.tropicalsmoothiecafe.com/5eo2jtu",
-        "checkedOn": "2026-09-22"
+        "checkedOn": "2026-09-25"
       },
       "actionLabel": "Redeem in Tropic Rewards",
       "tier": "A",
       "stackNote": "Rewards members only; one reward per day; not valid with other rewards or third-party services; may not combine with certain offers.",
       "stackGroup": "tropical-smoothie-rewards",
       "finePrint": "Official terms: free 24 oz. smoothie with Tropic Bowl or food purchase beginning September 21, 2026 and ending September 27, 2026. Excludes Toasted Snack Rolls, Sunshine Smoothie, sides, sweets, and kids food. Redeem via app or Tropic Rewards account for same-day pickup/delivery on tropicalsmoothiecafe.com, or scan app in-cafe. Applied to lowest-priced 24 oz smoothie. Modifications, add-ins, supplements, and tax extra. Limit one per day. Expires 11:59 p.m. ET September 27, 2026. Participating locations only. No dollar estimate because local smoothie price was not verified.",
-      "expirationLabel": "September 21-27 (live now; ends Sunday)",
+      "expirationLabel": "Through September 27 (live now; ends Sunday)",
       "availability": "available",
       "dealType": "free-food",
-      "freshness": "new",
+      "freshness": "current",
       "discoveredOn": "2026-09-22",
       "preferenceSignals": [
         "free-food",
@@ -149,14 +257,14 @@
         "local-location"
       ],
       "distanceBasis": "unknown",
-      "score": 69,
+      "score": 70,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 2 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -184,9 +292,9 @@
         },
         {
           "label": "Timing",
-          "points": 8.5,
+          "points": 9.1,
           "weight": 10,
-          "detail": "Ends in 4 days; newly found"
+          "detail": "Ends in 3 days; current"
         },
         {
           "label": "Effort",
@@ -293,7 +401,7 @@
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 6 days; newly found"
+          "detail": "Ends in 5 days; newly found"
         },
         {
           "label": "Effort",
@@ -416,118 +524,10 @@
       ]
     },
     {
-      "id": "taco-bell-topgolf-twenty-five-off-2026",
-      "merchant": "Taco Bell Rewards + Topgolf",
-      "title": "$25 off Topgolf game play through Sept 27",
-      "summary": "Taco Bell Rewards members can claim a limited-supply code for $25 off eligible Topgolf game play on Monday through Thursday visits through September 27.",
-      "category": "sports",
-      "estimatedSavings": 25,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-09-27",
-      "availableDaysOfWeek": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "locationNote": "Topgolf Houston-Spring is officially listed at 560 Spring Park Center Blvd, Spring, TX 77373. Confirm that the Rewards code applies to the selected Spring reservation before booking.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "sports",
-        "Topgolf",
-        "Taco Bell Rewards",
-        "entertainment",
-        "coupon code"
-      ],
-      "source": {
-        "label": "Taco Bell official Live Mas Open announcement",
-        "url": "https://www.tacobell.com/newsroom/inaugural-live-mas-open-golf-tournament",
-        "checkedOn": "2026-09-11"
-      },
-      "actionLabel": "Check Rewards code before booking",
-      "tier": "A",
-      "stackNote": "The coupon cannot combine with other game-play coupons, bundles, or packages; compare it with Topgolf's own weekday pricing before booking.",
-      "stackGroup": "topgolf-gameplay-discount",
-      "stackStatus": "exclusive",
-      "finePrint": "The promotional code is limited supply and good for $25 off Topgolf game play for Taco Bell Rewards members. Visits must occur Monday through Thursday by September 27, 2026. It applies to eligible one- or two-bay reservations booked through Topgolf's app or website and to qualifying walk-ins. A $6 one-time Topgolf account fee applies to new guests. Limit one coupon per person and per bay; exclusions include events, Lounge, Swing Suite, and Toptracer Range locations.",
-      "expirationLabel": "Monday-Thursday visits through September 27; while codes last (ends in 5 days)",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "current",
-      "discoveredOn": "2026-09-11",
-      "preferenceSignals": [
-        "sports",
-        "local-entertainment",
-        "high-value",
-        "account-specific"
-      ],
-      "distanceBasis": "unknown",
-      "score": 64,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 13 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 19.919999999999998,
-          "weight": 24,
-          "detail": "$25.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 5.800000000000001,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Ends in 4 days; current"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
       "id": "dunkin-mobile-mondays-2026-09",
       "merchant": "Dunkin",
       "title": "100 bonus points on Mobile Mondays",
-      "summary": "Dunkin Rewards members can earn 100 bonus points when they activate the offer and order ahead in the app on Mondays September 7, 14, 21, or 28. Today (Monday Sep 21) is an active Mobile Monday.",
+      "summary": "Dunkin Rewards members can earn 100 bonus points on Mobile Mondays through September 28 when ordering ahead through the app after activating the offer. Not redeemable today (Friday); next and final Monday is September 28.",
       "category": "coffee",
       "estimatedSavings": 0,
       "minimumSpend": 0,
@@ -547,9 +547,9 @@
         "Monday"
       ],
       "source": {
-        "label": "Dunkin official newsroom",
+        "label": "Dunkin official newsroom fall Rewards calendar",
         "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-        "checkedOn": "2026-09-22"
+        "checkedOn": "2026-09-25"
       },
       "actionLabel": "Activate on Monday",
       "tier": "B",
@@ -557,7 +557,7 @@
       "stackNote": "Activate the Mobile Monday offer before ordering; do not assume another coupon combines unless checkout allows it.",
       "stackGroup": "dunkin-rewards-offer",
       "finePrint": "Valid each Monday from September 7 through September 28, limit 100 bonus points per member per Monday. The offer must be activated in the mobile app and earned on an eligible order-ahead purchase at a participating Dunkin store. No dollar value is estimated because the redemption value and local order price were not verified.",
-      "expirationLabel": "Mondays through September 28 (next Monday 9/28)",
+      "expirationLabel": "Mondays through September 28 (next/final Monday 9/28)",
       "availability": "available",
       "dealType": "loyalty-reward",
       "freshness": "current",
@@ -568,9 +568,9 @@
         "time-sensitive"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-22",
-      "distanceEvidenceAgeDays": 2,
-      "distanceSourceLabel": "Dunkin official newsroom",
+      "distanceCheckedOn": "2026-09-25",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Dunkin official newsroom fall Rewards calendar",
       "distanceSourceUrl": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
       "score": 63,
       "scoreLabel": "Worth a look",
@@ -579,7 +579,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 2 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -609,7 +609,7 @@
           "label": "Timing",
           "points": 7.6000000000000005,
           "weight": 10,
-          "detail": "Ends in 5 days; current"
+          "detail": "Ends in 4 days; current"
         },
         {
           "label": "Effort",
@@ -736,7 +736,7 @@
       "id": "chipotle-national-quesadilla-day-2026-09",
       "merchant": "Chipotle",
       "title": "National Quesadilla Day free quesadilla with $20+ (code NQD2026)",
-      "summary": "Active today and September 25: digital orders get one free quesadilla entree with a $20+ same-transaction purchase using promo code NQD2026.",
+      "summary": "LAST DAY today September 25: digital orders get one free quesadilla entree with a $20+ same-transaction purchase using promo code NQD2026. Window ends tonight.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 20,
@@ -753,16 +753,16 @@
         "same-day"
       ],
       "source": {
-        "label": "Chipotle official National Quesadilla Day 2026 offer terms + newsroom",
-        "url": "https://www.chipotle.com/national-quesadilla-day-2026-offer",
-        "checkedOn": "2026-09-24"
+        "label": "Chipotle official newsroom + National Quesadilla Day 2026 offer terms",
+        "url": "https://newsroom.chipotle.com/2026-09-21-CHIPOTLE-CELEBRATES-NATIONAL-QUESADILLA-DAY-2026-WITH-TWO-DAYS-OF-FREE-QUESADILLAS",
+        "checkedOn": "2026-09-25"
       },
-      "actionLabel": "Use code NQD2026 Sep 24-25",
+      "actionLabel": "Use code NQD2026 today (last day)",
       "tier": "A",
       "stackNote": "Digital-only promo code; not valid in-restaurant or on third-party platforms; may not combine with other coupons/promotions.",
       "stackGroup": "chipotle-digital-offer",
-      "finePrint": "Official terms page: valid 9/24 through 9/25/26 only for digital orders from participating U.S. and Canada Chipotle restaurants. One free quesadilla entree with purchase in the same transaction of at least $20 excluding taxes, tips, or fees. Add-ons not permitted on the free quesadilla. Promo code NQD2026 required at checkout. Valid only on chipotle.com and the Chipotle mobile app. Subject to availability. Note: chipotle.com/free-quesadilla still showed prior-year NQD2025 / 9/22-9/25/25 wording on this scan and was not used for dates. No dollar estimate because local quesadilla price was not verified.",
-      "expirationLabel": "Active today; ends September 25",
+      "finePrint": "Official Chipotle newsroom and terms: valid September 24, 2026 through September 25, 2026 only for digital orders from participating U.S. and Canada Chipotle restaurants. One free quesadilla entree with purchase in the same transaction of at least $20 excluding taxes, tips, or fees. Add-ons not permitted on the free quesadilla. Promo code NQD2026 required at checkout. Valid only on chipotle.com, chipotle.ca and the Chipotle mobile app; not valid for in-restaurant or third-party orders. Subject to availability. May not be combined with other coupons or promotions. No dollar estimate because local quesadilla price was not verified.",
+      "expirationLabel": "LAST DAY today September 25",
       "availability": "available",
       "dealType": "free-food",
       "freshness": "current",
@@ -812,7 +812,7 @@
           "label": "Timing",
           "points": 9.1,
           "weight": 10,
-          "detail": "Ends in 2 days; current"
+          "detail": "Ends in 1 day; current"
         },
         {
           "label": "Effort",
@@ -935,6 +935,231 @@
           "points": 7.000000000000001,
           "weight": 7,
           "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "nacho-padres-happy-hour-margaritas-2026",
+      "merchant": "Nacho Padres",
+      "title": "Happy Hour $5.99 house margaritas Mon-Fri 3-6 p.m.",
+      "summary": "TODAY Friday: official site lists Happy Hour Monday-Friday 3-6 p.m. with $5.99 house margaritas (frozen or rocks), plus specialty margarita and bite pricing noted on the FAQ.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "availableDaysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "redemptionTimeWindows": [
+        {
+          "startTime": "15:00",
+          "endTime": "18:00"
+        }
+      ],
+      "locationNote": "2121 Rayford Rd, Spring, TX 77386. Alcohol specials require legal age; confirm current pricing in-restaurant.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "local",
+        "happy hour",
+        "margarita",
+        "77386",
+        "same-day"
+      ],
+      "source": {
+        "label": "Nacho Padres official website hours and happy hour FAQ",
+        "url": "https://nachopadres.com/",
+        "checkedOn": "2026-09-25"
+      },
+      "actionLabel": "Happy Hour 3-6 p.m. today",
+      "tier": "B",
+      "stackNote": "Local happy hour; no coupon stacking assumed.",
+      "finePrint": "Official site states Happy Hour Monday-Friday 3-6 p.m.: $5.99 house margaritas (frozen or rocks), $9.99 specialty margaritas, and $6.99 bites. No published end date; treat as ongoing while listed. No savings estimate because regular margarita price was not verified.",
+      "expirationLabel": "Mon-Fri 3-6 p.m. while listed (TODAY in window)",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-09-25",
+      "preferenceSignals": [
+        "restaurant",
+        "local-high-value",
+        "same-day",
+        "time-window"
+      ],
+      "localRecord": true,
+      "distanceMiles": 2.5,
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-09-25",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Nacho Padres official website hours and happy hour FAQ",
+      "distanceSourceUrl": "https://nachopadres.com/",
+      "score": 59,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.5 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "nacho-padres-keep-it-loco-thursdays-2026",
+      "merchant": "Nacho Padres",
+      "title": "Keep IT Loco Thursdays: half off large fajitas",
+      "summary": "Local Spring cantina lists Keep IT Loco Thursdays as half off large fajitas all day. Not redeemable today (Friday); next Thursday is October 1.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "availableDaysOfWeek": [
+        4
+      ],
+      "locationNote": "2121 Rayford Rd, Spring, TX 77386. Confirm half-off large fajitas terms with the restaurant before ordering; savings not estimated without menu price verification.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "local",
+        "fajitas",
+        "half off",
+        "thursday",
+        "77386"
+      ],
+      "source": {
+        "label": "Nacho Padres official website daily specials",
+        "url": "https://nachopadres.com/",
+        "checkedOn": "2026-09-25"
+      },
+      "actionLabel": "Plan for next Thursday",
+      "tier": "A",
+      "stackNote": "Local restaurant special; do not assume stacking with other coupons.",
+      "finePrint": "Official Nacho Padres homepage Daily Specials section lists Thursday Keep IT Loco as half off large fajitas. No published end date; treat as ongoing while listed. No dollar estimate because large fajita menu price was not verified on this scan.",
+      "expirationLabel": "Thursdays while listed on official site",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-09-25",
+      "preferenceSignals": [
+        "restaurant",
+        "local-high-value",
+        "recurring-weekly"
+      ],
+      "localRecord": true,
+      "distanceMiles": 2.5,
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-09-25",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Nacho Padres official website daily specials",
+      "distanceSourceUrl": "https://nachopadres.com/",
+      "score": 59,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.5 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -1247,7 +1472,7 @@
       "id": "dunkin-boosted-3x-beverages-after-1pm-2026-09-21-25",
       "merchant": "Dunkin",
       "title": "Boosted members: 3x points on beverages after 1 p.m.",
-      "summary": "From September 21 through September 25, Dunkin Rewards Boosted Status members can earn 3x points on any beverage purchase after 1 p.m. local time when the offer is activated. Still live today.",
+      "summary": "LAST DAY today September 25: Dunkin Rewards Boosted Status members can earn 3x points on any beverage purchase after 1 p.m. local time when the offer is activated in the app. Window ends tonight.",
       "category": "coffee",
       "estimatedSavings": 0,
       "minimumSpend": 0,
@@ -1270,9 +1495,9 @@
         "afternoon"
       ],
       "source": {
-        "label": "Dunkin official newsroom (fall menu Rewards calendar)",
+        "label": "Dunkin official newsroom fall Rewards calendar",
         "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-        "checkedOn": "2026-09-22"
+        "checkedOn": "2026-09-25"
       },
       "actionLabel": "Activate after 1 p.m.",
       "tier": "B",
@@ -1280,7 +1505,7 @@
       "stackNote": "Boosted-only; activate in app. Official terms say it cannot be combined with other offers, promotions, or coupons. Mobile Mondays is a separate Monday order-ahead bonus — do not assume stacking.",
       "stackGroup": "dunkin-rewards-offer",
       "finePrint": "Offer valid 9/21/26-9/25/26 for Boosted Status members only. Single-use per member per day. Must be activated on the mobile app. Applies to qualifying mobile orders or in-store when scanning Dunkin Rewards ID or paying with an enrolled Dunkin card after 1 p.m. Bonus points on base points only. Participating U.S. stores. No dollar estimate because redemption value and local beverage price were not verified.",
-      "expirationLabel": "September 21-25 after 1 p.m. (live now)",
+      "expirationLabel": "LAST DAY today September 25 after 1 p.m.",
       "availability": "available",
       "dealType": "loyalty-reward",
       "freshness": "current",
@@ -1292,9 +1517,9 @@
         "status-gated"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-22",
-      "distanceEvidenceAgeDays": 2,
-      "distanceSourceLabel": "Dunkin official newsroom (fall menu Rewards calendar)",
+      "distanceCheckedOn": "2026-09-25",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Dunkin official newsroom fall Rewards calendar",
       "distanceSourceUrl": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
       "score": 58,
       "scoreLabel": "Worth a look",
@@ -1303,7 +1528,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 2 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1333,7 +1558,7 @@
           "label": "Timing",
           "points": 9.1,
           "weight": 10,
-          "detail": "Ends in 2 days; current"
+          "detail": "Ends in 1 day; current"
         },
         {
           "label": "Effort",
@@ -1439,7 +1664,7 @@
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 7 days; newly found"
+          "detail": "Ends in 6 days; newly found"
         },
         {
           "label": "Effort",
@@ -1544,7 +1769,7 @@
           "label": "Timing",
           "points": 8.1,
           "weight": 10,
-          "detail": "Ends in 7 days; recently improved"
+          "detail": "Ends in 6 days; recently improved"
         },
         {
           "label": "Effort",
@@ -1672,7 +1897,7 @@
       "id": "applebees-nfl-season-wing-ticket-2026",
       "merchant": "Applebee's",
       "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
-      "summary": "Club Applebee's members who signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online To Go order, redeemable Sunday through Thursday, through January 10, 2027. Monday is inside this week's redemption window.",
+      "summary": "Club Applebee's members who signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online To Go order, redeemable Sunday through Thursday, through January 10, 2027. Friday is outside this week's redemption window; next codes arrive Sunday.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 15,
@@ -1697,16 +1922,16 @@
         "email code"
       ],
       "source": {
-        "label": "Applebee's official NFL Wing Ticket news",
+        "label": "Applebee's official NFL Season Wing Ticket news",
         "url": "https://cm4.applebees.com/en/news/2026/applebees-introduces-nfl-season-wing-ticket-free-boneless-wings-weekly",
-        "checkedOn": "2026-09-22"
+        "checkedOn": "2026-09-25"
       },
       "actionLabel": "Sign up for Wing Ticket",
       "tier": "A",
       "stackNote": "Weekly code is its own To Go offer; not valid on third-party delivery sites.",
       "stackGroup": "applebees-to-go-offer",
       "finePrint": "Signup and weekly codes for Club Applebee's members. Codes arrive by email each Sunday and are redeemable Sunday through Thursday of that week through January 10, 2027. Minimum $15 online To Go order excluding alcohol, gift cards, tax, delivery/service fees, and gratuity. Limit one order of 6 free Boneless Wings per week. Participating locations; other restrictions may apply. No dollar estimate because the local wing price was not verified.",
-      "expirationLabel": "Sun-Thu weekly codes through January 10, 2027 (Tuesday window open)",
+      "expirationLabel": "Sun-Thu weekly codes through January 10, 2027 (Friday not in window)",
       "availability": "available",
       "dealType": "free-food",
       "freshness": "current",
@@ -1725,7 +1950,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 2 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1961,7 +2186,7 @@
           "label": "Timing",
           "points": 6.9,
           "weight": 10,
-          "detail": "Ends in 11 days; newly found"
+          "detail": "Ends in 10 days; newly found"
         },
         {
           "label": "Effort",
@@ -2072,6 +2297,112 @@
           "points": 8,
           "weight": 8,
           "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "wendys-fryday-free-fry-2026",
+      "merchant": "Wendy's",
+      "title": "Free any-size fry Friday with $5 purchase",
+      "summary": "TODAY Friday: Wendy's official offers page lists free any-size fry with a $5 qualifying purchase for Fryday. App/Rewards digital offer at participating U.S. locations.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": true,
+      "availableDaysOfWeek": [
+        5
+      ],
+      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "Friday",
+        "app",
+        "qualifying purchase"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-09-25"
+      },
+      "actionLabel": "Claim Friday offer",
+      "tier": "A",
+      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+      "stackGroup": "wendys-app-order",
+      "finePrint": "Requires a $5 qualifying purchase on Friday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local fry price was not verified.",
+      "expirationLabel": "TODAY Friday while listed",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "current",
+      "discoveredOn": "2026-08-11",
+      "preferenceSignals": [
+        "free-food",
+        "weekday",
+        "app-specific"
+      ],
+      "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 31,
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
+      "score": 54,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$5.00 required per $0.00 saved"
         },
         {
           "label": "Stackability",
@@ -2660,7 +2991,7 @@
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 6 days; newly found"
+          "detail": "Ends in 5 days; newly found"
         },
         {
           "label": "Effort",
@@ -3017,112 +3348,6 @@
       "stackGroup": "wendys-app-order",
       "finePrint": "Requires a $5 qualifying purchase on Wednesday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local nugget price was not verified.",
       "expirationLabel": "Wednesdays while listed",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "current",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "free-food",
-        "weekday",
-        "app-specific"
-      ],
-      "distanceMiles": 4.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
-      "distanceSourceLabel": "Wendy's official restaurant locator",
-      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
-      "score": 51,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 4 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Household match: free food"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$5.00 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
-      "id": "wendys-fryday-free-fry-2026",
-      "merchant": "Wendy's",
-      "title": "Free any-size fry Friday with $5 purchase",
-      "summary": "Wendy's official offers page lists a free any-size fry with a $5 qualifying purchase for Fryday.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 5,
-      "isFree": true,
-      "availableDaysOfWeek": [
-        5
-      ],
-      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "Friday",
-        "app",
-        "qualifying purchase"
-      ],
-      "source": {
-        "label": "Wendy's official offers page",
-        "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-20"
-      },
-      "actionLabel": "Claim Friday offer",
-      "tier": "A",
-      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
-      "stackGroup": "wendys-app-order",
-      "finePrint": "Requires a $5 qualifying purchase on Friday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local fry price was not verified.",
-      "expirationLabel": "Fridays while listed",
       "availability": "available",
       "dealType": "free-food",
       "freshness": "current",
@@ -3705,6 +3930,110 @@
       ]
     },
     {
+      "id": "wendys-199-ten-piece-nuggets-2026",
+      "merchant": "Wendy's",
+      "title": "$1.99 10-piece nuggets with any purchase",
+      "summary": "Wendy's Rewards members can get 10-piece Classic or Spicy Nuggets for $1.99 with any purchase via a daily-refreshing digital app offer through September 27.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 1.99,
+      "isFree": false,
+      "expiresOn": "2026-09-27",
+      "locationNote": "App-only offer at participating U.S. Wendy's; availability at the selected Spring-area restaurant must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "restaurant",
+        "app",
+        "nuggets",
+        "daily digital offer"
+      ],
+      "source": {
+        "label": "Wendy's official offers page + PR Newswire SOURCE The Wendy's Company",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-09-25"
+      },
+      "actionLabel": "Claim in Wendy's app",
+      "tier": "A",
+      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+      "stackGroup": "wendys-app-order",
+      "finePrint": "Official window is August 24 through September 27. Requires the Wendy's app, account registration, and any other purchase. Participating U.S. restaurants only. No dollar value is estimated because the local regular nugget price was not verified.",
+      "expirationLabel": "Through September 27 (app digital offer; ends in 2 days)",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "current",
+      "discoveredOn": "2026-08-26",
+      "preferenceSignals": [
+        "restaurant",
+        "app-specific",
+        "time-sensitive"
+      ],
+      "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 31,
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
+      "score": 45,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 9.1,
+          "weight": 10,
+          "detail": "Ends in 3 days; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$1.99 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "mcdonalds-weekly-two-dollar-breakfast-sandwich-2026",
       "merchant": "McDonald's",
       "title": "$2 breakfast sandwich once weekly",
@@ -3787,7 +4116,7 @@
           "label": "Timing",
           "points": 6.9,
           "weight": 10,
-          "detail": "Ends in 11 days; newly found"
+          "detail": "Ends in 10 days; newly found"
         },
         {
           "label": "Effort",
@@ -3800,110 +4129,6 @@
           "points": 0.8,
           "weight": 8,
           "detail": "$2.00 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
-      "id": "wendys-199-ten-piece-nuggets-2026",
-      "merchant": "Wendy's",
-      "title": "$1.99 10-piece nuggets with any purchase",
-      "summary": "Wendy's Rewards members can add 10-piece Classic or Spicy Nuggets for $1.99 with any purchase through a daily digital offer in the app.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 1.99,
-      "isFree": false,
-      "expiresOn": "2026-09-27",
-      "locationNote": "App-only offer at participating U.S. Wendy's; availability at the selected Spring-area restaurant must be confirmed in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "restaurant",
-        "app",
-        "nuggets",
-        "daily digital offer"
-      ],
-      "source": {
-        "label": "Wendy's official offers page",
-        "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-22"
-      },
-      "actionLabel": "Claim in Wendy's app",
-      "tier": "A",
-      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
-      "stackGroup": "wendys-app-order",
-      "finePrint": "Official window is August 24 through September 27. Requires the Wendy's app, account registration, and any other purchase. Participating U.S. restaurants only. No dollar value is estimated because the local regular nugget price was not verified.",
-      "expirationLabel": "Through September 27 (app digital offer)",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "current",
-      "discoveredOn": "2026-08-26",
-      "preferenceSignals": [
-        "restaurant",
-        "app-specific",
-        "time-sensitive"
-      ],
-      "distanceMiles": 4.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
-      "distanceSourceLabel": "Wendy's official restaurant locator",
-      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
-      "score": 43,
-      "scoreLabel": "Low priority",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 2 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.2,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Ends in 4 days; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$1.99 required per $0.00 saved"
         },
         {
           "label": "Stackability",
@@ -4612,7 +4837,7 @@
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 6 days; newly found"
+          "detail": "Ends in 5 days; newly found"
         },
         {
           "label": "Effort",
@@ -4917,7 +5142,7 @@
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 6 days; newly found"
+          "detail": "Ends in 5 days; newly found"
         },
         {
           "label": "Effort",
