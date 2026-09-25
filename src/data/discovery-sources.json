@@ -229,6 +229,14 @@
     "keywords": ["free", "rewards", "deal", "limited-time"]
   },
   {
+    "id": "mcalisters-newsroom",
+    "name": "McAlister's Deli official newsroom",
+    "url": "https://www.mcalistersdeli.com/news",
+    "category": "restaurants",
+    "priority": 9,
+    "keywords": ["free", "rewards", "BOGO", "limited-time"]
+  },
+  {
     "id": "topgolf-spring-promotions",
     "name": "Topgolf Houston-Spring promotions",
     "url": "https://topgolf.com/us/houston-north/promo/",

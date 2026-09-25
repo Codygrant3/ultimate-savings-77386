@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-25T12:27:28.366Z",
+  "generatedAt": "2026-09-25T15:08:56.666Z",
   "weekOf": "2026-09-21",
   "zipCode": "77386",
   "totalPotentialSavings": 163.74,
-  "verifiedCount": 46,
-  "expiringCount": 20,
+  "verifiedCount": 47,
+  "expiringCount": 21,
   "opportunities": [
     {
       "id": "krispy-kreme-national-coffee-day-free-coffee-2026",
@@ -408,6 +408,108 @@
           "points": 9,
           "weight": 9,
           "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "mcalisters-spud-tember-2026",
+      "merchant": "McAlister's Deli",
+      "title": "Buy a spud by Sept 30, get a free spud in October",
+      "summary": "McAlister's Rewards members who buy a Giant Spud and apply the September offer receive a free-spud reward for October. Up to two rewards can be earned during the promotion.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-09-30",
+      "locationNote": "The official Spring restaurant page at 19380 I-45, Spring, TX 77373 displays Spud-tember. Confirm the offer in McAlister's Rewards before ordering; no Spring-menu price was captured.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "free food",
+        "rewards",
+        "BOGO",
+        "Spring",
+        "future reward"
+      ],
+      "source": {
+        "label": "McAlister's Deli official Spud-tember announcement",
+        "url": "https://www.mcalistersdeli.com/news/spud-tember",
+        "checkedOn": "2026-09-25"
+      },
+      "actionLabel": "Apply offer by Sept 30",
+      "tier": "A",
+      "stackNote": "The offer and earned reward cannot combine with another offer or reward; apply the September offer at checkout.",
+      "stackGroup": "mcalisters-reward-order",
+      "stackStatus": "exclusive",
+      "finePrint": "Valid September 1-30, 2026, for McAlister's Rewards members. Buy one Spud during the promotional window and apply the offer at checkout to receive a Spud on Us reward, delivered within 24-48 hours and redeemable October 1-31. Maximum two earned rewards. Excludes catering and third-party delivery; online, app, or call-in service fees may apply. No dollar estimate or minimum spend is shown because the local Spud price was not verified.",
+      "expirationLabel": "Earn by September 30; redeem reward October 1-31",
+      "availability": "available",
+      "dealType": "loyalty-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-09-25",
+      "preferenceSignals": [
+        "free-food",
+        "account-specific",
+        "local-relevance",
+        "upcoming-expiration"
+      ],
+      "distanceBasis": "unknown",
+      "score": 66,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 6 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
         },
         {
           "label": "Required spend",
@@ -4776,7 +4878,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84063792",
-        "checkedOn": "2026-09-24"
+        "checkedOn": "2026-09-25"
       },
       "actionLabel": "Confirm at Spring Creek",
       "tier": "A",

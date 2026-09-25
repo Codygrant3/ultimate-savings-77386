@@ -1955,7 +1955,7 @@
     "source": {
       "label": "H-E-B official coupon detail",
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84063792",
-      "checkedOn": "2026-09-24"
+      "checkedOn": "2026-09-25"
     },
     "actionLabel": "Confirm at Spring Creek",
     "tier": "A",
@@ -2197,5 +2197,48 @@
     ],
     "localRecord": true,
     "distanceMiles": 2.5
+  },
+  {
+    "id": "mcalisters-spud-tember-2026",
+    "merchant": "McAlister's Deli",
+    "title": "Buy a spud by Sept 30, get a free spud in October",
+    "summary": "McAlister's Rewards members who buy a Giant Spud and apply the September offer receive a free-spud reward for October. Up to two rewards can be earned during the promotion.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-30",
+    "locationNote": "The official Spring restaurant page at 19380 I-45, Spring, TX 77373 displays Spud-tember. Confirm the offer in McAlister's Rewards before ordering; no Spring-menu price was captured.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "free food",
+      "rewards",
+      "BOGO",
+      "Spring",
+      "future reward"
+    ],
+    "source": {
+      "label": "McAlister's Deli official Spud-tember announcement",
+      "url": "https://www.mcalistersdeli.com/news/spud-tember",
+      "checkedOn": "2026-09-25"
+    },
+    "actionLabel": "Apply offer by Sept 30",
+    "tier": "A",
+    "stackNote": "The offer and earned reward cannot combine with another offer or reward; apply the September offer at checkout.",
+    "stackGroup": "mcalisters-reward-order",
+    "stackStatus": "exclusive",
+    "finePrint": "Valid September 1-30, 2026, for McAlister's Rewards members. Buy one Spud during the promotional window and apply the offer at checkout to receive a Spud on Us reward, delivered within 24-48 hours and redeemable October 1-31. Maximum two earned rewards. Excludes catering and third-party delivery; online, app, or call-in service fees may apply. No dollar estimate or minimum spend is shown because the local Spud price was not verified.",
+    "expirationLabel": "Earn by September 30; redeem reward October 1-31",
+    "availability": "available",
+    "dealType": "loyalty-reward",
+    "freshness": "new",
+    "discoveredOn": "2026-09-25",
+    "preferenceSignals": [
+      "free-food",
+      "account-specific",
+      "local-relevance",
+      "upcoming-expiration"
+    ]
   }
 ]
