@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-25T15:08:56.666Z",
+  "generatedAt": "2026-09-25T15:13:47.846Z",
   "weekOf": "2026-09-21",
   "zipCode": "77386",
-  "totalPotentialSavings": 163.74,
-  "verifiedCount": 47,
-  "expiringCount": 21,
+  "totalPotentialSavings": 138.74,
+  "verifiedCount": 46,
+  "expiringCount": 20,
   "opportunities": [
     {
       "id": "krispy-kreme-national-coffee-day-free-coffee-2026",
@@ -103,114 +103,6 @@
           "points": 7.000000000000001,
           "weight": 7,
           "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "taco-bell-topgolf-twenty-five-off-2026",
-      "merchant": "Taco Bell Rewards + Topgolf",
-      "title": "$25 off Topgolf game play through Sept 27",
-      "summary": "Taco Bell Rewards members can claim a limited-supply code for $25 off eligible Topgolf game play on Monday through Thursday visits through September 27. Codes while supplies last; not for Friday-Sunday visits.",
-      "category": "sports",
-      "estimatedSavings": 25,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-09-27",
-      "availableDaysOfWeek": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "locationNote": "Topgolf Houston-Spring is officially listed at 560 Spring Park Center Blvd, Spring, TX 77373. Confirm that the Rewards code applies to the selected Spring reservation before booking.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "sports",
-        "Topgolf",
-        "Taco Bell Rewards",
-        "entertainment",
-        "coupon code"
-      ],
-      "source": {
-        "label": "Topgolf / Taco Bell Live Mas Open official promotion",
-        "url": "https://topgolf.com/us/promo/taco-bell-open-qualifier/",
-        "checkedOn": "2026-09-25"
-      },
-      "actionLabel": "Check Rewards code before booking",
-      "tier": "A",
-      "stackNote": "The coupon cannot combine with other game-play coupons, bundles, or packages; compare it with Topgolf's own weekday pricing before booking.",
-      "stackGroup": "topgolf-gameplay-discount",
-      "stackStatus": "exclusive",
-      "finePrint": "The promotional code is limited supply and good for $25 off Topgolf game play for Taco Bell Rewards members. Visits must occur Monday through Thursday by September 27, 2026. It applies to eligible one- or two-bay reservations booked through Topgolf's app or website and to qualifying walk-ins. A $6 one-time Topgolf account fee applies to new guests. Limit one coupon per person and per bay; exclusions include events, Lounge, Swing Suite, and Toptracer Range locations.",
-      "expirationLabel": "Monday-Thursday visits through September 27; while codes last (ends in 2 days)",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "current",
-      "discoveredOn": "2026-09-11",
-      "preferenceSignals": [
-        "sports",
-        "local-entertainment",
-        "high-value",
-        "account-specific"
-      ],
-      "distanceBasis": "unknown",
-      "score": 71,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 19.919999999999998,
-          "weight": 24,
-          "detail": "$25.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 5.800000000000001,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 9.1,
-          "weight": 10,
-          "detail": "Ends in 3 days; current"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
         }
       ]
     },
