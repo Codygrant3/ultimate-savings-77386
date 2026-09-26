@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-26T12:18:31.361Z",
+  "generatedAt": "2026-09-26T15:11:48.977Z",
   "weekOf": "2026-09-21",
   "zipCode": "77386",
-  "totalPotentialSavings": 138.74,
-  "verifiedCount": 45,
-  "expiringCount": 19,
+  "totalPotentialSavings": 160.24,
+  "verifiedCount": 47,
+  "expiringCount": 20,
   "opportunities": [
     {
       "id": "krispy-kreme-national-coffee-day-free-coffee-2026",
@@ -107,6 +107,414 @@
       ]
     },
     {
+      "id": "costa-oil-rayford-new-customer-twenty-off-2026",
+      "merchant": "Costa Oil Rayford Road",
+      "title": "$20 off any full-synthetic oil change for new customers",
+      "summary": "New customers can save $20 on any full-synthetic oil change at the Rayford Road Costa Oil location with the official location coupon.",
+      "category": "auto",
+      "estimatedSavings": 20,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-09-30",
+      "locationNote": "Costa Oil, 401-1/2 Rayford Road, Spring, TX 77386. This is an exact local-location offer.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "oil change",
+        "full synthetic",
+        "new customer",
+        "local coupon",
+        "expiring"
+      ],
+      "source": {
+        "label": "Costa Oil Rayford Road official specials",
+        "url": "https://spring-rayford.costaoils.com/specials",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Show the official coupon",
+      "tier": "A",
+      "stackNote": "Cannot be combined with other offers or discounts.",
+      "stackGroup": "costa-oil-rayford-service-offers",
+      "stackStatus": "exclusive",
+      "finePrint": "New customers only. Valid for an in-store full-synthetic oil change at the Rayford Road location through September 30, 2026. The official coupon says it cannot be combined with other offers or discounts; present the coupon before service and confirm eligibility before authorizing work.",
+      "expirationLabel": "Ends September 30",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "new",
+      "discoveredOn": "2026-09-26",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "local-match",
+        "fixed-dollar-savings",
+        "new-customer",
+        "upcoming-expiration"
+      ],
+      "distanceBasis": "unknown",
+      "score": 76,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 18.48,
+          "weight": 24,
+          "detail": "$20.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "take5-rayford-15-off-oil-change-2026",
+      "merchant": "Take 5 Oil Change",
+      "title": "$15 toward an eligible oil change",
+      "summary": "The Take 5 location in 77386 publishes a local $15 oil-change coupon.",
+      "category": "auto",
+      "estimatedSavings": 15,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "442 Rayford Road, Spring, TX 77386.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "oil change",
+        "vehicle maintenance",
+        "local coupon"
+      ],
+      "source": {
+        "label": "Take 5 Spring location coupons",
+        "url": "https://www.take5.com/locations/texas/spring/30083/",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Get coupon",
+      "tier": "A",
+      "distanceMiles": 2.4,
+      "stackNote": "Compare the final oil specification and price with other nearby official coupons before redeeming.",
+      "finePrint": "Coupon requires enrollment in Take 5 marketing email or text delivery. Vehicle eligibility and service pricing vary; military and rideshare discounts have separate requirements.",
+      "expirationLabel": "Check current coupon",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-07-23",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "local-high-value"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-09-26",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Take 5 Spring location coupons",
+      "distanceSourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
+      "score": 76,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 17.04,
+          "weight": 24,
+          "detail": "$15.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.4 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "shell-fuel-rewards-new-member-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "10¢, 20¢, then 30¢ off per gallon",
+      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
+      "category": "fuel",
+      "estimatedSavings": 9,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "new member",
+        "fuel",
+        "three fill-ups"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Review offer",
+      "tier": "A",
+      "distanceMiles": 2.4,
+      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
+      "expirationLabel": "Use within 60 days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "stacking"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-09-26",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Shell Fuel Rewards",
+      "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+      "score": 73,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 14.16,
+          "weight": 24,
+          "detail": "$9.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.4 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "seven-rewards-fuel-welcome-2026",
+      "merchant": "7REWARDS Fuel",
+      "title": "11¢ off per gallon on the first seven fills",
+      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
+      "category": "fuel",
+      "estimatedSavings": 11.55,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "fuel",
+        "new member",
+        "seven fills",
+        "local station"
+      ],
+      "source": {
+        "label": "7REWARDS Fuel",
+        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Review fuel offer",
+      "tier": "A",
+      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
+      "stackGroup": "7rewards-fuel-promotion",
+      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
+      "expirationLabel": "First 90 days or seven trips",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "local-high-value",
+        "stacking"
+      ],
+      "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
+      "score": 70,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 15.36,
+          "weight": 24,
+          "detail": "$11.55 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
+        }
+      ]
+    },
+    {
       "id": "tropical-smoothie-tropic-fan-fest-free-smoothie-2026-09",
       "merchant": "Tropical Smoothie Cafe",
       "title": "Free 24 oz smoothie with Tropic Bowl or food purchase",
@@ -187,6 +595,111 @@
           "points": 9.1,
           "weight": 10,
           "detail": "Ends in 2 days; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "Up to $15 in points across seven qualifying app fill-ups",
+      "summary": "First-time Exxon Mobil Rewards+ app fuel purchasers can earn $5 in points on each of their first two qualifying fills, then $1 on each of five additional qualifying fills completed within 60 days.",
+      "category": "fuel",
+      "estimatedSavings": 15,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-09-30",
+      "locationNote": "Participating Exxon and Mobil stations; no 77386 station with full Rewards+ support was confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "first-time app user",
+        "points",
+        "seven fill-ups"
+      ],
+      "source": {
+        "label": "Exxon Mobil Rewards+ official offer FAQ",
+        "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Check app eligibility",
+      "tier": "A",
+      "stackNote": "Regular Rewards+ points are also earned on the qualifying fills; confirm current app terms before assuming another promotion combines.",
+      "stackGroup": "exxon-mobil-new-member-bonus",
+      "finePrint": "Available to members making their first app-paid fuel purchase during the May 20-September 30 offer period. Each purchase must be paid through the app, include at least eight gallons, and occur at a participating Exxon or Mobil station. The first two qualifying fills earn $5 each; after those, the next five qualifying app fills within 60 days earn $1 each. Do not assume this combines with the separate referral-code promotion.",
+      "expirationLabel": "Start by September 30; finish the five follow-up fills within 60 days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "new-app-user",
+        "high-value"
+      ],
+      "distanceMiles": 1.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Exxon Mobil official station locator result",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
+      "score": 68,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 17.04,
+          "weight": 24,
+          "detail": "$15.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.1,
+          "weight": 10,
+          "detail": "Ends in 5 days; recently improved"
         },
         {
           "label": "Effort",
@@ -418,60 +931,64 @@
       ]
     },
     {
-      "id": "take5-rayford-15-off-oil-change-2026",
-      "merchant": "Take 5 Oil Change",
-      "title": "$15 toward an eligible oil change",
-      "summary": "The Take 5 location in 77386 publishes a local $15 oil-change coupon.",
+      "id": "costa-oil-rayford-diesel-ten-off-2026",
+      "merchant": "Costa Oil Rayford",
+      "title": "$10 off a diesel full-synthetic oil change",
+      "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
       "category": "auto",
-      "estimatedSavings": 15,
+      "estimatedSavings": 10,
       "minimumSpend": 0,
       "isFree": false,
-      "locationNote": "442 Rayford Road, Spring, TX 77386.",
+      "expiresOn": "2026-12-31",
+      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
       "verification": "verified",
       "friction": "low",
       "tags": [
         "oil change",
-        "vehicle maintenance",
+        "diesel",
+        "full synthetic",
         "local coupon"
       ],
       "source": {
-        "label": "Take 5 Spring location coupons",
-        "url": "https://www.take5.com/locations/texas/spring/30083/",
-        "checkedOn": "2026-09-09"
+        "label": "Costa Oil Rayford specials",
+        "url": "https://spring-rayford.costaoils.com/specials",
+        "checkedOn": "2026-09-26"
       },
-      "actionLabel": "Get coupon",
+      "actionLabel": "Review diesel coupon",
       "tier": "A",
-      "distanceMiles": 2.4,
-      "stackNote": "Compare the final oil specification and price with other nearby official coupons before redeeming.",
-      "finePrint": "Coupon requires enrollment in Take 5 marketing email or text delivery. Vehicle eligibility and service pricing vary; military and rideshare discounts have separate requirements.",
-      "expirationLabel": "Check current coupon",
+      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
+      "stackGroup": "costa-oil-coupon",
+      "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
+      "expirationLabel": "Ends December 31",
       "availability": "available",
       "dealType": "vehicle-maintenance",
-      "freshness": "current",
-      "discoveredOn": "2026-07-23",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-30",
       "preferenceSignals": [
         "vehicle-maintenance",
-        "local-high-value"
+        "local-high-value",
+        "fixed-dollar-coupon"
       ],
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-09",
-      "distanceEvidenceAgeDays": 16,
-      "distanceSourceLabel": "Take 5 Spring location coupons",
-      "distanceSourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
-      "score": 65,
+      "distanceMiles": 2.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceEvidenceAgeDays": 40,
+      "distanceSourceLabel": "Costa Oil Rayford specials",
+      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
+      "score": 64,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 7.199999999999999,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
-          "points": 17.04,
+          "points": 14.639999999999999,
           "weight": 24,
-          "detail": "$15.00 estimated value"
+          "detail": "$10.00 estimated value"
         },
         {
           "label": "Savings rate",
@@ -487,9 +1004,108 @@
         },
         {
           "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 40 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.7,
+          "weight": 10,
+          "detail": "Ends 2026-12-31; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "exxon-mobil-rewards-base-points-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "Earn 3¢ per gallon or more in points",
+      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
+      "category": "fuel",
+      "estimatedSavings": 0.45,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "fuel",
+        "points",
+        "rewards program"
+      ],
+      "source": {
+        "label": "Exxon Mobil Rewards+",
+        "url": "https://www.exxonmobilfuels.com/en/rewards",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Review rewards",
+      "tier": "B",
+      "distanceMiles": 1.8,
+      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
+      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
+      "expirationLabel": "Ongoing",
+      "availability": "program",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "stacking"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-09-26",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Exxon Mobil Rewards+",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
+      "score": 64,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 2.16,
+          "weight": 24,
+          "detail": "$0.45 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
           "points": 7.36,
           "weight": 8,
-          "detail": "2.4 miles from 77386"
+          "detail": "1.8 miles from 77386"
         },
         {
           "label": "Timing",
@@ -511,9 +1127,9 @@
         },
         {
           "label": "Stackability",
-          "points": 3.8500000000000005,
+          "points": 7.000000000000001,
           "weight": 7,
-          "detail": "Stack terms require confirmation"
+          "detail": "Compatible stack documented"
         }
       ]
     },
@@ -626,144 +1242,42 @@
       ]
     },
     {
-      "id": "shell-fuel-rewards-new-member-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "10Â¢, 20Â¢, then 30Â¢ off per gallon",
-      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
-      "category": "fuel",
-      "estimatedSavings": 9,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "new member",
-        "fuel",
-        "three fill-ups"
-      ],
-      "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-09-09"
-      },
-      "actionLabel": "Review offer",
-      "tier": "A",
-      "distanceMiles": 2.4,
-      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
-      "stackGroup": "shell-fuel-promotion",
-      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
-      "expirationLabel": "Use within 60 days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "stacking"
-      ],
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-09",
-      "distanceEvidenceAgeDays": 16,
-      "distanceSourceLabel": "Shell Fuel Rewards",
-      "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "score": 62,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 7.199999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 14.16,
-          "weight": 24,
-          "detail": "$9.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "2.4 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "seven-rewards-fuel-welcome-2026",
+      "id": "seven-rewards-fuel-sms-25-cents-2026",
       "merchant": "7REWARDS Fuel",
-      "title": "11Â¢ off per gallon on the first seven fills",
-      "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
+      "title": "25¢ off per gallon on the next three fills",
+      "summary": "The official fuel-rewards page offers 25 cents off per gallon on the next three fills after texting SAVE to 711711.",
       "category": "fuel",
-      "estimatedSavings": 11.55,
+      "estimatedSavings": 11.25,
       "minimumSpend": 0,
       "isFree": false,
-      "locationNote": "The official 7-Eleven at 28760 Birnham Woods Drive, Spring, TX 77386 lists fuel and Fuel Loyalty Lite; confirm the discount at the pump or in the app.",
+      "locationNote": "SMS enrollment, a registered phone number, and a participating fuel location are required; confirm the discount before fueling.",
       "verification": "verified",
-      "friction": "low",
+      "friction": "medium",
       "tags": [
         "fuel",
-        "new member",
-        "seven fills",
-        "local station"
+        "sms",
+        "three fills",
+        "account specific"
       ],
       "source": {
         "label": "7REWARDS Fuel",
         "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-        "checkedOn": "2026-09-09"
+        "checkedOn": "2026-09-26"
       },
-      "actionLabel": "Review fuel offer",
+      "actionLabel": "Review SMS fuel offer",
       "tier": "A",
-      "stackNote": "Eligible community discounts and other fuel savings may stack when the app shows them.",
+      "stackNote": "Do not assume this combines with the 11-cent new-member offer unless the app or pump explicitly shows both discounts.",
       "stackGroup": "7rewards-fuel-promotion",
-      "finePrint": "The estimate assumes 15 gallons on each of seven fills. The official offer allows up to 30 gallons per fill and expires after 90 days or seven trips, whichever comes first. Registered 7REWARDS membership is required.",
-      "expirationLabel": "First 90 days or seven trips",
+      "finePrint": "The $11.25 estimate assumes 15 gallons on each of three eligible fills. Text-message and data rates may apply. Confirm enrollment, participating-store eligibility, gallon limits, and the loaded discount before making a special trip.",
+      "expirationLabel": "Current official introductory offer",
       "availability": "available",
       "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-09",
+      "freshness": "current",
+      "discoveredOn": "2026-08-15",
       "preferenceSignals": [
         "fuel-reward",
-        "new-member",
-        "local-high-value",
-        "stacking"
+        "sms-specific",
+        "high-value"
       ],
       "distanceMiles": 3.35,
       "distanceBasis": "merchant-location",
@@ -771,20 +1285,20 @@
       "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
-      "score": 60,
+      "score": 63,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 7.199999999999999,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
           "points": 15.36,
           "weight": 24,
-          "detail": "$11.55 estimated value"
+          "detail": "$11.25 estimated value"
         },
         {
           "label": "Savings rate",
@@ -806,15 +1320,15 @@
         },
         {
           "label": "Timing",
-          "points": 5.5,
+          "points": 4.6000000000000005,
           "weight": 10,
-          "detail": "No stated end date; newly found"
+          "detail": "No stated end date; current"
         },
         {
           "label": "Effort",
-          "points": 9,
+          "points": 5.3999999999999995,
           "weight": 9,
-          "detail": "low redemption effort"
+          "detail": "medium redemption effort"
         },
         {
           "label": "Required spend",
@@ -824,9 +1338,115 @@
         },
         {
           "label": "Stackability",
-          "points": 7.000000000000001,
+          "points": 3.8500000000000005,
           "weight": 7,
-          "detail": "Compatible stack documented"
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "exxon-mobil-referral-five-fill-bonus-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "Up to 30¢ per gallon on five referral-code fills",
+      "summary": "New Rewards+ members who enroll with an existing member's referral code can earn up to 15 cents per gallon on regular, mid-grade, or diesel fuel, or up to 30 cents per gallon on premium fuel, for their next five qualifying fills.",
+      "category": "fuel",
+      "estimatedSavings": 11.25,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-10-15",
+      "locationNote": "New-member and referral-code specific at participating Exxon and Mobil stations; local station support must be confirmed before fueling.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "new member",
+        "referral code",
+        "five fill-ups",
+        "premium fuel"
+      ],
+      "source": {
+        "label": "Exxon Mobil Rewards+ official terms",
+        "url": "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Review referral offer",
+      "tier": "A",
+      "stackNote": "The separate new-app-user offer says it cannot be combined with other promotions, so do not count both bonuses unless the app expressly confirms both.",
+      "stackGroup": "exxon-mobil-new-member-bonus",
+      "finePrint": "Registration with a valid member referral code must occur from August 15 through October 15, 2026 before fueling. Each of the next five qualifying fills must be at least 8 gallons and completed within 60 days of registration. The $11.25 estimate assumes the regular-fuel rate of 15 cents per gallon on five 15-gallon fills; premium fuel can earn up to 30 cents per gallon. Account, referral, station, fuel-grade, and transaction eligibility apply.",
+      "expirationLabel": "Enroll by October 15; complete five fills within 60 days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "discoveredOn": "2026-08-20",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "referral-code",
+        "high-value"
+      ],
+      "distanceMiles": 1.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Exxon Mobil official station locator result",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
+      "score": 60,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 15.36,
+          "weight": 24,
+          "detail": "$11.25 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.2,
+          "weight": 10,
+          "detail": "Ends 2026-10-15; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
         }
       ]
     },
@@ -1465,111 +2085,6 @@
       ]
     },
     {
-      "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
-      "merchant": "Exxon Mobil Rewards+",
-      "title": "Up to $15 in points across seven qualifying app fill-ups",
-      "summary": "First-time Exxon Mobil Rewards+ app fuel purchasers can earn $5 in points on each of their first two qualifying fills, then $1 on each of five additional qualifying fills completed within 60 days.",
-      "category": "fuel",
-      "estimatedSavings": 15,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-09-30",
-      "locationNote": "Participating Exxon and Mobil stations; no 77386 station with full Rewards+ support was confirmed in this public scan.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "first-time app user",
-        "points",
-        "seven fill-ups"
-      ],
-      "source": {
-        "label": "Exxon Mobil Rewards+ official offer FAQ",
-        "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
-        "checkedOn": "2026-09-09"
-      },
-      "actionLabel": "Check app eligibility",
-      "tier": "A",
-      "stackNote": "Regular Rewards+ points are also earned on the qualifying fills; confirm current app terms before assuming another promotion combines.",
-      "stackGroup": "exxon-mobil-new-member-bonus",
-      "finePrint": "Available to members making their first app-paid fuel purchase during the May 20-September 30 offer period. Each purchase must be paid through the app, include at least eight gallons, and occur at a participating Exxon or Mobil station. The first two qualifying fills earn $5 each; after those, the next five qualifying app fills within 60 days earn $1 each. Do not assume this combines with the separate referral-code promotion.",
-      "expirationLabel": "Start by September 30; finish the five follow-up fills within 60 days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-09",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "new-app-user",
-        "high-value"
-      ],
-      "distanceMiles": 1.9,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 32,
-      "distanceSourceLabel": "Exxon Mobil official station locator result",
-      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
-      "score": 57,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 7.199999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 17.04,
-          "weight": 24,
-          "detail": "$15.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 32 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 8.1,
-          "weight": 10,
-          "detail": "Ends in 5 days; recently improved"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "mcdonalds-grubhub-first-order-ten-off-2026",
       "merchant": "McDonald's + Grubhub",
       "title": "$10 off $15+ for first-time Grubhub diners",
@@ -1668,6 +2183,109 @@
           "points": 0.8400000000000001,
           "weight": 7,
           "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "shell-race-day-22-cents-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "22¢ off per gallon on eligible race days",
+      "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
+      "category": "fuel",
+      "estimatedSavings": 3.3,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "race day",
+        "app",
+        "opt in"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Opt in for race days",
+      "tier": "A",
+      "stackNote": "Use only the savings shown in the Fuel Rewards app; do not assume another fuel promotion combines.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "The $3.30 estimate assumes 15 gallons on one eligible race day. Opt in once in the Shell app, use a Fuel Rewards member ID, and confirm the selected station and race day are eligible before fueling.",
+      "expirationLabel": "Eligible 2026 race days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "discoveredOn": "2026-08-15",
+      "preferenceSignals": [
+        "fuel-reward",
+        "app-specific",
+        "time-sensitive"
+      ],
+      "distanceMiles": 2.87,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Shell official Rayford Road station page",
+      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
+      "score": 57,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 8.879999999999999,
+          "weight": 24,
+          "detail": "$3.30 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -1983,6 +2601,109 @@
           "points": 0.8400000000000001,
           "weight": 7,
           "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "shell-app-s-pay-discount-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "10¢/gal with Shell S Pay",
+      "summary": "Shell App users with a linked Fuel Rewards account can save 10 cents per gallon when paying with Shell S Pay.",
+      "category": "fuel",
+      "estimatedSavings": 1.5,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Shell App, linked Fuel Rewards account, Shell S Pay, and a participating station are required; compare the posted pump price before fueling.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "app",
+        "mobile pay",
+        "10 cents per gallon"
+      ],
+      "source": {
+        "label": "Shell official app page",
+        "url": "https://www.shell.us/rewards-and-savings/shell-app.html",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Compare Shell S Pay price",
+      "tier": "B",
+      "stackNote": "Count only the discount displayed in the Shell App; do not assume this combines with new-member, race-day, or first-time Pay & Save rewards.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "Shell's official app page, last updated September 21, 2026, states that linking Shell S Pay saves 10 cents per gallon every time. A Shell App account, linked Fuel Rewards membership, checking-account payment setup, and participating station are required. The $1.50 estimate assumes 15 gallons; compare the posted pump price and the in-app price before fueling.",
+      "expirationLabel": "No end date published",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-27",
+      "preferenceSignals": [
+        "fuel-reward",
+        "app-specific",
+        "mobile-pay"
+      ],
+      "distanceMiles": 2.87,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Shell official Rayford Road station page",
+      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
+      "score": 54,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 5.52,
+          "weight": 24,
+          "detail": "$1.50 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -2303,213 +3024,6 @@
       ]
     },
     {
-      "id": "seven-rewards-fuel-sms-25-cents-2026",
-      "merchant": "7REWARDS Fuel",
-      "title": "25Â¢ off per gallon on the next three fills",
-      "summary": "The official fuel-rewards page offers 25 cents off per gallon on the next three fills after texting SAVE to 711711.",
-      "category": "fuel",
-      "estimatedSavings": 11.25,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "SMS enrollment, a registered phone number, and a participating fuel location are required; confirm the discount before fueling.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "sms",
-        "three fills",
-        "account specific"
-      ],
-      "source": {
-        "label": "7REWARDS Fuel",
-        "url": "https://www.7-eleven.com/7rewards/fuel-your-rewards",
-        "checkedOn": "2026-09-09"
-      },
-      "actionLabel": "Review SMS fuel offer",
-      "tier": "A",
-      "stackNote": "Do not assume this combines with the 11-cent new-member offer unless the app or pump explicitly shows both discounts.",
-      "stackGroup": "7rewards-fuel-promotion",
-      "finePrint": "The $11.25 estimate assumes 15 gallons on each of three eligible fills. Text-message and data rates may apply. Confirm enrollment, participating-store eligibility, gallon limits, and the loaded discount before making a special trip.",
-      "expirationLabel": "Current official introductory offer",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-15",
-      "preferenceSignals": [
-        "fuel-reward",
-        "sms-specific",
-        "high-value"
-      ],
-      "distanceMiles": 3.35,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 32,
-      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
-      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
-      "score": 53,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 7.199999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 15.36,
-          "weight": 24,
-          "detail": "$11.25 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 32 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "costa-oil-rayford-diesel-ten-off-2026",
-      "merchant": "Costa Oil Rayford",
-      "title": "$10 off a diesel full-synthetic oil change",
-      "summary": "The Rayford Road location publishes a $10 coupon for an eligible diesel full-synthetic oil change through December 31.",
-      "category": "auto",
-      "estimatedSavings": 10,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-12-31",
-      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; diesel vehicle and service eligibility apply.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "oil change",
-        "diesel",
-        "full synthetic",
-        "local coupon"
-      ],
-      "source": {
-        "label": "Costa Oil Rayford specials",
-        "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-09-09"
-      },
-      "actionLabel": "Review diesel coupon",
-      "tier": "A",
-      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with nearby alternatives.",
-      "stackGroup": "costa-oil-coupon",
-      "finePrint": "Valid only at the Rayford Road location for an eligible diesel full-synthetic oil change. The coupon cannot be combined with another offer. Vehicle eligibility and final service price vary.",
-      "expirationLabel": "Ends December 31",
-      "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-30",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "local-high-value",
-        "fixed-dollar-coupon"
-      ],
-      "distanceMiles": 2.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 40,
-      "distanceSourceLabel": "Costa Oil Rayford specials",
-      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
-      "score": 53,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 7.199999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 14.639999999999999,
-          "weight": 24,
-          "detail": "$10.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.4,
-          "weight": 10,
-          "detail": "Household match: oil change"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 40 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.7,
-          "weight": 10,
-          "detail": "Ends 2026-12-31; recently improved"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
       "id": "starbucks-birthday-reward-2026",
       "merchant": "Starbucks Rewards",
       "title": "Free birthday drink or food item",
@@ -2677,105 +3191,6 @@
           "points": 6.5600000000000005,
           "weight": 8,
           "detail": "3.2 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "exxon-mobil-rewards-base-points-2026",
-      "merchant": "Exxon Mobil Rewards+",
-      "title": "Earn 3Â¢ per gallon or more in points",
-      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
-      "category": "fuel",
-      "estimatedSavings": 0.45,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "fuel",
-        "points",
-        "rewards program"
-      ],
-      "source": {
-        "label": "Exxon Mobil Rewards+",
-        "url": "https://www.exxonmobilfuels.com/en/rewards",
-        "checkedOn": "2026-09-02"
-      },
-      "actionLabel": "Review rewards",
-      "tier": "B",
-      "distanceMiles": 1.8,
-      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
-      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
-      "expirationLabel": "Ongoing",
-      "availability": "program",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "preferenceSignals": [
-        "fuel-reward",
-        "stacking"
-      ],
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-02",
-      "distanceEvidenceAgeDays": 23,
-      "distanceSourceLabel": "Exxon Mobil Rewards+",
-      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "score": 53,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 7.199999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 23 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 2.16,
-          "weight": 24,
-          "detail": "$0.45 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "1.8 miles from 77386"
         },
         {
           "label": "Timing",
@@ -3203,112 +3618,6 @@
       ]
     },
     {
-      "id": "exxon-mobil-referral-five-fill-bonus-2026",
-      "merchant": "Exxon Mobil Rewards+",
-      "title": "Up to 30Â¢ per gallon on five referral-code fills",
-      "summary": "New Rewards+ members who enroll with an existing member's referral code can earn up to 15 cents per gallon on regular, mid-grade, or diesel fuel, or up to 30 cents per gallon on premium fuel, for their next five qualifying fills.",
-      "category": "fuel",
-      "estimatedSavings": 11.25,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-10-15",
-      "locationNote": "New-member and referral-code specific at participating Exxon and Mobil stations; local station support must be confirmed before fueling.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "new member",
-        "referral code",
-        "five fill-ups",
-        "premium fuel"
-      ],
-      "source": {
-        "label": "Exxon Mobil Rewards+ official terms",
-        "url": "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions",
-        "checkedOn": "2026-08-27"
-      },
-      "actionLabel": "Review referral offer",
-      "tier": "A",
-      "stackNote": "The separate new-app-user offer says it cannot be combined with other promotions, so do not count both bonuses unless the app expressly confirms both.",
-      "stackGroup": "exxon-mobil-new-member-bonus",
-      "finePrint": "Registration with a valid member referral code must occur from August 15 through October 15, 2026 before fueling. Each of the next five qualifying fills must be at least 8 gallons and completed within 60 days of registration. The $11.25 estimate assumes the regular-fuel rate of 15 cents per gallon on five 15-gallon fills; premium fuel can earn up to 30 cents per gallon. Account, referral, station, fuel-grade, and transaction eligibility apply.",
-      "expirationLabel": "Enroll by October 15; complete five fills within 60 days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "new",
-      "discoveredOn": "2026-08-20",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "referral-code",
-        "high-value"
-      ],
-      "distanceMiles": 1.9,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 32,
-      "distanceSourceLabel": "Exxon Mobil official station locator result",
-      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
-      "score": 50,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 7.199999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 29 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 15.36,
-          "weight": 24,
-          "detail": "$11.25 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 32 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.1000000000000005,
-          "weight": 10,
-          "detail": "Ends 2026-10-15; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
       "id": "starbucks-rewards-ongoing-2026",
       "merchant": "Starbucks Rewards",
       "title": "Earn toward free food and drinks",
@@ -3395,106 +3704,6 @@
           "points": 8,
           "weight": 8,
           "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "cracker-barrel-national-pancake-day-2026-09-26",
-      "merchant": "Cracker Barrel",
-      "title": "National Pancake Day $5 all-you-can-eat pancakes",
-      "summary": "TODAY Saturday September 26 only: official promotions page offers unlimited World's Best Pancakes for $5 all day for National Pancake Day. Dine-in value special; confirm local participation and exact plating terms at the restaurant.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 5,
-      "isFree": false,
-      "expiresOn": "2026-09-26",
-      "locationNote": "Participating Cracker Barrel locations. No Cracker Barrel is listed inside ZIP 77386; nearer Houston-area stores include Kingwood (24400 Eastex Fwy), Conroe, and Houston Airtex. Confirm this store participates before driving.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "restaurant",
-        "pancakes",
-        "National Pancake Day",
-        "one day",
-        "same-day"
-      ],
-      "source": {
-        "label": "Cracker Barrel official promotions page",
-        "url": "https://www.crackerbarrel.com/promotions",
-        "checkedOn": "2026-09-26"
-      },
-      "actionLabel": "Dine in today for $5 AYCE pancakes",
-      "tier": "A",
-      "stackNote": "One-day restaurant promotion; do not assume stacking with other coupons or Rewards offers without restaurant confirmation.",
-      "finePrint": "Official Cracker Barrel promotions page (checked 2026-09-26): Celebrate National Pancake Day on Saturday, September 26 with unlimited plates of World's Best Pancakes for $5. Asterisked terms on the page were not fully readable after a bot challenge on the terms page; confirm dine-in rules, refill policy, and participating status locally. No dollar savings estimate because a local regular pancake price was not verified.",
-      "expirationLabel": "TODAY only Saturday September 26",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-09-26",
-      "preferenceSignals": [
-        "restaurant",
-        "same-day",
-        "time-sensitive",
-        "one-day"
-      ],
-      "distanceBasis": "unknown",
-      "score": 50,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.2,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 10,
-          "weight": 10,
-          "detail": "Ends in 1 day; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$5.00 required per $0.00 saved"
         },
         {
           "label": "Stackability",
@@ -3603,63 +3812,61 @@
       ]
     },
     {
-      "id": "shell-race-day-22-cents-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "22Â¢ off per gallon on eligible race days",
-      "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
-      "category": "fuel",
-      "estimatedSavings": 3.3,
-      "minimumSpend": 0,
+      "id": "cracker-barrel-national-pancake-day-2026-09-26",
+      "merchant": "Cracker Barrel",
+      "title": "National Pancake Day $5 all-you-can-eat pancakes",
+      "summary": "TODAY Saturday September 26 only: dine in for three pancakes at $5, followed by two-pancake refills while dining, at participating Cracker Barrel locations.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
       "isFree": false,
-      "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
+      "expiresOn": "2026-09-26",
+      "locationNote": "Participating Cracker Barrel locations. No Cracker Barrel is listed inside ZIP 77386; nearer Houston-area stores include Kingwood (24400 Eastex Fwy), Conroe, and Houston Airtex. Confirm this store participates before driving.",
       "verification": "verified",
       "friction": "medium",
       "tags": [
-        "fuel",
-        "race day",
-        "app",
-        "opt in"
+        "restaurant",
+        "pancakes",
+        "National Pancake Day",
+        "one day",
+        "same-day"
       ],
       "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-09-09"
+        "label": "Cracker Barrel official National Pancake Day promotion",
+        "url": "https://www.crackerbarrel.com/promotions/national-pancake-day",
+        "checkedOn": "2026-09-26"
       },
-      "actionLabel": "Opt in for race days",
+      "actionLabel": "Dine in today for $5 AYCE pancakes",
       "tier": "A",
-      "stackNote": "Use only the savings shown in the Fuel Rewards app; do not assume another fuel promotion combines.",
-      "stackGroup": "shell-fuel-promotion",
-      "finePrint": "The $3.30 estimate assumes 15 gallons on one eligible race day. Opt in once in the Shell app, use a Fuel Rewards member ID, and confirm the selected station and race day are eligible before fueling.",
-      "expirationLabel": "Eligible 2026 race days",
+      "stackNote": "Cannot be combined with other promotions, coupons, offers, or discounts except the military discount.",
+      "stackStatus": "exclusive",
+      "finePrint": "Saturday, September 26, 2026 only. Dine-in only at participating locations while supplies last. The $5 order begins with three pancakes; refills are served two at a time and cannot be shared. Taxes, gratuity, toppings, beverages, and other add-ons cost extra. The offer cannot be combined with other promotions, coupons, offers, or discounts except the military discount. Confirm local participation before traveling. No dollar savings estimate because a local regular pancake price was not verified.",
+      "expirationLabel": "TODAY only Saturday September 26",
       "availability": "available",
-      "dealType": "fuel-reward",
+      "dealType": "promotion-event",
       "freshness": "new",
-      "discoveredOn": "2026-08-15",
+      "discoveredOn": "2026-09-26",
       "preferenceSignals": [
-        "fuel-reward",
-        "app-specific",
-        "time-sensitive"
+        "restaurant",
+        "same-day",
+        "time-sensitive",
+        "one-day"
       ],
-      "distanceMiles": 2.87,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 32,
-      "distanceSourceLabel": "Shell official Rayford Road station page",
-      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
+      "distanceBasis": "unknown",
       "score": 47,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 7.199999999999999,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
-          "points": 8.879999999999999,
+          "points": 0,
           "weight": 24,
-          "detail": "$3.30 estimated value"
+          "detail": "$0.00 estimated value"
         },
         {
           "label": "Savings rate",
@@ -3669,21 +3876,21 @@
         },
         {
           "label": "Household fit",
-          "points": 7.800000000000001,
+          "points": 7.2,
           "weight": 10,
-          "detail": "Household match: fuel"
+          "detail": "General household priority"
         },
         {
           "label": "Local relevance",
-          "points": 0,
+          "points": 4.4,
           "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 32 days ago; offer participation unconfirmed"
+          "detail": "Location not distance-confirmed"
         },
         {
           "label": "Timing",
-          "points": 5.5,
+          "points": 10,
           "weight": 10,
-          "detail": "No stated end date; newly found"
+          "detail": "Ends in 1 day; newly found"
         },
         {
           "label": "Effort",
@@ -3693,15 +3900,15 @@
         },
         {
           "label": "Required spend",
-          "points": 8,
+          "points": 0.8,
           "weight": 8,
-          "detail": "No required spend"
+          "detail": "$5.00 required per $0.00 saved"
         },
         {
           "label": "Stackability",
-          "points": 3.8500000000000005,
+          "points": 0.8400000000000001,
           "weight": 7,
-          "detail": "Stack terms require confirmation"
+          "detail": "Official terms restrict combining offers"
         }
       ]
     },
@@ -3793,6 +4000,111 @@
           "points": 9,
           "weight": 9,
           "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "costa-oil-rayford-service-30-percent-2026",
+      "merchant": "Costa Oil Rayford",
+      "title": "30% off any oil change for eligible service members",
+      "summary": "The Rayford Road location offers veterans, military members, and first responders 30% off any oil change through December 31.",
+      "category": "auto",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-12-31",
+      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; eligibility proof is required.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "oil change",
+        "veteran",
+        "military",
+        "first responder",
+        "local coupon"
+      ],
+      "source": {
+        "label": "Costa Oil Rayford specials",
+        "url": "https://spring-rayford.costaoils.com/specials",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Review eligibility",
+      "tier": "A",
+      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with Take 5 before choosing.",
+      "stackGroup": "costa-oil-coupon",
+      "finePrint": "Valid only for qualifying veterans, military members, or first responders who show proof of service or military ID. No dollar estimate is shown because the vehicle's oil specification and final service price are unknown.",
+      "expirationLabel": "Ends December 31",
+      "availability": "available",
+      "dealType": "vehicle-maintenance",
+      "freshness": "current",
+      "discoveredOn": "2026-08-15",
+      "preferenceSignals": [
+        "vehicle-maintenance",
+        "local-high-value",
+        "eligibility-gated"
+      ],
+      "distanceMiles": 2.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-16",
+      "distanceEvidenceAgeDays": 40,
+      "distanceSourceLabel": "Costa Oil Rayford specials",
+      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
+      "score": 45,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.4,
+          "weight": 10,
+          "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 40 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.2,
+          "weight": 10,
+          "detail": "Ends 2026-12-31; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
         },
         {
           "label": "Required spend",
@@ -4217,111 +4529,6 @@
       ]
     },
     {
-      "id": "costa-oil-rayford-service-30-percent-2026",
-      "merchant": "Costa Oil Rayford",
-      "title": "30% off any oil change for eligible service members",
-      "summary": "The Rayford Road location offers veterans, military members, and first responders 30% off any oil change through December 31.",
-      "category": "auto",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-12-31",
-      "locationNote": "401-1/2 Rayford Road, Spring, TX 77386; eligibility proof is required.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "oil change",
-        "veteran",
-        "military",
-        "first responder",
-        "local coupon"
-      ],
-      "source": {
-        "label": "Costa Oil Rayford specials",
-        "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-09-09"
-      },
-      "actionLabel": "Review eligibility",
-      "tier": "A",
-      "stackNote": "The coupon cannot be combined with other offers; compare the final service specification and price with Take 5 before choosing.",
-      "stackGroup": "costa-oil-coupon",
-      "finePrint": "Valid only for qualifying veterans, military members, or first responders who show proof of service or military ID. No dollar estimate is shown because the vehicle's oil specification and final service price are unknown.",
-      "expirationLabel": "Ends December 31",
-      "availability": "available",
-      "dealType": "vehicle-maintenance",
-      "freshness": "new",
-      "discoveredOn": "2026-08-15",
-      "preferenceSignals": [
-        "vehicle-maintenance",
-        "local-high-value",
-        "eligibility-gated"
-      ],
-      "distanceMiles": 2.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 40,
-      "distanceSourceLabel": "Costa Oil Rayford specials",
-      "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
-      "score": 35,
-      "scoreLabel": "Low priority",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 7.199999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8.4,
-          "weight": 10,
-          "detail": "Household match: oil change"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 40 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.1000000000000005,
-          "weight": 10,
-          "detail": "Ends 2026-12-31; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
       "id": "whataburger-more-for-four-2026",
       "merchant": "Whataburger",
       "title": "Four entree choices for $4 each",
@@ -4655,7 +4862,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84063792",
-        "checkedOn": "2026-09-25"
+        "checkedOn": "2026-09-26"
       },
       "actionLabel": "Confirm at Spring Creek",
       "tier": "A",
@@ -4844,6 +5051,326 @@
       ]
     },
     {
+      "id": "heb-smoked-sausage-free-soda-2026-09",
+      "merchant": "H-E-B",
+      "title": "Free H-E-B 12-pack soda with 10-count smoked sausage",
+      "summary": "Clip the official H-E-B coupon and buy a 10-count H-E-B Premium smoked-sausage pack to receive one H-E-B 12-pack soda free.",
+      "category": "grocery",
+      "estimatedSavings": 5,
+      "minimumSpend": 13.99,
+      "savingsRate": 35.7,
+      "isFree": true,
+      "expiresOn": "2026-09-29",
+      "locationNote": "The official public page displayed a Victoria-store context, not Spring. Treat as location-gated and confirm the coupon appears for an H-E-B serving 77386 before shopping.",
+      "verification": "needs-check",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "digital coupon",
+        "free item",
+        "sausage",
+        "soda",
+        "expiring"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84057630",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Check coupon for your store",
+      "tier": "A",
+      "stackNote": "Clip the coupon and buy the exact qualifying 10-count sausage package; do not assume adjacent manufacturer or basket coupons stack.",
+      "stackGroup": "heb-sausage-soda-coupon-2026-09",
+      "finePrint": "Digital coupon and qualifying H-E-B account are required. The public detail page showed a $13.99 qualifying sausage price, a $5.00 soda value, and a September 29 expiration, but it did not confirm availability at a 77386 store. The value is excluded from strict verified totals until the coupon is visible for the selected local store.",
+      "expirationLabel": "Ends September 29",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-09-26",
+      "preferenceSignals": [
+        "free-food",
+        "grocery-staple",
+        "location-gated",
+        "upcoming-expiration"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 53,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.7999999999999998,
+          "weight": 18,
+          "detail": "Unverified lead; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward plus $5.00 estimate"
+        },
+        {
+          "label": "Savings rate",
+          "points": 4.284,
+          "weight": 6,
+          "detail": "35.7% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.200000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 4 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$13.99 required per $5.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "heb-meal-simple-free-salad-bowl-2026-09",
+      "merchant": "H-E-B",
+      "title": "Free chopped salad bowl with $12 Meal Simple microwave meals",
+      "summary": "Clip the official H-E-B coupon and spend $12 on Meal Simple microwave meals to receive one H-E-B chopped salad bowl free.",
+      "category": "grocery",
+      "estimatedSavings": 3.48,
+      "minimumSpend": 12,
+      "savingsRate": 29,
+      "isFree": true,
+      "expiresOn": "2026-09-29",
+      "locationNote": "The official public page displayed a Victoria-store context, not Spring. Treat as location-gated and confirm the coupon appears for an H-E-B serving 77386 before shopping.",
+      "verification": "needs-check",
+      "friction": "low",
+      "tags": [
+        "grocery",
+        "digital coupon",
+        "free item",
+        "prepared meal",
+        "expiring"
+      ],
+      "source": {
+        "label": "H-E-B official coupon detail",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84058318",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Check coupon for your store",
+      "tier": "A",
+      "stackNote": "Clip the coupon and meet the $12 qualifying-meal threshold; do not count other item-level offers unless checkout confirms them.",
+      "stackGroup": "heb-meal-simple-salad-coupon-2026-09",
+      "finePrint": "Digital coupon and qualifying H-E-B account are required. The public detail page showed a $3.48 salad value and a September 29 expiration, but it did not confirm availability at a 77386 store. The value is excluded from strict verified totals until the coupon is visible for the selected local store.",
+      "expirationLabel": "Ends September 29",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-09-26",
+      "preferenceSignals": [
+        "free-food",
+        "grocery-staple",
+        "location-gated",
+        "upcoming-expiration"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 52,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.7999999999999998,
+          "weight": 18,
+          "detail": "Unverified lead; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward plus $3.48 estimate"
+        },
+        {
+          "label": "Savings rate",
+          "points": 3.48,
+          "weight": 6,
+          "detail": "29% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.200000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 4 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "$12.00 required per $3.48 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "exxon-mobil-texans-win-thirty-cents-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "30¢/gal after a Houston Texans win",
+      "summary": "Fully enrolled Rewards+ members can earn 30 cents per gallon in points on any fuel grade at participating Texas Exxon or Mobil stations from 10 a.m. the day after a Texans win through 11:59 p.m. the following day.",
+      "category": "fuel",
+      "estimatedSavings": 4.5,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Texas-only offer at participating Exxon and Mobil stations. A public scan did not confirm a qualifying 77386 station; use the official participating-site list and app before fueling.",
+      "verification": "program",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "Houston Texans",
+        "win offer",
+        "Texas",
+        "short-lived"
+      ],
+      "source": {
+        "label": "Exxon Mobil Rewards+ official Houston Texans Win Offer FAQ",
+        "url": "https://www.exxonmobilfuels.com/en/rewards/faqs",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Check after a Texans win",
+      "tier": "A",
+      "stackNote": "Regular Rewards+ benefits may continue, but other promotions can have separate restrictions; count only what the app or transaction receipt awards.",
+      "stackGroup": "exxon-mobil-game-win-offer",
+      "finePrint": "A qualifying window opens only after a Houston Texans win: 10:00 a.m. CT the next day through 11:59 p.m. CT the following day. Fully enrolled Exxon Mobil Rewards+ membership, use of the member account, a participating Texas location, and eligible fuel purchase are required. Rewards are capped at 30 gallons per member account per offer period. The $4.50 estimate assumes 15 gallons; no win or local-station participation is assumed.",
+      "expirationLabel": "Conditional 48-hour window after each Texans win",
+      "availability": "program",
+      "dealType": "fuel-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-09-26",
+      "preferenceSignals": [
+        "fuel-reward",
+        "local-team",
+        "short-lived",
+        "location-gated"
+      ],
+      "distanceMiles": 1.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Exxon Mobil official station locator result",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
+      "score": 49,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 8.1,
+          "weight": 18,
+          "detail": "Official ongoing program; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 10.32,
+          "weight": 24,
+          "detail": "$4.50 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.5,
+          "weight": 10,
+          "detail": "No stated end date; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
       "id": "scooters-birthday-smiles-reward-2026",
       "merchant": "Scooter's Coffee",
       "title": "Birthday Smiles toward a free drink or treat",
@@ -4962,7 +5489,7 @@
       "source": {
         "label": "H-E-B official coupon detail",
         "url": "https://www.heb.com/digital-coupon/coupon-detail/84058534",
-        "checkedOn": "2026-09-10"
+        "checkedOn": "2026-09-26"
       },
       "actionLabel": "Confirm at Spring Creek",
       "tier": "A",
@@ -4984,14 +5511,14 @@
       "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
-      "score": 43,
+      "score": 44,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 0.72,
+          "points": 1.7999999999999998,
           "weight": 18,
-          "detail": "Unverified lead; checked 15 days ago"
+          "detail": "Unverified lead; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -5046,7 +5573,7 @@
     {
       "id": "shell-app-first-pay-save-25-cents-2026",
       "merchant": "Shell Fuel Rewards",
-      "title": "Earn 25Â¢/gal after the first 10-gallon Pay & Save fill",
+      "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
       "summary": "The Shell App first-time offer awards 25 cents per gallon in savings after an initial Pay & Save transaction of at least 10 gallons.",
       "category": "fuel",
       "estimatedSavings": 3.75,
@@ -5101,109 +5628,6 @@
           "points": 9.6,
           "weight": 24,
           "detail": "$3.75 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 32 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 3.8000000000000003,
-          "weight": 10,
-          "detail": "No stated end date; monitoring only"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "shell-app-s-pay-discount-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "10Â¢/gal with Shell S Pay; 15Â¢ for Platinum members",
-      "summary": "Shell App users with a linked Fuel Rewards account can save 10 cents per gallon at Silver or Gold status, or 15 cents per gallon at Platinum status, when paying with Shell S Pay.",
-      "category": "fuel",
-      "estimatedSavings": 1.5,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Shell App, linked Fuel Rewards account, Shell S Pay, and a participating station are required; compare the posted pump price before fueling.",
-      "verification": "needs-check",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "app",
-        "mobile pay",
-        "10 cents per gallon"
-      ],
-      "source": {
-        "label": "Shell app-offers support page (currently unavailable)",
-        "url": "https://support.shell.us/hc/en-us/articles/40361960206481-What-Offers-and-Promotions-Are-Available-When-Using-the-Shell-App",
-        "checkedOn": "2026-09-09"
-      },
-      "actionLabel": "Compare Shell S Pay price",
-      "tier": "B",
-      "stackNote": "Count only the discount displayed in the Shell App; do not assume this combines with new-member, race-day, or first-time Pay & Save rewards.",
-      "stackGroup": "shell-fuel-promotion",
-      "finePrint": "The previously cited Shell support page now redirects to an expired-page notice, and Shell's current public promotions page does not confirm this offer. Do not count the estimate unless the signed-in Shell App shows the discount for the selected station. The $1.50 estimate assumes 15 gallons at 10 cents per gallon.",
-      "expirationLabel": "No end date published",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "monitoring",
-      "discoveredOn": "2026-08-27",
-      "preferenceSignals": [
-        "fuel-reward",
-        "app-specific",
-        "mobile-pay"
-      ],
-      "distanceMiles": 2.87,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 32,
-      "distanceSourceLabel": "Shell official Rayford Road station page",
-      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
-      "score": 35,
-      "scoreLabel": "Low priority",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 0.72,
-          "weight": 18,
-          "detail": "Unverified lead; checked 16 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 5.52,
-          "weight": 24,
-          "detail": "$1.50 estimated value"
         },
         {
           "label": "Savings rate",

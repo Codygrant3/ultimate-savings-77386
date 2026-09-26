@@ -225,7 +225,9 @@ describe("Savings Desk interactions", () => {
 
     fireEvent.click(screen.getByRole("button", { name: "Savings tools" }));
     expect(screen.getByRole("heading", { name: "High-value alerts" })).toBeTruthy();
-    expect(screen.getByText(/\$20 clears the \$10 threshold/)).toBeTruthy();
+    expect(
+      screen.getAllByText(/\$20 clears the \$10 threshold/).length
+    ).toBeGreaterThan(0);
 
     fireEvent.change(screen.getByLabelText("Minimum dollar savings"), {
       target: { value: "100" }
