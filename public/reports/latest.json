@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-25T15:13:47.846Z",
+  "generatedAt": "2026-09-26T12:18:31.361Z",
   "weekOf": "2026-09-21",
   "zipCode": "77386",
   "totalPotentialSavings": 138.74,
-  "verifiedCount": 46,
-  "expiringCount": 20,
+  "verifiedCount": 45,
+  "expiringCount": 19,
   "opportunities": [
     {
       "id": "krispy-kreme-national-coffee-day-free-coffee-2026",
       "merchant": "Krispy Kreme",
       "title": "Free small or medium coffee with any purchase on Sept 29",
-      "summary": "On National Coffee Day, get one free small or medium hot or iced coffee with any purchase in shop at a participating U.S. Krispy Kreme.",
+      "summary": "Upcoming Tuesday September 29 National Coffee Day: one free small or medium hot or iced coffee with any purchase in shop at a participating dedicated U.S. Krispy Kreme.",
       "category": "coffee",
       "estimatedSavings": 0,
       "minimumSpend": 0,
@@ -28,7 +28,7 @@
       "source": {
         "label": "Krispy Kreme official National Coffee Day promotion",
         "url": "https://www.krispykreme.com/promos/national-coffee-day",
-        "checkedOn": "2026-09-24"
+        "checkedOn": "2026-09-26"
       },
       "actionLabel": "Redeem in shop Sept 29",
       "tier": "A",
@@ -84,7 +84,7 @@
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 5 days; newly found"
+          "detail": "Ends in 4 days; newly found"
         },
         {
           "label": "Effort",
@@ -110,7 +110,7 @@
       "id": "tropical-smoothie-tropic-fan-fest-free-smoothie-2026-09",
       "merchant": "Tropical Smoothie Cafe",
       "title": "Free 24 oz smoothie with Tropic Bowl or food purchase",
-      "summary": "Tropic Fan Fest still live: Tropic Rewards members get one free 24 oz smoothie daily with a qualifying Tropic Bowl or food purchase September 21-27 when redeemed via app/account. Local Spring locations include Riley Fuzzel Road (77386); confirm participating status.",
+      "summary": "Tropic Fan Fest still live through Sunday September 27: Tropic Rewards members get one free 24 oz smoothie daily with a qualifying Tropic Bowl or food purchase when redeemed via app/account. Local Spring locations include Riley Fuzzel Road (77386); confirm participating status.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 0,
@@ -129,14 +129,14 @@
       "source": {
         "label": "Tropical Smoothie Cafe Tropic Fan Fest official terms",
         "url": "https://pages.tropicalsmoothiecafe.com/5eo2jtu",
-        "checkedOn": "2026-09-25"
+        "checkedOn": "2026-09-26"
       },
-      "actionLabel": "Redeem in Tropic Rewards",
+      "actionLabel": "Redeem in Tropic Rewards today",
       "tier": "A",
       "stackNote": "Rewards members only; one reward per day; not valid with other rewards or third-party services; may not combine with certain offers.",
       "stackGroup": "tropical-smoothie-rewards",
       "finePrint": "Official terms: free 24 oz. smoothie with Tropic Bowl or food purchase beginning September 21, 2026 and ending September 27, 2026. Excludes Toasted Snack Rolls, Sunshine Smoothie, sides, sweets, and kids food. Redeem via app or Tropic Rewards account for same-day pickup/delivery on tropicalsmoothiecafe.com, or scan app in-cafe. Applied to lowest-priced 24 oz smoothie. Modifications, add-ins, supplements, and tax extra. Limit one per day. Expires 11:59 p.m. ET September 27, 2026. Participating locations only. No dollar estimate because local smoothie price was not verified.",
-      "expirationLabel": "Through September 27 (live now; ends Sunday)",
+      "expirationLabel": "Through September 27 (ends tomorrow Sunday)",
       "availability": "available",
       "dealType": "free-food",
       "freshness": "current",
@@ -186,7 +186,7 @@
           "label": "Timing",
           "points": 9.1,
           "weight": 10,
-          "detail": "Ends in 3 days; current"
+          "detail": "Ends in 2 days; current"
         },
         {
           "label": "Effort",
@@ -212,7 +212,7 @@
       "id": "dunkin-national-coffee-day-free-medium-2026",
       "merchant": "Dunkin",
       "title": "Free medium coffee with any purchase on Sept 29",
-      "summary": "Dunkin Rewards members can get one free medium hot or iced coffee with any purchase through the Dunkin app on National Coffee Day.",
+      "summary": "Upcoming Tuesday September 29: Dunkin Rewards members can get one free medium hot or iced coffee with any purchase through the Dunkin app on National Coffee Day.",
       "category": "coffee",
       "estimatedSavings": 0,
       "minimumSpend": 0,
@@ -229,9 +229,9 @@
         "one day"
       ],
       "source": {
-        "label": "Dunkin official L.L.Bean collaboration announcement",
-        "url": "https://news.dunkindonuts.com/news/dunkin-llbean-collab-2026",
-        "checkedOn": "2026-09-24"
+        "label": "Dunkin official L.L.Bean Bootmobile / National Coffee Day announcement",
+        "url": "https://news.dunkindonuts.com/blog/dunkin-llbean-bootmobile-tour-september-2026",
+        "checkedOn": "2026-09-26"
       },
       "actionLabel": "Activate in app Sept 29",
       "tier": "A",
@@ -253,7 +253,7 @@
       "distanceMiles": 2.8,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-11",
-      "distanceEvidenceAgeDays": 44,
+      "distanceEvidenceAgeDays": 45,
       "distanceSourceLabel": "Dunkin Rayford Road location page",
       "distanceSourceUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
       "score": 67,
@@ -287,13 +287,13 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.8 miles to Dunkin' Rayford Road; location checked 44 days ago; offer participation unconfirmed"
+          "detail": "~2.8 miles to Dunkin' Rayford Road; location checked 45 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 5 days; newly found"
+          "detail": "Ends in 4 days; newly found"
         },
         {
           "label": "Effort",
@@ -395,7 +395,7 @@
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 6 days; newly found"
+          "detail": "Ends in 5 days; newly found"
         },
         {
           "label": "Effort",
@@ -455,7 +455,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-09-09",
-      "distanceEvidenceAgeDays": 15,
+      "distanceEvidenceAgeDays": 16,
       "distanceSourceLabel": "Take 5 Spring location coupons",
       "distanceSourceUrl": "https://www.take5.com/locations/texas/spring/30083/",
       "score": 65,
@@ -465,7 +465,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -543,7 +543,7 @@
       "source": {
         "label": "Dunkin official newsroom fall Rewards calendar",
         "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-        "checkedOn": "2026-09-25"
+        "checkedOn": "2026-09-26"
       },
       "actionLabel": "Activate on Monday",
       "tier": "B",
@@ -562,11 +562,11 @@
         "time-sensitive"
       ],
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-25",
+      "distanceCheckedOn": "2026-09-26",
       "distanceEvidenceAgeDays": 0,
       "distanceSourceLabel": "Dunkin official newsroom fall Rewards calendar",
       "distanceSourceUrl": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-      "score": 63,
+      "score": 64,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
@@ -601,9 +601,9 @@
         },
         {
           "label": "Timing",
-          "points": 7.6000000000000005,
+          "points": 9.1,
           "weight": 10,
-          "detail": "Ends in 4 days; current"
+          "detail": "Ends in 3 days; current"
         },
         {
           "label": "Effort",
@@ -628,7 +628,7 @@
     {
       "id": "shell-fuel-rewards-new-member-2026",
       "merchant": "Shell Fuel Rewards",
-      "title": "10¢, 20¢, then 30¢ off per gallon",
+      "title": "10Â¢, 20Â¢, then 30Â¢ off per gallon",
       "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
       "category": "fuel",
       "estimatedSavings": 9,
@@ -664,7 +664,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-09-09",
-      "distanceEvidenceAgeDays": 15,
+      "distanceEvidenceAgeDays": 16,
       "distanceSourceLabel": "Shell Fuel Rewards",
       "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
       "score": 62,
@@ -674,7 +674,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -727,111 +727,9 @@
       ]
     },
     {
-      "id": "chipotle-national-quesadilla-day-2026-09",
-      "merchant": "Chipotle",
-      "title": "National Quesadilla Day free quesadilla with $20+ (code NQD2026)",
-      "summary": "LAST DAY today September 25: digital orders get one free quesadilla entree with a $20+ same-transaction purchase using promo code NQD2026. Window ends tonight.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 20,
-      "isFree": true,
-      "expiresOn": "2026-09-25",
-      "locationNote": "Participating U.S. and Canada Chipotle restaurants for chipotle.com / app digital orders only. Confirm Spring-area digital availability at checkout.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "free food",
-        "quesadilla",
-        "promo code",
-        "digital only",
-        "same-day"
-      ],
-      "source": {
-        "label": "Chipotle official newsroom + National Quesadilla Day 2026 offer terms",
-        "url": "https://newsroom.chipotle.com/2026-09-21-CHIPOTLE-CELEBRATES-NATIONAL-QUESADILLA-DAY-2026-WITH-TWO-DAYS-OF-FREE-QUESADILLAS",
-        "checkedOn": "2026-09-25"
-      },
-      "actionLabel": "Use code NQD2026 today (last day)",
-      "tier": "A",
-      "stackNote": "Digital-only promo code; not valid in-restaurant or on third-party platforms; may not combine with other coupons/promotions.",
-      "stackGroup": "chipotle-digital-offer",
-      "finePrint": "Official Chipotle newsroom and terms: valid September 24, 2026 through September 25, 2026 only for digital orders from participating U.S. and Canada Chipotle restaurants. One free quesadilla entree with purchase in the same transaction of at least $20 excluding taxes, tips, or fees. Add-ons not permitted on the free quesadilla. Promo code NQD2026 required at checkout. Valid only on chipotle.com, chipotle.ca and the Chipotle mobile app; not valid for in-restaurant or third-party orders. Subject to availability. May not be combined with other coupons or promotions. No dollar estimate because local quesadilla price was not verified.",
-      "expirationLabel": "LAST DAY today September 25",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "current",
-      "discoveredOn": "2026-09-21",
-      "preferenceSignals": [
-        "free-food",
-        "restaurant",
-        "app-specific",
-        "time-sensitive",
-        "same-day"
-      ],
-      "distanceBasis": "unknown",
-      "score": 62,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Household match: free food"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 9.1,
-          "weight": 10,
-          "detail": "Ends in 1 day; current"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$20.00 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "seven-rewards-fuel-welcome-2026",
       "merchant": "7REWARDS Fuel",
-      "title": "11¢ off per gallon on the first seven fills",
+      "title": "11Â¢ off per gallon on the first seven fills",
       "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
       "category": "fuel",
       "estimatedSavings": 11.55,
@@ -870,7 +768,7 @@
       "distanceMiles": 3.35,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 60,
@@ -880,7 +778,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -904,7 +802,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -929,231 +827,6 @@
           "points": 7.000000000000001,
           "weight": 7,
           "detail": "Compatible stack documented"
-        }
-      ]
-    },
-    {
-      "id": "nacho-padres-happy-hour-margaritas-2026",
-      "merchant": "Nacho Padres",
-      "title": "Happy Hour $5.99 house margaritas Mon-Fri 3-6 p.m.",
-      "summary": "TODAY Friday: official site lists Happy Hour Monday-Friday 3-6 p.m. with $5.99 house margaritas (frozen or rocks), plus specialty margarita and bite pricing noted on the FAQ.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": false,
-      "availableDaysOfWeek": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "redemptionTimeWindows": [
-        {
-          "startTime": "15:00",
-          "endTime": "18:00"
-        }
-      ],
-      "locationNote": "2121 Rayford Rd, Spring, TX 77386. Alcohol specials require legal age; confirm current pricing in-restaurant.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "local",
-        "happy hour",
-        "margarita",
-        "77386",
-        "same-day"
-      ],
-      "source": {
-        "label": "Nacho Padres official website hours and happy hour FAQ",
-        "url": "https://nachopadres.com/",
-        "checkedOn": "2026-09-25"
-      },
-      "actionLabel": "Happy Hour 3-6 p.m. today",
-      "tier": "B",
-      "stackNote": "Local happy hour; no coupon stacking assumed.",
-      "finePrint": "Official site states Happy Hour Monday-Friday 3-6 p.m.: $5.99 house margaritas (frozen or rocks), $9.99 specialty margaritas, and $6.99 bites. No published end date; treat as ongoing while listed. No savings estimate because regular margarita price was not verified.",
-      "expirationLabel": "Mon-Fri 3-6 p.m. while listed (TODAY in window)",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-09-25",
-      "preferenceSignals": [
-        "restaurant",
-        "local-high-value",
-        "same-day",
-        "time-window"
-      ],
-      "localRecord": true,
-      "distanceMiles": 2.5,
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-25",
-      "distanceEvidenceAgeDays": 0,
-      "distanceSourceLabel": "Nacho Padres official website hours and happy hour FAQ",
-      "distanceSourceUrl": "https://nachopadres.com/",
-      "score": 59,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.2,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "2.5 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "nacho-padres-keep-it-loco-thursdays-2026",
-      "merchant": "Nacho Padres",
-      "title": "Keep IT Loco Thursdays: half off large fajitas",
-      "summary": "Local Spring cantina lists Keep IT Loco Thursdays as half off large fajitas all day. Not redeemable today (Friday); next Thursday is October 1.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": false,
-      "availableDaysOfWeek": [
-        4
-      ],
-      "locationNote": "2121 Rayford Rd, Spring, TX 77386. Confirm half-off large fajitas terms with the restaurant before ordering; savings not estimated without menu price verification.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "local",
-        "fajitas",
-        "half off",
-        "thursday",
-        "77386"
-      ],
-      "source": {
-        "label": "Nacho Padres official website daily specials",
-        "url": "https://nachopadres.com/",
-        "checkedOn": "2026-09-25"
-      },
-      "actionLabel": "Plan for next Thursday",
-      "tier": "A",
-      "stackNote": "Local restaurant special; do not assume stacking with other coupons.",
-      "finePrint": "Official Nacho Padres homepage Daily Specials section lists Thursday Keep IT Loco as half off large fajitas. No published end date; treat as ongoing while listed. No dollar estimate because large fajita menu price was not verified on this scan.",
-      "expirationLabel": "Thursdays while listed on official site",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-09-25",
-      "preferenceSignals": [
-        "restaurant",
-        "local-high-value",
-        "recurring-weekly"
-      ],
-      "localRecord": true,
-      "distanceMiles": 2.5,
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-25",
-      "distanceEvidenceAgeDays": 0,
-      "distanceSourceLabel": "Nacho Padres official website daily specials",
-      "distanceSourceUrl": "https://nachopadres.com/",
-      "score": 59,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.2,
-          "weight": 10,
-          "detail": "General household priority"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "2.5 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -1198,7 +871,7 @@
       "distanceMiles": 4.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Wendy's official restaurant locator",
       "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 59,
@@ -1208,7 +881,7 @@
           "label": "Evidence",
           "points": 11.7,
           "weight": 18,
-          "detail": "Official source verified; checked 13 days ago"
+          "detail": "Official source verified; checked 14 days ago"
         },
         {
           "label": "Dollar value",
@@ -1232,7 +905,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -1308,7 +981,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
+          "detail": "Official source verified; checked 1 day ago"
         },
         {
           "label": "Dollar value",
@@ -1410,7 +1083,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 23 days ago"
+          "detail": "Official source verified; checked 24 days ago"
         },
         {
           "label": "Dollar value",
@@ -1463,58 +1136,62 @@
       ]
     },
     {
-      "id": "dunkin-boosted-3x-beverages-after-1pm-2026-09-21-25",
-      "merchant": "Dunkin",
-      "title": "Boosted members: 3x points on beverages after 1 p.m.",
-      "summary": "LAST DAY today September 25: Dunkin Rewards Boosted Status members can earn 3x points on any beverage purchase after 1 p.m. local time when the offer is activated in the app. Window ends tonight.",
-      "category": "coffee",
+      "id": "nacho-padres-happy-hour-margaritas-2026",
+      "merchant": "Nacho Padres",
+      "title": "Happy Hour $5.99 house margaritas Mon-Fri 3-6 p.m.",
+      "summary": "Official site lists Happy Hour Monday-Friday 3-6 p.m. with $5.99 house margaritas (frozen or rocks), plus specialty margarita and bite pricing noted on the FAQ. Not redeemable today (Saturday); resumes Monday.",
+      "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 0,
       "isFree": false,
-      "expiresOn": "2026-09-25",
+      "availableDaysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "redemptionTimeWindows": [
         {
-          "startTime": "13:00"
+          "startTime": "15:00",
+          "endTime": "18:00"
         }
       ],
-      "locationNote": "Participating U.S. Dunkin stores for Boosted Status members; nearby Rayford Road Spring shop participation and Boosted eligibility must be confirmed in the app.",
+      "locationNote": "2121 Rayford Rd, Spring, TX 77386. Alcohol specials require legal age; confirm current pricing in-restaurant.",
       "verification": "verified",
-      "friction": "medium",
+      "friction": "low",
       "tags": [
-        "coffee",
-        "rewards",
-        "bonus points",
-        "Boosted Status",
-        "app",
-        "afternoon"
+        "local",
+        "happy hour",
+        "margarita",
+        "77386"
       ],
       "source": {
-        "label": "Dunkin official newsroom fall Rewards calendar",
-        "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-        "checkedOn": "2026-09-25"
+        "label": "Nacho Padres official website hours and happy hour FAQ",
+        "url": "https://nachopadres.com/",
+        "checkedOn": "2026-09-26"
       },
-      "actionLabel": "Activate after 1 p.m.",
+      "actionLabel": "Happy Hour Mon-Fri 3-6 p.m.",
       "tier": "B",
-      "distanceMiles": 2.8,
-      "stackNote": "Boosted-only; activate in app. Official terms say it cannot be combined with other offers, promotions, or coupons. Mobile Mondays is a separate Monday order-ahead bonus — do not assume stacking.",
-      "stackGroup": "dunkin-rewards-offer",
-      "finePrint": "Offer valid 9/21/26-9/25/26 for Boosted Status members only. Single-use per member per day. Must be activated on the mobile app. Applies to qualifying mobile orders or in-store when scanning Dunkin Rewards ID or paying with an enrolled Dunkin card after 1 p.m. Bonus points on base points only. Participating U.S. stores. No dollar estimate because redemption value and local beverage price were not verified.",
-      "expirationLabel": "LAST DAY today September 25 after 1 p.m.",
+      "stackNote": "Local happy hour; no coupon stacking assumed.",
+      "finePrint": "Official site states Happy Hour Monday-Friday 3-6 p.m.: $5.99 house margaritas (frozen or rocks), $9.99 specialty margaritas, and $6.99 bites. No published end date; treat as ongoing while listed. No savings estimate because regular margarita price was not verified.",
+      "expirationLabel": "Mon-Fri 3-6 p.m. while listed (not today Saturday)",
       "availability": "available",
-      "dealType": "loyalty-reward",
+      "dealType": "promotion-event",
       "freshness": "current",
-      "discoveredOn": "2026-09-21",
+      "discoveredOn": "2026-09-25",
       "preferenceSignals": [
-        "preferred-coffee",
-        "app-specific",
-        "time-sensitive",
-        "status-gated"
+        "restaurant",
+        "local-high-value",
+        "time-window"
       ],
+      "localRecord": true,
+      "distanceMiles": 2.5,
       "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-25",
+      "distanceCheckedOn": "2026-09-26",
       "distanceEvidenceAgeDays": 0,
-      "distanceSourceLabel": "Dunkin official newsroom fall Rewards calendar",
-      "distanceSourceUrl": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
+      "distanceSourceLabel": "Nacho Padres official website hours and happy hour FAQ",
+      "distanceSourceUrl": "https://nachopadres.com/",
       "score": 58,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
@@ -1538,27 +1215,27 @@
         },
         {
           "label": "Household fit",
-          "points": 8.8,
+          "points": 7.2,
           "weight": 10,
-          "detail": "Household match: coffee"
+          "detail": "General household priority"
         },
         {
           "label": "Local relevance",
           "points": 7.36,
           "weight": 8,
-          "detail": "2.8 miles from 77386"
+          "detail": "2.5 miles from 77386"
         },
         {
           "label": "Timing",
-          "points": 9.1,
+          "points": 4.6000000000000005,
           "weight": 10,
-          "detail": "Ends in 1 day; current"
+          "detail": "No stated end date; current"
         },
         {
           "label": "Effort",
-          "points": 5.3999999999999995,
+          "points": 9,
           "weight": 9,
-          "detail": "medium redemption effort"
+          "detail": "low redemption effort"
         },
         {
           "label": "Required spend",
@@ -1568,9 +1245,116 @@
         },
         {
           "label": "Stackability",
-          "points": 0.8400000000000001,
+          "points": 3.8500000000000005,
           "weight": 7,
-          "detail": "Official terms restrict combining offers"
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "nacho-padres-keep-it-loco-thursdays-2026",
+      "merchant": "Nacho Padres",
+      "title": "Keep IT Loco Thursdays: half off large fajitas",
+      "summary": "Local Spring cantina lists Keep IT Loco Thursdays as half off large fajitas all day. Not redeemable today (Saturday); next Thursday is October 1.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "availableDaysOfWeek": [
+        4
+      ],
+      "locationNote": "2121 Rayford Rd, Spring, TX 77386. Confirm half-off large fajitas terms with the restaurant before ordering; savings not estimated without menu price verification.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "local",
+        "fajitas",
+        "half off",
+        "thursday",
+        "77386"
+      ],
+      "source": {
+        "label": "Nacho Padres official website daily specials",
+        "url": "https://nachopadres.com/",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Plan for next Thursday",
+      "tier": "A",
+      "stackNote": "Local restaurant special; do not assume stacking with other coupons.",
+      "finePrint": "Official Nacho Padres homepage Daily Specials section lists Thursday Keep IT Loco as half off large fajitas. No published end date; treat as ongoing while listed. No dollar estimate because large fajita menu price was not verified on this scan.",
+      "expirationLabel": "Thursdays while listed on official site",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "current",
+      "discoveredOn": "2026-09-25",
+      "preferenceSignals": [
+        "restaurant",
+        "local-high-value",
+        "recurring-weekly"
+      ],
+      "localRecord": true,
+      "distanceMiles": 2.5,
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-09-26",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Nacho Padres official website daily specials",
+      "distanceSourceUrl": "https://nachopadres.com/",
+      "score": 58,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.5 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
         }
       ]
     },
@@ -1618,7 +1402,7 @@
       "distanceMiles": 2.8,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
       "score": 58,
@@ -1628,7 +1412,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
+          "detail": "Official source verified; checked 1 day ago"
         },
         {
           "label": "Dollar value",
@@ -1652,13 +1436,13 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 6 days; newly found"
+          "detail": "Ends in 5 days; newly found"
         },
         {
           "label": "Effort",
@@ -1723,7 +1507,7 @@
       "distanceMiles": 1.9,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Exxon Mobil official station locator result",
       "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
       "score": 57,
@@ -1733,7 +1517,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -1757,13 +1541,13 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 8.1,
           "weight": 10,
-          "detail": "Ends in 6 days; recently improved"
+          "detail": "Ends in 5 days; recently improved"
         },
         {
           "label": "Effort",
@@ -1835,7 +1619,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 22 days ago"
+          "detail": "Official source verified; checked 23 days ago"
         },
         {
           "label": "Dollar value",
@@ -1891,7 +1675,7 @@
       "id": "applebees-nfl-season-wing-ticket-2026",
       "merchant": "Applebee's",
       "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
-      "summary": "Club Applebee's members who signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online To Go order, redeemable Sunday through Thursday, through January 10, 2027. Friday is outside this week's redemption window; next codes arrive Sunday.",
+      "summary": "Club Applebee's members who signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online To Go order, redeemable Sunday through Thursday, through January 10, 2027. Saturday is outside this week's redemption window; next codes arrive Sunday.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 15,
@@ -1925,7 +1709,7 @@
       "stackNote": "Weekly code is its own To Go offer; not valid on third-party delivery sites.",
       "stackGroup": "applebees-to-go-offer",
       "finePrint": "Signup and weekly codes for Club Applebee's members. Codes arrive by email each Sunday and are redeemable Sunday through Thursday of that week through January 10, 2027. Minimum $15 online To Go order excluding alcohol, gift cards, tax, delivery/service fees, and gratuity. Limit one order of 6 free Boneless Wings per week. Participating locations; other restrictions may apply. No dollar estimate because the local wing price was not verified.",
-      "expirationLabel": "Sun-Thu weekly codes through January 10, 2027 (Friday not in window)",
+      "expirationLabel": "Sun-Thu weekly codes through January 10, 2027 (Saturday not in window)",
       "availability": "available",
       "dealType": "free-food",
       "freshness": "current",
@@ -2036,7 +1820,7 @@
       "distanceMiles": 4.7,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-15",
-      "distanceEvidenceAgeDays": 40,
+      "distanceEvidenceAgeDays": 41,
       "distanceSourceLabel": "Rainbow Car Care frequent wash program",
       "distanceSourceUrl": "https://rainbowcarcare.com/frequent-wash-program",
       "score": 56,
@@ -2046,7 +1830,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -2070,7 +1854,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; location checked 40 days ago; offer participation unconfirmed"
+          "detail": "~4.7 miles to Rainbow Car Care Sawdust Road; location checked 41 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -2140,10 +1924,116 @@
       "distanceMiles": 2.8,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
       "score": 56,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 1 day ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 9 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$1.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "wendys-wednesday-free-nuggets-2026",
+      "merchant": "Wendy's",
+      "title": "Free 6-piece nuggets Wednesday with $5 purchase",
+      "summary": "Wendy's official offers page lists free 6-piece nuggets with a $5 qualifying purchase for Wendy's Wednesday.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": true,
+      "availableDaysOfWeek": [
+        3
+      ],
+      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "Wednesday",
+        "app",
+        "qualifying purchase"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Claim Wednesday offer",
+      "tier": "A",
+      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
+      "stackGroup": "wendys-app-order",
+      "finePrint": "Requires a $5 qualifying purchase on Wednesday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local nugget price was not verified.",
+      "expirationLabel": "Wednesdays while listed",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "current",
+      "discoveredOn": "2026-08-11",
+      "preferenceSignals": [
+        "free-food",
+        "weekday",
+        "app-specific"
+      ],
+      "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
+      "score": 54,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
@@ -2174,13 +2064,13 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
-          "points": 6.9,
+          "points": 4.6000000000000005,
           "weight": 10,
-          "detail": "Ends in 10 days; newly found"
+          "detail": "No stated end date; current"
         },
         {
           "label": "Effort",
@@ -2192,105 +2082,7 @@
           "label": "Required spend",
           "points": 0.8,
           "weight": 8,
-          "detail": "$1.00 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
-      "id": "sonic-rewards-welcome-reward-2026",
-      "merchant": "SONIC Rewards",
-      "title": "Free medium fries, tots, or drink for new members",
-      "summary": "The nationwide SONIC Rewards program includes a welcome reward with a choice of medium fries, tots, or a drink.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "Nationwide app offer; a convenient participating 77386-area location was not confirmed in this public scan.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "free drink",
-        "new member",
-        "app"
-      ],
-      "source": {
-        "label": "SONIC official newsroom",
-        "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
-        "checkedOn": "2026-08-25"
-      },
-      "actionLabel": "Check welcome reward",
-      "tier": "A",
-      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
-      "finePrint": "The official newsroom does not state a purchase requirement for the welcome reward. App enrollment and participating-location availability apply; confirm the reward is loaded before making a trip. No dollar value is estimated because local menu pricing was not verified.",
-      "expirationLabel": "New members",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "new",
-      "discoveredOn": "2026-08-09",
-      "preferenceSignals": [
-        "free-food",
-        "free-drink",
-        "new-member",
-        "app-specific"
-      ],
-      "distanceBasis": "unknown",
-      "score": 56,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 7.199999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 30 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 8,
-          "weight": 10,
-          "detail": "Household match: free food, free drink"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.5,
-          "weight": 10,
-          "detail": "No stated end date; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
+          "detail": "$5.00 required per $0.00 saved"
         },
         {
           "label": "Stackability",
@@ -2344,7 +2136,7 @@
       "distanceMiles": 4.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Wendy's official restaurant locator",
       "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 54,
@@ -2378,7 +2170,111 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$5.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "wendys-free-small-chili-2026-09",
+      "merchant": "Wendy's",
+      "title": "Free small chili with $5 purchase",
+      "summary": "Wendy's current official offers page lists a free small chili with a $5 qualifying purchase.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": true,
+      "locationNote": "App-only offer at participating U.S. Wendy's; availability at the selected Spring-area restaurant must be confirmed in the app.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "chili",
+        "app",
+        "qualifying purchase"
+      ],
+      "source": {
+        "label": "Wendy's official offers page",
+        "url": "https://www.wendys.com/offers-coupons",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Claim chili offer",
+      "tier": "A",
+      "stackNote": "Use one app offer per order because Wendy's says coupons may not be combined.",
+      "stackGroup": "wendys-app-order",
+      "stackStatus": "exclusive",
+      "finePrint": "Requires a $5 qualifying purchase while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No end date or dollar value is shown because the official page does not publish an expiration and the local chili price was not verified.",
+      "expirationLabel": "Limited time while listed",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "current",
+      "discoveredOn": "2026-09-02",
+      "preferenceSignals": [
+        "free-food",
+        "app-specific",
+        "time-sensitive"
+      ],
+      "distanceMiles": 4.6,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Wendy's official restaurant locator",
+      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
+      "score": 54,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -2409,7 +2305,7 @@
     {
       "id": "seven-rewards-fuel-sms-25-cents-2026",
       "merchant": "7REWARDS Fuel",
-      "title": "25¢ off per gallon on the next three fills",
+      "title": "25Â¢ off per gallon on the next three fills",
       "summary": "The official fuel-rewards page offers 25 cents off per gallon on the next three fills after texting SAVE to 711711.",
       "category": "fuel",
       "estimatedSavings": 11.25,
@@ -2447,7 +2343,7 @@
       "distanceMiles": 3.35,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 53,
@@ -2457,7 +2353,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -2481,7 +2377,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -2551,7 +2447,7 @@
       "distanceMiles": 2.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 39,
+      "distanceEvidenceAgeDays": 40,
       "distanceSourceLabel": "Costa Oil Rayford specials",
       "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
       "score": 53,
@@ -2561,7 +2457,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -2585,7 +2481,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 39 days ago; offer participation unconfirmed"
+          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 40 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -2645,7 +2541,7 @@
       "availability": "available",
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 39,
+      "distanceEvidenceAgeDays": 40,
       "distanceSourceLabel": "Starbucks Rewards terms",
       "distanceSourceUrl": "https://www.starbucks.com/rewards/terms/",
       "score": 53,
@@ -2655,7 +2551,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 39 days ago"
+          "detail": "Official source verified; checked 40 days ago"
         },
         {
           "label": "Dollar value",
@@ -2746,7 +2642,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 39,
+      "distanceEvidenceAgeDays": 40,
       "distanceSourceLabel": "7REWARDS",
       "distanceSourceUrl": "https://www.7-eleven.com/7rewards",
       "score": 53,
@@ -2756,7 +2652,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 39 days ago"
+          "detail": "Official source verified; checked 40 days ago"
         },
         {
           "label": "Dollar value",
@@ -2811,7 +2707,7 @@
     {
       "id": "exxon-mobil-rewards-base-points-2026",
       "merchant": "Exxon Mobil Rewards+",
-      "title": "Earn 3¢ per gallon or more in points",
+      "title": "Earn 3Â¢ per gallon or more in points",
       "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
       "category": "fuel",
       "estimatedSavings": 0.45,
@@ -2845,7 +2741,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-09-02",
-      "distanceEvidenceAgeDays": 22,
+      "distanceEvidenceAgeDays": 23,
       "distanceSourceLabel": "Exxon Mobil Rewards+",
       "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
       "score": 53,
@@ -2855,7 +2751,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 22 days ago"
+          "detail": "Official source verified; checked 23 days ago"
         },
         {
           "label": "Dollar value",
@@ -2908,106 +2804,6 @@
       ]
     },
     {
-      "id": "krispy-kreme-coffee-dozen-five-dollars-2026-09",
-      "merchant": "Krispy Kreme",
-      "title": "$5 coffee-flavored or Original Glazed dozen with dozen purchase",
-      "summary": "From September 26-29, buy any regular-priced dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5 at participating U.S. shops.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 0,
-      "isFree": false,
-      "expiresOn": "2026-09-29",
-      "locationNote": "Dedicated U.S. Krispy Kreme shops only. The promotion page requires shop participation and does not confirm a Spring-area shop or local regular-dozen price; check the official locator before making a trip.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "doughnuts",
-        "coffee",
-        "National Coffee Day",
-        "bundle",
-        "limited time"
-      ],
-      "source": {
-        "label": "Krispy Kreme official National Coffee Day promotion",
-        "url": "https://www.krispykreme.com/promos/national-coffee-day",
-        "checkedOn": "2026-09-24"
-      },
-      "actionLabel": "Check participating shop",
-      "tier": "B",
-      "stackNote": "Requires a regular-priced dozen or 16-count Minis. Limit two redemptions in shop or drive-thru and one online with code COFFEE; not valid with other orders or coupons.",
-      "stackStatus": "exclusive",
-      "finePrint": "Offer runs September 26-29, 2026 at participating dedicated U.S. Krispy Kreme shops while supplies last. Buy any dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5. Online pickup or delivery requires promo code COFFEE. Not valid at grocery or convenience locations, in Puerto Rico, Canada, or outside dedicated retail shops. No savings estimate is listed because a local participating shop and its regular-dozen price were not verified.",
-      "expirationLabel": "September 26-29",
-      "availability": "available",
-      "dealType": "promotion-event",
-      "freshness": "new",
-      "discoveredOn": "2026-09-23",
-      "preferenceSignals": [
-        "restaurant",
-        "limited-time",
-        "upcoming"
-      ],
-      "distanceBasis": "unknown",
-      "score": 53,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 18,
-          "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 0,
-          "weight": 24,
-          "detail": "$0.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Household match: coffee"
-        },
-        {
-          "label": "Local relevance",
-          "points": 4.4,
-          "weight": 8,
-          "detail": "Location not distance-confirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 8.5,
-          "weight": 10,
-          "detail": "Ends in 5 days; newly found"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
       "id": "dutch-bros-free-medium-app-2026",
       "merchant": "Dutch Bros",
       "title": "Free medium drink for eligible new app users",
@@ -3052,7 +2848,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 44 days ago"
+          "detail": "Official source verified; checked 45 days ago"
         },
         {
           "label": "Dollar value",
@@ -3105,57 +2901,153 @@
       ]
     },
     {
-      "id": "taco-bell-rewards-program",
-      "merchant": "Taco Bell",
-      "title": "Free signup reward for new Rewards members",
-      "summary": "New Taco Bell Rewards members can choose a free welcome reward in the app after joining.",
+      "id": "krispy-kreme-coffee-dozen-five-dollars-2026-09",
+      "merchant": "Krispy Kreme",
+      "title": "$5 coffee-flavored or Original Glazed dozen with dozen purchase",
+      "summary": "LIVE TODAY through Tuesday September 29: buy any regular-priced dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5 at participating dedicated U.S. shops.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 0,
-      "isFree": true,
-      "locationNote": "App-only welcome reward at participating U.S. Taco Bell locations; confirm the reward is loaded before visiting.",
+      "isFree": false,
+      "expiresOn": "2026-09-29",
+      "locationNote": "Dedicated U.S. Krispy Kreme shops only. The promotion page requires shop participation and does not confirm a Spring-area shop or local regular-dozen price; check the official locator before making a trip.",
       "verification": "verified",
-      "friction": "low",
+      "friction": "medium",
       "tags": [
-        "free food",
-        "welcome reward",
-        "new member",
-        "app",
-        "rewards program"
+        "doughnuts",
+        "coffee",
+        "National Coffee Day",
+        "bundle",
+        "limited time"
       ],
       "source": {
-        "label": "Taco Bell official offers and deals",
-        "url": "https://www.tacobell.com/offers-and-deals",
-        "checkedOn": "2026-08-25"
+        "label": "Krispy Kreme official National Coffee Day promotion",
+        "url": "https://www.krispykreme.com/promos/national-coffee-day",
+        "checkedOn": "2026-09-26"
       },
-      "actionLabel": "Check welcome reward",
-      "tier": "A",
-      "stackNote": "Use the welcome reward by itself; the official terms say it cannot be combined with another offer.",
-      "finePrint": "Free signup reward is valid for 14 days after issuance, once per registered user, through the Taco Bell mobile app for in-store or drive-thru pickup at participating U.S. locations. Web pay-ahead and delivery orders are excluded. No dollar value is estimated because the selected reward and local menu price were not verified.",
-      "expirationLabel": "Valid 14 days after issuance",
+      "actionLabel": "Redeem today thru Sept 29",
+      "tier": "B",
+      "stackNote": "Requires a regular-priced dozen or 16-count Minis. Limit two redemptions in shop or drive-thru and one online with code COFFEE; not valid with other orders or coupons.",
+      "stackStatus": "exclusive",
+      "finePrint": "Offer runs September 26-29, 2026 at participating dedicated U.S. Krispy Kreme shops while supplies last. Buy any dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5. Online pickup or delivery requires promo code COFFEE. Not valid at grocery or convenience locations, in Puerto Rico, Canada, or outside dedicated retail shops. No savings estimate is listed because a local participating shop and its regular-dozen price were not verified.",
+      "expirationLabel": "LIVE today September 26 through September 29",
       "availability": "available",
-      "dealType": "free-food",
+      "dealType": "promotion-event",
       "freshness": "improved",
-      "discoveredOn": "2026-08-22",
+      "discoveredOn": "2026-09-23",
       "preferenceSignals": [
-        "free-food",
-        "new-member",
-        "app-specific"
+        "restaurant",
+        "limited-time",
+        "same-day",
+        "time-sensitive"
       ],
-      "distanceMiles": 2.8,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
-      "distanceSourceLabel": "Taco Bell official Rayford Road location page",
-      "distanceSourceUrl": "https://locations.tacobell.com/tx/spring/2681-rayford-rd.html",
-      "score": 51,
+      "distanceBasis": "unknown",
+      "score": 52,
       "scoreLabel": "Worth a look",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 7.199999999999999,
+          "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 30 days ago"
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.1,
+          "weight": 10,
+          "detail": "Ends in 4 days; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "sonic-rewards-welcome-reward-2026",
+      "merchant": "SONIC Rewards",
+      "title": "Free medium fries, tots, or drink for new members",
+      "summary": "The nationwide SONIC Rewards program includes a welcome reward with a choice of medium fries, tots, or a drink.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "Nationwide app offer; a convenient participating 77386-area location was not confirmed in this public scan.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "free drink",
+        "new member",
+        "app"
+      ],
+      "source": {
+        "label": "SONIC official newsroom",
+        "url": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
+        "checkedOn": "2026-08-25"
+      },
+      "actionLabel": "Check welcome reward",
+      "tier": "A",
+      "stackNote": "Use the welcome reward by itself unless the app expressly allows another offer.",
+      "finePrint": "The official newsroom does not state a purchase requirement for the welcome reward. App enrollment and participating-location availability apply; confirm the reward is loaded before making a trip. No dollar value is estimated because local menu pricing was not verified.",
+      "expirationLabel": "New members",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-08-09",
+      "preferenceSignals": [
+        "free-food",
+        "free-drink",
+        "new-member",
+        "app-specific"
+      ],
+      "distanceBasis": "unknown",
+      "score": 52,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 2.6999999999999997,
+          "weight": 18,
+          "detail": "Official source verified; checked 31 days ago"
         },
         {
           "label": "Dollar value",
@@ -3171,21 +3063,21 @@
         },
         {
           "label": "Household fit",
-          "points": 7.6000000000000005,
+          "points": 8,
           "weight": 10,
-          "detail": "Household match: free food"
+          "detail": "Household match: free food, free drink"
         },
         {
           "label": "Local relevance",
-          "points": 0,
+          "points": 4.4,
           "weight": 8,
-          "detail": "~2.8 miles to Taco Bell Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "Location not distance-confirmed"
         },
         {
           "label": "Timing",
-          "points": 5.1000000000000005,
+          "points": 5.5,
           "weight": 10,
-          "detail": "No stated end date; recently improved"
+          "detail": "No stated end date; newly found"
         },
         {
           "label": "Effort",
@@ -3248,7 +3140,7 @@
       "distanceMiles": 3.5,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Whataburger official Rayford Road location page",
       "distanceSourceUrl": "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       "score": 51,
@@ -3258,7 +3150,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 29 days ago"
+          "detail": "Official source verified; checked 30 days ago"
         },
         {
           "label": "Dollar value",
@@ -3282,7 +3174,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~3.5 miles to Whataburger Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~3.5 miles to Whataburger Rayford Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -3311,219 +3203,9 @@
       ]
     },
     {
-      "id": "wendys-wednesday-free-nuggets-2026",
-      "merchant": "Wendy's",
-      "title": "Free 6-piece nuggets Wednesday with $5 purchase",
-      "summary": "Wendy's official offers page lists free 6-piece nuggets with a $5 qualifying purchase for Wendy's Wednesday.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 5,
-      "isFree": true,
-      "availableDaysOfWeek": [
-        3
-      ],
-      "locationNote": "App-only offer; availability at the selected Spring-area Wendy's must be confirmed in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "Wednesday",
-        "app",
-        "qualifying purchase"
-      ],
-      "source": {
-        "label": "Wendy's official offers page",
-        "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-20"
-      },
-      "actionLabel": "Claim Wednesday offer",
-      "tier": "A",
-      "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
-      "stackGroup": "wendys-app-order",
-      "finePrint": "Requires a $5 qualifying purchase on Wednesday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local nugget price was not verified.",
-      "expirationLabel": "Wednesdays while listed",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "current",
-      "discoveredOn": "2026-08-11",
-      "preferenceSignals": [
-        "free-food",
-        "weekday",
-        "app-specific"
-      ],
-      "distanceMiles": 4.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
-      "distanceSourceLabel": "Wendy's official restaurant locator",
-      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
-      "score": 51,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 4 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Household match: free food"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$5.00 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
-      "id": "wendys-free-small-chili-2026-09",
-      "merchant": "Wendy's",
-      "title": "Free small chili with $5 purchase",
-      "summary": "Wendy's current official offers page lists a free small chili with a $5 qualifying purchase.",
-      "category": "restaurants",
-      "estimatedSavings": 0,
-      "minimumSpend": 5,
-      "isFree": true,
-      "locationNote": "App-only offer at participating U.S. Wendy's; availability at the selected Spring-area restaurant must be confirmed in the app.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "free food",
-        "chili",
-        "app",
-        "qualifying purchase"
-      ],
-      "source": {
-        "label": "Wendy's official offers page",
-        "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-20"
-      },
-      "actionLabel": "Claim chili offer",
-      "tier": "A",
-      "stackNote": "Use one app offer per order because Wendy's says coupons may not be combined.",
-      "stackGroup": "wendys-app-order",
-      "stackStatus": "exclusive",
-      "finePrint": "Requires a $5 qualifying purchase while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No end date or dollar value is shown because the official page does not publish an expiration and the local chili price was not verified.",
-      "expirationLabel": "Limited time while listed",
-      "availability": "available",
-      "dealType": "free-food",
-      "freshness": "current",
-      "discoveredOn": "2026-09-02",
-      "preferenceSignals": [
-        "free-food",
-        "app-specific",
-        "time-sensitive"
-      ],
-      "distanceMiles": 4.6,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
-      "distanceSourceLabel": "Wendy's official restaurant locator",
-      "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
-      "score": 51,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 15.299999999999999,
-          "weight": 18,
-          "detail": "Official source verified; checked 4 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 13.2,
-          "weight": 24,
-          "detail": "free reward"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.6000000000000005,
-          "weight": 10,
-          "detail": "Household match: free food"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 0.8,
-          "weight": 8,
-          "detail": "$5.00 required per $0.00 saved"
-        },
-        {
-          "label": "Stackability",
-          "points": 0.8400000000000001,
-          "weight": 7,
-          "detail": "Official terms restrict combining offers"
-        }
-      ]
-    },
-    {
       "id": "exxon-mobil-referral-five-fill-bonus-2026",
       "merchant": "Exxon Mobil Rewards+",
-      "title": "Up to 30¢ per gallon on five referral-code fills",
+      "title": "Up to 30Â¢ per gallon on five referral-code fills",
       "summary": "New Rewards+ members who enroll with an existing member's referral code can earn up to 15 cents per gallon on regular, mid-grade, or diesel fuel, or up to 30 cents per gallon on premium fuel, for their next five qualifying fills.",
       "category": "fuel",
       "estimatedSavings": 11.25,
@@ -3564,7 +3246,7 @@
       "distanceMiles": 1.9,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Exxon Mobil official station locator result",
       "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/find-gas-station?latitude1=30.122905569634664&longitude1=-95.44171371459962&latitude2=30.19711697718482&longitude2=-95.3582862854004&zoom=13",
       "score": 50,
@@ -3574,7 +3256,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 28 days ago"
+          "detail": "Official source verified; checked 29 days ago"
         },
         {
           "label": "Dollar value",
@@ -3598,7 +3280,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~1.9 miles to Exxon Express Mart # 5; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -3660,7 +3342,7 @@
       "freshness": "current",
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 39,
+      "distanceEvidenceAgeDays": 40,
       "distanceSourceLabel": "Starbucks Rewards",
       "distanceSourceUrl": "https://www.starbucks.com/rewards",
       "score": 50,
@@ -3670,7 +3352,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 39 days ago"
+          "detail": "Official source verified; checked 40 days ago"
         },
         {
           "label": "Dollar value",
@@ -3713,6 +3395,106 @@
           "points": 8,
           "weight": 8,
           "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "cracker-barrel-national-pancake-day-2026-09-26",
+      "merchant": "Cracker Barrel",
+      "title": "National Pancake Day $5 all-you-can-eat pancakes",
+      "summary": "TODAY Saturday September 26 only: official promotions page offers unlimited World's Best Pancakes for $5 all day for National Pancake Day. Dine-in value special; confirm local participation and exact plating terms at the restaurant.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 5,
+      "isFree": false,
+      "expiresOn": "2026-09-26",
+      "locationNote": "Participating Cracker Barrel locations. No Cracker Barrel is listed inside ZIP 77386; nearer Houston-area stores include Kingwood (24400 Eastex Fwy), Conroe, and Houston Airtex. Confirm this store participates before driving.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "restaurant",
+        "pancakes",
+        "National Pancake Day",
+        "one day",
+        "same-day"
+      ],
+      "source": {
+        "label": "Cracker Barrel official promotions page",
+        "url": "https://www.crackerbarrel.com/promotions",
+        "checkedOn": "2026-09-26"
+      },
+      "actionLabel": "Dine in today for $5 AYCE pancakes",
+      "tier": "A",
+      "stackNote": "One-day restaurant promotion; do not assume stacking with other coupons or Rewards offers without restaurant confirmation.",
+      "finePrint": "Official Cracker Barrel promotions page (checked 2026-09-26): Celebrate National Pancake Day on Saturday, September 26 with unlimited plates of World's Best Pancakes for $5. Asterisked terms on the page were not fully readable after a bot challenge on the terms page; confirm dine-in rules, refill policy, and participating status locally. No dollar savings estimate because a local regular pancake price was not verified.",
+      "expirationLabel": "TODAY only Saturday September 26",
+      "availability": "available",
+      "dealType": "promotion-event",
+      "freshness": "new",
+      "discoveredOn": "2026-09-26",
+      "preferenceSignals": [
+        "restaurant",
+        "same-day",
+        "time-sensitive",
+        "one-day"
+      ],
+      "distanceBasis": "unknown",
+      "score": 50,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.2,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 10,
+          "weight": 10,
+          "detail": "Ends in 1 day; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$5.00 required per $0.00 saved"
         },
         {
           "label": "Stackability",
@@ -3768,7 +3550,7 @@
           "label": "Evidence",
           "points": 2.6999999999999997,
           "weight": 18,
-          "detail": "Official source verified; checked 32 days ago"
+          "detail": "Official source verified; checked 33 days ago"
         },
         {
           "label": "Dollar value",
@@ -3823,7 +3605,7 @@
     {
       "id": "shell-race-day-22-cents-2026",
       "merchant": "Shell Fuel Rewards",
-      "title": "22¢ off per gallon on eligible race days",
+      "title": "22Â¢ off per gallon on eligible race days",
       "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
       "category": "fuel",
       "estimatedSavings": 3.3,
@@ -3861,7 +3643,7 @@
       "distanceMiles": 2.87,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Shell official Rayford Road station page",
       "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
       "score": 47,
@@ -3871,7 +3653,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -3895,7 +3677,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -3924,10 +3706,113 @@
       ]
     },
     {
+      "id": "taco-bell-rewards-program",
+      "merchant": "Taco Bell",
+      "title": "Free signup reward for new Rewards members",
+      "summary": "New Taco Bell Rewards members can choose a free welcome reward in the app after joining.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "locationNote": "App-only welcome reward at participating U.S. Taco Bell locations; confirm the reward is loaded before visiting.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "free food",
+        "welcome reward",
+        "new member",
+        "app",
+        "rewards program"
+      ],
+      "source": {
+        "label": "Taco Bell official offers and deals",
+        "url": "https://www.tacobell.com/offers-and-deals",
+        "checkedOn": "2026-08-25"
+      },
+      "actionLabel": "Check welcome reward",
+      "tier": "A",
+      "stackNote": "Use the welcome reward by itself; the official terms say it cannot be combined with another offer.",
+      "finePrint": "Free signup reward is valid for 14 days after issuance, once per registered user, through the Taco Bell mobile app for in-store or drive-thru pickup at participating U.S. locations. Web pay-ahead and delivery orders are excluded. No dollar value is estimated because the selected reward and local menu price were not verified.",
+      "expirationLabel": "Valid 14 days after issuance",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-22",
+      "preferenceSignals": [
+        "free-food",
+        "new-member",
+        "app-specific"
+      ],
+      "distanceMiles": 2.8,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 32,
+      "distanceSourceLabel": "Taco Bell official Rayford Road location page",
+      "distanceSourceUrl": "https://locations.tacobell.com/tx/spring/2681-rayford-rd.html",
+      "score": 46,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 2.6999999999999997,
+          "weight": 18,
+          "detail": "Official source verified; checked 31 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~2.8 miles to Taco Bell Rayford Road; location checked 32 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "wendys-199-ten-piece-nuggets-2026",
       "merchant": "Wendy's",
       "title": "$1.99 10-piece nuggets with any purchase",
-      "summary": "Wendy's Rewards members can get 10-piece Classic or Spicy Nuggets for $1.99 with any purchase via a daily-refreshing digital app offer through September 27.",
+      "summary": "Wendy's Rewards members can still get 10-piece Classic or Spicy Nuggets for $1.99 with any purchase via a daily-refreshing digital app offer through September 27 (ends tomorrow).",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 1.99,
@@ -3945,14 +3830,14 @@
       "source": {
         "label": "Wendy's official offers page + PR Newswire SOURCE The Wendy's Company",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-09-25"
+        "checkedOn": "2026-09-26"
       },
       "actionLabel": "Claim in Wendy's app",
       "tier": "A",
       "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
       "stackGroup": "wendys-app-order",
       "finePrint": "Official window is August 24 through September 27. Requires the Wendy's app, account registration, and any other purchase. Participating U.S. restaurants only. No dollar value is estimated because the local regular nugget price was not verified.",
-      "expirationLabel": "Through September 27 (app digital offer; ends in 2 days)",
+      "expirationLabel": "Through September 27 (ends tomorrow)",
       "availability": "available",
       "dealType": "promotion-event",
       "freshness": "current",
@@ -3965,7 +3850,7 @@
       "distanceMiles": 4.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Wendy's official restaurant locator",
       "distanceSourceUrl": "https://order.wendys.com/us/en/select-restaurant?location=77386",
       "score": 45,
@@ -3999,13 +3884,13 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~4.6 miles to Wendy's Sawdust Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 9.1,
           "weight": 10,
-          "detail": "Ends in 3 days; current"
+          "detail": "Ends in 2 days; current"
         },
         {
           "label": "Effort",
@@ -4070,7 +3955,7 @@
       "distanceMiles": 2.8,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Business-confirmed McDonald's Rayford Road profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/McDonald's/@30.1210831,-95.398407,17z/data=!3m1!4b1!4m6!3m5!1s0x864735f4655c8169:0xe8aab7b203ff570d!8m2!3d30.1210831!4d-95.398407!16s%2Fg%2F1td00ws2",
       "score": 43,
@@ -4080,7 +3965,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 0 days ago"
+          "detail": "Official source verified; checked 1 day ago"
         },
         {
           "label": "Dollar value",
@@ -4104,13 +3989,13 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~2.8 miles to McDonald's Rayford Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 6.9,
           "weight": 10,
-          "detail": "Ends in 10 days; newly found"
+          "detail": "Ends in 9 days; newly found"
         },
         {
           "label": "Effort",
@@ -4172,7 +4057,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-09-01",
-      "distanceEvidenceAgeDays": 23,
+      "distanceEvidenceAgeDays": 24,
       "distanceSourceLabel": "Dunkin official newsroom",
       "distanceSourceUrl": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
       "score": 39,
@@ -4182,7 +4067,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 23 days ago"
+          "detail": "Official source verified; checked 24 days ago"
         },
         {
           "label": "Dollar value",
@@ -4279,7 +4164,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -4374,7 +4259,7 @@
       "distanceMiles": 2.6,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-16",
-      "distanceEvidenceAgeDays": 39,
+      "distanceEvidenceAgeDays": 40,
       "distanceSourceLabel": "Costa Oil Rayford specials",
       "distanceSourceUrl": "https://spring-rayford.costaoils.com/specials",
       "score": 35,
@@ -4384,7 +4269,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -4408,7 +4293,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 39 days ago; offer participation unconfirmed"
+          "detail": "~2.6 miles to Costa Oil Rayford Road; location checked 40 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4476,7 +4361,7 @@
       "distanceMiles": 3.5,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Whataburger official Rayford Road location page",
       "distanceSourceUrl": "https://locations.whataburger.com/tx/spring/3447-rayford-rd.html",
       "score": 34,
@@ -4486,7 +4371,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 16 days ago"
+          "detail": "Official source verified; checked 17 days ago"
         },
         {
           "label": "Dollar value",
@@ -4510,7 +4395,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~3.5 miles to Whataburger Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~3.5 miles to Whataburger Rayford Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4579,7 +4464,7 @@
       "distanceMiles": 3.35,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 32,
@@ -4589,7 +4474,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -4613,7 +4498,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4681,7 +4566,7 @@
       "distanceMiles": 3.35,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
       "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
       "score": 32,
@@ -4691,7 +4576,7 @@
           "label": "Evidence",
           "points": 7.199999999999999,
           "weight": 18,
-          "detail": "Official source verified; checked 15 days ago"
+          "detail": "Official source verified; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -4715,7 +4600,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -4791,7 +4676,7 @@
       "distanceMiles": 3.9,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
       "score": 58,
@@ -4825,13 +4710,13 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 5 days; newly found"
+          "detail": "Ends in 4 days; newly found"
         },
         {
           "label": "Effort",
@@ -4896,7 +4781,7 @@
       ],
       "distanceBasis": "offer",
       "distanceCheckedOn": "2026-08-27",
-      "distanceEvidenceAgeDays": 28,
+      "distanceEvidenceAgeDays": 29,
       "distanceSourceLabel": "Dunkin official newsroom",
       "distanceSourceUrl": "https://news.dunkindonuts.com/blog/dunkinR-is-celebrating-pumpkin-season-with-1-million-free-espresso-beverages",
       "score": 54,
@@ -4906,7 +4791,7 @@
           "label": "Evidence",
           "points": 0.72,
           "weight": 18,
-          "detail": "Unverified lead; checked 28 days ago"
+          "detail": "Unverified lead; checked 29 days ago"
         },
         {
           "label": "Dollar value",
@@ -5002,7 +4887,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Official ongoing program; checked 44 days ago"
+          "detail": "Official ongoing program; checked 45 days ago"
         },
         {
           "label": "Dollar value",
@@ -5096,17 +4981,17 @@
       "distanceMiles": 3.9,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
       "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
-      "score": 44,
+      "score": 43,
       "scoreLabel": "Low priority",
       "scoreBreakdown": [
         {
           "label": "Evidence",
-          "points": 1.26,
+          "points": 0.72,
           "weight": 18,
-          "detail": "Unverified lead; checked 14 days ago"
+          "detail": "Unverified lead; checked 15 days ago"
         },
         {
           "label": "Dollar value",
@@ -5130,13 +5015,13 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
           "points": 8.5,
           "weight": 10,
-          "detail": "Ends in 5 days; newly found"
+          "detail": "Ends in 4 days; newly found"
         },
         {
           "label": "Effort",
@@ -5161,7 +5046,7 @@
     {
       "id": "shell-app-first-pay-save-25-cents-2026",
       "merchant": "Shell Fuel Rewards",
-      "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
+      "title": "Earn 25Â¢/gal after the first 10-gallon Pay & Save fill",
       "summary": "The Shell App first-time offer awards 25 cents per gallon in savings after an initial Pay & Save transaction of at least 10 gallons.",
       "category": "fuel",
       "estimatedSavings": 3.75,
@@ -5199,7 +5084,7 @@
       "distanceMiles": 2.87,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Shell official Rayford Road station page",
       "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
       "score": 39,
@@ -5209,7 +5094,7 @@
           "label": "Evidence",
           "points": 0.72,
           "weight": 18,
-          "detail": "Unverified lead; checked 15 days ago"
+          "detail": "Unverified lead; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -5233,7 +5118,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -5264,7 +5149,7 @@
     {
       "id": "shell-app-s-pay-discount-2026",
       "merchant": "Shell Fuel Rewards",
-      "title": "10¢/gal with Shell S Pay; 15¢ for Platinum members",
+      "title": "10Â¢/gal with Shell S Pay; 15Â¢ for Platinum members",
       "summary": "Shell App users with a linked Fuel Rewards account can save 10 cents per gallon at Silver or Gold status, or 15 cents per gallon at Platinum status, when paying with Shell S Pay.",
       "category": "fuel",
       "estimatedSavings": 1.5,
@@ -5302,7 +5187,7 @@
       "distanceMiles": 2.87,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 31,
+      "distanceEvidenceAgeDays": 32,
       "distanceSourceLabel": "Shell official Rayford Road station page",
       "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
       "score": 35,
@@ -5312,7 +5197,7 @@
           "label": "Evidence",
           "points": 0.72,
           "weight": 18,
-          "detail": "Unverified lead; checked 15 days ago"
+          "detail": "Unverified lead; checked 16 days ago"
         },
         {
           "label": "Dollar value",
@@ -5336,7 +5221,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 31 days ago; offer participation unconfirmed"
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 32 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
@@ -5395,7 +5280,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Official ongoing program; checked 63 days ago"
+          "detail": "Official ongoing program; checked 64 days ago"
         },
         {
           "label": "Dollar value",
@@ -5478,7 +5363,7 @@
           "label": "Evidence",
           "points": 1.26,
           "weight": 18,
-          "detail": "Official ongoing program; checked 63 days ago"
+          "detail": "Official ongoing program; checked 64 days ago"
         },
         {
           "label": "Dollar value",
@@ -5567,7 +5452,7 @@
       "distanceMiles": 2.2,
       "distanceBasis": "merchant-location",
       "distanceCheckedOn": "2026-08-11",
-      "distanceEvidenceAgeDays": 44,
+      "distanceEvidenceAgeDays": 45,
       "distanceSourceLabel": "JoVI Coffee official site",
       "distanceSourceUrl": "https://joviroasters.com/",
       "score": 33,
@@ -5577,7 +5462,7 @@
           "label": "Evidence",
           "points": 0.72,
           "weight": 18,
-          "detail": "Unverified lead; checked 26 days ago"
+          "detail": "Unverified lead; checked 27 days ago"
         },
         {
           "label": "Dollar value",
@@ -5601,7 +5486,7 @@
           "label": "Local relevance",
           "points": 0,
           "weight": 8,
-          "detail": "~2.2 miles to JoVi Coffee Rayford Road; location checked 44 days ago; offer participation unconfirmed"
+          "detail": "~2.2 miles to JoVi Coffee Rayford Road; location checked 45 days ago; offer participation unconfirmed"
         },
         {
           "label": "Timing",
