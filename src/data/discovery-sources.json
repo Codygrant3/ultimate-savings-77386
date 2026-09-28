@@ -48,6 +48,22 @@
     "keywords": ["reward", "free drink", "smiles", "birthday"]
   },
   {
+    "id": "scooters-news",
+    "name": "Scooter's Coffee official news",
+    "url": "https://www.scooterscoffee.com/blog",
+    "category": "coffee",
+    "priority": 10,
+    "keywords": ["free", "offer", "National Coffee Day", "mobile app"]
+  },
+  {
+    "id": "smoothie-king-news",
+    "name": "Smoothie King official news",
+    "url": "https://www.smoothieking.com/news/",
+    "category": "coffee",
+    "priority": 10,
+    "keywords": ["free", "Healthy Rewards", "offer", "National Coffee Day"]
+  },
+  {
     "id": "jovi-coffee",
     "name": "JoVi Coffee",
     "url": "https://joviroasters.com/",

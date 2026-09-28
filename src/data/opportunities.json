@@ -2057,7 +2057,7 @@
     "id": "krispy-kreme-national-coffee-day-free-coffee-2026",
     "merchant": "Krispy Kreme",
     "title": "Free small or medium coffee with any purchase on Sept 29",
-    "summary": "Tomorrow Tuesday September 29 National Coffee Day: one free small or medium hot or iced coffee with any purchase in shop at a participating dedicated U.S. Krispy Kreme. Official promo page confirms the Sept 26-29 coffee-dozen window; free-coffee terms also stated in the September 23 Krispy Kreme press redistribution.",
+    "summary": "Tomorrow Tuesday September 29 National Coffee Day: one free small or medium hot or iced coffee with any purchase in shop at a participating dedicated U.S. Krispy Kreme. The live official promotion page now states the complete coffee-offer terms directly.",
     "category": "coffee",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2073,7 +2073,7 @@
       "one day"
     ],
     "source": {
-      "label": "Krispy Kreme official National Coffee Day page + Sept 23 press redistribution",
+      "label": "Krispy Kreme official National Coffee Day promotion",
       "url": "https://www.krispykreme.com/promos/national-coffee-day",
       "checkedOn": "2026-09-28"
     },
@@ -2322,5 +2322,97 @@
     ],
     "localRecord": true,
     "distanceMiles": 2.5
+  },
+  {
+    "id": "smoothie-king-national-coffee-day-free-smoothie-2026",
+    "merchant": "Smoothie King",
+    "title": "Free 12 oz coffee protein smoothie Sept 28-29",
+    "summary": "NEW TODAY and tomorrow: Healthy Rewards members can claim one free 12 oz Coffee High Protein Almond Mocha Smoothie at participating Smoothie King locations. An official Smoothie King location is listed at 3535 Rayford Road in ZIP 77386; confirm the reward appears for that store before visiting.",
+    "category": "coffee",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-29",
+    "locationNote": "Smoothie King's official locator lists 3535 Rayford Road, Suite 100, Spring, TX 77386. The national release says participating locations, so this specific store's participation must still be confirmed in Healthy Rewards before a trip.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free drink",
+      "coffee",
+      "smoothie",
+      "Healthy Rewards",
+      "app",
+      "77386",
+      "National Coffee Day"
+    ],
+    "source": {
+      "label": "Smoothie King official National Coffee Day release",
+      "url": "https://www.smoothieking.com/news/smoothie-king-is-starting-national-coffee-day-early-with-free-delicious-protein-packed-coffee-smoothies/",
+      "checkedOn": "2026-09-28"
+    },
+    "actionLabel": "Claim in Healthy Rewards today or tomorrow",
+    "tier": "A",
+    "stackNote": "This is a one-time Healthy Rewards offer. Do not assume it combines with another reward unless checkout expressly allows it.",
+    "stackGroup": "smoothie-king-rewards-offer",
+    "stackStatus": "conditional",
+    "finePrint": "Valid September 28-29, 2026, exclusively for Smoothie King Healthy Rewards members at participating locations nationwide. The official release describes a one-time free 12 oz Coffee High Protein Almond Mocha Smoothie and does not state a purchase requirement. Confirm the reward is loaded for the selected store before visiting. No dollar value is estimated because the regular 77386 menu price was not publicly verified.",
+    "expirationLabel": "Today and tomorrow only (Sept 28-29)",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-28",
+    "preferenceSignals": [
+      "free-food",
+      "coffee",
+      "app-specific",
+      "local-location",
+      "expiring-soon"
+    ]
+  },
+  {
+    "id": "scooters-national-coffee-day-free-brewed-coffee-2026",
+    "merchant": "Scooter's Coffee",
+    "title": "Free medium brewed coffee Sept 27-29",
+    "summary": "FREE TODAY and tomorrow: Scooter's app users can redeem one free medium brewed coffee per day with no additional purchase. Eligible choices are Scooter's Blend, Flavor of the Day, or dark roast.",
+    "category": "coffee",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": true,
+    "expiresOn": "2026-09-29",
+    "locationNote": "Scooter's officially lists a Spring location at 24527 Gosling Road, Spring, TX 77389. Confirm the offer is available for the selected store in the app; the public release does not independently confirm store-level inventory or participation.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "free drink",
+      "coffee",
+      "app",
+      "no purchase",
+      "National Coffee Day",
+      "Spring"
+    ],
+    "source": {
+      "label": "Scooter's Coffee official National Coffee Day announcement",
+      "url": "https://www.scooterscoffee.com/blog/post/natl-coffee-day-2026",
+      "checkedOn": "2026-09-28"
+    },
+    "actionLabel": "Redeem in app today and tomorrow",
+    "tier": "A",
+    "stackNote": "Redeem the brewed-coffee offer in the Scooter's app. Third-party delivery is excluded; do not assume another app reward combines.",
+    "stackGroup": "scooters-app-reward",
+    "stackStatus": "conditional",
+    "finePrint": "Valid September 27-29, 2026, through the Scooter's Coffee mobile app. Limit one free medium brewed coffee per guest per day; no additional purchase is required. Choose Scooter's Blend, Flavor of the Day, or dark roast. Not redeemable through third-party delivery. Confirm offer availability and product supply at the selected Spring-area location. No dollar value is estimated because the local menu price was not verified.",
+    "expirationLabel": "Ends Tuesday September 29",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-28",
+    "preferenceSignals": [
+      "free-food",
+      "coffee",
+      "app-specific",
+      "no-purchase",
+      "local-relevance",
+      "expiring-soon"
+    ]
   }
 ]
