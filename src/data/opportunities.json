@@ -945,52 +945,6 @@
     ]
   },
   {
-    "id": "dunkin-mobile-mondays-2026-09",
-    "merchant": "Dunkin",
-    "title": "100 bonus points on Mobile Mondays",
-    "summary": "LAST DAY Monday September 28: activate in the Dunkin app for 100 bonus points on an eligible order-ahead purchase. Official fall Rewards calendar runs Mobile Mondays September 7 through September 28.",
-    "category": "coffee",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-09-28",
-    "availableDaysOfWeek": [
-      1
-    ],
-    "locationNote": "Dunkin has a nearby shop at 2222 Rayford Road, Spring, TX 77386, but participating-store and app-activation status are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "coffee",
-      "rewards",
-      "bonus points",
-      "app",
-      "Monday"
-    ],
-    "source": {
-      "label": "Dunkin official newsroom fall Rewards calendar",
-      "url": "https://news.dunkindonuts.com/news/dunkinR-and-alix-earle-unveil-alixs-earle-y-riser-meal-headlining-a-new-fall-menu-of-pumpkin-favorites-and-tiramisu-sips",
-      "checkedOn": "2026-09-28"
-    },
-    "actionLabel": "Activate Mobile Monday TODAY (last day)",
-    "tier": "B",
-    "distanceMiles": 2.8,
-    "stackNote": "Activate the Mobile Monday offer before ordering; do not assume another coupon combines unless checkout allows it.",
-    "stackGroup": "dunkin-rewards-offer",
-    "finePrint": "Valid each Monday from September 7 through September 28, limit 100 bonus points per member per Monday. The offer must be activated in the mobile app and earned on an eligible order-ahead purchase at a participating Dunkin store. No dollar value is estimated because the redemption value and local order price were not verified.",
-    "expirationLabel": "LAST DAY today Monday September 28",
-    "availability": "available",
-    "dealType": "loyalty-reward",
-    "freshness": "current",
-    "discoveredOn": "2026-09-02",
-    "preferenceSignals": [
-      "preferred-coffee",
-      "app-specific",
-      "time-sensitive",
-      "expiring-today"
-    ]
-  },
-  {
     "id": "dunkin-easychoice-free-espresso-2026-08",
     "merchant": "Dunkin",
     "title": "Free espresso beverage with code EASYCHOICE",
@@ -1226,7 +1180,7 @@
     "id": "costa-oil-rayford-new-customer-twenty-off-2026",
     "merchant": "Costa Oil Rayford Road",
     "title": "$20 off any full-synthetic oil change for new customers",
-    "summary": "New customers can save $20 on any full-synthetic oil change at the Rayford Road Costa Oil location with the official location coupon through September 30, 2026.",
+    "summary": "New customers can save $20 on any full-synthetic oil change at the Rayford Road Costa Oil location with the official location coupon through September 30, 2026. LAST DAY tomorrow.",
     "category": "auto",
     "estimatedSavings": 20,
     "minimumSpend": 0,
@@ -1245,7 +1199,7 @@
     "source": {
       "label": "Costa Oil Rayford Road official specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
     "actionLabel": "Show the official coupon",
     "tier": "A",
@@ -1253,7 +1207,7 @@
     "stackGroup": "costa-oil-rayford-service-offers",
     "stackStatus": "exclusive",
     "finePrint": "New customers only. Valid for an in-store full-synthetic oil change at the Rayford Road location through September 30, 2026. The official coupon says it cannot be combined with other offers or discounts; present the coupon before service and confirm eligibility before authorizing work.",
-    "expirationLabel": "Through September 30, 2026",
+    "expirationLabel": "Ends tomorrow September 30",
     "availability": "available",
     "dealType": "vehicle-maintenance",
     "freshness": "current",
@@ -1308,7 +1262,7 @@
     "id": "amc-half-price-tuesday-wednesday-2026",
     "merchant": "AMC Theatres",
     "title": "50% off tickets on Tuesdays and Wednesdays",
-    "summary": "AMC Stubs members receive half off the adult evening base ticket price and can save 50% on an eligible small combo.",
+    "summary": "TODAY Tuesday: AMC Stubs members receive half off the adult evening base ticket price and can save 50% on an eligible small combo. Official offers page was HTTP 403 on this scan; prior verified terms retained with freshness caution.",
     "category": "movies",
     "estimatedSavings": 4.44,
     "minimumSpend": 8.88,
@@ -1336,7 +1290,7 @@
     "tier": "A",
     "stackNote": "The $4.44 estimate counts only the minimum published small-combo savings; the separate ticket discount can add value.",
     "finePrint": "AMC Stubs membership is required, including the free Insider tier. The ticket discount applies to the adult evening base price for Tuesday and Wednesday showtimes at participating locations, limit 10 tickets per show date. The in-theatre small combo normally costs $8.88 to $15.58 and is also 50% off; items must be purchased together. Premium formats, special events, taxes, and convenience fees are excluded or can add cost. Confirmed on the official AMC page on 2026-09-01.",
-    "expirationLabel": "Tuesdays + Wednesdays",
+    "expirationLabel": "Tuesdays and Wednesdays while listed",
     "availability": "program",
     "dealType": "movie-discount",
     "freshness": "current",
@@ -1588,13 +1542,13 @@
     "id": "wendys-199-ten-piece-nuggets-2026",
     "merchant": "Wendy's",
     "title": "$1.99 10-piece nuggets with any purchase",
-    "summary": "Official Wendy's offers page still lists 10-piece Classic or Spicy Nuggets for $1.99 with any purchase as a daily digital Rewards offer. Prior PR Newswire window was August 24 through September 27; confirm the offer still appears in the app at the selected Spring-area restaurant.",
+    "summary": "REVIEW: Official Wendy's offers highlight cards checked September 29 no longer list the $1.99 10-piece Classic or Spicy Nuggets with any purchase offer that appeared earlier. The page meta description still mentions $1.99 10PC Nuggets, and the prior PR Newswire window ended September 27. Confirm in the Wendy's app at the selected Spring-area restaurant before relying on it.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 1.99,
     "isFree": false,
     "locationNote": "App-only offer at participating U.S. Wendy's; availability at the selected Spring-area restaurant must be confirmed in the app.",
-    "verification": "verified",
+    "verification": "needs-check",
     "friction": "low",
     "tags": [
       "restaurant",
@@ -1603,19 +1557,19 @@
       "daily digital offer"
     ],
     "source": {
-      "label": "Wendy's official offers page (daily $1.99 10 PC Nuggs)",
+      "label": "Wendy's official offers page (meta vs highlight-card review)",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Claim in Wendy's app",
+    "actionLabel": "Confirm in Wendy's app",
     "tier": "A",
     "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
     "stackGroup": "wendys-app-order",
-    "finePrint": "As of September 28, 2026 the official Wendy's offers page and FAQ present $1.99 10 PC Nuggs with any purchase as a daily digital Rewards offer with no listed end date. A prior company press window ran August 24 through September 27. Requires the Wendy's app/account and any other purchase. Participating U.S. restaurants only. No dollar value is estimated because the local regular nugget price was not verified.",
-    "expirationLabel": "No end date on current offers page; confirm in app",
+    "finePrint": "As of September 29, 2026 the official Wendy's offers page highlight cards list free small chili w/$5, Fryday free fry w/$5, Wednesday free 6pc nuggs w/$5, $1 off crispy chicken/4pc nuggs w/$5, $3 off $20+, and 99-cent any-size soft drink — but not $1.99 10 PC Nuggs. Page meta still references $1.99 10PC Nuggets. Prior company press window ran August 24 through September 27. App-only confirmation required. No dollar value is estimated.",
+    "expirationLabel": "Confirm in app; public cards no longer list",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "improved",
+    "freshness": "monitoring",
     "discoveredOn": "2026-08-26",
     "preferenceSignals": [
       "restaurant",
@@ -1729,10 +1683,10 @@
     "tier": "A",
     "stackNote": "Use only if two battery packs are needed and the coupon appears for Spring Creek Market; compare unit prices with larger packs before checkout.",
     "finePrint": "The official public page showed AA and AAA eight-packs at $9.73 each and an unlimited-use $6-off-two coupon through September 29. The $19.46 basket and 30.8% rate use Victoria-store prices. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
-    "expirationLabel": "Ends September 29",
+    "expirationLabel": "LAST DAY today if still loaded (needs-check)",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "monitoring",
     "discoveredOn": "2026-09-10",
     "preferenceSignals": [
       "household-staple",
@@ -1793,7 +1747,7 @@
     "id": "applebees-nfl-season-wing-ticket-2026",
     "merchant": "Applebee's",
     "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
-    "summary": "TODAY Monday: Club Applebee's members signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online order. Codes redeem Sunday through Thursday of the same week through January 10, 2027.",
+    "summary": "TODAY Tuesday: Club Applebee's members signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online order. Codes redeem Sunday through Thursday of the same week through January 10, 2027.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 15,
@@ -1820,9 +1774,9 @@
     "source": {
       "label": "Applebee's official NFL Season Wing Ticket news",
       "url": "https://cm4.applebees.com/en/news/2026/applebees-introduces-nfl-season-wing-ticket-free-boneless-wings-weekly",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Redeem weekly wing code Sun-Thu",
+    "actionLabel": "Redeem weekly code Tue-Thu",
     "tier": "A",
     "stackNote": "Weekly code is its own To Go offer; not valid on third-party delivery sites.",
     "stackGroup": "applebees-to-go-offer",
@@ -1912,10 +1866,10 @@
     "stackNote": "The Dr Pepper page showed a separate price cut; confirm the clipped coupon still combines with that price after selecting Spring Creek Market.",
     "stackStatus": "conditional",
     "finePrint": "Official coupon terms: buy one qualifying Dr Pepper, Diet Dr Pepper, Dr Pepper Zero Sugar, Dr Pepper & Cream Soda, or Dr Pepper Strawberries & Cream six-pack of 0.5-liter bottles and get one 7-ounce Chick-fil-A Original Waffle Potato Chips bag free. Expires September 29, unlimited use, while supplies last, and may not be redeemable at all H-E-B locations. The $4.78 value and $3.74 spend use the public page's displayed prices; this scan did not sign in, clip the coupon, or confirm Spring Creek pricing.",
-    "expirationLabel": "Ends September 29; confirm Spring Creek",
+    "expirationLabel": "LAST DAY today if still loaded (needs-check)",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "monitoring",
     "discoveredOn": "2026-09-23",
     "preferenceSignals": [
       "grocery",
@@ -1955,10 +1909,10 @@
     "stackNote": "Clip the coupon and meet the $12 qualifying-meal threshold; do not count other item-level offers unless checkout confirms them.",
     "stackGroup": "heb-meal-simple-salad-coupon-2026-09",
     "finePrint": "Digital coupon and qualifying H-E-B account are required. The public detail page showed a $3.48 salad value and a September 29 expiration, but it did not confirm availability at a 77386 store. The value is excluded from strict verified totals until the coupon is visible for the selected local store.",
-    "expirationLabel": "Ends September 29",
+    "expirationLabel": "LAST DAY today if still loaded (needs-check)",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "monitoring",
     "discoveredOn": "2026-09-26",
     "preferenceSignals": [
       "free-food",
@@ -1999,10 +1953,10 @@
     "stackNote": "Clip the coupon and buy the exact qualifying 10-count sausage package; do not assume adjacent manufacturer or basket coupons stack.",
     "stackGroup": "heb-sausage-soda-coupon-2026-09",
     "finePrint": "Digital coupon and qualifying H-E-B account are required. The public detail page showed a $13.99 qualifying sausage price, a $5.00 soda value, and a September 29 expiration, but it did not confirm availability at a 77386 store. The value is excluded from strict verified totals until the coupon is visible for the selected local store.",
-    "expirationLabel": "Ends September 29",
+    "expirationLabel": "LAST DAY today if still loaded (needs-check)",
     "availability": "available",
     "dealType": "digital-coupon",
-    "freshness": "new",
+    "freshness": "monitoring",
     "discoveredOn": "2026-09-26",
     "preferenceSignals": [
       "free-food",
@@ -2015,7 +1969,7 @@
     "id": "krispy-kreme-coffee-dozen-five-dollars-2026-09",
     "merchant": "Krispy Kreme",
     "title": "$5 coffee-flavored or Original Glazed dozen with dozen purchase",
-    "summary": "Still LIVE through Tuesday September 29: buy any regular-priced dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5 at participating shops (promo code COFFEE for app pickup/delivery; limits apply).",
+    "summary": "LAST DAY Tuesday September 29: buy any regular-priced dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5 at participating shops (promo code COFFEE for app pickup/delivery; limits apply).",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2034,14 +1988,14 @@
     "source": {
       "label": "Krispy Kreme official National Coffee Day promotion",
       "url": "https://www.krispykreme.com/promos/national-coffee-day",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Buy dozen for $5 second dozen thru 9/29",
+    "actionLabel": "Use today before it ends",
     "tier": "B",
     "stackNote": "Requires a regular-priced dozen or 16-count Minis. Limit two redemptions in shop or drive-thru and one online with code COFFEE; not valid with other orders or coupons.",
     "stackStatus": "exclusive",
     "finePrint": "Offer runs September 26-29, 2026 at participating dedicated U.S. Krispy Kreme shops while supplies last. Buy any dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5. Online pickup or delivery requires promo code COFFEE. Not valid at grocery or convenience locations, in Puerto Rico, Canada, or outside dedicated retail shops. No savings estimate is listed because a local participating shop and its regular-dozen price were not verified.",
-    "expirationLabel": "Through Tuesday September 29",
+    "expirationLabel": "Ends today September 29",
     "availability": "available",
     "dealType": "promotion-event",
     "freshness": "current",
@@ -2057,7 +2011,7 @@
     "id": "krispy-kreme-national-coffee-day-free-coffee-2026",
     "merchant": "Krispy Kreme",
     "title": "Free small or medium coffee with any purchase on Sept 29",
-    "summary": "Tomorrow Tuesday September 29 National Coffee Day: one free small or medium hot or iced coffee with any purchase in shop at a participating dedicated U.S. Krispy Kreme. The live official promotion page now states the complete coffee-offer terms directly.",
+    "summary": "TODAY Tuesday September 29 National Coffee Day: one free small or medium hot or iced coffee with any purchase in shop at a participating dedicated U.S. Krispy Kreme. Confirmed on the official offers page and National Coffee Day promotion.",
     "category": "coffee",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2073,32 +2027,32 @@
       "one day"
     ],
     "source": {
-      "label": "Krispy Kreme official National Coffee Day promotion",
-      "url": "https://www.krispykreme.com/promos/national-coffee-day",
-      "checkedOn": "2026-09-28"
+      "label": "Krispy Kreme official offers + National Coffee Day promotion",
+      "url": "https://www.krispykreme.com/offers",
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Redeem in shop Sept 29",
+    "actionLabel": "Redeem in shop today",
     "tier": "A",
     "stackNote": "The official promotion labels the coffee offer stackable. It is separate from the $5 second-dozen offer, but both still require a participating dedicated shop and product availability.",
     "stackStatus": "compatible",
     "finePrint": "Valid only September 29, 2026 at participating U.S. Krispy Kreme shops. Limit one small or medium hot or iced coffee per guest with any purchase, in shop only. Specialty and frozen beverages are excluded. Not valid in Puerto Rico or at grocery or convenience locations. No dollar estimate because no participating local shop price was verified.",
-    "expirationLabel": "September 29 only",
+    "expirationLabel": "Today only September 29",
     "availability": "available",
     "dealType": "free-food",
     "freshness": "current",
     "discoveredOn": "2026-09-23",
     "preferenceSignals": [
-      "preferred-coffee",
-      "free-drink",
-      "time-sensitive",
-      "upcoming"
+      "free-food",
+      "coffee",
+      "same-day",
+      "expiring-soon"
     ]
   },
   {
     "id": "dunkin-national-coffee-day-free-medium-2026",
     "merchant": "Dunkin",
     "title": "Free medium coffee with any purchase on Sept 29",
-    "summary": "Tomorrow Tuesday September 29: Dunkin Rewards members can get one free medium hot or iced coffee with any purchase through the Dunkin app on National Coffee Day.",
+    "summary": "TODAY Tuesday September 29: Dunkin Rewards members can get one free medium hot or iced coffee with any purchase through the Dunkin app on National Coffee Day.",
     "category": "coffee",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2117,31 +2071,31 @@
     "source": {
       "label": "Dunkin official L.L.Bean Bootmobile / National Coffee Day announcement",
       "url": "https://news.dunkindonuts.com/blog/dunkin-llbean-bootmobile-tour-september-2026",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Activate in app Sept 29",
+    "actionLabel": "Redeem in Dunkin app today",
     "tier": "A",
     "stackNote": "Single-use Rewards offer; the official terms say it cannot combine with another offer, promotion, or coupon.",
     "stackStatus": "exclusive",
     "finePrint": "Valid only September 29, 2026, for Dunkin Rewards members at participating U.S. stores. Redeem through the Dunkin app with any purchase. Limit one per member. Cold Brew and hot espresso beverages are excluded. The offer cannot be combined with another offer, promotion, or coupon. No dollar estimate is listed because the local participating-store price was not verified.",
-    "expirationLabel": "September 29 only",
+    "expirationLabel": "Today only September 29",
     "availability": "available",
     "dealType": "free-food",
     "freshness": "current",
     "discoveredOn": "2026-09-24",
     "preferenceSignals": [
-      "preferred-coffee",
-      "free-drink",
+      "free-food",
+      "coffee",
       "app-specific",
-      "time-sensitive",
-      "upcoming"
+      "same-day",
+      "expiring-soon"
     ]
   },
   {
     "id": "nacho-padres-keep-it-loco-thursdays-2026",
     "merchant": "Nacho Padres",
     "title": "Keep IT Loco Thursdays: half off large fajitas",
-    "summary": "Local Spring cantina lists Keep IT Loco Thursdays as half off large fajitas all day. Not redeemable today (Monday); next Thursday is October 1.",
+    "summary": "Local Spring cantina lists Keep IT Loco Thursdays as half off large fajitas all day. Not redeemable today (Tuesday); next Thursday is October 1.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2162,7 +2116,7 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
     "actionLabel": "Plan for next Thursday",
     "tier": "A",
@@ -2185,7 +2139,7 @@
     "id": "nacho-padres-happy-hour-margaritas-2026",
     "merchant": "Nacho Padres",
     "title": "Happy Hour $5.99 house margaritas Mon-Fri 3-6 p.m.",
-    "summary": "TODAY Monday: Official site lists Happy Hour Monday-Friday 3-6 p.m. with $5.99 house margaritas (frozen or rocks), plus specialty margarita and bite pricing on the FAQ. Local Spring location at 2121 Rayford Rd.",
+    "summary": "TODAY Tuesday: Official site lists Happy Hour Monday-Friday 3-6 p.m. with $5.99 house margaritas (frozen or rocks), plus specialty margarita and bite pricing on the FAQ. Local Spring location at 2121 Rayford Rd. Separate Tuesday Taco Tuesday special is also listed.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2215,9 +2169,9 @@
     "source": {
       "label": "Nacho Padres official website hours and happy hour FAQ",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Happy Hour TODAY 3-6 p.m.",
+    "actionLabel": "Happy Hour 3-6 p.m. today",
     "tier": "B",
     "stackNote": "Local happy hour; no coupon stacking assumed.",
     "finePrint": "Official site states Happy Hour Monday-Friday 3-6 p.m.: $5.99 house margaritas (frozen or rocks), $9.99 specialty margaritas, and $6.99 bites. No published end date; treat as ongoing while listed. No savings estimate because regular margarita price was not verified.",
@@ -2281,7 +2235,7 @@
     "id": "nacho-padres-monday-half-off-margaritas-2026",
     "merchant": "Nacho Padres",
     "title": "Monday half-off margaritas",
-    "summary": "NEW today: Official Nacho Padres daily specials list Monday as Half Off Margaritas for a limited time. Separate from Happy Hour $5.99 house margaritas Mon-Fri 3-6 p.m. Confirm current pricing and which margaritas qualify in-restaurant at the Spring Rayford location.",
+    "summary": "Official Nacho Padres daily specials list Monday as Half Off Margaritas for a limited time. Not redeemable today (Tuesday); next Monday is October 5. Separate from Happy Hour $5.99 house margaritas Mon-Fri 3-6 p.m.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2302,17 +2256,17 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Monday half-off margaritas TODAY",
+    "actionLabel": "Plan for next Monday",
     "tier": "B",
     "stackNote": "Official site lists Monday half-off margaritas separately from Happy Hour; do not assume they stack. Confirm in-restaurant.",
     "stackStatus": "conditional",
     "finePrint": "Official homepage Daily Specials section states Monday: Half Off Margaritas (limited time). No published end date or list of eligible margarita SKUs. Alcohol service requires legal age. No savings estimate because regular margarita prices were not verified.",
-    "expirationLabel": "Mondays while limited-time listing remains",
+    "expirationLabel": "Mondays while listed (next Oct 5)",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-28",
     "preferenceSignals": [
       "restaurant",
@@ -2327,7 +2281,7 @@
     "id": "smoothie-king-national-coffee-day-free-smoothie-2026",
     "merchant": "Smoothie King",
     "title": "Free 12 oz coffee protein smoothie Sept 28-29",
-    "summary": "NEW TODAY and tomorrow: Healthy Rewards members can claim one free 12 oz Coffee High Protein Almond Mocha Smoothie at participating Smoothie King locations. An official Smoothie King location is listed at 3535 Rayford Road in ZIP 77386; confirm the reward appears for that store before visiting.",
+    "summary": "LAST DAY today: Healthy Rewards members can claim one free 12 oz Coffee High Protein Almond Mocha Smoothie at participating Smoothie King locations. An official Smoothie King location is listed at 3535 Rayford Road in ZIP 77386; confirm the reward appears for that store before visiting.",
     "category": "coffee",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2348,32 +2302,33 @@
     "source": {
       "label": "Smoothie King official National Coffee Day release",
       "url": "https://www.smoothieking.com/news/smoothie-king-is-starting-national-coffee-day-early-with-free-delicious-protein-packed-coffee-smoothies/",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Claim in Healthy Rewards today or tomorrow",
+    "actionLabel": "Claim in Healthy Rewards today",
     "tier": "A",
     "stackNote": "This is a one-time Healthy Rewards offer. Do not assume it combines with another reward unless checkout expressly allows it.",
     "stackGroup": "smoothie-king-rewards-offer",
     "stackStatus": "conditional",
     "finePrint": "Valid September 28-29, 2026, exclusively for Smoothie King Healthy Rewards members at participating locations nationwide. The official release describes a one-time free 12 oz Coffee High Protein Almond Mocha Smoothie and does not state a purchase requirement. Confirm the reward is loaded for the selected store before visiting. No dollar value is estimated because the regular 77386 menu price was not publicly verified.",
-    "expirationLabel": "Today and tomorrow only (Sept 28-29)",
+    "expirationLabel": "Ends today September 29",
     "availability": "available",
     "dealType": "free-food",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-28",
     "preferenceSignals": [
       "free-food",
       "coffee",
       "app-specific",
       "local-location",
-      "expiring-soon"
+      "expiring-soon",
+      "same-day"
     ]
   },
   {
     "id": "scooters-national-coffee-day-free-brewed-coffee-2026",
     "merchant": "Scooter's Coffee",
     "title": "Free medium brewed coffee Sept 27-29",
-    "summary": "FREE TODAY and tomorrow: Scooter's app users can redeem one free medium brewed coffee per day with no additional purchase. Eligible choices are Scooter's Blend, Flavor of the Day, or dark roast.",
+    "summary": "LAST DAY today: Scooter's app users can redeem one free medium brewed coffee per day with no additional purchase. Eligible choices are Scooter's Blend, Flavor of the Day, or dark roast. Earliest National Coffee Day customers may also get a Fueled by Scooter's sticker while supplies last.",
     "category": "coffee",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2393,18 +2348,18 @@
     "source": {
       "label": "Scooter's Coffee official National Coffee Day announcement",
       "url": "https://www.scooterscoffee.com/blog/post/natl-coffee-day-2026",
-      "checkedOn": "2026-09-28"
+      "checkedOn": "2026-09-29"
     },
-    "actionLabel": "Redeem in app today and tomorrow",
+    "actionLabel": "Redeem in app today",
     "tier": "A",
     "stackNote": "Redeem the brewed-coffee offer in the Scooter's app. Third-party delivery is excluded; do not assume another app reward combines.",
     "stackGroup": "scooters-app-reward",
     "stackStatus": "conditional",
     "finePrint": "Valid September 27-29, 2026, through the Scooter's Coffee mobile app. Limit one free medium brewed coffee per guest per day; no additional purchase is required. Choose Scooter's Blend, Flavor of the Day, or dark roast. Not redeemable through third-party delivery. Confirm offer availability and product supply at the selected Spring-area location. No dollar value is estimated because the local menu price was not verified.",
-    "expirationLabel": "Ends Tuesday September 29",
+    "expirationLabel": "Ends today September 29",
     "availability": "available",
     "dealType": "free-food",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-28",
     "preferenceSignals": [
       "free-food",
@@ -2412,7 +2367,53 @@
       "app-specific",
       "no-purchase",
       "local-relevance",
-      "expiring-soon"
+      "expiring-soon",
+      "same-day"
     ]
+  },
+  {
+    "id": "nacho-padres-taco-tuesdays-2026",
+    "merchant": "Nacho Padres",
+    "title": "Taco Tuesdays: two tacos for $9.99",
+    "summary": "NEW TODAY Tuesday: Official Nacho Padres daily specials list Taco Tuesdays as two tacos for $9.99, with beans and rice add-on for $1.99. Local Spring location at 2121 Rayford Rd.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 9.99,
+    "isFree": false,
+    "availableDaysOfWeek": [
+      2
+    ],
+    "locationNote": "2121 Rayford Rd, Spring, TX 77386. Confirm taco SKUs included in the $9.99 deal and current menu pricing in-restaurant; savings not estimated without regular taco price verification.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "local",
+      "tacos",
+      "tuesday",
+      "77386",
+      "value meal"
+    ],
+    "source": {
+      "label": "Nacho Padres official website daily specials",
+      "url": "https://nachopadres.com/",
+      "checkedOn": "2026-09-29"
+    },
+    "actionLabel": "Order Taco Tuesday today",
+    "tier": "A",
+    "stackNote": "Local restaurant special; do not assume stacking with Happy Hour or other coupons.",
+    "finePrint": "Official Nacho Padres homepage Daily Specials section lists Tuesday: Two tacos $9.99; add beans and rice for $1.99. No published end date; treat as ongoing while listed. No dollar estimate because regular taco menu prices were not verified on this scan.",
+    "expirationLabel": "Tuesdays while listed",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-29",
+    "preferenceSignals": [
+      "restaurant",
+      "local-high-value",
+      "recurring-weekly",
+      "same-day"
+    ],
+    "localRecord": true,
+    "distanceMiles": 2.5
   }
 ]

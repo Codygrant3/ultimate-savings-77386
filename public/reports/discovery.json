@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-28T15:05:17.880Z",
+  "generatedAt": "2026-09-29T12:30:38.741Z",
   "sourceCount": 38,
   "successfulCount": 30,
   "failedCount": 8,
-  "newOrImprovedCount": 2,
+  "newOrImprovedCount": 1,
   "results": [
     {
       "id": "heb-digital-coupons",
@@ -18,10 +18,10 @@
         "off"
       ],
       "canonicalUrl": "https://www.heb.com/digital-coupon/coupon-selection/all-coupons",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
-      "status": "changed",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
+      "status": "unchanged",
       "matchedKeywords": [],
-      "contentHash": "f25aad2d955aa15212bc545653038b3342c0e4fb415cd34adc3955b5be458f6b",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "parsedOffers": []
     },
     {
@@ -37,7 +37,7 @@
         "circle"
       ],
       "canonicalUrl": "https://www.target.com/c/grocery-deals/weekly-ad/-/N-k4uyqZ55dgn",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "weekly ad",
@@ -60,7 +60,7 @@
         "5x"
       ],
       "canonicalUrl": "https://www.kroger.com/pr/5x-digital-coupon-event",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -78,7 +78,7 @@
         "points"
       ],
       "canonicalUrl": "https://www.dutchbros.com/dutch-101",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free drink",
@@ -121,7 +121,7 @@
         "offer"
       ],
       "canonicalUrl": "https://locations.dunkindonuts.com/en/tx/spring/2222-rayford-rd/356329",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [],
       "contentHash": "18180d80a048bdbbc9869e4a60c30d7eef65aff34e5ac23a5374d62a6916104a",
@@ -141,7 +141,7 @@
         "birthday"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/mobileapp/faqs",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -149,7 +149,7 @@
         "smiles",
         "birthday"
       ],
-      "contentHash": "c922be08b658147b9103ec0be9ca7aa68805bfa1946712bc78bc1a3fcd96eab4",
+      "contentHash": "41b07ca716041af274dd278184bb66cde9e378df5fddefaf49b70ccd76725f01",
       "title": "FAQs",
       "parsedOffers": []
     },
@@ -166,15 +166,15 @@
         "mobile app"
       ],
       "canonicalUrl": "https://www.scooterscoffee.com/blog",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
-      "status": "new",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
+      "status": "unchanged",
       "matchedKeywords": [
         "free",
         "offer",
         "National Coffee Day",
         "mobile app"
       ],
-      "contentHash": "8c16b7995a34be3762c017d3c252d6c2fcbec2895f9ded3c2d1c9cb3bfebadaa",
+      "contentHash": "d7b590b951673b716a426bcf8ecb47c06c0248b1e8292104dbb1e458b5c72651",
       "title": "Brew Love",
       "parsedOffers": []
     },
@@ -191,14 +191,14 @@
         "National Coffee Day"
       ],
       "canonicalUrl": "https://www.smoothieking.com/news",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
-      "status": "new",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
+      "status": "unchanged",
       "matchedKeywords": [
         "free",
         "National Coffee Day"
       ],
-      "contentHash": "9c912055f90f3f993b8b8804cca0ce7ee41801578f471fce8bb9442c1c91e1fe",
-      "title": "In the News - Smoothie King",
+      "contentHash": "71a1e478c4f612ef2f70c3b8c372d52a75ab5745f59ecb9ae4554b39f2ee9939",
+      "title": "News Archives - Smoothie King",
       "parsedOffers": []
     },
     {
@@ -214,7 +214,7 @@
         "opening"
       ],
       "canonicalUrl": "https://joviroasters.com",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "offer",
@@ -238,7 +238,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "reward",
@@ -261,7 +261,7 @@
         "offer"
       ],
       "canonicalUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "per gallon",
@@ -286,7 +286,7 @@
         "exclusive deals"
       ],
       "canonicalUrl": "https://www.7-eleven.com/7rewards",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free snacks",
@@ -310,10 +310,12 @@
         "rewards"
       ],
       "canonicalUrl": "https://corp.7-eleven.com/corp/in-the-news",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
-      "status": "unchanged",
-      "matchedKeywords": [],
-      "contentHash": "9b4e91cc86e27c99f2486c4a7aea4ca9e6ff1ed1d94e5679b586a0493f799bda",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
+      "status": "improved",
+      "matchedKeywords": [
+        "deal"
+      ],
+      "contentHash": "d4c6456a496ce90e83e2c150b201017cd385333cbd679061af5b5cd85ef2cf92",
       "title": "In the news | 7-Eleven",
       "parsedOffers": []
     },
@@ -330,7 +332,7 @@
         "save"
       ],
       "canonicalUrl": "https://www.take5.com/locations/oil-change/texas/spring/30083",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "coupon",
@@ -365,7 +367,7 @@
         "coupon"
       ],
       "canonicalUrl": "https://spring-rayford.costaoils.com/specials",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "oil change",
@@ -421,7 +423,7 @@
         "reward"
       ],
       "canonicalUrl": "https://rainbowcarcare.com/frequent-wash-program",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -491,7 +493,7 @@
         "stubs"
       ],
       "canonicalUrl": "https://www.amctheatres.com/offers",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -509,7 +511,7 @@
         "ticket"
       ],
       "canonicalUrl": "https://www.mlb.com/astros/tickets/promotions/2026",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "promotion",
@@ -532,7 +534,7 @@
         "promotion"
       ],
       "canonicalUrl": "https://www.houstondynamofc.com/tickets",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "ticket",
@@ -555,7 +557,7 @@
         "backpacks"
       ],
       "canonicalUrl": "https://comptroller.texas.gov/taxes/publications/98-490",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "sales tax holiday",
@@ -580,14 +582,14 @@
         "offer"
       ],
       "canonicalUrl": "https://news.dunkindonuts.com",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
         "rewards",
         "offer"
       ],
-      "contentHash": "542bfcd60418bce3decece1e877aec35e5456c0d48875d97ed7ce0a4bb316e13",
+      "contentHash": "7d865ed0658e173b18815717be28f5c9df3b61aef658cb89d8d5b5b60142e7a3",
       "title": "Newsroom | Dunkin&#39;",
       "parsedOffers": []
     },
@@ -604,14 +606,14 @@
         "offer valid"
       ],
       "canonicalUrl": "https://www.krispykreme.com/offers",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
         "rewards",
         "offer valid"
       ],
-      "contentHash": "5be52e63e744bbba33a10ee70ad783fddf497122616c12f4da5688b1365d5230",
+      "contentHash": "19cc2a2bb6284d6bffc22b0c0aa0fa2be7e1716fc4bb1fa4961ea1e73397259b",
       "title": "Current Donut Offers and Deals | Krispy Kreme",
       "parsedOffers": []
     },
@@ -628,31 +630,15 @@
         "rewards"
       ],
       "canonicalUrl": "https://www.wendys.com/offers-coupons",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
         "rewards"
       ],
-      "contentHash": "7ad32304c657f38b075a34e63550c1e72cc89ce4459389ad3c01f724440a3018",
+      "contentHash": "e48a1772fb3be84f57e5f227d7ba1c6fec79203e0c5853dfe474dca11c4d1160",
       "title": "Wendy&#039;s Offers &amp; Coupons: Rewards Deals, Nugget Deals &amp; Discounts",
       "parsedOffers": [
-        {
-          "id": "wendys-offers-get-a-10-pc-nuggs-for-just-1-99-with-purchase-via-digital-offer-that-s-t",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "Get a 10 PC Nuggs for just $1.99 with purchase via digital offer — that's ten crispy reasons to treat yourself any day that ends in “Y.”",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "$1.99"
-        },
-        {
-          "id": "wendys-offers-1-99-10-pc-nuggs-with-purchase-daily-digital-offer",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "$1.99 10 PC Nuggs with purchase, daily digital offer",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "$1.99"
-        },
         {
           "id": "wendys-offers-1-off-premium-combo",
           "sourceId": "wendys-offers",
@@ -711,22 +697,6 @@
           "url": "https://www.wendys.com/offers-coupons",
           "amountText": "Free",
           "minimumSpend": 5
-        },
-        {
-          "id": "wendys-offers-what-is-the-1-99-10pc-nuggets-deal",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "What is the $1.99 10PC Nuggets deal?",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "$1.99"
-        },
-        {
-          "id": "wendys-offers-wendy-s-rewards-members-can-get-a-10-pc-nuggs-for-just-1-99-with-any-pur",
-          "sourceId": "wendys-offers",
-          "merchant": "Wendy's",
-          "title": "Wendy's Rewards members can get a 10 PC Nuggs for just $1.99 with any purchase, no minimum required. This digital offer is available every day, so open the Wendy's app, check out the latest Wendy's app deals, and add the offer to your order when the Nugg craving hits.",
-          "url": "https://www.wendys.com/offers-coupons",
-          "amountText": "$1.99"
         }
       ]
     },
@@ -743,7 +713,7 @@
         "birthday reward"
       ],
       "canonicalUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "welcome reward",
@@ -768,7 +738,7 @@
         "offer"
       ],
       "canonicalUrl": "https://stories.whataburger.com",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -792,7 +762,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://about.starbucks.com/press",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -810,7 +780,7 @@
         "valid"
       ],
       "canonicalUrl": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
@@ -835,7 +805,7 @@
         "offer valid"
       ],
       "canonicalUrl": "https://dennys.com/diner-days",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -853,7 +823,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://www.tacobell.com/newsroom",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "rewards",
@@ -876,7 +846,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://news.dairyqueen.com/announcements",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -894,7 +864,7 @@
         "limited-time"
       ],
       "canonicalUrl": "https://www.mcalistersdeli.com/news",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free"
@@ -916,7 +886,7 @@
         "promotion"
       ],
       "canonicalUrl": "https://topgolf.com/us/houston-north/promo",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "discount",
@@ -940,14 +910,13 @@
         "promo code"
       ],
       "canonicalUrl": "https://newsroom.chipotle.com/press-releases",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "free",
-        "BOGO",
         "offer"
       ],
-      "contentHash": "53b83e42b5e8cff097bfce11da1a4922867ae28e40cea1e3130bd63defd03d0d",
+      "contentHash": "2569485d62aa481b40e2511db957d3291bf06c6d5319e62e5b46ae832c87f597",
       "title": "News Releases",
       "parsedOffers": []
     },
@@ -964,7 +933,7 @@
         "cash payment"
       ],
       "canonicalUrl": "https://www.onlinetvsettlement.com",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -982,7 +951,7 @@
         "settlement class"
       ],
       "canonicalUrl": "https://landsenddatasettlement.com/faq",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "claim",
@@ -1007,7 +976,7 @@
         "authorized by the court"
       ],
       "canonicalUrl": "https://www.airbagcontrolunitsettlement.com",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -1024,7 +993,7 @@
         "official settlement website"
       ],
       "canonicalUrl": "https://www.clarkcountydatasettlement.com",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "unchanged",
       "matchedKeywords": [
         "submit claim",
@@ -1048,7 +1017,7 @@
         "settlement class"
       ],
       "canonicalUrl": "https://www.comcastbreachsettlement.com",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
       "status": "failed",
       "matchedKeywords": [],
       "error": "HTTP 403"
@@ -1056,51 +1025,25 @@
   ],
   "highValueMatches": [
     {
-      "id": "scooters-news",
-      "name": "Scooter's Coffee official news",
-      "url": "https://www.scooterscoffee.com/blog",
-      "category": "coffee",
+      "id": "seven-eleven-newsroom",
+      "name": "7-Eleven official newsroom",
+      "url": "https://corp.7-eleven.com/corp/in-the-news",
+      "category": "convenience",
       "priority": 10,
       "keywords": [
         "free",
-        "offer",
-        "National Coffee Day",
-        "mobile app"
+        "deal",
+        "offer valid",
+        "rewards"
       ],
-      "canonicalUrl": "https://www.scooterscoffee.com/blog",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
-      "status": "new",
+      "canonicalUrl": "https://corp.7-eleven.com/corp/in-the-news",
+      "checkedAt": "2026-09-29T12:30:38.741Z",
+      "status": "improved",
       "matchedKeywords": [
-        "free",
-        "offer",
-        "National Coffee Day",
-        "mobile app"
+        "deal"
       ],
-      "contentHash": "8c16b7995a34be3762c017d3c252d6c2fcbec2895f9ded3c2d1c9cb3bfebadaa",
-      "title": "Brew Love",
-      "parsedOffers": []
-    },
-    {
-      "id": "smoothie-king-news",
-      "name": "Smoothie King official news",
-      "url": "https://www.smoothieking.com/news/",
-      "category": "coffee",
-      "priority": 10,
-      "keywords": [
-        "free",
-        "Healthy Rewards",
-        "offer",
-        "National Coffee Day"
-      ],
-      "canonicalUrl": "https://www.smoothieking.com/news",
-      "checkedAt": "2026-09-28T15:05:17.880Z",
-      "status": "new",
-      "matchedKeywords": [
-        "free",
-        "National Coffee Day"
-      ],
-      "contentHash": "9c912055f90f3f993b8b8804cca0ce7ee41801578f471fce8bb9442c1c91e1fe",
-      "title": "In the News - Smoothie King",
+      "contentHash": "d4c6456a496ce90e83e2c150b201017cd385333cbd679061af5b5cd85ef2cf92",
+      "title": "In the news | 7-Eleven",
       "parsedOffers": []
     }
   ],
@@ -1338,21 +1281,6 @@
       ]
     },
     {
-      "id": "wendys-offers-1-99-10-pc-nuggs-with-purchase-daily-digital-offer",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "$1.99 10 PC Nuggs with purchase, daily digital offer",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$1.99",
-      "candidateScore": 38,
-      "candidateReasons": [
-        "$1.99 value",
-        "No minimum captured",
-        "No expiration captured",
-        "Source priority 10"
-      ]
-    },
-    {
       "id": "wendys-offers-3-off-20-purchase",
       "sourceId": "wendys-offers",
       "merchant": "Wendy's",
@@ -1364,21 +1292,6 @@
       "candidateReasons": [
         "$3 Off value",
         "Requires 20 spend",
-        "No expiration captured",
-        "Source priority 10"
-      ]
-    },
-    {
-      "id": "wendys-offers-what-is-the-1-99-10pc-nuggets-deal",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "What is the $1.99 10PC Nuggets deal?",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$1.99",
-      "candidateScore": 38,
-      "candidateReasons": [
-        "$1.99 value",
-        "No minimum captured",
         "No expiration captured",
         "Source priority 10"
       ]
@@ -1412,37 +1325,6 @@
         "Requires 5 spend",
         "No expiration captured",
         "Source priority 10"
-      ]
-    },
-    {
-      "id": "wendys-offers-get-a-10-pc-nuggs-for-just-1-99-with-purchase-via-digital-offer-that-s-t",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Get a 10 PC Nuggs for just $1.99 with purchase via digital offer — that's ten crispy reasons to treat yourself any day that ends in “Y.”",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$1.99",
-      "candidateScore": 35,
-      "candidateReasons": [
-        "$1.99 value",
-        "No minimum captured",
-        "No expiration captured",
-        "Source priority 10"
-      ]
-    },
-    {
-      "id": "wendys-offers-wendy-s-rewards-members-can-get-a-10-pc-nuggs-for-just-1-99-with-any-pur",
-      "sourceId": "wendys-offers",
-      "merchant": "Wendy's",
-      "title": "Wendy's Rewards members can get a 10 PC Nuggs for just $1.99 with any purchase, no minimum required. This digital offer is available every day, so open the Wendy's app, check out the latest Wendy's app deals, and add the offer to your order when the Nugg craving hits.",
-      "url": "https://www.wendys.com/offers-coupons",
-      "amountText": "$1.99",
-      "candidateScore": 32,
-      "candidateReasons": [
-        "$1.99 value",
-        "No minimum captured",
-        "No expiration captured",
-        "Source priority 10",
-        "Long title needs cleanup"
       ]
     }
   ],
