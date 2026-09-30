@@ -171,7 +171,7 @@
     "id": "mcdonalds-free-snack-wrap-new-app-user-2026-09",
     "merchant": "McDonald's",
     "title": "Free 10-piece McNuggets with $1+ first app purchase",
-    "summary": "The official McDonald's deals page now advertises a free 10-piece McNuggets order on a first $1+ purchase for new app users, replacing the earlier September Snack Wrap offer.",
+    "summary": "LAST DAY TODAY (not re-verified today): official McDonald's deals page listed a free 10-piece McNuggets order on a first $1+ purchase for new app users through September 30.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 1,
@@ -198,7 +198,7 @@
     "stackGroup": "mcdonalds-app-offer",
     "stackStatus": "exclusive",
     "finePrint": "New app users can get one free 10-piece McNuggets order with a first purchase of $1 or more. Offer valid once through September 30 at participating McDonald's restaurants. It may take up to 48 hours to appear in the app; Rewards opt-in is required and tax is excluded. No dollar value is estimated because the local McNuggets price was not verified.",
-    "expirationLabel": "New-app-user offer through September 30",
+    "expirationLabel": "LAST DAY today, September 30 (deals page fetch-limited HTTP 403 today; last verified 2026-09-24)",
     "availability": "available",
     "dealType": "free-food",
     "freshness": "new",
@@ -289,7 +289,7 @@
   {
     "id": "shell-fuel-rewards-new-member-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "10¢, 20¢, then 30¢ off per gallon",
+    "title": "10Â¢, 20Â¢, then 30Â¢ off per gallon",
     "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
     "category": "fuel",
     "estimatedSavings": 9,
@@ -327,7 +327,7 @@
   {
     "id": "shell-race-day-22-cents-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "22¢ off per gallon on eligible race days",
+    "title": "22Â¢ off per gallon on eligible race days",
     "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
     "category": "fuel",
     "estimatedSavings": 3.3,
@@ -367,7 +367,7 @@
     "id": "wendys-wednesday-free-nuggets-2026",
     "merchant": "Wendy's",
     "title": "Free 6-piece nuggets Wednesday with $5 purchase",
-    "summary": "Wendy's official offers page lists free 6-piece nuggets with a $5 qualifying purchase for Wendy's Wednesday.",
+    "summary": "TODAY Wednesday: Wendy's official offers page lists 'Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase' (app/Rewards digital offer).",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 5,
@@ -387,9 +387,9 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-26"
+      "checkedOn": "2026-09-30"
     },
-    "actionLabel": "Claim Wednesday offer",
+    "actionLabel": "Claim today's Wednesday offer",
     "tier": "A",
     "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
     "stackGroup": "wendys-app-order",
@@ -409,7 +409,7 @@
     "id": "wendys-fryday-free-fry-2026",
     "merchant": "Wendy's",
     "title": "Free any-size fry Friday with $5 purchase",
-    "summary": "TODAY Friday: Wendy's official offers page lists free any-size fry with a $5 qualifying purchase for Fryday. App/Rewards digital offer at participating U.S. locations.",
+    "summary": "Fridays (next Friday October 2): Wendy's official offers page lists free any-size fry with a $5 qualifying purchase for Fryday. App/Rewards digital offer at participating U.S. locations.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 5,
@@ -429,14 +429,14 @@
     "source": {
       "label": "Wendy's official offers page",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-25"
+      "checkedOn": "2026-09-30"
     },
-    "actionLabel": "Claim Friday offer",
+    "actionLabel": "Plan for Friday",
     "tier": "A",
     "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
     "stackGroup": "wendys-app-order",
     "finePrint": "Requires a $5 qualifying purchase on Friday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local fry price was not verified.",
-    "expirationLabel": "TODAY Friday while listed",
+    "expirationLabel": "Fridays while listed (next Oct 2)",
     "availability": "available",
     "dealType": "free-food",
     "freshness": "current",
@@ -529,7 +529,7 @@
   {
     "id": "seven-rewards-fuel-welcome-2026",
     "merchant": "7REWARDS Fuel",
-    "title": "11¢ off per gallon on the first seven fills",
+    "title": "11Â¢ off per gallon on the first seven fills",
     "summary": "New 7REWARDS fuel members receive 11 cents off each gallon for their first seven fuel transactions.",
     "category": "fuel",
     "estimatedSavings": 11.55,
@@ -569,7 +569,7 @@
   {
     "id": "seven-rewards-fuel-sms-25-cents-2026",
     "merchant": "7REWARDS Fuel",
-    "title": "25¢ off per gallon on the next three fills",
+    "title": "25Â¢ off per gallon on the next three fills",
     "summary": "The official fuel-rewards page offers 25 cents off per gallon on the next three fills after texting SAVE to 711711.",
     "category": "fuel",
     "estimatedSavings": 11.25,
@@ -609,7 +609,7 @@
     "id": "exxon-mobil-new-app-user-ten-dollar-bonus-2026",
     "merchant": "Exxon Mobil Rewards+",
     "title": "Up to $15 in points across seven qualifying app fill-ups",
-    "summary": "First-time Exxon Mobil Rewards+ app fuel purchasers can earn $5 in points on each of their first two qualifying fills, then $1 on each of five additional qualifying fills completed within 60 days.",
+    "summary": "LAST DAY TODAY to start: first-time Exxon Mobil Rewards+ app fuel purchasers can earn $5 in points on each of their first two qualifying fills, then $1 on each of five additional qualifying fills completed within 60 days.",
     "category": "fuel",
     "estimatedSavings": 15,
     "minimumSpend": 0,
@@ -633,8 +633,8 @@
     "tier": "A",
     "stackNote": "Regular Rewards+ points are also earned on the qualifying fills; confirm current app terms before assuming another promotion combines.",
     "stackGroup": "exxon-mobil-new-member-bonus",
-    "finePrint": "Available to members making their first app-paid fuel purchase during the May 20-September 30 offer period. Each purchase must be paid through the app, include at least eight gallons, and occur at a participating Exxon or Mobil station. The first two qualifying fills earn $5 each; after those, the next five qualifying app fills within 60 days earn $1 each. Do not assume this combines with the separate referral-code promotion.",
-    "expirationLabel": "Start by September 30; finish the five follow-up fills within 60 days",
+    "finePrint": "Available to members making their first app-paid fuel purchase during the May 20-September 30 offer period. Each purchase must be paid through the app, include at least eight gallons, and occur at a participating Exxon or Mobil station. The first two qualifying fills earn $5 each; after those, the next five qualifying app fills within 60 days earn $1 each. Do not assume this combines with the separate referral-code promotion. Direct fetch of the official FAQ returned HTTP 403 on 2026-09-30 (fetch-limited); the 09/30/26 11:59 PM CST offer end was read from search-indexed official exxonmobilfuels.com rewards/FAQ text on 2026-09-30; last direct page check remains 2026-09-26.",
+    "expirationLabel": "LAST DAY today, September 30 (11:59 PM CST); finish the five follow-up fills within 60 days",
     "availability": "available",
     "dealType": "fuel-reward",
     "freshness": "improved",
@@ -649,7 +649,7 @@
   {
     "id": "exxon-mobil-referral-five-fill-bonus-2026",
     "merchant": "Exxon Mobil Rewards+",
-    "title": "Up to 30¢ per gallon on five referral-code fills",
+    "title": "Up to 30Â¢ per gallon on five referral-code fills",
     "summary": "New Rewards+ members who enroll with an existing member's referral code can earn up to 15 cents per gallon on regular, mid-grade, or diesel fuel, or up to 30 cents per gallon on premium fuel, for their next five qualifying fills.",
     "category": "fuel",
     "estimatedSavings": 11.25,
@@ -760,7 +760,7 @@
   {
     "id": "exxon-mobil-rewards-base-points-2026",
     "merchant": "Exxon Mobil Rewards+",
-    "title": "Earn 3¢ per gallon or more in points",
+    "title": "Earn 3Â¢ per gallon or more in points",
     "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
     "category": "fuel",
     "estimatedSavings": 0.45,
@@ -796,7 +796,7 @@
   {
     "id": "exxon-mobil-texans-win-thirty-cents-2026",
     "merchant": "Exxon Mobil Rewards+",
-    "title": "30¢/gal after a Houston Texans win",
+    "title": "30Â¢/gal after a Houston Texans win",
     "summary": "Fully enrolled Rewards+ members can earn 30 cents per gallon in points on any fuel grade at participating Texas Exxon or Mobil stations from 10 a.m. the day after a Texans win through 11:59 p.m. the following day.",
     "category": "fuel",
     "estimatedSavings": 4.5,
@@ -1078,7 +1078,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/texas/spring/30083/",
-      "checkedOn": "2026-09-26"
+      "checkedOn": "2026-09-30"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -1118,7 +1118,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-09-26"
+      "checkedOn": "2026-09-30"
     },
     "actionLabel": "Review eligibility",
     "tier": "A",
@@ -1158,7 +1158,7 @@
     "source": {
       "label": "Costa Oil Rayford specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-09-26"
+      "checkedOn": "2026-09-30"
     },
     "actionLabel": "Review diesel coupon",
     "tier": "A",
@@ -1180,7 +1180,7 @@
     "id": "costa-oil-rayford-new-customer-twenty-off-2026",
     "merchant": "Costa Oil Rayford Road",
     "title": "$20 off any full-synthetic oil change for new customers",
-    "summary": "New customers can save $20 on any full-synthetic oil change at the Rayford Road Costa Oil location with the official location coupon through September 30, 2026. LAST DAY tomorrow.",
+    "summary": "New customers can save $20 on any full-synthetic oil change at the Rayford Road Costa Oil location with the official location coupon; the official specials page still shows 'New Customers Only, expires 09/30/2026'. LAST DAY TODAY.",
     "category": "auto",
     "estimatedSavings": 20,
     "minimumSpend": 0,
@@ -1199,7 +1199,7 @@
     "source": {
       "label": "Costa Oil Rayford Road official specials",
       "url": "https://spring-rayford.costaoils.com/specials",
-      "checkedOn": "2026-09-29"
+      "checkedOn": "2026-09-30"
     },
     "actionLabel": "Show the official coupon",
     "tier": "A",
@@ -1207,7 +1207,7 @@
     "stackGroup": "costa-oil-rayford-service-offers",
     "stackStatus": "exclusive",
     "finePrint": "New customers only. Valid for an in-store full-synthetic oil change at the Rayford Road location through September 30, 2026. The official coupon says it cannot be combined with other offers or discounts; present the coupon before service and confirm eligibility before authorizing work.",
-    "expirationLabel": "Ends tomorrow September 30",
+    "expirationLabel": "LAST DAY today, September 30",
     "availability": "available",
     "dealType": "vehicle-maintenance",
     "freshness": "current",
@@ -1304,7 +1304,7 @@
   {
     "id": "shell-app-first-pay-save-25-cents-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "Earn 25¢/gal after the first 10-gallon Pay & Save fill",
+    "title": "Earn 25Â¢/gal after the first 10-gallon Pay & Save fill",
     "summary": "The Shell App first-time offer awards 25 cents per gallon in savings after an initial Pay & Save transaction of at least 10 gallons.",
     "category": "fuel",
     "estimatedSavings": 3.75,
@@ -1343,7 +1343,7 @@
   {
     "id": "shell-app-s-pay-discount-2026",
     "merchant": "Shell Fuel Rewards",
-    "title": "10¢/gal with Shell S Pay",
+    "title": "10Â¢/gal with Shell S Pay",
     "summary": "Shell App users with a linked Fuel Rewards account can save 10 cents per gallon when paying with Shell S Pay.",
     "category": "fuel",
     "estimatedSavings": 1.5,
@@ -1542,7 +1542,7 @@
     "id": "wendys-199-ten-piece-nuggets-2026",
     "merchant": "Wendy's",
     "title": "$1.99 10-piece nuggets with any purchase",
-    "summary": "REVIEW: Official Wendy's offers highlight cards checked September 29 no longer list the $1.99 10-piece Classic or Spicy Nuggets with any purchase offer that appeared earlier. The page meta description still mentions $1.99 10PC Nuggets, and the prior PR Newswire window ended September 27. Confirm in the Wendy's app at the selected Spring-area restaurant before relying on it.",
+    "summary": "DEMOTED / REVIEW: the prior PR window ended September 27 and the wendys.com/offers-coupons cards (checked September 30) do not list the $1.99 10-piece offer. The wendys.com/nuggs FAQ still says Rewards members can get 10 PC Nuggs for $1.99 with any purchase daily. Conflicting official pages; confirm in the Wendy's app at the selected Spring-area restaurant before relying on it.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 1.99,
@@ -1557,15 +1557,15 @@
       "daily digital offer"
     ],
     "source": {
-      "label": "Wendy's official offers page (meta vs highlight-card review)",
+      "label": "Wendy's official offers and nuggets pages",
       "url": "https://www.wendys.com/offers-coupons",
-      "checkedOn": "2026-09-29"
+      "checkedOn": "2026-09-30"
     },
     "actionLabel": "Confirm in Wendy's app",
     "tier": "A",
     "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
     "stackGroup": "wendys-app-order",
-    "finePrint": "As of September 29, 2026 the official Wendy's offers page highlight cards list free small chili w/$5, Fryday free fry w/$5, Wednesday free 6pc nuggs w/$5, $1 off crispy chicken/4pc nuggs w/$5, $3 off $20+, and 99-cent any-size soft drink — but not $1.99 10 PC Nuggs. Page meta still references $1.99 10PC Nuggets. Prior company press window ran August 24 through September 27. App-only confirmation required. No dollar value is estimated.",
+    "finePrint": "As of September 29, 2026 the official Wendy's offers page highlight cards list free small chili w/$5, Fryday free fry w/$5, Wednesday free 6pc nuggs w/$5, $1 off crispy chicken/4pc nuggs w/$5, $3 off $20+, and 99-cent any-size soft drink â€” but not $1.99 10 PC Nuggs. Page meta still references $1.99 10PC Nuggets. Prior company press window ran August 24 through September 27. App-only confirmation required. No dollar value is estimated.",
     "expirationLabel": "Confirm in app; public cards no longer list",
     "availability": "available",
     "dealType": "promotion-event",
@@ -1655,46 +1655,6 @@
     ]
   },
   {
-    "id": "heb-duracell-six-off-two-2026-09",
-    "merchant": "H-E-B",
-    "title": "$6 off two Duracell 8-packs",
-    "summary": "Clip the H-E-B coupon for $6 off two qualifying Duracell Coppertop AA or AAA eight-packs through September 29.",
-    "category": "home",
-    "estimatedSavings": 6,
-    "minimumSpend": 19.46,
-    "savingsRate": 30.8,
-    "isFree": false,
-    "expiresOn": "2026-09-29",
-    "locationNote": "The official page showed Victoria H-E-B plus as its selected store, not Spring Creek Market. Confirm the coupon and prices after selecting the 77386 store before clipping.",
-    "verification": "needs-check",
-    "friction": "low",
-    "tags": [
-      "batteries",
-      "household",
-      "digital coupon",
-      "location gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84058534",
-      "checkedOn": "2026-09-26"
-    },
-    "actionLabel": "Confirm at Spring Creek",
-    "tier": "A",
-    "stackNote": "Use only if two battery packs are needed and the coupon appears for Spring Creek Market; compare unit prices with larger packs before checkout.",
-    "finePrint": "The official public page showed AA and AAA eight-packs at $9.73 each and an unlimited-use $6-off-two coupon through September 29. The $19.46 basket and 30.8% rate use Victoria-store prices. This scan did not sign in, clip the coupon, or confirm Spring Creek availability and pricing.",
-    "expirationLabel": "LAST DAY today if still loaded (needs-check)",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "monitoring",
-    "discoveredOn": "2026-09-10",
-    "preferenceSignals": [
-      "household-staple",
-      "high-value",
-      "location-gated"
-    ]
-  },
-  {
     "id": "taco-bell-topgolf-twenty-five-off-2026",
     "merchant": "Taco Bell Rewards + Topgolf",
     "title": "$25 off Topgolf game play through Sept 27",
@@ -1747,7 +1707,7 @@
     "id": "applebees-nfl-season-wing-ticket-2026",
     "merchant": "Applebee's",
     "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
-    "summary": "TODAY Tuesday: Club Applebee's members signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online order. Codes redeem Sunday through Thursday of the same week through January 10, 2027.",
+    "summary": "TODAY Wednesday: Club Applebee's members signed up for the free NFL Season Wing Ticket receive a unique weekly email code (delivered Sundays) for six free Boneless Wings To Go with a $15+ online order. Codes redeem Sunday through Thursday of the same week through January 10, 2027.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 15,
@@ -1760,7 +1720,7 @@
       3,
       4
     ],
-    "locationNote": "Participating Applebee's locations nationwide for website/app To Go. Local Spring participation and weekly code delivery must be confirmed after signup.",
+    "locationNote": "Participating Applebee's locations nationwide for website/app To Go. Local Spring participation and weekly code delivery must be confirmed after signup. Applebee's site returned a Cloudflare block (fetch-limited) on 2026-09-30; terms confirmed from the official Applebee's news release as indexed.",
     "verification": "verified",
     "friction": "medium",
     "tags": [
@@ -1774,9 +1734,9 @@
     "source": {
       "label": "Applebee's official NFL Season Wing Ticket news",
       "url": "https://cm4.applebees.com/en/news/2026/applebees-introduces-nfl-season-wing-ticket-free-boneless-wings-weekly",
-      "checkedOn": "2026-09-29"
+      "checkedOn": "2026-09-30"
     },
-    "actionLabel": "Redeem weekly code Tue-Thu",
+    "actionLabel": "Redeem weekly code Wed-Thu",
     "tier": "A",
     "stackNote": "Weekly code is its own To Go offer; not valid on third-party delivery sites.",
     "stackGroup": "applebees-to-go-offer",
@@ -1835,267 +1795,10 @@
     ]
   },
   {
-    "id": "heb-dr-pepper-free-chick-fil-a-chips-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free Chick-fil-A waffle chips with Dr Pepper six-pack",
-    "summary": "Buy a qualifying 6-pack of 16.9-ounce Dr Pepper bottles and get a 7-ounce bag of Chick-fil-A waffle chips free through September 29. Confirm the coupon and both items after selecting Spring Creek Market.",
-    "category": "grocery",
-    "estimatedSavings": 4.78,
-    "minimumSpend": 3.74,
-    "savingsRate": 127.8,
-    "isFree": true,
-    "expiresOn": "2026-09-29",
-    "locationNote": "The official public coupon page displayed $3.74 for the qualifying Dr Pepper six-pack and $4.78 for the chips but did not provide proof that those prices or the coupon apply at Spring Creek Market. Confirm after selecting the 77386 store.",
-    "verification": "needs-check",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "free item",
-      "digital coupon",
-      "beverage",
-      "snack",
-      "location gated"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84063792",
-      "checkedOn": "2026-09-26"
-    },
-    "actionLabel": "Confirm at Spring Creek",
-    "tier": "A",
-    "stackNote": "The Dr Pepper page showed a separate price cut; confirm the clipped coupon still combines with that price after selecting Spring Creek Market.",
-    "stackStatus": "conditional",
-    "finePrint": "Official coupon terms: buy one qualifying Dr Pepper, Diet Dr Pepper, Dr Pepper Zero Sugar, Dr Pepper & Cream Soda, or Dr Pepper Strawberries & Cream six-pack of 0.5-liter bottles and get one 7-ounce Chick-fil-A Original Waffle Potato Chips bag free. Expires September 29, unlimited use, while supplies last, and may not be redeemable at all H-E-B locations. The $4.78 value and $3.74 spend use the public page's displayed prices; this scan did not sign in, clip the coupon, or confirm Spring Creek pricing.",
-    "expirationLabel": "LAST DAY today if still loaded (needs-check)",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "monitoring",
-    "discoveredOn": "2026-09-23",
-    "preferenceSignals": [
-      "grocery",
-      "free-item",
-      "high-value",
-      "location-gated"
-    ]
-  },
-  {
-    "id": "heb-meal-simple-free-salad-bowl-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free chopped salad bowl with $12 Meal Simple microwave meals",
-    "summary": "Clip the official H-E-B coupon and spend $12 on Meal Simple microwave meals to receive one H-E-B chopped salad bowl free.",
-    "category": "grocery",
-    "estimatedSavings": 3.48,
-    "minimumSpend": 12,
-    "savingsRate": 29,
-    "isFree": true,
-    "expiresOn": "2026-09-29",
-    "locationNote": "The official public page displayed a Victoria-store context, not Spring. Treat as location-gated and confirm the coupon appears for an H-E-B serving 77386 before shopping.",
-    "verification": "needs-check",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "digital coupon",
-      "free item",
-      "prepared meal",
-      "expiring"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84058318",
-      "checkedOn": "2026-09-26"
-    },
-    "actionLabel": "Check coupon for your store",
-    "tier": "A",
-    "stackNote": "Clip the coupon and meet the $12 qualifying-meal threshold; do not count other item-level offers unless checkout confirms them.",
-    "stackGroup": "heb-meal-simple-salad-coupon-2026-09",
-    "finePrint": "Digital coupon and qualifying H-E-B account are required. The public detail page showed a $3.48 salad value and a September 29 expiration, but it did not confirm availability at a 77386 store. The value is excluded from strict verified totals until the coupon is visible for the selected local store.",
-    "expirationLabel": "LAST DAY today if still loaded (needs-check)",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "monitoring",
-    "discoveredOn": "2026-09-26",
-    "preferenceSignals": [
-      "free-food",
-      "grocery-staple",
-      "location-gated",
-      "upcoming-expiration"
-    ]
-  },
-  {
-    "id": "heb-smoked-sausage-free-soda-2026-09",
-    "merchant": "H-E-B",
-    "title": "Free H-E-B 12-pack soda with 10-count smoked sausage",
-    "summary": "Clip the official H-E-B coupon and buy a 10-count H-E-B Premium smoked-sausage pack to receive one H-E-B 12-pack soda free.",
-    "category": "grocery",
-    "estimatedSavings": 5,
-    "minimumSpend": 13.99,
-    "savingsRate": 35.7,
-    "isFree": true,
-    "expiresOn": "2026-09-29",
-    "locationNote": "The official public page displayed a Victoria-store context, not Spring. Treat as location-gated and confirm the coupon appears for an H-E-B serving 77386 before shopping.",
-    "verification": "needs-check",
-    "friction": "low",
-    "tags": [
-      "grocery",
-      "digital coupon",
-      "free item",
-      "sausage",
-      "soda",
-      "expiring"
-    ],
-    "source": {
-      "label": "H-E-B official coupon detail",
-      "url": "https://www.heb.com/digital-coupon/coupon-detail/84057630",
-      "checkedOn": "2026-09-26"
-    },
-    "actionLabel": "Check coupon for your store",
-    "tier": "A",
-    "stackNote": "Clip the coupon and buy the exact qualifying 10-count sausage package; do not assume adjacent manufacturer or basket coupons stack.",
-    "stackGroup": "heb-sausage-soda-coupon-2026-09",
-    "finePrint": "Digital coupon and qualifying H-E-B account are required. The public detail page showed a $13.99 qualifying sausage price, a $5.00 soda value, and a September 29 expiration, but it did not confirm availability at a 77386 store. The value is excluded from strict verified totals until the coupon is visible for the selected local store.",
-    "expirationLabel": "LAST DAY today if still loaded (needs-check)",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "monitoring",
-    "discoveredOn": "2026-09-26",
-    "preferenceSignals": [
-      "free-food",
-      "grocery-staple",
-      "location-gated",
-      "upcoming-expiration"
-    ]
-  },
-  {
-    "id": "krispy-kreme-coffee-dozen-five-dollars-2026-09",
-    "merchant": "Krispy Kreme",
-    "title": "$5 coffee-flavored or Original Glazed dozen with dozen purchase",
-    "summary": "LAST DAY Tuesday September 29: buy any regular-priced dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5 at participating shops (promo code COFFEE for app pickup/delivery; limits apply).",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-09-29",
-    "locationNote": "Dedicated U.S. Krispy Kreme shops only. The promotion page requires shop participation and does not confirm a Spring-area shop or local regular-dozen price; check the official locator before making a trip.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "doughnuts",
-      "coffee",
-      "National Coffee Day",
-      "bundle",
-      "limited time"
-    ],
-    "source": {
-      "label": "Krispy Kreme official National Coffee Day promotion",
-      "url": "https://www.krispykreme.com/promos/national-coffee-day",
-      "checkedOn": "2026-09-29"
-    },
-    "actionLabel": "Use today before it ends",
-    "tier": "B",
-    "stackNote": "Requires a regular-priced dozen or 16-count Minis. Limit two redemptions in shop or drive-thru and one online with code COFFEE; not valid with other orders or coupons.",
-    "stackStatus": "exclusive",
-    "finePrint": "Offer runs September 26-29, 2026 at participating dedicated U.S. Krispy Kreme shops while supplies last. Buy any dozen or 16-count Minis and get one Original Glazed Coffee Flavored or Original Glazed dozen for $5. Online pickup or delivery requires promo code COFFEE. Not valid at grocery or convenience locations, in Puerto Rico, Canada, or outside dedicated retail shops. No savings estimate is listed because a local participating shop and its regular-dozen price were not verified.",
-    "expirationLabel": "Ends today September 29",
-    "availability": "available",
-    "dealType": "promotion-event",
-    "freshness": "current",
-    "discoveredOn": "2026-09-23",
-    "preferenceSignals": [
-      "restaurant",
-      "limited-time",
-      "same-day",
-      "time-sensitive"
-    ]
-  },
-  {
-    "id": "krispy-kreme-national-coffee-day-free-coffee-2026",
-    "merchant": "Krispy Kreme",
-    "title": "Free small or medium coffee with any purchase on Sept 29",
-    "summary": "TODAY Tuesday September 29 National Coffee Day: one free small or medium hot or iced coffee with any purchase in shop at a participating dedicated U.S. Krispy Kreme. Confirmed on the official offers page and National Coffee Day promotion.",
-    "category": "coffee",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-29",
-    "locationNote": "In-shop redemption at participating dedicated U.S. Krispy Kreme locations only. Confirm a participating Spring / Houston-area shop before visiting.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free drink",
-      "coffee",
-      "National Coffee Day",
-      "one day"
-    ],
-    "source": {
-      "label": "Krispy Kreme official offers + National Coffee Day promotion",
-      "url": "https://www.krispykreme.com/offers",
-      "checkedOn": "2026-09-29"
-    },
-    "actionLabel": "Redeem in shop today",
-    "tier": "A",
-    "stackNote": "The official promotion labels the coffee offer stackable. It is separate from the $5 second-dozen offer, but both still require a participating dedicated shop and product availability.",
-    "stackStatus": "compatible",
-    "finePrint": "Valid only September 29, 2026 at participating U.S. Krispy Kreme shops. Limit one small or medium hot or iced coffee per guest with any purchase, in shop only. Specialty and frozen beverages are excluded. Not valid in Puerto Rico or at grocery or convenience locations. No dollar estimate because no participating local shop price was verified.",
-    "expirationLabel": "Today only September 29",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "current",
-    "discoveredOn": "2026-09-23",
-    "preferenceSignals": [
-      "free-food",
-      "coffee",
-      "same-day",
-      "expiring-soon"
-    ]
-  },
-  {
-    "id": "dunkin-national-coffee-day-free-medium-2026",
-    "merchant": "Dunkin",
-    "title": "Free medium coffee with any purchase on Sept 29",
-    "summary": "TODAY Tuesday September 29: Dunkin Rewards members can get one free medium hot or iced coffee with any purchase through the Dunkin app on National Coffee Day.",
-    "category": "coffee",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-29",
-    "locationNote": "Dunkin Rewards and app redemption are required at a participating U.S. Dunkin. Confirm the offer appears for the selected Spring-area shop before ordering.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free drink",
-      "coffee",
-      "National Coffee Day",
-      "app",
-      "one day"
-    ],
-    "source": {
-      "label": "Dunkin official L.L.Bean Bootmobile / National Coffee Day announcement",
-      "url": "https://news.dunkindonuts.com/blog/dunkin-llbean-bootmobile-tour-september-2026",
-      "checkedOn": "2026-09-29"
-    },
-    "actionLabel": "Redeem in Dunkin app today",
-    "tier": "A",
-    "stackNote": "Single-use Rewards offer; the official terms say it cannot combine with another offer, promotion, or coupon.",
-    "stackStatus": "exclusive",
-    "finePrint": "Valid only September 29, 2026, for Dunkin Rewards members at participating U.S. stores. Redeem through the Dunkin app with any purchase. Limit one per member. Cold Brew and hot espresso beverages are excluded. The offer cannot be combined with another offer, promotion, or coupon. No dollar estimate is listed because the local participating-store price was not verified.",
-    "expirationLabel": "Today only September 29",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "current",
-    "discoveredOn": "2026-09-24",
-    "preferenceSignals": [
-      "free-food",
-      "coffee",
-      "app-specific",
-      "same-day",
-      "expiring-soon"
-    ]
-  },
-  {
     "id": "nacho-padres-keep-it-loco-thursdays-2026",
     "merchant": "Nacho Padres",
     "title": "Keep IT Loco Thursdays: half off large fajitas",
-    "summary": "Local Spring cantina lists Keep IT Loco Thursdays as half off large fajitas all day. Not redeemable today (Tuesday); next Thursday is October 1.",
+    "summary": "TOMORROW Thursday October 1: Local Spring cantina lists Keep IT Loco Thursdays as half off large fajitas. Not redeemable today (Wednesday).",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2116,9 +1819,9 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-09-29"
+      "checkedOn": "2026-09-30"
     },
-    "actionLabel": "Plan for next Thursday",
+    "actionLabel": "Plan for tomorrow (Thu)",
     "tier": "A",
     "stackNote": "Local restaurant special; do not assume stacking with other coupons.",
     "finePrint": "Official Nacho Padres homepage Daily Specials section lists Thursday Keep IT Loco as half off large fajitas. No published end date; treat as ongoing while listed. No dollar estimate because large fajita menu price was not verified on this scan.",
@@ -2139,7 +1842,7 @@
     "id": "nacho-padres-happy-hour-margaritas-2026",
     "merchant": "Nacho Padres",
     "title": "Happy Hour $5.99 house margaritas Mon-Fri 3-6 p.m.",
-    "summary": "TODAY Tuesday: Official site lists Happy Hour Monday-Friday 3-6 p.m. with $5.99 house margaritas (frozen or rocks), plus specialty margarita and bite pricing on the FAQ. Local Spring location at 2121 Rayford Rd. Separate Tuesday Taco Tuesday special is also listed.",
+    "summary": "TODAY Wednesday: Official site lists Happy Hour Monday-Friday 3-6 p.m. with $5.99 house margaritas (frozen or rocks), plus specialty margarita and bite pricing on the FAQ. Local Spring location at 2121 Rayford Rd. Wine Down Wednesday is also listed today.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2169,7 +1872,7 @@
     "source": {
       "label": "Nacho Padres official website hours and happy hour FAQ",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-09-29"
+      "checkedOn": "2026-09-30"
     },
     "actionLabel": "Happy Hour 3-6 p.m. today",
     "tier": "B",
@@ -2192,7 +1895,7 @@
     "id": "mcalisters-spud-tember-2026",
     "merchant": "McAlister's Deli",
     "title": "Buy a spud by Sept 30, get a free spud in October",
-    "summary": "McAlister's Rewards members who buy a Giant Spud and apply the September offer receive a free-spud reward for October. Up to two rewards can be earned during the promotion.",
+    "summary": "LAST DAY TODAY: McAlister's Rewards members who buy a Giant Spud and apply the September offer receive a free-spud reward for October. Up to two rewards can be earned during the promotion.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2211,15 +1914,15 @@
     "source": {
       "label": "McAlister's Deli official Spud-tember announcement",
       "url": "https://www.mcalistersdeli.com/news/spud-tember",
-      "checkedOn": "2026-09-25"
+      "checkedOn": "2026-09-30"
     },
-    "actionLabel": "Apply offer by Sept 30",
+    "actionLabel": "Apply offer today (last day)",
     "tier": "A",
     "stackNote": "The offer and earned reward cannot combine with another offer or reward; apply the September offer at checkout.",
     "stackGroup": "mcalisters-reward-order",
     "stackStatus": "exclusive",
     "finePrint": "Valid September 1-30, 2026, for McAlister's Rewards members. Buy one Spud during the promotional window and apply the offer at checkout to receive a Spud on Us reward, delivered within 24-48 hours and redeemable October 1-31. Maximum two earned rewards. Excludes catering and third-party delivery; online, app, or call-in service fees may apply. No dollar estimate or minimum spend is shown because the local Spud price was not verified.",
-    "expirationLabel": "Earn by September 30; redeem reward October 1-31",
+    "expirationLabel": "LAST DAY today, September 30; redeem reward October 1-31",
     "availability": "available",
     "dealType": "loyalty-reward",
     "freshness": "new",
@@ -2256,7 +1959,7 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-09-29"
+      "checkedOn": "2026-09-30"
     },
     "actionLabel": "Plan for next Monday",
     "tier": "B",
@@ -2278,104 +1981,10 @@
     "distanceMiles": 2.5
   },
   {
-    "id": "smoothie-king-national-coffee-day-free-smoothie-2026",
-    "merchant": "Smoothie King",
-    "title": "Free 12 oz coffee protein smoothie Sept 28-29",
-    "summary": "LAST DAY today: Healthy Rewards members can claim one free 12 oz Coffee High Protein Almond Mocha Smoothie at participating Smoothie King locations. An official Smoothie King location is listed at 3535 Rayford Road in ZIP 77386; confirm the reward appears for that store before visiting.",
-    "category": "coffee",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-29",
-    "locationNote": "Smoothie King's official locator lists 3535 Rayford Road, Suite 100, Spring, TX 77386. The national release says participating locations, so this specific store's participation must still be confirmed in Healthy Rewards before a trip.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free drink",
-      "coffee",
-      "smoothie",
-      "Healthy Rewards",
-      "app",
-      "77386",
-      "National Coffee Day"
-    ],
-    "source": {
-      "label": "Smoothie King official National Coffee Day release",
-      "url": "https://www.smoothieking.com/news/smoothie-king-is-starting-national-coffee-day-early-with-free-delicious-protein-packed-coffee-smoothies/",
-      "checkedOn": "2026-09-29"
-    },
-    "actionLabel": "Claim in Healthy Rewards today",
-    "tier": "A",
-    "stackNote": "This is a one-time Healthy Rewards offer. Do not assume it combines with another reward unless checkout expressly allows it.",
-    "stackGroup": "smoothie-king-rewards-offer",
-    "stackStatus": "conditional",
-    "finePrint": "Valid September 28-29, 2026, exclusively for Smoothie King Healthy Rewards members at participating locations nationwide. The official release describes a one-time free 12 oz Coffee High Protein Almond Mocha Smoothie and does not state a purchase requirement. Confirm the reward is loaded for the selected store before visiting. No dollar value is estimated because the regular 77386 menu price was not publicly verified.",
-    "expirationLabel": "Ends today September 29",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "current",
-    "discoveredOn": "2026-09-28",
-    "preferenceSignals": [
-      "free-food",
-      "coffee",
-      "app-specific",
-      "local-location",
-      "expiring-soon",
-      "same-day"
-    ]
-  },
-  {
-    "id": "scooters-national-coffee-day-free-brewed-coffee-2026",
-    "merchant": "Scooter's Coffee",
-    "title": "Free medium brewed coffee Sept 27-29",
-    "summary": "LAST DAY today: Scooter's app users can redeem one free medium brewed coffee per day with no additional purchase. Eligible choices are Scooter's Blend, Flavor of the Day, or dark roast. Earliest National Coffee Day customers may also get a Fueled by Scooter's sticker while supplies last.",
-    "category": "coffee",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": true,
-    "expiresOn": "2026-09-29",
-    "locationNote": "Scooter's officially lists a Spring location at 24527 Gosling Road, Spring, TX 77389. Confirm the offer is available for the selected store in the app; the public release does not independently confirm store-level inventory or participation.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free drink",
-      "coffee",
-      "app",
-      "no purchase",
-      "National Coffee Day",
-      "Spring"
-    ],
-    "source": {
-      "label": "Scooter's Coffee official National Coffee Day announcement",
-      "url": "https://www.scooterscoffee.com/blog/post/natl-coffee-day-2026",
-      "checkedOn": "2026-09-29"
-    },
-    "actionLabel": "Redeem in app today",
-    "tier": "A",
-    "stackNote": "Redeem the brewed-coffee offer in the Scooter's app. Third-party delivery is excluded; do not assume another app reward combines.",
-    "stackGroup": "scooters-app-reward",
-    "stackStatus": "conditional",
-    "finePrint": "Valid September 27-29, 2026, through the Scooter's Coffee mobile app. Limit one free medium brewed coffee per guest per day; no additional purchase is required. Choose Scooter's Blend, Flavor of the Day, or dark roast. Not redeemable through third-party delivery. Confirm offer availability and product supply at the selected Spring-area location. No dollar value is estimated because the local menu price was not verified.",
-    "expirationLabel": "Ends today September 29",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "current",
-    "discoveredOn": "2026-09-28",
-    "preferenceSignals": [
-      "free-food",
-      "coffee",
-      "app-specific",
-      "no-purchase",
-      "local-relevance",
-      "expiring-soon",
-      "same-day"
-    ]
-  },
-  {
     "id": "nacho-padres-taco-tuesdays-2026",
     "merchant": "Nacho Padres",
     "title": "Taco Tuesdays: two tacos for $9.99",
-    "summary": "NEW TODAY Tuesday: Official Nacho Padres daily specials list Taco Tuesdays as two tacos for $9.99, with beans and rice add-on for $1.99. Local Spring location at 2121 Rayford Rd.",
+    "summary": "Not redeemable today (Wednesday); next Taco Tuesday is October 6. Official Nacho Padres daily specials list Taco Tuesdays as two tacos for $9.99, with beans and rice add-on for $1.99. Local Spring location at 2121 Rayford Rd.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 9.99,
@@ -2396,16 +2005,16 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-09-29"
+      "checkedOn": "2026-09-30"
     },
-    "actionLabel": "Order Taco Tuesday today",
+    "actionLabel": "Plan for next Tuesday",
     "tier": "A",
     "stackNote": "Local restaurant special; do not assume stacking with Happy Hour or other coupons.",
     "finePrint": "Official Nacho Padres homepage Daily Specials section lists Tuesday: Two tacos $9.99; add beans and rice for $1.99. No published end date; treat as ongoing while listed. No dollar estimate because regular taco menu prices were not verified on this scan.",
-    "expirationLabel": "Tuesdays while listed",
+    "expirationLabel": "Tuesdays while listed (next Oct 6)",
     "availability": "available",
     "dealType": "promotion-event",
-    "freshness": "new",
+    "freshness": "current",
     "discoveredOn": "2026-09-29",
     "preferenceSignals": [
       "restaurant",
@@ -2415,5 +2024,172 @@
     ],
     "localRecord": true,
     "distanceMiles": 2.5
+  },
+  {
+    "id": "nacho-padres-wine-down-wednesdays-2026",
+    "merchant": "Nacho Padres",
+    "title": "Wine Down Wednesdays: half off wine bottles",
+    "summary": "NEW TODAY Wednesday: Official Nacho Padres daily specials list Wine Down Wednesdays as half off wine bottles. Local Spring location at 2121 Rayford Rd.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "availableDaysOfWeek": [
+      3
+    ],
+    "locationNote": "2121 Rayford Rd, Spring, TX 77386 (confirmed local). Legal drinking age required; confirm eligible bottle list in-restaurant. No savings estimate because bottle prices were not verified.",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "local",
+      "wine",
+      "wednesday",
+      "77386"
+    ],
+    "source": {
+      "label": "Nacho Padres official website daily specials",
+      "url": "https://nachopadres.com/",
+      "checkedOn": "2026-09-30"
+    },
+    "actionLabel": "Wine Down Wednesday today",
+    "tier": "B",
+    "stackNote": "Local restaurant special; do not assume stacking with Happy Hour.",
+    "finePrint": "Official homepage Daily Specials lists Wednesday: Wine Down Wednesdays - half off wine bottles. No published end date or bottle exclusions; treat as ongoing while listed.",
+    "expirationLabel": "Wednesdays while listed",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-30",
+    "preferenceSignals": [
+      "restaurant",
+      "local-high-value",
+      "recurring-weekly",
+      "same-day"
+    ],
+    "localRecord": true,
+    "distanceMiles": 2.5
+  },
+  {
+    "id": "shake-shack-burgertime-free-shackburger-2026-09-30",
+    "merchant": "Shake Shack",
+    "title": "Free single ShackBurger with $10+ order (code BURGERTIME)",
+    "summary": "LAST DAY TODAY: Shake Shack official offers terms list a free single ShackBurger with $10+ of other food or drinks using code BURGERTIME (app, shakeshack.com, or in-Shack kiosk), 9/22-9/30/2026. Nearest official Shack is The Woodlands Mall, 1201 Lake Woodlands Dr; not in 77386.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 10,
+    "isFree": true,
+    "expiresOn": "2026-09-30",
+    "locationNote": "Nearest official Shack: 1201 Lake Woodlands Dr, The Woodlands (Woodlands Mall). Terms say 'participating locations' and exclude airports/stadiums/arenas/travel plazas/museums; the terms do not name Woodlands as excluded but participation was not individually confirmed. No Spring-area Shack.",
+    "verification": "verified",
+    "friction": "medium",
+    "tags": [
+      "free food",
+      "burger",
+      "code",
+      "app",
+      "kiosk"
+    ],
+    "source": {
+      "label": "Shake Shack National and Regional Offers terms",
+      "url": "https://shakeshack.com/national-regional-offers",
+      "checkedOn": "2026-09-30"
+    },
+    "actionLabel": "Use code BURGERTIME today",
+    "tier": "B",
+    "stackNote": "Cannot be combined with any other offer or promotion.",
+    "stackStatus": "exclusive",
+    "finePrint": "Limit one free single ShackBurger per order; max savings $10.49 per official terms (that is a cap, not a verified Woodlands menu price, so no dollar estimate is shown). Order must include $10+ of food or beverage excluding the promotional burger, taxes, and fees; single ShackBurger only (no doubles/triples); no paid add-ons such as avocado; not valid through third-party delivery apps. Code is case sensitive (all caps).",
+    "expirationLabel": "LAST DAY today, September 30",
+    "availability": "available",
+    "dealType": "free-food",
+    "freshness": "new",
+    "discoveredOn": "2026-09-30",
+    "preferenceSignals": [
+      "free-food",
+      "app-specific",
+      "upcoming-expiration",
+      "same-day"
+    ]
+  },
+  {
+    "id": "smashburger-sepbogo26-bogo-2026-10-03",
+    "merchant": "Smashburger",
+    "title": "BOGO burger or Big Dog (code SEPBOGO26) through October 3",
+    "summary": "Smashburger official terms: buy any burger or Big Dog, get one of equal or lesser value free, 9/28-10/3/2026, online/app code SEPBOGO26 or mention the offer in-restaurant. The official participating-locations list includes Spring, 225 Cypresswood Drive, Suite C (77373).",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-10-03",
+    "locationNote": "Spring location 225 Cypresswood Dr, Suite C, Spring, TX 77373 is on the official participating-locations list (store confirmed; not in 77386 itself).",
+    "verification": "verified",
+    "friction": "low",
+    "tags": [
+      "BOGO",
+      "burger",
+      "Big Dog",
+      "code",
+      "Spring"
+    ],
+    "source": {
+      "label": "Smashburger BOGO terms and participating locations",
+      "url": "https://smashburger.com/bogo-burger-big-dog-details",
+      "checkedOn": "2026-09-30"
+    },
+    "actionLabel": "Use SEPBOGO26 by Oct 3",
+    "tier": "A",
+    "stackNote": "Cannot be used with any other offer, promotion, or discount.",
+    "stackStatus": "exclusive",
+    "finePrint": "One BOGO per transaction. Excludes the Smoked Brisket Bacon Smash and items with crispy chicken; premium modifiers cost extra; no catering or third-party delivery; while supplies last. Value equals the cheaper eligible item, but Spring menu prices were not verified so no dollar estimate is shown.",
+    "expirationLabel": "Through October 3",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-30",
+    "preferenceSignals": [
+      "free-food",
+      "local-relevance",
+      "upcoming-expiration"
+    ],
+    "localRecord": true
+  },
+  {
+    "id": "perrys-flashback-friday-79-cent-lunch-2026-10-02",
+    "merchant": "Perry's Steakhouse & Grille",
+    "title": "79-cent Pork Chop Friday Lunch or Prime Rib Sandwich, Fri Oct 2 (first 200 guests)",
+    "summary": "UPCOMING Friday October 2: Perry's official release says the first 200 dine-in guests at each location (100 per dish) get a card for a 79-cent Famous Pork Chop Friday Lunch or Caramelized Prime Rib Steak Sandwich. Doors open 10:30 a.m.; The Woodlands location is at 6700 Woodlands Pkwy.",
+    "category": "restaurants",
+    "estimatedSavings": 0,
+    "minimumSpend": 0,
+    "isFree": false,
+    "expiresOn": "2026-10-02",
+    "locationNote": "All Perry's locations except Friendswood; The Woodlands store, 6700 Woodlands Parkway, 77382, is listed on Perry's official location page (not in 77386).",
+    "verification": "verified",
+    "friction": "high",
+    "tags": [
+      "upcoming",
+      "lunch",
+      "first 200",
+      "The Woodlands",
+      "dine-in"
+    ],
+    "source": {
+      "label": "Perry's Steakhouse official press release (Flashback Friday)",
+      "url": "https://perryssteakhouse.com/wp-content/uploads/2026/09/2026-79-Cent-Pork-Chop-Friday-Lunch_Date-Announcement.docx.pdf",
+      "checkedOn": "2026-09-30"
+    },
+    "actionLabel": "Plan to arrive early Oct 2",
+    "tier": "B",
+    "finePrint": "Guests must be 21+; dine-in only; no reservations and no holding places in line; card must be redeemed October 2 before 12 PM; first-come first-served while quantities remain. No dollar estimate because regular menu prices were not verified.",
+    "expirationLabel": "Friday October 2 only, redeem before noon",
+    "availability": "available",
+    "dealType": "promotion-event",
+    "freshness": "new",
+    "discoveredOn": "2026-09-30",
+    "preferenceSignals": [
+      "restaurant",
+      "upcoming-expiration",
+      "limited-quantity"
+    ]
   }
 ]
