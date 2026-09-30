@@ -331,5 +331,57 @@
       "alternative cash payment",
       "settlement class"
     ]
+  },
+  {
+    "id": "shake-shack-offers",
+    "name": "Shake Shack official national and regional offers",
+    "url": "https://shakeshack.com/national-regional-offers",
+    "category": "restaurants",
+    "priority": 10,
+    "keywords": [
+      "free",
+      "promo code",
+      "minimum purchase",
+      "participating locations"
+    ]
+  },
+  {
+    "id": "smashburger-promotions",
+    "name": "Smashburger official promotions",
+    "url": "https://smashburger.com/deals",
+    "category": "restaurants",
+    "priority": 9,
+    "keywords": [
+      "BOGO",
+      "promo code",
+      "limited time",
+      "participating locations"
+    ]
+  },
+  {
+    "id": "cinnabon-newsroom",
+    "name": "Cinnabon official newsroom",
+    "url": "https://www.cinnabon.com/newsroom",
+    "category": "coffee",
+    "priority": 9,
+    "keywords": [
+      "rewards",
+      "one-day",
+      "offer",
+      "participating bakeries"
+    ]
+  },
+  {
+    "id": "perrys-news",
+    "name": "Perry's Steakhouse official news",
+    "url": "https://perryssteakhouse.com/news-and-awards/",
+    "category": "restaurants",
+    "priority": 8,
+    "keywords": [
+      "offer",
+      "limited quantity",
+      "The Woodlands",
+      "special"
+    ]
   }
 ]

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-30T12:14:45.944Z",
+  "generatedAt": "2026-09-30T15:20:51.238Z",
   "weekOf": "2026-09-28",
   "zipCode": "77386",
   "totalPotentialSavings": 160.24,
-  "verifiedCount": 46,
-  "expiringCount": 16,
+  "verifiedCount": 48,
+  "expiringCount": 18,
   "opportunities": [
     {
       "id": "costa-oil-rayford-new-customer-twenty-off-2026",
@@ -2503,6 +2503,110 @@
       ]
     },
     {
+      "id": "shake-shack-chicken-sundays-2026",
+      "merchant": "Shake Shack",
+      "title": "Free Chicken Shack Sundays with $10+ order (code CHICKENSUNDAY)",
+      "summary": "Every Sunday through December 27, get one free Chicken Shack or Chicken Shack Lettuce Wrap with $10+ of other food or drinks using code CHICKENSUNDAY at a kiosk, in the app, or at shakeshack.com. The nearest official Shack is at The Woodlands Mall.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 10,
+      "isFree": true,
+      "expiresOn": "2026-12-27",
+      "availableDaysOfWeek": [
+        0
+      ],
+      "locationNote": "Nearest official Shack: 1201 Lake Woodlands Dr, The Woodlands (Woodlands Mall). Terms say participating U.S. locations and exclude airports, stadiums, arenas, travel plazas, and museums; participation at Woodlands was not individually confirmed.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "free food",
+        "chicken sandwich",
+        "Sunday",
+        "code",
+        "app"
+      ],
+      "source": {
+        "label": "Shake Shack National and Regional Offers terms",
+        "url": "https://shakeshack.com/national-regional-offers",
+        "checkedOn": "2026-09-30"
+      },
+      "actionLabel": "Use CHICKENSUNDAY on Sunday",
+      "tier": "B",
+      "stackNote": "Cannot be combined with another offer or promotion.",
+      "stackGroup": "shake-shack-promotion",
+      "stackStatus": "exclusive",
+      "finePrint": "Limit one free Chicken Shack or Chicken Shack Lettuce Wrap per order; official maximum savings is $9.99, but no Woodlands menu price was verified so no dollar estimate is shown. The $10 minimum excludes the promotional item, gift cards, taxes, delivery fees, and other fees. Add the eligible sandwich before checkout. Excludes drive-thru and third-party delivery orders, Avocado Bacon Chicken, Chicken Bites, and paid add-ons. Code is case sensitive and must be uppercase.",
+      "expirationLabel": "Sundays through December 27",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-09-30",
+      "preferenceSignals": [
+        "free-food",
+        "app-specific",
+        "recurring-weekly"
+      ],
+      "distanceBasis": "unknown",
+      "score": 55,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "Ends 2026-12-27; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$10.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "shell-app-s-pay-discount-2026",
       "merchant": "Shell Fuel Rewards",
       "title": "10Â¢/gal with Shell S Pay",
@@ -3815,6 +3919,108 @@
       ]
     },
     {
+      "id": "cinnabon-national-cinnamon-roll-day-2026",
+      "merchant": "Cinnabon",
+      "title": "$1 beverage Oct 2-3 and $1 Classic Roll Oct 4 for Rewards members",
+      "summary": "UPCOMING: Cinnabon Rewards members can add an eligible small beverage to a baked-good purchase for $1 on October 2-3, then buy a Classic Roll for $1 in-bakery on October 4. The nearest official bakery is inside The Woodlands Mall.",
+      "category": "coffee",
+      "estimatedSavings": 0,
+      "minimumSpend": 1,
+      "isFree": false,
+      "expiresOn": "2026-10-04",
+      "locationNote": "Official Cinnabon directory lists The Woodlands Mall, 1201 Lake Woodlands Dr, The Woodlands, TX 77380. Offers are limited to participating bakeries; this bakery's participation and regular prices were not individually confirmed.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "Rewards",
+        "cinnamon roll",
+        "beverage",
+        "one-day",
+        "The Woodlands"
+      ],
+      "source": {
+        "label": "Cinnabon official National Cinnamon Roll Day release",
+        "url": "https://www.cinnabon.com/newsroom/cinnabon-ncrd",
+        "checkedOn": "2026-09-30"
+      },
+      "actionLabel": "Check Rewards for Oct 2-4",
+      "tier": "B",
+      "stackNote": "Rewards offer; do not assume it combines with another promotion.",
+      "stackGroup": "cinnabon-rewards-offer",
+      "stackStatus": "exclusive",
+      "finePrint": "Rewards membership required. October 2-3 beverage offer requires any baked-good purchase; eligible small beverages include hot coffee, hot cocoa, lemonades, sparkling lemonades, cold brew, soda, and swirled soda, excluding Chillattas, MochaLatta Chill beverages, and bottled beverages. The October 4 $1 Classic Roll offer is in-bakery only. Both are at participating locations. No savings estimate because Woodlands regular prices were not verified.",
+      "expirationLabel": "October 2-4; $1 roll only on October 4",
+      "availability": "available",
+      "dealType": "loyalty-reward",
+      "freshness": "new",
+      "discoveredOn": "2026-09-30",
+      "preferenceSignals": [
+        "coffee",
+        "account-specific",
+        "one-day",
+        "upcoming-expiration"
+      ],
+      "distanceBasis": "unknown",
+      "score": 47,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.8,
+          "weight": 10,
+          "detail": "Household match: coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 5 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 0.8,
+          "weight": 8,
+          "detail": "$1.00 required per $0.00 saved"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "taco-bell-rewards-program",
       "merchant": "Taco Bell",
       "title": "Free signup reward for new Rewards members",
@@ -5023,6 +5229,218 @@
           "points": 4.6000000000000005,
           "weight": 10,
           "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "heb-free-cooked-bacon-with-frozen-burgers-2026-10-13",
+      "merchant": "H-E-B",
+      "title": "Free fully cooked bacon with eligible frozen burgers",
+      "summary": "Clip the official H-E-B digital coupon, then buy one eligible 12-48 oz H-E-B frozen fully cooked burger package to get one eligible 2.1-2.52 oz fully cooked bacon free through October 13. The public page was set to Victoria, so availability and prices at Spring/Rayford require an in-app store check.",
+      "category": "grocery",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-10-13",
+      "locationNote": "Official coupon page was set to Victoria H-E-B plus!, not a Spring-area store. Clip only after switching to the intended H-E-B and confirm that both products appear as eligible there.",
+      "verification": "needs-check",
+      "friction": "medium",
+      "tags": [
+        "digital coupon",
+        "free grocery",
+        "frozen burgers",
+        "bacon",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official digital coupon 84056291",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84056291",
+        "checkedOn": "2026-09-30"
+      },
+      "actionLabel": "Switch store and clip",
+      "tier": "B",
+      "stackNote": "Coupon says unlimited use but H-E-B may limit quantities; do not assume another manufacturer or basket coupon stacks.",
+      "stackStatus": "conditional",
+      "finePrint": "Expires October 13, 2026; official page says unlimited use, while supplies last, discount applies to the lowest-priced eligible item, and the coupon may not be redeemable at all H-E-B locations. Victoria pricing showed eligible burgers from $9.99 and bacon at $4.39, but those are not Spring prices, so this listing carries no local savings or spend estimate.",
+      "expirationLabel": "Through October 13; Spring availability unconfirmed",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-09-30",
+      "preferenceSignals": [
+        "free-grocery",
+        "digital-coupon",
+        "location-check-required"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 36,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 47,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.7999999999999998,
+          "weight": 18,
+          "detail": "Unverified lead; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.200000000000001,
+          "weight": 10,
+          "detail": "General household priority"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 36 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 14 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "heb-four-off-laird-protein-coffee-2026-10-13",
+      "merchant": "H-E-B",
+      "title": "$4 off Laird Superfood Protein Coffee",
+      "summary": "Clip the official H-E-B digital coupon for $4 off an eligible 5.3 oz Laird Superfood Protein Coffee through October 13. The public page was set to Victoria, so Spring/Rayford availability and final price require an in-app store check.",
+      "category": "grocery",
+      "estimatedSavings": 4,
+      "minimumSpend": 0,
+      "savingsRate": 0,
+      "isFree": false,
+      "expiresOn": "2026-10-13",
+      "locationNote": "Official coupon page was set to Victoria H-E-B plus!, not a Spring-area store. Switch to the intended H-E-B before clipping and confirm the item is stocked and coupon-eligible.",
+      "verification": "needs-check",
+      "friction": "medium",
+      "tags": [
+        "digital coupon",
+        "coffee",
+        "protein",
+        "fixed discount",
+        "location-gated"
+      ],
+      "source": {
+        "label": "H-E-B official digital coupon 84051884",
+        "url": "https://www.heb.com/digital-coupon/coupon-detail/84051884",
+        "checkedOn": "2026-09-30"
+      },
+      "actionLabel": "Switch store and clip",
+      "tier": "B",
+      "stackNote": "Do not assume another manufacturer or basket coupon stacks; H-E-B's coupon policy controls.",
+      "stackStatus": "conditional",
+      "finePrint": "Expires October 13, 2026; official page says unlimited use, while supplies last, and may not be redeemable at all H-E-B locations. Victoria pricing showed $17.98 for eligible 5.3 oz varieties, but that price is not locally confirmed. The $4 coupon value is explicit; no minimum spend or local savings rate is inferred.",
+      "expirationLabel": "Through October 13; Spring availability unconfirmed",
+      "availability": "available",
+      "dealType": "digital-coupon",
+      "freshness": "new",
+      "discoveredOn": "2026-09-30",
+      "preferenceSignals": [
+        "coffee",
+        "digital-coupon",
+        "fixed-dollar-savings",
+        "location-check-required"
+      ],
+      "distanceMiles": 3.9,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 36,
+      "distanceSourceLabel": "Business-confirmed H-E-B Spring Creek Market profile",
+      "distanceSourceUrl": "https://www.google.com/maps/place/H-E-B/@30.1077474,-95.387444,17z/data=!3m1!4b1!4m6!3m5!1s0x864735c20dc5006f:0xc851dc1ba9e79ad8!8m2!3d30.1077474!4d-95.387444!16s%2Fg%2F11b7xjqw44",
+      "score": 44,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.7999999999999998,
+          "weight": 18,
+          "detail": "Unverified lead; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 9.84,
+          "weight": 24,
+          "detail": "$4.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "0% saved"
+        },
+        {
+          "label": "Household fit",
+          "points": 8.6,
+          "weight": 10,
+          "detail": "Household match: coffee"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~3.9 miles to H-E-B Spring Creek Market; location checked 36 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 6.9,
+          "weight": 10,
+          "detail": "Ends in 14 days; newly found"
         },
         {
           "label": "Effort",

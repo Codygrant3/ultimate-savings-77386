@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-30T12:14:44.331Z",
-  "checkedOn": "2026-09-25",
+  "generatedAt": "2026-09-30T15:20:38.774Z",
+  "checkedOn": "2026-09-30",
   "items": [
     {
       "id": "watch-ground-beef-80-20",
@@ -51,7 +51,7 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
-      "checkedOn": "2026-09-25",
+      "checkedOn": "2026-09-30",
       "locationStatus": "verified-local"
     },
     {
@@ -116,7 +116,7 @@
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
-      "checkedOn": "2026-09-25",
+      "checkedOn": "2026-09-30",
       "locationStatus": "verified-local"
     },
     {

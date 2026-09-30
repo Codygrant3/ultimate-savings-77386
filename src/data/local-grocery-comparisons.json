@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-09-25",
-  "adWindow": "Live public listings checked September 25, 2026; only reverified prices use that date, and older prices retain their original check dates.",
+  "checkedOn": "2026-09-30",
+  "adWindow": "Live public listings checked September 30, 2026; only reverified prices use that date, and older prices retain their original check dates.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -181,7 +181,7 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "This is a store-specific Walmart rollback, not a four-store comparison. The current page lists red seedless grapes at $1.67/lb; the older green-grape and Gala-apple rollbacks were removed because they were no longer shown on the September 25 store page.",
+      "comparisonNote": "This is a store-specific Walmart rollback, not a four-store comparison. The September 30 store page still lists red seedless grapes at $1.67/lb; older green-grape and Gala-apple rollbacks remain excluded because they were not shown.",
       "winner": "Walmart #3585 red seedless grapes at $1.67/lb",
       "prices": [
         {
@@ -193,8 +193,8 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-09-25",
-          "dateLabel": "Store page checked Sep 25; rollback from $4.21; no end date shown",
+          "checkedOn": "2026-09-30",
+          "dateLabel": "Store page checked Sep 30; rollback from $4.21; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
@@ -316,8 +316,8 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-09-25",
-          "dateLabel": "Store page checked Sep 25; rollback from $2.34; no end date shown",
+          "checkedOn": "2026-09-30",
+          "dateLabel": "Store page checked Sep 30; rollback from $2.34; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]

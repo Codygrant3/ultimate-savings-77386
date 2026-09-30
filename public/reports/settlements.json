@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-30T12:14:44.331Z",
-  "checkedOn": "2026-09-29",
+  "generatedAt": "2026-09-30T15:20:38.774Z",
+  "checkedOn": "2026-09-30",
   "openCount": 3,
   "settlements": [
     {
@@ -19,7 +19,7 @@
       "administrator": "Settlement Administrator for Jason Buhl v. Dairy Farmers of America, Inc.",
       "court": "District Court of Wyandotte County, Kansas, Case No. WY-2026-CV-000143",
       "verification": "official-administrator",
-      "checkedOn": "2026-09-29",
+      "checkedOn": "2026-09-30",
       "freshness": "current",
       "relevanceScore": 78,
       "relevanceReason": "Official administrator homepage reconfirmed claim deadline October 14, 2026; final approval hearing October 26, 2026. No claim was submitted on this scan.",
@@ -42,7 +42,7 @@
       "administrator": "Simpluris",
       "court": "Circuit Court for Iowa County, Wisconsin",
       "verification": "court-authorized-notice",
-      "checkedOn": "2026-09-29",
+      "checkedOn": "2026-09-30",
       "freshness": "current",
       "relevanceScore": 80,
       "relevanceReason": "Official FAQ reconfirmed claim deadline October 22, 2026; opt-out/object and hearing dates retained from prior verified FAQ. No claim was submitted on this scan.",
@@ -65,7 +65,7 @@
       "administrator": "Kroll Settlement Administration",
       "court": "U.S. District Court, Central District of California",
       "verification": "official-administrator",
-      "checkedOn": "2026-09-25",
+      "checkedOn": "2026-09-30",
       "freshness": "current",
       "relevanceScore": 68,
       "relevanceReason": "Potentially high vehicle value, but only for specific Toyota models and verified VINs.",
