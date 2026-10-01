@@ -325,7 +325,7 @@ describe("Savings Desk interactions", () => {
       target: { value: "exclusive" }
     });
     fireEvent.change(screen.getByLabelText("Expires on"), {
-      target: { value: "2026-09-30" }
+      target: { value: "2026-12-31" }
     });
     fireEvent.click(screen.getByLabelText("I confirmed the linked official terms"));
     fireEvent.click(screen.getByRole("button", { name: "Add locally recorded deal" }));

@@ -18,16 +18,18 @@ describe("verified opportunity catalog", () => {
     }
   });
 
-  it("uses the current seven-fill Exxon newcomer evidence", () => {
+  it("keeps the current Exxon referral five-fill evidence", () => {
     const exxon = catalog.find(
-      ({ id }) => id === "exxon-mobil-new-app-user-ten-dollar-bonus-2026"
+      ({ id }) => id === "exxon-mobil-referral-five-fill-bonus-2026"
     );
 
-    expect(exxon?.title).toBe("Up to $15 in points across seven qualifying app fill-ups");
-    expect(exxon?.estimatedSavings).toBe(15);
-    expect(exxon?.source.url).toBe("https://www.exxonmobilfuels.com/en/rewards/faqs");
-    expect(exxon?.source.checkedOn).toBe("2026-09-26");
-    expect(exxon?.finePrint).toContain("next five qualifying app fills");
+    expect(exxon?.title).toContain("referral-code fills");
+    expect(exxon?.estimatedSavings).toBe(11.25);
+    expect(exxon?.expiresOn).toBe("2026-10-15");
+    expect(exxon?.source.url).toBe(
+      "https://www.exxonmobilfuels.com/en/rewards/faqs/terms-conditions"
+    );
+    expect(exxon?.finePrint).toContain("October 15, 2026");
   });
 
   it("resolves high-value fuel rewards to officially checked nearby locations", () => {
