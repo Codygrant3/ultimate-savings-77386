@@ -333,6 +333,32 @@
     ]
   },
   {
+    "id": "settlement-dfa-data-incident",
+    "name": "Dairy Farmers of America data incident official settlement",
+    "url": "https://dfadatasettlement.com/",
+    "category": "settlements",
+    "priority": 10,
+    "keywords": [
+      "october 14, 2026",
+      "alternate cash payment",
+      "documented losses",
+      "credit monitoring"
+    ]
+  },
+  {
+    "id": "settlement-equinox-data-incident",
+    "name": "Equinox data incident official settlement",
+    "url": "https://www.equinoxincsettlement.com/",
+    "category": "settlements",
+    "priority": 10,
+    "keywords": [
+      "october 23, 2026",
+      "pro rata cash payment",
+      "documented monetary losses",
+      "credit monitoring"
+    ]
+  },
+  {
     "id": "shake-shack-offers",
     "name": "Shake Shack official national and regional offers",
     "url": "https://shakeshack.com/national-regional-offers",

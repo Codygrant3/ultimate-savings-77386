@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T11:14:19.912Z",
-  "checkedOn": "2026-09-30",
+  "generatedAt": "2026-10-02T15:11:42.702Z",
+  "checkedOn": "2026-10-02",
   "items": [
     {
       "id": "watch-ground-beef-80-20",
@@ -46,12 +46,12 @@
       "item": "Additional verified produce rollbacks",
       "comparisonId": "walmart-local-rollbacks",
       "targetPrice": 1.75,
-      "latestPrice": 1.67,
+      "latestPrice": 0.907,
       "unit": "per lb",
       "retailer": "Walmart",
       "sourceLabel": "Walmart official listing",
       "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services",
-      "checkedOn": "2026-09-30",
+      "checkedOn": "2026-10-02",
       "locationStatus": "verified-local"
     },
     {

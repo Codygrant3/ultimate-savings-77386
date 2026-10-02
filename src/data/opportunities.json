@@ -325,7 +325,7 @@
         "id": "wendys-wednesday-free-nuggets-2026",
         "merchant": "Wendy's",
         "title": "Free 6-piece nuggets Wednesday with $5 purchase",
-        "summary": "Not redeemable today (Thursday); next Wendy's Wednesday is October 7. Official offers page still lists 'Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase' as a current digital/Rewards offer.",
+        "summary": "Not redeemable today (Friday); next Wendy's Wednesday is October 7. Official offers page still lists 'Wendy's Wednesday - Free 6pc Nuggs w/ $5 Purchase' as a current digital/Rewards offer.",
         "category": "restaurants",
         "estimatedSavings": 0,
         "minimumSpend": 5,
@@ -1093,7 +1093,7 @@
         "id": "amc-half-price-tuesday-wednesday-2026",
         "merchant": "AMC Theatres",
         "title": "50% off tickets on Tuesdays and Wednesdays",
-        "summary": "TODAY Tuesday: AMC Stubs members receive half off the adult evening base ticket price and can save 50% on an eligible small combo. Official offers page was HTTP 403 on this scan; prior verified terms retained with freshness caution.",
+        "summary": "Not redeemable today (Friday); the next eligible show date is Tuesday, October 6. AMC Stubs members receive half off the adult evening base ticket price and can save 50% on an eligible small combo. The official offers page remained fetch-limited, so the September 1 verified terms are retained with a freshness warning.",
         "category": "movies",
         "estimatedSavings": 4.44,
         "minimumSpend": 8.88,
@@ -1117,11 +1117,11 @@
             "url": "https://www.amctheatres.com/50pct-off-tuesdays-and-wednesdays",
             "checkedOn": "2026-09-01"
         },
-        "actionLabel": "View discount",
+        "actionLabel": "Plan for Tuesday or Wednesday",
         "tier": "A",
         "stackNote": "The $4.44 estimate counts only the minimum published small-combo savings; the separate ticket discount can add value.",
         "finePrint": "AMC Stubs membership is required, including the free Insider tier. The ticket discount applies to the adult evening base price for Tuesday and Wednesday showtimes at participating locations, limit 10 tickets per show date. The in-theatre small combo normally costs $8.88 to $15.58 and is also 50% off; items must be purchased together. Premium formats, special events, taxes, and convenience fees are excluded or can add cost. Confirmed on the official AMC page on 2026-09-01.",
-        "expirationLabel": "Tuesdays and Wednesdays while listed",
+        "expirationLabel": "Tuesdays and Wednesdays while listed (next Oct 6)",
         "availability": "program",
         "dealType": "movie-discount",
         "freshness": "current",
@@ -1677,7 +1677,7 @@
         "id": "nacho-padres-monday-half-off-margaritas-2026",
         "merchant": "Nacho Padres",
         "title": "Monday half-off margaritas",
-        "summary": "Not redeemable today (Thursday); next Monday half-off margaritas is October 5. Official daily specials list Monday Half Off Margaritas for a limited time.",
+        "summary": "Not redeemable today (Friday); next Monday half-off margaritas is October 5. Official daily specials list Monday Half Off Margaritas for a limited time.",
         "category": "restaurants",
         "estimatedSavings": 0,
         "minimumSpend": 0,
@@ -1723,7 +1723,7 @@
         "id": "nacho-padres-taco-tuesdays-2026",
         "merchant": "Nacho Padres",
         "title": "Taco Tuesdays: two tacos for $9.99",
-        "summary": "Not redeemable today (Thursday); next Taco Tuesday is October 6. Official Nacho Padres daily specials list two tacos for $9.99 (add beans and rice $1.99).",
+        "summary": "Not redeemable today (Friday); next Taco Tuesday is October 6. Official Nacho Padres daily specials list two tacos for $9.99 (add beans and rice $1.99).",
         "category": "restaurants",
         "estimatedSavings": 0,
         "minimumSpend": 9.99,
@@ -1768,7 +1768,7 @@
         "id": "nacho-padres-wine-down-wednesdays-2026",
         "merchant": "Nacho Padres",
         "title": "Wine Down Wednesdays: half off wine bottles",
-        "summary": "Not redeemable today (Thursday); next Wine Down Wednesday is October 7. Official Nacho Padres daily specials list half off wine bottles on Wednesdays.",
+        "summary": "Not redeemable today (Friday); next Wine Down Wednesday is October 7. Official Nacho Padres daily specials list half off wine bottles on Wednesdays.",
         "category": "restaurants",
         "estimatedSavings": 0,
         "minimumSpend": 0,
@@ -2001,7 +2001,7 @@
         "source": {
             "label": "H-E-B official digital coupon 84056291",
             "url": "https://www.heb.com/digital-coupon/coupon-detail/84056291",
-            "checkedOn": "2026-09-30"
+            "checkedOn": "2026-10-02"
         },
         "actionLabel": "Switch store and clip",
         "tier": "B",
@@ -2043,7 +2043,7 @@
         "source": {
             "label": "H-E-B official digital coupon 84051884",
             "url": "https://www.heb.com/digital-coupon/coupon-detail/84051884",
-            "checkedOn": "2026-09-30"
+            "checkedOn": "2026-10-02"
         },
         "actionLabel": "Switch store and clip",
         "tier": "B",
@@ -2291,5 +2291,89 @@
             "time-window"
         ],
         "localRecord": true
+    },
+    {
+        "id": "cinnabon-rewards-welcome-free-baked-good-2026",
+        "merchant": "Cinnabon",
+        "title": "Free MiniBon or 4-count BonBites for new Rewards members",
+        "summary": "New Cinnabon Rewards members receive one original MiniBon or 4-count Original BonBites with any purchase. The reward expires 14 days after it is issued and must be applied at checkout.",
+        "category": "restaurants",
+        "estimatedSavings": 0,
+        "minimumSpend": 0,
+        "isFree": true,
+        "locationNote": "Official Cinnabon directory lists The Woodlands Mall, 1201 Lake Woodlands Dr, The Woodlands, TX 77380. Confirm that the selected bakery participates before making a special trip.",
+        "verification": "verified",
+        "friction": "medium",
+        "tags": [
+            "free food",
+            "new member",
+            "Rewards",
+            "The Woodlands",
+            "with purchase"
+        ],
+        "source": {
+            "label": "Cinnabon official offers and Rewards terms",
+            "url": "https://www.cinnabon.com/offers",
+            "checkedOn": "2026-10-02"
+        },
+        "actionLabel": "Join and use within 14 days",
+        "tier": "A",
+        "stackNote": "Single-use reward; official terms prohibit combining it with another offer, reward, discount, coupon, promotion, or third-party delivery.",
+        "stackGroup": "cinnabon-rewards-offer",
+        "stackStatus": "exclusive",
+        "finePrint": "Requires completing Cinnabon Rewards registration and making any purchase. Choose one original 4-count BonBites or one MiniBon; excludes caramel-pecan-topped and chocolate BonBites. Reward expires 14 days after issue. App and online orders can add service fees and tax. No dollar estimate is shown because a current Woodlands bakery price was not verified.",
+        "expirationLabel": "14 days after reward issue",
+        "availability": "available",
+        "dealType": "free-food",
+        "freshness": "new",
+        "discoveredOn": "2026-10-02",
+        "preferenceSignals": [
+            "free-food",
+            "account-specific",
+            "nearby-location"
+        ]
+    },
+    {
+        "id": "heb-ten-dollar-gift-card-with-fifty-dollar-gift-cards-2026-10-06",
+        "merchant": "H-E-B",
+        "title": "Free $10 H-E-B gift card with $50 in select gift cards",
+        "summary": "Clip the official in-store H-E-B digital coupon, buy at least $50 in eligible Wayfair, Chili's, Domino's, Pappas Restaurants, Chipotle, Panera, or Burger King gift cards, and include the free $10 H-E-B gift card in the same order. The public page was set to Victoria, so Spring/Rayford availability must be confirmed after switching stores.",
+        "category": "grocery",
+        "estimatedSavings": 10,
+        "minimumSpend": 50,
+        "savingsRate": 20,
+        "isFree": true,
+        "expiresOn": "2026-10-06",
+        "locationNote": "Official coupon page was set to Victoria H-E-B plus!, not a Spring-area store. Products were unavailable online in that context. Switch to the intended H-E-B and confirm the coupon is redeemable there before buying gift cards.",
+        "verification": "needs-check",
+        "friction": "medium",
+        "tags": [
+            "digital coupon",
+            "gift card",
+            "restaurant",
+            "20% value",
+            "location-gated"
+        ],
+        "source": {
+            "label": "H-E-B official digital coupon 84056896",
+            "url": "https://www.heb.com/digital-coupon/coupon-detail/84056896",
+            "checkedOn": "2026-10-02"
+        },
+        "actionLabel": "Switch store and confirm by Tuesday",
+        "tier": "A",
+        "stackNote": "Potentially useful before planned restaurant spending, but do not buy extra gift cards solely to obtain the reward. H-E-B coupon policy and store participation control.",
+        "stackStatus": "conditional",
+        "finePrint": "Redeem in store only through Tuesday, October 6, 2026. Buy $50 or more in the listed third-party gift cards and include the $10 H-E-B gift card in the order. Official page says unlimited use, while supplies last, quantities may be limited, and the coupon may not be redeemable at all H-E-B locations. The explicit $10 value is retained, but it is excluded from verified totals until a Spring store confirms participation.",
+        "expirationLabel": "Through Tuesday October 6; Spring availability unconfirmed",
+        "availability": "available",
+        "dealType": "digital-coupon",
+        "freshness": "new",
+        "discoveredOn": "2026-10-02",
+        "preferenceSignals": [
+            "grocery",
+            "stacking-strategy",
+            "fixed-dollar-savings",
+            "location-check-required"
+        ]
     }
 ]

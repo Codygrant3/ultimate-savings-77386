@@ -1,7 +1,7 @@
 {
   "zipCode": "77386",
-  "checkedOn": "2026-09-30",
-  "adWindow": "Live public listings checked September 30, 2026; only reverified prices use that date, and older prices retain their original check dates.",
+  "checkedOn": "2026-10-02",
+  "adWindow": "Live public listings checked October 2, 2026; only reverified prices use that date, and older prices retain their original check dates.",
   "comparisons": [
     {
       "id": "ground-beef-80-20",
@@ -181,9 +181,22 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "This is a store-specific Walmart rollback, not a four-store comparison. The September 30 store page still lists red seedless grapes at $1.67/lb; older green-grape and Gala-apple rollbacks remain excluded because they were not shown.",
-      "winner": "Walmart #3585 red seedless grapes at $1.67/lb",
+      "comparisonNote": "These are store-specific Walmart #3585 produce rollbacks, not a four-store comparison. On October 2, Gala apples improved to $2.72 per 3 lb bag ($0.91/lb), red grapes remained $1.67/lb, and green grapes were $1.77/lb.",
+      "winner": "Walmart #3585 Gala apples at $2.72 per 3 lb bag ($0.91/lb)",
       "prices": [
+        {
+          "retailer": "Walmart",
+          "product": "Fresh Gala apples",
+          "packageSize": "3 lb bag",
+          "price": 2.72,
+          "unitPrice": 0.907,
+          "unit": "lb",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-10-02",
+          "dateLabel": "Store page checked Oct 2; rollback from $3.24; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        },
         {
           "retailer": "Walmart",
           "product": "Red seedless grapes",
@@ -193,8 +206,21 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-09-30",
-          "dateLabel": "Store page checked Sep 30; rollback from $4.21; no end date shown",
+          "checkedOn": "2026-10-02",
+          "dateLabel": "Store page checked Oct 2; rollback from $4.21; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+        },
+        {
+          "retailer": "Walmart",
+          "product": "Green seedless grapes",
+          "packageSize": "About 2.25 lb bag",
+          "price": 3.98,
+          "unitPrice": 1.77,
+          "unit": "lb",
+          "status": "verified-local",
+          "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
+          "checkedOn": "2026-10-02",
+          "dateLabel": "Store page checked Oct 2; rollback from $4.43; no end date shown",
           "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
         }
       ]
