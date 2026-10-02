@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-01T11:17:10.346Z",
-  "checkedOn": "2026-10-01",
+  "generatedAt": "2026-10-02T11:14:19.912Z",
+  "checkedOn": "2026-10-02",
   "openCount": 3,
   "settlements": [
     {
@@ -19,7 +19,7 @@
       "administrator": "Settlement Administrator for Jason Buhl v. Dairy Farmers of America, Inc.",
       "court": "District Court of Wyandotte County, Kansas, Case No. WY-2026-CV-000143",
       "verification": "official-administrator",
-      "checkedOn": "2026-10-01",
+      "checkedOn": "2026-10-02",
       "freshness": "current",
       "relevanceScore": 78,
       "relevanceReason": "Official administrator homepage reconfirmed claim deadline October 14, 2026; final approval hearing October 26, 2026. No claim was submitted on this scan.",
@@ -42,7 +42,7 @@
       "administrator": "Simpluris",
       "court": "Circuit Court for Iowa County, Wisconsin",
       "verification": "court-authorized-notice",
-      "checkedOn": "2026-10-01",
+      "checkedOn": "2026-10-02",
       "freshness": "current",
       "relevanceScore": 80,
       "relevanceReason": "Official FAQ reconfirmed claim deadline October 22, 2026; opt-out/object deadlines October 7, 2026; Final Approval Hearing November 6, 2026 10:00 a.m. CT. No claim was submitted on this scan.",
