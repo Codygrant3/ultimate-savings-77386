@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T15:11:42.702Z",
-  "checkedOn": "2026-10-02",
+  "generatedAt": "2026-10-03T11:14:25.915Z",
+  "checkedOn": "2026-10-03",
   "openCount": 4,
   "settlements": [
     {
@@ -19,7 +19,7 @@
       "administrator": "Settlement Administrator for Jason Buhl v. Dairy Farmers of America, Inc.",
       "court": "District Court of Wyandotte County, Kansas, Case No. WY-2026-CV-000143",
       "verification": "official-administrator",
-      "checkedOn": "2026-10-02",
+      "checkedOn": "2026-10-03",
       "freshness": "current",
       "relevanceScore": 78,
       "relevanceReason": "Official administrator homepage reconfirmed claim deadline October 14, 2026; final approval hearing October 26, 2026. No claim was submitted on this scan.",
@@ -42,7 +42,7 @@
       "administrator": "Simpluris",
       "court": "Circuit Court for Iowa County, Wisconsin",
       "verification": "court-authorized-notice",
-      "checkedOn": "2026-10-02",
+      "checkedOn": "2026-10-03",
       "freshness": "current",
       "relevanceScore": 80,
       "relevanceReason": "Official FAQ reconfirmed claim deadline October 22, 2026; opt-out/object deadlines October 7, 2026; Final Approval Hearing November 6, 2026 10:00 a.m. CT. No claim was submitted on this scan.",
@@ -65,10 +65,10 @@
       "administrator": "Equinox Settlement Administrator",
       "court": "Supreme Court of the State of New York, Albany County, Index Nos. 911677-24 and 901198-25",
       "verification": "court-authorized-notice",
-      "checkedOn": "2026-10-02",
+      "checkedOn": "2026-10-03",
       "freshness": "current",
       "relevanceScore": 82,
-      "relevanceReason": "Official court-authorized site and long-form notice confirm nationwide notice-based eligibility, an October 23, 2026 claim deadline, and cash or monitoring benefits. No claim was submitted on this scan.",
+      "relevanceReason": "Official court-authorized site reconfirmed claim deadline October 23, 2026; Final Approval Hearing November 12, 2026. Opt-out/object windows already passed (September 23, 2026). No claim was submitted on this scan.",
       "feeRequired": false,
       "eligibilityStatus": "user-confirmation-required"
     },
