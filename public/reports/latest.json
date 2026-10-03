@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-03T11:14:27.713Z",
+  "generatedAt": "2026-10-03T15:15:15.709Z",
   "weekOf": "2026-09-28",
   "zipCode": "77386",
   "totalPotentialSavings": 125.24,
-  "verifiedCount": 47,
-  "expiringCount": 15,
+  "verifiedCount": 49,
+  "expiringCount": 17,
   "opportunities": [
     {
       "id": "take5-rayford-15-off-oil-change-2026",
@@ -606,6 +606,108 @@
           "points": 5.3999999999999995,
           "weight": 9,
           "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
+      "id": "chuys-national-taco-day-free-entree-2026-10-06",
+      "merchant": "Chuy's",
+      "title": "Free entree Tuesday October 6 for dressing like a taco",
+      "summary": "Tuesday October 6 only: dine in dressed like a taco, post a photo with the official National Taco Day message and hashtag, show the post to the server, and receive one free entree during the same visit.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": true,
+      "expiresOn": "2026-10-06",
+      "locationNote": "Chuy's official directory lists a nearby Shenandoah restaurant at 18035 Interstate 45 South, Shenandoah, TX 77385. Confirm promotion participation before making the trip.",
+      "verification": "verified",
+      "friction": "high",
+      "tags": [
+        "free food",
+        "one-day",
+        "costume",
+        "social post",
+        "Shenandoah"
+      ],
+      "source": {
+        "label": "Chuy's official National Taco Day promotion",
+        "url": "https://www.chuys.com/specials/national-taco-day",
+        "checkedOn": "2026-10-03"
+      },
+      "actionLabel": "Confirm and dress like a taco Tue Oct 6",
+      "tier": "A",
+      "stackNote": "Same-visit dine-in promotion; do not assume it stacks with the separate $1 taco add-on or $1 margarita floater specials.",
+      "stackGroup": "chuys-national-taco-day",
+      "stackStatus": "exclusive",
+      "finePrint": "Valid Tuesday, October 6, 2026, for dine-in only. Arrive dressed like a taco, post a photo with the wording 'Posting for a free entree! #ChuysTacoDay,' and show the post to the server. The free entree is valid on the same visit only. No dollar estimate is shown because the selected entree and current Shenandoah menu price were not verified.",
+      "expirationLabel": "Tuesday October 6 only",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-10-03",
+      "preferenceSignals": [
+        "free-food",
+        "local-relevance",
+        "one-day",
+        "upcoming-expiration"
+      ],
+      "distanceBasis": "unknown",
+      "score": 62,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 13.2,
+          "weight": 24,
+          "detail": "free reward"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 4 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 1.7999999999999998,
+          "weight": 9,
+          "detail": "high redemption effort"
         },
         {
           "label": "Required spend",
@@ -1577,6 +1679,108 @@
       ]
     },
     {
+      "id": "cinnaholic-national-cinnamon-roll-day-bogo-2026-10-04",
+      "merchant": "Cinnaholic",
+      "title": "Buy one cinnamon roll, get one free Sunday October 4",
+      "summary": "Tomorrow Sunday October 4: Cinnaholic's official announcement says all bakeries will offer buy-one-get-one-free cinnamon rolls all day for National Cinnamon Roll Day. The official directory lists a Spring bakery at 6535 N Grand Pkwy W, Suite 220, Spring, TX 77389.",
+      "category": "restaurants",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-10-04",
+      "locationNote": "Cinnaholic's official directory lists the Spring bakery at 6535 N Grand Pkwy W, Suite 220, Spring, TX 77389. The brand announcement says all bakeries participate, but current local roll prices were not verified.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "BOGO",
+        "cinnamon roll",
+        "one-day",
+        "Spring",
+        "free food"
+      ],
+      "source": {
+        "label": "Cinnaholic official National Cinnamon Roll Day announcement",
+        "url": "https://www.facebook.com/Cinnaholic/posts/when-you-find-out-you-can-get-bogo-rolls-at-all-cinnaholic-bakeries-this-sunday-/1533272375499017/",
+        "checkedOn": "2026-10-03"
+      },
+      "actionLabel": "Use BOGO tomorrow Sunday Oct 4",
+      "tier": "A",
+      "stackNote": "Treat this one-day BOGO as a standalone offer; no additional stacking is assumed.",
+      "stackStatus": "exclusive",
+      "finePrint": "Valid all day Sunday, October 4, 2026, in store at Cinnaholic bakeries. Buy one cinnamon roll and receive one free; limit one free roll per person. No app or account requirement was stated. No dollar estimate is shown because the Spring bakery's current regular roll price was not verified.",
+      "expirationLabel": "Tomorrow only: Sunday October 4",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-10-03",
+      "preferenceSignals": [
+        "free-food",
+        "local-relevance",
+        "one-day",
+        "upcoming-expiration"
+      ],
+      "localRecord": true,
+      "distanceBasis": "unknown",
+      "score": 58,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.6000000000000005,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 4.4,
+          "weight": 8,
+          "detail": "Location not distance-confirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 10,
+          "weight": 10,
+          "detail": "Ends in 2 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 0.8400000000000001,
+          "weight": 7,
+          "detail": "Official terms restrict combining offers"
+        }
+      ]
+    },
+    {
       "id": "mcdonalds-grubhub-first-order-ten-off-2026",
       "merchant": "McDonald's + Grubhub",
       "title": "$10 off $15+ for first-time Grubhub diners",
@@ -2408,7 +2612,7 @@
       "id": "wendys-fryday-free-fry-2026",
       "merchant": "Wendy's",
       "title": "Free any-size fry Friday with $5 purchase",
-      "summary": "TODAY Friday October 2: Wendy's official offers page lists Fryday - Free Any Size Fry w/ $5 Purchase as a current digital/Rewards offer.",
+      "summary": "Not redeemable Saturday: Wendy's official offers page lists Fryday - Free Any Size Fry w/ $5 Purchase as a current digital/Rewards offer. The next Friday is October 9.",
       "category": "restaurants",
       "estimatedSavings": 0,
       "minimumSpend": 5,
@@ -2430,12 +2634,12 @@
         "url": "https://www.wendys.com/offers-coupons",
         "checkedOn": "2026-10-03"
       },
-      "actionLabel": "Redeem Fryday today",
+      "actionLabel": "Redeem next Friday Oct 9",
       "tier": "A",
       "stackNote": "Use one app offer per order unless Wendy's checkout expressly allows otherwise.",
       "stackGroup": "wendys-app-order",
       "finePrint": "Requires a $5 qualifying purchase on Friday while the offer remains listed. Wendy's states that app offers are for app use only and cannot be printed. No dollar value is estimated because the local fry price was not verified.",
-      "expirationLabel": "Fridays while listed (TODAY Oct 2)",
+      "expirationLabel": "Fridays while listed (next Oct 9)",
       "availability": "available",
       "dealType": "free-food",
       "freshness": "current",
@@ -5649,6 +5853,112 @@
           "points": 1.7500000000000002,
           "weight": 7,
           "detail": "No compatible stack documented"
+        }
+      ]
+    },
+    {
+      "id": "laredo-taco-company-national-taco-day-bogo-2026-10-06",
+      "merchant": "Laredo Taco Company at 7-Eleven",
+      "title": "BOGO breakfast or chicken-fajita tacos Tuesday October 6",
+      "summary": "Tuesday October 6 only at participating Laredo Taco Company restaurants: buy one Potato & Egg Taco and get a second free, or buy one Chicken Fajita Taco and get a second free.",
+      "category": "convenience",
+      "estimatedSavings": 0,
+      "minimumSpend": 0,
+      "isFree": false,
+      "expiresOn": "2026-10-06",
+      "locationNote": "The official 7-Eleven page for 28760 Birnham Woods Drive in 77386 does not explicitly list a Laredo Taco Company restaurant, so local availability is not confirmed. Check the participating-location inventory before traveling.",
+      "verification": "needs-check",
+      "friction": "medium",
+      "tags": [
+        "BOGO",
+        "tacos",
+        "one-day",
+        "location-gated",
+        "free food"
+      ],
+      "source": {
+        "label": "7-Eleven official Laredo Taco Company announcement",
+        "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-s-laredo-taco-company-celebrates-national-taco-day-with-taco-tuesday-deals",
+        "checkedOn": "2026-10-03"
+      },
+      "actionLabel": "Find participating LTC location for Tue Oct 6",
+      "tier": "B",
+      "stackNote": "No membership or stacking terms were stated; count only the BOGO shown at a confirmed participating Laredo Taco Company restaurant.",
+      "stackStatus": "conditional",
+      "finePrint": "Offer valid only October 6, 2026, plus tax, at participating Laredo Taco Company restaurants inside participating 7-Eleven, Speedway, or Stripes stores. Local participation, item price, inventory, and redemption channel were not confirmed, so no dollar estimate is shown.",
+      "expirationLabel": "Tuesday October 6 only; local participation unconfirmed",
+      "availability": "available",
+      "dealType": "free-food",
+      "freshness": "new",
+      "discoveredOn": "2026-10-03",
+      "preferenceSignals": [
+        "free-food",
+        "one-day",
+        "location-check-required",
+        "upcoming-expiration"
+      ],
+      "distanceMiles": 3.35,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 39,
+      "distanceSourceLabel": "7-Eleven official Birnham Woods store page",
+      "distanceSourceUrl": "https://www.7-eleven.com/locations/tx/spring/28760-birnham-woods-drive-40941",
+      "score": 34,
+      "scoreLabel": "Low priority",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 1.7999999999999998,
+          "weight": 18,
+          "detail": "Unverified lead; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 0,
+          "weight": 24,
+          "detail": "$0.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 6.800000000000001,
+          "weight": 10,
+          "detail": "Household match: free food"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~3.35 miles to 7-Eleven Birnham Woods Drive; location checked 39 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 8.5,
+          "weight": 10,
+          "detail": "Ends in 4 days; newly found"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
         }
       ]
     },

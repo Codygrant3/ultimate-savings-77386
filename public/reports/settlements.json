@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T11:14:25.915Z",
+  "generatedAt": "2026-10-03T15:14:45.742Z",
   "checkedOn": "2026-10-03",
   "openCount": 4,
   "settlements": [
@@ -88,7 +88,7 @@
       "administrator": "Kroll Settlement Administration",
       "court": "U.S. District Court, Central District of California",
       "verification": "official-administrator",
-      "checkedOn": "2026-10-02",
+      "checkedOn": "2026-10-03",
       "freshness": "current",
       "relevanceScore": 68,
       "relevanceReason": "Official administrator site confirms the settlement is finalized and being implemented, but benefits apply only to specified Toyota models and verified VINs. No VIN was entered and no claim was submitted.",

@@ -409,5 +409,18 @@
       "The Woodlands",
       "special"
     ]
+  },
+  {
+    "id": "chuys-national-taco-day",
+    "name": "Chuy's official National Taco Day promotion",
+    "url": "https://www.chuys.com/specials/national-taco-day",
+    "category": "restaurants",
+    "priority": 10,
+    "keywords": [
+      "free entree",
+      "$1 taco",
+      "$1 'Rita floater",
+      "one-day-only"
+    ]
   }
 ]

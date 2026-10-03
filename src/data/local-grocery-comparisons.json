@@ -181,7 +181,7 @@
       "id": "walmart-local-rollbacks",
       "item": "Additional verified produce rollbacks",
       "category": "produce",
-      "comparisonNote": "These are store-specific Walmart #3585 produce rollbacks, not a four-store comparison. On October 2, Gala apples improved to $2.72 per 3 lb bag ($0.91/lb), red grapes remained $1.67/lb, and green grapes were $1.77/lb.",
+      "comparisonNote": "These are store-specific Walmart #3585 produce rollbacks, not a four-store comparison. On October 3, Gala apples remained $2.72 per 3 lb bag ($0.91/lb), red grapes remained $1.67/lb, and green grapes were $1.77/lb.",
       "winner": "Walmart #3585 Gala apples at $2.72 per 3 lb bag ($0.91/lb)",
       "prices": [
         {
@@ -193,9 +193,9 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-10-02",
-          "dateLabel": "Store page checked Oct 2; rollback from $3.24; no end date shown",
-          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+          "checkedOn": "2026-10-03",
+          "dateLabel": "Store page checked Oct 3; rollback from $3.24; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/deli"
         },
         {
           "retailer": "Walmart",
@@ -206,9 +206,9 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-10-02",
-          "dateLabel": "Store page checked Oct 2; rollback from $4.21; no end date shown",
-          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+          "checkedOn": "2026-10-03",
+          "dateLabel": "Store page checked Oct 3; rollback from $4.21; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/deli"
         },
         {
           "retailer": "Walmart",
@@ -219,9 +219,9 @@
           "unit": "lb",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-10-02",
-          "dateLabel": "Store page checked Oct 2; rollback from $4.43; no end date shown",
-          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+          "checkedOn": "2026-10-03",
+          "dateLabel": "Store page checked Oct 3; rollback from $4.43; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/deli"
         }
       ]
     },
@@ -342,9 +342,9 @@
           "unit": "each",
           "status": "verified-local",
           "locationNote": "Walmart Supercenter #3585, 2901 Riley Fuzzel Rd, Spring, TX 77386.",
-          "checkedOn": "2026-09-30",
-          "dateLabel": "Store page checked Sep 30; rollback from $2.34; no end date shown",
-          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/shopping-services"
+          "checkedOn": "2026-10-03",
+          "dateLabel": "Store page checked Oct 3; rollback from $2.34; no end date shown",
+          "sourceUrl": "https://www.walmart.com/store/3585-spring-tx/deli"
         }
       ]
     },
