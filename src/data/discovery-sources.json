@@ -422,5 +422,70 @@
       "$1 'Rita floater",
       "one-day-only"
     ]
+  },
+  {
+    "id": "dominos-official-news",
+    "name": "Domino's official news releases",
+    "url": "https://ir.dominos.com/news-releases",
+    "category": "restaurants",
+    "priority": 10,
+    "keywords": [
+      "50% off",
+      "free",
+      "limited time",
+      "National Pizza Month"
+    ]
+  },
+  {
+    "id": "torchys-national-taco-day",
+    "name": "Torchy's Tacos official National Taco Day announcement",
+    "url": "https://x.com/torchystacos/status/2102503275182305733",
+    "category": "restaurants",
+    "priority": 10,
+    "keywords": [
+      "BOGO",
+      "free taco",
+      "Rewards Members",
+      "National Taco Day"
+    ]
+  },
+  {
+    "id": "settlement-onepoint-data-incident",
+    "name": "OnePoint Patient Care data incident official settlement",
+    "url": "https://www.onepointsettlement.com/",
+    "category": "settlements",
+    "priority": 10,
+    "keywords": [
+      "october 8, 2026",
+      "alternate cash",
+      "documented losses",
+      "settlement class"
+    ]
+  },
+  {
+    "id": "settlement-consumer-indirect-pork",
+    "name": "Consumer indirect purchaser pork official settlement",
+    "url": "https://www.overchargedforpork.com/Home/Home",
+    "category": "settlements",
+    "priority": 9,
+    "keywords": [
+      "october 29, 2026",
+      "pork products",
+      "cash payment",
+      "settlement class"
+    ]
+  },
+  {
+    "id": "settlement-homebuyer-antitrust",
+    "name": "Homebuyer antitrust official settlement",
+    "url": "https://homebuyersettlement.com/",
+    "category": "settlements",
+    "priority": 9,
+    "keywords": [
+      "october 27, 2026",
+      "homebuyer",
+      "brokerage commission",
+      "settlement class"
+    ]
   }
 ]

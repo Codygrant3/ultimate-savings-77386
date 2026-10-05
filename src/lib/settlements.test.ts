@@ -15,7 +15,7 @@ describe("class action settlement guardrails", () => {
     };
     const ranked = rankSettlements([...settlements, expired], testDate);
 
-    expect(ranked).toHaveLength(10);
+    expect(ranked).toHaveLength(13);
     expect(ranked.some((settlement) => settlement.id === "expired")).toBe(false);
     expect(ranked.every((settlement) => settlement.feeRequired === false)).toBe(true);
   });
@@ -23,7 +23,7 @@ describe("class action settlement guardrails", () => {
   it("ranks relevance without changing the unconfirmed eligibility state", () => {
     const ranked = rankSettlements(settlements, testDate);
 
-    expect(ranked[0].id).toBe("biddle-disney-online-tv-2026");
+    expect(ranked[0].id).toBe("onepoint-data-incident-2026");
     expect(
       ranked.every(
         (settlement) =>
