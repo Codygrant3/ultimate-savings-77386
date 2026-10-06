@@ -87,87 +87,6 @@
     ]
   },
   {
-    "id": "mcdonalds-weekly-two-dollar-breakfast-sandwich-2026",
-    "merchant": "McDonald's",
-    "title": "$2 breakfast sandwich once weekly",
-    "summary": "LAST DAY today Sunday October 4: MyMcDonald's Rewards members can claim a $2 breakfast sandwich once per week in the app at participating locations. Official deals page reconfirmed 2026-10-04. Confirm the offer card is still loaded locally before a special trip.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 2,
-    "isFree": false,
-    "expiresOn": "2026-10-04",
-    "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "breakfast",
-      "$2 deal",
-      "weekly",
-      "app"
-    ],
-    "source": {
-      "label": "McDonald's official deals",
-      "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-10-04"
-    },
-    "actionLabel": "Claim $2 breakfast LAST DAY today",
-    "tier": "A",
-    "stackNote": "Use this app offer by itself unless checkout expressly permits another deal.",
-    "stackGroup": "mcdonalds-app-offer",
-    "finePrint": "Available once per week through October 4, 2026, in the McDonald's app at participating restaurants. The official page names the Sausage, Egg & Cheese McGriddles, Bacon, Egg & Cheese Biscuit, Egg McMuffin, and additional eligible choices. Delivery is excluded, Rewards enrollment is required, and local participation may vary. No dollar savings estimate is shown because regular Spring-area sandwich prices were not verified.",
-    "expirationLabel": "LAST DAY today Sunday Oct 4",
-    "availability": "available",
-    "dealType": "digital-coupon",
-    "freshness": "improved",
-    "discoveredOn": "2026-08-29",
-    "preferenceSignals": [
-      "restaurant",
-      "breakfast",
-      "app-specific",
-      "low-price"
-    ]
-  },
-  {
-    "id": "mcdonalds-weekly-free-medium-fries-2026",
-    "merchant": "McDonald's",
-    "title": "Free medium fries weekly with $1+ purchase",
-    "summary": "LAST DAY today Sunday October 4: MyMcDonald's Rewards members can claim free medium fries with a $1+ purchase once per week in the app at participating locations. Official deals page reconfirmed 2026-10-04. Confirm the offer card is still loaded locally before a special trip.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 1,
-    "isFree": true,
-    "expiresOn": "2026-10-04",
-    "locationNote": "McDonald's app and Rewards enrollment required at a participating restaurant; Spring-area participation and menu pricing are not locally confirmed.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "free food",
-      "weekly",
-      "app",
-      "$1 purchase"
-    ],
-    "source": {
-      "label": "McDonald's official deals",
-      "url": "https://www.mcdonalds.com/us/en-us/deals.html",
-      "checkedOn": "2026-10-04"
-    },
-    "actionLabel": "Claim free fries LAST DAY today",
-    "tier": "A",
-    "stackNote": "Use this offer by itself unless the app checkout expressly permits another deal.",
-    "stackGroup": "mcdonalds-app-offer",
-    "finePrint": "Requires a minimum $1 purchase through the McDonald's app and Rewards enrollment at participating U.S. restaurants. Redeemable once per week through October 4, 2026, and not available with McDelivery. No dollar value is estimated because the local fries price was not verified.",
-    "expirationLabel": "LAST DAY today Sunday Oct 4",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "improved",
-    "discoveredOn": "2026-08-23",
-    "preferenceSignals": [
-      "free-food",
-      "repeatable",
-      "app-specific"
-    ]
-  },
-  {
     "id": "whataburger-signup-free-burger-2026",
     "merchant": "Whataburger Rewards",
     "title": "Free Whataburger for new app members",
@@ -953,7 +872,7 @@
     "source": {
       "label": "Take 5 Spring location coupons",
       "url": "https://www.take5.com/locations/texas/spring/30083/",
-      "checkedOn": "2026-10-05"
+      "checkedOn": "2026-10-06"
     },
     "actionLabel": "Get coupon",
     "tier": "A",
@@ -1093,7 +1012,7 @@
     "id": "amc-half-price-tuesday-wednesday-2026",
     "merchant": "AMC Theatres",
     "title": "50% off tickets on Tuesdays and Wednesdays",
-    "summary": "The next eligible show date is Tuesday, October 6. AMC Stubs members receive half off the adult evening base ticket price and can save 50% on an eligible small combo. The official offers page remained fetch-limited, so the September 1 verified terms are retained with a freshness warning.",
+    "summary": "TODAY Tuesday October 6 and tomorrow Wednesday October 7 are eligible show dates. AMC Stubs members receive half off the adult evening base ticket price and can save 50% on an eligible small combo. The official offers page remained fetch-limited, so the September 1 verified terms are retained with a freshness warning.",
     "category": "movies",
     "estimatedSavings": 4.44,
     "minimumSpend": 8.88,
@@ -1117,11 +1036,11 @@
       "url": "https://www.amctheatres.com/50pct-off-tuesdays-and-wednesdays",
       "checkedOn": "2026-09-01"
     },
-    "actionLabel": "Plan for Tuesday or Wednesday",
+    "actionLabel": "Eligible TODAY (Tue) and Wed",
     "tier": "A",
     "stackNote": "The $4.44 estimate counts only the minimum published small-combo savings; the separate ticket discount can add value.",
     "finePrint": "AMC Stubs membership is required, including the free Insider tier. The ticket discount applies to the adult evening base price for Tuesday and Wednesday showtimes at participating locations, limit 10 tickets per show date. The in-theatre small combo normally costs $8.88 to $15.58 and is also 50% off; items must be purchased together. Premium formats, special events, taxes, and convenience fees are excluded or can add cost. Confirmed on the official AMC page on 2026-09-01.",
-    "expirationLabel": "Tuesdays and Wednesdays while listed (next Oct 6)",
+    "expirationLabel": "Tuesdays and Wednesdays while listed (today Oct 6 and Oct 7)",
     "availability": "program",
     "dealType": "movie-discount",
     "freshness": "current",
@@ -1601,7 +1520,7 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-10-03"
+      "checkedOn": "2026-10-06"
     },
     "actionLabel": "Half-off fajitas Thu only",
     "tier": "A",
@@ -1654,7 +1573,7 @@
     "source": {
       "label": "Nacho Padres official website hours and happy hour FAQ",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-10-04"
+      "checkedOn": "2026-10-06"
     },
     "actionLabel": "Happy Hour Mon-Fri 3-6",
     "tier": "B",
@@ -1698,7 +1617,7 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-10-01"
+      "checkedOn": "2026-10-06"
     },
     "actionLabel": "Use Monday special",
     "tier": "B",
@@ -1723,7 +1642,7 @@
     "id": "nacho-padres-taco-tuesdays-2026",
     "merchant": "Nacho Padres",
     "title": "Taco Tuesdays: two tacos for $9.99",
-    "summary": "The next Taco Tuesday is October 6. Official Nacho Padres daily specials list two tacos for $9.99 (add beans and rice $1.99).",
+    "summary": "TODAY is Taco Tuesday: Official Nacho Padres daily specials list two tacos for $9.99 (add beans and rice $1.99) at 2121 Rayford Rd.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 9.99,
@@ -1744,13 +1663,13 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-10-01"
+      "checkedOn": "2026-10-06"
     },
-    "actionLabel": "Plan for Tuesday Oct 6",
+    "actionLabel": "Taco Tuesday TODAY",
     "tier": "A",
     "stackNote": "Local restaurant special; do not assume stacking with Happy Hour or other coupons.",
     "finePrint": "Official Nacho Padres homepage Daily Specials section lists Tuesday: Two tacos $9.99; add beans and rice for $1.99. No published end date; treat as ongoing while listed. No dollar estimate because regular taco menu prices were not verified on this scan.",
-    "expirationLabel": "Tuesdays while listed (next Oct 6)",
+    "expirationLabel": "Tuesdays while listed (today Oct 6)",
     "availability": "available",
     "dealType": "promotion-event",
     "freshness": "current",
@@ -1788,7 +1707,7 @@
     "source": {
       "label": "Nacho Padres official website daily specials",
       "url": "https://nachopadres.com/",
-      "checkedOn": "2026-10-01"
+      "checkedOn": "2026-10-06"
     },
     "actionLabel": "Plan for Wednesday Oct 7",
     "tier": "B",
@@ -1851,49 +1770,6 @@
       "free-food",
       "app-specific",
       "recurring-weekly"
-    ]
-  },
-  {
-    "id": "cinnabon-national-cinnamon-roll-day-2026",
-    "merchant": "Cinnabon",
-    "title": "$1 Classic Roll today for Rewards members (National Cinnamon Roll Day)",
-    "summary": "TODAY Sunday October 4 only: Cinnabon Rewards members can buy one Classic Roll for $1 in-bakery at participating locations while supplies last. Official offers page and National Cinnamon Roll Day release reconfirmed 2026-10-04. The Oct 2-3 $1 small beverage window has ended. Nearest bakery is inside The Woodlands Mall; participation and regular price not individually confirmed.",
-    "category": "coffee",
-    "estimatedSavings": 0,
-    "minimumSpend": 1,
-    "isFree": false,
-    "expiresOn": "2026-10-04",
-    "locationNote": "Official Cinnabon directory lists The Woodlands Mall, 1201 Lake Woodlands Dr, The Woodlands, TX 77380. Offers are limited to participating bakeries; this bakery's participation and regular prices were not individually confirmed.",
-    "verification": "verified",
-    "friction": "medium",
-    "tags": [
-      "Rewards",
-      "cinnamon roll",
-      "beverage",
-      "one-day",
-      "The Woodlands"
-    ],
-    "source": {
-      "label": "Cinnabon official offers + National Cinnamon Roll Day release",
-      "url": "https://www.cinnabon.com/offers",
-      "checkedOn": "2026-10-04"
-    },
-    "actionLabel": "Get $1 Classic Roll TODAY (Rewards)",
-    "tier": "B",
-    "stackNote": "Rewards offer; do not assume it combines with another promotion.",
-    "stackGroup": "cinnabon-rewards-offer",
-    "stackStatus": "exclusive",
-    "finePrint": "Rewards membership required. October 2-3 beverage offer requires any baked-good purchase; eligible small beverages include hot coffee, hot cocoa, lemonades, sparkling lemonades, cold brew, soda, and swirled soda, excluding Chillattas, MochaLatta Chill beverages, and bottled beverages. The October 4 $1 Classic Roll offer is in-bakery only. Both are at participating locations. No savings estimate because Woodlands regular prices were not verified.",
-    "expirationLabel": "TODAY only: Sunday October 4",
-    "availability": "available",
-    "dealType": "loyalty-reward",
-    "freshness": "improved",
-    "discoveredOn": "2026-09-30",
-    "preferenceSignals": [
-      "coffee",
-      "account-specific",
-      "one-day",
-      "upcoming-expiration"
     ]
   },
   {
@@ -2233,12 +2109,12 @@
       "url": "https://www.heb.com/digital-coupon/coupon-detail/84056896",
       "checkedOn": "2026-10-04"
     },
-    "actionLabel": "Switch store and confirm by Tue Oct 6",
+    "actionLabel": "LAST DAY: switch store and confirm today",
     "tier": "A",
     "stackNote": "Potentially useful before planned restaurant spending, but do not buy extra gift cards solely to obtain the reward. H-E-B coupon policy and store participation control.",
     "stackStatus": "conditional",
     "finePrint": "Redeem in store only through Tuesday, October 6, 2026. Buy $50 or more in the listed third-party gift cards and include the $10 H-E-B gift card in the order. Official page says unlimited use, while supplies last, quantities may be limited, and the coupon may not be redeemable at all H-E-B locations. The explicit $10 value is retained, but it is excluded from verified totals until a Spring store confirms participation.",
-    "expirationLabel": "Through Tuesday October 6; Spring availability unconfirmed",
+    "expirationLabel": "LAST DAY Tuesday October 6; Spring availability unconfirmed",
     "availability": "available",
     "dealType": "digital-coupon",
     "freshness": "current",
@@ -2251,53 +2127,10 @@
     ]
   },
   {
-    "id": "cinnaholic-national-cinnamon-roll-day-bogo-2026-10-04",
-    "merchant": "Cinnaholic",
-    "title": "Buy one cinnamon roll, get one free Sunday October 4",
-    "summary": "TODAY Sunday October 4: Cinnaholic official announcement says all bakeries offer buy-one-get-one-free cinnamon rolls all day for National Cinnamon Roll Day. Free roll must be equal or lesser value; in-store only; limit one free roll per person. Official directory lists a Spring bakery at 6535 N Grand Pkwy W, Suite 220, Spring, TX 77389.",
-    "category": "restaurants",
-    "estimatedSavings": 0,
-    "minimumSpend": 0,
-    "isFree": false,
-    "expiresOn": "2026-10-04",
-    "locationNote": "Cinnaholic's official directory lists the Spring bakery at 6535 N Grand Pkwy W, Suite 220, Spring, TX 77389. The brand announcement says all bakeries participate, but current local roll prices were not verified.",
-    "verification": "verified",
-    "friction": "low",
-    "tags": [
-      "BOGO",
-      "cinnamon roll",
-      "one-day",
-      "Spring",
-      "free food"
-    ],
-    "source": {
-      "label": "Cinnaholic official National Cinnamon Roll Day announcement",
-      "url": "https://www.facebook.com/Cinnaholic/posts/when-you-find-out-you-can-get-bogo-rolls-at-all-cinnaholic-bakeries-this-sunday-/1533272375499017/",
-      "checkedOn": "2026-10-04"
-    },
-    "actionLabel": "Use BOGO TODAY Sunday Oct 4",
-    "tier": "A",
-    "stackNote": "Treat this one-day BOGO as a standalone offer; no additional stacking is assumed.",
-    "stackStatus": "exclusive",
-    "finePrint": "Valid all day Sunday, October 4, 2026, in store at Cinnaholic bakeries. Buy one cinnamon roll and receive one free of equal or lesser value; limit one free roll per person. No app or account requirement was stated. No dollar estimate is shown because the Spring bakery current regular roll price was not verified.",
-    "expirationLabel": "TODAY only: Sunday October 4",
-    "availability": "available",
-    "dealType": "free-food",
-    "freshness": "improved",
-    "discoveredOn": "2026-10-03",
-    "preferenceSignals": [
-      "free-food",
-      "local-relevance",
-      "one-day",
-      "upcoming-expiration"
-    ],
-    "localRecord": true
-  },
-  {
     "id": "chuys-national-taco-day-free-entree-2026-10-06",
     "merchant": "Chuy's",
     "title": "Free entree Tuesday October 6 for dressing like a taco",
-    "summary": "Tuesday October 6 only: dine in dressed like a taco, post a photo with the official National Taco Day message and hashtag, show the post to the server, and receive one free entree during the same visit.",
+    "summary": "TODAY Tuesday October 6 only (dine-in): come in dressed like a taco, post a photo with the official National Taco Day message and hashtag, show the post to the server, and receive one free entree during the same visit. The official page also lists $1 crispy or soft ground-beef taco add-ons with any entree and $1 margarita floaters all day, dine-in only.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2316,15 +2149,15 @@
     "source": {
       "label": "Chuy's official National Taco Day promotion",
       "url": "https://www.chuys.com/specials/national-taco-day",
-      "checkedOn": "2026-10-05"
+      "checkedOn": "2026-10-06"
     },
-    "actionLabel": "Confirm and dress like a taco Tue Oct 6",
+    "actionLabel": "TODAY: dress like a taco for a free entree (dine-in)",
     "tier": "A",
     "stackNote": "Same-visit dine-in promotion; do not assume it stacks with the separate $1 taco add-on or $1 margarita floater specials.",
     "stackGroup": "chuys-national-taco-day",
     "stackStatus": "exclusive",
-    "finePrint": "Valid Tuesday, October 6, 2026, for dine-in only. Arrive dressed like a taco, post a photo with the wording 'Posting for a free entree! #ChuysTacoDay,' and show the post to the server. The free entree is valid on the same visit only. No dollar estimate is shown because the selected entree and current Shenandoah menu price were not verified.",
-    "expirationLabel": "Tuesday October 6 only",
+    "finePrint": "Valid Tuesday, October 6, 2026, for dine-in only. Arrive dressed like a taco, post a photo with the wording 'Posting for a free entree! #ChuysTacoDay,' and show the post to the server. The free entree is valid on the same visit only. Separate dine-in specials the same day: add a crispy or soft ground beef taco to any entree for $1 and a $1 floater on a margarita. App code APPFREE waives the To Go delivery fee (up to $2.99) on direct Chuy's app orders through October 31, 2026; service fees apply. No dollar estimate is shown because the selected entree and current Shenandoah menu price were not verified. Official page reconfirmed 2026-10-06.",
+    "expirationLabel": "TODAY Tuesday October 6 only",
     "availability": "available",
     "dealType": "free-food",
     "freshness": "new",
@@ -2340,7 +2173,7 @@
     "id": "laredo-taco-company-national-taco-day-bogo-2026-10-06",
     "merchant": "Laredo Taco Company at 7-Eleven",
     "title": "BOGO breakfast or chicken-fajita tacos Tuesday October 6",
-    "summary": "Tuesday October 6 only at participating Laredo Taco Company restaurants: buy one Potato & Egg Taco and get a second free, or buy one Chicken Fajita Taco and get a second free.",
+    "summary": "TODAY Tuesday October 6 only at participating Laredo Taco Company restaurants: buy one Potato & Egg Taco and get a second free, or buy one Chicken Fajita Taco and get a second free.",
     "category": "convenience",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2361,12 +2194,12 @@
       "url": "https://corp.7-eleven.com/corp-press-releases/7-eleven-inc-s-laredo-taco-company-celebrates-national-taco-day-with-taco-tuesday-deals",
       "checkedOn": "2026-10-04"
     },
-    "actionLabel": "Find participating LTC location for Tue Oct 6",
+    "actionLabel": "TODAY: find a participating LTC location first",
     "tier": "B",
     "stackNote": "No membership or stacking terms were stated; count only the BOGO shown at a confirmed participating Laredo Taco Company restaurant.",
     "stackStatus": "conditional",
     "finePrint": "Offer valid only October 6, 2026, plus tax, at participating Laredo Taco Company restaurants inside participating 7-Eleven, Speedway, or Stripes stores. Local participation, item price, inventory, and redemption channel were not confirmed, so no dollar estimate is shown.",
-    "expirationLabel": "Tuesday October 6 only; local participation unconfirmed",
+    "expirationLabel": "TODAY Tuesday October 6 only; local participation unconfirmed",
     "availability": "available",
     "dealType": "free-food",
     "freshness": "new",
@@ -2556,7 +2389,7 @@
     "source": {
       "label": "Domino's official National Pizza Month announcement",
       "url": "https://ir.dominos.com/news-releases/news-release-details/dominosr-kicking-national-pizza-month-offering-50-all-menu",
-      "checkedOn": "2026-10-05"
+      "checkedOn": "2026-10-06"
     },
     "actionLabel": "Order half-price pizza by Oct 11",
     "tier": "A",
@@ -2564,7 +2397,7 @@
     "stackGroup": "dominos-pizza-promotion",
     "stackStatus": "exclusive",
     "finePrint": "Valid October 5-11, 2026, on menu-priced pizzas ordered through Domino's online, app, phone, or store channels, for carryout or delivery. Delivery minimums, taxes, delivery charges, and store-specific charges can still apply. No fixed dollar estimate is shown because the pizza, size, toppings, channel, and local menu price vary; the published savings rate is 50%.",
-    "expirationLabel": "Ends Sunday October 11",
+    "expirationLabel": "Ends Sunday October 11 (6 days left)",
     "availability": "available",
     "dealType": "digital-coupon",
     "freshness": "new",
@@ -2581,7 +2414,7 @@
     "id": "torchys-national-taco-day-bogo-2026-10-06",
     "merchant": "Torchy's Tacos",
     "title": "BOGO taco for Rewards members Tuesday October 6",
-    "summary": "Torchy's official social announcement says Rewards members can receive a buy-one-get-one-free taco on Tuesday, October 6 for National Taco Day.",
+    "summary": "TODAY Tuesday October 6: Torchy's official social announcement says Rewards members can receive a buy-one-get-one-free taco for National Taco Day, in-restaurant only.",
     "category": "restaurants",
     "estimatedSavings": 0,
     "minimumSpend": 0,
@@ -2602,13 +2435,13 @@
       "url": "https://x.com/torchystacos/status/2102503275182305733",
       "checkedOn": "2026-10-05"
     },
-    "actionLabel": "Check Rewards for Tue Oct 6 BOGO",
+    "actionLabel": "TODAY: check Rewards for BOGO taco (in-restaurant)",
     "tier": "A",
     "stackNote": "Treat the BOGO reward as a standalone offer unless Torchy's checkout expressly permits another promotion.",
     "stackGroup": "torchys-rewards-offer",
     "stackStatus": "exclusive",
     "finePrint": "Valid October 6, 2026, for one free taco with purchase of an equal- or higher-value taco; minimum purchase is two tacos. Excludes kids tacos, Taco Two Step, and Trailer Park Combo. One-time digital Reward coupon for a valid Torchy's Rewards account; existing members and people joining on October 6 are eligible. Orders must be placed and fulfilled in-restaurant at participating locations and are subject to availability. Not valid for catering or third-party delivery and cannot be combined with other coupons, promotions, or special offers. No dollar estimate is shown because the eligible taco and local menu price are not known.",
-    "expirationLabel": "Tuesday October 6 only",
+    "expirationLabel": "TODAY Tuesday October 6 only",
     "availability": "available",
     "dealType": "free-food",
     "freshness": "new",
