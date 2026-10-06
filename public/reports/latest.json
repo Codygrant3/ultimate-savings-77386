@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:15:54.547Z",
+  "generatedAt": "2026-10-06T15:08:04.770Z",
   "weekOf": "2026-10-05",
   "zipCode": "77386",
   "totalPotentialSavings": 125.24,
@@ -73,6 +73,107 @@
           "points": 8.4,
           "weight": 10,
           "detail": "Household match: oil change"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "2.4 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "shell-fuel-rewards-new-member-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "10¢, 20¢, then 30¢ off per gallon",
+      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
+      "category": "fuel",
+      "estimatedSavings": 9,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "new member",
+        "fuel",
+        "three fill-ups"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-10-06"
+      },
+      "actionLabel": "Review offer",
+      "tier": "A",
+      "distanceMiles": 2.4,
+      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
+      "expirationLabel": "Use within 60 days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "new-member",
+        "stacking"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-10-06",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Shell Fuel Rewards",
+      "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+      "score": 73,
+      "scoreLabel": "Strong",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 14.16,
+          "weight": 24,
+          "detail": "$9.00 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
         },
         {
           "label": "Local relevance",
@@ -209,107 +310,6 @@
       ]
     },
     {
-      "id": "shell-fuel-rewards-new-member-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "10¢, 20¢, then 30¢ off per gallon",
-      "summary": "New Fuel Rewards members can earn a one-time discount on each of their first three fill-ups.",
-      "category": "fuel",
-      "estimatedSavings": 9,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Shell stations near 77386; compare the posted pump price first.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "new member",
-        "fuel",
-        "three fill-ups"
-      ],
-      "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-09-26"
-      },
-      "actionLabel": "Review offer",
-      "tier": "A",
-      "distanceMiles": 2.4,
-      "stackNote": "Potentially combines with eligible grocery-linked Fuel Rewards.",
-      "stackGroup": "shell-fuel-promotion",
-      "finePrint": "New members only; offer runs through December 31, 2026. Rewards must be used within 60 days of signup and are limited to 20 gallons per fill. Estimate assumes 15 gallons on each of the first three fills.",
-      "expirationLabel": "Use within 60 days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "preferenceSignals": [
-        "fuel-reward",
-        "new-member",
-        "stacking"
-      ],
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-26",
-      "distanceEvidenceAgeDays": 9,
-      "distanceSourceLabel": "Shell Fuel Rewards",
-      "distanceSourceUrl": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-      "score": 66,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 14.16,
-          "weight": 24,
-          "detail": "$9.00 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "2.4 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "exxon-mobil-referral-five-fill-bonus-2026",
       "merchant": "Exxon Mobil Rewards+",
       "title": "Up to 30¢ per gallon on five referral-code fills",
@@ -412,6 +412,105 @@
           "points": 3.8500000000000005,
           "weight": 7,
           "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
+      "id": "exxon-mobil-rewards-base-points-2026",
+      "merchant": "Exxon Mobil Rewards+",
+      "title": "Earn 3¢ per gallon or more in points",
+      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
+      "category": "fuel",
+      "estimatedSavings": 0.45,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
+      "verification": "verified",
+      "friction": "low",
+      "tags": [
+        "fuel",
+        "points",
+        "rewards program"
+      ],
+      "source": {
+        "label": "Exxon Mobil Rewards+",
+        "url": "https://www.exxonmobilfuels.com/en/rewards",
+        "checkedOn": "2026-10-06"
+      },
+      "actionLabel": "Review rewards",
+      "tier": "B",
+      "distanceMiles": 1.8,
+      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
+      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
+      "expirationLabel": "Ongoing",
+      "availability": "program",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "preferenceSignals": [
+        "fuel-reward",
+        "stacking"
+      ],
+      "distanceBasis": "offer",
+      "distanceCheckedOn": "2026-10-06",
+      "distanceEvidenceAgeDays": 0,
+      "distanceSourceLabel": "Exxon Mobil Rewards+",
+      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
+      "score": 64,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 2.16,
+          "weight": 24,
+          "detail": "$0.45 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 7.36,
+          "weight": 8,
+          "detail": "1.8 miles from 77386"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 9,
+          "weight": 9,
+          "detail": "low redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 7.000000000000001,
+          "weight": 7,
+          "detail": "Compatible stack documented"
         }
       ]
     },
@@ -643,7 +742,7 @@
       "source": {
         "label": "Costa Oil Rayford specials",
         "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-10-04"
+        "checkedOn": "2026-10-06"
       },
       "actionLabel": "Review diesel coupon",
       "tier": "A",
@@ -673,7 +772,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -1136,105 +1235,6 @@
           "points": 3.8500000000000005,
           "weight": 7,
           "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
-      "id": "exxon-mobil-rewards-base-points-2026",
-      "merchant": "Exxon Mobil Rewards+",
-      "title": "Earn 3¢ per gallon or more in points",
-      "summary": "Members earn three points per gallon on regular fuel and six points per gallon on premium fuel.",
-      "category": "fuel",
-      "estimatedSavings": 0.45,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Participating Exxon and Mobil stations; compare the posted pump price first.",
-      "verification": "verified",
-      "friction": "low",
-      "tags": [
-        "fuel",
-        "points",
-        "rewards program"
-      ],
-      "source": {
-        "label": "Exxon Mobil Rewards+",
-        "url": "https://www.exxonmobilfuels.com/en/rewards",
-        "checkedOn": "2026-09-26"
-      },
-      "actionLabel": "Review rewards",
-      "tier": "B",
-      "distanceMiles": 1.8,
-      "stackNote": "Eligible AARP, Direct Debit+, and Frequent Filler benefits may stack.",
-      "finePrint": "Estimate assumes 15 gallons of regular fuel. Compare the station's base price before choosing it for the reward.",
-      "expirationLabel": "Ongoing",
-      "availability": "program",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "preferenceSignals": [
-        "fuel-reward",
-        "stacking"
-      ],
-      "distanceBasis": "offer",
-      "distanceCheckedOn": "2026-09-26",
-      "distanceEvidenceAgeDays": 9,
-      "distanceSourceLabel": "Exxon Mobil Rewards+",
-      "distanceSourceUrl": "https://www.exxonmobilfuels.com/en/rewards",
-      "score": 58,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 2.16,
-          "weight": 24,
-          "detail": "$0.45 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 7.36,
-          "weight": 8,
-          "detail": "1.8 miles from 77386"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 9,
-          "weight": 9,
-          "detail": "low redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 7.000000000000001,
-          "weight": 7,
-          "detail": "Compatible stack documented"
         }
       ]
     },
@@ -1883,6 +1883,109 @@
       ]
     },
     {
+      "id": "shell-race-day-22-cents-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "22¢ off per gallon on eligible race days",
+      "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
+      "category": "fuel",
+      "estimatedSavings": 3.3,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "race day",
+        "app",
+        "opt in"
+      ],
+      "source": {
+        "label": "Shell Fuel Rewards",
+        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
+        "checkedOn": "2026-10-06"
+      },
+      "actionLabel": "Opt in for race days",
+      "tier": "A",
+      "stackNote": "Use only the savings shown in the Fuel Rewards app; do not assume another fuel promotion combines.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "The $3.30 estimate assumes 15 gallons on one eligible race day. Opt in once in the Shell app, use a Fuel Rewards member ID, and confirm the selected station and race day are eligible before fueling.",
+      "expirationLabel": "Eligible 2026 race days",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "current",
+      "discoveredOn": "2026-08-15",
+      "preferenceSignals": [
+        "fuel-reward",
+        "app-specific",
+        "time-sensitive"
+      ],
+      "distanceMiles": 2.87,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 42,
+      "distanceSourceLabel": "Shell official Rayford Road station page",
+      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
+      "score": 57,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 8.879999999999999,
+          "weight": 24,
+          "detail": "$3.30 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 42 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 4.6000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; current"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
       "id": "applebees-nfl-season-wing-ticket-2026",
       "merchant": "Applebee's",
       "title": "NFL Season Wing Ticket: 6 free boneless wings weekly with $15+ To Go",
@@ -2401,6 +2504,109 @@
       ]
     },
     {
+      "id": "shell-app-s-pay-discount-2026",
+      "merchant": "Shell Fuel Rewards",
+      "title": "10¢/gal with Shell S Pay",
+      "summary": "Shell App users with a linked Fuel Rewards account can save 10 cents per gallon when paying with Shell S Pay.",
+      "category": "fuel",
+      "estimatedSavings": 1.5,
+      "minimumSpend": 0,
+      "isFree": false,
+      "locationNote": "Shell App, linked Fuel Rewards account, Shell S Pay, and a participating station are required; compare the posted pump price before fueling.",
+      "verification": "verified",
+      "friction": "medium",
+      "tags": [
+        "fuel",
+        "app",
+        "mobile pay",
+        "10 cents per gallon"
+      ],
+      "source": {
+        "label": "Shell official app page",
+        "url": "https://www.shell.us/rewards-and-savings/shell-app.html",
+        "checkedOn": "2026-10-06"
+      },
+      "actionLabel": "Compare Shell S Pay price",
+      "tier": "B",
+      "stackNote": "Count only the discount displayed in the Shell App; do not assume this combines with new-member, race-day, or first-time Pay & Save rewards.",
+      "stackGroup": "shell-fuel-promotion",
+      "finePrint": "Shell's official app page, last updated September 21, 2026, states that linking Shell S Pay saves 10 cents per gallon every time. A Shell App account, linked Fuel Rewards membership, checking-account payment setup, and participating station are required. The $1.50 estimate assumes 15 gallons; compare the posted pump price and the in-app price before fueling.",
+      "expirationLabel": "No end date published",
+      "availability": "available",
+      "dealType": "fuel-reward",
+      "freshness": "improved",
+      "discoveredOn": "2026-08-27",
+      "preferenceSignals": [
+        "fuel-reward",
+        "app-specific",
+        "mobile-pay"
+      ],
+      "distanceMiles": 2.87,
+      "distanceBasis": "merchant-location",
+      "distanceCheckedOn": "2026-08-24",
+      "distanceEvidenceAgeDays": 42,
+      "distanceSourceLabel": "Shell official Rayford Road station page",
+      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
+      "score": 54,
+      "scoreLabel": "Worth a look",
+      "scoreBreakdown": [
+        {
+          "label": "Evidence",
+          "points": 18,
+          "weight": 18,
+          "detail": "Official source verified; checked 0 days ago"
+        },
+        {
+          "label": "Dollar value",
+          "points": 5.52,
+          "weight": 24,
+          "detail": "$1.50 estimated value"
+        },
+        {
+          "label": "Savings rate",
+          "points": 0,
+          "weight": 6,
+          "detail": "Savings rate not published"
+        },
+        {
+          "label": "Household fit",
+          "points": 7.800000000000001,
+          "weight": 10,
+          "detail": "Household match: fuel"
+        },
+        {
+          "label": "Local relevance",
+          "points": 0,
+          "weight": 8,
+          "detail": "~2.87 miles to Shell Rayford Road; location checked 42 days ago; offer participation unconfirmed"
+        },
+        {
+          "label": "Timing",
+          "points": 5.1000000000000005,
+          "weight": 10,
+          "detail": "No stated end date; recently improved"
+        },
+        {
+          "label": "Effort",
+          "points": 5.3999999999999995,
+          "weight": 9,
+          "detail": "medium redemption effort"
+        },
+        {
+          "label": "Required spend",
+          "points": 8,
+          "weight": 8,
+          "detail": "No required spend"
+        },
+        {
+          "label": "Stackability",
+          "points": 3.8500000000000005,
+          "weight": 7,
+          "detail": "Stack terms require confirmation"
+        }
+      ]
+    },
+    {
       "id": "wendys-rewards-signup-free-nuggets-2026",
       "merchant": "Wendy's",
       "title": "Free 10-piece nuggets plus 200 points for joining Rewards",
@@ -2527,7 +2733,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-10-04"
+        "checkedOn": "2026-10-06"
       },
       "actionLabel": "Plan for Wednesday Oct 7",
       "tier": "A",
@@ -2557,7 +2763,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -2633,7 +2839,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-10-04"
+        "checkedOn": "2026-10-06"
       },
       "actionLabel": "Redeem next Friday Oct 9",
       "tier": "A",
@@ -2663,7 +2869,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -2736,7 +2942,7 @@
       "source": {
         "label": "Wendy's official offers page",
         "url": "https://www.wendys.com/offers-coupons",
-        "checkedOn": "2026-10-04"
+        "checkedOn": "2026-10-06"
       },
       "actionLabel": "Claim free chili in app",
       "tier": "A",
@@ -2767,7 +2973,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
@@ -3974,109 +4180,6 @@
       ]
     },
     {
-      "id": "shell-race-day-22-cents-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "22¢ off per gallon on eligible race days",
-      "summary": "Fuel Rewards members who opt in can receive 22 cents off per gallon when Joey Logano and the No. 22 Shell-Pennzoil team race.",
-      "category": "fuel",
-      "estimatedSavings": 3.3,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "App opt-in and a participating Shell station are required; compare the posted pump price before choosing a station.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "race day",
-        "app",
-        "opt in"
-      ],
-      "source": {
-        "label": "Shell Fuel Rewards",
-        "url": "https://www.shell.us/rewards-and-savings/fuel-rewards.html",
-        "checkedOn": "2026-09-26"
-      },
-      "actionLabel": "Opt in for race days",
-      "tier": "A",
-      "stackNote": "Use only the savings shown in the Fuel Rewards app; do not assume another fuel promotion combines.",
-      "stackGroup": "shell-fuel-promotion",
-      "finePrint": "The $3.30 estimate assumes 15 gallons on one eligible race day. Opt in once in the Shell app, use a Fuel Rewards member ID, and confirm the selected station and race day are eligible before fueling.",
-      "expirationLabel": "Eligible 2026 race days",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "current",
-      "discoveredOn": "2026-08-15",
-      "preferenceSignals": [
-        "fuel-reward",
-        "app-specific",
-        "time-sensitive"
-      ],
-      "distanceMiles": 2.87,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 42,
-      "distanceSourceLabel": "Shell official Rayford Road station page",
-      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
-      "score": 50,
-      "scoreLabel": "Worth a look",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 8.879999999999999,
-          "weight": 24,
-          "detail": "$3.30 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 42 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 4.6000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; current"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "starbucks-rewards-ongoing-2026",
       "merchant": "Starbucks Rewards",
       "title": "Earn toward free food and drinks",
@@ -4373,109 +4476,6 @@
       ]
     },
     {
-      "id": "shell-app-s-pay-discount-2026",
-      "merchant": "Shell Fuel Rewards",
-      "title": "10¢/gal with Shell S Pay",
-      "summary": "Shell App users with a linked Fuel Rewards account can save 10 cents per gallon when paying with Shell S Pay.",
-      "category": "fuel",
-      "estimatedSavings": 1.5,
-      "minimumSpend": 0,
-      "isFree": false,
-      "locationNote": "Shell App, linked Fuel Rewards account, Shell S Pay, and a participating station are required; compare the posted pump price before fueling.",
-      "verification": "verified",
-      "friction": "medium",
-      "tags": [
-        "fuel",
-        "app",
-        "mobile pay",
-        "10 cents per gallon"
-      ],
-      "source": {
-        "label": "Shell official app page",
-        "url": "https://www.shell.us/rewards-and-savings/shell-app.html",
-        "checkedOn": "2026-09-26"
-      },
-      "actionLabel": "Compare Shell S Pay price",
-      "tier": "B",
-      "stackNote": "Count only the discount displayed in the Shell App; do not assume this combines with new-member, race-day, or first-time Pay & Save rewards.",
-      "stackGroup": "shell-fuel-promotion",
-      "finePrint": "Shell's official app page, last updated September 21, 2026, states that linking Shell S Pay saves 10 cents per gallon every time. A Shell App account, linked Fuel Rewards membership, checking-account payment setup, and participating station are required. The $1.50 estimate assumes 15 gallons; compare the posted pump price and the in-app price before fueling.",
-      "expirationLabel": "No end date published",
-      "availability": "available",
-      "dealType": "fuel-reward",
-      "freshness": "improved",
-      "discoveredOn": "2026-08-27",
-      "preferenceSignals": [
-        "fuel-reward",
-        "app-specific",
-        "mobile-pay"
-      ],
-      "distanceMiles": 2.87,
-      "distanceBasis": "merchant-location",
-      "distanceCheckedOn": "2026-08-24",
-      "distanceEvidenceAgeDays": 42,
-      "distanceSourceLabel": "Shell official Rayford Road station page",
-      "distanceSourceUrl": "https://find.shell.com/us/fuel/12979901-2909-rayford-rd/en_US",
-      "score": 47,
-      "scoreLabel": "Low priority",
-      "scoreBreakdown": [
-        {
-          "label": "Evidence",
-          "points": 11.7,
-          "weight": 18,
-          "detail": "Official source verified; checked 9 days ago"
-        },
-        {
-          "label": "Dollar value",
-          "points": 5.52,
-          "weight": 24,
-          "detail": "$1.50 estimated value"
-        },
-        {
-          "label": "Savings rate",
-          "points": 0,
-          "weight": 6,
-          "detail": "Savings rate not published"
-        },
-        {
-          "label": "Household fit",
-          "points": 7.800000000000001,
-          "weight": 10,
-          "detail": "Household match: fuel"
-        },
-        {
-          "label": "Local relevance",
-          "points": 0,
-          "weight": 8,
-          "detail": "~2.87 miles to Shell Rayford Road; location checked 42 days ago; offer participation unconfirmed"
-        },
-        {
-          "label": "Timing",
-          "points": 5.1000000000000005,
-          "weight": 10,
-          "detail": "No stated end date; recently improved"
-        },
-        {
-          "label": "Effort",
-          "points": 5.3999999999999995,
-          "weight": 9,
-          "detail": "medium redemption effort"
-        },
-        {
-          "label": "Required spend",
-          "points": 8,
-          "weight": 8,
-          "detail": "No required spend"
-        },
-        {
-          "label": "Stackability",
-          "points": 3.8500000000000005,
-          "weight": 7,
-          "detail": "Stack terms require confirmation"
-        }
-      ]
-    },
-    {
       "id": "taco-bell-rewards-program",
       "merchant": "Taco Bell",
       "title": "Free signup reward for new Rewards members",
@@ -4704,7 +4704,7 @@
       "source": {
         "label": "Costa Oil Rayford specials",
         "url": "https://spring-rayford.costaoils.com/specials",
-        "checkedOn": "2026-10-04"
+        "checkedOn": "2026-10-06"
       },
       "actionLabel": "Review eligibility",
       "tier": "A",
@@ -4734,7 +4734,7 @@
           "label": "Evidence",
           "points": 18,
           "weight": 18,
-          "detail": "Official source verified; checked 1 day ago"
+          "detail": "Official source verified; checked 0 days ago"
         },
         {
           "label": "Dollar value",
